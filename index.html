@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Knowledge Journal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="hero">
+        <p class="eyebrow">Personal knowledge tracker</p>
+        <h1>Global Knowledge Journal</h1>
+        <p class="subtitle">
+          Capture ideas, lessons, and references in one simple local journal.
+        </p>
+      </header>
+
+      <section class="panel">
+        <form id="entry-form" class="entry-form">
+          <label for="title">Title</label>
+          <input id="title" name="title" type="text" placeholder="What did you learn?" required />
+
+          <label for="content">Insight</label>
+          <textarea id="content" name="content" rows="5" placeholder="Write the key takeaway..." required></textarea>
+
+          <label for="tags">Tags</label>
+          <input id="tags" name="tags" type="text" placeholder="ai, research, writing" />
+
+          <button type="submit">Save entry</button>
+        </form>
+      </section>
+
+      <section class="panel">
+        <div class="section-header">
+          <h2>Recent entries</h2>
+          <button id="clear-button" class="ghost" type="button">Clear all</button>
+        </div>
+        <div id="entries" class="entries"></div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
