@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-07-22",
+  "updated_at": "2026-07-23",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -51,13 +51,32 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260722_자막과더빙의문화사_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260722_자막과더빙의문화사_Report.pdf",
       "status": "published_mock"
+    },
+    {
+      "date": "2026-07-23",
+      "title": "자막과 더빙의 문화사",
+      "main_category": "자연사·생태",
+      "mid_category": "동물행동",
+      "sub_category": "자막과 더빙",
+      "keywords": [
+        "자막",
+        "더빙",
+        "영상번역",
+        "로컬라이징",
+        "화면 리듬",
+        "문화 번역"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260723_자막과더빙의문화사_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260723_자막과더빙의문화사_Report.pdf",
+      "status": "published_mock"
     }
   ],
   "category_rotation": {
     "recent_main_categories": [
       "생활기술·일상문화",
       "언어·문자",
-      "인문·철학"
+      "인문·철학",
+      "자연사·생태"
     ],
     "next_priority": [
       "인문·철학",
