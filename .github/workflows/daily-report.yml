@@ -3,10 +3,11 @@ name: Daily Global Knowledge Journal
 on:
   workflow_dispatch:
 
-  schedule:
-    # 매일 한국시간 00:10 실행
-    # GitHub Actions cron은 UTC 기준이므로, 00:10 KST = 전날 15:10 UTC
-    - cron: "10 15 * * *"
+#  schedule:
+#    # 매일 한국시간 00:10 실행
+#    # GitHub Actions cron은 UTC 기준이므로, 00:10 KST = 전날 15:10 UTC
+#    - cron: "10 15 * * *"
+
 
 permissions:
   contents: write
