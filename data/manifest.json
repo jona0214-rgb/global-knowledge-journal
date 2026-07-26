@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-26T00:00:00+09:00",
+  "last_updated": "2026-07-26T22:55:42.099707+09:00",
   "reports": [
     {
       "date": "2026-07-26",
@@ -8,8 +8,10 @@
       "main_category": "자연사·생태",
       "mid_category": "동물행동",
       "sub_category": "자막과 더빙",
-      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260726_자막과더빙의문화사_Report.html",
-      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260726_자막과더빙의문화사_Report.pdf",
+      "html_path": "outputs/20260726_자막과더빙의문화사_Report.html",
+      "pdf_path": "outputs/20260726_자막과더빙의문화사_Report.pdf",
+      "html_url": "outputs/20260726_자막과더빙의문화사_Report.html",
+      "pdf_url": "outputs/20260726_자막과더빙의문화사_Report.pdf",
       "status": "published_mock"
     }
   ]

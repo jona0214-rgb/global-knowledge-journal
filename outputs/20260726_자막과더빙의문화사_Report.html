@@ -1,474 +1,102 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8">
-  <title>2026-07-26_자막과 더빙의 문화사_Report</title>
-
-  <style>
-    @media screen {
-      body {
-        margin: 0;
-        background: #f4f6f8;
-      }
-
-      .report-page {
-        max-width: 1040px;
-        margin: 0 auto;
-        padding: 40px 44px 56px;
-        background: #fff;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .report-page {
-        padding: 24px 18px 40px;
-      }
-    }
-
-    @media print {
-      body {
-        background: #fff;
-      }
-
-      .report-page {
-        max-width: none;
-        margin: 0;
-        padding: 0;
-      }
-    }
-
-    @page {
-      size: A4;
-      margin: 16mm 16mm 19mm 16mm;
-
-      @top-left {
-        content: "GLOBAL KNOWLEDGE JOURNAL / 2026-07-26";
-        font-size: 8pt;
-        color: #666;
-      }
-
-      @top-right {
-        content: "자연사·생태 / 동물행동";
-        font-size: 8pt;
-        color: #666;
-      }
-
-      @bottom-center {
-        content: counter(page);
-        font-size: 8pt;
-        color: #666;
-      }
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: "Noto Sans CJK KR", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
-      color: #1f2933;
-      font-size: 14px;
-      line-height: 1.65;
-      word-break: keep-all;
-      letter-spacing: -0.02em;
-    }
-
-    .kicker {
-      font-size: 12px;
-      color: #6b7280;
-      border-bottom: 1px solid #c9c9c9;
-      padding-bottom: 12px;
-      margin-bottom: 28px;
-      letter-spacing: 0.04em;
-    }
-
-    h1 {
-      font-size: 34px;
-      line-height: 1.25;
-      letter-spacing: -0.06em;
-      margin: 0 0 8px;
-      color: #111827;
-    }
-
-    .subtitle {
-      font-size: 18px;
-      color: #4b5563;
-      margin-bottom: 24px;
-    }
-
-    .meta {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 20px 0 24px;
-      font-size: 13px;
-    }
-
-    .meta td {
-      border: 0;
-      padding: 6px 10px 6px 0;
-      white-space: nowrap;
-    }
-
-    .meta .label {
-      font-weight: 700;
-      color: #6b7280;
-      width: 80px;
-    }
-
-    .keywords {
-      border-top: 1px solid #d1d5db;
-      border-bottom: 1px solid #d1d5db;
-      padding: 12px 0;
-      margin: 20px 0 28px;
-      font-size: 13px;
-    }
-
-    .keywords b {
-      color: #2563eb;
-    }
-
-    .abstract {
-      background: #f3f6fb;
-      border-left: 4px solid #2563eb;
-      padding: 18px 22px;
-      margin: 20px 0 28px;
-    }
-
-    .abstract-title {
-      font-weight: 700;
-      color: #2563eb;
-      margin-bottom: 8px;
-    }
-
-    .section {
-      border-top: 1px solid #e5e7eb;
-      padding-top: 22px;
-      margin-top: 28px;
-    }
-
-    .section-label {
-      font-size: 12px;
-      color: #2563eb;
-      font-weight: 700;
-      letter-spacing: 0.04em;
-      margin-bottom: 4px;
-    }
-
-    .section-title {
-      font-size: 22px;
-      font-weight: 700;
-      color: #111827;
-      margin-bottom: 14px;
-      letter-spacing: -0.05em;
-    }
-
-    p {
-      margin: 0 0 12px;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 16px 0 8px;
-      table-layout: fixed;
-      break-inside: avoid;
-    }
-
-    th,
-    td {
-      border: 1px solid #c7ccd1;
-      padding: 8px 10px;
-      vertical-align: top;
-      overflow-wrap: break-word;
-    }
-
-    th {
-      background: #eef2f7;
-      font-weight: 700;
-    }
-
-    table:not(.meta) th:first-child,
-    table:not(.meta) td:first-child {
-      width: 14%;
-      white-space: nowrap;
-      font-weight: 700;
-      color: #2563eb;
-    }
-
-    .caption {
-      text-align: center;
-      color: #6b7280;
-      font-size: 12px;
-      margin-bottom: 18px;
-    }
-
-        .keep-together {
-      break-inside: avoid;
-      page-break-inside: avoid;
-    }
-
-    .table-block {
-      break-inside: avoid;
-      page-break-inside: avoid;
-      margin: 26px 0 34px;
-    }
-
-    .table-block .section-title {
-      break-after: avoid;
-      page-break-after: avoid;
-    }
-
-    .section-label,
-    .section-title {
-      break-after: avoid;
-      page-break-after: avoid;
-    }
-
-    p {
-      orphans: 2;
-      widows: 2;
-    }
-
-    .takeaway {
-      border: 1px solid #c7ccd1;
-      background: #fbfdff;
-      padding: 14px 16px;
-      margin-bottom: 12px;
-      break-inside: avoid;
-    }
-
-    .takeaway b {
-      display: block;
-      color: #2563eb;
-      margin-bottom: 4px;
-    }
-
-    .book-item {
-      margin-bottom: 6px;
-    }
-
-    .sources {
-      font-size: 12px;
-      color: #4b5563;
-      line-height: 1.45;
-    }
-  </style>
+<meta charset="utf-8">
+<title>2026-07-26 자막과 더빙의 문화사</title>
+<style>
+@page { size: A4; margin: 18mm 18mm 16mm; }
+body { margin: 0; font-family: "Noto Sans KR", "NanumBarunGothic", sans-serif; color: #1f2933; background: #f4f6f8; line-height: 1.68; }
+.report-page { max-width: 1040px; margin: 0 auto; padding: 40px 44px 56px; background: #fff; }
+.header { display:flex; justify-content:space-between; font-size:12px; color:#66607a; border-bottom:1px solid #d9d4e6; padding-bottom:10px; margin-bottom:28px; }
+.section { margin: 34px 0 42px; }
+.section-label { color:#4f46e5; font-weight:800; font-size:13px; letter-spacing:.04em; break-after: avoid; }
+.section-title { font-size: 26px; font-weight:800; margin: 4px 0 16px; break-after: avoid; }
+p { orphans: 2; widows: 2; }
+.keep-together, .table-block, .term-box, .takeaway { break-inside: avoid; page-break-inside: avoid; }
+table { width:100%; border-collapse:collapse; table-layout:fixed; margin-top:8px; }
+th, td { border:1px solid #c7c1d9; padding:8px 10px; vertical-align:top; }
+th { background:#e9e4f4; font-weight:800; }
+th:first-child, td:first-child { width:14%; white-space:nowrap; font-weight:700; }
+.caption { font-size:13px; color:#6b647c; margin-top:8px; text-align:center; }
+@media print { body { background:#fff; } .report-page { padding:0; max-width:none; } }
+</style>
 </head>
-
 <body>
-  <main class="report-page">
-    <div class="kicker">GLOBAL KNOWLEDGE JOURNAL / DAILY REPORT</div>
+<main class="report-page">
+  <div class="header"><div>GLOBAL KNOWLEDGE JOURNAL / 2026-07-26</div><div>자연사·생태 / 동물행동</div></div>
+  <h1>자막과 더빙의 문화사</h1>
+  <p class="subtitle">번역은 어떻게 화면의 리듬과 목소리를 바꾸었나</p>
 
-    <h1>자막과 더빙의 문화사</h1>
-    <div class="subtitle">번역은 어떻게 화면의 리듬과 목소리를 바꾸었나</div>
+  
+  
+  
+  <section class="section">
+    <div class="section-label">01 / CONTEXT</div>
+    <div class="section-title">왜 번역은 화면에서 다시 태어나는가</div>
+    <p>영상 번역은 책 번역과 다르다. 문장은 화면 위에 잠깐 나타났다 사라지고, 배우의 표정과 음악, 장면 전환 속도와 함께 읽힌다.</p><p>자막은 관객이 원어의 목소리를 유지한 채 의미를 따라가게 만든다. 반대로 더빙은 관객이 화면을 읽지 않아도 이야기에 몰입하게 만든다.</p><p>따라서 영상 번역은 언어의 문제가 아니라 시간과 시선의 문제이기도 하다.</p>
+  </section>
+  
+  
+  
+  
+  <section class="section">
+    <div class="section-label">02 / BEGINNER'S MAP</div>
+    <div class="section-title">자막과 더빙의 기본 차이</div>
+    <p>자막은 원래 목소리를 남기고 번역문을 화면에 얹는 방식이다. 더빙은 원래 목소리를 새로운 언어의 목소리로 바꾸는 방식이다.</p><p>자막은 제작비가 상대적으로 낮고 원음의 감각을 보존하지만, 관객이 글자를 읽어야 한다. 더빙은 몰입감이 높지만 목소리 연기와 입 모양 맞춤이 중요하다.</p>
+  </section>
+  
+  
+  
+  
+  <section class="section">
+    <div class="section-label">03 / DEEP DIVE</div>
+    <div class="section-title">번역은 왜 짧아지는가</div>
+    <p>자막 번역은 글자 수 제한을 가진다. 말로는 길게 들을 수 있는 문장도 화면 위에서는 짧고 빠르게 읽혀야 한다.</p><p>이 과정에서 번역가는 내용을 모두 옮기기보다, 장면 이해에 필요한 의미를 압축한다. 삭제는 실패가 아니라 화면 언어에 맞춘 재구성일 수 있다.</p><p>더빙은 다른 압축을 요구한다. 번역문은 배우의 입 모양, 감정의 길이, 호흡의 위치에 맞아야 한다.</p>
+  </section>
+  
+  
+  
+  
+  <section class="section">
+    <div class="section-label">04 / CASE STUDY</div>
+    <div class="section-title">농담은 왜 가장 번역하기 어려운가</div>
+    <p>농담은 언어뿐 아니라 문화적 배경, 말투, 리듬에 의존한다. 그래서 직역하면 의미는 남아도 웃음은 사라질 수 있다.</p><p>영상 번역에서 좋은 농담 번역은 원문과 똑같은 문장을 찾는 것이 아니라, 같은 순간에 비슷한 반응을 일으키는 표현을 찾는 일에 가깝다.</p>
+  </section>
+  
+  
+  
+  
+  <section class="section">
+    <div class="section-label">05 / CURRENT STATE</div>
+    <div class="section-title">스트리밍 시대의 번역</div>
+    <p>스트리밍 플랫폼은 여러 언어의 자막과 더빙을 동시에 제공한다. 한 작품은 공개되는 순간 여러 문화권의 관객을 만난다.</p><p>그 결과 영상 번역은 부가 작업이 아니라 글로벌 배급의 핵심 인프라가 되었다.</p>
+  </section>
+  
+  
+  
+  
+  <section class="section">
+    <div class="section-label">06 / IMPLICATIONS</div>
+    <div class="section-title">번역은 누구의 목소리를 남기는가</div>
+    <p>자막과 더빙의 선택은 단순한 취향 문제가 아니다. 그것은 원래 배우의 목소리를 남길 것인지, 관객의 언어 경험을 우선할 것인지에 대한 선택이다.</p><p>번역은 원작을 가리는 막이 아니라, 다른 관객이 작품에 들어갈 수 있도록 놓인 문이다.</p>
+  </section>
+  
+  
 
-    <table class="meta">
-      <tr>
-        <td class="label">발행일</td>
-        <td>2026-07-26</td>
-        <td class="label">분야</td>
-        <td>자연사·생태 / 동물행동</td>
-        <td class="label">난이도</td>
-        <td>중</td>
-      </tr>
-      <tr>
-        <td class="label">예상 시간</td>
-        <td>13-16분</td>
-        <td class="label">카테고리</td>
-        <td colspan="3">자연사·생태 &gt; 동물행동 &gt; 자막과 더빙</td>
-      </tr>
+  
+  
+  
+  <div class="section table-block keep-together">
+    <div class="section-label">TABLE</div>
+    <div class="section-title"><표1> 자막과 더빙의 비교</div>
+    <table>
+      <thead><tr><th>구분</th><th>자막</th><th>더빙</th></tr></thead>
+      <tbody><tr><td>방식</td><td>원음을 유지하고 번역문을 표시</td><td>목소리를 현지 언어로 교체</td></tr><tr><td>장점</td><td>원어의 감정과 연기 보존</td><td>화면 몰입과 접근성 강화</td></tr><tr><td>약점</td><td>읽기 부담과 글자 수 제한</td><td>입 모양·연기·비용 부담</td></tr><tr><td>핵심</td><td>시선을 설계하는 번역</td><td>목소리를 설계하는 번역</td></tr></tbody>
     </table>
-
-    <div class="keywords">
-      <b>핵심어:</b>
-      자막 · 더빙 · 영상번역 · 로컬라이징 · 화면 리듬 · 문화 번역
-    </div>
-
-    <div class="abstract">
-      <div class="abstract-title">Abstract</div>
-      자막과 더빙은 단순히 언어를 바꾸는 기술이 아니다. 그것은 화면의 속도, 배우의 몸짓, 관객의 시선, 문화적 농담을 다시 배열하는 작업이다. 이 mock 리포트는 자동화 파이프라인을 검증하기 위한 샘플이며, 실제 API 연결 후에는 최신 출처 기반 본문으로 교체된다.
-    </div>
-
-    
-    <section class="section">
-      <div class="section-label">01 / CONTEXT</div>
-      <div class="section-title">왜 번역은 화면에서 다시 태어나는가</div>
-
-      
-      <p>영상 번역은 책 번역과 다르다. 문장은 화면 위에 잠깐 나타났다 사라지고, 배우의 표정과 음악, 장면 전환 속도와 함께 읽힌다.</p>
-      
-      <p>자막은 관객이 원어의 목소리를 유지한 채 의미를 따라가게 만든다. 반대로 더빙은 관객이 화면을 읽지 않아도 이야기에 몰입하게 만든다.</p>
-      
-      <p>따라서 영상 번역은 언어의 문제가 아니라 시간과 시선의 문제이기도 하다.</p>
-      
-    </section>
-    
-    <section class="section">
-      <div class="section-label">02 / BEGINNER'S MAP</div>
-      <div class="section-title">자막과 더빙의 기본 차이</div>
-
-      
-      <p>자막은 원래 목소리를 남기고 번역문을 화면에 얹는 방식이다. 더빙은 원래 목소리를 새로운 언어의 목소리로 바꾸는 방식이다.</p>
-      
-      <p>자막은 제작비가 상대적으로 낮고 원음의 감각을 보존하지만, 관객이 글자를 읽어야 한다. 더빙은 몰입감이 높지만 목소리 연기와 입 모양 맞춤이 중요하다.</p>
-      
-    </section>
-    
-    <section class="section">
-      <div class="section-label">03 / DEEP DIVE</div>
-      <div class="section-title">번역은 왜 짧아지는가</div>
-
-      
-      <p>자막 번역은 글자 수 제한을 가진다. 말로는 길게 들을 수 있는 문장도 화면 위에서는 짧고 빠르게 읽혀야 한다.</p>
-      
-      <p>이 과정에서 번역가는 내용을 모두 옮기기보다, 장면 이해에 필요한 의미를 압축한다. 삭제는 실패가 아니라 화면 언어에 맞춘 재구성일 수 있다.</p>
-      
-      <p>더빙은 다른 압축을 요구한다. 번역문은 배우의 입 모양, 감정의 길이, 호흡의 위치에 맞아야 한다.</p>
-      
-    </section>
-    
-    <section class="section">
-      <div class="section-label">04 / CASE STUDY</div>
-      <div class="section-title">농담은 왜 가장 번역하기 어려운가</div>
-
-      
-      <p>농담은 언어뿐 아니라 문화적 배경, 말투, 리듬에 의존한다. 그래서 직역하면 의미는 남아도 웃음은 사라질 수 있다.</p>
-      
-      <p>영상 번역에서 좋은 농담 번역은 원문과 똑같은 문장을 찾는 것이 아니라, 같은 순간에 비슷한 반응을 일으키는 표현을 찾는 일에 가깝다.</p>
-      
-    </section>
-    
-    <section class="section">
-      <div class="section-label">05 / CURRENT STATE</div>
-      <div class="section-title">스트리밍 시대의 번역</div>
-
-      
-      <p>스트리밍 플랫폼은 여러 언어의 자막과 더빙을 동시에 제공한다. 한 작품은 공개되는 순간 여러 문화권의 관객을 만난다.</p>
-      
-      <p>그 결과 영상 번역은 부가 작업이 아니라 글로벌 배급의 핵심 인프라가 되었다.</p>
-      
-    </section>
-    
-    <section class="section">
-      <div class="section-label">06 / IMPLICATIONS</div>
-      <div class="section-title">번역은 누구의 목소리를 남기는가</div>
-
-      
-      <p>자막과 더빙의 선택은 단순한 취향 문제가 아니다. 그것은 원래 배우의 목소리를 남길 것인지, 관객의 언어 경험을 우선할 것인지에 대한 선택이다.</p>
-      
-      <p>번역은 원작을 가리는 막이 아니라, 다른 관객이 작품에 들어갈 수 있도록 놓인 문이다.</p>
-      
-    </section>
-    
-
-    
-    <div class="section table-block keep-together">
-      <div class="section-label">TABLE</div>
-      <div class="section-title"><표1> 자막과 더빙의 비교</div>
-
-      <table>
-        <tr>
-          
-          <th>구분</th>
-          
-          <th>자막</th>
-          
-          <th>더빙</th>
-          
-        </tr>
-
-        
-        <tr>
-          
-          <td>방식</td>
-          
-          <td>원음을 유지하고 번역문을 표시</td>
-          
-          <td>목소리를 현지 언어로 교체</td>
-          
-        </tr>
-        
-        <tr>
-          
-          <td>장점</td>
-          
-          <td>원어의 감정과 연기 보존</td>
-          
-          <td>화면 몰입과 접근성 강화</td>
-          
-        </tr>
-        
-        <tr>
-          
-          <td>약점</td>
-          
-          <td>읽기 부담과 글자 수 제한</td>
-          
-          <td>입 모양·연기·비용 부담</td>
-          
-        </tr>
-        
-        <tr>
-          
-          <td>핵심</td>
-          
-          <td>시선을 설계하는 번역</td>
-          
-          <td>목소리를 설계하는 번역</td>
-          
-        </tr>
-        
-      </table>
-
-      <div class="caption">자막과 더빙은 같은 내용을 옮기지만, 관객의 감각 경험을 서로 다르게 설계한다.</div>
-    </div>
-    
-
-    <section class="section">
-      <div class="section-label">07 / TAKEAWAYS</div>
-      <div class="section-title">핵심 정리와 한마디</div>
-
-      
-      <div class="takeaway">
-        <b>핵심 정리</b>
-        영상 번역은 언어 변환이 아니라 화면의 시간, 시선, 목소리를 다시 설계하는 작업이다.
-      </div>
-      
-      <div class="takeaway">
-        <b>요약</b>
-        자막은 원음을 보존하고, 더빙은 관객의 언어 몰입을 높인다. 두 방식 모두 장면의 리듬에 맞춘 재구성이 필요하다.
-      </div>
-      
-      <div class="takeaway">
-        <b>한마디</b>
-        좋은 번역은 원문을 복사하는 일이 아니라, 다른 언어의 관객에게 같은 문을 다시 여는 일이다.
-      </div>
-      
-    </section>
-
-    <section class="section">
-      <div class="section-label">08 / FURTHER READING</div>
-      <div class="section-title">더 읽을거리</div>
-
-      
-      <div class="book-item">
-        <b>Subtitling</b> - Jorge Díaz Cintas & Aline Remael<br>
-        자막 번역의 제약과 실제 작업 원칙을 이해하기 좋다.
-      </div>
-      
-      <div class="book-item">
-        <b>Audiovisual Translation</b> - Frederic Chaume<br>
-        더빙과 영상 번역의 이론적 틀을 살펴볼 수 있다.
-      </div>
-      
-
-      <h3>Sources</h3>
-      <div class="sources">
-        
-        <p>Mock Source, <i>This is a mock source for local pipeline testing</i>, https://example.com</p>
-        
-      </div>
-    </section>
-  </main>
+    <div class="caption">자막과 더빙은 같은 내용을 옮기지만, 관객의 감각 경험을 서로 다르게 설계한다.</div>
+  </div>
+  
+  
+</main>
 </body>
 </html>
