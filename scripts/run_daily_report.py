@@ -444,11 +444,51 @@ def rebuild_sqlite(topic_db: dict):
 
 
 def update_public_catalog(report: dict, html_path: Path, pdf_path: Path):
+    def to_public_asset_path(path_value) -> str:
+        path_text = str(path_value).replace("\\", "/")
+
+        if "outputs/" in path_text:
+            return "outputs/" + path_text.split("outputs/", 1)[1]
+
+        try:
+            return Path(path_value).resolve().relative_to(ROOT_DIR.resolve()).as_posix()
+        except ValueError:
+            return Path(path_value).name
+
+    def normalize_catalog_item(item: dict) -> dict:
+        normalized = dict(item)
+
+        for key in ["html_path", "pdf_path", "html_url", "pdf_url"]:
+            value = normalized.get(key)
+
+            if value and value != "...":
+                normalized[key] = to_public_asset_path(value)
+
+        if normalized.get("html_path") and not normalized.get("html_url"):
+            normalized["html_url"] = normalized["html_path"]
+
+        if normalized.get("pdf_path") and not normalized.get("pdf_url"):
+            normalized["pdf_url"] = normalized["pdf_path"]
+
+        return normalized
+
     reports = load_json(REPORTS_JSON_PATH, [])
+
+    reports = [
+        normalize_catalog_item(item)
+        for item in reports
+        if isinstance(item, dict)
+    ]
 
     today = report["date"]
 
-    reports = [item for item in reports if item.get("date") != today]
+    reports = [
+        item for item in reports
+        if item.get("date") != today
+    ]
+
+    html_public_path = to_public_asset_path(html_path)
+    pdf_public_path = to_public_asset_path(pdf_path)
 
     item = {
         "date": today,
@@ -457,8 +497,10 @@ def update_public_catalog(report: dict, html_path: Path, pdf_path: Path):
         "main_category": report["category"]["main"],
         "mid_category": report["category"]["middle"],
         "sub_category": report["category"]["sub"],
-        "html_path": str(html_path.as_posix()),
-        "pdf_path": str(pdf_path.as_posix()),
+        "html_path": html_public_path,
+        "pdf_path": pdf_public_path,
+        "html_url": html_public_path,
+        "pdf_url": pdf_public_path,
         "status": "published_mock"
     }
 
