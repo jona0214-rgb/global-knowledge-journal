@@ -1,13 +1,22 @@
-name: Daily Global Knowledge Journal
+name: Daily Global Knowledge Report
 
 on:
   workflow_dispatch:
+    inputs:
+      report_mode:
+        description: "Report generation mode"
+        required: true
+        default: "mock"
+        type: choice
+        options:
+          - mock
+          - api
 
-#  schedule:
-#    # 매일 한국시간 00:10 실행
-#    # GitHub Actions cron은 UTC 기준이므로, 00:10 KST = 전날 15:10 UTC
-#    - cron: "10 15 * * *"
-
+  # schedule:
+  #   - cron: "0 21 * * *"
+  #
+  # 예약 실행은 현재 비활성화 상태입니다.
+  # 실제 API 결제/쿼터 확인 후 다시 활성화합니다.
 
 permissions:
   contents: write
@@ -16,9 +25,18 @@ jobs:
   generate-report:
     runs-on: ubuntu-latest
 
+    env:
+      REPORT_TIMEZONE: Asia/Seoul
+      REPORT_LANGUAGE: ko
+      REPORT_MIN_PAGES: "7"
+      REPORT_TARGET_PAGES: "7-9"
+      REPORT_MODE: ${{ github.event.inputs.report_mode || 'mock' }}
+      OPENAI_MODEL: gpt-4.1-mini
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -28,26 +46,31 @@ jobs:
       - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install -r requirements.txt
+          pip install -r requirements.txt
 
       - name: Install Playwright browser
         run: |
-          python -m playwright install --with-deps chromium
+          python -m playwright install chromium
 
-      - name: Generate mock report
+      - name: Generate daily report
         run: |
-          python scripts/run_daily_report.py --mock
+          echo "REPORT_MODE=$REPORT_MODE"
 
-      - name: Commit generated report files
+          if [ "$REPORT_MODE" = "api" ]; then
+            python scripts/run_daily_report.py --api
+          else
+            python scripts/run_daily_report.py --mock
+          fi
+
+      - name: Commit generated report
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add data public
-          git add -f outputs/*.json outputs/*.html outputs/*.pdf
+          git add data public outputs
 
           if git diff --cached --quiet; then
-            echo "No changes to commit."
+            echo "No report changes to commit."
           else
             git commit -m "chore: generate daily report"
             git push
