@@ -7,16 +7,15 @@
 <style>
 @page {
   size: A4;
-  margin: 15mm 15mm 14mm;
+  margin: 13mm 14mm 12mm;
 }
 
 :root {
-  --bg: #f4f0e8;
   --paper: #fffdf8;
   --ink: #1f1b16;
-  --body: #29231d;
-  --muted: #6f665c;
-  --line: #c9b9a6;
+  --body: #2b241d;
+  --muted: #665c52;
+  --line: #cbbba7;
   --line-soft: #ded1c2;
   --accent: #8a5a2b;
   --accent-dark: #4d3018;
@@ -37,102 +36,113 @@ body {
 
 body {
   font-family:
+    "Noto Sans KR",
+    "Noto Sans CJK KR",
+    "Pretendard",
     "NanumGothic",
     "Nanum Gothic",
-    "Noto Sans CJK KR",
-    "Noto Sans KR",
     "Malgun Gothic",
     "Apple SD Gothic Neo",
     sans-serif;
   color: var(--body);
-  background: var(--bg);
-  line-height: 1.72;
+  background: #f4f0e8;
+  line-height: 1.62;
   word-break: keep-all;
   overflow-wrap: break-word;
 }
+
+{% set raw_date = report.date|string %}
+{% if raw_date|length >= 10 %}
+  {% set date_dot = raw_date[0:4] ~ "." ~ raw_date[5:7] ~ "." ~ raw_date[8:10] %}
+  {% set date_kr = raw_date[0:4] ~ "년 " ~ raw_date[5:7] ~ "월 " ~ raw_date[8:10] ~ "일" %}
+{% else %}
+  {% set date_dot = raw_date %}
+  {% set date_kr = raw_date %}
+{% endif %}
 
 .report-page {
   background: var(--paper);
 }
 
-.report-header {
+.screen-header {
   display: flex;
   justify-content: space-between;
-  gap: 24px;
-  padding-bottom: 9px;
-  margin-bottom: 26px;
+  gap: 20px;
+  padding-bottom: 7px;
+  margin-bottom: 18px;
   border-bottom: 1px solid var(--line);
   color: var(--muted);
-  font-size: 11.5px;
+  font-size: 10.8px;
   font-weight: 700;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
+}
+
+.print-header,
+.print-footer {
+  display: none;
 }
 
 .cover {
-  margin-bottom: 24px;
-  padding-bottom: 19px;
-  border-bottom: 2px solid var(--accent-dark);
+  margin-bottom: 15px;
+  padding-bottom: 13px;
+  border-bottom: 1.5px solid var(--accent-dark);
 }
 
 .journal-label {
-  margin: 0 0 14px;
+  margin: 0 0 8px;
   color: var(--accent);
-  font-size: 12.5px;
+  font-size: 11.2px;
   font-weight: 900;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.05em;
 }
 
 h1 {
   margin: 0;
   color: var(--ink);
-  font-size: 38px;
-  line-height: 1.18;
+  font-size: 33px;
+  line-height: 1.16;
   letter-spacing: -0.055em;
   font-weight: 900;
 }
 
 .subtitle {
-  margin: 13px 0 0;
+  margin: 9px 0 0;
   color: var(--muted);
-  font-size: 16.5px;
-  line-height: 1.58;
+  font-size: 14.7px;
+  line-height: 1.48;
 }
 
 .meta-table {
   width: 100%;
-  margin-top: 21px;
+  margin-top: 15px;
   border-collapse: collapse;
   table-layout: fixed;
-  font-size: 12.8px;
+  font-size: 11.7px;
   background: #ffffff;
 }
 
 .meta-table th,
 .meta-table td {
   border: 1px solid var(--line);
-  padding: 8px 10px;
+  padding: 5.5px 7px;
   vertical-align: middle;
 }
 
 .meta-table th {
-  width: 11%;
+  width: 10%;
   background: var(--table-header);
   color: var(--accent-dark);
   font-weight: 900;
   white-space: nowrap;
 }
 
-.meta-table td {
-  color: var(--body);
-}
-
 .keyword-line {
-  margin-top: 14px;
-  padding-top: 13px;
+  margin-top: 9px;
+  padding-top: 8px;
   border-top: 1px solid var(--line);
   color: var(--body);
-  font-size: 13.2px;
-  line-height: 1.6;
+  font-size: 12px;
+  line-height: 1.45;
 }
 
 .keyword-line strong {
@@ -140,63 +150,91 @@ h1 {
 }
 
 .abstract {
-  margin: 21px 0 24px;
-  padding: 17px 19px;
+  margin: 15px 0 13px;
+  padding: 12px 14px;
   background: var(--box-bg);
   border: 1px solid var(--line);
-  border-left: 6px solid var(--accent);
+  border-left: 5px solid var(--accent);
 }
 
 .abstract-title {
-  margin: 0 0 8px;
+  margin: 0 0 5px;
   color: var(--accent-dark);
-  font-size: 16px;
+  font-size: 14.2px;
   font-weight: 900;
 }
 
+.note-box {
+  margin: 11px 0 17px;
+  padding: 11px 14px;
+  background: var(--box-bg);
+  border: 1px solid var(--line);
+}
+
+.note-box p {
+  margin-bottom: 5px;
+}
+
+.note-caption {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 11.4px;
+  line-height: 1.45;
+}
+
 .section {
-  margin: 27px 0 31px;
+  margin: 18px 0 20px;
   padding-top: 1px;
   border-top: 1px solid var(--line-soft);
 }
 
-.section:first-of-type {
+.section.first-section {
   border-top: 0;
 }
 
 .section-label {
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   color: var(--accent);
-  font-size: 12.5px;
+  font-size: 11.3px;
   font-weight: 900;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.07em;
   break-after: avoid;
 }
 
 .section-title {
-  margin: 0 0 12px;
+  margin: 0 0 8px;
   color: var(--ink);
-  font-size: 23px;
-  line-height: 1.34;
+  font-size: 20.5px;
+  line-height: 1.28;
   letter-spacing: -0.04em;
   font-weight: 900;
   break-after: avoid;
 }
 
-.subsection .section-label {
-  font-size: 18px;
-  letter-spacing: -0.02em;
+.subsection {
+  margin: 14px 0 16px;
+  border-top: 0;
 }
 
-.subsection .section-title {
-  font-size: 18.5px;
+.subsection-title {
+  margin: 0 0 7px;
+  color: var(--ink);
+  font-size: 16.2px;
+  line-height: 1.35;
+  letter-spacing: -0.035em;
+  font-weight: 900;
+  break-after: avoid;
+}
+
+.subsection-title .subsection-label-inline {
   color: var(--accent);
+  margin-right: 4px;
 }
 
 p {
-  margin: 0 0 12px;
-  font-size: 14.8px;
-  line-height: 1.76;
+  margin: 0 0 8px;
+  font-size: 13.25px;
+  line-height: 1.64;
   orphans: 2;
   widows: 2;
 }
@@ -208,60 +246,131 @@ strong {
 .keep-together,
 .table-block,
 .term-box,
+.flow-block,
 .takeaway-block,
 .reading-block,
-.abstract {
+.abstract,
+.note-box {
   break-inside: avoid;
   page-break-inside: avoid;
 }
 
-.term-box,
-.takeaway-block,
-.reading-block {
-  margin: 22px 0 28px;
-  padding: 18px 20px;
+.term-box {
+  margin: 14px 0 16px;
+  padding: 12px 14px;
   background: var(--box-bg);
   border: 1px solid var(--line);
-  border-left: 6px solid var(--accent);
 }
 
 .box-title {
-  margin: 0 0 11px;
+  margin: 0 0 9px;
   color: var(--accent-dark);
-  font-size: 18px;
+  font-size: 15.5px;
   font-weight: 900;
   letter-spacing: -0.02em;
 }
 
-ul,
-ol {
-  margin: 6px 0 0;
-  padding-left: 20px;
+.term-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border: 1px solid var(--line);
+  background: #ffffff;
 }
 
-li {
-  margin: 7px 0;
-  font-size: 14.5px;
-  line-height: 1.68;
+.term-item {
+  min-height: 68px;
+  padding: 9px 10px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.term-item:nth-child(2n) {
+  border-right: 0;
+}
+
+.term-item:nth-last-child(-n+2) {
+  border-bottom: 0;
+}
+
+.term-name {
+  margin: 0 0 4px;
+  color: var(--accent);
+  font-size: 12.8px;
+  font-weight: 900;
+}
+
+.term-description {
+  margin: 0;
+  color: var(--body);
+  font-size: 11.9px;
+  line-height: 1.5;
+}
+
+.flow-block {
+  margin: 14px 0 20px;
+  padding: 12px 14px;
+  background: #fffdf8;
+  border: 1px solid var(--line);
+}
+
+.flow-title {
+  margin: 0 0 8px;
+  color: var(--accent-dark);
+  font-size: 14.2px;
+  font-weight: 900;
+}
+
+.flow-steps {
+  display: flex;
+  align-items: stretch;
+  gap: 6px;
+  margin: 8px 0;
+}
+
+.flow-step {
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 6px 7px;
+  background: var(--box-bg-strong);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-size: 11.7px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 1.35;
+}
+
+.flow-arrow {
+  display: flex;
+  align-items: center;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.caption,
+.flow-caption {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 10.8px;
+  line-height: 1.42;
+  text-align: center;
 }
 
 .table-block {
-  margin: 24px 0 30px;
+  margin: 16px 0 20px;
   break-inside: avoid;
   page-break-inside: avoid;
 }
 
-.table-label {
-  margin-bottom: 7px;
-  color: var(--accent);
-  font-size: 13px;
-  font-weight: 900;
-}
-
 .table-title {
-  margin: 0 0 9px;
+  margin: 0 0 6px;
   color: var(--accent-dark);
-  font-size: 16.5px;
+  font-size: 14px;
   font-weight: 900;
 }
 
@@ -269,16 +378,17 @@ table {
   width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
-  margin-top: 7px;
+  margin-top: 5px;
   background: #ffffff;
-  font-size: 13px;
+  font-size: 11.5px;
 }
 
 th,
 td {
   border: 1px solid var(--line);
-  padding: 8px 9px;
+  padding: 5.6px 6.4px;
   vertical-align: top;
+  line-height: 1.45;
 }
 
 th {
@@ -289,35 +399,47 @@ th {
 
 th:first-child,
 td:first-child {
-  width: 13%;
-  white-space: nowrap;
+  width: 15%;
   font-weight: 900;
 }
 
-.caption {
-  margin-top: 7px;
-  color: var(--muted);
-  font-size: 12.2px;
-  line-height: 1.5;
-  text-align: center;
+.takeaway-block {
+  margin: 20px 0 20px;
+}
+
+.takeaway-title {
+  margin: 0;
+  color: var(--accent);
+  font-size: 11.3px;
+  font-weight: 900;
+  letter-spacing: 0.07em;
+}
+
+.takeaway-subtitle {
+  margin: 3px 0 10px;
+  color: var(--ink);
+  font-size: 19px;
+  line-height: 1.28;
+  letter-spacing: -0.04em;
+  font-weight: 900;
 }
 
 .takeaway-list {
   display: grid;
-  gap: 10px;
-  margin-top: 12px;
+  gap: 8px;
 }
 
 .takeaway-card {
-  padding: 13px 15px;
-  background: #fffdf8;
+  padding: 10px 12px;
+  background: var(--box-bg);
   border: 1px solid var(--line);
+  border-left: 5px solid var(--accent);
 }
 
 .takeaway-card-title {
-  margin: 0 0 5px;
+  margin: 0 0 4px;
   color: var(--accent);
-  font-size: 14.5px;
+  font-size: 12.7px;
   font-weight: 900;
 }
 
@@ -325,54 +447,74 @@ td:first-child {
   margin-bottom: 0;
 }
 
+.reading-block {
+  margin: 18px 0 12px;
+}
+
+.reading-list {
+  margin: 7px 0 0;
+  padding-left: 17px;
+}
+
 .reading-list li {
-  margin-bottom: 9px;
+  margin: 5px 0;
+  font-size: 12.3px;
+  line-height: 1.5;
+}
+
+.sources {
+  margin-top: 15px;
+  padding-top: 9px;
+  border-top: 1px solid var(--line);
+}
+
+.sources-title {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-size: 13.5px;
+  font-weight: 900;
 }
 
 .source-list {
-  margin-top: 10px;
+  margin: 0;
   padding-left: 0;
   list-style: none;
 }
 
 .source-list li {
-  margin: 6px 0;
+  display: inline;
   color: var(--muted);
-  font-size: 11.8px;
-  line-height: 1.45;
+  font-size: 9.8px;
+  line-height: 1.42;
 }
 
-.sources {
-  margin-top: 24px;
-  padding-top: 14px;
-  border-top: 1px solid var(--line);
+.source-list li::after {
+  content: "; ";
 }
 
-.sources-title {
-  margin: 0 0 8px;
-  color: var(--ink);
-  font-size: 16px;
-  font-weight: 900;
+.source-list li:last-child::after {
+  content: "";
+}
+
+.source-list a {
+  color: var(--muted);
+  text-decoration: none;
 }
 
 .footer-note {
-  margin-top: 30px;
-  padding-top: 12px;
+  margin-top: 18px;
+  padding-top: 8px;
   border-top: 1px solid var(--line);
   color: var(--muted);
-  font-size: 11.5px;
+  font-size: 10.2px;
   text-align: center;
 }
 
 @media screen {
-  body {
-    background: var(--bg);
-  }
-
   .report-page {
     max-width: 1040px;
     margin: 0 auto;
-    padding: 40px 44px 56px;
+    padding: 34px 42px 52px;
     box-shadow: 0 18px 42px rgba(57, 38, 20, 0.08);
   }
 }
@@ -383,7 +525,7 @@ td:first-child {
   }
 
   h1 {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .meta-table,
@@ -398,6 +540,30 @@ td:first-child {
   .meta-table th {
     border-bottom: 0;
   }
+
+  .term-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .term-item,
+  .term-item:nth-child(2n),
+  .term-item:nth-last-child(-n+2) {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .term-item:last-child {
+    border-bottom: 0;
+  }
+
+  .flow-steps {
+    flex-direction: column;
+  }
+
+  .flow-arrow {
+    justify-content: center;
+    transform: rotate(90deg);
+  }
 }
 
 @media print {
@@ -405,57 +571,136 @@ td:first-child {
     background: #ffffff;
   }
 
+  .screen-header {
+    display: none;
+  }
+
+  .print-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 9.4px;
+    font-weight: 700;
+    line-height: 1.2;
+    background: #ffffff;
+    z-index: 10;
+  }
+
+  .print-footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 9.4px;
+    text-align: center;
+    background: #ffffff;
+    z-index: 10;
+  }
+
+  .print-footer::after {
+    content: counter(page);
+  }
+
   .report-page {
     max-width: none;
     margin: 0;
-    padding: 0;
+    padding: 16px 0 16px;
     background: #ffffff;
     box-shadow: none;
   }
 
   h1 {
-    font-size: 32px;
+    font-size: 28.5px;
   }
 
   .subtitle {
-    font-size: 15px;
-  }
-
-  .section {
-    margin: 23px 0 28px;
-  }
-
-  .section-title {
-    font-size: 20.5px;
-  }
-
-  .subsection .section-title {
-    font-size: 17.5px;
-  }
-
-  p {
-    font-size: 13.35px;
-    line-height: 1.68;
-  }
-
-  li {
     font-size: 13px;
   }
 
+  .journal-label {
+    font-size: 10.3px;
+  }
+
+  .meta-table {
+    font-size: 10.4px;
+  }
+
+  .meta-table th,
+  .meta-table td {
+    padding: 4.5px 5.6px;
+  }
+
+  .keyword-line {
+    font-size: 11px;
+  }
+
+  .abstract {
+    margin: 12px 0 10px;
+    padding: 10px 12px;
+  }
+
+  .section {
+    margin: 15px 0 16px;
+  }
+
+  .section-title {
+    font-size: 18.2px;
+  }
+
+  .subsection-title {
+    font-size: 14.8px;
+  }
+
+  p {
+    font-size: 11.75px;
+    line-height: 1.56;
+    margin-bottom: 6.5px;
+  }
+
+  .term-description {
+    font-size: 10.7px;
+  }
+
+  .flow-step {
+    font-size: 10.6px;
+    min-height: 30px;
+    padding: 5px 5px;
+  }
+
   table {
-    font-size: 11.6px;
+    font-size: 10.25px;
   }
 
   th,
   td {
-    padding: 6.3px 7.2px;
+    padding: 4.5px 5.3px;
   }
 
-  .term-box,
-  .takeaway-block,
-  .reading-block,
-  .abstract {
-    padding: 14px 16px;
+  .caption,
+  .flow-caption {
+    font-size: 9.7px;
+  }
+
+  .takeaway-card {
+    padding: 8px 10px;
+  }
+
+  .reading-list li {
+    font-size: 10.9px;
+  }
+
+  .footer-note {
+    display: none;
   }
 }
 </style>
@@ -463,27 +708,58 @@ td:first-child {
 
 <body>
 
-{% macro render_section(section) %}
-{% set section_id = section.get("id", "") %}
-{% set section_label = section.get("label", "") %}
-{% set section_title = section.get("title", "") %}
-{% set section_text = (section_label ~ ' ' ~ section_title) %}
-{% set blocked = 'PROJECT DB' in section_text or '주제 DB' in section_text or '운영 메모' in section_text or '다음 회차 후보' in section_text or '후보 우선순위' in section_text or '반복 회피' in section_text or '다양성 확보' in section_text or 'candidate_pool' in section_text or 'topic_db' in section_text or 'GitHub Actions' in section_text or 'mock 실행' in section_text or 'API 실행' in section_text %}
-{% if not blocked %}
-<section class="section {% if section_id[0:3] == '03-' %}subsection{% endif %}">
-  <div class="section-label">{{ section.label }}</div>
-  <h2 class="section-title">{{ section.title }}</h2>
-  {% for paragraph in section.body %}
-  <p>{{ paragraph }}</p>
-  {% endfor %}
+{% set raw_date = report.date|string %}
+{% if raw_date|length >= 10 %}
+  {% set date_dot = raw_date[0:4] ~ "." ~ raw_date[5:7] ~ "." ~ raw_date[8:10] %}
+  {% set date_kr = raw_date[0:4] ~ "년 " ~ raw_date[5:7] ~ "월 " ~ raw_date[8:10] ~ "일" %}
+{% else %}
+  {% set date_dot = raw_date %}
+  {% set date_kr = raw_date %}
+{% endif %}
+
+{% macro render_note(note) %}
+{% if note is defined and note %}
+<section class="note-box keep-together">
+  {% if note.body is defined and note.body %}
+  <p><strong>{{ note.body }}</strong></p>
+  {% endif %}
+  {% if note.caption is defined and note.caption %}
+  <div class="note-caption">{{ note.caption }}</div>
+  {% endif %}
 </section>
 {% endif %}
 {% endmacro %}
 
+{% macro render_notes_for(hints) %}
+{% if report.section_notes is defined %}
+  {% for note in report.section_notes %}
+    {% set placement_hint = note.get("placement_hint", "") %}
+    {% if placement_hint in hints %}
+      {{ render_note(note) }}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+{% endmacro %}
+
+{% macro render_section(section, first=False) %}
+{% set section_id = section.get("id", "") %}
+{% set section_label = section.get("label", "") %}
+{% set section_title = section.get("title", "") %}
+{% set is_subsection = section_id[0:3] == "03-" or section_label[0:3] == "03-" %}
+<section class="section {% if first %}first-section{% endif %} {% if is_subsection %}subsection{% endif %}">
+  {% if is_subsection %}
+    <h2 class="subsection-title"><span class="subsection-label-inline">{{ section_label }}</span>{{ section_title }}</h2>
+  {% else %}
+    <div class="section-label">{{ section_label }}</div>
+    <h2 class="section-title">{{ section_title }}</h2>
+  {% endif %}
+  {% for paragraph in section.body %}
+  <p>{{ paragraph }}</p>
+  {% endfor %}
+</section>
+{% endmacro %}
+
 {% macro render_table(table) %}
-{% set table_text = table.title %}
-{% set blocked = 'PROJECT DB' in table_text or '주제 DB' in table_text or '운영 메모' in table_text or '다음 회차 후보' in table_text or '후보 우선순위' in table_text or '반복 회피' in table_text or '다양성 확보' in table_text or 'candidate_pool' in table_text or 'topic_db' in table_text or 'GitHub Actions' in table_text or 'mock 실행' in table_text or 'API 실행' in table_text %}
-{% if not blocked %}
 <section class="table-block keep-together">
   <div class="table-title">{{ table.title }}</div>
   <table>
@@ -508,7 +784,6 @@ td:first-child {
   <div class="caption">{{ table.caption }}</div>
   {% endif %}
 </section>
-{% endif %}
 {% endmacro %}
 
 {% macro render_tables_for(hints) %}
@@ -520,14 +795,27 @@ td:first-child {
 {% endfor %}
 {% endmacro %}
 
+{% set table_state = namespace(has_table_08=false) %}
+{% for table in report.tables %}
+  {% if table.get("placement_hint", "") == "08" %}
+    {% set table_state.has_table_08 = true %}
+  {% endif %}
+{% endfor %}
+
+<div class="print-header">
+  <div>GLOBAL KNOWLEDGE JOURNAL / {{ date_dot }}</div>
+  <div>{{ report.category.main }} / {{ report.category.middle }}{% if report.category.sub is defined and report.category.sub %} / {{ report.category.sub }}{% endif %}</div>
+</div>
+<div class="print-footer"></div>
+
 <main class="report-page">
-  <header class="report-header">
-    <div>GLOBAL KNOWLEDGE JOURNAL / {{ report.date }}</div>
+  <header class="screen-header">
+    <div>GLOBAL KNOWLEDGE JOURNAL / {{ date_dot }}</div>
     <div>{{ report.category.main }} / {{ report.category.middle }}{% if report.category.sub is defined and report.category.sub %} / {{ report.category.sub }}{% endif %}</div>
   </header>
 
   <section class="cover keep-together">
-    <p class="journal-label">GLOBAL KNOWLEDGE JOURNAL</p>
+    <p class="journal-label">GLOBAL KNOWLEDGE JOURNAL / {{ report.category.main }} · {{ report.category.middle }}{% if report.category.sub is defined and report.category.sub %} · {{ report.category.sub }}{% endif %}</p>
     <h1>{{ report.title }}</h1>
     <p class="subtitle">{{ report.subtitle }}</p>
 
@@ -535,9 +823,9 @@ td:first-child {
       <tbody>
         <tr>
           <th>발행일</th>
-          <td>{{ report.date }}</td>
+          <td>{{ date_kr }}</td>
           <th>분야</th>
-          <td>{{ report.category.main }} / {{ report.category.middle }}</td>
+          <td>{{ report.category.main }} / {{ report.category.middle }}{% if report.category.sub is defined and report.category.sub %} / {{ report.category.sub }}{% endif %}</td>
           <th>난이도</th>
           <td>{{ report.difficulty }}</td>
         </tr>
@@ -573,11 +861,15 @@ td:first-child {
   </section>
   {% endif %}
 
-    {% for section in report.sections %}
+  {% if report.summary_note is defined %}
+    {{ render_note(report.summary_note) }}
+  {% endif %}
+
+  {% for section in report.sections %}
     {% set section_id = section.get("id", "") %}
     {% set section_label = section.get("label", "") %}
     {% if section_id == "01" or "01 / CONTEXT" in section_label %}
-      {{ render_section(section) }}
+      {{ render_section(section, true) }}
     {% endif %}
   {% endfor %}
 
@@ -588,6 +880,37 @@ td:first-child {
       {{ render_section(section) }}
     {% endif %}
   {% endfor %}
+
+  {% if report.term_box is defined and report.term_box %}
+  <section class="term-box keep-together">
+    <h2 class="box-title">{{ report.term_box.title }}</h2>
+    <div class="term-grid">
+      {% for item in report.term_box.items %}
+      <div class="term-item">
+        <p class="term-name">{{ item.term }}</p>
+        <p class="term-description">{{ item.description }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if report.flow_diagram is defined and report.flow_diagram %}
+  <section class="flow-block keep-together">
+    <h2 class="flow-title">{{ report.flow_diagram.title }}</h2>
+    <div class="flow-steps">
+      {% for step in report.flow_diagram.steps %}
+      <div class="flow-step">{{ step }}</div>
+      {% if not loop.last %}
+      <div class="flow-arrow">→</div>
+      {% endif %}
+      {% endfor %}
+    </div>
+    {% if report.flow_diagram.caption is defined and report.flow_diagram.caption %}
+    <div class="flow-caption">{{ report.flow_diagram.caption }}</div>
+    {% endif %}
+  </section>
+  {% endif %}
 
   {{ render_tables_for(["02"]) }}
 
@@ -609,6 +932,7 @@ td:first-child {
     {% endif %}
   {% endfor %}
 
+  {{ render_notes_for(["04"]) }}
   {{ render_tables_for(["04"]) }}
 
   {% for section in report.sections %}
@@ -629,6 +953,7 @@ td:first-child {
     {% endif %}
   {% endfor %}
 
+  {{ render_notes_for(["06"]) }}
   {{ render_tables_for(["06"]) }}
 
   {% for table in report.tables %}
@@ -640,7 +965,8 @@ td:first-child {
 
   {% if report.takeaways is defined %}
   <section class="takeaway-block keep-together">
-    <h2 class="box-title">07 / TAKEAWAYS</h2>
+    <div class="takeaway-title">07 / TAKEAWAYS</div>
+    <h2 class="takeaway-subtitle">핵심 정리와 한마디</h2>
     <div class="takeaway-list">
       {% for item in report.takeaways %}
       <div class="takeaway-card">
@@ -660,10 +986,11 @@ td:first-child {
   </section>
   {% endif %}
 
-  {% if report.further_reading is defined %}
-  <section class="reading-block keep-together">
+  <section class="reading-block">
     <div class="section-label">08 / FURTHER READING</div>
-    <h2 class="box-title">더 읽을거리</h2>
+    <h2 class="section-title">더 읽을거리</h2>
+
+    {% if not table_state.has_table_08 and report.further_reading is defined %}
     <ul class="reading-list">
       {% for item in report.further_reading %}
       <li>
@@ -684,8 +1011,8 @@ td:first-child {
       </li>
       {% endfor %}
     </ul>
+    {% endif %}
   </section>
-  {% endif %}
 
   {{ render_tables_for(["08"]) }}
 
@@ -698,8 +1025,8 @@ td:first-child {
         {% if source is mapping %}
           {% if source.publisher is defined %}<strong>{{ source.publisher }}</strong>{% endif %}
           {% if source.title is defined %}, {{ source.title }}{% endif %}
-          {% if source.url is defined and source.url %} — {{ source.url }}{% endif %}
-          {% if source.used_for is defined and source.used_for %} / {{ source.used_for }}{% endif %}
+          {% if source.url is defined and source.url %}, <a href="{{ source.url }}">link</a>{% endif %}
+          {% if source.used_for is defined and source.used_for %}, {{ source.used_for }}{% endif %}
         {% else %}
           {{ source }}
         {% endif %}
@@ -710,7 +1037,7 @@ td:first-child {
   {% endif %}
 
   <footer class="footer-note">
-    GLOBAL KNOWLEDGE JOURNAL · {{ report.date }}
+    GLOBAL KNOWLEDGE JOURNAL · {{ date_dot }}
   </footer>
 </main>
 </body>

@@ -13,8 +13,12 @@
       "category",
       "keywords",
       "abstract",
+      "summary_note",
       "sections",
+      "term_box",
+      "flow_diagram",
       "tables",
+      "section_notes",
       "takeaways",
       "further_reading",
       "sources"
@@ -22,15 +26,15 @@
     "properties": {
       "date": {
         "type": "string",
-        "description": "발행일. 예: 2026-07-20"
+        "description": "발행일. 예: 2026-08-01"
       },
       "title": {
         "type": "string",
-        "description": "리포트 메인 제목"
+        "description": "리포트 메인 제목. 선정 주제와 정확히 같아야 한다."
       },
       "title_slug": {
         "type": "string",
-        "description": "파일명에 사용할 짧은 한글 또는 영문 슬러그. 공백 없이 작성"
+        "description": "파일명에 사용할 영문 소문자 slug. 공백 없이 작성한다."
       },
       "subtitle": {
         "type": "string",
@@ -38,11 +42,11 @@
       },
       "difficulty": {
         "type": "string",
-        "description": "난이도. 하, 중, 상 중 하나"
+        "description": "난이도. 예: 하, 중, 상"
       },
       "estimated_reading_time": {
         "type": "string",
-        "description": "예상 읽기 시간. 예: 15-18분"
+        "description": "예상 읽기 시간. 예: 13-16분"
       },
       "category": {
         "type": "object",
@@ -55,21 +59,21 @@
         "properties": {
           "main": {
             "type": "string",
-            "description": "대분류. 예: 언어·문자"
+            "description": "대분류"
           },
           "middle": {
             "type": "string",
-            "description": "중분류. 예: 영상번역"
+            "description": "중분류"
           },
           "sub": {
             "type": "string",
-            "description": "소분류. 예: 자막과 더빙"
+            "description": "소분류"
           }
         }
       },
       "keywords": {
         "type": "array",
-        "description": "핵심 키워드 5~8개",
+        "description": "핵심어 6~8개",
         "items": {
           "type": "string"
         }
@@ -78,9 +82,28 @@
         "type": "string",
         "description": "리포트 초록. 3~5문장"
       },
+      "summary_note": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "body",
+          "caption"
+        ],
+        "properties": {
+          "body": {
+            "type": "string",
+            "description": "Abstract 아래에 들어갈 짧은 관점 제시 문장. 1~2문장"
+          },
+          "caption": {
+            "type": "string",
+            "description": "보조 설명. 예: - 주요 개념과 사례를 바탕으로 정리"
+          }
+        }
+      },
+
       "sections": {
         "type": "array",
-        "description": "01~06 본문 섹션. 07과 08은 별도 필드로 처리",
+        "description": "01~06 본문 섹션. 07과 08은 별도 필드로 처리한다.",
         "items": {
           "type": "object",
           "additionalProperties": false,
@@ -93,11 +116,11 @@
           "properties": {
             "id": {
               "type": "string",
-              "description": "섹션 ID. 예: 01"
+              "description": "섹션 ID. 예: 01, 02, 03, 03-1, 04"
             },
             "label": {
               "type": "string",
-              "description": "섹션 라벨. 예: 01 / CONTEXT"
+              "description": "섹션 라벨. 예: 01 / CONTEXT, 03-1."
             },
             "title": {
               "type": "string",
@@ -105,7 +128,7 @@
             },
             "body": {
               "type": "array",
-              "description": "섹션 본문 문단 배열. 각 문단은 2~4문장 권장",
+              "description": "섹션 본문 문단 배열",
               "items": {
                 "type": "string"
               }
@@ -113,9 +136,71 @@
           }
         }
       },
+      "term_box": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "title",
+          "items"
+        ],
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "보통 '핵심 용어'로 작성한다."
+          },
+          "items": {
+            "type": "array",
+            "description": "핵심 용어 4개. 2x2 박스로 표시된다.",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "term",
+                "description"
+              ],
+              "properties": {
+                "term": {
+                  "type": "string",
+                  "description": "용어명"
+                },
+                "description": {
+                  "type": "string",
+                  "description": "용어 설명. 1~2문장"
+                }
+              }
+            }
+          }
+        }
+      },
+      "flow_diagram": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "title",
+          "steps",
+          "caption"
+        ],
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "흐름도 제목. 예: <그림1> 도시 하수도가 바꾼 위생의 흐름"
+          },
+          "steps": {
+            "type": "array",
+            "description": "흐름도 단계 4~6개",
+            "items": {
+              "type": "string"
+            }
+          },
+          "caption": {
+            "type": "string",
+            "description": "흐름도 아래 설명"
+          }
+        }
+      },
       "tables": {
         "type": "array",
-        "description": "리포트에 포함할 표. 표 제목, 본체, 설명문은 같은 페이지에 배치해야 함",
+        "description": "리포트에 포함할 표 목록. placement_hint로 배치 위치를 지정한다.",
         "items": {
           "type": "object",
           "additionalProperties": false,
@@ -134,7 +219,7 @@
             },
             "title": {
               "type": "string",
-              "description": "표 제목. 예: <표1> 자막과 더빙의 차이"
+              "description": "표 제목. 예: <표1> 하수도 시스템 유형별 특징 비교"
             },
             "headers": {
               "type": "array",
@@ -155,18 +240,45 @@
             },
             "caption": {
               "type": "string",
-              "description": "표 아래에 들어갈 설명문. 표와 같은 페이지에 있어야 함"
+              "description": "표 아래 설명 문장"
             },
             "placement_hint": {
               "type": "string",
-              "description": "이 표가 연결되는 섹션 ID. 예: 02, 03, 04"
+              "description": "표가 연결되는 섹션 ID. 예: 03, 04, 05, 08"
+            }
+          }
+        }
+      },
+      "section_notes": {
+        "type": "array",
+        "description": "특정 섹션 뒤에 들어가는 보조 코멘트 박스",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "placement_hint",
+            "body",
+            "caption"
+          ],
+          "properties": {
+            "placement_hint": {
+              "type": "string",
+              "description": "노트가 들어갈 섹션 ID. 예: 04"
+            },
+            "body": {
+              "type": "string",
+              "description": "강조 문장. 1~2문장"
+            },
+            "caption": {
+              "type": "string",
+              "description": "보조 설명. 예: - 사례를 바탕으로 정리"
             }
           }
         }
       },
       "takeaways": {
         "type": "array",
-        "description": "07 / TAKEAWAYS에 들어갈 핵심 정리 박스",
+        "description": "07 / TAKEAWAYS에 들어갈 핵심 정리 박스 3개",
         "items": {
           "type": "object",
           "additionalProperties": false,
@@ -177,7 +289,7 @@
           "properties": {
             "title": {
               "type": "string",
-              "description": "박스 제목. 예: 핵심 정리, 요약, 한마디"
+              "description": "박스 제목. 반드시 핵심 정리, 요약, 한마디 중 하나"
             },
             "body": {
               "type": "string",
@@ -200,11 +312,11 @@
           "properties": {
             "title": {
               "type": "string",
-              "description": "책 제목"
+              "description": "책 또는 자료 제목"
             },
             "author": {
               "type": "string",
-              "description": "저자"
+              "description": "저자 또는 기관"
             },
             "reason": {
               "type": "string",
@@ -240,7 +352,7 @@
             },
             "used_for": {
               "type": "string",
-              "description": "이 출처를 어떤 내용에 사용했는지"
+              "description": "이 출처를 사용한 목적"
             }
           }
         }
