@@ -1,13 +1,13 @@
 {
   "date": "2026-08-01",
-  "title": "타이포그래피의 목소리: 글자는 어떻게 말투가 되었나",
-  "subtitle": "글자가 시각적 언어로서 의사소통하는 원리와 역사",
-  "main_category": "예술·미학",
-  "mid_category": "그래픽디자인",
+  "title": "도시의 하수도: 보이지 않는 위생 인프라는 어떻게 문명을 바꾸었나",
+  "subtitle": "도시 생활의 보이지 않는 위생 혁명, 하수도가 어떻게 공중보건과 문명을 변화시켰는가",
+  "main_category": "생활기술·일상문화",
+  "mid_category": "도시인프라",
   "sub_category": "",
-  "html_path": "outputs/20260801_typographysvoice_Report.html",
-  "pdf_path": "outputs/20260801_typographysvoice_Report.pdf",
-  "html_url": "outputs/20260801_typographysvoice_Report.html",
-  "pdf_url": "outputs/20260801_typographysvoice_Report.pdf",
+  "html_path": "outputs/20260801_dosiui_hasudo_boinneun_w_Report.html",
+  "pdf_path": "outputs/20260801_dosiui_hasudo_boinneun_w_Report.pdf",
+  "html_url": "outputs/20260801_dosiui_hasudo_boinneun_w_Report.html",
+  "pdf_url": "outputs/20260801_dosiui_hasudo_boinneun_w_Report.pdf",
   "status": "published_api"
 }
