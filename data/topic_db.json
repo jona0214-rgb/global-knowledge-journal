@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-08-01",
+  "updated_at": "2026-08-02",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -163,15 +163,35 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260801_aijeonri_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260801_aijeonri_Report.pdf",
       "status": "published_mock"
+    },
+    {
+      "date": "2026-08-02",
+      "title": "달력의 역사: 인간은 어떻게 시간을 나누고 약속했나",
+      "main_category": "역사·문화",
+      "mid_category": "시간문화",
+      "sub_category": "",
+      "keywords": [
+        "달력",
+        "시간 분할",
+        "천문학",
+        "사회 약속",
+        "역사적 진화",
+        "태양력",
+        "음력",
+        "시민생활"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260802_history_of_calendar_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260802_history_of_calendar_Report.pdf",
+      "status": "published_mock"
     }
   ],
   "category_rotation": {
     "recent_main_categories": [
-      "역사·문화",
       "경제·사회",
       "인문·철학",
       "환경",
-      "기술"
+      "기술",
+      "역사·문화"
     ],
     "next_priority": [
       "인문·철학",
@@ -239,7 +259,7 @@
       "main_category": "역사·문화",
       "mid_category": "시간문화",
       "priority": 0.74,
-      "status": "candidate"
+      "status": "used"
     }
   ]
 }

@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>달력의 역사: 인간은 어떻게 시간을 나누고 약속했나</title>
+
+<style>
+@page {
+  size: A4;
+  margin: 13mm 14mm 12mm;
+}
+
+:root {
+  --paper: #fffdf8;
+  --ink: #1f1b16;
+  --body: #2b241d;
+  --muted: #665c52;
+  --line: #cbbba7;
+  --line-soft: #ded1c2;
+  --accent: #8a5a2b;
+  --accent-dark: #4d3018;
+  --table-header: #e7d9c5;
+  --box-bg: #f8f3ec;
+  --box-bg-strong: #f1e6d8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:
+    "Noto Sans KR",
+    "Noto Sans CJK KR",
+    "Pretendard",
+    "NanumGothic",
+    "Nanum Gothic",
+    "Malgun Gothic",
+    "Apple SD Gothic Neo",
+    sans-serif;
+  color: var(--body);
+  background: #f4f0e8;
+  line-height: 1.62;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+
+
+  
+  
+
+
+.report-page {
+  background: var(--paper);
+}
+
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 7px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 10.8px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.print-header,
+.print-footer {
+  display: none;
+}
+
+.cover {
+  margin-bottom: 15px;
+  padding-bottom: 13px;
+  border-bottom: 1.5px solid var(--accent-dark);
+}
+
+.journal-label {
+  margin: 0 0 8px;
+  color: var(--accent);
+  font-size: 11.2px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+h1 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 33px;
+  line-height: 1.16;
+  letter-spacing: -0.055em;
+  font-weight: 900;
+}
+
+.subtitle {
+  margin: 9px 0 0;
+  color: var(--muted);
+  font-size: 14.7px;
+  line-height: 1.48;
+}
+
+.meta-table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 11.7px;
+  background: #ffffff;
+}
+
+.meta-table th,
+.meta-table td {
+  border: 1px solid var(--line);
+  padding: 5.5px 7px;
+  vertical-align: middle;
+}
+
+.meta-table th {
+  width: 10%;
+  background: var(--table-header);
+  color: var(--accent-dark);
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.keyword-line {
+  margin-top: 9px;
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+  color: var(--body);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.keyword-line strong {
+  color: var(--accent);
+}
+
+.abstract {
+  margin: 15px 0 13px;
+  padding: 12px 14px;
+  background: var(--box-bg);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--accent);
+}
+
+.abstract-title {
+  margin: 0 0 5px;
+  color: var(--accent-dark);
+  font-size: 14.2px;
+  font-weight: 900;
+}
+
+.note-box {
+  margin: 11px 0 17px;
+  padding: 11px 14px;
+  background: var(--box-bg);
+  border: 1px solid var(--line);
+}
+
+.note-box p {
+  margin-bottom: 5px;
+}
+
+.note-caption {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 11.4px;
+  line-height: 1.45;
+}
+
+.section {
+  margin: 18px 0 20px;
+  padding-top: 1px;
+  border-top: 1px solid var(--line-soft);
+}
+
+.section.first-section {
+  border-top: 0;
+}
+
+.section-label {
+  margin-bottom: 4px;
+  color: var(--accent);
+  font-size: 11.3px;
+  font-weight: 900;
+  letter-spacing: 0.07em;
+  break-after: avoid;
+}
+
+.section-title {
+  margin: 0 0 8px;
+  color: var(--ink);
+  font-size: 20.5px;
+  line-height: 1.28;
+  letter-spacing: -0.04em;
+  font-weight: 900;
+  break-after: avoid;
+}
+
+.subsection {
+  margin: 14px 0 16px;
+  border-top: 0;
+}
+
+.subsection-title {
+  margin: 0 0 7px;
+  color: var(--ink);
+  font-size: 16.2px;
+  line-height: 1.35;
+  letter-spacing: -0.035em;
+  font-weight: 900;
+  break-after: avoid;
+}
+
+.subsection-title .subsection-label-inline {
+  color: var(--accent);
+  margin-right: 4px;
+}
+
+p {
+  margin: 0 0 8px;
+  font-size: 13.25px;
+  line-height: 1.64;
+  orphans: 2;
+  widows: 2;
+}
+
+strong {
+  color: var(--accent-dark);
+}
+
+.keep-together,
+.table-block,
+.term-box,
+.flow-block,
+.takeaway-block,
+.reading-block,
+.abstract,
+.note-box {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.term-box {
+  margin: 14px 0 16px;
+  padding: 12px 14px;
+  background: var(--box-bg);
+  border: 1px solid var(--line);
+}
+
+.box-title {
+  margin: 0 0 9px;
+  color: var(--accent-dark);
+  font-size: 15.5px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.term-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border: 1px solid var(--line);
+  background: #ffffff;
+}
+
+.term-item {
+  min-height: 68px;
+  padding: 9px 10px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.term-item:nth-child(2n) {
+  border-right: 0;
+}
+
+.term-item:nth-last-child(-n+2) {
+  border-bottom: 0;
+}
+
+.term-name {
+  margin: 0 0 4px;
+  color: var(--accent);
+  font-size: 12.8px;
+  font-weight: 900;
+}
+
+.term-description {
+  margin: 0;
+  color: var(--body);
+  font-size: 11.9px;
+  line-height: 1.5;
+}
+
+.flow-block {
+  margin: 14px 0 20px;
+  padding: 12px 14px;
+  background: #fffdf8;
+  border: 1px solid var(--line);
+}
+
+.flow-title {
+  margin: 0 0 8px;
+  color: var(--accent-dark);
+  font-size: 14.2px;
+  font-weight: 900;
+}
+
+.flow-steps {
+  display: flex;
+  align-items: stretch;
+  gap: 6px;
+  margin: 8px 0;
+}
+
+.flow-step {
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 6px 7px;
+  background: var(--box-bg-strong);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-size: 11.7px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 1.35;
+}
+
+.flow-arrow {
+  display: flex;
+  align-items: center;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.caption,
+.flow-caption {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 10.8px;
+  line-height: 1.42;
+  text-align: center;
+}
+
+.table-block {
+  margin: 16px 0 20px;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.table-title {
+  margin: 0 0 6px;
+  color: var(--accent-dark);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin-top: 5px;
+  background: #ffffff;
+  font-size: 11.5px;
+}
+
+th,
+td {
+  border: 1px solid var(--line);
+  padding: 5.6px 6.4px;
+  vertical-align: top;
+  line-height: 1.45;
+}
+
+th {
+  background: var(--table-header);
+  color: var(--accent-dark);
+  font-weight: 900;
+}
+
+th:first-child,
+td:first-child {
+  width: 15%;
+  font-weight: 900;
+}
+
+.takeaway-block {
+  margin: 20px 0 20px;
+}
+
+.takeaway-title {
+  margin: 0;
+  color: var(--accent);
+  font-size: 11.3px;
+  font-weight: 900;
+  letter-spacing: 0.07em;
+}
+
+.takeaway-subtitle {
+  margin: 3px 0 10px;
+  color: var(--ink);
+  font-size: 19px;
+  line-height: 1.28;
+  letter-spacing: -0.04em;
+  font-weight: 900;
+}
+
+.takeaway-list {
+  display: grid;
+  gap: 8px;
+}
+
+.takeaway-card {
+  padding: 10px 12px;
+  background: var(--box-bg);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--accent);
+}
+
+.takeaway-card-title {
+  margin: 0 0 4px;
+  color: var(--accent);
+  font-size: 12.7px;
+  font-weight: 900;
+}
+
+.takeaway-card p {
+  margin-bottom: 0;
+}
+
+.reading-block {
+  margin: 18px 0 12px;
+}
+
+.reading-list {
+  margin: 7px 0 0;
+  padding-left: 17px;
+}
+
+.reading-list li {
+  margin: 5px 0;
+  font-size: 12.3px;
+  line-height: 1.5;
+}
+
+.sources {
+  margin-top: 15px;
+  padding-top: 9px;
+  border-top: 1px solid var(--line);
+}
+
+.sources-title {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-size: 13.5px;
+  font-weight: 900;
+}
+
+.source-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.source-list li {
+  display: inline;
+  color: var(--muted);
+  font-size: 9.8px;
+  line-height: 1.42;
+}
+
+.source-list li::after {
+  content: "; ";
+}
+
+.source-list li:last-child::after {
+  content: "";
+}
+
+.source-list a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.footer-note {
+  margin-top: 18px;
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 10.2px;
+  text-align: center;
+}
+
+@media screen {
+  .report-page {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 34px 42px 52px;
+    box-shadow: 0 18px 42px rgba(57, 38, 20, 0.08);
+  }
+}
+
+@media (max-width: 768px) {
+  .report-page {
+    padding: 24px 18px 40px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .meta-table,
+  .meta-table tbody,
+  .meta-table tr,
+  .meta-table th,
+  .meta-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .meta-table th {
+    border-bottom: 0;
+  }
+
+  .term-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .term-item,
+  .term-item:nth-child(2n),
+  .term-item:nth-last-child(-n+2) {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .term-item:last-child {
+    border-bottom: 0;
+  }
+
+  .flow-steps {
+    flex-direction: column;
+  }
+
+  .flow-arrow {
+    justify-content: center;
+    transform: rotate(90deg);
+  }
+}
+
+@media print {
+  body {
+    background: #ffffff;
+  }
+
+  .screen-header {
+    display: none;
+  }
+
+  .print-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 9.4px;
+    font-weight: 700;
+    line-height: 1.2;
+    background: #ffffff;
+    z-index: 10;
+  }
+
+  .print-footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 9.4px;
+    text-align: center;
+    background: #ffffff;
+    z-index: 10;
+  }
+
+  .print-footer::after {
+    content: counter(page);
+  }
+
+  .report-page {
+    max-width: none;
+    margin: 0;
+    padding: 16px 0 16px;
+    background: #ffffff;
+    box-shadow: none;
+  }
+
+  h1 {
+    font-size: 28.5px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+
+  .journal-label {
+    font-size: 10.3px;
+  }
+
+  .meta-table {
+    font-size: 10.4px;
+  }
+
+  .meta-table th,
+  .meta-table td {
+    padding: 4.5px 5.6px;
+  }
+
+  .keyword-line {
+    font-size: 11px;
+  }
+
+  .abstract {
+    margin: 12px 0 10px;
+    padding: 10px 12px;
+  }
+
+  .section {
+    margin: 15px 0 16px;
+  }
+
+  .section-title {
+    font-size: 18.2px;
+  }
+
+  .subsection-title {
+    font-size: 14.8px;
+  }
+
+  p {
+    font-size: 11.75px;
+    line-height: 1.56;
+    margin-bottom: 6.5px;
+  }
+
+  .term-description {
+    font-size: 10.7px;
+  }
+
+  .flow-step {
+    font-size: 10.6px;
+    min-height: 30px;
+    padding: 5px 5px;
+  }
+
+  table {
+    font-size: 10.25px;
+  }
+
+  th,
+  td {
+    padding: 4.5px 5.3px;
+  }
+
+  .caption,
+  .flow-caption {
+    font-size: 9.7px;
+  }
+
+  .takeaway-card {
+    padding: 8px 10px;
+  }
+
+  .reading-list li {
+    font-size: 10.9px;
+  }
+
+  .footer-note {
+    display: none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="print-header">
+  <div>GLOBAL KNOWLEDGE JOURNAL / 2026.08.02</div>
+  <div>역사·문화 / 시간문화</div>
+</div>
+<div class="print-footer"></div>
+
+<main class="report-page">
+  <header class="screen-header">
+    <div>GLOBAL KNOWLEDGE JOURNAL / 2026.08.02</div>
+    <div>역사·문화 / 시간문화</div>
+  </header>
+
+  <section class="cover keep-together">
+    <p class="journal-label">GLOBAL KNOWLEDGE JOURNAL / 역사·문화 · 시간문화</p>
+    <h1>달력의 역사: 인간은 어떻게 시간을 나누고 약속했나</h1>
+    <p class="subtitle">시간을 체계화하고 사회적 약속을 가능케 한 달력의 탄생과 진화</p>
+
+    <table class="meta-table">
+      <tbody>
+        <tr>
+          <th>발행일</th>
+          <td>2026년 08월 02일</td>
+          <th>분야</th>
+          <td>역사·문화 / 시간문화</td>
+          <th>난이도</th>
+          <td>중</td>
+        </tr>
+        <tr>
+          <th>예상 시간</th>
+          <td>14분</td>
+          <th>카테고리</th>
+          <td colspan="3">역사·문화 &gt; 시간문화</td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+    <div class="keyword-line">
+      <strong>핵심어:</strong>
+      
+        달력 · 
+      
+        시간 분할 · 
+      
+        천문학 · 
+      
+        사회 약속 · 
+      
+        역사적 진화 · 
+      
+        태양력 · 
+      
+        음력 · 
+      
+        시민생활
+      
+    </div>
+    
+  </section>
+
+  
+  <section class="abstract keep-together">
+    <h2 class="abstract-title">Abstract</h2>
+    
+    <p>우리는 매일 시간을 기준으로 살아가지만, 그 시간의 나눔 방식이 어디에서 비롯되었는지 자주 생각하지 않는다. 달력은 고대 문명에서부터 현대 사회까지 인간이 시간을 측정하고 사회적 약속을 체계화하기 위해 발전시켜 온 도구이다. 이 리포트는 달력의 역사와 다양한 시간 분할 체계, 그리고 그것이 어떻게 오늘날의 사회 구조를 형성해 왔는지 탐구한다.</p>
+    
+  </section>
+  
+
+  
+    
+
+<section class="note-box keep-together">
+  
+  <p><strong>달력은 단순한 날짜 표시를 넘어 사회적 약속과 문명 발전의 근간이다.</strong></p>
+  
+  
+  <div class="note-caption">- 역사적 사례와 현대 쟁점을 바탕으로 정리</div>
+  
+</section>
+
+
+  
+
+  
+    
+    
+    
+      
+
+
+
+
+<section class="section first-section ">
+  
+    <div class="section-label">01 / CONTEXT</div>
+    <h2 class="section-title">달력의 역사와 사회적 중요성</h2>
+  
+  
+  <p>인간은 시간을 체계적으로 인식하고 분할하려는 노력으로 달력을 만들었다. 이는 농경과 종교, 행정적 필요성 등에서 비롯된 복합적 요구였다.</p>
+  
+  <p>고대 문명부터 시작된 달력은 천문학적 관측과 문화적 요소를 결합해 다양한 형태로 발전했다.</p>
+  
+  <p>현대 사회에서는 GPS 기반 시간 체계가 있지만, 달력은 여전히 사회의 공식적 약속과 문화적 행사 운영에 핵심 역할을 하고 있다.</p>
+  
+  <p>최근 디지털 사회와 글로벌화 속에서도 각국 달력 시스템의 차이와 통합 문제는 여전히 중요한 도전 과제다.</p>
+  
+</section>
+
+    
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+    
+    
+    
+      
+
+
+
+
+<section class="section  ">
+  
+    <div class="section-label">02 / BEGINNER'S MAP</div>
+    <h2 class="section-title">달력 기본 개념과 핵심 용어</h2>
+  
+  
+  <p>달력은 인간이 시간을 연속된 단위로 분할하고 기록하는 체계다. 여기에는 태양력, 음력, 태음태양력이 대표적으로 포함된다.</p>
+  
+  <p>시간 단위로는 일, 달, 그리고 해(년)가 있으며, 각각 지구의 자전, 달의 공전, 태양 주위를 도는 지구의 공전 주기와 연관된다.</p>
+  
+  <p>달력은 종교, 농업, 정치 등 사회 전반에 걸쳐 일상의 시간 계획과 의식 행사에 활용된다.</p>
+  
+  <p>달력 체계의 표준화와 변화는 사회적 약속과 국제 교류의 효율성을 증대시키는 데 결정적 역할을 해왔다.</p>
+  
+</section>
+
+    
+  
+
+  
+  <section class="term-box keep-together">
+    <h2 class="box-title">핵심 용어</h2>
+    <div class="term-grid">
+      
+      <div class="term-item">
+        <p class="term-name">태양력</p>
+        <p class="term-description">지구가 태양을 한 바퀴 도는 주기를 기준으로 세운 달력 체계이다.</p>
+      </div>
+      
+      <div class="term-item">
+        <p class="term-name">음력</p>
+        <p class="term-description">달의 주기를 기준으로 한 달 단위로 시간을 나누는 달력 방식이다.</p>
+      </div>
+      
+      <div class="term-item">
+        <p class="term-name">사회적 약속</p>
+        <p class="term-description">달력이 정한 시간에 맞춰 사람들이 행사, 일정을 조율하기 위한 규범과 관습이다.</p>
+      </div>
+      
+      <div class="term-item">
+        <p class="term-name">천문학</p>
+        <p class="term-description">달력 제작에 필요한 시간의 자연 주기를 연구하는 과학 분야이다.</p>
+      </div>
+      
+    </div>
+  </section>
+  
+
+  
+  <section class="flow-block keep-together">
+    <h2 class="flow-title"><그림1> 달력 발전의 주요 단계</h2>
+    <div class="flow-steps">
+      
+      <div class="flow-step">천문 관측과 시간 인식</div>
+      
+      <div class="flow-arrow">→</div>
+      
+      
+      <div class="flow-step">초기 원시 달력의 탄생</div>
+      
+      <div class="flow-arrow">→</div>
+      
+      
+      <div class="flow-step">고대 문명별 달력 시스템 발전</div>
+      
+      <div class="flow-arrow">→</div>
+      
+      
+      <div class="flow-step">근대 달력의 표준화</div>
+      
+      <div class="flow-arrow">→</div>
+      
+      
+      <div class="flow-step">현대 디지털 시간체계 도입</div>
+      
+      
+    </div>
+    
+    <div class="flow-caption">달력은 인간의 시간 인식에서 시작해 사회적·과학적 발전을 거쳐 오늘날의 모습에 이르렀다.</div>
+    
+  </section>
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+
+  
+    
+    
+    
+  
+    
+    
+    
+  
+
+  
+
+  
+  
+    
+<section class="table-block keep-together">
+  <div class="table-title"><표1> 달력의 종류별 특징 비교</div>
+  <table>
+    <thead>
+      <tr>
+        
+        <th>종류</th>
+        
+        <th>기준</th>
+        
+        <th>장점</th>
+        
+        <th>단점</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        
+        <td>태양력</td>
+        
+        <td>지구의 태양 주위 공전 주기</td>
+        
+        <td>계절과 잘 맞아 농업에 유리</td>
+        
+        <td>연도의 길이가 정확히 맞지 않음</td>
+        
+      </tr>
+      
+      <tr>
+        
+        <td>음력</td>
+        
+        <td>달의 공전 주기</td>
+        
+        <td>달의 변화를 직접 관측 가능</td>
+        
+        <td>계절 변화와 맞지 않아 보정 필요</td>
+        
+      </tr>
+      
+      <tr>
+        
+        <td>태음태양력</td>
+        
+        <td>태양력과 음력 결합</td>
+        
+        <td>계절과 달 변화를 모두 고려</td>
+        
+        <td>복잡한 보정 주기가 필요함</td>
+        
+      </tr>
+      
+    </tbody>
+  </table>
+  
+  <div class="caption">태양력, 음력, 태음태양력의 장단점 비교.</div>
+  
+</section>
+
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+
+  
+    
+    
+    
+  
+    
+    
+    
+  
+
+  
+
+  
+    
+    
+      
+
+<section class="note-box keep-together">
+  
+  <p><strong>고대 문명별 달력은 각 사회의 경제, 종교, 정치적 요구를 반영하는 중요한 문화유산이다.</strong></p>
+  
+  
+  <div class="note-caption">- 사례 분석을 바탕으로 정리</div>
+  
+</section>
+
+
+    
+  
+
+
+  
+
+  
+  
+
+  
+  
+    
+<section class="table-block keep-together">
+  <div class="table-title"><표2> 고대 문명별 대표 달력 체계 특징</div>
+  <table>
+    <thead>
+      <tr>
+        
+        <th>문명</th>
+        
+        <th>달력 종류</th>
+        
+        <th>특징</th>
+        
+        <th>사회적 용도</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        
+        <td>고대 이집트</td>
+        
+        <td>태양력 기반</td>
+        
+        <td>365일 12개월 구조</td>
+        
+        <td>농업과 종교 행사 조정</td>
+        
+      </tr>
+      
+      <tr>
+        
+        <td>마야 문명</td>
+        
+        <td>복합 달력 체계</td>
+        
+        <td>종교력과 태양력을 결합</td>
+        
+        <td>의례와 정치 권력 유지</td>
+        
+      </tr>
+      
+      <tr>
+        
+        <td>중국</td>
+        
+        <td>태음태양력</td>
+        
+        <td>계절과 달을 모두 고려</td>
+        
+        <td>농사 및 제례 의례</td>
+        
+      </tr>
+      
+    </tbody>
+  </table>
+  
+  <div class="caption">대표 고대 문명들의 달력 체계 특성과 용도.</div>
+  
+</section>
+
+  
+
+  
+  
+
+  
+  
+
+
+
+  
+    
+    
+    
+  
+    
+    
+    
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+<section class="table-block keep-together">
+  <div class="table-title"><표3> 현대 달력 시스템과 주요 쟁점</div>
+  <table>
+    <thead>
+      <tr>
+        
+        <th>달력 유형</th>
+        
+        <th>사용 지역</th>
+        
+        <th>주요 문제점</th>
+        
+        <th>사회적 영향</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        
+        <td>그레고리력</td>
+        
+        <td>전 세계 대부분</td>
+        
+        <td>윤년 계산과 천문 오차</td>
+        
+        <td>국제 일정 조율 표준</td>
+        
+      </tr>
+      
+      <tr>
+        
+        <td>이슬람력</td>
+        
+        <td>이슬람권 일부</td>
+        
+        <td>계절과 무관한 순환 구조</td>
+        
+        <td>종교 행사 날짜 변동성</td>
+        
+      </tr>
+      
+      <tr>
+        
+        <td>히브리력</td>
+        
+        <td>유대교권</td>
+        
+        <td>복잡한 윤월 보정</td>
+        
+        <td>종교력과 세속력의 병용</td>
+        
+      </tr>
+      
+    </tbody>
+  </table>
+  
+  <div class="caption">현대 달력 시스템이 직면한 쟁점과 영향.</div>
+  
+</section>
+
+  
+
+  
+  
+
+
+
+  
+    
+    
+    
+  
+    
+    
+    
+  
+
+  
+
+  
+    
+    
+  
+
+
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+  <section class="takeaway-block keep-together">
+    <div class="takeaway-title">07 / TAKEAWAYS</div>
+    <h2 class="takeaway-subtitle">핵심 정리와 한마디</h2>
+    <div class="takeaway-list">
+      
+      <div class="takeaway-card">
+        
+          
+          <h3 class="takeaway-card-title">핵심 정리</h3>
+          
+          
+          <p>달력은 자연 주기를 사회적 약속으로 바꾸는 도구로서 문명의 발전과 밀접하게 연결되어 있다.</p>
+          
+        
+      </div>
+      
+      <div class="takeaway-card">
+        
+          
+          <h3 class="takeaway-card-title">요약</h3>
+          
+          
+          <p>본 리포트는 달력의 역사적 기원부터 현대까지 다양한 체계를 살피며, 시간 분할이 사회에 미친 영향을 다각도로 살펴보았다.</p>
+          
+        
+      </div>
+      
+      <div class="takeaway-card">
+        
+          
+          <h3 class="takeaway-card-title">한마디</h3>
+          
+          
+          <p>시간을 나누고 약속하는 것은 인류 문명의 공동 작업이다.</p>
+          
+        
+      </div>
+      
+    </div>
+  </section>
+  
+
+  <section class="reading-block">
+    <div class="section-label">08 / FURTHER READING</div>
+    <h2 class="section-title">더 읽을거리</h2>
+
+    
+  </section>
+
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+<section class="table-block keep-together">
+  <div class="table-title"><표4> 달력 연구 관련 도서 및 탐구 주제</div>
+  <table>
+    <thead>
+      <tr>
+        
+        <th>분류</th>
+        
+        <th>제목 및 키워드</th>
+        
+        <th>설명</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        
+        <td>도서</td>
+        
+        <td>**『시간과 문명』** - 페터 버거</td>
+        
+        <td>시간 개념의 역사와 사회적 의미를 다룸</td>
+        
+      </tr>
+      
+      <tr>
+        
+        <td>탐구 키워드</td>
+        
+        <td>천문학과 달력 역사</td>
+        
+        <td>천체 관측과 시간 체계의 상관관계 탐구</td>
+        
+      </tr>
+      
+      <tr>
+        
+        <td>관련 주제</td>
+        
+        <td>국제 표준시와 시간대</td>
+        
+        <td>시간의 지역적 차이와 세계적 조율 문제</td>
+        
+      </tr>
+      
+      <tr>
+        
+        <td>도서</td>
+        
+        <td>**『달력의 사회사』** - 조지프 브래디</td>
+        
+        <td>달력 제도의 사회적 기능과 역사적 변천을 서술</td>
+        
+      </tr>
+      
+    </tbody>
+  </table>
+  
+  <div class="caption">달력 연구 관련 대표 도서와 주요 탐구 주제.</div>
+  
+</section>
+
+  
+
+
+
+  
+  <section class="sources">
+    <h2 class="sources-title">Sources</h2>
+    <ul class="source-list">
+      
+      <li>
+        
+          <strong>유네스코</strong>
+          , 세계유산과 고대 달력
+          , <a href="https://whc.unesco.org/en/timelines/cultures/">link</a>
+          , 고대 문명별 달력 및 문화적 배경 설명
+        
+      </li>
+      
+      <li>
+        
+          <strong>국제천문연맹</strong>
+          , 천문학과 달력
+          , <a href="https://www.iau.org/public/themes/calendars/">link</a>
+          , 달력과 천문학의 연관성 분석
+        
+      </li>
+      
+      <li>
+        
+          <strong>한국학중앙연구원</strong>
+          , 한국 전통 달력의 이해
+          , <a href="https://encykorea.aks.ac.kr/Contents/SearchNavi?keyword=%EB%8B%AC%EB%A0%A5">link</a>
+          , 한국 전통 달력 및 음력 체계 설명
+        
+      </li>
+      
+      <li>
+        
+          <strong>BBC History</strong>
+          , History of Calendars
+          , <a href="https://www.bbc.co.uk/history/ancient/archaeology/calendars_01.shtml">link</a>
+          , 달력의 역사적 전개와 제도화 과정
+        
+      </li>
+      
+      <li>
+        
+          <strong>미국국립표준기술연구소</strong>
+          , More About Calendars
+          , <a href="https://www.nist.gov/pml/time-and-frequency-division/popular-links/writing-time-and-date/more-about-calendars">link</a>
+          , 현대 달력 및 윤년 제도 설명
+        
+      </li>
+      
+    </ul>
+  </section>
+  
+
+  <footer class="footer-note">
+    GLOBAL KNOWLEDGE JOURNAL · 2026.08.02
+  </footer>
+</main>
+</body>
+</html>

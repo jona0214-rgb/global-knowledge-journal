@@ -1,6 +1,19 @@
 {
-  "last_updated": "2026-08-01T22:00:55.151704+09:00",
+  "last_updated": "2026-08-02T00:48:33.112743+09:00",
   "reports": [
+    {
+      "date": "2026-08-02",
+      "title": "달력의 역사: 인간은 어떻게 시간을 나누고 약속했나",
+      "subtitle": "시간을 체계화하고 사회적 약속을 가능케 한 달력의 탄생과 진화",
+      "main_category": "역사·문화",
+      "mid_category": "시간문화",
+      "sub_category": "",
+      "html_path": "outputs/20260802_history_of_calendar_Report.html",
+      "pdf_path": "outputs/20260802_history_of_calendar_Report.pdf",
+      "html_url": "outputs/20260802_history_of_calendar_Report.html",
+      "pdf_url": "outputs/20260802_history_of_calendar_Report.pdf",
+      "status": "published_api"
+    },
     {
       "date": "2026-08-01",
       "title": "도시의 하수도: 보이지 않는 위생 인프라는 어떻게 문명을 바꾸었나",
