@@ -107,38 +107,129 @@
         "minItems": 11,
         "maxItems": 11,
         "items": {
-          "type": "object",
-          "additionalProperties": false,
-          "required": [
-            "id",
-            "label",
-            "title",
-            "body"
-          ],
-          "properties": {
-            "id": {
-              "type": "string",
-              "description": "앞자리 0을 포함한 필수 섹션 ID",
-              "enum": ["01", "02", "03", "03-1", "03-2", "03-3", "03-4", "03-5", "04", "05", "06"]
+          "anyOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["id", "label", "title", "body"],
+              "properties": {
+                "id": { "type": "string", "enum": ["01"] },
+                "label": { "type": "string" },
+                "title": { "type": "string" },
+                "body": { "type": "array", "minItems": 4, "items": { "type": "string", "minLength": 170 } }
+              }
             },
-            "label": {
-              "type": "string",
-              "description": "섹션 라벨. 예: 01 / CONTEXT, 03-1."
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["id", "label", "title", "body"],
+              "properties": {
+                "id": { "type": "string", "enum": ["02"] },
+                "label": { "type": "string" },
+                "title": { "type": "string" },
+                "body": { "type": "array", "minItems": 3, "items": { "type": "string", "minLength": 170 } }
+              }
             },
-            "title": {
-              "type": "string",
-              "description": "섹션 제목"
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["id", "label", "title", "body"],
+              "properties": {
+                "id": { "type": "string", "enum": ["03"] },
+                "label": { "type": "string" },
+                "title": { "type": "string" },
+                "body": { "type": "array", "minItems": 2, "items": { "type": "string", "minLength": 170 } }
+              }
             },
-            "body": {
-              "type": "array",
-              "description": "섹션 본문 문단 배열",
-              "minItems": 2,
-              "items": {
-                "type": "string",
-                "minLength": 170
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["id", "label", "title", "body"],
+              "properties": {
+                "id": { "type": "string", "enum": ["03-1"] },
+                "label": { "type": "string" },
+                "title": { "type": "string" },
+                "body": { "type": "array", "minItems": 3, "items": { "type": "string", "minLength": 170 } }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["id", "label", "title", "body"],
+              "properties": {
+                "id": { "type": "string", "enum": ["03-2"] },
+                "label": { "type": "string" },
+                "title": { "type": "string" },
+                "body": { "type": "array", "minItems": 3, "items": { "type": "string", "minLength": 170 } }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["id", "label", "title", "body"],
+              "properties": {
+                "id": { "type": "string", "enum": ["03-3"] },
+                "label": { "type": "string" },
+                "title": { "type": "string" },
+                "body": { "type": "array", "minItems": 3, "items": { "type": "string", "minLength": 170 } }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["id", "label", "title", "body"],
+              "properties": {
+                "id": { "type": "string", "enum": ["03-4"] },
+                "label": { "type": "string" },
+                "title": { "type": "string" },
+                "body": { "type": "array", "minItems": 3, "items": { "type": "string", "minLength": 170 } }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["id", "label", "title", "body"],
+              "properties": {
+                "id": { "type": "string", "enum": ["03-5"] },
+                "label": { "type": "string" },
+                "title": { "type": "string" },
+                "body": { "type": "array", "minItems": 3, "items": { "type": "string", "minLength": 170 } }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["id", "label", "title", "body"],
+              "properties": {
+                "id": { "type": "string", "enum": ["04"] },
+                "label": { "type": "string" },
+                "title": { "type": "string" },
+                "body": { "type": "array", "minItems": 5, "items": { "type": "string", "minLength": 170 } }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["id", "label", "title", "body"],
+              "properties": {
+                "id": { "type": "string", "enum": ["05"] },
+                "label": { "type": "string" },
+                "title": { "type": "string" },
+                "body": { "type": "array", "minItems": 5, "items": { "type": "string", "minLength": 170 } }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["id", "label", "title", "body"],
+              "properties": {
+                "id": { "type": "string", "enum": ["06"] },
+                "label": { "type": "string" },
+                "title": { "type": "string" },
+                "body": { "type": "array", "minItems": 5, "items": { "type": "string", "minLength": 170 } }
               }
             }
-          }
+          ]
         }
       },
       "term_box": {
