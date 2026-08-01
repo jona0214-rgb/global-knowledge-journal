@@ -2,6 +2,7 @@ import argparse
 import json
 import re
 import sqlite3
+import tempfile
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -320,9 +321,30 @@ def render_pdf_with_playwright(html_path: Path, pdf_path: Path):
             path=str(pdf_path),
             format="A4",
             print_background=True,
-            prefer_css_page_size=True
+            prefer_css_page_size=True,
+            display_header_footer=True,
+            header_template="<div></div>",
+            footer_template=(
+                '<div style="box-sizing:border-box;width:100%;margin:0 14mm;'
+                'padding-top:4px;border-top:1px solid #cbbba7;color:#665c52;'
+                'font-family:Arial,sans-serif;font-size:9px;text-align:center;">'
+                '<span class="pageNumber"></span></div>'
+            ),
         )
         browser.close()
+
+
+def validate_pdf_page_count(pdf_path: Path, min_pages: int = 7, max_pages: int = 9) -> None:
+    """렌더링된 API PDF가 목표 페이지 범위인지 검사한다."""
+    from pypdf import PdfReader
+
+    with pdf_path.open("rb") as pdf_stream:
+        page_count = len(PdfReader(pdf_stream).pages)
+    if not min_pages <= page_count <= max_pages:
+        raise ValueError(
+            f"PDF 페이지 수가 목표 범위를 벗어났습니다: "
+            f"{page_count}페이지, {min_pages}~{max_pages}페이지 필요"
+        )
 
 
 def update_topic_db(topic_db: dict, report: dict, html_path: Path, pdf_path: Path):
@@ -532,9 +554,24 @@ def save_render_publish_report(report: dict, topic_db: dict, mode: str = "mock")
     pdf_path = OUTPUTS_DIR / f"{date_compact}_{title_slug}_Report.pdf"
     report_json_path = OUTPUTS_DIR / f"{date_compact}_{title_slug}_Report.json"
 
-    save_json(report_json_path, report)
-    render_html(report, html_path)
-    render_pdf_with_playwright(html_path, pdf_path)
+    OUTPUTS_DIR.mkdir(parents=True, exist_ok=True)
+
+    with tempfile.TemporaryDirectory(prefix=".report-", dir=OUTPUTS_DIR) as staging_dir:
+        staging_path = Path(staging_dir)
+        staged_json_path = staging_path / report_json_path.name
+        staged_html_path = staging_path / html_path.name
+        staged_pdf_path = staging_path / pdf_path.name
+
+        save_json(staged_json_path, report)
+        render_html(report, staged_html_path)
+        render_pdf_with_playwright(staged_html_path, staged_pdf_path)
+
+        if mode == "api":
+            validate_pdf_page_count(staged_pdf_path)
+
+        staged_json_path.replace(report_json_path)
+        staged_html_path.replace(html_path)
+        staged_pdf_path.replace(pdf_path)
 
     update_topic_db(topic_db, report, html_path, pdf_path)
     rebuild_sqlite(topic_db)
@@ -653,6 +690,7 @@ def validate_report_structure(report: dict) -> None:
 
     too_short = []
     total_paragraphs = 0
+    total_body_characters = 0
 
     for section_id, minimum in min_paragraphs.items():
         raw_body = section_map[section_id].get("body", [])
@@ -662,6 +700,7 @@ def validate_report_structure(report: dict) -> None:
             else []
         )
         total_paragraphs += len(body)
+        total_body_characters += sum(len(paragraph.strip()) for paragraph in body)
         if len(body) < minimum:
             too_short.append(f"{section_id}: 유효한 {len(body)}문단, 최소 {minimum}문단 필요")
 
@@ -670,6 +709,12 @@ def validate_report_structure(report: dict) -> None:
 
     if total_paragraphs < 36:
         raise ValueError(f"본문 총 문단 수가 부족합니다: {total_paragraphs}문단, 최소 36문단 필요")
+
+    if total_body_characters < 6500:
+        raise ValueError(
+            f"본문 총 글자 수가 부족합니다: "
+            f"{total_body_characters}자, 최소 6500자 필요"
+        )
 
     tables = report.get("tables", [])
     if not isinstance(tables, list) or len(tables) < 4:

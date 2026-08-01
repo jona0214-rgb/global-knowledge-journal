@@ -7,7 +7,7 @@
 <style>
 @page {
   size: A4;
-  margin: 13mm 14mm 12mm;
+  margin: 14mm 15mm 15mm;
 }
 
 :root {
@@ -594,21 +594,7 @@ td:first-child {
   }
 
   .print-footer {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: block;
-    border-top: 1px solid var(--line);
-    color: var(--muted);
-    font-size: 9.4px;
-    text-align: center;
-    background: #ffffff;
-    z-index: 10;
-  }
-
-  .print-footer::after {
-    content: counter(page);
+    display: none;
   }
 
   .report-page {
@@ -662,9 +648,9 @@ td:first-child {
   }
 
   p {
-    font-size: 11.75px;
-    line-height: 1.56;
-    margin-bottom: 6.5px;
+    font-size: 12.15px;
+    line-height: 1.62;
+    margin-bottom: 7px;
   }
 
   .term-description {
