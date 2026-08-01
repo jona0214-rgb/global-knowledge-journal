@@ -1,57 +1,434 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="utf-8">
-<title>{{ report.date }} {{ report.title }}</title>
+<meta charset="utf-8" />
+<title>{{ report.title }}</title>
+
 <style>
-@page { size: A4; margin: 18mm 18mm 16mm; }
-body { margin: 0; font-family: "Noto Sans KR", "NanumBarunGothic", sans-serif; color: #1f2933; background: #f4f6f8; line-height: 1.68; }
-.report-page { max-width: 1040px; margin: 0 auto; padding: 40px 44px 56px; background: #fff; }
-.header { display:flex; justify-content:space-between; font-size:12px; color:#66607a; border-bottom:1px solid #d9d4e6; padding-bottom:10px; margin-bottom:28px; }
-.section { margin: 34px 0 42px; }
-.section-label { color:#4f46e5; font-weight:800; font-size:13px; letter-spacing:.04em; break-after: avoid; }
-.section-title { font-size: 26px; font-weight:800; margin: 4px 0 16px; break-after: avoid; }
-p { orphans: 2; widows: 2; }
-.keep-together, .table-block, .term-box, .takeaway { break-inside: avoid; page-break-inside: avoid; }
-table { width:100%; border-collapse:collapse; table-layout:fixed; margin-top:8px; }
-th, td { border:1px solid #c7c1d9; padding:8px 10px; vertical-align:top; }
-th { background:#e9e4f4; font-weight:800; }
-th:first-child, td:first-child { width:14%; white-space:nowrap; font-weight:700; }
-.caption { font-size:13px; color:#6b647c; margin-top:8px; text-align:center; }
-@media print { body { background:#fff; } .report-page { padding:0; max-width:none; } }
+@page {
+  size: A4;
+  margin: 16mm 16mm 15mm;
+}
+
+:root {
+  --paper: #fffdf8;
+  --bg: #f3eee6;
+  --ink: #1f1b16;
+  --muted: #6f665c;
+  --line: #d8c9b8;
+  --accent: #7a4f2a;
+  --accent-dark: #4d3018;
+  --soft: #efe2cf;
+  --soft-2: #f8f1e8;
+  --table-head: #eadcc8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:
+    "NanumGothic",
+    "Nanum Gothic",
+    "Noto Sans CJK KR",
+    "Noto Sans KR",
+    "Malgun Gothic",
+    "Apple SD Gothic Neo",
+    sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.72;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+.report-page {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 42px 46px 58px;
+  background: var(--paper);
+}
+
+.report-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding-bottom: 12px;
+  margin-bottom: 34px;
+  border-bottom: 1px solid var(--line);
+  color: var(--accent-dark);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.cover {
+  margin-bottom: 38px;
+  padding-bottom: 28px;
+  border-bottom: 2px solid var(--accent-dark);
+}
+
+.journal-label {
+  margin: 0 0 18px;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+}
+
+h1 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 42px;
+  line-height: 1.18;
+  letter-spacing: -0.055em;
+}
+
+.subtitle {
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.meta-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.meta-item {
+  padding: 14px 16px;
+  background: var(--soft-2);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.meta-label {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.meta-value {
+  color: var(--accent-dark);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.section {
+  margin: 34px 0 40px;
+}
+
+.section-label {
+  margin-bottom: 8px;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  break-after: avoid;
+}
+
+.section-title {
+  margin: 0 0 14px;
+  color: var(--ink);
+  font-size: 26px;
+  line-height: 1.32;
+  letter-spacing: -0.04em;
+  font-weight: 900;
+  break-after: avoid;
+}
+
+p {
+  margin: 0 0 14px;
+  font-size: 15.5px;
+  line-height: 1.78;
+  orphans: 2;
+  widows: 2;
+}
+
+.keep-together,
+.table-block,
+.term-box,
+.takeaway-block,
+.reading-block {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.term-box,
+.takeaway-block,
+.reading-block {
+  margin: 24px 0;
+  padding: 20px 22px;
+  background: var(--soft-2);
+  border: 1px solid var(--line);
+  border-left: 6px solid var(--accent);
+  border-radius: 16px;
+}
+
+.box-title {
+  margin: 0 0 12px;
+  color: var(--accent-dark);
+  font-size: 18px;
+  font-weight: 900;
+}
+
+ul,
+ol {
+  margin: 8px 0 0;
+  padding-left: 20px;
+}
+
+li {
+  margin: 8px 0;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.table-block {
+  margin: 30px 0 36px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin-top: 10px;
+  background: #fff;
+  font-size: 14px;
+}
+
+th,
+td {
+  border: 1px solid var(--line);
+  padding: 9px 10px;
+  vertical-align: top;
+}
+
+th {
+  background: var(--table-head);
+  color: var(--accent-dark);
+  font-weight: 900;
+}
+
+th:first-child,
+td:first-child {
+  width: 14%;
+  white-space: nowrap;
+  font-weight: 800;
+}
+
+.caption {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 12.5px;
+  text-align: center;
+}
+
+.footer-note {
+  margin-top: 42px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 12px;
+  text-align: center;
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .report-page {
+    max-width: none;
+    padding: 0;
+    background: #fff;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  .section {
+    margin: 28px 0 34px;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 13.8px;
+  }
+
+  li {
+    font-size: 13.5px;
+  }
+
+  table {
+    font-size: 12.5px;
+  }
+}
 </style>
 </head>
+
 <body>
 <main class="report-page">
-  <div class="header"><div>GLOBAL KNOWLEDGE JOURNAL / {{ report.date }}</div><div>{{ report.category.main }} / {{ report.category.middle }}</div></div>
-  <h1>{{ report.title }}</h1>
-  <p class="subtitle">{{ report.subtitle }}</p>
+  <header class="report-header">
+    <div>GLOBAL KNOWLEDGE JOURNAL / {{ report.date }}</div>
+    <div>{{ report.category.main }} / {{ report.category.middle }}</div>
+  </header>
+
+  <section class="cover keep-together">
+    <p class="journal-label">GLOBAL KNOWLEDGE JOURNAL</p>
+    <h1>{{ report.title }}</h1>
+    <p class="subtitle">{{ report.subtitle }}</p>
+
+    <div class="meta-grid">
+      <div class="meta-item">
+        <span class="meta-label">발행일</span>
+        <span class="meta-value">{{ report.date }}</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">분야</span>
+        <span class="meta-value">{{ report.category.main }}</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">세부 주제</span>
+        <span class="meta-value">{{ report.category.middle }}</span>
+      </div>
+    </div>
+  </section>
 
   {% for section in report.sections %}
   {% set section_text = (section.label ~ ' ' ~ section.title) %}
   {% if 'PROJECT DB' not in section_text and '주제 DB' not in section_text and '운영 메모' not in section_text and '다음 회차 후보' not in section_text and '후보 우선순위' not in section_text and '반복 회피' not in section_text and '다양성 확보' not in section_text %}
   <section class="section">
     <div class="section-label">{{ section.label }}</div>
-    <div class="section-title">{{ section.title }}</div>
-    {% for paragraph in section.body %}<p>{{ paragraph }}</p>{% endfor %}
+    <h2 class="section-title">{{ section.title }}</h2>
+    {% for paragraph in section.body %}
+    <p>{{ paragraph }}</p>
+    {% endfor %}
   </section>
   {% endif %}
   {% endfor %}
 
+  {% if report.term_boxes is defined %}
+  {% for box in report.term_boxes %}
+  <section class="term-box keep-together">
+    <h2 class="box-title">{{ box.title }}</h2>
+    {% if box.items is defined %}
+    <ul>
+      {% for item in box.items %}
+      <li>
+        {% if item.term is defined %}
+        <strong>{{ item.term }}</strong>: {{ item.description }}
+        {% else %}
+        {{ item }}
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    {% elif box.body is defined %}
+    {% for paragraph in box.body %}
+    <p>{{ paragraph }}</p>
+    {% endfor %}
+    {% endif %}
+  </section>
+  {% endfor %}
+  {% endif %}
+
   {% for table in report.tables %}
   {% set table_text = table.title %}
   {% if 'PROJECT DB' not in table_text and '주제 DB' not in table_text and '운영 메모' not in table_text and '다음 회차 후보' not in table_text and '후보 우선순위' not in table_text and '반복 회피' not in table_text and '다양성 확보' not in table_text %}
-  <div class="section table-block keep-together">
+  <section class="table-block keep-together">
     <div class="section-label">TABLE</div>
-    <div class="section-title">{{ table.title }}</div>
+    <h2 class="section-title">{{ table.title }}</h2>
     <table>
-      <thead><tr>{% for header in table.headers %}<th>{{ header }}</th>{% endfor %}</tr></thead>
-      <tbody>{% for row in table.rows %}<tr>{% for cell in row %}<td>{{ cell }}</td>{% endfor %}</tr>{% endfor %}</tbody>
+      <thead>
+        <tr>
+          {% for header in table.headers %}
+          <th>{{ header }}</th>
+          {% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in table.rows %}
+        <tr>
+          {% for cell in row %}
+          <td>{{ cell }}</td>
+          {% endfor %}
+        </tr>
+        {% endfor %}
+      </tbody>
     </table>
     <div class="caption">{{ table.caption }}</div>
-  </div>
+  </section>
   {% endif %}
   {% endfor %}
+
+  {% if report.takeaways is defined %}
+  <section class="takeaway-block keep-together">
+    <h2 class="box-title">07 / TAKEAWAYS</h2>
+    <ol>
+      {% for item in report.takeaways %}
+      <li>
+        {% if item is mapping %}
+          {% if item.title is defined and item.body is defined %}
+            <strong>{{ item.title }}</strong>: {{ item.body }}
+          {% elif item.title is defined %}
+            <strong>{{ item.title }}</strong>
+          {% elif item.body is defined %}
+            {{ item.body }}
+          {% else %}
+            {{ item }}
+          {% endif %}
+        {% else %}
+          {{ item }}
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+  {% endif %}
+
+  {% if report.further_reading is defined %}
+  <section class="reading-block keep-together">
+    <h2 class="box-title">08 / FURTHER READING</h2>
+    <ul>
+      {% for item in report.further_reading %}
+      <li>
+        {% if item is mapping %}
+          {% if item.title is defined %}
+            <strong>{{ item.title }}</strong>{% if item.author is defined %} — {{ item.author }}{% endif %}
+          {% elif item.body is defined %}
+            {{ item.body }}
+          {% else %}
+            {{ item }}
+          {% endif %}
+        {% else %}
+          {{ item }}
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  <footer class="footer-note">
+    GLOBAL KNOWLEDGE JOURNAL · {{ report.date }}
+  </footer>
 </main>
 </body>
 </html>
