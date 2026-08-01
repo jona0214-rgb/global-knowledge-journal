@@ -885,7 +885,7 @@ td:first-child {
   <section class="term-box keep-together">
     <h2 class="box-title">{{ report.term_box.title }}</h2>
     <div class="term-grid">
-      {% for item in report.term_box.items %}
+      {% for item in report.term_box["items"] %}
       <div class="term-item">
         <p class="term-name">{{ item.term }}</p>
         <p class="term-description">{{ item.description }}</p>
