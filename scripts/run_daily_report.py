@@ -612,6 +612,83 @@ def enforce_selected_topic(report: dict, selected_topic: dict) -> dict:
 
     return report
 
+def validate_report_structure(report: dict) -> None:
+    """API 리포트가 핵심 섹션과 최소 분량을 갖췄는지 검사한다."""
+    required_ids = ["01", "02", "03", "03-1", "03-2", "03-3", "03-4", "03-5", "04", "05", "06"]
+
+    sections = report.get("sections", [])
+    if not isinstance(sections, list):
+        raise ValueError("report.sections가 list가 아닙니다.")
+
+    section_map = {}
+    for section in sections:
+        if not isinstance(section, dict):
+            continue
+        section_id = str(section.get("id", "")).strip()
+        section_map[section_id] = section
+
+    missing = [section_id for section_id in required_ids if section_id not in section_map]
+    if missing:
+        raise ValueError("필수 섹션이 누락되었습니다: " + ", ".join(missing))
+
+    min_paragraphs = {
+        "01": 4,
+        "02": 3,
+        "03": 2,
+        "03-1": 3,
+        "03-2": 3,
+        "03-3": 3,
+        "03-4": 3,
+        "03-5": 3,
+        "04": 5,
+        "05": 5,
+        "06": 5,
+    }
+
+    too_short = []
+    total_paragraphs = 0
+
+    for section_id, minimum in min_paragraphs.items():
+        body = section_map[section_id].get("body", [])
+        if not isinstance(body, list):
+            body = []
+        total_paragraphs += len(body)
+        if len(body) < minimum:
+            too_short.append(f"{section_id}: {len(body)}문단, 최소 {minimum}문단 필요")
+
+    if too_short:
+        raise ValueError("본문 분량이 부족합니다. " + " / ".join(too_short))
+
+    if total_paragraphs < 36:
+        raise ValueError(f"본문 총 문단 수가 부족합니다: {total_paragraphs}문단, 최소 36문단 필요")
+
+    tables = report.get("tables", [])
+    if not isinstance(tables, list) or len(tables) < 4:
+        raise ValueError("tables는 최소 4개가 필요합니다.")
+
+    takeaways = report.get("takeaways", [])
+    if not isinstance(takeaways, list) or len(takeaways) != 3:
+        raise ValueError("takeaways는 정확히 3개가 필요합니다.")
+
+    term_box = report.get("term_box", {})
+    term_items = term_box.get("items", []) if isinstance(term_box, dict) else []
+    if not isinstance(term_items, list) or len(term_items) != 4:
+        raise ValueError("term_box.items는 정확히 4개가 필요합니다.")
+
+    flow_diagram = report.get("flow_diagram", {})
+    flow_steps = flow_diagram.get("steps", []) if isinstance(flow_diagram, dict) else []
+    if not isinstance(flow_steps, list) or len(flow_steps) < 4:
+        raise ValueError("flow_diagram.steps는 최소 4개가 필요합니다.")
+
+    section_notes = report.get("section_notes", [])
+    if not isinstance(section_notes, list) or len(section_notes) < 2:
+        raise ValueError("section_notes는 최소 2개가 필요합니다.")
+
+    sources = report.get("sources", [])
+    if not isinstance(sources, list) or len(sources) < 5:
+        raise ValueError("sources는 최소 5개가 필요합니다.")
+
+
 def run_api():
     from generate_report import generate_report
 
@@ -625,6 +702,7 @@ def run_api():
 
     report = generate_report(today=today, selected_topic=topic)
     report = enforce_selected_topic(report, topic)
+    validate_report_structure(report)
 
     save_render_publish_report(report, topic_db, mode="api")
 
