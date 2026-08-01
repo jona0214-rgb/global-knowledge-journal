@@ -1,17 +1,17 @@
 {
-  "last_updated": "2026-08-01T16:42:52.645616+09:00",
+  "last_updated": "2026-08-01T17:42:03.145954+09:00",
   "reports": [
     {
       "date": "2026-08-01",
-      "title": "인공지능 윤리",
-      "subtitle": "인공지능 시대, 윤리적 도전과 방향성 탐구",
-      "main_category": "기술",
-      "mid_category": "인공지능",
-      "sub_category": "윤리",
-      "html_path": "outputs/20260801_aijeonri_Report.html",
-      "pdf_path": "outputs/20260801_aijeonri_Report.pdf",
-      "html_url": "outputs/20260801_aijeonri_Report.html",
-      "pdf_url": "outputs/20260801_aijeonri_Report.pdf",
+      "title": "철새의 항로: 새들은 어떻게 지구를 기억하는가",
+      "subtitle": "철새 이동의 신비와 새들이 사용하는 지구 기억 메커니즘 탐구",
+      "main_category": "자연사·생태",
+      "mid_category": "동물행동",
+      "sub_category": "",
+      "html_path": "outputs/20260801_chelssaeehangrosaedeureo_Report.html",
+      "pdf_path": "outputs/20260801_chelssaeehangrosaedeureo_Report.pdf",
+      "html_url": "outputs/20260801_chelssaeehangrosaedeureo_Report.html",
+      "pdf_url": "outputs/20260801_chelssaeehangrosaedeureo_Report.pdf",
       "status": "published_api"
     },
     {
