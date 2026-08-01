@@ -49,15 +49,72 @@ def build_user_prompt(today: str, selected_topic: Dict[str, Any]) -> str:
     topic_db = load_text(TOPIC_DB_PATH)
     prompt_template = load_text(REPORT_WRITER_PROMPT_PATH)
 
-    prompt = prompt_template.replace("{{ today }}", today)
-    prompt = prompt.replace(
-        "{{ selected_topic }}",
-        json.dumps(selected_topic, ensure_ascii=False, indent=2),
+    selected_topic_json = json.dumps(
+        selected_topic,
+        ensure_ascii=False,
+        indent=2,
     )
+
+    locked_title = str(
+        selected_topic.get("topic")
+        or selected_topic.get("title")
+        or ""
+    ).strip()
+
+    locked_main_category = str(
+        selected_topic.get("main_category")
+        or selected_topic.get("main")
+        or ""
+    ).strip()
+
+    locked_middle_category = str(
+        selected_topic.get("mid_category")
+        or selected_topic.get("middle_category")
+        or selected_topic.get("middle")
+        or ""
+    ).strip()
+
+    locked_sub_category = str(
+        selected_topic.get("sub_category")
+        or selected_topic.get("sub")
+        or ""
+    ).strip()
+
+    topic_lock = f"""
+# TOPIC LOCK
+
+오늘 리포트는 아래 선정 주제만 사용해야 합니다.
+
+선정 주제 JSON:
+{selected_topic_json}
+
+반드시 지켜야 할 고정값:
+- report.date: {today}
+- report.title: {locked_title}
+- report.category.main: {locked_main_category}
+- report.category.middle: {locked_middle_category}
+- report.category.sub: {locked_sub_category}
+
+절대 금지:
+- 새로운 주제를 고르지 마세요.
+- 선정 주제를 다른 주제로 바꾸지 마세요.
+- 제목을 임의로 요약하거나 재작성하지 마세요.
+- report.title은 반드시 선정 주제의 topic 문자열과 완전히 같아야 합니다.
+- 인공지능 윤리, 도시 농업, 자동화 파이프라인 같은 임의 주제로 바꾸지 마세요.
+- topic_db, candidate_pool, GitHub Actions, mock 실행, API 실행, 프로젝트 운영 메모를 리포트 본문에 포함하지 마세요.
+
+작성 지침:
+- 선정 주제의 범위 안에서만 설명하세요.
+- subtitle은 독자가 이해하기 쉬운 보조 설명으로 작성해도 됩니다.
+- 본문은 Global Knowledge Journal 리포트 형식을 따르세요.
+""".strip()
+
+    prompt = prompt_template.replace("{{ today }}", today)
+    prompt = prompt.replace("{{ selected_topic }}", selected_topic_json)
     prompt = prompt.replace("{{ style_guide }}", style_guide)
     prompt = prompt.replace("{{ topic_db }}", topic_db)
 
-    return prompt
+    return topic_lock + "\n\n" + prompt
 
 
 def validate_env() -> None:
