@@ -7,20 +7,22 @@
 <style>
 @page {
   size: A4;
-  margin: 16mm 16mm 15mm;
+  margin: 15mm 15mm 14mm;
 }
 
 :root {
+  --bg: #f4f0e8;
   --paper: #fffdf8;
-  --bg: #f3eee6;
   --ink: #1f1b16;
+  --body: #29231d;
   --muted: #6f665c;
-  --line: #d8c9b8;
-  --accent: #7a4f2a;
+  --line: #c9b9a6;
+  --line-soft: #ded1c2;
+  --accent: #8a5a2b;
   --accent-dark: #4d3018;
-  --soft: #efe2cf;
-  --soft-2: #f8f1e8;
-  --table-head: #eadcc8;
+  --table-header: #e7d9c5;
+  --box-bg: #f8f3ec;
+  --box-bg-strong: #f1e6d8;
 }
 
 * {
@@ -42,7 +44,7 @@ body {
     "Malgun Gothic",
     "Apple SD Gothic Neo",
     sans-serif;
-  color: var(--ink);
+  color: var(--body);
   background: var(--bg);
   line-height: 1.72;
   word-break: keep-all;
@@ -50,9 +52,6 @@ body {
 }
 
 .report-page {
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 42px 46px 58px;
   background: var(--paper);
 }
 
@@ -60,25 +59,25 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 24px;
-  padding-bottom: 12px;
-  margin-bottom: 34px;
+  padding-bottom: 9px;
+  margin-bottom: 26px;
   border-bottom: 1px solid var(--line);
-  color: var(--accent-dark);
-  font-size: 12px;
+  color: var(--muted);
+  font-size: 11.5px;
   font-weight: 700;
   letter-spacing: 0.02em;
 }
 
 .cover {
-  margin-bottom: 38px;
-  padding-bottom: 28px;
+  margin-bottom: 24px;
+  padding-bottom: 19px;
   border-bottom: 2px solid var(--accent-dark);
 }
 
 .journal-label {
-  margin: 0 0 18px;
+  margin: 0 0 14px;
   color: var(--accent);
-  font-size: 13px;
+  font-size: 12.5px;
   font-weight: 900;
   letter-spacing: 0.16em;
 }
@@ -86,82 +85,132 @@ body {
 h1 {
   margin: 0;
   color: var(--ink);
-  font-size: 42px;
+  font-size: 38px;
   line-height: 1.18;
   letter-spacing: -0.055em;
+  font-weight: 900;
 }
 
 .subtitle {
-  margin: 18px 0 0;
+  margin: 13px 0 0;
   color: var(--muted);
-  font-size: 18px;
-  line-height: 1.65;
+  font-size: 16.5px;
+  line-height: 1.58;
 }
 
-.meta-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  margin-top: 26px;
+.meta-table {
+  width: 100%;
+  margin-top: 21px;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 12.8px;
+  background: #ffffff;
 }
 
-.meta-item {
-  padding: 14px 16px;
-  background: var(--soft-2);
+.meta-table th,
+.meta-table td {
   border: 1px solid var(--line);
-  border-radius: 14px;
+  padding: 8px 10px;
+  vertical-align: middle;
 }
 
-.meta-label {
-  display: block;
-  margin-bottom: 4px;
-  color: var(--muted);
-  font-size: 11px;
-  font-weight: 800;
-}
-
-.meta-value {
+.meta-table th {
+  width: 11%;
+  background: var(--table-header);
   color: var(--accent-dark);
-  font-size: 14px;
-  font-weight: 800;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.meta-table td {
+  color: var(--body);
+}
+
+.keyword-line {
+  margin-top: 14px;
+  padding-top: 13px;
+  border-top: 1px solid var(--line);
+  color: var(--body);
+  font-size: 13.2px;
+  line-height: 1.6;
+}
+
+.keyword-line strong {
+  color: var(--accent);
+}
+
+.abstract {
+  margin: 21px 0 24px;
+  padding: 17px 19px;
+  background: var(--box-bg);
+  border: 1px solid var(--line);
+  border-left: 6px solid var(--accent);
+}
+
+.abstract-title {
+  margin: 0 0 8px;
+  color: var(--accent-dark);
+  font-size: 16px;
+  font-weight: 900;
 }
 
 .section {
-  margin: 34px 0 40px;
+  margin: 27px 0 31px;
+  padding-top: 1px;
+  border-top: 1px solid var(--line-soft);
+}
+
+.section:first-of-type {
+  border-top: 0;
 }
 
 .section-label {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   color: var(--accent);
-  font-size: 13px;
+  font-size: 12.5px;
   font-weight: 900;
   letter-spacing: 0.08em;
   break-after: avoid;
 }
 
 .section-title {
-  margin: 0 0 14px;
+  margin: 0 0 12px;
   color: var(--ink);
-  font-size: 26px;
-  line-height: 1.32;
+  font-size: 23px;
+  line-height: 1.34;
   letter-spacing: -0.04em;
   font-weight: 900;
   break-after: avoid;
 }
 
+.subsection .section-label {
+  font-size: 18px;
+  letter-spacing: -0.02em;
+}
+
+.subsection .section-title {
+  font-size: 18.5px;
+  color: var(--accent);
+}
+
 p {
-  margin: 0 0 14px;
-  font-size: 15.5px;
-  line-height: 1.78;
+  margin: 0 0 12px;
+  font-size: 14.8px;
+  line-height: 1.76;
   orphans: 2;
   widows: 2;
+}
+
+strong {
+  color: var(--accent-dark);
 }
 
 .keep-together,
 .table-block,
 .term-box,
 .takeaway-block,
-.reading-block {
+.reading-block,
+.abstract {
   break-inside: avoid;
   page-break-inside: avoid;
 }
@@ -169,125 +218,312 @@ p {
 .term-box,
 .takeaway-block,
 .reading-block {
-  margin: 24px 0;
-  padding: 20px 22px;
-  background: var(--soft-2);
+  margin: 22px 0 28px;
+  padding: 18px 20px;
+  background: var(--box-bg);
   border: 1px solid var(--line);
   border-left: 6px solid var(--accent);
-  border-radius: 16px;
 }
 
 .box-title {
-  margin: 0 0 12px;
+  margin: 0 0 11px;
   color: var(--accent-dark);
   font-size: 18px;
   font-weight: 900;
+  letter-spacing: -0.02em;
 }
 
 ul,
 ol {
-  margin: 8px 0 0;
+  margin: 6px 0 0;
   padding-left: 20px;
 }
 
 li {
-  margin: 8px 0;
-  font-size: 15px;
-  line-height: 1.7;
+  margin: 7px 0;
+  font-size: 14.5px;
+  line-height: 1.68;
 }
 
 .table-block {
-  margin: 30px 0 36px;
+  margin: 24px 0 30px;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.table-label {
+  margin-bottom: 7px;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.table-title {
+  margin: 0 0 9px;
+  color: var(--accent-dark);
+  font-size: 16.5px;
+  font-weight: 900;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
-  margin-top: 10px;
-  background: #fff;
-  font-size: 14px;
+  margin-top: 7px;
+  background: #ffffff;
+  font-size: 13px;
 }
 
 th,
 td {
   border: 1px solid var(--line);
-  padding: 9px 10px;
+  padding: 8px 9px;
   vertical-align: top;
 }
 
 th {
-  background: var(--table-head);
+  background: var(--table-header);
   color: var(--accent-dark);
   font-weight: 900;
 }
 
 th:first-child,
 td:first-child {
-  width: 14%;
+  width: 13%;
   white-space: nowrap;
-  font-weight: 800;
+  font-weight: 900;
 }
 
 .caption {
-  margin-top: 8px;
+  margin-top: 7px;
   color: var(--muted);
-  font-size: 12.5px;
+  font-size: 12.2px;
+  line-height: 1.5;
   text-align: center;
 }
 
+.takeaway-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.takeaway-card {
+  padding: 13px 15px;
+  background: #fffdf8;
+  border: 1px solid var(--line);
+}
+
+.takeaway-card-title {
+  margin: 0 0 5px;
+  color: var(--accent);
+  font-size: 14.5px;
+  font-weight: 900;
+}
+
+.takeaway-card p {
+  margin-bottom: 0;
+}
+
+.reading-list li {
+  margin-bottom: 9px;
+}
+
+.source-list {
+  margin-top: 10px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.source-list li {
+  margin: 6px 0;
+  color: var(--muted);
+  font-size: 11.8px;
+  line-height: 1.45;
+}
+
+.sources {
+  margin-top: 24px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.sources-title {
+  margin: 0 0 8px;
+  color: var(--ink);
+  font-size: 16px;
+  font-weight: 900;
+}
+
 .footer-note {
-  margin-top: 42px;
-  padding-top: 18px;
+  margin-top: 30px;
+  padding-top: 12px;
   border-top: 1px solid var(--line);
   color: var(--muted);
-  font-size: 12px;
+  font-size: 11.5px;
   text-align: center;
+}
+
+@media screen {
+  body {
+    background: var(--bg);
+  }
+
+  .report-page {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 40px 44px 56px;
+    box-shadow: 0 18px 42px rgba(57, 38, 20, 0.08);
+  }
+}
+
+@media (max-width: 768px) {
+  .report-page {
+    padding: 24px 18px 40px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .meta-table,
+  .meta-table tbody,
+  .meta-table tr,
+  .meta-table th,
+  .meta-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .meta-table th {
+    border-bottom: 0;
+  }
 }
 
 @media print {
   body {
-    background: #fff;
+    background: #ffffff;
   }
 
   .report-page {
     max-width: none;
+    margin: 0;
     padding: 0;
-    background: #fff;
+    background: #ffffff;
+    box-shadow: none;
   }
 
   h1 {
-    font-size: 34px;
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 15px;
   }
 
   .section {
-    margin: 28px 0 34px;
+    margin: 23px 0 28px;
   }
 
   .section-title {
-    font-size: 22px;
+    font-size: 20.5px;
+  }
+
+  .subsection .section-title {
+    font-size: 17.5px;
   }
 
   p {
-    font-size: 13.8px;
+    font-size: 13.35px;
+    line-height: 1.68;
   }
 
   li {
-    font-size: 13.5px;
+    font-size: 13px;
   }
 
   table {
-    font-size: 12.5px;
+    font-size: 11.6px;
+  }
+
+  th,
+  td {
+    padding: 6.3px 7.2px;
+  }
+
+  .term-box,
+  .takeaway-block,
+  .reading-block,
+  .abstract {
+    padding: 14px 16px;
   }
 }
 </style>
 </head>
 
 <body>
+
+{% macro render_section(section) %}
+{% set section_id = section.get("id", "") %}
+{% set section_label = section.get("label", "") %}
+{% set section_title = section.get("title", "") %}
+{% set section_text = (section_label ~ ' ' ~ section_title) %}
+{% set blocked = 'PROJECT DB' in section_text or '주제 DB' in section_text or '운영 메모' in section_text or '다음 회차 후보' in section_text or '후보 우선순위' in section_text or '반복 회피' in section_text or '다양성 확보' in section_text or 'candidate_pool' in section_text or 'topic_db' in section_text or 'GitHub Actions' in section_text or 'mock 실행' in section_text or 'API 실행' in section_text %}
+{% if not blocked %}
+<section class="section {% if section_id[0:3] == '03-' %}subsection{% endif %}">
+  <div class="section-label">{{ section.label }}</div>
+  <h2 class="section-title">{{ section.title }}</h2>
+  {% for paragraph in section.body %}
+  <p>{{ paragraph }}</p>
+  {% endfor %}
+</section>
+{% endif %}
+{% endmacro %}
+
+{% macro render_table(table) %}
+{% set table_text = table.title %}
+{% set blocked = 'PROJECT DB' in table_text or '주제 DB' in table_text or '운영 메모' in table_text or '다음 회차 후보' in table_text or '후보 우선순위' in table_text or '반복 회피' in table_text or '다양성 확보' in table_text or 'candidate_pool' in table_text or 'topic_db' in table_text or 'GitHub Actions' in table_text or 'mock 실행' in table_text or 'API 실행' in table_text %}
+{% if not blocked %}
+<section class="table-block keep-together">
+  <div class="table-title">{{ table.title }}</div>
+  <table>
+    <thead>
+      <tr>
+        {% for header in table.headers %}
+        <th>{{ header }}</th>
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in table.rows %}
+      <tr>
+        {% for cell in row %}
+        <td>{{ cell }}</td>
+        {% endfor %}
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% if table.caption is defined and table.caption %}
+  <div class="caption">{{ table.caption }}</div>
+  {% endif %}
+</section>
+{% endif %}
+{% endmacro %}
+
+{% macro render_tables_for(hints) %}
+{% for table in report.tables %}
+  {% set placement_hint = table.get("placement_hint", "") %}
+  {% if placement_hint in hints %}
+    {{ render_table(table) }}
+  {% endif %}
+{% endfor %}
+{% endmacro %}
+
 <main class="report-page">
   <header class="report-header">
     <div>GLOBAL KNOWLEDGE JOURNAL / {{ report.date }}</div>
-    <div>{{ report.category.main }} / {{ report.category.middle }}</div>
+    <div>{{ report.category.main }} / {{ report.category.middle }}{% if report.category.sub is defined and report.category.sub %} / {{ report.category.sub }}{% endif %}</div>
   </header>
 
   <section class="cover keep-together">
@@ -295,130 +531,177 @@ td:first-child {
     <h1>{{ report.title }}</h1>
     <p class="subtitle">{{ report.subtitle }}</p>
 
-    <div class="meta-grid">
-      <div class="meta-item">
-        <span class="meta-label">발행일</span>
-        <span class="meta-value">{{ report.date }}</span>
-      </div>
-      <div class="meta-item">
-        <span class="meta-label">분야</span>
-        <span class="meta-value">{{ report.category.main }}</span>
-      </div>
-      <div class="meta-item">
-        <span class="meta-label">세부 주제</span>
-        <span class="meta-value">{{ report.category.middle }}</span>
-      </div>
-    </div>
-  </section>
-
-  {% for section in report.sections %}
-  {% set section_text = (section.label ~ ' ' ~ section.title) %}
-  {% if 'PROJECT DB' not in section_text and '주제 DB' not in section_text and '운영 메모' not in section_text and '다음 회차 후보' not in section_text and '후보 우선순위' not in section_text and '반복 회피' not in section_text and '다양성 확보' not in section_text %}
-  <section class="section">
-    <div class="section-label">{{ section.label }}</div>
-    <h2 class="section-title">{{ section.title }}</h2>
-    {% for paragraph in section.body %}
-    <p>{{ paragraph }}</p>
-    {% endfor %}
-  </section>
-  {% endif %}
-  {% endfor %}
-
-  {% if report.term_boxes is defined %}
-  {% for box in report.term_boxes %}
-  <section class="term-box keep-together">
-    <h2 class="box-title">{{ box.title }}</h2>
-    {% if box.items is defined %}
-    <ul>
-      {% for item in box.items %}
-      <li>
-        {% if item.term is defined %}
-        <strong>{{ item.term }}</strong>: {{ item.description }}
-        {% else %}
-        {{ item }}
-        {% endif %}
-      </li>
-      {% endfor %}
-    </ul>
-    {% elif box.body is defined %}
-    {% for paragraph in box.body %}
-    <p>{{ paragraph }}</p>
-    {% endfor %}
-    {% endif %}
-  </section>
-  {% endfor %}
-  {% endif %}
-
-  {% for table in report.tables %}
-  {% set table_text = table.title %}
-  {% if 'PROJECT DB' not in table_text and '주제 DB' not in table_text and '운영 메모' not in table_text and '다음 회차 후보' not in table_text and '후보 우선순위' not in table_text and '반복 회피' not in table_text and '다양성 확보' not in table_text %}
-  <section class="table-block keep-together">
-    <div class="section-label">TABLE</div>
-    <h2 class="section-title">{{ table.title }}</h2>
-    <table>
-      <thead>
-        <tr>
-          {% for header in table.headers %}
-          <th>{{ header }}</th>
-          {% endfor %}
-        </tr>
-      </thead>
+    <table class="meta-table">
       <tbody>
-        {% for row in table.rows %}
         <tr>
-          {% for cell in row %}
-          <td>{{ cell }}</td>
-          {% endfor %}
+          <th>발행일</th>
+          <td>{{ report.date }}</td>
+          <th>분야</th>
+          <td>{{ report.category.main }} / {{ report.category.middle }}</td>
+          <th>난이도</th>
+          <td>{{ report.difficulty }}</td>
         </tr>
-        {% endfor %}
+        <tr>
+          <th>예상 시간</th>
+          <td>{{ report.estimated_reading_time }}</td>
+          <th>카테고리</th>
+          <td colspan="3">{{ report.category.main }} &gt; {{ report.category.middle }}{% if report.category.sub is defined and report.category.sub %} &gt; {{ report.category.sub }}{% endif %}</td>
+        </tr>
       </tbody>
     </table>
-    <div class="caption">{{ table.caption }}</div>
+
+    {% if report.keywords is defined and report.keywords %}
+    <div class="keyword-line">
+      <strong>핵심어:</strong>
+      {% for keyword in report.keywords %}
+        {{ keyword }}{% if not loop.last %} · {% endif %}
+      {% endfor %}
+    </div>
+    {% endif %}
+  </section>
+
+  {% if report.abstract is defined and report.abstract %}
+  <section class="abstract keep-together">
+    <h2 class="abstract-title">Abstract</h2>
+    {% if report.abstract is string %}
+    <p>{{ report.abstract }}</p>
+    {% else %}
+      {% for paragraph in report.abstract %}
+      <p>{{ paragraph }}</p>
+      {% endfor %}
+    {% endif %}
   </section>
   {% endif %}
+
+    {% for section in report.sections %}
+    {% set section_id = section.get("id", "") %}
+    {% set section_label = section.get("label", "") %}
+    {% if section_id == "01" or "01 / CONTEXT" in section_label %}
+      {{ render_section(section) }}
+    {% endif %}
+  {% endfor %}
+
+  {% for section in report.sections %}
+    {% set section_id = section.get("id", "") %}
+    {% set section_label = section.get("label", "") %}
+    {% if section_id == "02" or "02 / BEGINNER" in section_label %}
+      {{ render_section(section) }}
+    {% endif %}
+  {% endfor %}
+
+  {{ render_tables_for(["02"]) }}
+
+  {% for section in report.sections %}
+    {% set section_id = section.get("id", "") %}
+    {% set section_label = section.get("label", "") %}
+    {% if section_id == "03" or section_id[0:3] == "03-" or "03 / DEEP DIVE" in section_label or section_label[0:3] == "03-" %}
+      {{ render_section(section) }}
+    {% endif %}
+  {% endfor %}
+
+  {{ render_tables_for(["03", "03-5"]) }}
+
+  {% for section in report.sections %}
+    {% set section_id = section.get("id", "") %}
+    {% set section_label = section.get("label", "") %}
+    {% if section_id == "04" or "04 / CASE STUDY" in section_label %}
+      {{ render_section(section) }}
+    {% endif %}
+  {% endfor %}
+
+  {{ render_tables_for(["04"]) }}
+
+  {% for section in report.sections %}
+    {% set section_id = section.get("id", "") %}
+    {% set section_label = section.get("label", "") %}
+    {% if section_id == "05" or "05 / CURRENT STATE" in section_label %}
+      {{ render_section(section) }}
+    {% endif %}
+  {% endfor %}
+
+  {{ render_tables_for(["05"]) }}
+
+  {% for section in report.sections %}
+    {% set section_id = section.get("id", "") %}
+    {% set section_label = section.get("label", "") %}
+    {% if section_id == "06" or "06 / IMPLICATIONS" in section_label %}
+      {{ render_section(section) }}
+    {% endif %}
+  {% endfor %}
+
+  {{ render_tables_for(["06"]) }}
+
+  {% for table in report.tables %}
+    {% set placement_hint = table.get("placement_hint", "") %}
+    {% if placement_hint not in ["02", "03", "03-5", "04", "05", "06", "08"] %}
+      {{ render_table(table) }}
+    {% endif %}
   {% endfor %}
 
   {% if report.takeaways is defined %}
   <section class="takeaway-block keep-together">
     <h2 class="box-title">07 / TAKEAWAYS</h2>
-    <ol>
+    <div class="takeaway-list">
       {% for item in report.takeaways %}
+      <div class="takeaway-card">
+        {% if item is mapping %}
+          {% if item.title is defined %}
+          <h3 class="takeaway-card-title">{{ item.title }}</h3>
+          {% endif %}
+          {% if item.body is defined %}
+          <p>{{ item.body }}</p>
+          {% endif %}
+        {% else %}
+          <p>{{ item }}</p>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if report.further_reading is defined %}
+  <section class="reading-block keep-together">
+    <div class="section-label">08 / FURTHER READING</div>
+    <h2 class="box-title">더 읽을거리</h2>
+    <ul class="reading-list">
+      {% for item in report.further_reading %}
       <li>
         {% if item is mapping %}
-          {% if item.title is defined and item.body is defined %}
-            <strong>{{ item.title }}</strong>: {{ item.body }}
-          {% elif item.title is defined %}
-            <strong>{{ item.title }}</strong>
+          {% if item.title is defined %}
+          <strong>{{ item.title }}</strong>{% if item.author is defined and item.author %} — {{ item.author }}{% endif %}
+          {% if item.reason is defined and item.reason %}
+          <br />{{ item.reason }}
+          {% endif %}
           {% elif item.body is defined %}
-            {{ item.body }}
+          {{ item.body }}
           {% else %}
-            {{ item }}
+          {{ item }}
           {% endif %}
         {% else %}
           {{ item }}
         {% endif %}
       </li>
       {% endfor %}
-    </ol>
+    </ul>
   </section>
   {% endif %}
 
-  {% if report.further_reading is defined %}
-  <section class="reading-block keep-together">
-    <h2 class="box-title">08 / FURTHER READING</h2>
-    <ul>
-      {% for item in report.further_reading %}
+  {{ render_tables_for(["08"]) }}
+
+  {% if report.sources is defined and report.sources %}
+  <section class="sources">
+    <h2 class="sources-title">Sources</h2>
+    <ul class="source-list">
+      {% for source in report.sources %}
       <li>
-        {% if item is mapping %}
-          {% if item.title is defined %}
-            <strong>{{ item.title }}</strong>{% if item.author is defined %} — {{ item.author }}{% endif %}
-          {% elif item.body is defined %}
-            {{ item.body }}
-          {% else %}
-            {{ item }}
-          {% endif %}
+        {% if source is mapping %}
+          {% if source.publisher is defined %}<strong>{{ source.publisher }}</strong>{% endif %}
+          {% if source.title is defined %}, {{ source.title }}{% endif %}
+          {% if source.url is defined and source.url %} — {{ source.url }}{% endif %}
+          {% if source.used_for is defined and source.used_for %} / {{ source.used_for }}{% endif %}
         {% else %}
-          {{ item }}
+          {{ source }}
         {% endif %}
       </li>
       {% endfor %}
