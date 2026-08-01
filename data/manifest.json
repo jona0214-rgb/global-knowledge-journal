@@ -1,17 +1,17 @@
 {
-  "last_updated": "2026-08-02T00:48:33.112743+09:00",
+  "last_updated": "2026-08-02T01:43:50.782543+09:00",
   "reports": [
     {
       "date": "2026-08-02",
-      "title": "달력의 역사: 인간은 어떻게 시간을 나누고 약속했나",
-      "subtitle": "시간을 체계화하고 사회적 약속을 가능케 한 달력의 탄생과 진화",
-      "main_category": "역사·문화",
-      "mid_category": "시간문화",
+      "title": "무지의 베일: 공정한 사회는 어떻게 상상되는가",
+      "subtitle": "존 롤스의 정치철학에서 출발한 공정성 개념과 현대 사회적 함의",
+      "main_category": "인문·철학",
+      "mid_category": "정치철학",
       "sub_category": "",
-      "html_path": "outputs/20260802_history_of_calendar_Report.html",
-      "pdf_path": "outputs/20260802_history_of_calendar_Report.pdf",
-      "html_url": "outputs/20260802_history_of_calendar_Report.html",
-      "pdf_url": "outputs/20260802_history_of_calendar_Report.pdf",
+      "html_path": "outputs/20260802_veil_of_ignorance_fair_s_Report.html",
+      "pdf_path": "outputs/20260802_veil_of_ignorance_fair_s_Report.pdf",
+      "html_url": "outputs/20260802_veil_of_ignorance_fair_s_Report.html",
+      "pdf_url": "outputs/20260802_veil_of_ignorance_fair_s_Report.pdf",
       "status": "published_api"
     },
     {
