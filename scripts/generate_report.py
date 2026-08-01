@@ -4,7 +4,7 @@ from pathlib import Path
 from typing import Any, Dict
 
 from dotenv import load_dotenv
-from openai import OpenAI
+from openai import APITimeoutError, OpenAI
 
 
 ROOT_DIR = Path(__file__).resolve().parents[1]
@@ -129,7 +129,14 @@ def validate_env() -> None:
 
 def get_openai_client() -> OpenAI:
     validate_env()
-    return OpenAI(api_key=os.environ["OPENAI_API_KEY"])
+    timeout_seconds = float(os.getenv("OPENAI_TIMEOUT_SECONDS", "240"))
+    max_retries = int(os.getenv("OPENAI_MAX_RETRIES", "1"))
+
+    return OpenAI(
+        api_key=os.environ["OPENAI_API_KEY"],
+        timeout=timeout_seconds,
+        max_retries=max_retries,
+    )
 
 
 def generate_report_with_api(today: str, selected_topic: Dict[str, Any]) -> Dict[str, Any]:
@@ -145,27 +152,40 @@ def generate_report_with_api(today: str, selected_topic: Dict[str, Any]) -> Dict
     schema_name = schema_doc.get("name", "daily_report")
     schema = schema_doc["schema"]
 
-    response = client.responses.create(
-        model=model,
-        input=[
-            {
-                "role": "system",
-                "content": system_prompt,
-            },
-            {
-                "role": "user",
-                "content": user_prompt,
-            },
-        ],
-        text={
-            "format": {
-                "type": "json_schema",
-                "name": schema_name,
-                "schema": schema,
-                "strict": True,
-            }
-        },
+    timeout_seconds = float(os.getenv("OPENAI_TIMEOUT_SECONDS", "240"))
+    max_retries = int(os.getenv("OPENAI_MAX_RETRIES", "1"))
+    print(
+        "OpenAI API 요청 시작: "
+        f"요청당 제한 {timeout_seconds:g}초, 최대 재시도 {max_retries}회"
     )
+
+    try:
+        response = client.responses.create(
+            model=model,
+            input=[
+                {
+                    "role": "system",
+                    "content": system_prompt,
+                },
+                {
+                    "role": "user",
+                    "content": user_prompt,
+                },
+            ],
+            text={
+                "format": {
+                    "type": "json_schema",
+                    "name": schema_name,
+                    "schema": schema,
+                    "strict": True,
+                }
+            },
+        )
+    except APITimeoutError as exc:
+        raise RuntimeError(
+            "OpenAI API 응답 제한시간을 초과했습니다. "
+            f"요청당 {timeout_seconds:g}초, 최대 재시도 {max_retries}회"
+        ) from exc
 
     raw_text = response.output_text
 
