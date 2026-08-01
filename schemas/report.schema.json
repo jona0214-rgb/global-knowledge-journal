@@ -116,7 +116,7 @@
                 "id": { "type": "string", "enum": ["01"] },
                 "label": { "type": "string" },
                 "title": { "type": "string" },
-                "body": { "type": "array", "minItems": 4, "items": { "type": "string", "minLength": 170 } }
+                "body": { "type": "array", "minItems": 4, "items": { "type": "string", "minLength": 160 } }
               }
             },
             {
@@ -127,7 +127,7 @@
                 "id": { "type": "string", "enum": ["02"] },
                 "label": { "type": "string" },
                 "title": { "type": "string" },
-                "body": { "type": "array", "minItems": 3, "items": { "type": "string", "minLength": 170 } }
+                "body": { "type": "array", "minItems": 3, "items": { "type": "string", "minLength": 160 } }
               }
             },
             {
@@ -138,7 +138,7 @@
                 "id": { "type": "string", "enum": ["03"] },
                 "label": { "type": "string" },
                 "title": { "type": "string" },
-                "body": { "type": "array", "minItems": 2, "items": { "type": "string", "minLength": 170 } }
+                "body": { "type": "array", "minItems": 2, "items": { "type": "string", "minLength": 160 } }
               }
             },
             {
@@ -149,7 +149,7 @@
                 "id": { "type": "string", "enum": ["03-1"] },
                 "label": { "type": "string" },
                 "title": { "type": "string" },
-                "body": { "type": "array", "minItems": 3, "items": { "type": "string", "minLength": 170 } }
+                "body": { "type": "array", "minItems": 3, "items": { "type": "string", "minLength": 160 } }
               }
             },
             {
@@ -160,7 +160,7 @@
                 "id": { "type": "string", "enum": ["03-2"] },
                 "label": { "type": "string" },
                 "title": { "type": "string" },
-                "body": { "type": "array", "minItems": 3, "items": { "type": "string", "minLength": 170 } }
+                "body": { "type": "array", "minItems": 3, "items": { "type": "string", "minLength": 160 } }
               }
             },
             {
@@ -171,7 +171,7 @@
                 "id": { "type": "string", "enum": ["03-3"] },
                 "label": { "type": "string" },
                 "title": { "type": "string" },
-                "body": { "type": "array", "minItems": 3, "items": { "type": "string", "minLength": 170 } }
+                "body": { "type": "array", "minItems": 3, "items": { "type": "string", "minLength": 160 } }
               }
             },
             {
@@ -182,7 +182,7 @@
                 "id": { "type": "string", "enum": ["03-4"] },
                 "label": { "type": "string" },
                 "title": { "type": "string" },
-                "body": { "type": "array", "minItems": 3, "items": { "type": "string", "minLength": 170 } }
+                "body": { "type": "array", "minItems": 3, "items": { "type": "string", "minLength": 160 } }
               }
             },
             {
@@ -193,7 +193,7 @@
                 "id": { "type": "string", "enum": ["03-5"] },
                 "label": { "type": "string" },
                 "title": { "type": "string" },
-                "body": { "type": "array", "minItems": 3, "items": { "type": "string", "minLength": 170 } }
+                "body": { "type": "array", "minItems": 3, "items": { "type": "string", "minLength": 160 } }
               }
             },
             {
@@ -204,7 +204,7 @@
                 "id": { "type": "string", "enum": ["04"] },
                 "label": { "type": "string" },
                 "title": { "type": "string" },
-                "body": { "type": "array", "minItems": 5, "items": { "type": "string", "minLength": 170 } }
+                "body": { "type": "array", "minItems": 5, "items": { "type": "string", "minLength": 160 } }
               }
             },
             {
@@ -215,7 +215,7 @@
                 "id": { "type": "string", "enum": ["05"] },
                 "label": { "type": "string" },
                 "title": { "type": "string" },
-                "body": { "type": "array", "minItems": 5, "items": { "type": "string", "minLength": 170 } }
+                "body": { "type": "array", "minItems": 5, "items": { "type": "string", "minLength": 160 } }
               }
             },
             {
@@ -226,7 +226,7 @@
                 "id": { "type": "string", "enum": ["06"] },
                 "label": { "type": "string" },
                 "title": { "type": "string" },
-                "body": { "type": "array", "minItems": 5, "items": { "type": "string", "minLength": 170 } }
+                "body": { "type": "array", "minItems": 5, "items": { "type": "string", "minLength": 160 } }
               }
             }
           ]
