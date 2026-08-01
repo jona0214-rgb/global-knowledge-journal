@@ -560,6 +560,57 @@ def run_mock():
 
     save_render_publish_report(report, topic_db, mode="mock")
 
+def enforce_selected_topic(report: dict, selected_topic: dict) -> dict:
+    expected_title = (
+        selected_topic.get("topic")
+        or selected_topic.get("title")
+        or ""
+    ).strip()
+
+    actual_title = str(report.get("title", "")).strip()
+
+    if expected_title and actual_title and expected_title != actual_title:
+        raise ValueError(
+            "생성된 리포트 제목이 선정 주제와 다릅니다. "
+            f"선정 주제='{expected_title}', 생성 제목='{actual_title}'"
+        )
+
+    if expected_title:
+        report["title"] = expected_title
+
+    category = report.get("category")
+    if not isinstance(category, dict):
+        category = {}
+
+    main_category = (
+        selected_topic.get("main_category")
+        or selected_topic.get("main")
+        or category.get("main")
+        or ""
+    )
+
+    middle_category = (
+        selected_topic.get("middle_category")
+        or selected_topic.get("mid_category")
+        or selected_topic.get("middle")
+        or category.get("middle")
+        or ""
+    )
+
+    sub_category = (
+        selected_topic.get("sub_category")
+        or selected_topic.get("sub")
+        or category.get("sub")
+        or ""
+    )
+
+    report["category"] = {
+        "main": main_category,
+        "middle": middle_category,
+        "sub": sub_category,
+    }
+
+    return report
 
 def run_api():
     from generate_report import generate_report
@@ -573,6 +624,7 @@ def run_api():
     print(f"선정 주제: {topic.get('topic')}")
 
     report = generate_report(today=today, selected_topic=topic)
+    report = enforce_selected_topic(report, topic)
 
     save_render_publish_report(report, topic_db, mode="api")
 
