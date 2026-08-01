@@ -1,13 +1,13 @@
 {
   "date": "2026-08-01",
-  "title": "인공지능 윤리",
-  "subtitle": "인공지능 시대, 윤리적 도전과 방향성 탐구",
-  "main_category": "기술",
-  "mid_category": "인공지능",
-  "sub_category": "윤리",
-  "html_path": "outputs/20260801_aijeonri_Report.html",
-  "pdf_path": "outputs/20260801_aijeonri_Report.pdf",
-  "html_url": "outputs/20260801_aijeonri_Report.html",
-  "pdf_url": "outputs/20260801_aijeonri_Report.pdf",
+  "title": "시간표의 탄생: 근대 사회는 어떻게 시간을 표준화했나",
+  "subtitle": "근대화와 산업혁명 속에서 시간의 통합과 표준화 과정을 탐구하다",
+  "main_category": "역사·문화",
+  "mid_category": "시간문화",
+  "sub_category": "",
+  "html_path": "outputs/20260801_siganpyoui_tansaeng_geun_Report.html",
+  "pdf_path": "outputs/20260801_siganpyoui_tansaeng_geun_Report.pdf",
+  "html_url": "outputs/20260801_siganpyoui_tansaeng_geun_Report.html",
+  "pdf_url": "outputs/20260801_siganpyoui_tansaeng_geun_Report.pdf",
   "status": "published_api"
 }

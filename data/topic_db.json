@@ -204,14 +204,14 @@
       "main_category": "자연사·생태",
       "mid_category": "동물행동",
       "priority": 0.84,
-      "status": "candidate"
+      "status": "used"
     },
     {
       "topic": "시간표의 탄생: 근대 사회는 어떻게 시간을 표준화했나",
       "main_category": "역사·문화",
       "mid_category": "시간문화",
       "priority": 0.82,
-      "status": "candidate"
+      "status": "used"
     },
     {
       "topic": "전기요금의 정치학: 에너지 가격은 왜 단순한 숫자가 아닌가",
