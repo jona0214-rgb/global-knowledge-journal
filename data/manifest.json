@@ -1,17 +1,17 @@
 {
-  "last_updated": "2026-08-01T17:42:03.145954+09:00",
+  "last_updated": "2026-08-01T17:51:39.670331+09:00",
   "reports": [
     {
       "date": "2026-08-01",
-      "title": "철새의 항로: 새들은 어떻게 지구를 기억하는가",
-      "subtitle": "철새 이동의 신비와 새들이 사용하는 지구 기억 메커니즘 탐구",
-      "main_category": "자연사·생태",
-      "mid_category": "동물행동",
+      "title": "시간표의 탄생: 근대 사회는 어떻게 시간을 표준화했나",
+      "subtitle": "근대화와 산업혁명 속에서 시간의 통합과 표준화 과정을 탐구하다",
+      "main_category": "역사·문화",
+      "mid_category": "시간문화",
       "sub_category": "",
-      "html_path": "outputs/20260801_chelssaeehangrosaedeureo_Report.html",
-      "pdf_path": "outputs/20260801_chelssaeehangrosaedeureo_Report.pdf",
-      "html_url": "outputs/20260801_chelssaeehangrosaedeureo_Report.html",
-      "pdf_url": "outputs/20260801_chelssaeehangrosaedeureo_Report.pdf",
+      "html_path": "outputs/20260801_siganpyoui_tansaeng_geun_Report.html",
+      "pdf_path": "outputs/20260801_siganpyoui_tansaeng_geun_Report.pdf",
+      "html_url": "outputs/20260801_siganpyoui_tansaeng_geun_Report.html",
+      "pdf_url": "outputs/20260801_siganpyoui_tansaeng_geun_Report.pdf",
       "status": "published_api"
     },
     {
