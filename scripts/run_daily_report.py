@@ -501,7 +501,7 @@ def update_public_catalog(report: dict, html_path: Path, pdf_path: Path):
         "pdf_path": pdf_public_path,
         "html_url": html_public_path,
         "pdf_url": pdf_public_path,
-        "status": "published_mock"
+        "status": report.get("status", "published_mock")
     }
 
     reports.append(item)
@@ -518,8 +518,11 @@ def update_public_catalog(report: dict, html_path: Path, pdf_path: Path):
     save_json(MANIFEST_PATH, manifest)
 
 
-def save_render_publish_report(report: dict, topic_db: dict) -> None:
-    today = report.get("date") or get_today_kst()
+def save_render_publish_report(report: dict, topic_db: dict, mode: str = "mock"):
+    today = datetime.now(ZoneInfo("Asia/Seoul")).date().isoformat()
+    report["date"] = today
+    report["status"] = f"published_{mode}"
+
     date_compact = compact_date(today)
 
     raw_slug = report.get("title_slug") or report.get("title") or "report"
@@ -555,7 +558,7 @@ def run_mock():
 
     report = create_mock_report(today, topic)
 
-    save_render_publish_report(report, topic_db)
+    save_render_publish_report(report, topic_db, mode="mock")
 
 
 def run_api():
@@ -571,7 +574,7 @@ def run_api():
 
     report = generate_report(today=today, selected_topic=topic)
 
-    save_render_publish_report(report, topic_db)
+    save_render_publish_report(report, topic_db, mode="api")
 
 
 def main():
