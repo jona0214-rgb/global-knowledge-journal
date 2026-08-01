@@ -135,7 +135,7 @@
               "minItems": 2,
               "items": {
                 "type": "string",
-                "minLength": 1
+                "minLength": 170
               }
             }
           }

@@ -689,6 +689,7 @@ def validate_report_structure(report: dict) -> None:
     }
 
     too_short = []
+    short_paragraphs = []
     total_paragraphs = 0
     total_body_characters = 0
 
@@ -703,9 +704,19 @@ def validate_report_structure(report: dict) -> None:
         total_body_characters += sum(len(paragraph.strip()) for paragraph in body)
         if len(body) < minimum:
             too_short.append(f"{section_id}: 유효한 {len(body)}문단, 최소 {minimum}문단 필요")
+        for paragraph_index, paragraph in enumerate(body, start=1):
+            paragraph_length = len(paragraph.strip())
+            if paragraph_length < 170:
+                short_paragraphs.append(
+                    f"{section_id}의 {paragraph_index}번째 문단: "
+                    f"{paragraph_length}자, 최소 170자 필요"
+                )
 
     if too_short:
         raise ValueError("본문 분량이 부족합니다. " + " / ".join(too_short))
+
+    if short_paragraphs:
+        raise ValueError("너무 짧은 본문 문단이 있습니다. " + " / ".join(short_paragraphs))
 
     if total_paragraphs < 36:
         raise ValueError(f"본문 총 문단 수가 부족합니다: {total_paragraphs}문단, 최소 36문단 필요")
