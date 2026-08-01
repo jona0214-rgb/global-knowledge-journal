@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-07-26",
+  "updated_at": "2024-06-20",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -123,15 +123,35 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260726_자막과더빙의문화사_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260726_자막과더빙의문화사_Report.pdf",
       "status": "published_mock"
+    },
+    {
+      "date": "2024-06-20",
+      "title": "지속가능한 도시 농업",
+      "main_category": "환경",
+      "mid_category": "도시개발",
+      "sub_category": "농업과 친환경",
+      "keywords": [
+        "도시농업",
+        "지속가능성",
+        "지역사회",
+        "식량안보",
+        "도시재생",
+        "환경보전",
+        "커뮤니티 가든",
+        "농업기술"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20240620_sisanganeundosinongup_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20240620_sisanganeundosinongup_Report.pdf",
+      "status": "published_mock"
     }
   ],
   "category_rotation": {
     "recent_main_categories": [
-      "인문·철학",
       "자연사·생태",
       "역사·문화",
       "경제·사회",
-      "인문·철학"
+      "인문·철학",
+      "환경"
     ],
     "next_priority": [
       "인문·철학",

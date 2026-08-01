@@ -11,5 +11,18 @@
     "html_url": "outputs/20260726_자막과더빙의문화사_Report.html",
     "pdf_url": "outputs/20260726_자막과더빙의문화사_Report.pdf",
     "status": "published_mock"
+  },
+  {
+    "date": "2024-06-20",
+    "title": "지속가능한 도시 농업",
+    "subtitle": "도시 속 농업, 환경과 삶의 새로운 해법",
+    "main_category": "환경",
+    "mid_category": "도시개발",
+    "sub_category": "농업과 친환경",
+    "html_path": "outputs/20240620_sisanganeundosinongup_Report.html",
+    "pdf_path": "outputs/20240620_sisanganeundosinongup_Report.pdf",
+    "html_url": "outputs/20240620_sisanganeundosinongup_Report.html",
+    "pdf_url": "outputs/20240620_sisanganeundosinongup_Report.pdf",
+    "status": "published_mock"
   }
 ]
