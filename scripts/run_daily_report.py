@@ -621,11 +621,17 @@ def validate_report_structure(report: dict) -> None:
         raise ValueError("report.sections가 list가 아닙니다.")
 
     section_map = {}
+    duplicate_ids = []
     for section in sections:
         if not isinstance(section, dict):
             continue
         section_id = str(section.get("id", "")).strip()
+        if section_id in section_map:
+            duplicate_ids.append(section_id)
         section_map[section_id] = section
+
+    if duplicate_ids:
+        raise ValueError("중복된 섹션 ID가 있습니다: " + ", ".join(sorted(set(duplicate_ids))))
 
     missing = [section_id for section_id in required_ids if section_id not in section_map]
     if missing:
@@ -649,12 +655,15 @@ def validate_report_structure(report: dict) -> None:
     total_paragraphs = 0
 
     for section_id, minimum in min_paragraphs.items():
-        body = section_map[section_id].get("body", [])
-        if not isinstance(body, list):
-            body = []
+        raw_body = section_map[section_id].get("body", [])
+        body = (
+            [paragraph for paragraph in raw_body if isinstance(paragraph, str) and paragraph.strip()]
+            if isinstance(raw_body, list)
+            else []
+        )
         total_paragraphs += len(body)
         if len(body) < minimum:
-            too_short.append(f"{section_id}: {len(body)}문단, 최소 {minimum}문단 필요")
+            too_short.append(f"{section_id}: 유효한 {len(body)}문단, 최소 {minimum}문단 필요")
 
     if too_short:
         raise ValueError("본문 분량이 부족합니다. " + " / ".join(too_short))

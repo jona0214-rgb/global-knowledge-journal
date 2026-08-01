@@ -104,6 +104,8 @@
       "sections": {
         "type": "array",
         "description": "01~06 본문 섹션. 07과 08은 별도 필드로 처리한다.",
+        "minItems": 11,
+        "maxItems": 11,
         "items": {
           "type": "object",
           "additionalProperties": false,
@@ -116,7 +118,8 @@
           "properties": {
             "id": {
               "type": "string",
-              "description": "섹션 ID. 예: 01, 02, 03, 03-1, 04"
+              "description": "앞자리 0을 포함한 필수 섹션 ID",
+              "enum": ["01", "02", "03", "03-1", "03-2", "03-3", "03-4", "03-5", "04", "05", "06"]
             },
             "label": {
               "type": "string",
@@ -129,8 +132,10 @@
             "body": {
               "type": "array",
               "description": "섹션 본문 문단 배열",
+              "minItems": 2,
               "items": {
-                "type": "string"
+                "type": "string",
+                "minLength": 1
               }
             }
           }
@@ -151,6 +156,8 @@
           "items": {
             "type": "array",
             "description": "핵심 용어 4개. 2x2 박스로 표시된다.",
+            "minItems": 4,
+            "maxItems": 4,
             "items": {
               "type": "object",
               "additionalProperties": false,
@@ -188,6 +195,7 @@
           "steps": {
             "type": "array",
             "description": "흐름도 단계 4~6개",
+            "minItems": 4,
             "items": {
               "type": "string"
             }
@@ -201,6 +209,7 @@
       "tables": {
         "type": "array",
         "description": "리포트에 포함할 표 목록. placement_hint로 배치 위치를 지정한다.",
+        "minItems": 4,
         "items": {
           "type": "object",
           "additionalProperties": false,
@@ -252,6 +261,7 @@
       "section_notes": {
         "type": "array",
         "description": "특정 섹션 뒤에 들어가는 보조 코멘트 박스",
+        "minItems": 2,
         "items": {
           "type": "object",
           "additionalProperties": false,
@@ -279,6 +289,8 @@
       "takeaways": {
         "type": "array",
         "description": "07 / TAKEAWAYS에 들어갈 핵심 정리 박스 3개",
+        "minItems": 3,
+        "maxItems": 3,
         "items": {
           "type": "object",
           "additionalProperties": false,
@@ -328,6 +340,7 @@
       "sources": {
         "type": "array",
         "description": "리포트 작성에 사용한 출처 목록",
+        "minItems": 5,
         "items": {
           "type": "object",
           "additionalProperties": false,

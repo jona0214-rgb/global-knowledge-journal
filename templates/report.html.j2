@@ -745,7 +745,7 @@ td:first-child {
 {% set section_id = section.get("id", "") %}
 {% set section_label = section.get("label", "") %}
 {% set section_title = section.get("title", "") %}
-{% set is_subsection = section_id[0:3] == "03-" or section_label[0:3] == "03-" %}
+{% set is_subsection = section_id[0:3] == "03-" or section_id[0:2] == "3-" or section_label[0:3] == "03-" or section_label[0:2] == "3-" %}
 <section class="section {% if first %}first-section{% endif %} {% if is_subsection %}subsection{% endif %}">
   {% if is_subsection %}
     <h2 class="subsection-title"><span class="subsection-label-inline">{{ section_label }}</span>{{ section_title }}</h2>
@@ -868,7 +868,7 @@ td:first-child {
   {% for section in report.sections %}
     {% set section_id = section.get("id", "") %}
     {% set section_label = section.get("label", "") %}
-    {% if section_id == "01" or "01 / CONTEXT" in section_label %}
+    {% if section_id in ["01", "1"] or "01 / CONTEXT" in section_label or "1 / CONTEXT" in section_label %}
       {{ render_section(section, true) }}
     {% endif %}
   {% endfor %}
@@ -876,7 +876,7 @@ td:first-child {
   {% for section in report.sections %}
     {% set section_id = section.get("id", "") %}
     {% set section_label = section.get("label", "") %}
-    {% if section_id == "02" or "02 / BEGINNER" in section_label %}
+    {% if section_id in ["02", "2"] or "02 / BEGINNER" in section_label or "2 / BEGINNER" in section_label %}
       {{ render_section(section) }}
     {% endif %}
   {% endfor %}
@@ -917,7 +917,7 @@ td:first-child {
   {% for section in report.sections %}
     {% set section_id = section.get("id", "") %}
     {% set section_label = section.get("label", "") %}
-    {% if section_id == "03" or section_id[0:3] == "03-" or "03 / DEEP DIVE" in section_label or section_label[0:3] == "03-" %}
+    {% if section_id in ["03", "3"] or section_id[0:3] == "03-" or section_id[0:2] == "3-" or "03 / DEEP DIVE" in section_label or "3 / DEEP DIVE" in section_label or section_label[0:3] == "03-" or section_label[0:2] == "3-" %}
       {{ render_section(section) }}
     {% endif %}
   {% endfor %}
@@ -927,7 +927,7 @@ td:first-child {
   {% for section in report.sections %}
     {% set section_id = section.get("id", "") %}
     {% set section_label = section.get("label", "") %}
-    {% if section_id == "04" or "04 / CASE STUDY" in section_label %}
+    {% if section_id in ["04", "4"] or "04 / CASE STUDY" in section_label or "4 / CASE STUDY" in section_label %}
       {{ render_section(section) }}
     {% endif %}
   {% endfor %}
@@ -938,7 +938,7 @@ td:first-child {
   {% for section in report.sections %}
     {% set section_id = section.get("id", "") %}
     {% set section_label = section.get("label", "") %}
-    {% if section_id == "05" or "05 / CURRENT STATE" in section_label %}
+    {% if section_id in ["05", "5"] or "05 / CURRENT STATE" in section_label or "5 / CURRENT STATE" in section_label %}
       {{ render_section(section) }}
     {% endif %}
   {% endfor %}
@@ -948,7 +948,7 @@ td:first-child {
   {% for section in report.sections %}
     {% set section_id = section.get("id", "") %}
     {% set section_label = section.get("label", "") %}
-    {% if section_id == "06" or "06 / IMPLICATIONS" in section_label %}
+    {% if section_id in ["06", "6"] or "06 / IMPLICATIONS" in section_label or "6 / IMPLICATIONS" in section_label %}
       {{ render_section(section) }}
     {% endif %}
   {% endfor %}
