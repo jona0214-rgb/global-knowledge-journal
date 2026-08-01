@@ -1,6 +1,19 @@
 {
-  "last_updated": "2026-08-01T15:34:29.919944+09:00",
+  "last_updated": "2026-08-01T16:42:52.645616+09:00",
   "reports": [
+    {
+      "date": "2026-08-01",
+      "title": "인공지능 윤리",
+      "subtitle": "인공지능 시대, 윤리적 도전과 방향성 탐구",
+      "main_category": "기술",
+      "mid_category": "인공지능",
+      "sub_category": "윤리",
+      "html_path": "outputs/20260801_aijeonri_Report.html",
+      "pdf_path": "outputs/20260801_aijeonri_Report.pdf",
+      "html_url": "outputs/20260801_aijeonri_Report.html",
+      "pdf_url": "outputs/20260801_aijeonri_Report.pdf",
+      "status": "published_api"
+    },
     {
       "date": "2026-07-26",
       "title": "자막과 더빙의 문화사",
