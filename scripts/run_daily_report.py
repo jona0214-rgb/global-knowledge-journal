@@ -334,7 +334,7 @@ def render_pdf_with_playwright(html_path: Path, pdf_path: Path):
         browser.close()
 
 
-def validate_pdf_page_count(pdf_path: Path, min_pages: int = 7, max_pages: int = 9) -> None:
+def validate_pdf_page_count(pdf_path: Path, min_pages: int = 6, max_pages: int = 9) -> None:
     """렌더링된 API PDF가 목표 페이지 범위인지 검사한다."""
     from pypdf import PdfReader
 

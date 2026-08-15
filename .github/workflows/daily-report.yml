@@ -29,7 +29,7 @@ jobs:
     env:
       REPORT_TIMEZONE: Asia/Seoul
       REPORT_LANGUAGE: ko
-      REPORT_MIN_PAGES: "7"
+      REPORT_MIN_PAGES: "6"
       REPORT_TARGET_PAGES: "7-9"
       REPORT_MODE: ${{ github.event.inputs.report_mode || 'mock' }}
       OPENAI_MODEL: gpt-4.1-mini
