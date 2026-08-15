@@ -54,7 +54,8 @@
         "required": [
           "main",
           "middle",
-          "sub"
+          "sub",
+          "detail"
         ],
         "properties": {
           "main": {
@@ -67,7 +68,13 @@
           },
           "sub": {
             "type": "string",
-            "description": "소분류"
+            "minLength": 1,
+            "description": "소분류. 대분류·중분류를 반복하지 않고 주제의 구체적 분야를 적는다."
+          },
+          "detail": {
+            "type": "string",
+            "minLength": 1,
+            "description": "최소 분류. 소분류보다 한 단계 더 구체적인 주제 초점을 짧게 적는다."
           }
         }
       },
@@ -464,3 +471,4 @@
     }
   }
 }
+

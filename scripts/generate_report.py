@@ -80,6 +80,12 @@ def build_user_prompt(today: str, selected_topic: Dict[str, Any]) -> str:
         or ""
     ).strip()
 
+    sub_category_rule = (
+        locked_sub_category
+        if locked_sub_category
+        else "선정 주제에서 추론한 구체적인 소분류"
+    )
+
     topic_lock = f"""
 # TOPIC LOCK
 
@@ -93,7 +99,8 @@ def build_user_prompt(today: str, selected_topic: Dict[str, Any]) -> str:
 - report.title: {locked_title}
 - report.category.main: {locked_main_category}
 - report.category.middle: {locked_middle_category}
-- report.category.sub: {locked_sub_category}
+- report.category.sub: {sub_category_rule}
+- report.category.detail: 소분류보다 한 단계 더 구체적인 최소 분류
 
 절대 금지:
 - 새로운 주제를 고르지 마세요.
@@ -234,3 +241,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

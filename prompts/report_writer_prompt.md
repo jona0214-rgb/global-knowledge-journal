@@ -21,7 +21,10 @@
 - 새로운 주제를 고르지 않는다.
 - 선정 주제를 다른 주제로 바꾸지 않는다.
 - report.title은 선정 주제의 topic 문자열과 정확히 같아야 한다.
-- report.category는 선정 주제의 main_category, mid_category, sub_category를 따른다.
+- report.category.main과 middle은 선정 주제의 main_category와 mid_category를 그대로 따른다.
+- report.category.sub는 선정 주제의 sub_category가 있으면 따르고, 비어 있으면 주제에서 구체적인 소분류를 추론한다.
+- report.category.detail은 sub보다 한 단계 더 구체적인 최소 분류를 짧게 작성한다.
+- category.main·middle과 category.sub·detail은 같은 표현을 반복하지 않는다.
 - 제목은 고정하되 subtitle은 독자가 이해하기 쉬운 설명으로 작성한다.
 - 03, 04, 05, 06 섹션은 절대 생략하지 않는다.
 - 표와 노트는 본문을 대체하지 않는다. 표는 반드시 본문 뒤의 보조 정리로만 사용한다.
@@ -118,6 +121,15 @@ JSON 필드는 반드시 schema에 맞춰 작성한다.
 - estimated_reading_time
 - category
 - keywords
+
+category는 다음 4단계로 구분한다.
+
+- main: 아주 큰 대분류
+- middle: 대분류 아래의 중분류
+- sub: 주제의 구체적 소분류
+- detail: 소분류 아래의 최소 분류
+
+표지에서는 main·middle을 `카테고리`, sub·detail을 `분야`로 표시하므로 서로 중복되는 표현을 쓰지 않는다.
 
 title_slug는 영문 소문자, 숫자, 밑줄만 사용한다.
 
@@ -454,6 +466,7 @@ sources는 리포트 작성에 참고한 출처 목록이다.
 - takeaways가 정확히 3개인가
 - section_notes가 정확히 2개인가
 - sources가 최소 5개인가
+- category.main·middle과 category.sub·detail이 서로 중복되지 않고 대분류에서 최소 분류로 구체화되는가
 - 전체 분량이 7~9페이지를 만들 만큼 충분한가
 
 ---
@@ -471,3 +484,4 @@ sources는 리포트 작성에 참고한 출처 목록이다.
 아래 주제 DB는 중복 회피와 맥락 참고용이다. 리포트 본문에는 절대 언급하지 않는다.
 
 {{ topic_db }}
+

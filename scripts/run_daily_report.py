@@ -185,7 +185,8 @@ def create_mock_report(today: str, topic: dict) -> dict:
         "category": {
             "main": topic.get("main_category", "언어·문자"),
             "middle": topic.get("mid_category", "영상번역"),
-            "sub": "자막과 더빙"
+            "sub": "시청각 번역",
+            "detail": "자막·더빙 문화"
         },
         "keywords": [
             "자막",
@@ -318,7 +319,7 @@ def render_pdf_with_playwright(html_path: Path, pdf_path: Path, report: dict):
     category = report.get("category", {})
     category_text = " / ".join(
         escape(str(category.get(key, "")).strip())
-        for key in ("main", "middle", "sub")
+        for key in ("main", "middle")
         if category.get(key)
     )
     # Chromium can paint body fragments over a standalone header template on
@@ -661,10 +662,20 @@ def enforce_selected_topic(report: dict, selected_topic: dict) -> dict:
         or ""
     )
 
+    detail_category = (
+        selected_topic.get("detail_category")
+        or selected_topic.get("detail")
+        or category.get("detail")
+        or selected_topic.get("topic")
+        or report.get("title")
+        or ""
+    )
+
     report["category"] = {
         "main": main_category,
         "middle": middle_category,
         "sub": sub_category,
+        "detail": detail_category,
     }
 
     return report
@@ -854,3 +865,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
