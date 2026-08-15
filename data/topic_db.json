@@ -237,49 +237,63 @@
       "main_category": "인문·철학",
       "mid_category": "정치철학",
       "priority": 0.86,
-      "status": "used"
+      "status": "candidate"
     },
     {
       "topic": "철새의 항로: 새들은 어떻게 지구를 기억하는가",
       "main_category": "자연사·생태",
       "mid_category": "동물행동",
       "priority": 0.84,
-      "status": "used"
+      "status": "candidate"
     },
     {
       "topic": "시간표의 탄생: 근대 사회는 어떻게 시간을 표준화했나",
       "main_category": "역사·문화",
       "mid_category": "시간문화",
       "priority": 0.82,
-      "status": "used"
+      "status": "candidate"
     },
     {
       "topic": "전기요금의 정치학: 에너지 가격은 왜 단순한 숫자가 아닌가",
       "main_category": "경제·사회",
       "mid_category": "에너지정책",
       "priority": 0.8,
-      "status": "used"
+      "status": "candidate"
     },
     {
       "topic": "타이포그래피의 목소리: 글자는 어떻게 말투가 되었나",
       "main_category": "예술·미학",
       "mid_category": "그래픽디자인",
       "priority": 0.78,
-      "status": "used"
+      "status": "candidate"
     },
     {
       "topic": "도시의 하수도: 보이지 않는 위생 인프라는 어떻게 문명을 바꾸었나",
       "main_category": "생활기술·일상문화",
       "mid_category": "도시인프라",
       "priority": 0.76,
-      "status": "used"
+      "status": "candidate"
     },
     {
       "topic": "달력의 역사: 인간은 어떻게 시간을 나누고 약속했나",
       "main_category": "역사·문화",
       "mid_category": "시간문화",
       "priority": 0.74,
-      "status": "used"
+      "status": "candidate"
+    },
+    {
+      "topic": "유리의 문명사: 투명한 물질은 어떻게 세계를 바꾸었나",
+      "main_category": "과학·공학",
+      "mid_category": "재료와 문명",
+      "priority": 0.72,
+      "status": "candidate"
+    },
+    {
+      "topic": "벌집의 수학: 육각형은 왜 자연의 설계도가 되었나",
+      "main_category": "자연사·생태",
+      "mid_category": "생물과 구조",
+      "priority": 0.7,
+      "status": "candidate"
     }
   ]
 }
