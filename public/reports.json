@@ -1,16 +1,16 @@
 [
   {
     "date": "2026-08-15",
-    "title": "자막과 더빙의 문화사",
-    "subtitle": "번역은 어떻게 화면의 리듬과 목소리를 바꾸었나",
+    "title": "도시의 하수도: 보이지 않는 위생 인프라는 어떻게 문명을 바꾸었나",
+    "subtitle": "도시 위생의 숨겨진 토대, 하수도 시스템의 역사와 현대적 의미",
     "main_category": "생활기술·일상문화",
     "mid_category": "도시인프라",
-    "sub_category": "자막과 더빙",
-    "html_path": "outputs/20260815_자막과더빙의문화사_Report.html",
-    "pdf_path": "outputs/20260815_자막과더빙의문화사_Report.pdf",
-    "html_url": "outputs/20260815_자막과더빙의문화사_Report.html",
-    "pdf_url": "outputs/20260815_자막과더빙의문화사_Report.pdf",
-    "status": "published_mock"
+    "sub_category": "",
+    "html_path": "outputs/20260815_dosiei_hasudo_Report.html",
+    "pdf_path": "outputs/20260815_dosiei_hasudo_Report.pdf",
+    "html_url": "outputs/20260815_dosiei_hasudo_Report.html",
+    "pdf_url": "outputs/20260815_dosiei_hasudo_Report.pdf",
+    "status": "published_api"
   },
   {
     "date": "2026-08-02",
