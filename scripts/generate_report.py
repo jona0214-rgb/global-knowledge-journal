@@ -129,8 +129,8 @@ def validate_env() -> None:
 
 def get_openai_client() -> OpenAI:
     validate_env()
-    timeout_seconds = float(os.getenv("OPENAI_TIMEOUT_SECONDS", "240"))
-    max_retries = int(os.getenv("OPENAI_MAX_RETRIES", "1"))
+    timeout_seconds = float(os.getenv("OPENAI_TIMEOUT_SECONDS", "600"))
+    max_retries = int(os.getenv("OPENAI_MAX_RETRIES", "0"))
 
     return OpenAI(
         api_key=os.environ["OPENAI_API_KEY"],
@@ -152,8 +152,8 @@ def generate_report_with_api(today: str, selected_topic: Dict[str, Any]) -> Dict
     schema_name = schema_doc.get("name", "daily_report")
     schema = schema_doc["schema"]
 
-    timeout_seconds = float(os.getenv("OPENAI_TIMEOUT_SECONDS", "240"))
-    max_retries = int(os.getenv("OPENAI_MAX_RETRIES", "1"))
+    timeout_seconds = float(os.getenv("OPENAI_TIMEOUT_SECONDS", "600"))
+    max_retries = int(os.getenv("OPENAI_MAX_RETRIES", "0"))
     print(
         "OpenAI API 요청 시작: "
         f"요청당 제한 {timeout_seconds:g}초, 최대 재시도 {max_retries}회"
