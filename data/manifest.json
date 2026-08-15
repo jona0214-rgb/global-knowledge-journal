@@ -1,6 +1,19 @@
 {
-  "last_updated": "2026-08-15T23:41:58.119334+09:00",
+  "last_updated": "2026-08-16T02:30:09.785533+09:00",
   "reports": [
+    {
+      "date": "2026-08-16",
+      "title": "자막과 더빙의 문화사",
+      "subtitle": "번역은 어떻게 화면의 리듬과 목소리를 바꾸었나",
+      "main_category": "과학·공학",
+      "mid_category": "재료와 문명",
+      "sub_category": "시청각 번역",
+      "html_path": "outputs/20260816_자막과더빙의문화사_Report.html",
+      "pdf_path": "outputs/20260816_자막과더빙의문화사_Report.pdf",
+      "html_url": "outputs/20260816_자막과더빙의문화사_Report.html",
+      "pdf_url": "outputs/20260816_자막과더빙의문화사_Report.pdf",
+      "status": "published_mock"
+    },
     {
       "date": "2026-08-15",
       "title": "도시의 하수도: 보이지 않는 위생 인프라는 어떻게 문명을 바꾸었나",
