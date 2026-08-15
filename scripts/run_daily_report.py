@@ -183,8 +183,8 @@ def create_mock_report(today: str, topic: dict) -> dict:
         "difficulty": "중",
         "estimated_reading_time": "13-16분",
         "category": {
-            "main": topic.get("main_category", "언어·문자"),
-            "middle": topic.get("mid_category", "영상번역"),
+            "main": "언어·문자",
+            "middle": "영상문화",
             "sub": "시청각 번역",
             "detail": "자막·더빙 문화"
         },
