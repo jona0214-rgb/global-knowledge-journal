@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-08-02",
+  "updated_at": "2026-08-15",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -183,15 +183,35 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260802_history_of_calendar_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260802_history_of_calendar_Report.pdf",
       "status": "published_mock"
+    },
+    {
+      "date": "2026-08-15",
+      "title": "무지의 베일: 공정한 사회는 어떻게 상상되는가",
+      "main_category": "인문·철학",
+      "mid_category": "정치철학",
+      "sub_category": "",
+      "keywords": [
+        "무지의 베일",
+        "공정성",
+        "존 롤스",
+        "정의론",
+        "사회 계약",
+        "정치철학",
+        "윤리적 상상력",
+        "사회 정의"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260815_veil_of_ignorance_fair_s_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260815_veil_of_ignorance_fair_s_Report.pdf",
+      "status": "published_mock"
     }
   ],
   "category_rotation": {
     "recent_main_categories": [
-      "경제·사회",
       "인문·철학",
       "환경",
       "기술",
-      "역사·문화"
+      "역사·문화",
+      "인문·철학"
     ],
     "next_priority": [
       "인문·철학",
@@ -217,7 +237,7 @@
       "main_category": "인문·철학",
       "mid_category": "정치철학",
       "priority": 0.86,
-      "status": "candidate"
+      "status": "used"
     },
     {
       "topic": "철새의 항로: 새들은 어떻게 지구를 기억하는가",
