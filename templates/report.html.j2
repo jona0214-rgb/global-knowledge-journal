@@ -7,8 +7,6 @@
 <style>
 @page {
   size: A4;
-  /* Reserve stable space around the body for the running header and footer. */
-  margin: 23mm 15mm 23mm;
 }
 
 :root {
@@ -620,7 +618,8 @@ td:first-child {
     max-width: none;
     margin: 0;
     padding: 0;
-    background: #ffffff;
+    /* Keep Playwright's running header/footer above every page fragment. */
+    background: transparent;
     box-shadow: none;
   }
 
