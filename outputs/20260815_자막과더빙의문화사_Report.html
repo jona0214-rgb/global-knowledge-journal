@@ -7,8 +7,6 @@
 <style>
 @page {
   size: A4;
-  /* Reserve stable space around the body for the running header and footer. */
-  margin: 23mm 15mm 23mm;
 }
 
 :root {
@@ -617,7 +615,8 @@ td:first-child {
     max-width: none;
     margin: 0;
     padding: 0;
-    background: #ffffff;
+    /* Keep Playwright's running header/footer above every page fragment. */
+    background: transparent;
     box-shadow: none;
   }
 
@@ -786,18 +785,18 @@ td:first-child {
 
 <div class="print-header">
   <div>GLOBAL KNOWLEDGE JOURNAL / 2026.08.15</div>
-  <div>경제·사회 / 에너지정책 / 자막과 더빙</div>
+  <div>생활기술·일상문화 / 도시인프라 / 자막과 더빙</div>
 </div>
 <div class="print-footer"></div>
 
 <main class="report-page">
   <header class="screen-header">
     <div>GLOBAL KNOWLEDGE JOURNAL / 2026.08.15</div>
-    <div>경제·사회 / 에너지정책 / 자막과 더빙</div>
+    <div>생활기술·일상문화 / 도시인프라 / 자막과 더빙</div>
   </header>
 
   <section class="cover keep-together">
-    <p class="journal-label">GLOBAL KNOWLEDGE JOURNAL / 경제·사회 · 에너지정책 · 자막과 더빙</p>
+    <p class="journal-label">GLOBAL KNOWLEDGE JOURNAL / 생활기술·일상문화 · 도시인프라 · 자막과 더빙</p>
     <h1>자막과 더빙의 문화사</h1>
     <p class="subtitle">번역은 어떻게 화면의 리듬과 목소리를 바꾸었나</p>
 
@@ -807,7 +806,7 @@ td:first-child {
           <th>발행일</th>
           <td>2026년 08월 15일</td>
           <th>분야</th>
-          <td>경제·사회 / 에너지정책 / 자막과 더빙</td>
+          <td>생활기술·일상문화 / 도시인프라 / 자막과 더빙</td>
           <th>난이도</th>
           <td>중</td>
         </tr>
@@ -815,7 +814,7 @@ td:first-child {
           <th>예상 시간</th>
           <td>13-16분</td>
           <th>카테고리</th>
-          <td colspan="3">경제·사회 &gt; 에너지정책 &gt; 자막과 더빙</td>
+          <td colspan="3">생활기술·일상문화 &gt; 도시인프라 &gt; 자막과 더빙</td>
         </tr>
       </tbody>
     </table>

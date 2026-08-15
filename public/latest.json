@@ -1,13 +1,13 @@
 {
   "date": "2026-08-15",
-  "title": "타이포그래피의 목소리: 글자는 어떻게 말투가 되었나",
-  "subtitle": "글자의 형태와 배열이 커뮤니케이션의 목소리와 말투를 형성하는 과정을 탐구하다",
-  "main_category": "예술·미학",
-  "mid_category": "그래픽디자인",
-  "sub_category": "",
-  "html_path": "outputs/20260815_typography_voice_how_let_Report.html",
-  "pdf_path": "outputs/20260815_typography_voice_how_let_Report.pdf",
-  "html_url": "outputs/20260815_typography_voice_how_let_Report.html",
-  "pdf_url": "outputs/20260815_typography_voice_how_let_Report.pdf",
-  "status": "published_api"
+  "title": "자막과 더빙의 문화사",
+  "subtitle": "번역은 어떻게 화면의 리듬과 목소리를 바꾸었나",
+  "main_category": "생활기술·일상문화",
+  "mid_category": "도시인프라",
+  "sub_category": "자막과 더빙",
+  "html_path": "outputs/20260815_자막과더빙의문화사_Report.html",
+  "pdf_path": "outputs/20260815_자막과더빙의문화사_Report.pdf",
+  "html_url": "outputs/20260815_자막과더빙의문화사_Report.html",
+  "pdf_url": "outputs/20260815_자막과더빙의문화사_Report.pdf",
+  "status": "published_mock"
 }
