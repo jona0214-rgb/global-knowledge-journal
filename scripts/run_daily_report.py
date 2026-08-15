@@ -321,13 +321,20 @@ def render_pdf_with_playwright(html_path: Path, pdf_path: Path, report: dict):
         for key in ("main", "middle", "sub")
         if category.get(key)
     )
-    header_template = (
-        '<div style="box-sizing:border-box;width:100%;margin:0 15mm;'
-        'padding-bottom:6px;border-bottom:1px solid #cbbba7;color:#665c52;'
-        'font-family:Arial,\'Malgun Gothic\',sans-serif;font-size:9px;'
-        'font-weight:700;line-height:1.2;display:flex;justify-content:space-between;gap:18px;">'
+    # Chromium can paint body fragments over a standalone header template on
+    # continuation pages. The footer template repeats reliably, so it carries
+    # both the running header (shifted to the top margin) and the page number.
+    footer_template = (
+        '<div style="box-sizing:border-box;width:100%;margin:0 14mm;position:relative;'
+        'color:#665c52;font-family:Arial,\'Malgun Gothic\',sans-serif;font-size:9px;">'
+        '<div style="position:absolute;left:1mm;right:1mm;bottom:270mm;'
+        'padding-bottom:6px;border-bottom:1px solid #cbbba7;font-weight:700;'
+        'line-height:1.2;display:flex;justify-content:space-between;gap:18px;">'
         f'<span>GLOBAL KNOWLEDGE JOURNAL / {date_text}</span>'
         f'<span>{category_text}</span></div>'
+        '<div style="padding-top:6px;border-top:1px solid #cbbba7;'
+        'font-family:Arial,sans-serif;text-align:center;">'
+        '<span class="pageNumber"></span></div></div>'
     )
 
     with sync_playwright() as p:
@@ -341,13 +348,8 @@ def render_pdf_with_playwright(html_path: Path, pdf_path: Path, report: dict):
             prefer_css_page_size=True,
             display_header_footer=True,
             margin={"top": "23mm", "right": "15mm", "bottom": "23mm", "left": "15mm"},
-            header_template=header_template,
-            footer_template=(
-                '<div style="box-sizing:border-box;width:100%;margin:0 14mm;'
-                'padding-top:6px;border-top:1px solid #cbbba7;color:#665c52;'
-                'font-family:Arial,sans-serif;font-size:9px;text-align:center;">'
-                '<span class="pageNumber"></span></div>'
-            ),
+            header_template="<div></div>",
+            footer_template=footer_template,
         )
         browser.close()
 
