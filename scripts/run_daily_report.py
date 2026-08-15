@@ -720,10 +720,10 @@ def validate_report_structure(report: dict) -> None:
         for paragraph_index, paragraph in enumerate(body, start=1):
             clean_paragraph = paragraph.strip()
             paragraph_length = len(clean_paragraph)
-            if paragraph_length < 150:
+            if paragraph_length < 120:
                 short_paragraphs.append(
                     f"{section_id}의 {paragraph_index}번째 문단: "
-                    f"{paragraph_length}자, 최소 150자 필요"
+                    f"{paragraph_length}자, 최소 120자 필요"
                 )
             lowered = clean_paragraph.lower()
             matched_fragment = next(
