@@ -1,4 +1,5 @@
 import argparse
+from html import escape
 import json
 import re
 import sqlite3
@@ -310,8 +311,24 @@ def render_html(report: dict, output_path: Path):
     output_path.write_text(html, encoding="utf-8")
 
 
-def render_pdf_with_playwright(html_path: Path, pdf_path: Path):
+def render_pdf_with_playwright(html_path: Path, pdf_path: Path, report: dict):
     pdf_path.parent.mkdir(parents=True, exist_ok=True)
+
+    date_text = escape(str(report.get("date", "")).replace("-", "."))
+    category = report.get("category", {})
+    category_text = " / ".join(
+        escape(str(category.get(key, "")).strip())
+        for key in ("main", "middle", "sub")
+        if category.get(key)
+    )
+    header_template = (
+        '<div style="box-sizing:border-box;width:100%;margin:0 15mm;'
+        'padding-bottom:6px;border-bottom:1px solid #cbbba7;color:#665c52;'
+        'font-family:Arial,\'Malgun Gothic\',sans-serif;font-size:9px;'
+        'font-weight:700;line-height:1.2;display:flex;justify-content:space-between;gap:18px;">'
+        f'<span>GLOBAL KNOWLEDGE JOURNAL / {date_text}</span>'
+        f'<span>{category_text}</span></div>'
+    )
 
     with sync_playwright() as p:
         browser = p.chromium.launch()
@@ -323,10 +340,11 @@ def render_pdf_with_playwright(html_path: Path, pdf_path: Path):
             print_background=True,
             prefer_css_page_size=True,
             display_header_footer=True,
-            header_template="<div></div>",
+            margin={"top": "23mm", "right": "15mm", "bottom": "23mm", "left": "15mm"},
+            header_template=header_template,
             footer_template=(
                 '<div style="box-sizing:border-box;width:100%;margin:0 14mm;'
-                'padding-top:8px;border-top:1px solid #cbbba7;color:#665c52;'
+                'padding-top:6px;border-top:1px solid #cbbba7;color:#665c52;'
                 'font-family:Arial,sans-serif;font-size:9px;text-align:center;">'
                 '<span class="pageNumber"></span></div>'
             ),
@@ -564,7 +582,7 @@ def save_render_publish_report(report: dict, topic_db: dict, mode: str = "mock")
 
         save_json(staged_json_path, report)
         render_html(report, staged_html_path)
-        render_pdf_with_playwright(staged_html_path, staged_pdf_path)
+        render_pdf_with_playwright(staged_html_path, staged_pdf_path, report)
 
         if mode == "api":
             validate_pdf_page_count(staged_pdf_path)
@@ -708,6 +726,16 @@ def validate_report_structure(report: dict) -> None:
         "자동화 파이프라인 설명",
     )
 
+    def iter_text_nodes(value, path="report"):
+        if isinstance(value, str):
+            yield path, value
+        elif isinstance(value, dict):
+            for key, child in value.items():
+                yield from iter_text_nodes(child, f"{path}.{key}")
+        elif isinstance(value, list):
+            for index, child in enumerate(value):
+                yield from iter_text_nodes(child, f"{path}[{index}]")
+
     for section_id, minimum in min_paragraphs.items():
         raw_body = section_map[section_id].get("body", [])
         body = (
@@ -727,20 +755,20 @@ def validate_report_structure(report: dict) -> None:
                     f"{section_id}의 {paragraph_index}번째 문단: "
                     f"{paragraph_length}자, 최소 {min_valid_paragraph_characters}자 필요"
                 )
-            lowered = clean_paragraph.lower()
-            matched_fragment = next(
-                (fragment for fragment in forbidden_fragments if fragment in lowered),
-                None,
-            )
-            json_key_hits = sum(
-                marker in lowered
-                for marker in ('"sections"', '"label"', '"id"', '"title"', '"body"')
-            )
-            if matched_fragment or json_key_hits >= 3:
-                reason = matched_fragment or f"JSON 필드 표식 {json_key_hits}개"
-                leaked_instruction_text.append(
-                    f"{section_id}의 {paragraph_index}번째 문단 ({reason})"
-                )
+
+    for text_path, text_value in iter_text_nodes(report):
+        lowered = text_value.strip().lower()
+        matched_fragment = next(
+            (fragment for fragment in forbidden_fragments if fragment in lowered),
+            None,
+        )
+        json_key_hits = sum(
+            marker in lowered
+            for marker in ('"sections"', '"label"', '"id"', '"title"', '"body"')
+        )
+        if matched_fragment or json_key_hits >= 3:
+            reason = matched_fragment or f"JSON 필드 표식 {json_key_hits}개"
+            leaked_instruction_text.append(f"{text_path} ({reason})")
 
     if too_short:
         raise ValueError("본문 분량이 부족합니다. " + " / ".join(too_short))
@@ -750,7 +778,7 @@ def validate_report_structure(report: dict) -> None:
 
     if leaked_instruction_text:
         raise ValueError(
-            "본문에 시스템 지시문·JSON 생성 메모로 의심되는 문구가 있습니다: "
+            "리포트에 시스템 지시문·JSON 생성 메모로 의심되는 문구가 있습니다: "
             + " / ".join(leaked_instruction_text)
         )
 

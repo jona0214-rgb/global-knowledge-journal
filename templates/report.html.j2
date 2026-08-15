@@ -7,7 +7,8 @@
 <style>
 @page {
   size: A4;
-  margin: 20mm 15mm 19mm;
+  /* Reserve stable space around the body for the running header and footer. */
+  margin: 23mm 15mm 23mm;
 }
 
 :root {
@@ -183,12 +184,25 @@ h1 {
 }
 
 .section {
-  margin: 18px 0 20px;
+  display: contents;
+  margin: 0 0 20px;
+  padding: 0;
+  border: 0;
+}
+
+.section > p:last-child {
+  margin-bottom: 20px;
+}
+
+.section .section-lead {
+  margin-top: 18px;
   padding-top: 14px;
   border-top: 1px solid var(--line-soft);
 }
 
-.section.first-section {
+.section.first-section .section-lead {
+  margin-top: 0;
+  padding-top: 0;
   border-top: 0;
 }
 
@@ -212,7 +226,13 @@ h1 {
 }
 
 .subsection {
-  margin: 16px 0 17px;
+  margin: 0 0 17px;
+  padding: 0;
+  border: 0;
+}
+
+.subsection .section-lead {
+  margin-top: 16px;
   padding-top: 12px;
   border-top: 1px solid #ebe4dc;
 }
@@ -230,6 +250,12 @@ h1 {
 .subsection-title .subsection-label-inline {
   color: var(--accent);
   margin-right: 4px;
+}
+
+.section-lead {
+  display: block;
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 p {
@@ -527,7 +553,7 @@ td:first-child {
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .report-page {
     padding: 24px 18px 40px;
   }
@@ -583,23 +609,9 @@ td:first-child {
     display: none;
   }
 
+  /* The repeating header is supplied by Playwright's header template. */
   .print-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: space-between;
-    gap: 18px;
-    top: -12mm;
-    padding-bottom: 7px;
-    border-bottom: 1px solid var(--line);
-    color: var(--muted);
-    font-size: 9.4px;
-    font-weight: 700;
-    line-height: 1.2;
-    background: #ffffff;
-    z-index: 10;
+    display: none !important;
   }
 
   .print-footer {
@@ -645,16 +657,31 @@ td:first-child {
   }
 
   .section {
-    margin: 15px 0 16px;
+    margin: 0 0 16px;
+    padding: 0;
+  }
+
+  .section > p:last-child {
+    margin-bottom: 16px;
+  }
+
+  .section .section-lead {
+    margin-top: 15px;
     padding-top: 11px;
   }
 
-  .section.first-section {
+  .section.first-section .section-lead {
+    margin-top: 0;
     padding-top: 0;
   }
 
   .subsection {
-    margin: 15px 0 16px;
+    margin: 0 0 16px;
+    padding: 0;
+  }
+
+  .subsection .section-lead {
+    margin-top: 15px;
     padding-top: 10px;
   }
 
@@ -670,6 +697,8 @@ td:first-child {
     font-size: 12.15px;
     line-height: 1.62;
     margin-bottom: 7px;
+    break-inside: avoid;
+    page-break-inside: avoid;
   }
 
   .section-label,
@@ -722,6 +751,8 @@ td:first-child {
 
   .takeaway-card {
     padding: 8px 10px;
+    break-inside: avoid;
+    page-break-inside: avoid;
   }
 
   .reading-list li {
@@ -774,15 +805,21 @@ td:first-child {
 {% set section_id = section.get("id", "") %}
 {% set section_label = section.get("label", "") %}
 {% set section_title = section.get("title", "") %}
+{% set section_body = section.get("body", []) %}
 {% set is_subsection = section_id[0:3] == "03-" or section_id[0:2] == "3-" or section_label[0:3] == "03-" or section_label[0:2] == "3-" %}
-<section class="section {% if first %}first-section{% endif %} {% if is_subsection %}subsection{% endif %}">
+<section class="section section-id-{{ section_id|replace('-', '_') }} {% if first %}first-section{% endif %} {% if is_subsection %}subsection{% endif %}">
+  <div class="section-lead">
   {% if is_subsection %}
     <h2 class="subsection-title"><span class="subsection-label-inline">{{ section_label }}</span>{{ section_title }}</h2>
   {% else %}
     <div class="section-label">{{ section_label }}</div>
     <h2 class="section-title">{{ section_title }}</h2>
   {% endif %}
-  {% for paragraph in section.body %}
+  {% if section_body %}
+  <p>{{ section_body[0] }}</p>
+  {% endif %}
+  </div>
+  {% for paragraph in section_body[1:] %}
   <p>{{ paragraph }}</p>
   {% endfor %}
 </section>
@@ -790,7 +827,7 @@ td:first-child {
 
 {% macro render_table(table) %}
 <section class="table-block keep-together">
-  <div class="table-title">{{ table.title }}</div>
+  <div class="table-title">{{ table.title|string|replace('**', '')|replace('__', '') }}</div>
   <table>
     <thead>
       <tr>
@@ -803,14 +840,14 @@ td:first-child {
       {% for row in table.rows %}
       <tr>
         {% for cell in row %}
-        <td>{{ cell }}</td>
+        <td>{{ cell|string|replace('**', '')|replace('__', '') }}</td>
         {% endfor %}
       </tr>
       {% endfor %}
     </tbody>
   </table>
   {% if table.caption is defined and table.caption %}
-  <div class="caption">{{ table.caption }}</div>
+  <div class="caption">{{ table.caption|string|replace('**', '')|replace('__', '') }}</div>
   {% endif %}
 </section>
 {% endmacro %}
@@ -993,7 +1030,7 @@ td:first-child {
   {% endfor %}
 
   {% if report.takeaways is defined %}
-  <section class="takeaway-block keep-together">
+  <section class="takeaway-block">
     <div class="takeaway-title">07 / TAKEAWAYS</div>
     <h2 class="takeaway-subtitle">핵심 정리와 한마디</h2>
     <div class="takeaway-list">
