@@ -326,7 +326,7 @@ def render_pdf_with_playwright(html_path: Path, pdf_path: Path):
             header_template="<div></div>",
             footer_template=(
                 '<div style="box-sizing:border-box;width:100%;margin:0 14mm;'
-                'padding-top:4px;border-top:1px solid #cbbba7;color:#665c52;'
+                'padding-top:8px;border-top:1px solid #cbbba7;color:#665c52;'
                 'font-family:Arial,sans-serif;font-size:9px;text-align:center;">'
                 '<span class="pageNumber"></span></div>'
             ),
@@ -692,6 +692,19 @@ def validate_report_structure(report: dict) -> None:
     short_paragraphs = []
     total_paragraphs = 0
     total_body_characters = 0
+    leaked_instruction_text = []
+    forbidden_fragments = (
+        "the final complete json response output",
+        "this is the only output",
+        "json follows",
+        "without explanations",
+        "sorry for the partial response",
+        "section_notes area was requested",
+        "need full json",
+        "partial and corrupt",
+        "body: 5문단 작성 required",
+        "자동화 파이프라인 설명",
+    )
 
     for section_id, minimum in min_paragraphs.items():
         raw_body = section_map[section_id].get("body", [])
@@ -705,11 +718,26 @@ def validate_report_structure(report: dict) -> None:
         if len(body) < minimum:
             too_short.append(f"{section_id}: 유효한 {len(body)}문단, 최소 {minimum}문단 필요")
         for paragraph_index, paragraph in enumerate(body, start=1):
-            paragraph_length = len(paragraph.strip())
+            clean_paragraph = paragraph.strip()
+            paragraph_length = len(clean_paragraph)
             if paragraph_length < 160:
                 short_paragraphs.append(
                     f"{section_id}의 {paragraph_index}번째 문단: "
                     f"{paragraph_length}자, 최소 160자 필요"
+                )
+            lowered = clean_paragraph.lower()
+            matched_fragment = next(
+                (fragment for fragment in forbidden_fragments if fragment in lowered),
+                None,
+            )
+            json_key_hits = sum(
+                marker in lowered
+                for marker in ('"sections"', '"label"', '"id"', '"title"', '"body"')
+            )
+            if matched_fragment or json_key_hits >= 3:
+                reason = matched_fragment or f"JSON 필드 표식 {json_key_hits}개"
+                leaked_instruction_text.append(
+                    f"{section_id}의 {paragraph_index}번째 문단 ({reason})"
                 )
 
     if too_short:
@@ -717,6 +745,12 @@ def validate_report_structure(report: dict) -> None:
 
     if short_paragraphs:
         raise ValueError("너무 짧은 본문 문단이 있습니다. " + " / ".join(short_paragraphs))
+
+    if leaked_instruction_text:
+        raise ValueError(
+            "본문에 시스템 지시문·JSON 생성 메모로 의심되는 문구가 있습니다: "
+            + " / ".join(leaked_instruction_text)
+        )
 
     if total_paragraphs < 36:
         raise ValueError(f"본문 총 문단 수가 부족합니다: {total_paragraphs}문단, 최소 36문단 필요")

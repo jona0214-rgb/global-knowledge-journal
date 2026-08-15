@@ -7,7 +7,7 @@
 <style>
 @page {
   size: A4;
-  margin: 14mm 15mm 15mm;
+  margin: 20mm 15mm 19mm;
 }
 
 :root {
@@ -184,7 +184,7 @@ h1 {
 
 .section {
   margin: 18px 0 20px;
-  padding-top: 1px;
+  padding-top: 14px;
   border-top: 1px solid var(--line-soft);
 }
 
@@ -212,8 +212,9 @@ h1 {
 }
 
 .subsection {
-  margin: 14px 0 16px;
-  border-top: 0;
+  margin: 16px 0 17px;
+  padding-top: 12px;
+  border-top: 1px solid #ebe4dc;
 }
 
 .subsection-title {
@@ -235,8 +236,10 @@ p {
   margin: 0 0 8px;
   font-size: 13.25px;
   line-height: 1.64;
-  orphans: 2;
-  widows: 2;
+  orphans: 3;
+  widows: 3;
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 strong {
@@ -370,8 +373,8 @@ strong {
 .table-title {
   margin: 0 0 6px;
   color: var(--accent-dark);
-  font-size: 14px;
-  font-weight: 900;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 table {
@@ -466,6 +469,11 @@ td:first-child {
   margin-top: 15px;
   padding-top: 9px;
   border-top: 1px solid var(--line);
+}
+
+.final-reference-page {
+  break-before: page;
+  page-break-before: always;
 }
 
 .sources-title {
@@ -583,7 +591,8 @@ td:first-child {
     display: flex;
     justify-content: space-between;
     gap: 18px;
-    padding-bottom: 4px;
+    top: -12mm;
+    padding-bottom: 7px;
     border-bottom: 1px solid var(--line);
     color: var(--muted);
     font-size: 9.4px;
@@ -600,7 +609,7 @@ td:first-child {
   .report-page {
     max-width: none;
     margin: 0;
-    padding: 16px 0 16px;
+    padding: 0;
     background: #ffffff;
     box-shadow: none;
   }
@@ -637,6 +646,16 @@ td:first-child {
 
   .section {
     margin: 15px 0 16px;
+    padding-top: 11px;
+  }
+
+  .section.first-section {
+    padding-top: 0;
+  }
+
+  .subsection {
+    margin: 15px 0 16px;
+    padding-top: 10px;
   }
 
   .section-title {
@@ -651,6 +670,30 @@ td:first-child {
     font-size: 12.15px;
     line-height: 1.62;
     margin-bottom: 7px;
+  }
+
+  .section-label,
+  .section-title,
+  .subsection-title {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .final-reference-page {
+    break-before: page;
+    page-break-before: always;
+  }
+
+  .final-reference-page .reading-block,
+  .final-reference-page .table-block,
+  .final-reference-page .sources {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .final-reference-page .source-list li {
+    font-size: 9.2px;
+    line-height: 1.35;
   }
 
   .term-description {
@@ -972,6 +1015,7 @@ td:first-child {
   </section>
   {% endif %}
 
+  <div class="final-reference-page">
   <section class="reading-block">
     <div class="section-label">08 / FURTHER READING</div>
     <h2 class="section-title">더 읽을거리</h2>
@@ -1021,6 +1065,7 @@ td:first-child {
     </ul>
   </section>
   {% endif %}
+  </div>
 
   <footer class="footer-note">
     GLOBAL KNOWLEDGE JOURNAL · {{ date_dot }}
