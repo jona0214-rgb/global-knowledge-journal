@@ -7,7 +7,8 @@
 <style>
 @page {
   size: A4;
-  margin: 20mm 15mm 19mm;
+  /* Reserve stable space around the body for the running header and footer. */
+  margin: 23mm 15mm 23mm;
 }
 
 :root {
@@ -180,12 +181,25 @@ h1 {
 }
 
 .section {
-  margin: 18px 0 20px;
+  display: contents;
+  margin: 0 0 20px;
+  padding: 0;
+  border: 0;
+}
+
+.section > p:last-child {
+  margin-bottom: 20px;
+}
+
+.section .section-lead {
+  margin-top: 18px;
   padding-top: 14px;
   border-top: 1px solid var(--line-soft);
 }
 
-.section.first-section {
+.section.first-section .section-lead {
+  margin-top: 0;
+  padding-top: 0;
   border-top: 0;
 }
 
@@ -209,7 +223,13 @@ h1 {
 }
 
 .subsection {
-  margin: 16px 0 17px;
+  margin: 0 0 17px;
+  padding: 0;
+  border: 0;
+}
+
+.subsection .section-lead {
+  margin-top: 16px;
   padding-top: 12px;
   border-top: 1px solid #ebe4dc;
 }
@@ -227,6 +247,12 @@ h1 {
 .subsection-title .subsection-label-inline {
   color: var(--accent);
   margin-right: 4px;
+}
+
+.section-lead {
+  display: block;
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 p {
@@ -524,7 +550,7 @@ td:first-child {
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .report-page {
     padding: 24px 18px 40px;
   }
@@ -580,23 +606,9 @@ td:first-child {
     display: none;
   }
 
+  /* The repeating header is supplied by Playwright's header template. */
   .print-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: space-between;
-    gap: 18px;
-    top: -12mm;
-    padding-bottom: 7px;
-    border-bottom: 1px solid var(--line);
-    color: var(--muted);
-    font-size: 9.4px;
-    font-weight: 700;
-    line-height: 1.2;
-    background: #ffffff;
-    z-index: 10;
+    display: none !important;
   }
 
   .print-footer {
@@ -642,16 +654,31 @@ td:first-child {
   }
 
   .section {
-    margin: 15px 0 16px;
+    margin: 0 0 16px;
+    padding: 0;
+  }
+
+  .section > p:last-child {
+    margin-bottom: 16px;
+  }
+
+  .section .section-lead {
+    margin-top: 15px;
     padding-top: 11px;
   }
 
-  .section.first-section {
+  .section.first-section .section-lead {
+    margin-top: 0;
     padding-top: 0;
   }
 
   .subsection {
-    margin: 15px 0 16px;
+    margin: 0 0 16px;
+    padding: 0;
+  }
+
+  .subsection .section-lead {
+    margin-top: 15px;
     padding-top: 10px;
   }
 
@@ -667,6 +694,8 @@ td:first-child {
     font-size: 12.15px;
     line-height: 1.62;
     margin-bottom: 7px;
+    break-inside: avoid;
+    page-break-inside: avoid;
   }
 
   .section-label,
@@ -719,6 +748,8 @@ td:first-child {
 
   .takeaway-card {
     padding: 8px 10px;
+    break-inside: avoid;
+    page-break-inside: avoid;
   }
 
   .reading-list li {
@@ -757,18 +788,18 @@ td:first-child {
 
 <div class="print-header">
   <div>GLOBAL KNOWLEDGE JOURNAL / 2026.08.15</div>
-  <div>언어·문자 / 영상번역 / 자막과 더빙</div>
+  <div>경제·사회 / 에너지정책 / 자막과 더빙</div>
 </div>
 <div class="print-footer"></div>
 
 <main class="report-page">
   <header class="screen-header">
     <div>GLOBAL KNOWLEDGE JOURNAL / 2026.08.15</div>
-    <div>언어·문자 / 영상번역 / 자막과 더빙</div>
+    <div>경제·사회 / 에너지정책 / 자막과 더빙</div>
   </header>
 
   <section class="cover keep-together">
-    <p class="journal-label">GLOBAL KNOWLEDGE JOURNAL / 언어·문자 · 영상번역 · 자막과 더빙</p>
+    <p class="journal-label">GLOBAL KNOWLEDGE JOURNAL / 경제·사회 · 에너지정책 · 자막과 더빙</p>
     <h1>자막과 더빙의 문화사</h1>
     <p class="subtitle">번역은 어떻게 화면의 리듬과 목소리를 바꾸었나</p>
 
@@ -778,7 +809,7 @@ td:first-child {
           <th>발행일</th>
           <td>2026년 08월 15일</td>
           <th>분야</th>
-          <td>언어·문자 / 영상번역 / 자막과 더빙</td>
+          <td>경제·사회 / 에너지정책 / 자막과 더빙</td>
           <th>난이도</th>
           <td>중</td>
         </tr>
@@ -786,7 +817,7 @@ td:first-child {
           <th>예상 시간</th>
           <td>13-16분</td>
           <th>카테고리</th>
-          <td colspan="3">언어·문자 &gt; 영상번역 &gt; 자막과 더빙</td>
+          <td colspan="3">경제·사회 &gt; 에너지정책 &gt; 자막과 더빙</td>
         </tr>
       </tbody>
     </table>
@@ -831,13 +862,17 @@ td:first-child {
 
 
 
-<section class="section first-section ">
+
+<section class="section section-id- first-section ">
+  <div class="section-lead">
   
     <div class="section-label">01 / CONTEXT</div>
     <h2 class="section-title">왜 번역은 화면에서 다시 태어나는가</h2>
   
   
   <p>영상 번역은 책 번역과 다르다. 문장은 화면 위에 잠깐 나타났다 사라지고, 배우의 표정과 음악, 장면 전환 속도와 함께 읽힌다.</p>
+  
+  </div>
   
   <p>자막은 관객이 원어의 목소리를 유지한 채 의미를 따라가게 만든다. 반대로 더빙은 관객이 화면을 읽지 않아도 이야기에 몰입하게 만든다.</p>
   
@@ -881,13 +916,17 @@ td:first-child {
 
 
 
-<section class="section  ">
+
+<section class="section section-id-  ">
+  <div class="section-lead">
   
     <div class="section-label">02 / BEGINNER'S MAP</div>
     <h2 class="section-title">자막과 더빙의 기본 차이</h2>
   
   
   <p>자막은 원래 목소리를 남기고 번역문을 화면에 얹는 방식이다. 더빙은 원래 목소리를 새로운 언어의 목소리로 바꾸는 방식이다.</p>
+  
+  </div>
   
   <p>자막은 제작비가 상대적으로 낮고 원음의 감각을 보존하지만, 관객이 글자를 읽어야 한다. 더빙은 몰입감이 높지만 목소리 연기와 입 모양 맞춤이 중요하다.</p>
   
@@ -940,13 +979,17 @@ td:first-child {
 
 
 
-<section class="section  ">
+
+<section class="section section-id-  ">
+  <div class="section-lead">
   
     <div class="section-label">03 / DEEP DIVE</div>
     <h2 class="section-title">번역은 왜 짧아지는가</h2>
   
   
   <p>자막 번역은 글자 수 제한을 가진다. 말로는 길게 들을 수 있는 문장도 화면 위에서는 짧고 빠르게 읽혀야 한다.</p>
+  
+  </div>
   
   <p>이 과정에서 번역가는 내용을 모두 옮기기보다, 장면 이해에 필요한 의미를 압축한다. 삭제는 실패가 아니라 화면 언어에 맞춘 재구성일 수 있다.</p>
   
@@ -997,13 +1040,17 @@ td:first-child {
 
 
 
-<section class="section  ">
+
+<section class="section section-id-  ">
+  <div class="section-lead">
   
     <div class="section-label">04 / CASE STUDY</div>
     <h2 class="section-title">농담은 왜 가장 번역하기 어려운가</h2>
   
   
   <p>농담은 언어뿐 아니라 문화적 배경, 말투, 리듬에 의존한다. 그래서 직역하면 의미는 남아도 웃음은 사라질 수 있다.</p>
+  
+  </div>
   
   <p>영상 번역에서 좋은 농담 번역은 원문과 똑같은 문장을 찾는 것이 아니라, 같은 순간에 비슷한 반응을 일으키는 표현을 찾는 일에 가깝다.</p>
   
@@ -1055,13 +1102,17 @@ td:first-child {
 
 
 
-<section class="section  ">
+
+<section class="section section-id-  ">
+  <div class="section-lead">
   
     <div class="section-label">05 / CURRENT STATE</div>
     <h2 class="section-title">스트리밍 시대의 번역</h2>
   
   
   <p>스트리밍 플랫폼은 여러 언어의 자막과 더빙을 동시에 제공한다. 한 작품은 공개되는 순간 여러 문화권의 관객을 만난다.</p>
+  
+  </div>
   
   <p>그 결과 영상 번역은 부가 작업이 아니라 글로벌 배급의 핵심 인프라가 되었다.</p>
   
@@ -1110,13 +1161,17 @@ td:first-child {
 
 
 
-<section class="section  ">
+
+<section class="section section-id-  ">
+  <div class="section-lead">
   
     <div class="section-label">06 / IMPLICATIONS</div>
     <h2 class="section-title">번역은 누구의 목소리를 남기는가</h2>
   
   
   <p>자막과 더빙의 선택은 단순한 취향 문제가 아니다. 그것은 원래 배우의 목소리를 남길 것인지, 관객의 언어 경험을 우선할 것인지에 대한 선택이다.</p>
+  
+  </div>
   
   <p>번역은 원작을 가리는 막이 아니라, 다른 관객이 작품에 들어갈 수 있도록 놓인 문이다.</p>
   
@@ -1206,7 +1261,7 @@ td:first-child {
   
 
   
-  <section class="takeaway-block keep-together">
+  <section class="takeaway-block">
     <div class="takeaway-title">07 / TAKEAWAYS</div>
     <h2 class="takeaway-subtitle">핵심 정리와 한마디</h2>
     <div class="takeaway-list">
