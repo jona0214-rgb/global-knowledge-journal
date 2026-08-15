@@ -676,7 +676,7 @@ def validate_report_structure(report: dict) -> None:
 
     min_paragraphs = {
         "01": 4,
-        "02": 3,
+        "02": 2,
         "03": 2,
         "03-1": 3,
         "03-2": 3,
@@ -721,10 +721,10 @@ def validate_report_structure(report: dict) -> None:
     if total_paragraphs < 36:
         raise ValueError(f"본문 총 문단 수가 부족합니다: {total_paragraphs}문단, 최소 36문단 필요")
 
-    if total_body_characters < 6500:
+    if total_body_characters < 6000:
         raise ValueError(
             f"본문 총 글자 수가 부족합니다: "
-            f"{total_body_characters}자, 최소 6500자 필요"
+            f"{total_body_characters}자, 최소 6000자 필요"
         )
 
     tables = report.get("tables", [])

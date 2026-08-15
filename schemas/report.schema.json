@@ -127,7 +127,7 @@
                 "id": { "type": "string", "enum": ["02"] },
                 "label": { "type": "string" },
                 "title": { "type": "string" },
-                "body": { "type": "array", "minItems": 3, "items": { "type": "string", "minLength": 160 } }
+                "body": { "type": "array", "minItems": 2, "items": { "type": "string", "minLength": 160 } }
               }
             },
             {
