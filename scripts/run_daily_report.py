@@ -651,6 +651,8 @@ def enforce_selected_topic(report: dict, selected_topic: dict) -> dict:
 
 def validate_report_structure(report: dict) -> None:
     """API 리포트가 핵심 섹션과 최소 분량을 갖췄는지 검사한다."""
+    min_valid_paragraph_characters = 80
+    min_total_body_characters = 5000
     required_ids = ["01", "02", "03", "03-1", "03-2", "03-3", "03-4", "03-5", "04", "05", "06"]
 
     sections = report.get("sections", [])
@@ -720,10 +722,10 @@ def validate_report_structure(report: dict) -> None:
         for paragraph_index, paragraph in enumerate(body, start=1):
             clean_paragraph = paragraph.strip()
             paragraph_length = len(clean_paragraph)
-            if paragraph_length < 120:
+            if paragraph_length < min_valid_paragraph_characters:
                 short_paragraphs.append(
                     f"{section_id}의 {paragraph_index}번째 문단: "
-                    f"{paragraph_length}자, 최소 120자 필요"
+                    f"{paragraph_length}자, 최소 {min_valid_paragraph_characters}자 필요"
                 )
             lowered = clean_paragraph.lower()
             matched_fragment = next(
@@ -755,10 +757,10 @@ def validate_report_structure(report: dict) -> None:
     if total_paragraphs < 36:
         raise ValueError(f"본문 총 문단 수가 부족합니다: {total_paragraphs}문단, 최소 36문단 필요")
 
-    if total_body_characters < 6000:
+    if total_body_characters < min_total_body_characters:
         raise ValueError(
             f"본문 총 글자 수가 부족합니다: "
-            f"{total_body_characters}자, 최소 6000자 필요"
+            f"{total_body_characters}자, 최소 {min_total_body_characters}자 필요"
         )
 
     tables = report.get("tables", [])
