@@ -1,13 +1,13 @@
 {
-  "date": "2026-08-16",
-  "title": "무지의 베일: 공정한 사회는 어떻게 상상되는가",
-  "subtitle": "정의로운 사회를 설계하기 위한 윤리철학적 사유의 핵심 프레임",
-  "main_category": "인문·철학",
-  "mid_category": "정치철학",
-  "sub_category": "사회정의론",
-  "html_path": "outputs/20260816_veil_of_ignorance_fair_s_Report.html",
-  "pdf_path": "outputs/20260816_veil_of_ignorance_fair_s_Report.pdf",
-  "html_url": "outputs/20260816_veil_of_ignorance_fair_s_Report.html",
-  "pdf_url": "outputs/20260816_veil_of_ignorance_fair_s_Report.pdf",
+  "date": "2026-08-17",
+  "title": "시간표의 탄생: 근대 사회는 어떻게 시간을 표준화했나",
+  "subtitle": "근대 사회의 시간 표준화 과정과 그 역사적·문화적 의미 탐구",
+  "main_category": "역사·문화",
+  "mid_category": "시간문화",
+  "sub_category": "시간표와 시간표준화",
+  "html_path": "outputs/20260817_time_table_birth_how_mod_Report.html",
+  "pdf_path": "outputs/20260817_time_table_birth_how_mod_Report.pdf",
+  "html_url": "outputs/20260817_time_table_birth_how_mod_Report.html",
+  "pdf_url": "outputs/20260817_time_table_birth_how_mod_Report.pdf",
   "status": "published_api"
 }

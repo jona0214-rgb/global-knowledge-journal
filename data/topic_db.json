@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-08-16",
+  "updated_at": "2026-08-17",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -55,17 +55,37 @@
       "html_path": "outputs/20260816_veil_of_ignorance_fair_s_Report.html",
       "pdf_path": "outputs/20260816_veil_of_ignorance_fair_s_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "date": "2026-08-17",
+      "title": "시간표의 탄생: 근대 사회는 어떻게 시간을 표준화했나",
+      "main_category": "역사·문화",
+      "mid_category": "시간문화",
+      "sub_category": "시간표와 시간표준화",
+      "keywords": [
+        "시간표",
+        "시간 표준화",
+        "근대 사회",
+        "기차 시각표",
+        "그리니치 평균시",
+        "산업혁명",
+        "시민생활 변화",
+        "시간 측정"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260817_time_table_birth_how_mod_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260817_time_table_birth_how_mod_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
     "recent_main_categories": [
       "생활기술·일상문화",
       "생활기술·일상문화",
-      "인문·철학"
+      "인문·철학",
+      "역사·문화"
     ],
     "next_priority": [
       "자연사·생태",
-      "역사·문화",
       "과학·공학",
       "경제·사회",
       "예술·미학",
@@ -99,7 +119,7 @@
       "main_category": "역사·문화",
       "mid_category": "시간문화",
       "priority": 0.82,
-      "status": "candidate"
+      "status": "used"
     },
     {
       "topic": "전기요금의 정치학: 에너지 가격은 왜 단순한 숫자가 아닌가",
@@ -141,6 +161,62 @@
       "main_category": "자연사·생태",
       "mid_category": "생물과 구조",
       "priority": 0.7,
+      "status": "candidate"
+    },
+    {
+      "topic": "도서관 분류의 정치학: 지식은 누가 어떤 순서로 배열하는가",
+      "main_category": "언어·문자",
+      "mid_category": "지식분류",
+      "priority": 0.81,
+      "status": "candidate"
+    },
+    {
+      "topic": "보험의 탄생: 위험은 어떻게 공동의 계산이 되었나",
+      "main_category": "경제·사회",
+      "mid_category": "위험과 제도",
+      "priority": 0.8,
+      "status": "candidate"
+    },
+    {
+      "topic": "밤의 빛과 생태계: 인공조명은 생명의 시간을 어떻게 바꾸는가",
+      "main_category": "자연사·생태",
+      "mid_category": "생태환경",
+      "priority": 0.79,
+      "status": "candidate"
+    },
+    {
+      "topic": "소리의 건축: 공간은 어떻게 듣는 경험을 설계하는가",
+      "main_category": "예술·미학",
+      "mid_category": "공간미학",
+      "priority": 0.78,
+      "status": "candidate"
+    },
+    {
+      "topic": "바닷물을 식수로: 담수화 기술은 물 부족의 해답이 될 수 있는가",
+      "main_category": "과학·공학",
+      "mid_category": "물환경공학",
+      "priority": 0.77,
+      "status": "candidate"
+    },
+    {
+      "topic": "우편번호의 사회사: 숫자는 어떻게 도시와 사람을 연결했나",
+      "main_category": "생활기술·일상문화",
+      "mid_category": "행정인프라",
+      "priority": 0.76,
+      "status": "candidate"
+    },
+    {
+      "topic": "확률과 우연의 철학: 불확실성은 어떻게 지식이 되는가",
+      "main_category": "인문·철학",
+      "mid_category": "과학철학",
+      "priority": 0.75,
+      "status": "candidate"
+    },
+    {
+      "topic": "향신료 교역의 세계사: 맛은 어떻게 제국과 항로를 움직였나",
+      "main_category": "역사·문화",
+      "mid_category": "교역문화",
+      "priority": 0.74,
       "status": "candidate"
     }
   ]
