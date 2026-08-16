@@ -17,228 +17,58 @@
       "status": "published"
     },
     {
-      "date": "2026-07-21",
-      "title": "자막과 더빙의 문화사",
-      "main_category": "언어·문자",
-      "mid_category": "영상번역",
-      "sub_category": "자막과 더빙",
-      "keywords": [
-        "자막",
-        "더빙",
-        "영상번역",
-        "로컬라이징",
-        "화면 리듬",
-        "문화 번역"
-      ],
-      "html_path": "C:/Users/USER/OneDrive/문서/GitHub/global-knowledge-journal/outputs/20260721_자막과더빙의문화사_Report.html",
-      "pdf_path": "C:/Users/USER/OneDrive/문서/GitHub/global-knowledge-journal/outputs/20260721_자막과더빙의문화사_Report.pdf",
-      "status": "published_mock"
-    },
-    {
-      "date": "2026-07-22",
-      "title": "자막과 더빙의 문화사",
-      "main_category": "인문·철학",
-      "mid_category": "정치철학",
-      "sub_category": "자막과 더빙",
-      "keywords": [
-        "자막",
-        "더빙",
-        "영상번역",
-        "로컬라이징",
-        "화면 리듬",
-        "문화 번역"
-      ],
-      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260722_자막과더빙의문화사_Report.html",
-      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260722_자막과더빙의문화사_Report.pdf",
-      "status": "published_mock"
-    },
-    {
-      "date": "2026-07-23",
-      "title": "자막과 더빙의 문화사",
-      "main_category": "자연사·생태",
-      "mid_category": "동물행동",
-      "sub_category": "자막과 더빙",
-      "keywords": [
-        "자막",
-        "더빙",
-        "영상번역",
-        "로컬라이징",
-        "화면 리듬",
-        "문화 번역"
-      ],
-      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260723_자막과더빙의문화사_Report.html",
-      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260723_자막과더빙의문화사_Report.pdf",
-      "status": "published_mock"
-    },
-    {
-      "date": "2026-07-24",
-      "title": "자막과 더빙의 문화사",
-      "main_category": "역사·문화",
-      "mid_category": "시간문화",
-      "sub_category": "자막과 더빙",
-      "keywords": [
-        "자막",
-        "더빙",
-        "영상번역",
-        "로컬라이징",
-        "화면 리듬",
-        "문화 번역"
-      ],
-      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260724_자막과더빙의문화사_Report.html",
-      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260724_자막과더빙의문화사_Report.pdf",
-      "status": "published_mock"
-    },
-    {
-      "date": "2026-07-25",
-      "title": "자막과 더빙의 문화사",
-      "main_category": "경제·사회",
-      "mid_category": "에너지정책",
-      "sub_category": "자막과 더빙",
-      "keywords": [
-        "자막",
-        "더빙",
-        "영상번역",
-        "로컬라이징",
-        "화면 리듬",
-        "문화 번역"
-      ],
-      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260725_자막과더빙의문화사_Report.html",
-      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260725_자막과더빙의문화사_Report.pdf",
-      "status": "published_mock"
-    },
-    {
-      "date": "2026-07-26",
-      "title": "자막과 더빙의 문화사",
-      "main_category": "인문·철학",
-      "mid_category": "정치철학",
-      "sub_category": "자막과 더빙",
-      "keywords": [
-        "자막",
-        "더빙",
-        "영상번역",
-        "로컬라이징",
-        "화면 리듬",
-        "문화 번역"
-      ],
-      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260726_자막과더빙의문화사_Report.html",
-      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260726_자막과더빙의문화사_Report.pdf",
-      "status": "published_mock"
-    },
-    {
-      "date": "2024-06-20",
-      "title": "지속가능한 도시 농업",
-      "main_category": "환경",
-      "mid_category": "도시개발",
-      "sub_category": "농업과 친환경",
-      "keywords": [
-        "도시농업",
-        "지속가능성",
-        "지역사회",
-        "식량안보",
-        "도시재생",
-        "환경보전",
-        "커뮤니티 가든",
-        "농업기술"
-      ],
-      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20240620_sisanganeundosinongup_Report.html",
-      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20240620_sisanganeundosinongup_Report.pdf",
-      "status": "published_mock"
-    },
-    {
-      "date": "2026-08-01",
-      "title": "인공지능 윤리",
-      "main_category": "기술",
-      "mid_category": "인공지능",
-      "sub_category": "윤리",
-      "keywords": [
-        "인공지능 윤리",
-        "책임성",
-        "편향성",
-        "프라이버시",
-        "투명성",
-        "자율성",
-        "규제",
-        "사회적 영향"
-      ],
-      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260801_aijeonri_Report.html",
-      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260801_aijeonri_Report.pdf",
-      "status": "published_mock"
-    },
-    {
-      "date": "2026-08-02",
-      "title": "달력의 역사: 인간은 어떻게 시간을 나누고 약속했나",
-      "main_category": "역사·문화",
-      "mid_category": "시간문화",
+      "date": "2026-08-15",
+      "title": "도시의 하수도: 보이지 않는 위생 인프라는 어떻게 문명을 바꾸었나",
+      "main_category": "생활기술·일상문화",
+      "mid_category": "도시인프라",
       "sub_category": "",
       "keywords": [
-        "달력",
-        "시간 분할",
-        "천문학",
-        "사회 약속",
-        "역사적 진화",
-        "태양력",
-        "음력",
-        "시민생활"
+        "하수도",
+        "도시 위생",
+        "산업화",
+        "공중보건",
+        "도시환경",
+        "인프라",
+        "환경정책",
+        "사회변화"
       ],
-      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260802_history_of_calendar_Report.html",
-      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260802_history_of_calendar_Report.pdf",
-      "status": "published_mock"
+      "html_path": "outputs/20260815_dosiei_hasudo_Report.html",
+      "pdf_path": "outputs/20260815_dosiei_hasudo_Report.pdf",
+      "status": "published_api"
     },
     {
-      "date": "2026-08-15",
+      "date": "2026-08-16",
       "title": "무지의 베일: 공정한 사회는 어떻게 상상되는가",
       "main_category": "인문·철학",
       "mid_category": "정치철학",
-      "sub_category": "",
+      "sub_category": "사회정의론",
       "keywords": [
         "무지의 베일",
         "공정성",
         "존 롤스",
         "정의론",
         "사회 계약",
-        "정치철학",
         "윤리적 상상력",
+        "정치철학",
         "사회 정의"
       ],
-      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260815_veil_of_ignorance_fair_s_Report.html",
-      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260815_veil_of_ignorance_fair_s_Report.pdf",
-      "status": "published_mock"
-    },
-    {
-      "date": "2026-08-16",
-      "title": "자막과 더빙의 문화사",
-      "main_category": "과학·공학",
-      "mid_category": "재료와 문명",
-      "sub_category": "시청각 번역",
-      "keywords": [
-        "자막",
-        "더빙",
-        "영상번역",
-        "로컬라이징",
-        "화면 리듬",
-        "문화 번역"
-      ],
-      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260816_자막과더빙의문화사_Report.html",
-      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260816_자막과더빙의문화사_Report.pdf",
-      "status": "published_mock"
+      "html_path": "outputs/20260816_veil_of_ignorance_fair_s_Report.html",
+      "pdf_path": "outputs/20260816_veil_of_ignorance_fair_s_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
     "recent_main_categories": [
-      "환경",
-      "기술",
-      "역사·문화",
-      "인문·철학",
-      "과학·공학"
+      "생활기술·일상문화",
+      "생활기술·일상문화",
+      "인문·철학"
     ],
     "next_priority": [
-      "인문·철학",
       "자연사·생태",
       "역사·문화",
       "과학·공학",
       "경제·사회",
       "예술·미학",
-      "생활기술·일상문화",
       "언어·문자"
     ]
   },

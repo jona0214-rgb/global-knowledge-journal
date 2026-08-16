@@ -10,17 +10,18 @@
 }
 
 :root {
-  --paper: #fffdf8;
-  --ink: #1f1b16;
-  --body: #2b241d;
-  --muted: #665c52;
-  --line: #cbbba7;
-  --line-soft: #ded1c2;
-  --accent: #8a5a2b;
-  --accent-dark: #4d3018;
-  --table-header: #e7d9c5;
-  --box-bg: #f8f3ec;
-  --box-bg-strong: #f1e6d8;
+  --paper: {{ palette.paper }};
+  --ink: {{ palette.ink }};
+  --body: {{ palette.body }};
+  --muted: {{ palette.muted }};
+  --line: {{ palette.line }};
+  --line-soft: {{ palette.line_soft }};
+  --accent: {{ palette.accent }};
+  --accent-dark: {{ palette.accent_dark }};
+  --table-header: {{ palette.table_header }};
+  --box-bg: {{ palette.box_bg }};
+  --box-bg-strong: {{ palette.box_bg_strong }};
+  --screen-bg: {{ palette.screen_bg }};
 }
 
 * {
@@ -44,7 +45,7 @@ body {
     "Apple SD Gothic Neo",
     sans-serif;
   color: var(--body);
-  background: #f4f0e8;
+  background: var(--screen-bg);
   line-height: 1.62;
   word-break: keep-all;
   overflow-wrap: break-word;
@@ -149,6 +150,42 @@ h1 {
   padding-left: 18px;
 }
 
+.quotation-block {
+  margin: 13px 0 17px;
+  padding: 12px 15px;
+  background: var(--box-bg);
+  border-left: 4px solid var(--accent);
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.quotation-kind {
+  margin: 0 0 4px;
+  color: var(--accent);
+  font-size: 10.7px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+
+.quotation-text {
+  margin: 0 0 6px;
+  color: var(--ink);
+  font-size: 13.1px;
+  line-height: 1.58;
+}
+
+.quotation-source {
+  margin: 0;
+  color: var(--muted);
+  font-size: 10.6px;
+  line-height: 1.45;
+}
+
+.quotation-source a {
+  color: var(--accent-dark);
+  text-decoration: none;
+}
+
 .keyword-line {
   margin-top: 9px;
   padding-top: 8px;
@@ -246,7 +283,7 @@ h1 {
 .subsection .section-lead {
   margin-top: 16px;
   padding-top: 12px;
-  border-top: 1px solid #ebe4dc;
+  border-top: 1px solid var(--line-soft);
 }
 
 .subsection-title {
@@ -314,7 +351,7 @@ strong {
   grid-template-columns: 1fr 1fr;
   gap: 0;
   border: 1px solid var(--line);
-  background: #ffffff;
+  background: var(--paper);
 }
 
 .term-item {
@@ -349,15 +386,15 @@ strong {
 .flow-block {
   margin: 14px 0 20px;
   padding: 12px 14px;
-  background: #fffdf8;
+  background: var(--paper);
   border: 1px solid var(--line);
 }
 
 .flow-title {
-  margin: 0 0 8px;
+  margin: 0 0 6px;
   color: var(--accent-dark);
-  font-size: 14.2px;
-  font-weight: 900;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .flow-steps {
@@ -418,7 +455,7 @@ table {
   border-collapse: collapse;
   table-layout: fixed;
   margin-top: 5px;
-  background: #ffffff;
+  background: var(--paper);
   font-size: 11.5px;
 }
 
@@ -426,7 +463,8 @@ th,
 td {
   border: 1px solid var(--line);
   padding: 5.6px 6.4px;
-  vertical-align: top;
+  vertical-align: middle;
+  text-align: center;
   line-height: 1.45;
 }
 
@@ -902,11 +940,11 @@ th {
 
     <table class="meta-table">
       <colgroup>
-        <col style="width: 9%" />
-        <col style="width: 17%" />
         <col style="width: 10%" />
-        <col style="width: 42%" />
-        <col style="width: 9%" />
+        <col style="width: 20%" />
+        <col style="width: 10%" />
+        <col style="width: 37%" />
+        <col style="width: 10%" />
         <col style="width: 13%" />
       </colgroup>
       <tbody>
@@ -952,6 +990,20 @@ th {
 
   {% if report.summary_note is defined %}
     {{ render_note(report.summary_note) }}
+  {% endif %}
+
+  {% if report.quotation is defined and report.quotation %}
+  <aside class="quotation-block">
+    <p class="quotation-kind">
+      {% if report.quotation.kind == "direct_quote" %}책 속 문장{% elif report.quotation.kind == "expert_advice" %}전문가의 첨언{% else %}관련 문헌{% endif %}
+    </p>
+    <blockquote class="quotation-text">{% if report.quotation.kind == "direct_quote" %}“{{ report.quotation.quote }}”{% else %}{{ report.quotation.quote }}{% endif %}</blockquote>
+    <p class="quotation-source">
+      — {{ report.quotation.attribution }},
+      <a href="{{ report.quotation.source_url }}">{{ report.quotation.source_title }}</a>
+      {% if report.quotation.context %} · {{ report.quotation.context }}{% endif %}
+    </p>
+  </aside>
   {% endif %}
 
   {% for section in report.sections %}
@@ -1133,5 +1185,6 @@ th {
 </main>
 </body>
 </html>
+
 
 

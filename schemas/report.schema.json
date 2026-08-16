@@ -14,6 +14,7 @@
       "keywords",
       "abstract",
       "summary_note",
+      "quotation",
       "sections",
       "term_box",
       "flow_diagram",
@@ -104,6 +105,53 @@
           "caption": {
             "type": "string",
             "description": "보조 설명. 예: - 주요 개념과 사례를 바탕으로 정리"
+          }
+        }
+      },
+
+      "quotation": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "kind",
+          "quote",
+          "attribution",
+          "source_title",
+          "source_url",
+          "context"
+        ],
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": ["direct_quote", "expert_advice"],
+            "description": "검증 가능한 책의 짧은 문구 또는 권위자의 조언·첨언"
+          },
+          "quote": {
+            "type": "string",
+            "minLength": 20,
+            "maxLength": 260,
+            "description": "짧고 정확한 직접 인용 또는 출처에 근거한 전문가 조언"
+          },
+          "attribution": {
+            "type": "string",
+            "minLength": 2,
+            "description": "저자 또는 전문가 이름과 필요한 경우 소속"
+          },
+          "source_title": {
+            "type": "string",
+            "minLength": 2,
+            "description": "책, 논문, 강연 또는 기관 자료 제목"
+          },
+          "source_url": {
+            "type": "string",
+            "format": "uri",
+            "description": "인용이나 조언을 확인할 수 있는 출처 URL"
+          },
+          "context": {
+            "type": "string",
+            "minLength": 5,
+            "maxLength": 160,
+            "description": "리포트 주제와 인용·첨언이 연결되는 이유"
           }
         }
       },
@@ -471,4 +519,5 @@
     }
   }
 }
+
 

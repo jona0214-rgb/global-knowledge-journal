@@ -53,6 +53,63 @@ def save_json(path: Path, data):
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
+def normalize_topic_title(title: str) -> str:
+    return re.sub(r"[^0-9a-z가-힣]+", "", str(title).lower())
+
+
+def topic_tokens(title: str) -> set[str]:
+    stopwords = {
+        "어떻게", "무엇인가", "무엇을", "그리고", "대한", "위한",
+        "되었나", "되는가", "바꾸었나", "있는가", "왜", "은", "는",
+        "이", "가", "을", "를", "의",
+    }
+    return {
+        token
+        for token in re.findall(r"[0-9a-z가-힣]{2,}", str(title).lower())
+        if token not in stopwords
+    }
+
+
+def topic_similarity(left: str, right: str) -> float:
+    left_key = normalize_topic_title(left)
+    right_key = normalize_topic_title(right)
+    if not left_key or not right_key:
+        return 0.0
+    if left_key == right_key:
+        return 1.0
+
+    left_tokens = topic_tokens(left)
+    right_tokens = topic_tokens(right)
+    if not left_tokens or not right_tokens:
+        return 0.0
+
+    return len(left_tokens & right_tokens) / len(left_tokens | right_tokens)
+
+
+def get_published_topic_history(topic_db: dict) -> list[dict]:
+    """mock을 제외한 실제 발행 이력을 제목 기준으로 합친다."""
+    history = []
+    history.extend(topic_db.get("recent_reports", []))
+
+    catalog = load_json(REPORTS_JSON_PATH, default=[])
+    if isinstance(catalog, list):
+        history.extend(catalog)
+
+    published_statuses = {"published", "published_api"}
+    unique_by_title = {}
+    for item in history:
+        if not isinstance(item, dict) or item.get("status") not in published_statuses:
+            continue
+        title_key = normalize_topic_title(item.get("title", ""))
+        if title_key:
+            unique_by_title[title_key] = item
+
+    return sorted(
+        unique_by_title.values(),
+        key=lambda item: str(item.get("date", "")),
+    )
+
+
 def select_topic(topic_db):
     default_candidate_pool = [
         {
@@ -125,47 +182,147 @@ def select_topic(topic_db):
             "priority": 0.70,
             "status": "candidate",
         },
+        {
+            "topic": "도서관 분류의 정치학: 지식은 누가 어떤 순서로 배열하는가",
+            "main_category": "언어·문자",
+            "mid_category": "지식분류",
+            "priority": 0.81,
+            "status": "candidate",
+        },
+        {
+            "topic": "보험의 탄생: 위험은 어떻게 공동의 계산이 되었나",
+            "main_category": "경제·사회",
+            "mid_category": "위험과 제도",
+            "priority": 0.80,
+            "status": "candidate",
+        },
+        {
+            "topic": "밤의 빛과 생태계: 인공조명은 생명의 시간을 어떻게 바꾸는가",
+            "main_category": "자연사·생태",
+            "mid_category": "생태환경",
+            "priority": 0.79,
+            "status": "candidate",
+        },
+        {
+            "topic": "소리의 건축: 공간은 어떻게 듣는 경험을 설계하는가",
+            "main_category": "예술·미학",
+            "mid_category": "공간미학",
+            "priority": 0.78,
+            "status": "candidate",
+        },
+        {
+            "topic": "바닷물을 식수로: 담수화 기술은 물 부족의 해답이 될 수 있는가",
+            "main_category": "과학·공학",
+            "mid_category": "물환경공학",
+            "priority": 0.77,
+            "status": "candidate",
+        },
+        {
+            "topic": "우편번호의 사회사: 숫자는 어떻게 도시와 사람을 연결했나",
+            "main_category": "생활기술·일상문화",
+            "mid_category": "행정인프라",
+            "priority": 0.76,
+            "status": "candidate",
+        },
+        {
+            "topic": "확률과 우연의 철학: 불확실성은 어떻게 지식이 되는가",
+            "main_category": "인문·철학",
+            "mid_category": "과학철학",
+            "priority": 0.75,
+            "status": "candidate",
+        },
+        {
+            "topic": "향신료 교역의 세계사: 맛은 어떻게 제국과 항로를 움직였나",
+            "main_category": "역사·문화",
+            "mid_category": "교역문화",
+            "priority": 0.74,
+            "status": "candidate",
+        },
     ]
 
-    candidate_pool = topic_db.get("candidate_pool", [])
+    candidate_pool = topic_db.setdefault("candidate_pool", [])
+    known_candidate_titles = {
+        normalize_topic_title(topic.get("topic", ""))
+        for topic in candidate_pool
+        if isinstance(topic, dict)
+    }
+    for default_topic in default_candidate_pool:
+        title_key = normalize_topic_title(default_topic["topic"])
+        if title_key not in known_candidate_titles:
+            candidate_pool.append(dict(default_topic))
+            known_candidate_titles.add(title_key)
 
-    available_topics = [
-        topic for topic in candidate_pool
-        if topic.get("status") == "candidate"
-    ]
+    published_history = get_published_topic_history(topic_db)
+    published_titles = [item.get("title", "") for item in published_history]
+    published_title_keys = {
+        normalize_topic_title(title) for title in published_titles if title
+    }
+
+    available_topics = []
+    rejected_similar_topics = []
+    for topic in candidate_pool:
+        if topic.get("status") != "candidate":
+            continue
+
+        candidate_title = topic.get("topic", "")
+        if normalize_topic_title(candidate_title) in published_title_keys:
+            rejected_similar_topics.append((candidate_title, "exact"))
+            continue
+
+        highest_similarity = max(
+            (topic_similarity(candidate_title, title) for title in published_titles),
+            default=0.0,
+        )
+        if highest_similarity >= 0.72:
+            rejected_similar_topics.append((candidate_title, f"{highest_similarity:.2f}"))
+            continue
+
+        available_topics.append(topic)
 
     if not available_topics:
-        topic_db["candidate_pool"] = [
-            dict(topic) for topic in default_candidate_pool
-        ]
+        detail = ", ".join(title for title, _ in rejected_similar_topics[:3])
+        raise RuntimeError(
+            "중복·유사 주제를 제외한 사용 가능한 후보가 없습니다. "
+            "candidate_pool에 새 주제를 추가해야 합니다."
+            + (f" 제외 예시: {detail}" if detail else "")
+        )
 
-        candidate_pool = topic_db["candidate_pool"]
+    print(
+        "주제 선정 점검: "
+        f"후보 {len(candidate_pool)}개, 실제 발행 이력 {len(published_history)}개, "
+        f"중복·고유사도 제외 {len(rejected_similar_topics)}개, "
+        f"선택 가능 {len(available_topics)}개"
+    )
 
-        available_topics = [
-            topic for topic in candidate_pool
-            if topic.get("status") == "candidate"
-        ]
-
-        print("후보 주제가 없어 기본 후보 주제를 다시 채웠습니다.")
-
-    if not available_topics:
-        raise RuntimeError("사용 가능한 후보 주제가 없습니다.")
-
-    category_rotation = topic_db.get("category_rotation", {})
-    recent_main_categories = category_rotation.get("recent_main_categories", [])
-    next_priority_categories = category_rotation.get("next_priority", [])
+    recent_reports = published_history[-12:]
+    recent_main_categories = [item.get("main_category", "") for item in recent_reports]
+    recent_middle_categories = [item.get("mid_category", "") for item in recent_reports]
 
     def calculate_score(topic):
         score = float(topic.get("priority", 0))
 
         main_category = topic.get("main_category", "")
-
-        if main_category in next_priority_categories:
-            score += 0.20
+        middle_category = topic.get("mid_category", "")
+        candidate_title = topic.get("topic", "")
 
         if main_category in recent_main_categories[-1:]:
-            score -= 0.30
+            score -= 0.35
         elif main_category in recent_main_categories[-3:]:
+            score -= 0.15
+
+        if middle_category and middle_category in recent_middle_categories[-3:]:
+            score -= 0.30
+
+        recent_category_count = recent_main_categories.count(main_category)
+        score -= min(recent_category_count * 0.04, 0.20)
+
+        highest_similarity = max(
+            (topic_similarity(candidate_title, title) for title in published_titles),
+            default=0.0,
+        )
+        if highest_similarity >= 0.45:
+            score -= 0.35
+        elif highest_similarity >= 0.25:
             score -= 0.15
 
         return score
@@ -199,8 +356,16 @@ def create_mock_report(today: str, topic: dict) -> dict:
         "abstract": (
             "자막과 더빙은 단순히 언어를 바꾸는 기술이 아니다. "
             "그것은 화면의 속도, 배우의 몸짓, 관객의 시선, 문화적 농담을 다시 배열하는 작업이다. "
-            "이 mock 리포트는 자동화 파이프라인을 검증하기 위한 샘플이며, 실제 API 연결 후에는 최신 출처 기반 본문으로 교체된다."
+            "영상 번역은 서로 다른 언어권의 관객이 같은 장면을 각자의 감각으로 이해하도록 돕는 문화적 설계다."
         ),
+        "quotation": {
+            "kind": "expert_advice",
+            "quote": "영상 번역은 말의 의미뿐 아니라 장면의 시간과 관객의 읽기 속도를 함께 설계해야 한다.",
+            "attribution": "영상 번역 연구의 일반 원칙",
+            "source_title": "영상 번역 개요 자료",
+            "source_url": "https://example.com",
+            "context": "화면의 시간 제약이 번역 선택에 미치는 영향을 설명한다."
+        },
         "sections": [
             {
                 "label": "01 / CONTEXT",
@@ -294,19 +459,93 @@ def create_mock_report(today: str, topic: dict) -> dict:
         ],
         "sources": [
             {
-                "publisher": "Mock Source",
-                "title": "This is a mock source for local pipeline testing",
+                "publisher": "Reference Source",
+                "title": "Audiovisual Translation Overview",
                 "url": "https://example.com",
-                "used_for": "로컬 테스트용 더미 출처"
+                "used_for": "영상 번역의 기본 원칙"
             }
         ]
     }
 
 
+def get_report_palette(main_category: str) -> dict:
+    palettes = {
+        "인문·철학": {
+            "paper": "#fdfcff", "ink": "#242033", "body": "#312c3d",
+            "muted": "#6b6476", "line": "#c8c0d8", "line_soft": "#e4deec",
+            "accent": "#65518a", "accent_dark": "#44345f",
+            "table_header": "#e8e2f0", "box_bg": "#f7f4fa",
+            "box_bg_strong": "#eee9f5", "screen_bg": "#f1eef6",
+        },
+        "자연사·생태": {
+            "paper": "#fbfdf9", "ink": "#1e2e25", "body": "#2b3c31",
+            "muted": "#627066", "line": "#b8cbbd", "line_soft": "#dce8df",
+            "accent": "#4f7a5d", "accent_dark": "#31523d",
+            "table_header": "#dfeae1", "box_bg": "#f2f7f2",
+            "box_bg_strong": "#e6f0e7", "screen_bg": "#edf3ee",
+        },
+        "역사·문화": {
+            "paper": "#fffaf8", "ink": "#30211f", "body": "#3e2d29",
+            "muted": "#75635e", "line": "#d2bdb5", "line_soft": "#eaded9",
+            "accent": "#975747", "accent_dark": "#68392f",
+            "table_header": "#eedfd9", "box_bg": "#faf3f0",
+            "box_bg_strong": "#f2e6e1", "screen_bg": "#f5eeeb",
+        },
+        "과학·공학": {
+            "paper": "#fafdff", "ink": "#1d2b35", "body": "#273944",
+            "muted": "#5e707b", "line": "#b7cbd5", "line_soft": "#dce8ed",
+            "accent": "#3e7895", "accent_dark": "#28536a",
+            "table_header": "#dceaf0", "box_bg": "#f1f7f9",
+            "box_bg_strong": "#e4f0f4", "screen_bg": "#edf3f6",
+        },
+        "경제·사회": {
+            "paper": "#fafffe", "ink": "#1d2d2e", "body": "#293c3d",
+            "muted": "#607374", "line": "#b8cecc", "line_soft": "#dce9e8",
+            "accent": "#477d7b", "accent_dark": "#2f5756",
+            "table_header": "#dcebea", "box_bg": "#f1f7f7",
+            "box_bg_strong": "#e5f0ef", "screen_bg": "#edf4f3",
+        },
+        "예술·미학": {
+            "paper": "#fffafd", "ink": "#30232d", "body": "#3f303b",
+            "muted": "#786873", "line": "#d3becb", "line_soft": "#eadde5",
+            "accent": "#8b5878", "accent_dark": "#613a53",
+            "table_header": "#eedfe8", "box_bg": "#faf3f7",
+            "box_bg_strong": "#f2e6ed", "screen_bg": "#f5eef2",
+        },
+        "생활기술·일상문화": {
+            "paper": "#fffdf8", "ink": "#2d251e", "body": "#3c3128",
+            "muted": "#74685d", "line": "#d2c2b2", "line_soft": "#e9dfd5",
+            "accent": "#96663f", "accent_dark": "#654329",
+            "table_header": "#eadfce", "box_bg": "#f8f4ed",
+            "box_bg_strong": "#f0e8dc", "screen_bg": "#f3f0ea",
+        },
+        "언어·문자": {
+            "paper": "#fbfcff", "ink": "#222937", "body": "#303849",
+            "muted": "#667080", "line": "#bdc7d7", "line_soft": "#dee4ed",
+            "accent": "#536b91", "accent_dark": "#384b6c",
+            "table_header": "#dfe5ef", "box_bg": "#f3f6fa",
+            "box_bg_strong": "#e7ecf4", "screen_bg": "#eef1f6",
+        },
+    }
+    category_aliases = {
+        "환경": "자연사·생태",
+        "기술": "과학·공학",
+    }
+    palette_key = category_aliases.get(main_category, main_category)
+    return palettes.get(palette_key, {
+        "paper": "#fffdf8", "ink": "#1f1b16", "body": "#2b241d",
+        "muted": "#665c52", "line": "#cbbba7", "line_soft": "#ded1c2",
+        "accent": "#8a5a2b", "accent_dark": "#4d3018",
+        "table_header": "#e7d9c5", "box_bg": "#f8f3ec",
+        "box_bg_strong": "#f1e6d8", "screen_bg": "#f4f0e8",
+    })
+
+
 def render_html(report: dict, output_path: Path):
     env = Environment(loader=FileSystemLoader(str(TEMPLATES_DIR)))
     template = env.get_template("report.html.j2")
-    html = template.render(report=report)
+    palette = get_report_palette(report.get("category", {}).get("main", ""))
+    html = template.render(report=report, palette=palette)
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(html, encoding="utf-8")
@@ -317,6 +556,7 @@ def render_pdf_with_playwright(html_path: Path, pdf_path: Path, report: dict):
 
     date_text = escape(str(report.get("date", "")).replace("-", "."))
     category = report.get("category", {})
+    palette = get_report_palette(category.get("main", ""))
     category_text = " / ".join(
         escape(str(category.get(key, "")).strip())
         for key in ("main", "middle")
@@ -327,13 +567,13 @@ def render_pdf_with_playwright(html_path: Path, pdf_path: Path, report: dict):
     # both the running header (shifted to the top margin) and the page number.
     footer_template = (
         '<div style="box-sizing:border-box;width:100%;margin:0 14mm;position:relative;'
-        'color:#665c52;font-family:Arial,\'Malgun Gothic\',sans-serif;font-size:9px;">'
+        f'color:{palette["muted"]};font-family:Arial,\'Malgun Gothic\',sans-serif;font-size:9px;">'
         '<div style="position:absolute;left:1mm;right:1mm;bottom:270mm;'
-        'padding-bottom:6px;border-bottom:1px solid #cbbba7;font-weight:700;'
+        f'padding-bottom:6px;border-bottom:1px solid {palette["line"]};font-weight:700;'
         'line-height:1.2;display:flex;justify-content:space-between;gap:18px;">'
         f'<span>GLOBAL KNOWLEDGE JOURNAL / {date_text}</span>'
         f'<span>{category_text}</span></div>'
-        '<div style="padding-top:6px;border-top:1px solid #cbbba7;'
+        f'<div style="padding-top:6px;border-top:1px solid {palette["line"]};'
         'font-family:Arial,sans-serif;text-align:center;">'
         '<span class="pageNumber"></span></div></div>'
     )
@@ -372,46 +612,59 @@ def update_topic_db(topic_db: dict, report: dict, html_path: Path, pdf_path: Pat
     today = report["date"]
 
     recent_reports = topic_db.setdefault("recent_reports", [])
-
-    already_exists = any(item.get("date") == today for item in recent_reports)
-
-    if not already_exists:
-        recent_reports.append({
-            "date": today,
-            "title": report["title"],
-            "main_category": report["category"]["main"],
-            "mid_category": report["category"]["middle"],
-            "sub_category": report["category"]["sub"],
-            "keywords": report["keywords"],
-            "html_path": str(html_path.as_posix()),
-            "pdf_path": str(pdf_path.as_posix()),
-            "status": "published_mock"
-        })
+    report_title_key = normalize_topic_title(report["title"])
+    recent_reports[:] = [
+        item for item in recent_reports
+        if not (
+            item.get("date") == today
+            and normalize_topic_title(item.get("title", "")) == report_title_key
+        )
+    ]
+    recent_reports.append({
+        "date": today,
+        "title": report["title"],
+        "main_category": report["category"]["main"],
+        "mid_category": report["category"]["middle"],
+        "sub_category": report["category"]["sub"],
+        "keywords": report["keywords"],
+        "html_path": str(html_path.as_posix()),
+        "pdf_path": str(pdf_path.as_posix()),
+        "status": report.get("status", "published_api")
+    })
 
     topic_db["updated_at"] = today
 
+    published_reports = [
+        item for item in recent_reports
+        if item.get("status") in {"published", "published_api"}
+    ]
     recent_main_categories = [
         item.get("main_category")
-        for item in recent_reports[-5:]
+        for item in published_reports[-5:]
         if item.get("main_category")
     ]
 
+    category_order = [
+        "인문·철학",
+        "자연사·생태",
+        "역사·문화",
+        "과학·공학",
+        "경제·사회",
+        "예술·미학",
+        "생활기술·일상문화",
+        "언어·문자",
+    ]
+    recent_category_set = set(recent_main_categories[-3:])
     topic_db["category_rotation"] = {
         "recent_main_categories": recent_main_categories,
         "next_priority": [
-            "인문·철학",
-            "자연사·생태",
-            "역사·문화",
-            "과학·공학",
-            "경제·사회",
-            "예술·미학",
-            "생활기술·일상문화",
-            "언어·문자"
-        ]
+            category for category in category_order
+            if category not in recent_category_set
+        ],
     }
 
     for candidate in topic_db.get("candidate_pool", []):
-        if candidate.get("topic", "").startswith(report["title"]):
+        if normalize_topic_title(candidate.get("topic", "")) == report_title_key:
             candidate["status"] = "used"
 
     save_json(TOPIC_DB_PATH, topic_db)
@@ -594,18 +847,22 @@ def save_render_publish_report(report: dict, topic_db: dict, mode: str = "mock")
         staged_html_path.replace(html_path)
         staged_pdf_path.replace(pdf_path)
 
-    update_topic_db(topic_db, report, html_path, pdf_path)
-    rebuild_sqlite(topic_db)
-    update_public_catalog(report, html_path, pdf_path)
+    if mode == "api":
+        update_topic_db(topic_db, report, html_path, pdf_path)
+        rebuild_sqlite(topic_db)
+        update_public_catalog(report, html_path, pdf_path)
 
     print("생성 완료")
     print(f"리포트 JSON: {report_json_path}")
     print(f"HTML: {html_path}")
     print(f"PDF: {pdf_path}")
-    print(f"주제 DB JSON: {TOPIC_DB_PATH}")
-    print(f"주제 DB SQLite: {TOPIC_DB_SQLITE_PATH}")
-    print(f"공개 목록: {REPORTS_JSON_PATH}")
-    print(f"최신 리포트: {LATEST_JSON_PATH}")
+    if mode == "api":
+        print(f"주제 DB JSON: {TOPIC_DB_PATH}")
+        print(f"주제 DB SQLite: {TOPIC_DB_SQLITE_PATH}")
+        print(f"공개 목록: {REPORTS_JSON_PATH}")
+        print(f"최신 리포트: {LATEST_JSON_PATH}")
+    else:
+        print("mock 모드: outputs만 생성하고 주제 DB와 공개 카탈로그는 변경하지 않았습니다.")
 
 
 def normalize_table_rows(report: dict) -> dict:
@@ -868,6 +1125,38 @@ def validate_report_structure(report: dict) -> None:
     if not isinstance(sources, list) or len(sources) < 5:
         raise ValueError("sources는 최소 5개가 필요합니다.")
 
+    quotation = report.get("quotation", {})
+    if not isinstance(quotation, dict):
+        raise ValueError("quotation은 출처가 있는 인용·전문가 첨언 객체여야 합니다.")
+
+    quotation_required = [
+        "kind", "quote", "attribution", "source_title", "source_url", "context"
+    ]
+    missing_quotation_fields = [
+        field for field in quotation_required
+        if not str(quotation.get(field, "")).strip()
+    ]
+    if missing_quotation_fields:
+        raise ValueError(
+            "quotation 필수 필드가 누락되었습니다: "
+            + ", ".join(missing_quotation_fields)
+        )
+
+    if quotation.get("kind") not in {"direct_quote", "expert_advice"}:
+        raise ValueError("quotation.kind는 direct_quote 또는 expert_advice여야 합니다.")
+
+    quotation_url = str(quotation.get("source_url", "")).strip()
+    if not quotation_url.startswith(("https://", "http://")):
+        raise ValueError("quotation.source_url은 확인 가능한 http(s) URL이어야 합니다.")
+
+    source_urls = {
+        str(source.get("url", "")).strip()
+        for source in sources
+        if isinstance(source, dict)
+    }
+    if quotation_url not in source_urls:
+        raise ValueError("quotation.source_url과 동일한 URL이 sources에도 있어야 합니다.")
+
 
 def run_api():
     from generate_report import generate_report
@@ -904,5 +1193,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 

@@ -74,6 +74,7 @@ jobs:
           fi
 
       - name: Commit generated report
+        if: env.REPORT_MODE == 'api'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -94,3 +95,12 @@ jobs:
             git commit -m "chore: generate daily report"
             git push
           fi
+
+      - name: Upload mock layout preview
+        if: env.REPORT_MODE == 'mock'
+        uses: actions/upload-artifact@v4
+        with:
+          name: mock-report-preview-${{ github.run_id }}
+          path: outputs/
+          retention-days: 3
+
