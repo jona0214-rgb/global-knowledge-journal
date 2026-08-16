@@ -44,7 +44,11 @@ def save_json(path: Path, data: Dict[str, Any]) -> None:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
-def build_user_prompt(today: str, selected_topic: Dict[str, Any]) -> str:
+def build_user_prompt(
+    today: str,
+    selected_topic: Dict[str, Any],
+    validation_feedback: str = "",
+) -> str:
     style_guide = load_text(STYLE_GUIDE_PATH)
     topic_db = load_text(TOPIC_DB_PATH)
     prompt_template = load_text(REPORT_WRITER_PROMPT_PATH)
@@ -121,7 +125,29 @@ def build_user_prompt(today: str, selected_topic: Dict[str, Any]) -> str:
     prompt = prompt.replace("{{ style_guide }}", style_guide)
     prompt = prompt.replace("{{ topic_db }}", topic_db)
 
-    return topic_lock + "\n\n" + prompt
+    correction_prompt = ""
+    if validation_feedback:
+        correction_prompt = f"""
+# STRUCTURE CORRECTION
+
+이전 초안은 아래 자동 검증 오류로 폐기되었습니다.
+
+검증 오류:
+{validation_feedback}
+
+이전 초안을 부분 수정하거나 이어 쓰지 말고 전체 JSON을 처음부터 다시 작성하세요.
+특히 sections는 정확히 11개 객체이며 다음 id를 아래 순서대로 각각 정확히 한 번만 사용해야 합니다.
+
+01, 02, 03, 03-1, 03-2, 03-3, 03-4, 03-5, 04, 05, 06
+
+중복 id, 누락 id, 추가 section 객체는 모두 금지합니다.
+""".strip()
+
+    prompt_parts = [topic_lock]
+    if correction_prompt:
+        prompt_parts.append(correction_prompt)
+    prompt_parts.append(prompt)
+    return "\n\n".join(prompt_parts)
 
 
 def validate_env() -> None:
@@ -146,14 +172,22 @@ def get_openai_client() -> OpenAI:
     )
 
 
-def generate_report_with_api(today: str, selected_topic: Dict[str, Any]) -> Dict[str, Any]:
+def generate_report_with_api(
+    today: str,
+    selected_topic: Dict[str, Any],
+    validation_feedback: str = "",
+) -> Dict[str, Any]:
     load_dotenv(ROOT_DIR / ".env")
 
     client = get_openai_client()
 
     model = os.getenv("OPENAI_MODEL", "gpt-4.1-mini").strip()
     system_prompt = load_text(SYSTEM_PROMPT_PATH)
-    user_prompt = build_user_prompt(today=today, selected_topic=selected_topic)
+    user_prompt = build_user_prompt(
+        today=today,
+        selected_topic=selected_topic,
+        validation_feedback=validation_feedback,
+    )
 
     schema_doc = load_json(REPORT_SCHEMA_PATH)
     schema_name = schema_doc.get("name", "daily_report")
@@ -211,8 +245,16 @@ def generate_report_with_api(today: str, selected_topic: Dict[str, Any]) -> Dict
     return report
 
 
-def generate_report(today: str, selected_topic: Dict[str, Any]) -> Dict[str, Any]:
-    return generate_report_with_api(today=today, selected_topic=selected_topic)
+def generate_report(
+    today: str,
+    selected_topic: Dict[str, Any],
+    validation_feedback: str = "",
+) -> Dict[str, Any]:
+    return generate_report_with_api(
+        today=today,
+        selected_topic=selected_topic,
+        validation_feedback=validation_feedback,
+    )
 
 
 def main() -> None:
@@ -241,4 +283,5 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
 

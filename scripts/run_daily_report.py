@@ -1169,12 +1169,42 @@ def run_api():
     print("OpenAI API로 리포트를 생성합니다.")
     print(f"선정 주제: {topic.get('topic')}")
 
-    report = generate_report(today=today, selected_topic=topic)
-    report = enforce_selected_topic(report, topic)
-    report = normalize_table_rows(report)
-    validate_report_structure(report)
+    validation_retries = int(os.getenv("REPORT_VALIDATION_RETRIES", "1"))
+    if validation_retries < 0:
+        raise ValueError("REPORT_VALIDATION_RETRIES는 0 이상의 정수여야 합니다.")
 
-    save_render_publish_report(report, topic_db, mode="api")
+    validation_feedback = ""
+    total_attempts = validation_retries + 1
+
+    for attempt_index in range(total_attempts):
+        attempt_number = attempt_index + 1
+        print(f"리포트 생성 시도 {attempt_number}/{total_attempts}")
+
+        report = generate_report(
+            today=today,
+            selected_topic=topic,
+            validation_feedback=validation_feedback,
+        )
+        report = enforce_selected_topic(report, topic)
+        report = normalize_table_rows(report)
+
+        try:
+            validate_report_structure(report)
+        except ValueError as exc:
+            if attempt_index >= validation_retries:
+                raise
+
+            validation_feedback = str(exc)
+            print(
+                "리포트 구조 검증 실패: "
+                f"{validation_feedback} / 전체 JSON을 한 번 다시 생성합니다."
+            )
+            continue
+
+        save_render_publish_report(report, topic_db, mode="api")
+        return
+
+    raise RuntimeError("리포트 생성 시도 횟수를 소진했습니다.")
 
 
 def main():
@@ -1193,6 +1223,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
