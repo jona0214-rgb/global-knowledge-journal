@@ -846,9 +846,16 @@ th {
     </thead>
     <tbody>
       {% for row in table.rows %}
+      {% set column_count = table.headers|length %}
       <tr>
-        {% for cell in row %}
-        <td>{{ cell|string|replace('**', '')|replace('__', '') }}</td>
+        {% for column_index in range(column_count) %}
+        <td>
+          {% if column_index == column_count - 1 and row|length > column_count %}
+            {{ row[column_index:]|select|join(' · ')|replace('**', '')|replace('__', '') }}
+          {% elif column_index < row|length %}
+            {{ row[column_index]|string|replace('**', '')|replace('__', '') }}
+          {% endif %}
+        </td>
         {% endfor %}
       </tr>
       {% endfor %}
@@ -1126,4 +1133,5 @@ th {
 </main>
 </body>
 </html>
+
 

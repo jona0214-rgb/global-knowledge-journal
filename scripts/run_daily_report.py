@@ -608,13 +608,51 @@ def save_render_publish_report(report: dict, topic_db: dict, mode: str = "mock")
     print(f"최신 리포트: {LATEST_JSON_PATH}")
 
 
+def normalize_table_rows(report: dict) -> dict:
+    """표의 모든 행을 헤더 열 수에 맞춰 PDF 레이아웃 붕괴를 방지한다."""
+    tables = report.get("tables", [])
+    if not isinstance(tables, list):
+        return report
+
+    for table in tables:
+        if not isinstance(table, dict):
+            continue
+
+        headers = table.get("headers", [])
+        rows = table.get("rows", [])
+        if not isinstance(headers, list) or not headers or not isinstance(rows, list):
+            continue
+
+        column_count = len(headers)
+        normalized_rows = []
+
+        for row in rows:
+            cells = list(row) if isinstance(row, list) else [row]
+            cells = [str(cell).strip() for cell in cells]
+
+            while len(cells) > column_count and not cells[-1]:
+                cells.pop()
+
+            if len(cells) > column_count:
+                overflow = " · ".join(cell for cell in cells[column_count - 1:] if cell)
+                cells = cells[:column_count - 1] + [overflow]
+            elif len(cells) < column_count:
+                cells.extend([""] * (column_count - len(cells)))
+
+            normalized_rows.append(cells)
+
+        table["rows"] = normalized_rows
+
+    return report
+
+
 def run_mock():
     today = get_today_kst()
 
     topic_db = load_json(TOPIC_DB_PATH, default={})
     topic = select_topic(topic_db)
 
-    report = create_mock_report(today, topic)
+    report = normalize_table_rows(create_mock_report(today, topic))
 
     save_render_publish_report(report, topic_db, mode="mock")
 
@@ -844,6 +882,7 @@ def run_api():
 
     report = generate_report(today=today, selected_topic=topic)
     report = enforce_selected_topic(report, topic)
+    report = normalize_table_rows(report)
     validate_report_structure(report)
 
     save_render_publish_report(report, topic_db, mode="api")
@@ -865,4 +904,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
