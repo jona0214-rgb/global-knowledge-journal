@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-08-17",
+  "updated_at": "2026-08-19",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -75,6 +75,26 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260817_time_table_birth_how_mod_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260817_time_table_birth_how_mod_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "date": "2026-08-19",
+      "title": "도서관 분류의 정치학: 지식은 누가 어떤 순서로 배열하는가",
+      "main_category": "언어·문자",
+      "mid_category": "지식분류",
+      "sub_category": "도서관 분류 체계",
+      "keywords": [
+        "도서관 분류",
+        "지식 배열",
+        "분류 체계",
+        "정치학",
+        "권력 구조",
+        "정보 질서",
+        "분류 기준",
+        "사회적 영향"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260819_library_classification_p_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260819_library_classification_p_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -82,14 +102,15 @@
       "생활기술·일상문화",
       "생활기술·일상문화",
       "인문·철학",
-      "역사·문화"
+      "역사·문화",
+      "언어·문자"
     ],
     "next_priority": [
       "자연사·생태",
       "과학·공학",
       "경제·사회",
       "예술·미학",
-      "언어·문자"
+      "생활기술·일상문화"
     ]
   },
   "candidate_pool": [
@@ -168,7 +189,7 @@
       "main_category": "언어·문자",
       "mid_category": "지식분류",
       "priority": 0.81,
-      "status": "candidate"
+      "status": "used"
     },
     {
       "topic": "보험의 탄생: 위험은 어떻게 공동의 계산이 되었나",
