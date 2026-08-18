@@ -7,21 +7,21 @@
 <style>
 @page {
   size: A4;
-  margin: 13mm 14mm 12mm;
 }
 
 :root {
-  --paper: #fffdf8;
-  --ink: #1f1b16;
-  --body: #2b241d;
-  --muted: #665c52;
-  --line: #cbbba7;
-  --line-soft: #ded1c2;
-  --accent: #8a5a2b;
-  --accent-dark: #4d3018;
-  --table-header: #e7d9c5;
-  --box-bg: #f8f3ec;
-  --box-bg-strong: #f1e6d8;
+  --paper: {{ palette.paper }};
+  --ink: {{ palette.ink }};
+  --body: {{ palette.body }};
+  --muted: {{ palette.muted }};
+  --line: {{ palette.line }};
+  --line-soft: {{ palette.line_soft }};
+  --accent: {{ palette.accent }};
+  --accent-dark: {{ palette.accent_dark }};
+  --table-header: {{ palette.table_header }};
+  --box-bg: {{ palette.box_bg }};
+  --box-bg-strong: {{ palette.box_bg_strong }};
+  --screen-bg: {{ palette.screen_bg }};
 }
 
 * {
@@ -45,7 +45,7 @@ body {
     "Apple SD Gothic Neo",
     sans-serif;
   color: var(--body);
-  background: #f4f0e8;
+  background: var(--screen-bg);
   line-height: 1.62;
   word-break: keep-all;
   overflow-wrap: break-word;
@@ -118,22 +118,72 @@ h1 {
   border-collapse: collapse;
   table-layout: fixed;
   font-size: 11.7px;
-  background: #ffffff;
+  background: transparent;
 }
 
 .meta-table th,
 .meta-table td {
-  border: 1px solid var(--line);
-  padding: 5.5px 7px;
+  border: 0;
+  padding: 4px 5px;
   vertical-align: middle;
+  text-align: left;
 }
 
 .meta-table th {
-  width: 10%;
-  background: var(--table-header);
-  color: var(--accent-dark);
-  font-weight: 900;
+  background: transparent;
+  color: var(--muted);
+  font-weight: 700;
   white-space: nowrap;
+}
+
+.meta-table th:first-child,
+.meta-table td:nth-child(2) {
+  padding-left: 0;
+}
+
+.meta-table .meta-category,
+.meta-table .meta-field {
+  white-space: nowrap;
+}
+
+.meta-table .meta-difficulty-label {
+  padding-left: 18px;
+}
+
+.quotation-block {
+  margin: 13px 0 17px;
+  padding: 12px 15px;
+  background: var(--box-bg);
+  border-left: 4px solid var(--accent);
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.quotation-kind {
+  margin: 0 0 4px;
+  color: var(--accent);
+  font-size: 10.7px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+
+.quotation-text {
+  margin: 0 0 6px;
+  color: var(--ink);
+  font-size: 13.1px;
+  line-height: 1.58;
+}
+
+.quotation-source {
+  margin: 0;
+  color: var(--muted);
+  font-size: 10.6px;
+  line-height: 1.45;
+}
+
+.quotation-source a {
+  color: var(--accent-dark);
+  text-decoration: none;
 }
 
 .keyword-line {
@@ -183,12 +233,25 @@ h1 {
 }
 
 .section {
-  margin: 18px 0 20px;
-  padding-top: 1px;
+  display: contents;
+  margin: 0 0 20px;
+  padding: 0;
+  border: 0;
+}
+
+.section > p:last-child {
+  margin-bottom: 20px;
+}
+
+.section .section-lead {
+  margin-top: 18px;
+  padding-top: 14px;
   border-top: 1px solid var(--line-soft);
 }
 
-.section.first-section {
+.section.first-section .section-lead {
+  margin-top: 0;
+  padding-top: 0;
   border-top: 0;
 }
 
@@ -196,7 +259,7 @@ h1 {
   margin-bottom: 4px;
   color: var(--accent);
   font-size: 11.3px;
-  font-weight: 900;
+  font-weight: 800;
   letter-spacing: 0.07em;
   break-after: avoid;
 }
@@ -207,13 +270,20 @@ h1 {
   font-size: 20.5px;
   line-height: 1.28;
   letter-spacing: -0.04em;
-  font-weight: 900;
+  font-weight: 700;
   break-after: avoid;
 }
 
 .subsection {
-  margin: 14px 0 16px;
-  border-top: 0;
+  margin: 0 0 17px;
+  padding: 0;
+  border: 0;
+}
+
+.subsection .section-lead {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line-soft);
 }
 
 .subsection-title {
@@ -222,7 +292,7 @@ h1 {
   font-size: 16.2px;
   line-height: 1.35;
   letter-spacing: -0.035em;
-  font-weight: 900;
+  font-weight: 700;
   break-after: avoid;
 }
 
@@ -231,12 +301,18 @@ h1 {
   margin-right: 4px;
 }
 
+.section-lead {
+  display: block;
+}
+
 p {
   margin: 0 0 8px;
   font-size: 13.25px;
   line-height: 1.64;
-  orphans: 2;
-  widows: 2;
+  orphans: 3;
+  widows: 3;
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 strong {
@@ -257,9 +333,9 @@ strong {
 
 .term-box {
   margin: 14px 0 16px;
-  padding: 12px 14px;
-  background: var(--box-bg);
-  border: 1px solid var(--line);
+  padding: 0;
+  background: transparent;
+  border: 0;
 }
 
 .box-title {
@@ -275,7 +351,7 @@ strong {
   grid-template-columns: 1fr 1fr;
   gap: 0;
   border: 1px solid var(--line);
-  background: #ffffff;
+  background: var(--paper);
 }
 
 .term-item {
@@ -310,15 +386,15 @@ strong {
 .flow-block {
   margin: 14px 0 20px;
   padding: 12px 14px;
-  background: #fffdf8;
+  background: var(--paper);
   border: 1px solid var(--line);
 }
 
 .flow-title {
-  margin: 0 0 8px;
+  margin: 0 0 6px;
   color: var(--accent-dark);
-  font-size: 14.2px;
-  font-weight: 900;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .flow-steps {
@@ -370,8 +446,8 @@ strong {
 .table-title {
   margin: 0 0 6px;
   color: var(--accent-dark);
-  font-size: 14px;
-  font-weight: 900;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 table {
@@ -379,7 +455,7 @@ table {
   border-collapse: collapse;
   table-layout: fixed;
   margin-top: 5px;
-  background: #ffffff;
+  background: var(--paper);
   font-size: 11.5px;
 }
 
@@ -387,7 +463,8 @@ th,
 td {
   border: 1px solid var(--line);
   padding: 5.6px 6.4px;
-  vertical-align: top;
+  vertical-align: middle;
+  text-align: center;
   line-height: 1.45;
 }
 
@@ -397,8 +474,8 @@ th {
   font-weight: 900;
 }
 
-th:first-child,
-td:first-child {
+.table-block th:first-child,
+.table-block td:first-child {
   width: 15%;
   font-weight: 900;
 }
@@ -468,6 +545,11 @@ td:first-child {
   border-top: 1px solid var(--line);
 }
 
+.final-reference-page {
+  break-before: page;
+  page-break-before: always;
+}
+
 .sources-title {
   margin: 0 0 5px;
   color: var(--ink);
@@ -482,18 +564,15 @@ td:first-child {
 }
 
 .source-list li {
-  display: inline;
+  display: block;
+  margin: 0 0 4px;
   color: var(--muted);
   font-size: 9.8px;
   line-height: 1.42;
 }
 
-.source-list li::after {
-  content: "; ";
-}
-
-.source-list li:last-child::after {
-  content: "";
+.source-list li:last-child {
+  margin-bottom: 0;
 }
 
 .source-list a {
@@ -519,7 +598,7 @@ td:first-child {
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .report-page {
     padding: 24px 18px 40px;
   }
@@ -575,47 +654,21 @@ td:first-child {
     display: none;
   }
 
+  /* The repeating header is supplied by Playwright's header template. */
   .print-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: space-between;
-    gap: 18px;
-    padding-bottom: 4px;
-    border-bottom: 1px solid var(--line);
-    color: var(--muted);
-    font-size: 9.4px;
-    font-weight: 700;
-    line-height: 1.2;
-    background: #ffffff;
-    z-index: 10;
+    display: none !important;
   }
 
   .print-footer {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: block;
-    border-top: 1px solid var(--line);
-    color: var(--muted);
-    font-size: 9.4px;
-    text-align: center;
-    background: #ffffff;
-    z-index: 10;
-  }
-
-  .print-footer::after {
-    content: counter(page);
+    display: none;
   }
 
   .report-page {
     max-width: none;
     margin: 0;
-    padding: 16px 0 16px;
-    background: #ffffff;
+    padding: 0;
+    /* Keep Playwright's running header/footer above every page fragment. */
+    background: transparent;
     box-shadow: none;
   }
 
@@ -650,7 +703,32 @@ td:first-child {
   }
 
   .section {
-    margin: 15px 0 16px;
+    margin: 0 0 16px;
+    padding: 0;
+  }
+
+  .section > p:last-child {
+    margin-bottom: 16px;
+  }
+
+  .section .section-lead {
+    margin-top: 15px;
+    padding-top: 11px;
+  }
+
+  .section.first-section .section-lead {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .subsection {
+    margin: 0 0 16px;
+    padding: 0;
+  }
+
+  .subsection .section-lead {
+    margin-top: 15px;
+    padding-top: 10px;
   }
 
   .section-title {
@@ -662,9 +740,35 @@ td:first-child {
   }
 
   p {
-    font-size: 11.75px;
-    line-height: 1.56;
-    margin-bottom: 6.5px;
+    font-size: 12.15px;
+    line-height: 1.62;
+    margin-bottom: 7px;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .section-label,
+  .section-title,
+  .subsection-title {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .final-reference-page {
+    break-before: page;
+    page-break-before: always;
+  }
+
+  .final-reference-page .reading-block,
+  .final-reference-page .table-block,
+  .final-reference-page .sources {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .final-reference-page .source-list li {
+    font-size: 9.2px;
+    line-height: 1.35;
   }
 
   .term-description {
@@ -693,6 +797,8 @@ td:first-child {
 
   .takeaway-card {
     padding: 8px 10px;
+    break-inside: avoid;
+    page-break-inside: avoid;
   }
 
   .reading-list li {
@@ -745,15 +851,21 @@ td:first-child {
 {% set section_id = section.get("id", "") %}
 {% set section_label = section.get("label", "") %}
 {% set section_title = section.get("title", "") %}
-{% set is_subsection = section_id[0:3] == "03-" or section_label[0:3] == "03-" %}
-<section class="section {% if first %}first-section{% endif %} {% if is_subsection %}subsection{% endif %}">
+{% set section_body = section.get("body", []) %}
+{% set is_subsection = section_id[0:3] == "03-" or section_id[0:2] == "3-" or section_label[0:3] == "03-" or section_label[0:2] == "3-" %}
+<section class="section section-id-{{ section_id|replace('-', '_') }} {% if first %}first-section{% endif %} {% if is_subsection %}subsection{% endif %}">
+  <div class="section-lead">
   {% if is_subsection %}
     <h2 class="subsection-title"><span class="subsection-label-inline">{{ section_label }}</span>{{ section_title }}</h2>
   {% else %}
     <div class="section-label">{{ section_label }}</div>
     <h2 class="section-title">{{ section_title }}</h2>
   {% endif %}
-  {% for paragraph in section.body %}
+  {% if section_body %}
+  <p>{{ section_body[0] }}</p>
+  {% endif %}
+  </div>
+  {% for paragraph in section_body[1:] %}
   <p>{{ paragraph }}</p>
   {% endfor %}
 </section>
@@ -761,7 +873,7 @@ td:first-child {
 
 {% macro render_table(table) %}
 <section class="table-block keep-together">
-  <div class="table-title">{{ table.title }}</div>
+  <div class="table-title">{{ table.title|string|replace('**', '')|replace('__', '') }}</div>
   <table>
     <thead>
       <tr>
@@ -772,16 +884,23 @@ td:first-child {
     </thead>
     <tbody>
       {% for row in table.rows %}
+      {% set column_count = table.headers|length %}
       <tr>
-        {% for cell in row %}
-        <td>{{ cell }}</td>
+        {% for column_index in range(column_count) %}
+        <td>
+          {% if column_index == column_count - 1 and row|length > column_count %}
+            {{ row[column_index:]|select|join(' · ')|replace('**', '')|replace('__', '') }}
+          {% elif column_index < row|length %}
+            {{ row[column_index]|string|replace('**', '')|replace('__', '') }}
+          {% endif %}
+        </td>
         {% endfor %}
       </tr>
       {% endfor %}
     </tbody>
   </table>
   {% if table.caption is defined and table.caption %}
-  <div class="caption">{{ table.caption }}</div>
+  <div class="caption">{{ table.caption|string|replace('**', '')|replace('__', '') }}</div>
   {% endif %}
 </section>
 {% endmacro %}
@@ -804,36 +923,44 @@ td:first-child {
 
 <div class="print-header">
   <div>GLOBAL KNOWLEDGE JOURNAL / {{ date_dot }}</div>
-  <div>{{ report.category.main }} / {{ report.category.middle }}{% if report.category.sub is defined and report.category.sub %} / {{ report.category.sub }}{% endif %}</div>
+  <div>{{ report.category.main }} / {{ report.category.middle }}</div>
 </div>
 <div class="print-footer"></div>
 
 <main class="report-page">
   <header class="screen-header">
     <div>GLOBAL KNOWLEDGE JOURNAL / {{ date_dot }}</div>
-    <div>{{ report.category.main }} / {{ report.category.middle }}{% if report.category.sub is defined and report.category.sub %} / {{ report.category.sub }}{% endif %}</div>
+    <div>{{ report.category.main }} / {{ report.category.middle }}</div>
   </header>
 
   <section class="cover keep-together">
-    <p class="journal-label">GLOBAL KNOWLEDGE JOURNAL / {{ report.category.main }} · {{ report.category.middle }}{% if report.category.sub is defined and report.category.sub %} · {{ report.category.sub }}{% endif %}</p>
+    <p class="journal-label">GLOBAL KNOWLEDGE JOURNAL / {{ report.category.main }} · {{ report.category.middle }}</p>
     <h1>{{ report.title }}</h1>
     <p class="subtitle">{{ report.subtitle }}</p>
 
     <table class="meta-table">
+      <colgroup>
+        <col style="width: 10%" />
+        <col style="width: 20%" />
+        <col style="width: 10%" />
+        <col style="width: 37%" />
+        <col style="width: 10%" />
+        <col style="width: 13%" />
+      </colgroup>
       <tbody>
         <tr>
           <th>발행일</th>
           <td>{{ date_kr }}</td>
-          <th>분야</th>
-          <td>{{ report.category.main }} / {{ report.category.middle }}{% if report.category.sub is defined and report.category.sub %} / {{ report.category.sub }}{% endif %}</td>
-          <th>난이도</th>
+          <th>카테고리</th>
+          <td class="meta-category">{{ report.category.main }} &gt; {{ report.category.middle }}</td>
+          <th class="meta-difficulty-label">난이도</th>
           <td>{{ report.difficulty }}</td>
         </tr>
         <tr>
           <th>예상 시간</th>
           <td>{{ report.estimated_reading_time }}</td>
-          <th>카테고리</th>
-          <td colspan="3">{{ report.category.main }} &gt; {{ report.category.middle }}{% if report.category.sub is defined and report.category.sub %} &gt; {{ report.category.sub }}{% endif %}</td>
+          <th>분야</th>
+          <td class="meta-field" colspan="3">{% if report.category.sub is defined and report.category.sub %}{{ report.category.sub }}{% endif %}{% if report.category.detail is defined and report.category.detail %}{% if report.category.sub is defined and report.category.sub %} &gt; {% endif %}{{ report.category.detail }}{% endif %}</td>
         </tr>
       </tbody>
     </table>
@@ -865,10 +992,24 @@ td:first-child {
     {{ render_note(report.summary_note) }}
   {% endif %}
 
+  {% if report.quotation is defined and report.quotation %}
+  <aside class="quotation-block">
+    <p class="quotation-kind">
+      {% if report.quotation.kind == "direct_quote" %}책 속 문장{% elif report.quotation.kind == "expert_advice" %}전문가의 첨언{% else %}관련 문헌{% endif %}
+    </p>
+    <blockquote class="quotation-text">{% if report.quotation.kind == "direct_quote" %}“{{ report.quotation.quote }}”{% else %}{{ report.quotation.quote }}{% endif %}</blockquote>
+    <p class="quotation-source">
+      — {{ report.quotation.attribution }},
+      <a href="{{ report.quotation.source_url }}">{{ report.quotation.source_title }}</a>
+      {% if report.quotation.context %} · {{ report.quotation.context }}{% endif %}
+    </p>
+  </aside>
+  {% endif %}
+
   {% for section in report.sections %}
     {% set section_id = section.get("id", "") %}
     {% set section_label = section.get("label", "") %}
-    {% if section_id == "01" or "01 / CONTEXT" in section_label %}
+    {% if section_id in ["01", "1"] or "01 / CONTEXT" in section_label or "1 / CONTEXT" in section_label %}
       {{ render_section(section, true) }}
     {% endif %}
   {% endfor %}
@@ -876,7 +1017,7 @@ td:first-child {
   {% for section in report.sections %}
     {% set section_id = section.get("id", "") %}
     {% set section_label = section.get("label", "") %}
-    {% if section_id == "02" or "02 / BEGINNER" in section_label %}
+    {% if section_id in ["02", "2"] or "02 / BEGINNER" in section_label or "2 / BEGINNER" in section_label %}
       {{ render_section(section) }}
     {% endif %}
   {% endfor %}
@@ -917,7 +1058,7 @@ td:first-child {
   {% for section in report.sections %}
     {% set section_id = section.get("id", "") %}
     {% set section_label = section.get("label", "") %}
-    {% if section_id == "03" or section_id[0:3] == "03-" or "03 / DEEP DIVE" in section_label or section_label[0:3] == "03-" %}
+    {% if section_id in ["03", "3"] or section_id[0:3] == "03-" or section_id[0:2] == "3-" or "03 / DEEP DIVE" in section_label or "3 / DEEP DIVE" in section_label or section_label[0:3] == "03-" or section_label[0:2] == "3-" %}
       {{ render_section(section) }}
     {% endif %}
   {% endfor %}
@@ -927,7 +1068,7 @@ td:first-child {
   {% for section in report.sections %}
     {% set section_id = section.get("id", "") %}
     {% set section_label = section.get("label", "") %}
-    {% if section_id == "04" or "04 / CASE STUDY" in section_label %}
+    {% if section_id in ["04", "4"] or "04 / CASE STUDY" in section_label or "4 / CASE STUDY" in section_label %}
       {{ render_section(section) }}
     {% endif %}
   {% endfor %}
@@ -938,7 +1079,7 @@ td:first-child {
   {% for section in report.sections %}
     {% set section_id = section.get("id", "") %}
     {% set section_label = section.get("label", "") %}
-    {% if section_id == "05" or "05 / CURRENT STATE" in section_label %}
+    {% if section_id in ["05", "5"] or "05 / CURRENT STATE" in section_label or "5 / CURRENT STATE" in section_label %}
       {{ render_section(section) }}
     {% endif %}
   {% endfor %}
@@ -948,7 +1089,7 @@ td:first-child {
   {% for section in report.sections %}
     {% set section_id = section.get("id", "") %}
     {% set section_label = section.get("label", "") %}
-    {% if section_id == "06" or "06 / IMPLICATIONS" in section_label %}
+    {% if section_id in ["06", "6"] or "06 / IMPLICATIONS" in section_label or "6 / IMPLICATIONS" in section_label %}
       {{ render_section(section) }}
     {% endif %}
   {% endfor %}
@@ -964,7 +1105,7 @@ td:first-child {
   {% endfor %}
 
   {% if report.takeaways is defined %}
-  <section class="takeaway-block keep-together">
+  <section class="takeaway-block">
     <div class="takeaway-title">07 / TAKEAWAYS</div>
     <h2 class="takeaway-subtitle">핵심 정리와 한마디</h2>
     <div class="takeaway-list">
@@ -986,6 +1127,7 @@ td:first-child {
   </section>
   {% endif %}
 
+  <div class="final-reference-page">
   <section class="reading-block">
     <div class="section-label">08 / FURTHER READING</div>
     <h2 class="section-title">더 읽을거리</h2>
@@ -1035,6 +1177,7 @@ td:first-child {
     </ul>
   </section>
   {% endif %}
+  </div>
 
   <footer class="footer-note">
     GLOBAL KNOWLEDGE JOURNAL · {{ date_dot }}
@@ -1042,3 +1185,6 @@ td:first-child {
 </main>
 </body>
 </html>
+
+
+

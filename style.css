@@ -113,6 +113,53 @@ h1 {
   letter-spacing: -0.04em;
 }
 
+.archive-toolbar {
+  display: grid;
+  grid-template-columns: auto minmax(180px, 260px) 1fr;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+  padding: 16px 18px;
+  background: var(--soft-2);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+}
+
+.archive-toolbar label {
+  color: var(--accent-dark);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.archive-toolbar select {
+  width: 100%;
+  min-height: 42px;
+  padding: 0 38px 0 14px;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  font: inherit;
+  font-size: 14px;
+}
+
+.archive-toolbar select:focus-visible {
+  outline: 3px solid rgba(139, 94, 52, 0.24);
+  outline-offset: 2px;
+}
+
+.archive-toolbar select:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.archive-result-count {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  text-align: right;
+}
+
 .latest-card,
 .report-card,
 .loading-card {
@@ -158,6 +205,10 @@ h1 {
   border-radius: 999px;
   font-size: 13px;
   font-weight: 700;
+}
+
+.published-badge {
+  background: var(--paper);
 }
 
 .report-title {
@@ -232,6 +283,14 @@ h1 {
 
   .summary-grid {
     grid-template-columns: 1fr;
+  }
+
+  .archive-toolbar {
+    grid-template-columns: 1fr;
+  }
+
+  .archive-result-count {
+    text-align: left;
   }
 
   .latest-card,

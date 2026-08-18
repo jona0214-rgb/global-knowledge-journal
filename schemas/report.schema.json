@@ -14,6 +14,7 @@
       "keywords",
       "abstract",
       "summary_note",
+      "quotation",
       "sections",
       "term_box",
       "flow_diagram",
@@ -54,7 +55,8 @@
         "required": [
           "main",
           "middle",
-          "sub"
+          "sub",
+          "detail"
         ],
         "properties": {
           "main": {
@@ -67,7 +69,13 @@
           },
           "sub": {
             "type": "string",
-            "description": "소분류"
+            "minLength": 1,
+            "description": "소분류. 대분류·중분류를 반복하지 않고 주제의 구체적 분야를 적는다."
+          },
+          "detail": {
+            "type": "string",
+            "minLength": 1,
+            "description": "최소 분류. 소분류보다 한 단계 더 구체적인 주제 초점을 짧게 적는다."
           }
         }
       },
@@ -101,39 +109,181 @@
         }
       },
 
+      "quotation": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "kind",
+          "quote",
+          "attribution",
+          "source_title",
+          "source_url",
+          "context"
+        ],
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": ["direct_quote", "expert_advice"],
+            "description": "검증 가능한 책의 짧은 문구 또는 권위자의 조언·첨언"
+          },
+          "quote": {
+            "type": "string",
+            "minLength": 20,
+            "maxLength": 260,
+            "description": "짧고 정확한 직접 인용 또는 출처에 근거한 전문가 조언"
+          },
+          "attribution": {
+            "type": "string",
+            "minLength": 2,
+            "description": "저자 또는 전문가 이름과 필요한 경우 소속"
+          },
+          "source_title": {
+            "type": "string",
+            "minLength": 2,
+            "description": "책, 논문, 강연 또는 기관 자료 제목"
+          },
+          "source_url": {
+            "type": "string",
+            "description": "인용이나 조언을 확인할 수 있는 출처 URL"
+          },
+          "context": {
+            "type": "string",
+            "minLength": 5,
+            "maxLength": 160,
+            "description": "리포트 주제와 인용·첨언이 연결되는 이유"
+          }
+        }
+      },
+
       "sections": {
         "type": "array",
         "description": "01~06 본문 섹션. 07과 08은 별도 필드로 처리한다.",
+        "minItems": 11,
+        "maxItems": 11,
         "items": {
-          "type": "object",
-          "additionalProperties": false,
-          "required": [
-            "id",
-            "label",
-            "title",
-            "body"
-          ],
-          "properties": {
-            "id": {
-              "type": "string",
-              "description": "섹션 ID. 예: 01, 02, 03, 03-1, 04"
+          "anyOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["id", "label", "title", "body"],
+              "properties": {
+                "id": { "type": "string", "enum": ["01"] },
+                "label": { "type": "string" },
+                "title": { "type": "string" },
+                "body": { "type": "array", "minItems": 4, "items": { "type": "string", "minLength": 150 } }
+              }
             },
-            "label": {
-              "type": "string",
-              "description": "섹션 라벨. 예: 01 / CONTEXT, 03-1."
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["id", "label", "title", "body"],
+              "properties": {
+                "id": { "type": "string", "enum": ["02"] },
+                "label": { "type": "string" },
+                "title": { "type": "string" },
+                "body": { "type": "array", "minItems": 2, "items": { "type": "string", "minLength": 150 } }
+              }
             },
-            "title": {
-              "type": "string",
-              "description": "섹션 제목"
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["id", "label", "title", "body"],
+              "properties": {
+                "id": { "type": "string", "enum": ["03"] },
+                "label": { "type": "string" },
+                "title": { "type": "string" },
+                "body": { "type": "array", "minItems": 2, "items": { "type": "string", "minLength": 150 } }
+              }
             },
-            "body": {
-              "type": "array",
-              "description": "섹션 본문 문단 배열",
-              "items": {
-                "type": "string"
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["id", "label", "title", "body"],
+              "properties": {
+                "id": { "type": "string", "enum": ["03-1"] },
+                "label": { "type": "string" },
+                "title": { "type": "string" },
+                "body": { "type": "array", "minItems": 3, "items": { "type": "string", "minLength": 150 } }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["id", "label", "title", "body"],
+              "properties": {
+                "id": { "type": "string", "enum": ["03-2"] },
+                "label": { "type": "string" },
+                "title": { "type": "string" },
+                "body": { "type": "array", "minItems": 3, "items": { "type": "string", "minLength": 150 } }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["id", "label", "title", "body"],
+              "properties": {
+                "id": { "type": "string", "enum": ["03-3"] },
+                "label": { "type": "string" },
+                "title": { "type": "string" },
+                "body": { "type": "array", "minItems": 3, "items": { "type": "string", "minLength": 150 } }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["id", "label", "title", "body"],
+              "properties": {
+                "id": { "type": "string", "enum": ["03-4"] },
+                "label": { "type": "string" },
+                "title": { "type": "string" },
+                "body": { "type": "array", "minItems": 3, "items": { "type": "string", "minLength": 150 } }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["id", "label", "title", "body"],
+              "properties": {
+                "id": { "type": "string", "enum": ["03-5"] },
+                "label": { "type": "string" },
+                "title": { "type": "string" },
+                "body": { "type": "array", "minItems": 3, "items": { "type": "string", "minLength": 150 } }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["id", "label", "title", "body"],
+              "properties": {
+                "id": { "type": "string", "enum": ["04"] },
+                "label": { "type": "string" },
+                "title": { "type": "string" },
+                "body": { "type": "array", "minItems": 5, "items": { "type": "string", "minLength": 150 } }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["id", "label", "title", "body"],
+              "properties": {
+                "id": { "type": "string", "enum": ["05"] },
+                "label": { "type": "string" },
+                "title": { "type": "string" },
+                "body": { "type": "array", "minItems": 5, "items": { "type": "string", "minLength": 150 } }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["id", "label", "title", "body"],
+              "properties": {
+                "id": { "type": "string", "enum": ["06"] },
+                "label": { "type": "string" },
+                "title": { "type": "string" },
+                "body": { "type": "array", "minItems": 5, "items": { "type": "string", "minLength": 150 } }
               }
             }
-          }
+          ]
         }
       },
       "term_box": {
@@ -151,6 +301,8 @@
           "items": {
             "type": "array",
             "description": "핵심 용어 4개. 2x2 박스로 표시된다.",
+            "minItems": 4,
+            "maxItems": 4,
             "items": {
               "type": "object",
               "additionalProperties": false,
@@ -188,6 +340,7 @@
           "steps": {
             "type": "array",
             "description": "흐름도 단계 4~6개",
+            "minItems": 4,
             "items": {
               "type": "string"
             }
@@ -201,6 +354,7 @@
       "tables": {
         "type": "array",
         "description": "리포트에 포함할 표 목록. placement_hint로 배치 위치를 지정한다.",
+        "minItems": 4,
         "items": {
           "type": "object",
           "additionalProperties": false,
@@ -252,6 +406,7 @@
       "section_notes": {
         "type": "array",
         "description": "특정 섹션 뒤에 들어가는 보조 코멘트 박스",
+        "minItems": 2,
         "items": {
           "type": "object",
           "additionalProperties": false,
@@ -279,6 +434,8 @@
       "takeaways": {
         "type": "array",
         "description": "07 / TAKEAWAYS에 들어갈 핵심 정리 박스 3개",
+        "minItems": 3,
+        "maxItems": 3,
         "items": {
           "type": "object",
           "additionalProperties": false,
@@ -328,6 +485,7 @@
       "sources": {
         "type": "array",
         "description": "리포트 작성에 사용한 출처 목록",
+        "minItems": 5,
         "items": {
           "type": "object",
           "additionalProperties": false,
@@ -360,3 +518,6 @@
     }
   }
 }
+
+
+

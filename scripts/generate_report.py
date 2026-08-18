@@ -4,7 +4,7 @@ from pathlib import Path
 from typing import Any, Dict
 
 from dotenv import load_dotenv
-from openai import OpenAI
+from openai import APITimeoutError, OpenAI
 
 
 ROOT_DIR = Path(__file__).resolve().parents[1]
@@ -44,7 +44,11 @@ def save_json(path: Path, data: Dict[str, Any]) -> None:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
-def build_user_prompt(today: str, selected_topic: Dict[str, Any]) -> str:
+def build_user_prompt(
+    today: str,
+    selected_topic: Dict[str, Any],
+    validation_feedback: str = "",
+) -> str:
     style_guide = load_text(STYLE_GUIDE_PATH)
     topic_db = load_text(TOPIC_DB_PATH)
     prompt_template = load_text(REPORT_WRITER_PROMPT_PATH)
@@ -80,6 +84,12 @@ def build_user_prompt(today: str, selected_topic: Dict[str, Any]) -> str:
         or ""
     ).strip()
 
+    sub_category_rule = (
+        locked_sub_category
+        if locked_sub_category
+        else "선정 주제에서 추론한 구체적인 소분류"
+    )
+
     topic_lock = f"""
 # TOPIC LOCK
 
@@ -93,7 +103,8 @@ def build_user_prompt(today: str, selected_topic: Dict[str, Any]) -> str:
 - report.title: {locked_title}
 - report.category.main: {locked_main_category}
 - report.category.middle: {locked_middle_category}
-- report.category.sub: {locked_sub_category}
+- report.category.sub: {sub_category_rule}
+- report.category.detail: 소분류보다 한 단계 더 구체적인 최소 분류
 
 절대 금지:
 - 새로운 주제를 고르지 마세요.
@@ -114,7 +125,29 @@ def build_user_prompt(today: str, selected_topic: Dict[str, Any]) -> str:
     prompt = prompt.replace("{{ style_guide }}", style_guide)
     prompt = prompt.replace("{{ topic_db }}", topic_db)
 
-    return topic_lock + "\n\n" + prompt
+    correction_prompt = ""
+    if validation_feedback:
+        correction_prompt = f"""
+# STRUCTURE CORRECTION
+
+이전 초안은 아래 자동 검증 오류로 폐기되었습니다.
+
+검증 오류:
+{validation_feedback}
+
+이전 초안을 부분 수정하거나 이어 쓰지 말고 전체 JSON을 처음부터 다시 작성하세요.
+특히 sections는 정확히 11개 객체이며 다음 id를 아래 순서대로 각각 정확히 한 번만 사용해야 합니다.
+
+01, 02, 03, 03-1, 03-2, 03-3, 03-4, 03-5, 04, 05, 06
+
+중복 id, 누락 id, 추가 section 객체는 모두 금지합니다.
+""".strip()
+
+    prompt_parts = [topic_lock]
+    if correction_prompt:
+        prompt_parts.append(correction_prompt)
+    prompt_parts.append(prompt)
+    return "\n\n".join(prompt_parts)
 
 
 def validate_env() -> None:
@@ -129,43 +162,71 @@ def validate_env() -> None:
 
 def get_openai_client() -> OpenAI:
     validate_env()
-    return OpenAI(api_key=os.environ["OPENAI_API_KEY"])
+    timeout_seconds = float(os.getenv("OPENAI_TIMEOUT_SECONDS", "600"))
+    max_retries = int(os.getenv("OPENAI_MAX_RETRIES", "0"))
+
+    return OpenAI(
+        api_key=os.environ["OPENAI_API_KEY"],
+        timeout=timeout_seconds,
+        max_retries=max_retries,
+    )
 
 
-def generate_report_with_api(today: str, selected_topic: Dict[str, Any]) -> Dict[str, Any]:
+def generate_report_with_api(
+    today: str,
+    selected_topic: Dict[str, Any],
+    validation_feedback: str = "",
+) -> Dict[str, Any]:
     load_dotenv(ROOT_DIR / ".env")
 
     client = get_openai_client()
 
     model = os.getenv("OPENAI_MODEL", "gpt-4.1-mini").strip()
     system_prompt = load_text(SYSTEM_PROMPT_PATH)
-    user_prompt = build_user_prompt(today=today, selected_topic=selected_topic)
+    user_prompt = build_user_prompt(
+        today=today,
+        selected_topic=selected_topic,
+        validation_feedback=validation_feedback,
+    )
 
     schema_doc = load_json(REPORT_SCHEMA_PATH)
     schema_name = schema_doc.get("name", "daily_report")
     schema = schema_doc["schema"]
 
-    response = client.responses.create(
-        model=model,
-        input=[
-            {
-                "role": "system",
-                "content": system_prompt,
-            },
-            {
-                "role": "user",
-                "content": user_prompt,
-            },
-        ],
-        text={
-            "format": {
-                "type": "json_schema",
-                "name": schema_name,
-                "schema": schema,
-                "strict": True,
-            }
-        },
+    timeout_seconds = float(os.getenv("OPENAI_TIMEOUT_SECONDS", "600"))
+    max_retries = int(os.getenv("OPENAI_MAX_RETRIES", "0"))
+    print(
+        "OpenAI API 요청 시작: "
+        f"요청당 제한 {timeout_seconds:g}초, 최대 재시도 {max_retries}회"
     )
+
+    try:
+        response = client.responses.create(
+            model=model,
+            input=[
+                {
+                    "role": "system",
+                    "content": system_prompt,
+                },
+                {
+                    "role": "user",
+                    "content": user_prompt,
+                },
+            ],
+            text={
+                "format": {
+                    "type": "json_schema",
+                    "name": schema_name,
+                    "schema": schema,
+                    "strict": True,
+                }
+            },
+        )
+    except APITimeoutError as exc:
+        raise RuntimeError(
+            "OpenAI API 응답 제한시간을 초과했습니다. "
+            f"요청당 {timeout_seconds:g}초, 최대 재시도 {max_retries}회"
+        ) from exc
 
     raw_text = response.output_text
 
@@ -184,8 +245,16 @@ def generate_report_with_api(today: str, selected_topic: Dict[str, Any]) -> Dict
     return report
 
 
-def generate_report(today: str, selected_topic: Dict[str, Any]) -> Dict[str, Any]:
-    return generate_report_with_api(today=today, selected_topic=selected_topic)
+def generate_report(
+    today: str,
+    selected_topic: Dict[str, Any],
+    validation_feedback: str = "",
+) -> Dict[str, Any]:
+    return generate_report_with_api(
+        today=today,
+        selected_topic=selected_topic,
+        validation_feedback=validation_feedback,
+    )
 
 
 def main() -> None:
@@ -214,3 +283,5 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+

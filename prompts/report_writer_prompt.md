@@ -21,7 +21,10 @@
 - 새로운 주제를 고르지 않는다.
 - 선정 주제를 다른 주제로 바꾸지 않는다.
 - report.title은 선정 주제의 topic 문자열과 정확히 같아야 한다.
-- report.category는 선정 주제의 main_category, mid_category, sub_category를 따른다.
+- report.category.main과 middle은 선정 주제의 main_category와 mid_category를 그대로 따른다.
+- report.category.sub는 선정 주제의 sub_category가 있으면 따르고, 비어 있으면 주제에서 구체적인 소분류를 추론한다.
+- report.category.detail은 sub보다 한 단계 더 구체적인 최소 분류를 짧게 작성한다.
+- category.main·middle과 category.sub·detail은 같은 표현을 반복하지 않는다.
 - 제목은 고정하되 subtitle은 독자가 이해하기 쉬운 설명으로 작성한다.
 - 03, 04, 05, 06 섹션은 절대 생략하지 않는다.
 - 표와 노트는 본문을 대체하지 않는다. 표는 반드시 본문 뒤의 보조 정리로만 사용한다.
@@ -38,26 +41,34 @@
 2. Keywords
 3. Abstract
 4. summary_note
-5. 01 / CONTEXT
-6. 02 / BEGINNER'S MAP
-7. term_box
-8. flow_diagram
-9. 03 / DEEP DIVE
-10. 03-1. ~ 03-5.
-11. <표1>
-12. 04 / CASE STUDY
-13. section_note
-14. <표2>
-15. 05 / CURRENT STATE
-16. <표3>
-17. 06 / IMPLICATIONS
-18. section_note
-19. 07 / TAKEAWAYS
-20. 08 / FURTHER READING
-21. <표4>
-22. Sources
+5. quotation
+6. 01 / CONTEXT
+7. 02 / BEGINNER'S MAP
+8. term_box
+9. flow_diagram
+10. 03 / DEEP DIVE
+11. 03-1. ~ 03-5.
+12. <표1>
+13. 04 / CASE STUDY
+14. section_note
+15. <표2>
+16. 05 / CURRENT STATE
+17. <표3>
+18. 06 / IMPLICATIONS
+19. section_note
+20. 07 / TAKEAWAYS
+21. 08 / FURTHER READING
+22. <표4>
+23. Sources
 
 JSON 필드는 반드시 schema에 맞춰 작성한다.
+
+응답 생성 규칙:
+
+- 최종 응답은 완전한 JSON 객체 하나만 반환한다.
+- 시스템 지시문, 작성 규칙, 스키마 설명, 검토 메모, 사과문, 디버그 문구, 불완전 응답 안내를 리포트의 어떤 문자열 필드에도 넣지 않는다.
+- `JSON follows`, `This is the only output`, `Need full JSON`, `Sorry for the partial response` 같은 생성 과정 문구를 절대 출력하지 않는다.
+- 응답이 길더라도 기존 JSON 조각이나 실패한 초안을 본문에 복사하지 말고, 처음부터 끝까지 하나의 정상 JSON만 작성한다.
 
 ---
 
@@ -68,15 +79,17 @@ JSON 필드는 반드시 schema에 맞춰 작성한다.
 전체 목표:
 
 - 최종 PDF 기준 7~9페이지
-- 전체 한국어 본문 분량은 최소 6,500자 이상을 목표로 한다.
+- sections의 body에 들어가는 한국어 본문은 공백 포함 최소 6,000자 이상이어야 한다. 권장이 아니라 필수다.
 - sections의 body 문단 총합은 최소 36문단 이상이어야 한다.
+- 각 body 문단은 공백 포함 최소 150자여야 하며, 150자 미만 문단은 요구 문단 수에 포함되지 않는다.
+- 빈 문자열, 공백만 있는 문자열, 문단이 아닌 값은 문단 수로 인정되지 않는다.
 - 표, 핵심 용어, 흐름도, Sources는 본문 분량에 포함하지 않는다.
 - 짧은 요약형 리포트로 끝내지 않는다.
 
 필수 섹션별 문단 수:
 
 - 01 / CONTEXT: 정확히 4문단
-- 02 / BEGINNER'S MAP: 정확히 3문단
+- 02 / BEGINNER'S MAP: 2~3문단
 - 03 / DEEP DIVE: 정확히 2문단
 - 03-1.: 정확히 3문단
 - 03-2.: 정확히 3문단
@@ -90,6 +103,7 @@ JSON 필드는 반드시 schema에 맞춰 작성한다.
 문단 기준:
 
 - 각 문단은 2~4문장으로 작성한다.
+- 각 문단은 공백 포함 최소 150자로 작성하되, 170~220자 수준의 충분한 설명을 목표로 한다.
 - 한 문장짜리 짧은 문단을 반복하지 않는다.
 - 각 문단은 최소한 원인, 과정, 결과, 사례, 함의 중 하나를 설명해야 한다.
 - 단순 정의만 나열하지 않는다.
@@ -108,6 +122,15 @@ JSON 필드는 반드시 schema에 맞춰 작성한다.
 - estimated_reading_time
 - category
 - keywords
+
+category는 다음 4단계로 구분한다.
+
+- main: 아주 큰 대분류
+- middle: 대분류 아래의 중분류
+- sub: 주제의 구체적 소분류
+- detail: 소분류 아래의 최소 분류
+
+표지에서는 main·middle을 `카테고리`, sub·detail을 `분야`로 표시하므로 서로 중복되는 표현을 쓰지 않는다.
 
 title_slug는 영문 소문자, 숫자, 밑줄만 사용한다.
 
@@ -144,9 +167,33 @@ summary_note는 Abstract 아래에 들어가는 보조 코멘트 박스다.
 
 ---
 
+## 6-1. quotation
+
+quotation은 요약을 반복하는 문구가 아니라, 주제와 직접 연결되는 책의 짧은 문장 또는 해당 분야 권위자의 조언·첨언이다.
+
+필수 구성:
+
+- kind: `direct_quote` 또는 `expert_advice`
+- quote: 인용 문구 또는 전문가 조언의 핵심 내용
+- attribution: 저자·전문가 이름과 필요한 경우 소속
+- source_title: 책·논문·강연·기관 자료의 정확한 제목
+- source_url: 독자가 원문 또는 공식 자료를 확인할 수 있는 URL
+- context: 이 문구가 리포트 주제에 중요한 이유를 한 문장으로 설명
+
+작성 원칙:
+
+- 직접 인용은 원문을 확인할 수 있을 때만 사용하고 80자 안팎의 짧은 문구로 제한한다.
+- 문구를 정확히 검증하기 어렵다면 `expert_advice`로 작성하고 출처 내용의 요지를 정직하게 풀어쓴다.
+- 존재하지 않는 책, 전문가, 문구, URL을 만들지 않는다.
+- quotation.source_url과 같은 URL을 Sources에도 반드시 한 번 포함한다.
+- 요약문을 권위자의 실제 발언처럼 꾸미지 않는다.
+
+---
+
 ## 7. Sections 작성 규칙
 
 sections 배열은 다음 11개 id를 반드시 모두 포함한다.
+각 id는 정확히 한 번만 사용하며, sections는 정확히 11개 객체로 작성한다.
 
 - 01
 - 02
@@ -421,6 +468,9 @@ sources는 리포트 작성에 참고한 출처 목록이다.
 - API 실행 상태
 - 자동화 파이프라인 설명
 - 내부 진행 메모
+- 시스템 프롬프트 또는 개발자 지시문
+- JSON 키·스키마를 설명하는 문장
+- 생성 실패, 부분 응답, 재작성 과정을 알리는 문장
 
 ---
 
@@ -431,11 +481,18 @@ sources는 리포트 작성에 참고한 출처 목록이다.
 - sections에 01, 02, 03, 03-1, 03-2, 03-3, 03-4, 03-5, 04, 05, 06이 모두 있는가
 - 03, 04, 05, 06이 표로 대체되지 않았는가
 - 01~06 본문 문단 총합이 최소 36문단 이상인가
+- sections의 body 본문만 합쳐 공백 포함 최소 6,000자 이상인가
 - 03-1부터 03-5까지 각각 3문단인가
 - 04, 05, 06이 각각 5문단인가
 - tables가 정확히 4개인가
+- term_box.items가 정확히 4개인가
+- flow_diagram.steps가 최소 4개인가
 - takeaways가 정확히 3개인가
 - section_notes가 정확히 2개인가
+- sources가 최소 5개인가
+- quotation이 검증 가능한 책의 짧은 문구 또는 전문가 조언이며, attribution·source_title·source_url이 모두 있는가
+- quotation.source_url이 Sources에도 포함되어 있는가
+- category.main·middle과 category.sub·detail이 서로 중복되지 않고 대분류에서 최소 분류로 구체화되는가
 - 전체 분량이 7~9페이지를 만들 만큼 충분한가
 
 ---
@@ -453,3 +510,5 @@ sources는 리포트 작성에 참고한 출처 목록이다.
 아래 주제 DB는 중복 회피와 맥락 참고용이다. 리포트 본문에는 절대 언급하지 않는다.
 
 {{ topic_db }}
+
+

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-08-16",
+  "updated_at": "2026-08-17",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -17,210 +17,78 @@
       "status": "published"
     },
     {
-      "date": "2026-07-21",
-      "title": "자막과 더빙의 문화사",
-      "main_category": "언어·문자",
-      "mid_category": "영상번역",
-      "sub_category": "자막과 더빙",
-      "keywords": [
-        "자막",
-        "더빙",
-        "영상번역",
-        "로컬라이징",
-        "화면 리듬",
-        "문화 번역"
-      ],
-      "html_path": "C:/Users/USER/OneDrive/문서/GitHub/global-knowledge-journal/outputs/20260721_자막과더빙의문화사_Report.html",
-      "pdf_path": "C:/Users/USER/OneDrive/문서/GitHub/global-knowledge-journal/outputs/20260721_자막과더빙의문화사_Report.pdf",
-      "status": "published_mock"
-    },
-    {
-      "date": "2026-07-22",
-      "title": "자막과 더빙의 문화사",
-      "main_category": "인문·철학",
-      "mid_category": "정치철학",
-      "sub_category": "자막과 더빙",
-      "keywords": [
-        "자막",
-        "더빙",
-        "영상번역",
-        "로컬라이징",
-        "화면 리듬",
-        "문화 번역"
-      ],
-      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260722_자막과더빙의문화사_Report.html",
-      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260722_자막과더빙의문화사_Report.pdf",
-      "status": "published_mock"
-    },
-    {
-      "date": "2026-07-23",
-      "title": "자막과 더빙의 문화사",
-      "main_category": "자연사·생태",
-      "mid_category": "동물행동",
-      "sub_category": "자막과 더빙",
-      "keywords": [
-        "자막",
-        "더빙",
-        "영상번역",
-        "로컬라이징",
-        "화면 리듬",
-        "문화 번역"
-      ],
-      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260723_자막과더빙의문화사_Report.html",
-      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260723_자막과더빙의문화사_Report.pdf",
-      "status": "published_mock"
-    },
-    {
-      "date": "2026-07-24",
-      "title": "자막과 더빙의 문화사",
-      "main_category": "역사·문화",
-      "mid_category": "시간문화",
-      "sub_category": "자막과 더빙",
-      "keywords": [
-        "자막",
-        "더빙",
-        "영상번역",
-        "로컬라이징",
-        "화면 리듬",
-        "문화 번역"
-      ],
-      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260724_자막과더빙의문화사_Report.html",
-      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260724_자막과더빙의문화사_Report.pdf",
-      "status": "published_mock"
-    },
-    {
-      "date": "2026-07-25",
-      "title": "자막과 더빙의 문화사",
-      "main_category": "경제·사회",
-      "mid_category": "에너지정책",
-      "sub_category": "자막과 더빙",
-      "keywords": [
-        "자막",
-        "더빙",
-        "영상번역",
-        "로컬라이징",
-        "화면 리듬",
-        "문화 번역"
-      ],
-      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260725_자막과더빙의문화사_Report.html",
-      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260725_자막과더빙의문화사_Report.pdf",
-      "status": "published_mock"
-    },
-    {
-      "date": "2026-07-26",
-      "title": "자막과 더빙의 문화사",
-      "main_category": "인문·철학",
-      "mid_category": "정치철학",
-      "sub_category": "자막과 더빙",
-      "keywords": [
-        "자막",
-        "더빙",
-        "영상번역",
-        "로컬라이징",
-        "화면 리듬",
-        "문화 번역"
-      ],
-      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260726_자막과더빙의문화사_Report.html",
-      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260726_자막과더빙의문화사_Report.pdf",
-      "status": "published_mock"
-    },
-    {
-      "date": "2024-06-20",
-      "title": "지속가능한 도시 농업",
-      "main_category": "환경",
-      "mid_category": "도시개발",
-      "sub_category": "농업과 친환경",
-      "keywords": [
-        "도시농업",
-        "지속가능성",
-        "지역사회",
-        "식량안보",
-        "도시재생",
-        "환경보전",
-        "커뮤니티 가든",
-        "농업기술"
-      ],
-      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20240620_sisanganeundosinongup_Report.html",
-      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20240620_sisanganeundosinongup_Report.pdf",
-      "status": "published_mock"
-    },
-    {
-      "date": "2026-08-01",
-      "title": "인공지능 윤리",
-      "main_category": "기술",
-      "mid_category": "인공지능",
-      "sub_category": "윤리",
-      "keywords": [
-        "인공지능 윤리",
-        "책임성",
-        "편향성",
-        "프라이버시",
-        "투명성",
-        "자율성",
-        "규제",
-        "사회적 영향"
-      ],
-      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260801_aijeonri_Report.html",
-      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260801_aijeonri_Report.pdf",
-      "status": "published_mock"
-    },
-    {
-      "date": "2026-08-02",
-      "title": "달력의 역사: 인간은 어떻게 시간을 나누고 약속했나",
-      "main_category": "역사·문화",
-      "mid_category": "시간문화",
+      "date": "2026-08-15",
+      "title": "도시의 하수도: 보이지 않는 위생 인프라는 어떻게 문명을 바꾸었나",
+      "main_category": "생활기술·일상문화",
+      "mid_category": "도시인프라",
       "sub_category": "",
       "keywords": [
-        "달력",
-        "시간 분할",
-        "천문학",
-        "사회 약속",
-        "역사적 진화",
-        "태양력",
-        "음력",
-        "시민생활"
+        "하수도",
+        "도시 위생",
+        "산업화",
+        "공중보건",
+        "도시환경",
+        "인프라",
+        "환경정책",
+        "사회변화"
       ],
-      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260802_history_of_calendar_Report.html",
-      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260802_history_of_calendar_Report.pdf",
-      "status": "published_mock"
+      "html_path": "outputs/20260815_dosiei_hasudo_Report.html",
+      "pdf_path": "outputs/20260815_dosiei_hasudo_Report.pdf",
+      "status": "published_api"
     },
     {
       "date": "2026-08-16",
       "title": "무지의 베일: 공정한 사회는 어떻게 상상되는가",
       "main_category": "인문·철학",
       "mid_category": "정치철학",
-      "sub_category": "",
+      "sub_category": "사회정의론",
       "keywords": [
         "무지의 베일",
-        "공정한 사회",
-        "정의론",
-        "사회계약",
-        "존 롤스",
-        "정치철학",
         "공정성",
-        "도덕철학"
+        "존 롤스",
+        "정의론",
+        "사회 계약",
+        "윤리적 상상력",
+        "정치철학",
+        "사회 정의"
       ],
-      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260816_mujie_veil_fair_society_Report.html",
-      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260816_mujie_veil_fair_society_Report.pdf",
-      "status": "published_mock"
+      "html_path": "outputs/20260816_veil_of_ignorance_fair_s_Report.html",
+      "pdf_path": "outputs/20260816_veil_of_ignorance_fair_s_Report.pdf",
+      "status": "published_api"
+    },
+    {
+      "date": "2026-08-17",
+      "title": "시간표의 탄생: 근대 사회는 어떻게 시간을 표준화했나",
+      "main_category": "역사·문화",
+      "mid_category": "시간문화",
+      "sub_category": "시간표와 시간표준화",
+      "keywords": [
+        "시간표",
+        "시간 표준화",
+        "근대 사회",
+        "기차 시각표",
+        "그리니치 평균시",
+        "산업혁명",
+        "시민생활 변화",
+        "시간 측정"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260817_time_table_birth_how_mod_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260817_time_table_birth_how_mod_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
     "recent_main_categories": [
+      "생활기술·일상문화",
+      "생활기술·일상문화",
       "인문·철학",
-      "환경",
-      "기술",
-      "역사·문화",
-      "인문·철학"
+      "역사·문화"
     ],
     "next_priority": [
-      "인문·철학",
       "자연사·생태",
-      "역사·문화",
       "과학·공학",
       "경제·사회",
       "예술·미학",
-      "생활기술·일상문화",
       "언어·문자"
     ]
   },
@@ -244,35 +112,35 @@
       "main_category": "자연사·생태",
       "mid_category": "동물행동",
       "priority": 0.84,
-      "status": "candidate"
+      "status": "used"
     },
     {
       "topic": "시간표의 탄생: 근대 사회는 어떻게 시간을 표준화했나",
       "main_category": "역사·문화",
       "mid_category": "시간문화",
       "priority": 0.82,
-      "status": "candidate"
+      "status": "used"
     },
     {
       "topic": "전기요금의 정치학: 에너지 가격은 왜 단순한 숫자가 아닌가",
       "main_category": "경제·사회",
       "mid_category": "에너지정책",
       "priority": 0.8,
-      "status": "candidate"
+      "status": "used"
     },
     {
       "topic": "타이포그래피의 목소리: 글자는 어떻게 말투가 되었나",
       "main_category": "예술·미학",
       "mid_category": "그래픽디자인",
       "priority": 0.78,
-      "status": "candidate"
+      "status": "used"
     },
     {
       "topic": "도시의 하수도: 보이지 않는 위생 인프라는 어떻게 문명을 바꾸었나",
       "main_category": "생활기술·일상문화",
       "mid_category": "도시인프라",
       "priority": 0.76,
-      "status": "candidate"
+      "status": "used"
     },
     {
       "topic": "달력의 역사: 인간은 어떻게 시간을 나누고 약속했나",
@@ -293,6 +161,62 @@
       "main_category": "자연사·생태",
       "mid_category": "생물과 구조",
       "priority": 0.7,
+      "status": "candidate"
+    },
+    {
+      "topic": "도서관 분류의 정치학: 지식은 누가 어떤 순서로 배열하는가",
+      "main_category": "언어·문자",
+      "mid_category": "지식분류",
+      "priority": 0.81,
+      "status": "candidate"
+    },
+    {
+      "topic": "보험의 탄생: 위험은 어떻게 공동의 계산이 되었나",
+      "main_category": "경제·사회",
+      "mid_category": "위험과 제도",
+      "priority": 0.8,
+      "status": "candidate"
+    },
+    {
+      "topic": "밤의 빛과 생태계: 인공조명은 생명의 시간을 어떻게 바꾸는가",
+      "main_category": "자연사·생태",
+      "mid_category": "생태환경",
+      "priority": 0.79,
+      "status": "candidate"
+    },
+    {
+      "topic": "소리의 건축: 공간은 어떻게 듣는 경험을 설계하는가",
+      "main_category": "예술·미학",
+      "mid_category": "공간미학",
+      "priority": 0.78,
+      "status": "candidate"
+    },
+    {
+      "topic": "바닷물을 식수로: 담수화 기술은 물 부족의 해답이 될 수 있는가",
+      "main_category": "과학·공학",
+      "mid_category": "물환경공학",
+      "priority": 0.77,
+      "status": "candidate"
+    },
+    {
+      "topic": "우편번호의 사회사: 숫자는 어떻게 도시와 사람을 연결했나",
+      "main_category": "생활기술·일상문화",
+      "mid_category": "행정인프라",
+      "priority": 0.76,
+      "status": "candidate"
+    },
+    {
+      "topic": "확률과 우연의 철학: 불확실성은 어떻게 지식이 되는가",
+      "main_category": "인문·철학",
+      "mid_category": "과학철학",
+      "priority": 0.75,
+      "status": "candidate"
+    },
+    {
+      "topic": "향신료 교역의 세계사: 맛은 어떻게 제국과 항로를 움직였나",
+      "main_category": "역사·문화",
+      "mid_category": "교역문화",
+      "priority": 0.74,
       "status": "candidate"
     }
   ]

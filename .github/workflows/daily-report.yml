@@ -12,11 +12,13 @@ on:
           - mock
           - api
 
-  # schedule:
-  #   - cron: "0 21 * * *"
-  #
-  # 예약 실행은 현재 비활성화 상태입니다.
-  # 실제 API 결제/쿼터 확인 후 다시 활성화합니다.
+  schedule:
+    # GitHub cron은 UTC 기준입니다. 매일 21:15 UTC = 다음 날 06:15 KST.
+    - cron: "15 21 * * *"
+
+concurrency:
+  group: daily-global-knowledge-report
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -24,14 +26,21 @@ permissions:
 jobs:
   generate-report:
     runs-on: ubuntu-latest
+    timeout-minutes: 12
 
     env:
       REPORT_TIMEZONE: Asia/Seoul
       REPORT_LANGUAGE: ko
-      REPORT_MIN_PAGES: "7"
+      REPORT_MIN_PAGES: "6"
       REPORT_TARGET_PAGES: "7-9"
-      REPORT_MODE: ${{ github.event.inputs.report_mode || 'mock' }}
+      # 예약 실행은 항상 API로 발행하고, 수동 실행만 선택한 모드를 사용합니다.
+      REPORT_MODE: ${{ github.event_name == 'schedule' && 'api' || github.event.inputs.report_mode || 'mock' }}
+      # 같은 날짜에 이미 정식 발행된 리포트가 있으면 예약 재실행은 건너뜁니다.
+      REPORT_SKIP_EXISTING_DATE: ${{ github.event_name == 'schedule' && '1' || '0' }}
       OPENAI_MODEL: gpt-4.1-mini
+      OPENAI_TIMEOUT_SECONDS: "600"
+      OPENAI_MAX_RETRIES: "0"
+      REPORT_VALIDATION_RETRIES: "1"
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
     steps:
@@ -71,6 +80,7 @@ jobs:
           fi
 
       - name: Commit generated report
+        if: env.REPORT_MODE == 'api'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -91,3 +101,13 @@ jobs:
             git commit -m "chore: generate daily report"
             git push
           fi
+
+      - name: Upload mock layout preview
+        if: env.REPORT_MODE == 'mock'
+        uses: actions/upload-artifact@v4
+        with:
+          name: mock-report-preview-${{ github.run_id }}
+          path: outputs/
+          retention-days: 3
+
+
