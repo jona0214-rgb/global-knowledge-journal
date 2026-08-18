@@ -1164,6 +1164,23 @@ def run_api():
 
     today = get_today_kst()
 
+    if os.getenv("REPORT_SKIP_EXISTING_DATE", "0") == "1":
+        published_reports = load_json(REPORTS_JSON_PATH, default=[])
+        if not isinstance(published_reports, list):
+            published_reports = []
+        already_published = any(
+            isinstance(item, dict)
+            and item.get("date") == today
+            and item.get("status") == "published_api"
+            for item in published_reports
+        )
+        if already_published:
+            print(
+                f"{today}에는 이미 정식 발행된 리포트가 있어 "
+                "예약 생성을 건너뜁니다."
+            )
+            return
+
     topic_db = load_json(TOPIC_DB_PATH, default={})
     topic = select_topic(topic_db)
 

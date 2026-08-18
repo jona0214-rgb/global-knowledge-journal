@@ -1,21 +1,12 @@
-const STORAGE_KEY = 'global-knowledge-journal-entries';
-
-const entryForm = document.getElementById('entry-form');
-const entriesContainer = document.getElementById('entries');
-const clearButton = document.getElementById('clear-button');
-
-function loadEntries() {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    return raw ? JSON.parse(raw) : [];
-  } catch {
-    return [];
-  }
-}const latestEl = document.getElementById("latest-report");
+const latestEl = document.getElementById("latest-report");
 const reportListEl = document.getElementById("report-list");
 const reportCountEl = document.getElementById("report-count");
 const latestDateEl = document.getElementById("latest-date");
 const siteStatusEl = document.getElementById("site-status");
+const archiveDateEl = document.getElementById("archive-date");
+const archiveResultCountEl = document.getElementById("archive-result-count");
+
+let publishedReports = [];
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -84,10 +75,10 @@ function renderReportCard(report, isLatest = false) {
       <div class="report-meta">
         <span class="badge">${escapeHtml(report.date || "-")}</span>
         ${category ? `<span class="badge">${escapeHtml(category)}</span>` : ""}
-        ${report.status ? `<span class="badge">${escapeHtml(report.status)}</span>` : ""}
+        <span class="badge published-badge">정식 발행</span>
       </div>
 
-      <h3 class="report-title">${escapeHtml(report.title || "Untitled Report")}</h3>
+      <h3 class="report-title">${escapeHtml(report.title || "제목 없는 리포트")}</h3>
 
       ${
         report.subtitle
@@ -98,6 +89,38 @@ function renderReportCard(report, isLatest = false) {
       ${renderActions(report)}
     </article>
   `;
+}
+
+function renderArchive(selectedDate = "") {
+  const filteredReports = selectedDate
+    ? publishedReports.filter((report) => report.date === selectedDate)
+    : publishedReports;
+
+  reportListEl.classList.remove("loading-card");
+  archiveResultCountEl.textContent = selectedDate
+    ? `${selectedDate} 리포트 ${filteredReports.length}건`
+    : `전체 공개 리포트 ${filteredReports.length}건`;
+
+  if (filteredReports.length === 0) {
+    reportListEl.innerHTML = `<div class="empty">선택한 날짜에 공개된 리포트가 없습니다.</div>`;
+    return;
+  }
+
+  reportListEl.innerHTML = filteredReports
+    .map((report) => renderReportCard(report))
+    .join("");
+}
+
+function configureDateFilter(reports) {
+  const dates = [...new Set(reports.map((report) => report.date).filter(Boolean))];
+
+  archiveDateEl.innerHTML = [
+    '<option value="">전체 날짜</option>',
+    ...dates.map(
+      (date) => `<option value="${escapeHtml(date)}">${escapeHtml(date)}</option>`,
+    ),
+  ].join("");
+  archiveDateEl.disabled = dates.length === 0;
 }
 
 async function loadJson(path) {
@@ -114,37 +137,45 @@ async function init() {
   try {
     const reports = await loadJson("public/reports.json");
 
-    const normalizedReports = Array.isArray(reports)
+    publishedReports = Array.isArray(reports)
       ? reports
-          .filter((report) => report && typeof report === "object")
+          .filter(
+            (report) =>
+              report &&
+              typeof report === "object" &&
+              report.status === "published_api",
+          )
           .sort((a, b) => String(b.date || "").localeCompare(String(a.date || "")))
       : [];
 
-    if (normalizedReports.length === 0) {
+    if (publishedReports.length === 0) {
       siteStatusEl.textContent = "No reports";
       reportCountEl.textContent = "0";
       latestDateEl.textContent = "-";
-      latestEl.innerHTML = `<div class="empty">아직 공개된 리포트가 없습니다.</div>`;
+      latestEl.innerHTML = `<div class="empty">아직 정식 발행된 리포트가 없습니다.</div>`;
       reportListEl.innerHTML = `<div class="empty">리포트 목록이 비어 있습니다.</div>`;
+      archiveResultCountEl.textContent = "전체 공개 리포트 0건";
       return;
     }
 
-    const latest = normalizedReports[0];
+    const latest = publishedReports[0];
 
     siteStatusEl.textContent = "Active";
-    reportCountEl.textContent = String(normalizedReports.length);
+    reportCountEl.textContent = String(publishedReports.length);
     latestDateEl.textContent = latest.date || "-";
+    latestEl.classList.remove("latest-card", "loading-card");
+    latestEl.innerHTML = renderReportCard(latest, true);
 
-    latestEl.outerHTML = renderReportCard(latest, true);
-
-    reportListEl.classList.remove("loading-card");
-    reportListEl.innerHTML = normalizedReports
-      .map((report) => renderReportCard(report, false))
-      .join("");
+    configureDateFilter(publishedReports);
+    renderArchive();
   } catch (error) {
     console.error(error);
 
     siteStatusEl.textContent = "Error";
+    reportCountEl.textContent = "-";
+    latestDateEl.textContent = "-";
+    archiveDateEl.disabled = true;
+    archiveResultCountEl.textContent = "리포트 데이터를 확인할 수 없습니다.";
     latestEl.innerHTML = `
       <div class="empty">
         리포트 데이터를 불러오지 못했습니다. public/reports.json 파일을 확인하세요.
@@ -158,61 +189,8 @@ async function init() {
   }
 }
 
+archiveDateEl.addEventListener("change", (event) => {
+  renderArchive(event.target.value);
+});
+
 init();
-
-function saveEntries(entries) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(entries));
-}
-
-function renderEntries() {
-  const entries = loadEntries();
-
-  if (entries.length === 0) {
-    entriesContainer.innerHTML = '<div class="empty">No entries yet. Add your first insight above.</div>';
-    return;
-  }
-
-  entriesContainer.innerHTML = entries
-    .map(
-      (entry) => `
-        <article class="entry-card">
-          <h3>${entry.title}</h3>
-          <p>${entry.content}</p>
-          <div class="meta">
-            ${entry.tags
-              .map((tag) => `<span class="tag">${tag}</span>`)
-              .join('')}
-          </div>
-        </article>
-      `
-    )
-    .join('');
-}
-
-entryForm.addEventListener('submit', (event) => {
-  event.preventDefault();
-
-  const title = document.getElementById('title').value.trim();
-  const content = document.getElementById('content').value.trim();
-  const tags = document.getElementById('tags').value
-    .split(',')
-    .map((tag) => tag.trim())
-    .filter(Boolean);
-
-  if (!title || !content) {
-    return;
-  }
-
-  const entries = loadEntries();
-  entries.unshift({ title, content, tags });
-  saveEntries(entries);
-  entryForm.reset();
-  renderEntries();
-});
-
-clearButton.addEventListener('click', () => {
-  localStorage.removeItem(STORAGE_KEY);
-  renderEntries();
-});
-
-renderEntries();
