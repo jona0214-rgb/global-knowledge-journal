@@ -17,6 +17,19 @@
       "status": "published_api"
     },
     {
+      "date": "2026-08-19",
+      "title": "도서관 분류의 정치학: 지식은 누가 어떤 순서로 배열하는가",
+      "subtitle": "도서관 분류 체계의 사회적·정치적 의미와 지식 배열의 권력 구조 탐구",
+      "main_category": "언어·문자",
+      "mid_category": "지식분류",
+      "sub_category": "도서관 분류 체계",
+      "html_path": "outputs/20260819_library_classification_p_Report.html",
+      "pdf_path": "outputs/20260819_library_classification_p_Report.pdf",
+      "html_url": "outputs/20260819_library_classification_p_Report.html",
+      "pdf_url": "outputs/20260819_library_classification_p_Report.pdf",
+      "status": "published_api"
+    },
+    {
       "date": "2026-08-17",
       "title": "시간표의 탄생: 근대 사회는 어떻게 시간을 표준화했나",
       "subtitle": "근대 사회의 시간 표준화 과정과 그 역사적·문화적 의미 탐구",

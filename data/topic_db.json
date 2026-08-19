@@ -77,6 +77,26 @@
       "status": "published_api"
     },
     {
+      "date": "2026-08-19",
+      "title": "도서관 분류의 정치학: 지식은 누가 어떤 순서로 배열하는가",
+      "main_category": "언어·문자",
+      "mid_category": "지식분류",
+      "sub_category": "도서관 분류 체계",
+      "keywords": [
+        "도서관 분류",
+        "지식 배열",
+        "분류 체계",
+        "정치학",
+        "권력 구조",
+        "정보 질서",
+        "분류 기준",
+        "사회적 영향"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260819_library_classification_p_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260819_library_classification_p_Report.pdf",
+      "status": "published_api"
+    },
+    {
       "date": "2026-08-20",
       "title": "소리의 건축: 공간은 어떻게 듣는 경험을 설계하는가",
       "main_category": "예술·디자인",
@@ -127,13 +147,14 @@
       "자연·환경·지리": 0,
       "역사·문화": 2,
       "예술·디자인": 1,
-      "언어·미디어·지식": 0
+      "언어·미디어·지식": 1
     },
     "recent_main_categories": [
       "역사·문화",
       "기술·공학",
       "인문·철학",
       "역사·문화",
+      "언어·미디어·지식",
       "예술·디자인"
     ]
   },

@@ -107,7 +107,13 @@ const latestReport = elements.get("latest-report");
 assert.match(categorySelect.innerHTML, /역사·문화 \(1\)/);
 assert.match(categorySelect.innerHTML, /기술·공학 \(1\)/);
 assert.doesNotMatch(categorySelect.innerHTML, /생활기술·일상문화/);
-assert.match(monthSelect.innerHTML, /2026년 8월 \(3\)/);
+const augustReportCount = reports.filter((report) =>
+  report.date.startsWith("2026-08"),
+).length;
+assert.match(
+  monthSelect.innerHTML,
+  new RegExp(`2026년 8월 \\(${augustReportCount}\\)`),
+);
 assert.match(latestReport.innerHTML, /<dt>대분류<\/dt>/);
 assert.match(latestReport.innerHTML, /<dt>분야<\/dt>/);
 
@@ -131,7 +137,10 @@ resetButton.trigger("click");
 assert.equal(categorySelect.value, "");
 assert.equal(monthSelect.value, "");
 assert.equal(sortSelect.value, "newest");
-assert.equal(resultCount.textContent, "전체 공개 리포트 3건");
+assert.equal(
+  resultCount.textContent,
+  `전체 공개 리포트 ${reports.length}건`,
+);
 assert.equal(location.search, "");
 
 console.log("homepage_filter_test=ok");

@@ -49,9 +49,12 @@ class TopicRotationTests(unittest.TestCase):
         )
         self.assertEqual(50, seed_count)
 
-    def test_current_history_moves_from_history_to_art(self):
+    def test_current_history_uses_persisted_next_category(self):
         topic = report_runner.select_topic(copy.deepcopy(self.topic_db))
-        self.assertEqual("예술·디자인", topic["main_category"])
+        self.assertEqual(
+            self.topic_db["category_rotation"]["next_main_category"],
+            topic["main_category"],
+        )
         self.assertTrue(topic["mid_category"])
         self.assertTrue(topic["sub_category"])
         self.assertTrue(topic["detail_category"])
