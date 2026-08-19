@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-08-20",
+    "title": "소리의 건축: 공간은 어떻게 듣는 경험을 설계하는가",
+    "subtitle": "공간과 청각 경험의 설계가 우리 삶과 문화에 미치는 영향",
+    "main_category": "예술·디자인",
+    "mid_category": "공간미학",
+    "sub_category": "건축 음향",
+    "detail_category": "공간과 청각 경험",
+    "taxonomy_version": "2.0",
+    "html_path": "outputs/20260820_sound_architecture_how_s_Report.html",
+    "pdf_path": "outputs/20260820_sound_architecture_how_s_Report.pdf",
+    "html_url": "outputs/20260820_sound_architecture_how_s_Report.html",
+    "pdf_url": "outputs/20260820_sound_architecture_how_s_Report.pdf",
+    "status": "published_api"
+  },
+  {
     "date": "2026-08-17",
     "title": "시간표의 탄생: 근대 사회는 어떻게 시간을 표준화했나",
     "subtitle": "근대 사회의 시간 표준화 과정과 그 역사적·문화적 의미 탐구",
