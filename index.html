@@ -12,7 +12,7 @@
         <p class="eyebrow">GLOBAL KNOWLEDGE JOURNAL</p>
         <h1>Daily Knowledge Reports</h1>
         <p class="subtitle">
-          과학, 공학, 인문학, 역사, 경제, 문화, 생태를 순환하며 매일 하나의 지식 리포트를 축적합니다.
+          인문, 사회, 경제, 과학, 기술, 생명, 환경, 역사, 예술, 언어를 순환하며 매일 하나의 지식 리포트를 축적합니다.
         </p>
       </header>
 
@@ -50,11 +50,33 @@
           <h2>Report Archive</h2>
         </div>
 
-        <div class="archive-toolbar">
-          <label for="archive-date">날짜별 리포트</label>
-          <select id="archive-date" disabled>
-            <option value="">전체 날짜</option>
-          </select>
+        <div class="archive-toolbar" aria-label="리포트 분류 및 정렬">
+          <div class="filter-field">
+            <label for="archive-category">대분류</label>
+            <select id="archive-category" aria-controls="report-list" disabled>
+              <option value="">전체 대분류</option>
+            </select>
+          </div>
+
+          <div class="filter-field">
+            <label for="archive-month">발행 월</label>
+            <select id="archive-month" aria-controls="report-list" disabled>
+              <option value="">전체 월</option>
+            </select>
+          </div>
+
+          <div class="filter-field">
+            <label for="archive-sort">정렬</label>
+            <select id="archive-sort" aria-controls="report-list">
+              <option value="newest">최신순</option>
+              <option value="oldest">오래된순</option>
+            </select>
+          </div>
+
+          <button id="archive-reset" class="filter-reset" type="button" aria-controls="report-list" disabled>
+            필터 초기화
+          </button>
+
           <p id="archive-result-count" class="archive-result-count" aria-live="polite">
             공개 리포트를 불러오는 중입니다.
           </p>
