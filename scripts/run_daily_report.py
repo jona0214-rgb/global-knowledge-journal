@@ -18,12 +18,22 @@ DATA_DIR = ROOT_DIR / "data"
 OUTPUTS_DIR = ROOT_DIR / "outputs"
 PUBLIC_DIR = ROOT_DIR / "public"
 TEMPLATES_DIR = ROOT_DIR / "templates"
+CONFIG_DIR = ROOT_DIR / "config"
 
 TOPIC_DB_PATH = DATA_DIR / "topic_db.json"
 TOPIC_DB_SQLITE_PATH = DATA_DIR / "topic_db.sqlite"
+TOPIC_TAXONOMY_PATH = CONFIG_DIR / "topic_taxonomy_v2.json"
 MANIFEST_PATH = DATA_DIR / "manifest.json"
 REPORTS_JSON_PATH = PUBLIC_DIR / "reports.json"
 LATEST_JSON_PATH = PUBLIC_DIR / "latest.json"
+
+
+class TopicPoolExhaustedError(RuntimeError):
+    """현재 순번의 대분류에 발행 가능한 후보가 없을 때 발생한다."""
+
+    def __init__(self, target_category: str, message: str):
+        super().__init__(message)
+        self.target_category = target_category
 
 
 def get_today_kst() -> str:
@@ -111,161 +121,195 @@ def get_published_topic_history(topic_db: dict) -> list[dict]:
     )
 
 
-def select_topic(topic_db):
-    default_candidate_pool = [
-        {
-            "topic": "자막과 더빙의 문화사: 번역은 어떻게 화면의 리듬이 되었나",
-            "main_category": "언어·문자",
-            "mid_category": "영상번역",
-            "priority": 0.88,
-            "status": "candidate",
-        },
-        {
-            "topic": "무지의 베일: 공정한 사회는 어떻게 상상되는가",
-            "main_category": "인문·철학",
-            "mid_category": "정치철학",
-            "priority": 0.86,
-            "status": "candidate",
-        },
-        {
-            "topic": "철새의 항로: 새들은 어떻게 지구를 기억하는가",
-            "main_category": "자연사·생태",
-            "mid_category": "동물행동",
-            "priority": 0.84,
-            "status": "candidate",
-        },
-        {
-            "topic": "시간표의 탄생: 근대 사회는 어떻게 시간을 표준화했나",
-            "main_category": "역사·문화",
-            "mid_category": "시간문화",
-            "priority": 0.82,
-            "status": "candidate",
-        },
-        {
-            "topic": "전기요금의 정치학: 에너지 가격은 왜 단순한 숫자가 아닌가",
-            "main_category": "경제·사회",
-            "mid_category": "에너지정책",
-            "priority": 0.80,
-            "status": "candidate",
-        },
-        {
-            "topic": "타이포그래피의 목소리: 글자는 어떻게 말투가 되었나",
-            "main_category": "예술·미학",
-            "mid_category": "그래픽디자인",
-            "priority": 0.78,
-            "status": "candidate",
-        },
-        {
-            "topic": "도시의 하수도: 보이지 않는 위생 인프라는 어떻게 문명을 바꾸었나",
-            "main_category": "생활기술·일상문화",
-            "mid_category": "도시인프라",
-            "priority": 0.76,
-            "status": "candidate",
-        },
-        {
-            "topic": "달력의 역사: 인간은 어떻게 시간을 나누고 약속했나",
-            "main_category": "역사·문화",
-            "mid_category": "시간문화",
-            "priority": 0.74,
-            "status": "candidate",
-        },
-        {
-            "topic": "유리의 문명사: 투명한 물질은 어떻게 세계를 바꾸었나",
-            "main_category": "과학·공학",
-            "mid_category": "재료와 문명",
-            "priority": 0.72,
-            "status": "candidate",
-        },
-        {
-            "topic": "벌집의 수학: 육각형은 왜 자연의 설계도가 되었나",
-            "main_category": "자연사·생태",
-            "mid_category": "생물과 구조",
-            "priority": 0.70,
-            "status": "candidate",
-        },
-        {
-            "topic": "도서관 분류의 정치학: 지식은 누가 어떤 순서로 배열하는가",
-            "main_category": "언어·문자",
-            "mid_category": "지식분류",
-            "priority": 0.81,
-            "status": "candidate",
-        },
-        {
-            "topic": "보험의 탄생: 위험은 어떻게 공동의 계산이 되었나",
-            "main_category": "경제·사회",
-            "mid_category": "위험과 제도",
-            "priority": 0.80,
-            "status": "candidate",
-        },
-        {
-            "topic": "밤의 빛과 생태계: 인공조명은 생명의 시간을 어떻게 바꾸는가",
-            "main_category": "자연사·생태",
-            "mid_category": "생태환경",
-            "priority": 0.79,
-            "status": "candidate",
-        },
-        {
-            "topic": "소리의 건축: 공간은 어떻게 듣는 경험을 설계하는가",
-            "main_category": "예술·미학",
-            "mid_category": "공간미학",
-            "priority": 0.78,
-            "status": "candidate",
-        },
-        {
-            "topic": "바닷물을 식수로: 담수화 기술은 물 부족의 해답이 될 수 있는가",
-            "main_category": "과학·공학",
-            "mid_category": "물환경공학",
-            "priority": 0.77,
-            "status": "candidate",
-        },
-        {
-            "topic": "우편번호의 사회사: 숫자는 어떻게 도시와 사람을 연결했나",
-            "main_category": "생활기술·일상문화",
-            "mid_category": "행정인프라",
-            "priority": 0.76,
-            "status": "candidate",
-        },
-        {
-            "topic": "확률과 우연의 철학: 불확실성은 어떻게 지식이 되는가",
-            "main_category": "인문·철학",
-            "mid_category": "과학철학",
-            "priority": 0.75,
-            "status": "candidate",
-        },
-        {
-            "topic": "향신료 교역의 세계사: 맛은 어떻게 제국과 항로를 움직였나",
-            "main_category": "역사·문화",
-            "mid_category": "교역문화",
-            "priority": 0.74,
-            "status": "candidate",
-        },
-    ]
+def load_topic_taxonomy() -> dict:
+    taxonomy = load_json(TOPIC_TAXONOMY_PATH, default={})
+    version = str(taxonomy.get("taxonomy_version", "")).strip()
+    category_order = taxonomy.get("category_order", [])
+    categories = taxonomy.get("categories", [])
 
-    candidate_pool = topic_db.setdefault("candidate_pool", [])
-    known_candidate_titles = {
-        normalize_topic_title(topic.get("topic", ""))
-        for topic in candidate_pool
-        if isinstance(topic, dict)
+    if version != "2.0":
+        raise ValueError("주제 taxonomy_version은 2.0이어야 합니다.")
+    if not isinstance(category_order, list) or len(category_order) != 10:
+        raise ValueError("주제 taxonomy에는 대분류가 정확히 10개 있어야 합니다.")
+    if len(set(category_order)) != len(category_order):
+        raise ValueError("주제 taxonomy의 대분류 순서에 중복이 있습니다.")
+    if not isinstance(categories, list):
+        raise ValueError("주제 taxonomy categories가 list가 아닙니다.")
+
+    category_names = {
+        str(category.get("name", "")).strip()
+        for category in categories
+        if isinstance(category, dict)
     }
-    for default_topic in default_candidate_pool:
-        title_key = normalize_topic_title(default_topic["topic"])
-        if title_key not in known_candidate_titles:
-            candidate_pool.append(dict(default_topic))
-            known_candidate_titles.add(title_key)
+    if category_names != set(category_order):
+        raise ValueError(
+            "주제 taxonomy의 category_order와 categories 정의가 일치하지 않습니다."
+        )
 
+    for category in categories:
+        seed_topics = category.get("seed_topics", [])
+        if not isinstance(seed_topics, list):
+            raise ValueError(
+                f"{category.get('name', '')}의 seed_topics가 list가 아닙니다."
+            )
+        for seed in seed_topics:
+            required = ("topic", "mid_category", "sub_category", "detail_category")
+            missing = [
+                field for field in required
+                if not str(seed.get(field, "")).strip()
+            ]
+            if missing:
+                raise ValueError(
+                    f"{category.get('name', '')} seed topic 필드 누락: "
+                    + ", ".join(missing)
+                )
+
+    return taxonomy
+
+
+def get_taxonomy_seed_index(taxonomy: dict) -> dict[str, dict]:
+    seed_index = {}
+    for category in taxonomy["categories"]:
+        main_category = category["name"]
+        for seed in category.get("seed_topics", []):
+            item = dict(seed)
+            item["main_category"] = main_category
+            seed_index[normalize_topic_title(item["topic"])] = item
+    return seed_index
+
+
+def merge_taxonomy_candidates(topic_db: dict, taxonomy: dict) -> None:
+    """기존 상태를 보존하면서 v2 분류와 큐레이션 후보를 합친다."""
+    seed_index = get_taxonomy_seed_index(taxonomy)
+    candidate_pool = topic_db.setdefault("candidate_pool", [])
+    existing_by_title = {
+        normalize_topic_title(item.get("topic", "")): item
+        for item in candidate_pool
+        if isinstance(item, dict) and item.get("topic")
+    }
+
+    for title_key, seed in seed_index.items():
+        existing = existing_by_title.get(title_key)
+        if existing is None:
+            candidate_pool.append({
+                **seed,
+                "status": "candidate",
+                "source": "taxonomy_seed",
+            })
+            continue
+
+        preserved_status = existing.get("status", "candidate")
+        preserved_source = existing.get("source", "legacy_migration")
+        existing.update(seed)
+        existing["status"] = preserved_status
+        existing["source"] = preserved_source
+
+    topic_db["schema_version"] = "2.0"
+    topic_db["taxonomy_version"] = taxonomy["taxonomy_version"]
+
+
+def canonical_main_category(item: dict, taxonomy: dict) -> str:
+    main_category = str(item.get("main_category", "")).strip()
+    if main_category in taxonomy["category_order"]:
+        return main_category
+
+    title_key = normalize_topic_title(item.get("title") or item.get("topic") or "")
+    seed = get_taxonomy_seed_index(taxonomy).get(title_key)
+    if seed:
+        return str(seed.get("main_category", "")).strip()
+
+    legacy_middle_map = {
+        "식생활·가전문화": "역사·문화",
+        "도시인프라": "기술·공학",
+        "행정인프라": "사회·정치·법",
+        "에너지정책": "경제·경영",
+        "위험과 제도": "경제·경영",
+        "재료와 문명": "기술·공학",
+        "물환경공학": "기술·공학",
+        "동물행동": "생명·건강",
+        "생물과 구조": "과학·수학",
+        "생태환경": "자연·환경·지리",
+    }
+    middle_category = str(item.get("mid_category", "")).strip()
+    if middle_category in legacy_middle_map:
+        return legacy_middle_map[middle_category]
+
+    legacy_main_map = {
+        "인문·철학": "인문·철학",
+        "역사·문화": "역사·문화",
+        "과학·공학": "기술·공학",
+        "경제·사회": "경제·경영",
+        "자연사·생태": "자연·환경·지리",
+        "예술·미학": "예술·디자인",
+        "생활기술·일상문화": "기술·공학",
+        "언어·문자": "언어·미디어·지식",
+    }
+    return legacy_main_map.get(main_category, "")
+
+
+def get_rotation_target(
+    topic_db: dict,
+    taxonomy: dict,
+    published_history: list[dict],
+) -> str:
+    category_order = taxonomy["category_order"]
+    rotation = topic_db.get("category_rotation", {})
+    configured_next = str(rotation.get("next_main_category", "")).strip()
+
+    if configured_next in category_order:
+        return configured_next
+
+    for item in reversed(published_history):
+        previous_category = canonical_main_category(item, taxonomy)
+        if previous_category in category_order:
+            previous_index = category_order.index(previous_category)
+            return category_order[(previous_index + 1) % len(category_order)]
+
+    return category_order[0]
+
+
+def select_topic(topic_db):
+    taxonomy = load_topic_taxonomy()
+    merge_taxonomy_candidates(topic_db, taxonomy)
+
+    candidate_pool = topic_db["candidate_pool"]
     published_history = get_published_topic_history(topic_db)
     published_titles = [item.get("title", "") for item in published_history]
     published_title_keys = {
         normalize_topic_title(title) for title in published_titles if title
     }
+    target_category = get_rotation_target(
+        topic_db=topic_db,
+        taxonomy=taxonomy,
+        published_history=published_history,
+    )
+
+    category_candidates = [
+        topic for topic in candidate_pool
+        if isinstance(topic, dict)
+        and topic.get("status") == "candidate"
+        and topic.get("main_category") == target_category
+    ]
 
     available_topics = []
     rejected_similar_topics = []
-    for topic in candidate_pool:
-        if topic.get("status") != "candidate":
+    rejected_invalid_topics = []
+    for topic in category_candidates:
+        required_fields = (
+            "topic", "main_category", "mid_category",
+            "sub_category", "detail_category",
+        )
+        missing_fields = [
+            field for field in required_fields
+            if not str(topic.get(field, "")).strip()
+        ]
+        if missing_fields:
+            rejected_invalid_topics.append(
+                (topic.get("topic", "(제목 없음)"), missing_fields)
+            )
             continue
 
-        candidate_title = topic.get("topic", "")
+        candidate_title = topic["topic"]
         if normalize_topic_title(candidate_title) in published_title_keys:
             rejected_similar_topics.append((candidate_title, "exact"))
             continue
@@ -275,50 +319,74 @@ def select_topic(topic_db):
             default=0.0,
         )
         if highest_similarity >= 0.72:
-            rejected_similar_topics.append((candidate_title, f"{highest_similarity:.2f}"))
+            rejected_similar_topics.append(
+                (candidate_title, f"{highest_similarity:.2f}")
+            )
             continue
 
         available_topics.append(topic)
 
-    if not available_topics:
-        detail = ", ".join(title for title, _ in rejected_similar_topics[:3])
-        raise RuntimeError(
-            "중복·유사 주제를 제외한 사용 가능한 후보가 없습니다. "
-            "candidate_pool에 새 주제를 추가해야 합니다."
-            + (f" 제외 예시: {detail}" if detail else "")
-        )
-
     print(
         "주제 선정 점검: "
-        f"후보 {len(candidate_pool)}개, 실제 발행 이력 {len(published_history)}개, "
+        f"taxonomy v{taxonomy['taxonomy_version']}, "
+        f"이번 대분류 '{target_category}', "
+        f"전체 후보 {len(candidate_pool)}개, "
+        f"분류 내 대기 {len(category_candidates)}개, "
         f"중복·고유사도 제외 {len(rejected_similar_topics)}개, "
+        f"필드 오류 제외 {len(rejected_invalid_topics)}개, "
         f"선택 가능 {len(available_topics)}개"
     )
 
-    recent_reports = published_history[-12:]
-    recent_main_categories = [item.get("main_category", "") for item in recent_reports]
-    recent_middle_categories = [item.get("mid_category", "") for item in recent_reports]
+    minimum_ready = int(taxonomy.get("minimum_ready_candidates", 1))
+    if 0 < len(available_topics) < minimum_ready:
+        print(
+            f"주제 후보 재고 경고: '{target_category}'에 "
+            f"{len(available_topics)}개만 남았습니다. 권장 최소 {minimum_ready}개"
+        )
+
+    if not available_topics:
+        detail = ", ".join(
+            title for title, _ in rejected_similar_topics[:3]
+        )
+        raise TopicPoolExhaustedError(
+            target_category,
+            f"순환 순번 '{target_category}'에 발행 가능한 주제가 없습니다. "
+            "해당 대분류의 신규 중분류·소분류·주제 후보를 보충해야 합니다."
+            + (f" 제외 예시: {detail}" if detail else ""),
+        )
+
+    recent_reports = published_history[-30:]
+    used_middle_counts = {}
+    used_sub_counts = {}
+    for item in recent_reports:
+        middle = str(item.get("mid_category", "")).strip()
+        sub = str(item.get("sub_category", "")).strip()
+        if middle:
+            used_middle_counts[middle] = used_middle_counts.get(middle, 0) + 1
+        if sub:
+            used_sub_counts[sub] = used_sub_counts.get(sub, 0) + 1
 
     def calculate_score(topic):
         score = float(topic.get("priority", 0))
+        middle = topic["mid_category"]
+        sub = topic["sub_category"]
 
-        main_category = topic.get("main_category", "")
-        middle_category = topic.get("mid_category", "")
-        candidate_title = topic.get("topic", "")
+        # 같은 대분류 안에서는 아직 쓰지 않은 중분류와 소분류를 먼저 선택한다.
+        if middle not in used_middle_counts:
+            score += 0.40
+        else:
+            score -= min(used_middle_counts[middle] * 0.20, 0.60)
 
-        if main_category in recent_main_categories[-1:]:
-            score -= 0.35
-        elif main_category in recent_main_categories[-3:]:
-            score -= 0.15
-
-        if middle_category and middle_category in recent_middle_categories[-3:]:
-            score -= 0.30
-
-        recent_category_count = recent_main_categories.count(main_category)
-        score -= min(recent_category_count * 0.04, 0.20)
+        if sub not in used_sub_counts:
+            score += 0.20
+        else:
+            score -= min(used_sub_counts[sub] * 0.12, 0.36)
 
         highest_similarity = max(
-            (topic_similarity(candidate_title, title) for title in published_titles),
+            (
+                topic_similarity(topic["topic"], published_title)
+                for published_title in published_titles
+            ),
             default=0.0,
         )
         if highest_similarity >= 0.45:
@@ -328,11 +396,73 @@ def select_topic(topic_db):
 
         return score
 
-    selected_topic = max(available_topics, key=calculate_score)
+    return max(
+        available_topics,
+        key=lambda topic: (
+            calculate_score(topic),
+            float(topic.get("priority", 0)),
+            topic.get("topic", ""),
+        ),
+    )
 
-    return selected_topic
 
+def add_generated_topic_candidates(
+    topic_db: dict,
+    target_category: str,
+    generated_candidates: list[dict],
+) -> int:
+    """API가 제안한 후보를 검증해 메모리의 후보 풀에 추가한다."""
+    taxonomy = load_topic_taxonomy()
+    if target_category not in taxonomy["category_order"]:
+        raise ValueError(f"알 수 없는 대분류입니다: {target_category}")
+    if not isinstance(generated_candidates, list):
+        raise ValueError("생성된 주제 후보가 list가 아닙니다.")
 
+    candidate_pool = topic_db.setdefault("candidate_pool", [])
+    existing_titles = [
+        item.get("topic", "")
+        for item in candidate_pool
+        if isinstance(item, dict)
+    ]
+    existing_titles.extend(
+        item.get("title", "")
+        for item in get_published_topic_history(topic_db)
+    )
+
+    added = 0
+    for candidate in generated_candidates:
+        if not isinstance(candidate, dict):
+            continue
+
+        required_fields = (
+            "topic", "mid_category", "sub_category", "detail_category",
+        )
+        if any(not str(candidate.get(field, "")).strip() for field in required_fields):
+            continue
+
+        title = str(candidate["topic"]).strip()
+        if any(topic_similarity(title, existing) >= 0.72 for existing in existing_titles):
+            continue
+
+        candidate_pool.append({
+            "topic": title,
+            "main_category": target_category,
+            "mid_category": str(candidate["mid_category"]).strip(),
+            "sub_category": str(candidate["sub_category"]).strip(),
+            "detail_category": str(candidate["detail_category"]).strip(),
+            "priority": float(candidate.get("priority", 0.75)),
+            "status": "candidate",
+            "source": "api_generated",
+        })
+        existing_titles.append(title)
+        added += 1
+
+    if added == 0:
+        raise RuntimeError(
+            f"'{target_category}' 신규 후보가 모두 필드 또는 중복 검증에서 제외되었습니다."
+        )
+
+    return added
 def create_mock_report(today: str, topic: dict) -> dict:
     return {
         "date": today,
@@ -506,6 +636,27 @@ def get_report_palette(main_category: str) -> dict:
             "table_header": "#dcebea", "box_bg": "#f1f7f7",
             "box_bg_strong": "#e5f0ef", "screen_bg": "#edf4f3",
         },
+        "경제·경영": {
+            "paper": "#fffdf8", "ink": "#30291d", "body": "#403727",
+            "muted": "#766b55", "line": "#d4c59e", "line_soft": "#ece4cf",
+            "accent": "#8a6b24", "accent_dark": "#5f4817",
+            "table_header": "#eee5ca", "box_bg": "#faf6ea",
+            "box_bg_strong": "#f2ead4", "screen_bg": "#f5f1e7",
+        },
+        "기술·공학": {
+            "paper": "#f9fcff", "ink": "#1c2938", "body": "#28394b",
+            "muted": "#5d6e80", "line": "#b7c8db", "line_soft": "#dce6f0",
+            "accent": "#416f9f", "accent_dark": "#2b4e73",
+            "table_header": "#dce7f2", "box_bg": "#f0f5fa",
+            "box_bg_strong": "#e4edf6", "screen_bg": "#ecf2f7",
+        },
+        "생명·건강": {
+            "paper": "#fcfdfb", "ink": "#203029", "body": "#2d4037",
+            "muted": "#63746c", "line": "#b9cec3", "line_soft": "#dce9e2",
+            "accent": "#4c8068", "accent_dark": "#315844",
+            "table_header": "#dcebe3", "box_bg": "#f1f7f4",
+            "box_bg_strong": "#e4f0e9", "screen_bg": "#edf4f0",
+        },
         "예술·미학": {
             "paper": "#fffafd", "ink": "#30232d", "body": "#3f303b",
             "muted": "#786873", "line": "#d3becb", "line_soft": "#eadde5",
@@ -531,6 +682,11 @@ def get_report_palette(main_category: str) -> dict:
     category_aliases = {
         "환경": "자연사·생태",
         "기술": "과학·공학",
+        "사회·정치·법": "경제·사회",
+        "과학·수학": "과학·공학",
+        "자연·환경·지리": "자연사·생태",
+        "예술·디자인": "예술·미학",
+        "언어·미디어·지식": "언어·문자",
     }
     palette_key = category_aliases.get(main_category, main_category)
     return palettes.get(palette_key, {
@@ -611,6 +767,13 @@ def validate_pdf_page_count(pdf_path: Path, min_pages: int = 6, max_pages: int =
 
 def update_topic_db(topic_db: dict, report: dict, html_path: Path, pdf_path: Path):
     today = report["date"]
+    taxonomy = load_topic_taxonomy()
+    category_order = taxonomy["category_order"]
+    current_main_category = report["category"]["main"]
+    if current_main_category not in category_order:
+        raise ValueError(
+            f"발행 리포트의 대분류가 taxonomy v2에 없습니다: {current_main_category}"
+        )
 
     recent_reports = topic_db.setdefault("recent_reports", [])
     report_title_key = normalize_topic_title(report["title"])
@@ -627,6 +790,8 @@ def update_topic_db(topic_db: dict, report: dict, html_path: Path, pdf_path: Pat
         "main_category": report["category"]["main"],
         "mid_category": report["category"]["middle"],
         "sub_category": report["category"]["sub"],
+        "detail_category": report["category"]["detail"],
+        "taxonomy_version": taxonomy["taxonomy_version"],
         "keywords": report["keywords"],
         "html_path": str(html_path.as_posix()),
         "pdf_path": str(pdf_path.as_posix()),
@@ -640,28 +805,32 @@ def update_topic_db(topic_db: dict, report: dict, html_path: Path, pdf_path: Pat
         if item.get("status") in {"published", "published_api"}
     ]
     recent_main_categories = [
-        item.get("main_category")
-        for item in published_reports[-5:]
+        canonical_main_category(item, taxonomy) or item.get("main_category", "")
+        for item in published_reports[-10:]
         if item.get("main_category")
     ]
+    category_counts = {category: 0 for category in category_order}
+    for item in published_reports:
+        category = canonical_main_category(item, taxonomy)
+        if category in category_counts:
+            category_counts[category] += 1
 
-    category_order = [
-        "인문·철학",
-        "자연사·생태",
-        "역사·문화",
-        "과학·공학",
-        "경제·사회",
-        "예술·미학",
-        "생활기술·일상문화",
-        "언어·문자",
-    ]
-    recent_category_set = set(recent_main_categories[-3:])
+    current_index = category_order.index(current_main_category)
+    next_index = (current_index + 1) % len(category_order)
+    previous_rotation = topic_db.get("category_rotation", {})
+    completed_cycles = int(previous_rotation.get("completed_cycles", 0))
+    if next_index == 0:
+        completed_cycles += 1
+
     topic_db["category_rotation"] = {
+        "taxonomy_version": taxonomy["taxonomy_version"],
+        "category_order": category_order,
+        "last_main_category": current_main_category,
+        "next_main_category": category_order[next_index],
+        "next_index": next_index,
+        "completed_cycles": completed_cycles,
+        "published_counts": category_counts,
         "recent_main_categories": recent_main_categories,
-        "next_priority": [
-            category for category in category_order
-            if category not in recent_category_set
-        ],
     }
 
     for candidate in topic_db.get("candidate_pool", []):
@@ -685,6 +854,8 @@ def rebuild_sqlite(topic_db: dict):
             main_category TEXT,
             mid_category TEXT,
             sub_category TEXT,
+            detail_category TEXT,
+            taxonomy_version TEXT,
             keywords TEXT,
             html_path TEXT,
             pdf_path TEXT,
@@ -696,7 +867,7 @@ def rebuild_sqlite(topic_db: dict):
         cur.execute(
             """
             INSERT OR REPLACE INTO reports
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """,
             (
                 item.get("date", ""),
@@ -704,6 +875,8 @@ def rebuild_sqlite(topic_db: dict):
                 item.get("main_category", ""),
                 item.get("mid_category", ""),
                 item.get("sub_category", ""),
+                item.get("detail_category", ""),
+                item.get("taxonomy_version", ""),
                 json.dumps(item.get("keywords", []), ensure_ascii=False),
                 item.get("html_path", ""),
                 item.get("pdf_path", ""),
@@ -716,8 +889,11 @@ def rebuild_sqlite(topic_db: dict):
             topic TEXT,
             main_category TEXT,
             mid_category TEXT,
+            sub_category TEXT,
+            detail_category TEXT,
             priority REAL,
-            status TEXT
+            status TEXT,
+            source TEXT
         )
     """)
 
@@ -725,14 +901,17 @@ def rebuild_sqlite(topic_db: dict):
         cur.execute(
             """
             INSERT INTO candidates
-            VALUES (?, ?, ?, ?, ?)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
             """,
             (
                 item.get("topic", ""),
                 item.get("main_category", ""),
                 item.get("mid_category", ""),
+                item.get("sub_category", ""),
+                item.get("detail_category", ""),
                 float(item.get("priority", 0)),
-                item.get("status", "")
+                item.get("status", ""),
+                item.get("source", "")
             )
         )
 
@@ -794,6 +973,8 @@ def update_public_catalog(report: dict, html_path: Path, pdf_path: Path):
         "main_category": report["category"]["main"],
         "mid_category": report["category"]["middle"],
         "sub_category": report["category"]["sub"],
+        "detail_category": report["category"]["detail"],
+        "taxonomy_version": report.get("taxonomy_version", "2.0"),
         "html_path": html_public_path,
         "pdf_path": pdf_public_path,
         "html_url": html_public_path,
@@ -819,6 +1000,8 @@ def save_render_publish_report(report: dict, topic_db: dict, mode: str = "mock")
     today = datetime.now(ZoneInfo("Asia/Seoul")).date().isoformat()
     report["date"] = today
     report["status"] = f"published_{mode}"
+    if mode == "api":
+        report["taxonomy_version"] = load_topic_taxonomy()["taxonomy_version"]
 
     date_compact = compact_date(today)
 
@@ -1160,7 +1343,10 @@ def validate_report_structure(report: dict) -> None:
 
 
 def run_api():
-    from generate_report import generate_report
+    from generate_report import (
+        generate_report,
+        generate_topic_candidates_with_api,
+    )
 
     today = get_today_kst()
 
@@ -1182,7 +1368,39 @@ def run_api():
             return
 
     topic_db = load_json(TOPIC_DB_PATH, default={})
-    topic = select_topic(topic_db)
+    try:
+        topic = select_topic(topic_db)
+    except TopicPoolExhaustedError as exc:
+        taxonomy = load_topic_taxonomy()
+        category_definition = next(
+            category for category in taxonomy["categories"]
+            if category["name"] == exc.target_category
+        )
+        existing_titles = [
+            item.get("topic", "")
+            for item in topic_db.get("candidate_pool", [])
+            if isinstance(item, dict)
+        ]
+        existing_titles.extend(
+            item.get("title", "")
+            for item in get_published_topic_history(topic_db)
+        )
+        batch_size = int(taxonomy.get("generated_candidate_batch_size", 5))
+        generated_candidates = generate_topic_candidates_with_api(
+            target_category=exc.target_category,
+            category_description=category_definition.get("description", ""),
+            existing_titles=existing_titles,
+            count=batch_size,
+        )
+        added_count = add_generated_topic_candidates(
+            topic_db=topic_db,
+            target_category=exc.target_category,
+            generated_candidates=generated_candidates,
+        )
+        print(
+            f"주제 후보 보충 완료: '{exc.target_category}' {added_count}개 추가"
+        )
+        topic = select_topic(topic_db)
 
     print("OpenAI API로 리포트를 생성합니다.")
     print(f"선정 주제: {topic.get('topic')}")

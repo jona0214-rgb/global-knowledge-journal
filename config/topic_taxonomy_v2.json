@@ -1,0 +1,129 @@
+{
+  "taxonomy_version": "2.0",
+  "minimum_ready_candidates": 3,
+  "generated_candidate_batch_size": 5,
+  "category_order": [
+    "인문·철학",
+    "사회·정치·법",
+    "경제·경영",
+    "과학·수학",
+    "기술·공학",
+    "생명·건강",
+    "자연·환경·지리",
+    "역사·문화",
+    "예술·디자인",
+    "언어·미디어·지식"
+  ],
+  "categories": [
+    {
+      "name": "인문·철학",
+      "description": "철학, 윤리, 사상, 종교와 인간 이해",
+      "seed_topics": [
+        {"topic": "무지의 베일: 공정한 사회는 어떻게 상상되는가", "mid_category": "정치철학", "sub_category": "사회정의론", "detail_category": "무지의 베일과 공정성", "priority": 0.86},
+        {"topic": "확률과 우연의 철학: 불확실성은 어떻게 지식이 되는가", "mid_category": "과학철학", "sub_category": "불확실성의 인식론", "detail_category": "확률적 지식의 조건", "priority": 0.80},
+        {"topic": "도덕적 운의 역설: 결과가 사람의 책임을 바꾸는가", "mid_category": "윤리학", "sub_category": "책임과 판단", "detail_category": "도덕적 운의 문제", "priority": 0.78},
+        {"topic": "나는 누구인가: 기억은 정체성을 얼마나 보존하는가", "mid_category": "심리철학", "sub_category": "개인 동일성", "detail_category": "기억과 자아의 연속성", "priority": 0.77},
+        {"topic": "의례의 철학: 반복되는 행위는 어떻게 의미가 되는가", "mid_category": "종교철학", "sub_category": "의례와 상징", "detail_category": "반복 행위의 의미 형성", "priority": 0.75}
+      ]
+    },
+    {
+      "name": "사회·정치·법",
+      "description": "사회구조, 정치, 법률, 제도와 행정",
+      "seed_topics": [
+        {"topic": "우편번호의 사회사: 숫자는 어떻게 도시와 사람을 연결했나", "mid_category": "행정제도", "sub_category": "주소와 공간 행정", "detail_category": "우편번호의 사회적 기능", "priority": 0.80},
+        {"topic": "인구조사의 정치학: 국가는 왜 사람을 세고 분류하는가", "mid_category": "국가와 행정", "sub_category": "인구 통계 제도", "detail_category": "센서스와 국가의 시선", "priority": 0.79},
+        {"topic": "배심원의 판단: 시민은 어떻게 법의 결론에 참여하는가", "mid_category": "사법제도", "sub_category": "시민 참여 재판", "detail_category": "배심제의 판단 구조", "priority": 0.78},
+        {"topic": "복지국가의 설계: 사회적 위험은 어디까지 공동 책임인가", "mid_category": "사회정책", "sub_category": "복지와 사회보장", "detail_category": "사회적 위험의 분담", "priority": 0.77},
+        {"topic": "관료제의 두 얼굴: 규칙은 어떻게 공정성과 경직성을 함께 만드는가", "mid_category": "행정학", "sub_category": "조직과 규칙", "detail_category": "관료제의 효율과 한계", "priority": 0.76}
+      ]
+    },
+    {
+      "name": "경제·경영",
+      "description": "경제, 금융, 노동, 기업과 소비",
+      "seed_topics": [
+        {"topic": "전기요금의 정치학: 에너지 가격은 왜 단순한 숫자가 아닌가", "mid_category": "에너지경제", "sub_category": "공공요금과 시장", "detail_category": "전기요금 결정 구조", "priority": 0.82},
+        {"topic": "보험의 탄생: 위험은 어떻게 공동의 계산이 되었나", "mid_category": "금융제도", "sub_category": "위험의 가격화", "detail_category": "보험과 확률의 결합", "priority": 0.81},
+        {"topic": "가격표의 역사: 흥정은 어떻게 고정 가격으로 바뀌었나", "mid_category": "소비경제", "sub_category": "가격 제도의 변화", "detail_category": "고정 가격과 근대 소매업", "priority": 0.79},
+        {"topic": "회계의 발명: 장부는 어떻게 기업의 언어가 되었나", "mid_category": "기업경영", "sub_category": "회계와 조직 관리", "detail_category": "복식부기의 확산", "priority": 0.78},
+        {"topic": "컨테이너의 경제학: 표준 상자는 어떻게 세계 무역을 재편했나", "mid_category": "물류경제", "sub_category": "표준화와 공급망", "detail_category": "컨테이너 운송 혁명", "priority": 0.77}
+      ]
+    },
+    {
+      "name": "과학·수학",
+      "description": "물리, 화학, 천문, 수학과 과학적 사고",
+      "seed_topics": [
+        {"topic": "벌집의 수학: 육각형은 왜 자연의 설계도가 되었나", "mid_category": "수학과 자연", "sub_category": "기하학적 최적화", "detail_category": "육각형 구조의 효율", "priority": 0.82},
+        {"topic": "0의 탄생: 아무것도 없음은 어떻게 수가 되었나", "mid_category": "수학사", "sub_category": "수 개념의 발전", "detail_category": "영의 표기와 연산", "priority": 0.80},
+        {"topic": "주기율표의 질서: 원소는 어떻게 자리를 찾아갔나", "mid_category": "화학", "sub_category": "원소 분류 체계", "detail_category": "주기성과 원자 구조", "priority": 0.79},
+        {"topic": "엔트로피의 세계: 무질서는 왜 한 방향으로 증가하는가", "mid_category": "물리학", "sub_category": "열역학과 시간", "detail_category": "엔트로피 증가 법칙", "priority": 0.78},
+        {"topic": "카오스의 과학: 작은 차이는 어떻게 거대한 변화를 만드는가", "mid_category": "복잡계과학", "sub_category": "비선형 시스템", "detail_category": "초기 조건의 민감성", "priority": 0.77}
+      ]
+    },
+    {
+      "name": "기술·공학",
+      "description": "산업기술, 에너지, 도시 인프라와 디지털 기술",
+      "seed_topics": [
+        {"topic": "도시의 하수도: 보이지 않는 위생 인프라는 어떻게 문명을 바꾸었나", "mid_category": "도시공학", "sub_category": "상하수도 인프라", "detail_category": "근대 하수도의 발전", "priority": 0.83},
+        {"topic": "유리의 문명사: 투명한 물질은 어떻게 세계를 바꾸었나", "mid_category": "재료공학", "sub_category": "유리와 광학 재료", "detail_category": "투명 소재의 기술사", "priority": 0.81},
+        {"topic": "바닷물을 식수로: 담수화 기술은 물 부족의 해답이 될 수 있는가", "mid_category": "물환경공학", "sub_category": "해수 담수화", "detail_category": "역삼투 공정과 에너지", "priority": 0.80},
+        {"topic": "전력망의 균형: 전기는 어떻게 매 순간 수요를 따라가는가", "mid_category": "전기공학", "sub_category": "전력 시스템", "detail_category": "수요와 공급의 실시간 균형", "priority": 0.79},
+        {"topic": "엘리베이터의 도시사: 수직 이동은 어떻게 마천루를 가능하게 했나", "mid_category": "기계공학", "sub_category": "수직 교통 기술", "detail_category": "안전장치와 고층 건축", "priority": 0.78}
+      ]
+    },
+    {
+      "name": "생명·건강",
+      "description": "생물학, 의학, 뇌과학, 건강과 심리",
+      "seed_topics": [
+        {"topic": "철새의 항로: 새들은 어떻게 지구를 기억하는가", "mid_category": "동물행동", "sub_category": "이동과 방향 감각", "detail_category": "철새의 장거리 항법", "priority": 0.83},
+        {"topic": "잠의 생물학: 뇌는 왜 매일 의식을 내려놓는가", "mid_category": "신경과학", "sub_category": "수면과 뇌 기능", "detail_category": "수면 주기와 기억", "priority": 0.81},
+        {"topic": "백신의 기억: 면역계는 어떻게 미래의 감염을 준비하는가", "mid_category": "면역학", "sub_category": "적응 면역", "detail_category": "면역 기억의 형성", "priority": 0.80},
+        {"topic": "장내 미생물의 생태계: 몸속 공동체는 건강에 무엇을 하는가", "mid_category": "미생물학", "sub_category": "인체 마이크로바이옴", "detail_category": "장내 균총과 대사", "priority": 0.79},
+        {"topic": "통증의 역설: 아픔은 왜 몸을 보호하면서 삶을 무너뜨리는가", "mid_category": "의학과 감각", "sub_category": "통증의 신경기전", "detail_category": "급성 통증과 만성 통증", "priority": 0.78}
+      ]
+    },
+    {
+      "name": "자연·환경·지리",
+      "description": "생태, 기후, 지질, 해양과 지리",
+      "seed_topics": [
+        {"topic": "밤의 빛과 생태계: 인공조명은 생명의 시간을 어떻게 바꾸는가", "mid_category": "생태환경", "sub_category": "빛 공해", "detail_category": "야간 조명과 생체 리듬", "priority": 0.82},
+        {"topic": "몬순의 지리학: 계절풍은 어떻게 문명과 농업을 움직였나", "mid_category": "기후지리", "sub_category": "계절풍 기후", "detail_category": "몬순과 인간 생활", "priority": 0.80},
+        {"topic": "강의 기억: 하천은 왜 굽이치고 길을 바꾸는가", "mid_category": "지형학", "sub_category": "하천 지형", "detail_category": "사행천과 유로 변화", "priority": 0.79},
+        {"topic": "흙 한 줌의 세계: 토양은 어떻게 생태계를 떠받치는가", "mid_category": "토양생태", "sub_category": "토양 형성과 순환", "detail_category": "토양 미생물과 영양분", "priority": 0.78},
+        {"topic": "섬의 생물지리학: 고립은 어떻게 새로운 종을 만드는가", "mid_category": "생물지리", "sub_category": "섬 생태계", "detail_category": "고립과 종 분화", "priority": 0.77}
+      ]
+    },
+    {
+      "name": "역사·문화",
+      "description": "역사, 문명, 교역과 생활문화",
+      "seed_topics": [
+        {"topic": "시간표의 탄생: 근대 사회는 어떻게 시간을 표준화했나", "mid_category": "시간문화", "sub_category": "근대 시간 제도", "detail_category": "철도 시간표와 표준시", "priority": 0.84},
+        {"topic": "달력의 역사: 인간은 어떻게 시간을 나누고 약속했나", "mid_category": "시간문화", "sub_category": "달력과 역법", "detail_category": "시간 단위의 사회적 합의", "priority": 0.81},
+        {"topic": "향신료 교역의 세계사: 맛은 어떻게 제국과 항로를 움직였나", "mid_category": "교역문화", "sub_category": "향신료와 해상무역", "detail_category": "교역로와 제국의 경쟁", "priority": 0.80},
+        {"topic": "냉장고의 사회사: 차가운 상자는 어떻게 일상을 바꾸었나", "mid_category": "생활문화사", "sub_category": "가전과 식생활", "detail_category": "냉장 기술과 가정의 변화", "priority": 0.79},
+        {"topic": "우표의 세계사: 작은 종이는 어떻게 국가와 제국을 연결했나", "mid_category": "통신문화사", "sub_category": "우편과 시각문화", "detail_category": "우표 제도의 확산", "priority": 0.78}
+      ]
+    },
+    {
+      "name": "예술·디자인",
+      "description": "미술, 음악, 건축, 공연과 디자인",
+      "seed_topics": [
+        {"topic": "타이포그래피의 목소리: 글자는 어떻게 말투가 되었나", "mid_category": "그래픽디자인", "sub_category": "활자와 시각 언어", "detail_category": "서체가 만드는 인상", "priority": 0.83},
+        {"topic": "소리의 건축: 공간은 어떻게 듣는 경험을 설계하는가", "mid_category": "공간미학", "sub_category": "건축 음향", "detail_category": "공간과 청각 경험", "priority": 0.81},
+        {"topic": "색의 재료사: 안료는 어떻게 권력과 감정을 표현했나", "mid_category": "미술재료", "sub_category": "안료와 색채", "detail_category": "색 재료의 생산과 상징", "priority": 0.80},
+        {"topic": "미술관의 빛: 조명은 어떻게 작품을 다시 보이게 하는가", "mid_category": "전시디자인", "sub_category": "조명과 관람 경험", "detail_category": "작품 보존과 시각 연출", "priority": 0.79},
+        {"topic": "사진의 프레임: 카메라는 어떻게 현실을 선택하는가", "mid_category": "사진미학", "sub_category": "구도와 시선", "detail_category": "프레이밍의 의미 작용", "priority": 0.78}
+      ]
+    },
+    {
+      "name": "언어·미디어·지식",
+      "description": "언어, 문자, 번역, 출판, 미디어와 지식분류",
+      "seed_topics": [
+        {"topic": "자막과 더빙의 문화사: 번역은 어떻게 화면의 리듬이 되었나", "mid_category": "영상번역", "sub_category": "시청각 번역", "detail_category": "자막과 더빙의 시간 설계", "priority": 0.84},
+        {"topic": "도서관 분류의 정치학: 지식은 누가 어떤 순서로 배열하는가", "mid_category": "지식분류", "sub_category": "도서 분류 체계", "detail_category": "분류 기호와 지식의 위계", "priority": 0.82},
+        {"topic": "문장부호의 탄생: 쉼표와 마침표는 어떻게 생각의 호흡이 되었나", "mid_category": "문자문화", "sub_category": "문장부호의 역사", "detail_category": "구두점과 읽기 방식", "priority": 0.80},
+        {"topic": "사전의 권위: 단어의 뜻은 누가 결정하고 기록하는가", "mid_category": "사전학", "sub_category": "어휘의 표준화", "detail_category": "사전 편찬과 언어 규범", "priority": 0.79},
+        {"topic": "라디오의 목소리: 보이지 않는 매체는 어떻게 대중을 만들었나", "mid_category": "방송미디어", "sub_category": "라디오 문화", "detail_category": "음성 방송과 대중 형성", "priority": 0.78}
+      ]
+    }
+  ]
+}

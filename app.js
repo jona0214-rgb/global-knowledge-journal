@@ -3,8 +3,52 @@ const reportListEl = document.getElementById("report-list");
 const reportCountEl = document.getElementById("report-count");
 const latestDateEl = document.getElementById("latest-date");
 const siteStatusEl = document.getElementById("site-status");
-const archiveDateEl = document.getElementById("archive-date");
+const archiveCategoryEl = document.getElementById("archive-category");
+const archiveMonthEl = document.getElementById("archive-month");
+const archiveSortEl = document.getElementById("archive-sort");
+const archiveResetEl = document.getElementById("archive-reset");
 const archiveResultCountEl = document.getElementById("archive-result-count");
+
+const CATEGORY_ORDER = [
+  "인문·철학",
+  "사회·정치·법",
+  "경제·경영",
+  "과학·수학",
+  "기술·공학",
+  "생명·건강",
+  "자연·환경·지리",
+  "역사·문화",
+  "예술·디자인",
+  "언어·미디어·지식",
+];
+
+const LEGACY_MIDDLE_CATEGORY_MAP = {
+  "식생활·가전문화": "역사·문화",
+  도시인프라: "기술·공학",
+  행정인프라: "사회·정치·법",
+  에너지정책: "경제·경영",
+  "위험과 제도": "경제·경영",
+  "재료와 문명": "기술·공학",
+  물환경공학: "기술·공학",
+  동물행동: "생명·건강",
+  "생물과 구조": "과학·수학",
+  생태환경: "자연·환경·지리",
+};
+
+const LEGACY_MAIN_CATEGORY_MAP = {
+  "인문·철학": "인문·철학",
+  "역사·문화": "역사·문화",
+  "과학·공학": "기술·공학",
+  "경제·사회": "경제·경영",
+  "자연사·생태": "자연·환경·지리",
+  "예술·미학": "예술·디자인",
+  "생활기술·일상문화": "기술·공학",
+  "언어·문자": "언어·미디어·지식",
+};
+
+const CATEGORY_CLASS_MAP = new Map(
+  CATEGORY_ORDER.map((category, index) => [category, `category-tone-${index + 1}`]),
+);
 
 let publishedReports = [];
 
@@ -39,12 +83,64 @@ function getPdfUrl(report) {
   return normalizeAssetPath(report.pdf_url || report.pdf_path || "");
 }
 
-function getCategory(report) {
-  const main = report.main_category || report.category || "";
-  const middle = report.mid_category || "";
-  const sub = report.sub_category || "";
+function getRawCategory(report) {
+  const category =
+    report.category && typeof report.category === "object" ? report.category : {};
 
-  return [main, middle, sub].filter(Boolean).join(" / ");
+  return {
+    main:
+      report.main_category ||
+      category.main ||
+      (typeof report.category === "string" ? report.category : ""),
+    middle: report.mid_category || category.middle || "",
+    sub: report.sub_category || category.sub || "",
+    detail: report.detail_category || category.detail || "",
+  };
+}
+
+function getMainCategory(report) {
+  const category = getRawCategory(report);
+
+  if (CATEGORY_ORDER.includes(category.main)) {
+    return category.main;
+  }
+
+  return (
+    LEGACY_MIDDLE_CATEGORY_MAP[category.middle] ||
+    LEGACY_MAIN_CATEGORY_MAP[category.main] ||
+    category.main ||
+    "미분류"
+  );
+}
+
+function getFieldPath(report) {
+  const { middle, sub, detail } = getRawCategory(report);
+  const seen = new Set();
+
+  return [middle, sub, detail]
+    .map((value) => String(value || "").trim())
+    .filter((value) => {
+      if (!value || seen.has(value)) {
+        return false;
+      }
+      seen.add(value);
+      return true;
+    })
+    .join(" › ");
+}
+
+function getMonthKey(date) {
+  const match = String(date || "").match(/^(\d{4})-(\d{2})/);
+  return match ? `${match[1]}-${match[2]}` : "";
+}
+
+function formatMonth(monthKey) {
+  const match = String(monthKey).match(/^(\d{4})-(\d{2})$/);
+  if (!match) {
+    return monthKey;
+  }
+
+  return `${match[1]}년 ${Number(match[2])}월`;
 }
 
 function renderActions(report) {
@@ -68,15 +164,33 @@ function renderActions(report) {
 }
 
 function renderReportCard(report, isLatest = false) {
-  const category = getCategory(report);
+  const mainCategory = getMainCategory(report);
+  const fieldPath = getFieldPath(report);
+  const categoryClass = CATEGORY_CLASS_MAP.get(mainCategory) || "category-tone-default";
 
   return `
     <article class="${isLatest ? "latest-card" : "report-card"}">
       <div class="report-meta">
-        <span class="badge">${escapeHtml(report.date || "-")}</span>
-        ${category ? `<span class="badge">${escapeHtml(category)}</span>` : ""}
+        <time class="badge" datetime="${escapeHtml(report.date || "")}">
+          ${escapeHtml(report.date || "-")}
+        </time>
         <span class="badge published-badge">정식 발행</span>
       </div>
+
+      <dl class="report-taxonomy">
+        <div class="taxonomy-item taxonomy-main">
+          <dt>대분류</dt>
+          <dd class="category-pill ${categoryClass}">${escapeHtml(mainCategory)}</dd>
+        </div>
+        ${
+          fieldPath
+            ? `<div class="taxonomy-item taxonomy-field">
+                <dt>분야</dt>
+                <dd>${escapeHtml(fieldPath)}</dd>
+              </div>`
+            : ""
+        }
+      </dl>
 
       <h3 class="report-title">${escapeHtml(report.title || "제목 없는 리포트")}</h3>
 
@@ -91,36 +205,136 @@ function renderReportCard(report, isLatest = false) {
   `;
 }
 
-function renderArchive(selectedDate = "") {
-  const filteredReports = selectedDate
-    ? publishedReports.filter((report) => report.date === selectedDate)
-    : publishedReports;
+function updateArchiveUrl() {
+  const params = new URLSearchParams(window.location.search);
+  const category = archiveCategoryEl.value;
+  const month = archiveMonthEl.value;
+  const sort = archiveSortEl.value;
 
-  reportListEl.classList.remove("loading-card");
-  archiveResultCountEl.textContent = selectedDate
-    ? `${selectedDate} 리포트 ${filteredReports.length}건`
-    : `전체 공개 리포트 ${filteredReports.length}건`;
-
-  if (filteredReports.length === 0) {
-    reportListEl.innerHTML = `<div class="empty">선택한 날짜에 공개된 리포트가 없습니다.</div>`;
-    return;
+  if (category) {
+    params.set("category", category);
+  } else {
+    params.delete("category");
   }
 
-  reportListEl.innerHTML = filteredReports
-    .map((report) => renderReportCard(report))
-    .join("");
+  if (month) {
+    params.set("month", month);
+  } else {
+    params.delete("month");
+  }
+
+  if (sort === "oldest") {
+    params.set("sort", sort);
+  } else {
+    params.delete("sort");
+  }
+
+  const query = params.toString();
+  const nextUrl = `${window.location.pathname}${query ? `?${query}` : ""}${window.location.hash}`;
+  window.history.replaceState(null, "", nextUrl);
 }
 
-function configureDateFilter(reports) {
-  const dates = [...new Set(reports.map((report) => report.date).filter(Boolean))];
+function renderArchive({ updateUrl = true } = {}) {
+  const selectedCategory = archiveCategoryEl.value;
+  const selectedMonth = archiveMonthEl.value;
+  const sortDirection = archiveSortEl.value;
 
-  archiveDateEl.innerHTML = [
-    '<option value="">전체 날짜</option>',
-    ...dates.map(
-      (date) => `<option value="${escapeHtml(date)}">${escapeHtml(date)}</option>`,
+  const filteredReports = publishedReports
+    .filter(
+      (report) =>
+        (!selectedCategory || getMainCategory(report) === selectedCategory) &&
+        (!selectedMonth || getMonthKey(report.date) === selectedMonth),
+    )
+    .sort((left, right) => {
+      const comparison = String(right.date || "").localeCompare(
+        String(left.date || ""),
+      );
+      return sortDirection === "oldest" ? -comparison : comparison;
+    });
+
+  reportListEl.classList.remove("loading-card");
+  const activeLabels = [
+    selectedCategory,
+    selectedMonth ? formatMonth(selectedMonth) : "",
+  ].filter(Boolean);
+  archiveResultCountEl.textContent = activeLabels.length
+    ? `${activeLabels.join(" · ")} · ${filteredReports.length}건`
+    : `전체 공개 리포트 ${filteredReports.length}건`;
+
+  archiveResetEl.disabled =
+    !selectedCategory && !selectedMonth && sortDirection === "newest";
+
+  if (filteredReports.length === 0) {
+    reportListEl.innerHTML = `
+      <div class="empty">
+        선택한 대분류와 발행 월에 해당하는 공개 리포트가 없습니다.
+      </div>
+    `;
+  } else {
+    reportListEl.innerHTML = filteredReports
+      .map((report) => renderReportCard(report))
+      .join("");
+  }
+
+  if (updateUrl) {
+    updateArchiveUrl();
+  }
+}
+
+function configureArchiveFilters(reports) {
+  const categoryCounts = new Map();
+  const monthCounts = new Map();
+
+  reports.forEach((report) => {
+    const category = getMainCategory(report);
+    const month = getMonthKey(report.date);
+    categoryCounts.set(category, (categoryCounts.get(category) || 0) + 1);
+    if (month) {
+      monthCounts.set(month, (monthCounts.get(month) || 0) + 1);
+    }
+  });
+
+  const categories = [...categoryCounts.keys()].sort((left, right) => {
+    const leftIndex = CATEGORY_ORDER.indexOf(left);
+    const rightIndex = CATEGORY_ORDER.indexOf(right);
+    return (
+      (leftIndex === -1 ? CATEGORY_ORDER.length : leftIndex) -
+      (rightIndex === -1 ? CATEGORY_ORDER.length : rightIndex)
+    );
+  });
+  const months = [...monthCounts.keys()].sort((left, right) =>
+    right.localeCompare(left),
+  );
+
+  archiveCategoryEl.innerHTML = [
+    '<option value="">전체 대분류</option>',
+    ...categories.map(
+      (category) =>
+        `<option value="${escapeHtml(category)}">${escapeHtml(category)} (${categoryCounts.get(category)})</option>`,
     ),
   ].join("");
-  archiveDateEl.disabled = dates.length === 0;
+
+  archiveMonthEl.innerHTML = [
+    '<option value="">전체 월</option>',
+    ...months.map(
+      (month) =>
+        `<option value="${escapeHtml(month)}">${escapeHtml(formatMonth(month))} (${monthCounts.get(month)})</option>`,
+    ),
+  ].join("");
+
+  archiveCategoryEl.disabled = categories.length === 0;
+  archiveMonthEl.disabled = months.length === 0;
+
+  const params = new URLSearchParams(window.location.search);
+  const requestedCategory = params.get("category") || "";
+  const requestedMonth = params.get("month") || "";
+  const requestedSort = params.get("sort") || "newest";
+
+  archiveCategoryEl.value = categories.includes(requestedCategory)
+    ? requestedCategory
+    : "";
+  archiveMonthEl.value = months.includes(requestedMonth) ? requestedMonth : "";
+  archiveSortEl.value = requestedSort === "oldest" ? "oldest" : "newest";
 }
 
 async function loadJson(path) {
@@ -145,7 +359,9 @@ async function init() {
               typeof report === "object" &&
               report.status === "published_api",
           )
-          .sort((a, b) => String(b.date || "").localeCompare(String(a.date || "")))
+          .sort((left, right) =>
+            String(right.date || "").localeCompare(String(left.date || "")),
+          )
       : [];
 
     if (publishedReports.length === 0) {
@@ -155,6 +371,9 @@ async function init() {
       latestEl.innerHTML = `<div class="empty">아직 정식 발행된 리포트가 없습니다.</div>`;
       reportListEl.innerHTML = `<div class="empty">리포트 목록이 비어 있습니다.</div>`;
       archiveResultCountEl.textContent = "전체 공개 리포트 0건";
+      archiveCategoryEl.disabled = true;
+      archiveMonthEl.disabled = true;
+      archiveResetEl.disabled = true;
       return;
     }
 
@@ -166,7 +385,7 @@ async function init() {
     latestEl.classList.remove("latest-card", "loading-card");
     latestEl.innerHTML = renderReportCard(latest, true);
 
-    configureDateFilter(publishedReports);
+    configureArchiveFilters(publishedReports);
     renderArchive();
   } catch (error) {
     console.error(error);
@@ -174,7 +393,10 @@ async function init() {
     siteStatusEl.textContent = "Error";
     reportCountEl.textContent = "-";
     latestDateEl.textContent = "-";
-    archiveDateEl.disabled = true;
+    archiveCategoryEl.disabled = true;
+    archiveMonthEl.disabled = true;
+    archiveSortEl.disabled = true;
+    archiveResetEl.disabled = true;
     archiveResultCountEl.textContent = "리포트 데이터를 확인할 수 없습니다.";
     latestEl.innerHTML = `
       <div class="empty">
@@ -189,8 +411,15 @@ async function init() {
   }
 }
 
-archiveDateEl.addEventListener("change", (event) => {
-  renderArchive(event.target.value);
+[archiveCategoryEl, archiveMonthEl, archiveSortEl].forEach((element) => {
+  element.addEventListener("change", () => renderArchive());
+});
+
+archiveResetEl.addEventListener("click", () => {
+  archiveCategoryEl.value = "";
+  archiveMonthEl.value = "";
+  archiveSortEl.value = "newest";
+  renderArchive();
 });
 
 init();

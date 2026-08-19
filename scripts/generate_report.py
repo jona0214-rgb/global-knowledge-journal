@@ -257,6 +257,125 @@ def generate_report(
     )
 
 
+def generate_topic_candidates_with_api(
+    target_category: str,
+    category_description: str,
+    existing_titles: list[str],
+    count: int = 5,
+) -> list[Dict[str, Any]]:
+    """현재 순번의 대분류가 고갈됐을 때 계층형 후보를 보충한다."""
+    load_dotenv(ROOT_DIR / ".env")
+    if count < 1:
+        raise ValueError("생성할 주제 후보 수는 1개 이상이어야 합니다.")
+
+    client = get_openai_client()
+    model = os.getenv(
+        "OPENAI_TOPIC_MODEL",
+        os.getenv("OPENAI_MODEL", "gpt-4.1-mini"),
+    ).strip()
+    timeout_seconds = float(os.getenv("OPENAI_TIMEOUT_SECONDS", "600"))
+
+    existing_text = "\n".join(
+        f"- {title}" for title in existing_titles if str(title).strip()
+    )
+    prompt = f"""
+Global Knowledge Journal의 다음 일일 리포트 주제 후보를 작성하세요.
+
+고정 대분류: {target_category}
+대분류 범위: {category_description}
+생성 개수: {count}개
+
+기존 발행·대기 주제:
+{existing_text}
+
+규칙:
+- 고정 대분류를 바꾸지 마세요.
+- 기존 주제와 제목뿐 아니라 핵심 개념과 사례도 겹치지 않아야 합니다.
+- 후보마다 서로 다른 중분류와 소분류를 우선 사용하세요.
+- middle은 학문·산업의 중분류, sub는 그 아래의 구체적 소분류로 작성하세요.
+- detail은 소분류보다 한 단계 더 좁은 탐구 초점이어야 합니다.
+- 하루짜리 뉴스가 아니라 시간이 지나도 읽을 수 있는 지식 주제를 고르세요.
+- 신뢰할 수 있는 공개 자료를 5개 이상 확보할 수 있는 주제만 고르세요.
+- 제목은 한국어로 쓰고 독자의 질문을 자극하되 과장하지 마세요.
+- 내부 운영, 자동화, API, GitHub, 주제 선정 시스템은 주제로 삼지 마세요.
+""".strip()
+
+    candidate_schema = {
+        "type": "object",
+        "additionalProperties": False,
+        "required": ["candidates"],
+        "properties": {
+            "candidates": {
+                "type": "array",
+                "minItems": count,
+                "maxItems": count,
+                "items": {
+                    "type": "object",
+                    "additionalProperties": False,
+                    "required": [
+                        "topic", "mid_category", "sub_category",
+                        "detail_category", "priority",
+                    ],
+                    "properties": {
+                        "topic": {"type": "string", "minLength": 10},
+                        "mid_category": {"type": "string", "minLength": 2},
+                        "sub_category": {"type": "string", "minLength": 2},
+                        "detail_category": {"type": "string", "minLength": 2},
+                        "priority": {
+                            "type": "number",
+                            "minimum": 0.0,
+                            "maximum": 1.0,
+                        },
+                    },
+                },
+            }
+        },
+    }
+
+    print(
+        f"주제 후보 보충 API 요청: '{target_category}' {count}개, "
+        f"제한 {timeout_seconds:g}초"
+    )
+    try:
+        response = client.responses.create(
+            model=model,
+            input=[
+                {
+                    "role": "system",
+                    "content": (
+                        "당신은 지식 리포트의 주제 편집자입니다. "
+                        "응답 스키마에 맞는 후보만 작성합니다."
+                    ),
+                },
+                {"role": "user", "content": prompt},
+            ],
+            text={
+                "format": {
+                    "type": "json_schema",
+                    "name": "topic_candidates",
+                    "schema": candidate_schema,
+                    "strict": True,
+                }
+            },
+        )
+    except APITimeoutError as exc:
+        raise RuntimeError(
+            f"'{target_category}' 주제 후보 생성 제한시간을 초과했습니다."
+        ) from exc
+
+    try:
+        payload = json.loads(response.output_text)
+    except json.JSONDecodeError as exc:
+        raise RuntimeError("주제 후보 API 응답이 올바른 JSON이 아닙니다.") from exc
+
+    candidates = payload.get("candidates", [])
+    if not isinstance(candidates, list) or len(candidates) != count:
+        raise RuntimeError(
+            f"주제 후보가 {count}개 생성되지 않았습니다: {len(candidates)}개"
+        )
+    return candidates
+
+
 def main() -> None:
     load_dotenv(ROOT_DIR / ".env")
 
