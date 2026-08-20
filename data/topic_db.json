@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-08-20",
+  "updated_at": "2026-08-21",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -117,6 +117,28 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260820_sound_architecture_how_s_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260820_sound_architecture_how_s_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "date": "2026-08-21",
+      "title": "문장부호의 탄생: 쉼표와 마침표는 어떻게 생각의 호흡이 되었나",
+      "main_category": "언어·미디어·지식",
+      "mid_category": "문자문화",
+      "sub_category": "문장부호의 역사",
+      "detail_category": "구두점과 읽기 방식",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "문장부호",
+        "쉼표",
+        "마침표",
+        "읽기 방식",
+        "구두점 역사",
+        "사고 표현",
+        "의사소통 혁신",
+        "텍스트 이해"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260821_punctuation_birth_comma__Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260821_punctuation_birth_comma__Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -133,10 +155,10 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "예술·디자인",
-    "next_main_category": "언어·미디어·지식",
-    "next_index": 9,
-    "completed_cycles": 0,
+    "last_main_category": "언어·미디어·지식",
+    "next_main_category": "인문·철학",
+    "next_index": 0,
+    "completed_cycles": 1,
     "published_counts": {
       "인문·철학": 1,
       "사회·정치·법": 0,
@@ -147,7 +169,7 @@
       "자연·환경·지리": 0,
       "역사·문화": 2,
       "예술·디자인": 1,
-      "언어·미디어·지식": 1
+      "언어·미디어·지식": 2
     },
     "recent_main_categories": [
       "역사·문화",
@@ -155,7 +177,8 @@
       "인문·철학",
       "역사·문화",
       "언어·미디어·지식",
-      "예술·디자인"
+      "예술·디자인",
+      "언어·미디어·지식"
     ]
   },
   "candidate_pool": [
@@ -636,7 +659,7 @@
       "detail_category": "구두점과 읽기 방식",
       "priority": 0.8,
       "main_category": "언어·미디어·지식",
-      "status": "candidate",
+      "status": "used",
       "source": "taxonomy_seed"
     },
     {
