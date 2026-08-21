@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-08-21",
+  "updated_at": "2026-08-22",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -139,6 +139,28 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260821_punctuation_birth_comma__Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260821_punctuation_birth_comma__Report.pdf",
       "status": "published_api"
+    },
+    {
+      "date": "2026-08-22",
+      "title": "확률과 우연의 철학: 불확실성은 어떻게 지식이 되는가",
+      "main_category": "인문·철학",
+      "mid_category": "과학철학",
+      "sub_category": "불확실성의 인식론",
+      "detail_category": "확률적 지식의 조건",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "확률",
+        "우연",
+        "불확실성",
+        "지식론",
+        "인식론",
+        "과학철학",
+        "확률적 지식",
+        "우연성"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260822_philosophy_of_probabilit_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260822_philosophy_of_probabilit_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -155,12 +177,12 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "언어·미디어·지식",
-    "next_main_category": "인문·철학",
-    "next_index": 0,
+    "last_main_category": "인문·철학",
+    "next_main_category": "사회·정치·법",
+    "next_index": 1,
     "completed_cycles": 1,
     "published_counts": {
-      "인문·철학": 1,
+      "인문·철학": 2,
       "사회·정치·법": 0,
       "경제·경영": 0,
       "과학·수학": 0,
@@ -178,7 +200,8 @@
       "역사·문화",
       "언어·미디어·지식",
       "예술·디자인",
-      "언어·미디어·지식"
+      "언어·미디어·지식",
+      "인문·철학"
     ]
   },
   "candidate_pool": [
@@ -347,7 +370,7 @@
       "main_category": "인문·철학",
       "mid_category": "과학철학",
       "priority": 0.8,
-      "status": "candidate",
+      "status": "used",
       "sub_category": "불확실성의 인식론",
       "detail_category": "확률적 지식의 조건",
       "source": "legacy_migration"

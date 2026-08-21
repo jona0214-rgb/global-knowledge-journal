@@ -1,6 +1,21 @@
 {
-  "last_updated": "2026-08-21T06:44:59.727697+09:00",
+  "last_updated": "2026-08-22T06:40:14.111402+09:00",
   "reports": [
+    {
+      "date": "2026-08-22",
+      "title": "확률과 우연의 철학: 불확실성은 어떻게 지식이 되는가",
+      "subtitle": "불확실성과 우연이 어떻게 체계적인 지식으로 자리매김하는지를 탐구하다",
+      "main_category": "인문·철학",
+      "mid_category": "과학철학",
+      "sub_category": "불확실성의 인식론",
+      "detail_category": "확률적 지식의 조건",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20260822_philosophy_of_probabilit_Report.html",
+      "pdf_path": "outputs/20260822_philosophy_of_probabilit_Report.pdf",
+      "html_url": "outputs/20260822_philosophy_of_probabilit_Report.html",
+      "pdf_url": "outputs/20260822_philosophy_of_probabilit_Report.pdf",
+      "status": "published_api"
+    },
     {
       "date": "2026-08-21",
       "title": "문장부호의 탄생: 쉼표와 마침표는 어떻게 생각의 호흡이 되었나",
