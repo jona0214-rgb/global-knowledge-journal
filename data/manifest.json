@@ -1,6 +1,21 @@
 {
-  "last_updated": "2026-08-22T06:40:14.111402+09:00",
+  "last_updated": "2026-08-23T06:40:37.411644+09:00",
   "reports": [
+    {
+      "date": "2026-08-23",
+      "title": "우편번호의 사회사: 숫자는 어떻게 도시와 사람을 연결했나",
+      "subtitle": "우편번호가 만들어낸 도시간 연결과 사회적 변화의 역사",
+      "main_category": "사회·정치·법",
+      "mid_category": "행정제도",
+      "sub_category": "주소와 공간 행정",
+      "detail_category": "우편번호의 사회적 기능",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20260823_postal_codes_social_hist_Report.html",
+      "pdf_path": "outputs/20260823_postal_codes_social_hist_Report.pdf",
+      "html_url": "outputs/20260823_postal_codes_social_hist_Report.html",
+      "pdf_url": "outputs/20260823_postal_codes_social_hist_Report.pdf",
+      "status": "published_api"
+    },
     {
       "date": "2026-08-22",
       "title": "확률과 우연의 철학: 불확실성은 어떻게 지식이 되는가",
