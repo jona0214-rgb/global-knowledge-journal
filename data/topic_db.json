@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-08-23",
+  "updated_at": "2026-08-24",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -183,6 +183,28 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260823_postal_codes_social_hist_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260823_postal_codes_social_hist_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "date": "2026-08-24",
+      "title": "보험의 탄생: 위험은 어떻게 공동의 계산이 되었나",
+      "main_category": "경제·경영",
+      "mid_category": "금융제도",
+      "sub_category": "위험의 가격화",
+      "detail_category": "보험과 확률의 결합",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "보험",
+        "위험관리",
+        "확률론",
+        "금융제도",
+        "위험의 가격화",
+        "사회적 분산",
+        "공동 계산",
+        "리스크 관리"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260824_insurance_birth_how_risk_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260824_insurance_birth_how_risk_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -199,14 +221,14 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "사회·정치·법",
-    "next_main_category": "경제·경영",
-    "next_index": 2,
+    "last_main_category": "경제·경영",
+    "next_main_category": "과학·수학",
+    "next_index": 3,
     "completed_cycles": 1,
     "published_counts": {
       "인문·철학": 2,
       "사회·정치·법": 1,
-      "경제·경영": 0,
+      "경제·경영": 1,
       "과학·수학": 0,
       "기술·공학": 1,
       "생명·건강": 0,
@@ -224,7 +246,8 @@
       "예술·디자인",
       "언어·미디어·지식",
       "인문·철학",
-      "사회·정치·법"
+      "사회·정치·법",
+      "경제·경영"
     ]
   },
   "candidate_pool": [
@@ -343,7 +366,7 @@
       "main_category": "경제·경영",
       "mid_category": "금융제도",
       "priority": 0.81,
-      "status": "candidate",
+      "status": "used",
       "sub_category": "위험의 가격화",
       "detail_category": "보험과 확률의 결합",
       "source": "legacy_migration"
