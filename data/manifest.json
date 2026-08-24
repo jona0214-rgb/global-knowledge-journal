@@ -1,6 +1,21 @@
 {
-  "last_updated": "2026-08-24T06:37:39.227760+09:00",
+  "last_updated": "2026-08-25T06:45:30.515917+09:00",
   "reports": [
+    {
+      "date": "2026-08-25",
+      "title": "벌집의 수학: 육각형은 왜 자연의 설계도가 되었나",
+      "subtitle": "육각형 구조의 기하학적 효율성과 벌집에서 나타나는 자연 법칙",
+      "main_category": "과학·수학",
+      "mid_category": "수학과 자연",
+      "sub_category": "기하학적 최적화",
+      "detail_category": "육각형 구조의 효율",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20260825_beolbibeui_suhak_yugakgy_Report.html",
+      "pdf_path": "outputs/20260825_beolbibeui_suhak_yugakgy_Report.pdf",
+      "html_url": "outputs/20260825_beolbibeui_suhak_yugakgy_Report.html",
+      "pdf_url": "outputs/20260825_beolbibeui_suhak_yugakgy_Report.pdf",
+      "status": "published_api"
+    },
     {
       "date": "2026-08-24",
       "title": "보험의 탄생: 위험은 어떻게 공동의 계산이 되었나",
