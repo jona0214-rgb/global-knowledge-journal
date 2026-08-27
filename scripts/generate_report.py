@@ -1,10 +1,17 @@
 import json
 import os
+import time
 from pathlib import Path
-from typing import Any, Dict
+from typing import Any, Callable, Dict, TypeVar
 
 from dotenv import load_dotenv
-from openai import APITimeoutError, OpenAI
+from openai import (
+    APIConnectionError,
+    APITimeoutError,
+    InternalServerError,
+    OpenAI,
+    RateLimitError,
+)
 
 
 ROOT_DIR = Path(__file__).resolve().parents[1]
@@ -20,6 +27,13 @@ SYSTEM_PROMPT_PATH = PROMPTS_DIR / "system_prompt.md"
 REPORT_WRITER_PROMPT_PATH = PROMPTS_DIR / "report_writer_prompt.md"
 REPORT_SCHEMA_PATH = SCHEMAS_DIR / "report.schema.json"
 TOPIC_DB_PATH = DATA_DIR / "topic_db.json"
+
+ResponseT = TypeVar("ResponseT")
+TRANSIENT_OPENAI_ERRORS = (
+    APIConnectionError,
+    InternalServerError,
+    RateLimitError,
+)
 
 
 def load_text(path: Path) -> str:
@@ -172,6 +186,46 @@ def get_openai_client() -> OpenAI:
     )
 
 
+def call_openai_with_transient_retries(
+    operation: Callable[[], ResponseT],
+    operation_name: str,
+) -> ResponseT:
+    """연결 끊김·429·5xx만 짧은 지수 백오프로 다시 시도한다."""
+    retry_count = int(os.getenv("OPENAI_CONNECTION_RETRIES", "2"))
+    base_delay_seconds = float(os.getenv("OPENAI_RETRY_BASE_SECONDS", "10"))
+    if retry_count < 0:
+        raise ValueError("OPENAI_CONNECTION_RETRIES는 0 이상의 정수여야 합니다.")
+    if base_delay_seconds < 0:
+        raise ValueError("OPENAI_RETRY_BASE_SECONDS는 0 이상이어야 합니다.")
+
+    for attempt_index in range(retry_count + 1):
+        try:
+            return operation()
+        except APITimeoutError:
+            # 요청당 제한이 600초이므로 시간 초과를 반복하면 job 제한을 넘는다.
+            # 타임아웃은 호출부의 명확한 오류 안내로 즉시 넘긴다.
+            raise
+        except TRANSIENT_OPENAI_ERRORS as exc:
+            if attempt_index >= retry_count:
+                raise RuntimeError(
+                    f"{operation_name}의 일시적 오류가 재시도 후에도 계속되었습니다: "
+                    f"{type(exc).__name__}"
+                ) from exc
+
+            delay_seconds = min(
+                base_delay_seconds * (2 ** attempt_index),
+                60,
+            )
+            print(
+                f"{operation_name} 일시적 오류({type(exc).__name__}): "
+                f"{delay_seconds:g}초 후 연결 재시도 "
+                f"{attempt_index + 1}/{retry_count}"
+            )
+            time.sleep(delay_seconds)
+
+    raise RuntimeError(f"{operation_name} 재시도 흐름이 비정상 종료되었습니다.")
+
+
 def generate_report_with_api(
     today: str,
     selected_topic: Dict[str, Any],
@@ -201,26 +255,29 @@ def generate_report_with_api(
     )
 
     try:
-        response = client.responses.create(
-            model=model,
-            input=[
-                {
-                    "role": "system",
-                    "content": system_prompt,
+        response = call_openai_with_transient_retries(
+            lambda: client.responses.create(
+                model=model,
+                input=[
+                    {
+                        "role": "system",
+                        "content": system_prompt,
+                    },
+                    {
+                        "role": "user",
+                        "content": user_prompt,
+                    },
+                ],
+                text={
+                    "format": {
+                        "type": "json_schema",
+                        "name": schema_name,
+                        "schema": schema,
+                        "strict": True,
+                    }
                 },
-                {
-                    "role": "user",
-                    "content": user_prompt,
-                },
-            ],
-            text={
-                "format": {
-                    "type": "json_schema",
-                    "name": schema_name,
-                    "schema": schema,
-                    "strict": True,
-                }
-            },
+            ),
+            "OpenAI 리포트 생성",
         )
     except APITimeoutError as exc:
         raise RuntimeError(
@@ -337,26 +394,29 @@ Global Knowledge Journal의 다음 일일 리포트 주제 후보를 작성하�
         f"제한 {timeout_seconds:g}초"
     )
     try:
-        response = client.responses.create(
-            model=model,
-            input=[
-                {
-                    "role": "system",
-                    "content": (
-                        "당신은 지식 리포트의 주제 편집자입니다. "
-                        "응답 스키마에 맞는 후보만 작성합니다."
-                    ),
+        response = call_openai_with_transient_retries(
+            lambda: client.responses.create(
+                model=model,
+                input=[
+                    {
+                        "role": "system",
+                        "content": (
+                            "당신은 지식 리포트의 주제 편집자입니다. "
+                            "응답 스키마에 맞는 후보만 작성합니다."
+                        ),
+                    },
+                    {"role": "user", "content": prompt},
+                ],
+                text={
+                    "format": {
+                        "type": "json_schema",
+                        "name": "topic_candidates",
+                        "schema": candidate_schema,
+                        "strict": True,
+                    }
                 },
-                {"role": "user", "content": prompt},
-            ],
-            text={
-                "format": {
-                    "type": "json_schema",
-                    "name": "topic_candidates",
-                    "schema": candidate_schema,
-                    "strict": True,
-                }
-            },
+            ),
+            "OpenAI 주제 후보 생성",
         )
     except APITimeoutError as exc:
         raise RuntimeError(
