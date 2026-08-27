@@ -1,6 +1,21 @@
 {
-  "last_updated": "2026-08-25T06:45:30.515917+09:00",
+  "last_updated": "2026-08-27T21:23:41.214020+09:00",
   "reports": [
+    {
+      "date": "2026-08-27",
+      "title": "유리의 문명사: 투명한 물질은 어떻게 세계를 바꾸었나",
+      "subtitle": "투명한 유리는 인류 역사와 과학·기술, 문화에 어떤 혁신을 가져왔는가",
+      "main_category": "기술·공학",
+      "mid_category": "재료공학",
+      "sub_category": "유리와 광학 재료",
+      "detail_category": "투명 소재의 기술사",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20260827_history_of_glass_civiliz_Report.html",
+      "pdf_path": "outputs/20260827_history_of_glass_civiliz_Report.pdf",
+      "html_url": "outputs/20260827_history_of_glass_civiliz_Report.html",
+      "pdf_url": "outputs/20260827_history_of_glass_civiliz_Report.pdf",
+      "status": "published_api"
+    },
     {
       "date": "2026-08-25",
       "title": "벌집의 수학: 육각형은 왜 자연의 설계도가 되었나",

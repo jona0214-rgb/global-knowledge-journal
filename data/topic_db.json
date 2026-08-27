@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-08-25",
+  "updated_at": "2026-08-27",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -227,6 +227,28 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260825_beolbibeui_suhak_yugakgy_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260825_beolbibeui_suhak_yugakgy_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "date": "2026-08-27",
+      "title": "유리의 문명사: 투명한 물질은 어떻게 세계를 바꾸었나",
+      "main_category": "기술·공학",
+      "mid_category": "재료공학",
+      "sub_category": "유리와 광학 재료",
+      "detail_category": "투명 소재의 기술사",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "유리",
+        "투명 소재",
+        "광학 재료",
+        "재료공학",
+        "문명사",
+        "과학기술사",
+        "문화변화",
+        "기술혁신"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260827_history_of_glass_civiliz_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260827_history_of_glass_civiliz_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -243,16 +265,16 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "과학·수학",
-    "next_main_category": "기술·공학",
-    "next_index": 4,
+    "last_main_category": "기술·공학",
+    "next_main_category": "생명·건강",
+    "next_index": 5,
     "completed_cycles": 1,
     "published_counts": {
       "인문·철학": 2,
       "사회·정치·법": 1,
       "경제·경영": 1,
       "과학·수학": 1,
-      "기술·공학": 1,
+      "기술·공학": 2,
       "생명·건강": 0,
       "자연·환경·지리": 0,
       "역사·문화": 2,
@@ -260,7 +282,6 @@
       "언어·미디어·지식": 2
     },
     "recent_main_categories": [
-      "기술·공학",
       "인문·철학",
       "역사·문화",
       "언어·미디어·지식",
@@ -269,7 +290,8 @@
       "인문·철학",
       "사회·정치·법",
       "경제·경영",
-      "과학·수학"
+      "과학·수학",
+      "기술·공학"
     ]
   },
   "candidate_pool": [
@@ -358,7 +380,7 @@
       "main_category": "기술·공학",
       "mid_category": "재료공학",
       "priority": 0.81,
-      "status": "candidate",
+      "status": "used",
       "sub_category": "유리와 광학 재료",
       "detail_category": "투명 소재의 기술사",
       "source": "legacy_migration"
