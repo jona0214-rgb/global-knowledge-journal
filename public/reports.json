@@ -15,6 +15,21 @@
     "status": "published_api"
   },
   {
+    "date": "2026-08-26",
+    "title": "잠의 생물학: 뇌는 왜 매일 의식을 내려놓는가",
+    "subtitle": "수면 주기와 뇌 기능을 통해 살펴보는 의식의 일시적 중단과 기억의 관계",
+    "main_category": "생명·건강",
+    "mid_category": "신경과학",
+    "sub_category": "수면과 뇌 기능",
+    "detail_category": "수면 주기와 기억",
+    "taxonomy_version": "2.0",
+    "html_path": "outputs/20260826_sleep_biology_brain_dail_Report.html",
+    "pdf_path": "outputs/20260826_sleep_biology_brain_dail_Report.pdf",
+    "html_url": "outputs/20260826_sleep_biology_brain_dail_Report.html",
+    "pdf_url": "outputs/20260826_sleep_biology_brain_dail_Report.pdf",
+    "status": "published_api"
+  },
+  {
     "date": "2026-08-25",
     "title": "벌집의 수학: 육각형은 왜 자연의 설계도가 되었나",
     "subtitle": "육각형 구조의 기하학적 효율성과 벌집에서 나타나는 자연 법칙",

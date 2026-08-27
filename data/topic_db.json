@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-08-27",
+  "updated_at": "2026-08-26",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -249,6 +249,28 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260827_history_of_glass_civiliz_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260827_history_of_glass_civiliz_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "date": "2026-08-26",
+      "title": "잠의 생물학: 뇌는 왜 매일 의식을 내려놓는가",
+      "main_category": "생명·건강",
+      "mid_category": "신경과학",
+      "sub_category": "수면과 뇌 기능",
+      "detail_category": "수면 주기와 기억",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "수면 주기",
+        "뇌 기능",
+        "기억 형성",
+        "REM 수면",
+        "비REM 수면",
+        "뇌파",
+        "신경 가소성",
+        "뇌 청소"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260826_sleep_biology_brain_dail_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260826_sleep_biology_brain_dail_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -265,9 +287,9 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "기술·공학",
-    "next_main_category": "생명·건강",
-    "next_index": 5,
+    "last_main_category": "생명·건강",
+    "next_main_category": "자연·환경·지리",
+    "next_index": 6,
     "completed_cycles": 1,
     "published_counts": {
       "인문·철학": 2,
@@ -275,14 +297,13 @@
       "경제·경영": 1,
       "과학·수학": 1,
       "기술·공학": 2,
-      "생명·건강": 0,
+      "생명·건강": 1,
       "자연·환경·지리": 0,
       "역사·문화": 2,
       "예술·디자인": 1,
       "언어·미디어·지식": 2
     },
     "recent_main_categories": [
-      "인문·철학",
       "역사·문화",
       "언어·미디어·지식",
       "예술·디자인",
@@ -291,7 +312,8 @@
       "사회·정치·법",
       "경제·경영",
       "과학·수학",
-      "기술·공학"
+      "기술·공학",
+      "생명·건강"
     ]
   },
   "candidate_pool": [
@@ -642,7 +664,7 @@
       "detail_category": "수면 주기와 기억",
       "priority": 0.81,
       "main_category": "생명·건강",
-      "status": "candidate",
+      "status": "used",
       "source": "taxonomy_seed"
     },
     {
