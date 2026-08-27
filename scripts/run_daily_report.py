@@ -7,6 +7,7 @@ import sqlite3
 import tempfile
 from datetime import datetime
 from pathlib import Path
+from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 from zoneinfo import ZoneInfo
 
 from jinja2 import Environment, FileSystemLoader
@@ -38,6 +39,29 @@ class TopicPoolExhaustedError(RuntimeError):
 
 def get_today_kst() -> str:
     return datetime.now(ZoneInfo("Asia/Seoul")).strftime("%Y-%m-%d")
+
+
+def resolve_report_date(explicit_date: str | None = None) -> str:
+    """수동 백필 날짜를 검증하고, 없으면 한국 날짜를 사용한다."""
+    requested_date = str(
+        explicit_date if explicit_date is not None else os.getenv("REPORT_DATE", "")
+    ).strip()
+    today = get_today_kst()
+    if not requested_date:
+        return today
+
+    try:
+        parsed_date = datetime.strptime(requested_date, "%Y-%m-%d").date()
+    except ValueError as exc:
+        raise ValueError("리포트 날짜는 YYYY-MM-DD 형식이어야 합니다.") from exc
+
+    if parsed_date.isoformat() != requested_date:
+        raise ValueError("리포트 날짜는 YYYY-MM-DD 형식이어야 합니다.")
+    if requested_date > today:
+        raise ValueError(
+            f"미래 날짜의 리포트는 생성할 수 없습니다: {requested_date}"
+        )
+    return requested_date
 
 
 def compact_date(date_text: str) -> str:
@@ -986,7 +1010,8 @@ def update_public_catalog(report: dict, html_path: Path, pdf_path: Path):
     reports.sort(key=lambda x: x["date"], reverse=True)
 
     save_json(REPORTS_JSON_PATH, reports)
-    save_json(LATEST_JSON_PATH, item)
+    # 과거 누락 날짜를 백필해도 홈페이지의 최신 리포트는 가장 최근 날짜를 유지한다.
+    save_json(LATEST_JSON_PATH, reports[0])
 
     manifest = {
         "last_updated": datetime.now(ZoneInfo("Asia/Seoul")).isoformat(),
@@ -997,7 +1022,7 @@ def update_public_catalog(report: dict, html_path: Path, pdf_path: Path):
 
 
 def save_render_publish_report(report: dict, topic_db: dict, mode: str = "mock"):
-    today = datetime.now(ZoneInfo("Asia/Seoul")).date().isoformat()
+    today = resolve_report_date(str(report.get("date", "")).strip() or None)
     report["date"] = today
     report["status"] = f"published_{mode}"
     if mode == "api":
@@ -1087,8 +1112,8 @@ def normalize_table_rows(report: dict) -> dict:
     return report
 
 
-def run_mock():
-    today = get_today_kst()
+def run_mock(report_date: str | None = None):
+    today = resolve_report_date(report_date)
 
     topic_db = load_json(TOPIC_DB_PATH, default={})
     topic = select_topic(topic_db)
@@ -1158,6 +1183,33 @@ def enforce_selected_topic(report: dict, selected_topic: dict) -> dict:
     }
 
     return report
+
+
+def normalize_source_url_for_comparison(url: str) -> str:
+    """표시 URL은 보존하되 흔한 추적값·표기 차이를 제외하고 비교한다."""
+    url_text = str(url).strip()
+    try:
+        parts = urlsplit(url_text)
+    except ValueError:
+        return url_text
+
+    if parts.scheme.lower() not in {"http", "https"} or not parts.netloc:
+        return url_text
+
+    query_items = [
+        (key, value)
+        for key, value in parse_qsl(parts.query, keep_blank_values=True)
+        if not key.lower().startswith("utm_")
+        and key.lower() not in {"fbclid", "gclid"}
+    ]
+    normalized_path = parts.path.rstrip("/") or "/"
+    return urlunsplit((
+        parts.scheme.lower(),
+        parts.netloc.lower(),
+        normalized_path,
+        urlencode(sorted(query_items), doseq=True),
+        "",
+    ))
 
 def validate_report_structure(report: dict) -> None:
     """API 리포트가 핵심 섹션과 최소 분량을 갖췄는지 검사한다."""
@@ -1334,23 +1386,35 @@ def validate_report_structure(report: dict) -> None:
         raise ValueError("quotation.source_url은 확인 가능한 http(s) URL이어야 합니다.")
 
     source_urls = {
-        str(source.get("url", "")).strip()
+        normalize_source_url_for_comparison(source.get("url", "")): str(
+            source.get("url", "")
+        ).strip()
         for source in sources
         if isinstance(source, dict)
     }
-    if quotation_url not in source_urls:
-        raise ValueError("quotation.source_url과 동일한 URL이 sources에도 있어야 합니다.")
+    normalized_quotation_url = normalize_source_url_for_comparison(quotation_url)
+    matching_source_url = source_urls.get(normalized_quotation_url)
+    if not matching_source_url:
+        raise ValueError(
+            "quotation.source_url이 sources의 URL과 일치하지 않습니다"
+            "(추적 매개변수·끝 슬래시 정규화 비교 포함)."
+        )
+    # 렌더링·저장 데이터에는 Sources에 적힌 정확한 문자열을 재사용한다.
+    quotation["source_url"] = matching_source_url
 
 
-def run_api():
+def run_api(report_date: str | None = None):
     from generate_report import (
         generate_report,
         generate_topic_candidates_with_api,
     )
 
-    today = get_today_kst()
+    requested_date = str(
+        report_date if report_date is not None else os.getenv("REPORT_DATE", "")
+    ).strip()
+    today = resolve_report_date(report_date)
 
-    if os.getenv("REPORT_SKIP_EXISTING_DATE", "0") == "1":
+    if os.getenv("REPORT_SKIP_EXISTING_DATE", "0") == "1" or requested_date:
         published_reports = load_json(REPORTS_JSON_PATH, default=[])
         if not isinstance(published_reports, list):
             published_reports = []
@@ -1363,7 +1427,7 @@ def run_api():
         if already_published:
             print(
                 f"{today}에는 이미 정식 발행된 리포트가 있어 "
-                "예약 생성을 건너뜁니다."
+                "중복 생성·덮어쓰기를 건너뜁니다."
             )
             return
 
@@ -1421,6 +1485,8 @@ def run_api():
             selected_topic=topic,
             validation_feedback=validation_feedback,
         )
+        # 모델 응답의 날짜를 신뢰하지 않고 실행에서 확정한 발행일을 고정한다.
+        report["date"] = today
         report = enforce_selected_topic(report, topic)
         report = normalize_table_rows(report)
 
@@ -1448,13 +1514,17 @@ def main():
     mode_group = parser.add_mutually_exclusive_group()
     mode_group.add_argument("--mock", action="store_true", help="OpenAI API 없이 mock 리포트를 생성합니다.")
     mode_group.add_argument("--api", action="store_true", help="OpenAI API로 실제 리포트를 생성합니다.")
+    parser.add_argument(
+        "--date",
+        help="누락 날짜 복구용 발행일(YYYY-MM-DD). 생략하면 한국 기준 오늘입니다.",
+    )
 
     args = parser.parse_args()
 
     if args.api:
-        run_api()
+        run_api(report_date=args.date)
     else:
-        run_mock()
+        run_mock(report_date=args.date)
 
 
 if __name__ == "__main__":

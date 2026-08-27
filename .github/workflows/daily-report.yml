@@ -11,10 +11,17 @@ on:
         options:
           - mock
           - api
+      report_date:
+        description: "Missing date to recover (YYYY-MM-DD); leave blank for today"
+        required: false
+        type: string
 
   schedule:
     # GitHub cron은 UTC 기준입니다. 매일 21:15 UTC = 다음 날 06:15 KST.
     - cron: "15 21 * * *"
+    # 23:15 UTC = 08:15 KST. 첫 실행이 실패했을 때 자동 복구하며,
+    # 이미 발행되었다면 REPORT_SKIP_EXISTING_DATE가 중복 생성을 막습니다.
+    - cron: "15 23 * * *"
 
 concurrency:
   group: daily-global-knowledge-report
@@ -38,9 +45,13 @@ jobs:
       REPORT_MODE: ${{ github.event_name == 'schedule' && 'api' || github.event.inputs.report_mode || 'mock' }}
       # 같은 날짜에 이미 정식 발행된 리포트가 있으면 예약 재실행은 건너뜁니다.
       REPORT_SKIP_EXISTING_DATE: ${{ github.event_name == 'schedule' && '1' || '0' }}
+      REPORT_DATE: ${{ github.event.inputs.report_date || '' }}
       OPENAI_MODEL: gpt-4.1-mini
       OPENAI_TIMEOUT_SECONDS: "600"
+      # SDK 내부 장시간 재시도 대신 연결 끊김·429·5xx만 짧게 재시도합니다.
       OPENAI_MAX_RETRIES: "0"
+      OPENAI_CONNECTION_RETRIES: "2"
+      OPENAI_RETRY_BASE_SECONDS: "10"
       REPORT_VALIDATION_RETRIES: "1"
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
@@ -94,11 +105,20 @@ jobs:
       - name: Generate daily report
         run: |
           echo "REPORT_MODE=$REPORT_MODE"
+          echo "REPORT_DATE=${REPORT_DATE:-today(KST)}"
 
           if [ "$REPORT_MODE" = "api" ]; then
-            python scripts/run_daily_report.py --api
+            if [ -n "$REPORT_DATE" ]; then
+              python scripts/run_daily_report.py --api --date "$REPORT_DATE"
+            else
+              python scripts/run_daily_report.py --api
+            fi
           else
-            python scripts/run_daily_report.py --mock
+            if [ -n "$REPORT_DATE" ]; then
+              python scripts/run_daily_report.py --mock --date "$REPORT_DATE"
+            else
+              python scripts/run_daily_report.py --mock
+            fi
           fi
 
       - name: Commit generated report
@@ -131,5 +151,21 @@ jobs:
           name: mock-report-preview-${{ github.run_id }}
           path: outputs/
           retention-days: 3
+
+      - name: Show recovery procedure
+        if: failure()
+        run: |
+          {
+            echo "## Daily report recovery"
+            echo ""
+            echo "1. Open the failed step and identify API connection, structure validation, PDF page count, or setup failure."
+            echo "2. A scheduled failure is retried automatically at 08:15 KST."
+            echo "3. To retry today manually:"
+            echo '   `gh workflow run daily-report.yml --ref main -f report_mode=api`'
+            echo "4. To recover a missing date:"
+            echo '   `gh workflow run daily-report.yml --ref main -f report_mode=api -f report_date=YYYY-MM-DD`'
+            echo ""
+            echo "Incomplete reports remain unpublished because validation and PDF checks run before catalog updates."
+          } >> "$GITHUB_STEP_SUMMARY"
 
 

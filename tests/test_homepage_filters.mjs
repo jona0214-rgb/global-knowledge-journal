@@ -104,8 +104,10 @@ const resultCount = elements.get("archive-result-count");
 const reportList = elements.get("report-list");
 const latestReport = elements.get("latest-report");
 
-assert.match(categorySelect.innerHTML, /역사·문화 \(1\)/);
-assert.match(categorySelect.innerHTML, /기술·공학 \(1\)/);
+// 발행 데이터가 매일 늘고 구 분류명이 canonical 대분류로 합쳐질 수 있으므로
+// 고정 개수 대신 현재 렌더링된 집계가 존재하는지를 검증한다.
+assert.match(categorySelect.innerHTML, /역사·문화 \(\d+\)/);
+assert.match(categorySelect.innerHTML, /기술·공학 \(\d+\)/);
 assert.doesNotMatch(categorySelect.innerHTML, /생활기술·일상문화/);
 const augustReportCount = reports.filter((report) =>
   report.date.startsWith("2026-08"),
