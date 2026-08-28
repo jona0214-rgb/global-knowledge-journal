@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-08-26",
+  "updated_at": "2026-08-28",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -271,6 +271,28 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260826_sleep_biology_brain_dail_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260826_sleep_biology_brain_dail_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "date": "2026-08-28",
+      "title": "밤의 빛과 생태계: 인공조명은 생명의 시간을 어떻게 바꾸는가",
+      "main_category": "자연·환경·지리",
+      "mid_category": "생태환경",
+      "sub_category": "빛 공해",
+      "detail_category": "야간 조명과 생체 리듬",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "인공조명",
+        "야간 생태계",
+        "빛 공해",
+        "생체 리듬",
+        "환경 영향",
+        "생물 행동",
+        "생태계 교란",
+        "야행성 동물"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260828_bamui_bitgwa_saengtaegye_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260828_bamui_bitgwa_saengtaegye_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -287,9 +309,9 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "생명·건강",
-    "next_main_category": "자연·환경·지리",
-    "next_index": 6,
+    "last_main_category": "자연·환경·지리",
+    "next_main_category": "역사·문화",
+    "next_index": 7,
     "completed_cycles": 1,
     "published_counts": {
       "인문·철학": 2,
@@ -298,13 +320,12 @@
       "과학·수학": 1,
       "기술·공학": 2,
       "생명·건강": 1,
-      "자연·환경·지리": 0,
+      "자연·환경·지리": 1,
       "역사·문화": 2,
       "예술·디자인": 1,
       "언어·미디어·지식": 2
     },
     "recent_main_categories": [
-      "역사·문화",
       "언어·미디어·지식",
       "예술·디자인",
       "언어·미디어·지식",
@@ -313,7 +334,8 @@
       "경제·경영",
       "과학·수학",
       "기술·공학",
-      "생명·건강"
+      "생명·건강",
+      "자연·환경·지리"
     ]
   },
   "candidate_pool": [
@@ -442,7 +464,7 @@
       "main_category": "자연·환경·지리",
       "mid_category": "생태환경",
       "priority": 0.82,
-      "status": "candidate",
+      "status": "used",
       "sub_category": "빛 공해",
       "detail_category": "야간 조명과 생체 리듬",
       "source": "legacy_migration"
