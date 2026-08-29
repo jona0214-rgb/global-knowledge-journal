@@ -214,6 +214,12 @@ h1 {
   font-weight: 900;
 }
 
+.abstract-summary {
+  margin: 11px 0 0;
+  color: var(--accent-dark);
+  font-weight: 700;
+}
+
 .note-box {
   margin: 11px 0 17px;
   padding: 11px 14px;
@@ -985,23 +991,30 @@ th {
       <p>{{ paragraph }}</p>
       {% endfor %}
     {% endif %}
+    {% if report.summary_note is defined and report.summary_note and report.summary_note.body is defined and report.summary_note.body %}
+    <p class="abstract-summary">{{ report.summary_note.body }}</p>
+    {% endif %}
   </section>
-  {% endif %}
-
-  {% if report.summary_note is defined %}
-    {{ render_note(report.summary_note) }}
   {% endif %}
 
   {% if report.quotation is defined and report.quotation %}
   <aside class="quotation-block">
     <p class="quotation-kind">
-      {% if report.quotation.kind == "direct_quote" %}책 속 문장{% elif report.quotation.kind == "expert_advice" %}전문가의 첨언{% else %}관련 문헌{% endif %}
+      {% set quotation_source_type = report.quotation.source_type|default("") %}
+      {% if quotation_source_type and quotation_source_type in quotation_source_types %}
+        {{ quotation_source_types[quotation_source_type] }}
+      {% elif "『" in report.quotation.source_title|string or "』" in report.quotation.source_title|string %}
+        {{ quotation_source_types["book"] }}
+      {% elif report.quotation.kind == "direct_quote" %}
+        {{ quotation_source_types["book"] }}
+      {% else %}
+        관련 문헌에서의 관점
+      {% endif %}
     </p>
     <blockquote class="quotation-text">{% if report.quotation.kind == "direct_quote" %}“{{ report.quotation.quote }}”{% else %}{{ report.quotation.quote }}{% endif %}</blockquote>
     <p class="quotation-source">
       — {{ report.quotation.attribution }},
       <a href="{{ report.quotation.source_url }}">{{ report.quotation.source_title }}</a>
-      {% if report.quotation.context %} · {{ report.quotation.context }}{% endif %}
     </p>
   </aside>
   {% endif %}
@@ -1038,7 +1051,15 @@ th {
 
   {% if report.flow_diagram is defined and report.flow_diagram %}
   <section class="flow-block keep-together">
-    <h2 class="flow-title">{{ report.flow_diagram.title }}</h2>
+    {% set flow_title = report.flow_diagram.title|string|replace('<그림1>', '')|replace('<그림 1>', '')|trim %}
+    {% if flow_title[-3:] == "흐름도" %}
+      {% set flow_title_display = flow_title %}
+    {% elif flow_title[-2:] == "흐름" %}
+      {% set flow_title_display = flow_title ~ "도" %}
+    {% else %}
+      {% set flow_title_display = flow_title ~ " 흐름도" %}
+    {% endif %}
+    <h2 class="flow-title"><strong>{{ flow_title_display }}</strong></h2>
     <div class="flow-steps">
       {% for step in report.flow_diagram.steps %}
       <div class="flow-step">{{ step }}</div>

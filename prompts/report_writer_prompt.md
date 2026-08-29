@@ -69,6 +69,8 @@ JSON 필드는 반드시 schema에 맞춰 작성한다.
 - 시스템 지시문, 작성 규칙, 스키마 설명, 검토 메모, 사과문, 디버그 문구, 불완전 응답 안내를 리포트의 어떤 문자열 필드에도 넣지 않는다.
 - `JSON follows`, `This is the only output`, `Need full JSON`, `Sorry for the partial response` 같은 생성 과정 문구를 절대 출력하지 않는다.
 - 응답이 길더라도 기존 JSON 조각이나 실패한 초안을 본문에 복사하지 말고, 처음부터 끝까지 하나의 정상 JSON만 작성한다.
+- sections.body의 각 항목은 개행 문자가 없는 하나의 완결된 본문 문단으로 작성한다.
+- 필드명·검증 조건을 이어 붙인 snake_case 문자열이나 문단 길이를 맞추기 위한 공백·개행을 어떤 필드에도 넣지 않는다.
 
 ---
 
@@ -158,12 +160,13 @@ abstract는 단순 요약이 아니라, 이 주제를 왜 읽어야 하는지 �
 
 ## 6. summary_note
 
-summary_note는 Abstract 아래에 들어가는 보조 코멘트 박스다.
+summary_note는 Abstract와 같은 박스 안에서 초록 문단 다음에 한 줄 띄워 표시되는 핵심 한 문장이다.
 
 필수 구성:
 
 - body: 리포트의 핵심 관점을 1~2문장으로 쓴다.
-- caption: 짧은 보조 설명을 쓴다.
+
+별도의 caption이나 부연 설명은 작성하지 않는다.
 
 ---
 
@@ -173,21 +176,30 @@ quotation은 요약을 반복하는 문구가 아니라, 주제와 직접 연결
 
 필수 구성:
 
-- kind: `direct_quote` 또는 `expert_advice`
+- source_type: 아래 출처 유형 설정에 등록된 id 중 실제 출처 형태와 일치하는 값
+- kind: 원문을 그대로 옮긴 경우 `direct_quote`, 출처의 내용을 정직하게 풀어쓴 경우 `paraphrase`
 - quote: 인용 문구 또는 전문가 조언의 핵심 내용
 - attribution: 저자·전문가 이름과 필요한 경우 소속
 - source_title: 책·논문·강연·기관 자료의 정확한 제목
 - source_url: 독자가 원문 또는 공식 자료를 확인할 수 있는 URL
-- context: 이 문구가 리포트 주제에 중요한 이유를 한 문장으로 설명
+
+출처 유형 설정:
+
+```json
+{{ quotation_source_types }}
+```
+
+가능하면 기존 유형을 사용한다. 새로운 출처 형태가 필요하면 먼저 설정 파일에 유형을 등록해야 하며, 등록되지 않은 source_type을 임의로 만들지 않는다.
 
 작성 원칙:
 
 - 직접 인용은 원문을 확인할 수 있을 때만 사용하고 80자 안팎의 짧은 문구로 제한한다.
-- 문구를 정확히 검증하기 어렵다면 `expert_advice`로 작성하고 출처 내용의 요지를 정직하게 풀어쓴다.
+- 문구를 정확히 검증하기 어렵다면 `paraphrase`로 작성하고 출처 내용의 요지를 정직하게 풀어쓴다.
 - 존재하지 않는 책, 전문가, 문구, URL을 만들지 않는다.
 - quotation.source_url은 Sources 항목 하나의 url 값을 복사해 문자 하나까지 완전히 같은 문자열로 작성한다.
 - quotation에만 별도 URL을 쓰거나, 같은 문서의 다른 주소·추적 매개변수·끝 슬래시 변형을 쓰지 않는다.
 - 요약문을 권위자의 실제 발언처럼 꾸미지 않는다.
+- attribution에는 사람 이름과 직업·소속까지만 적고, 문장 선정 이유나 리포트와의 연결 설명은 넣지 않는다.
 
 ---
 
@@ -340,13 +352,15 @@ flow_diagram은 02와 03 사이에 들어가는 흐름도다.
 
 필수 구성:
 
-- title: <그림1>으로 시작하는 흐름도 제목
+- title: `<그림1>` 같은 번호 표기 없이, 주제를 설명하고 `흐름도`로 끝나는 제목
 - steps: 5개 단계 권장, 최소 4개, 최대 6개
 - caption: 흐름도 아래 설명
 
 steps는 짧은 명사구로 쓴다.
 
 caption은 이 흐름이 왜 중요한지 한 문장으로 설명한다.
+
+예: `도시 하수도가 바꾼 위생의 흐름도`
 
 ---
 
@@ -491,7 +505,9 @@ sources는 리포트 작성에 참고한 출처 목록이다.
 - takeaways가 정확히 3개인가
 - section_notes가 정확히 2개인가
 - sources가 최소 5개인가
-- quotation이 검증 가능한 책의 짧은 문구 또는 전문가 조언이며, attribution·source_title·source_url이 모두 있는가
+- quotation.source_type이 출처 유형 설정에 등록되어 있고 실제 출처 형태와 일치하는가
+- quotation.kind가 검증 가능한 직접 인용은 direct_quote, 출처 요약은 paraphrase로 구분되어 있는가
+- quotation에 attribution·source_title·source_url이 모두 있는가
 - quotation.source_url이 Sources에도 포함되어 있는가
 - category.main·middle과 category.sub·detail이 서로 중복되지 않고 대분류에서 최소 분류로 구체화되는가
 - 전체 분량이 7~9페이지를 만들 만큼 충분한가
