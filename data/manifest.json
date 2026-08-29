@@ -1,6 +1,21 @@
 {
-  "last_updated": "2026-08-29T12:16:50.323668+09:00",
+  "last_updated": "2026-08-30T07:35:45.974299+09:00",
   "reports": [
+    {
+      "date": "2026-08-30",
+      "title": "색의 재료사: 안료는 어떻게 권력과 감정을 표현했나",
+      "subtitle": "안료의 역사와 사회문화적 의미를 통해 색이 권력과 감정을 어떻게 전달했는지 탐구하다",
+      "main_category": "예술·디자인",
+      "mid_category": "미술재료",
+      "sub_category": "안료와 색채",
+      "detail_category": "색 재료의 생산과 상징",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20260830_saek_e_jeryosa_anggoneun_Report.html",
+      "pdf_path": "outputs/20260830_saek_e_jeryosa_anggoneun_Report.pdf",
+      "html_url": "outputs/20260830_saek_e_jeryosa_anggoneun_Report.html",
+      "pdf_url": "outputs/20260830_saek_e_jeryosa_anggoneun_Report.pdf",
+      "status": "published_api"
+    },
     {
       "date": "2026-08-29",
       "title": "향신료 교역의 세계사: 맛은 어떻게 제국과 항로를 움직였나",

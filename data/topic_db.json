@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-08-29",
+  "updated_at": "2026-08-30",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -315,6 +315,28 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260829_hyangsinryo_gyoyeog_hist_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260829_hyangsinryo_gyoyeog_hist_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "date": "2026-08-30",
+      "title": "색의 재료사: 안료는 어떻게 권력과 감정을 표현했나",
+      "main_category": "예술·디자인",
+      "mid_category": "미술재료",
+      "sub_category": "안료와 색채",
+      "detail_category": "색 재료의 생산과 상징",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "안료",
+        "권력 상징",
+        "색채 문화",
+        "역사적 안료",
+        "감정 표현",
+        "미술재료",
+        "색의 사회적 의미",
+        "안료 생산"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260830_saek_e_jeryosa_anggoneun_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260830_saek_e_jeryosa_anggoneun_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -331,9 +353,9 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "역사·문화",
-    "next_main_category": "예술·디자인",
-    "next_index": 8,
+    "last_main_category": "예술·디자인",
+    "next_main_category": "언어·미디어·지식",
+    "next_index": 9,
     "completed_cycles": 1,
     "published_counts": {
       "인문·철학": 2,
@@ -344,11 +366,10 @@
       "생명·건강": 1,
       "자연·환경·지리": 1,
       "역사·문화": 3,
-      "예술·디자인": 1,
+      "예술·디자인": 2,
       "언어·미디어·지식": 2
     },
     "recent_main_categories": [
-      "예술·디자인",
       "언어·미디어·지식",
       "인문·철학",
       "사회·정치·법",
@@ -357,7 +378,8 @@
       "기술·공학",
       "생명·건강",
       "자연·환경·지리",
-      "역사·문화"
+      "역사·문화",
+      "예술·디자인"
     ]
   },
   "candidate_pool": [
@@ -808,7 +830,7 @@
       "detail_category": "색 재료의 생산과 상징",
       "priority": 0.8,
       "main_category": "예술·디자인",
-      "status": "candidate",
+      "status": "used",
       "source": "taxonomy_seed"
     },
     {

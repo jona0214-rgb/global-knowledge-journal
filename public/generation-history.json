@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "date": "2026-08-30",
+    "title": "색의 재료사: 안료는 어떻게 권력과 감정을 표현했나",
+    "status": "published_api",
+    "event_name": "schedule",
+    "schedule_cron": "0 20 * * *",
+    "scheduled_for_kst": "2026-08-30T05:00:00+09:00",
+    "workflow_started_at": "2026-08-29T22:34:00Z",
+    "generation_started_at": "2026-08-29T22:34:30.341197Z",
+    "generation_completed_at": "2026-08-29T22:35:44.727191Z",
+    "catalog_updated_at": "2026-08-29T22:35:45.974653Z",
+    "scheduler_delay_seconds": 9240,
+    "setup_duration_seconds": 30,
+    "generation_duration_seconds": 76,
+    "validation_attempts": 1,
+    "run_id": "33278900026",
+    "run_attempt": "1",
+    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/33278900026",
+    "source_sha": "c5c0701cb753f04841972f6bf0b421602e2554bb"
+  }
+]
