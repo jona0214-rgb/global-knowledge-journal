@@ -53,6 +53,7 @@ except ModuleNotFoundError:
 
 import generate_report as report_generator
 import run_daily_report as report_runner
+import verify_published_site as publish_verifier
 
 
 class ReportRecoveryTests(unittest.TestCase):
@@ -196,6 +197,90 @@ class ReportRecoveryTests(unittest.TestCase):
             report_runner.run_mock(report_date="2026-08-26")
 
         publish_mock.assert_called_once_with(report, {}, mode="mock")
+
+    def test_generation_timeline_records_0500_schedule_delay(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            temp_path = Path(temp_dir)
+            history_path = temp_path / "generation-history.json"
+            status_path = temp_path / "generation-status.json"
+            report = {
+                "date": "2026-08-29",
+                "title": "측정 테스트",
+                "status": "published_api",
+            }
+            with (
+                patch.object(
+                    report_runner,
+                    "GENERATION_HISTORY_PATH",
+                    history_path,
+                ),
+                patch.object(
+                    report_runner,
+                    "GENERATION_STATUS_PATH",
+                    status_path,
+                ),
+                patch.dict(
+                    os.environ,
+                    {
+                        "REPORT_SCHEDULE_CRON": "0 20 * * *",
+                        "REPORT_RUN_STARTED_AT": "2026-08-28T20:02:00Z",
+                        "GITHUB_EVENT_NAME": "schedule",
+                        "GITHUB_RUN_ID": "12345",
+                        "GITHUB_RUN_ATTEMPT": "1",
+                        "GITHUB_REPOSITORY": "owner/repo",
+                        "GITHUB_SERVER_URL": "https://github.com",
+                        "GITHUB_SHA": "abc123",
+                    },
+                ),
+            ):
+                entry = report_runner.record_generation_timeline(
+                    report=report,
+                    generation_started_at="2026-08-28T20:03:00Z",
+                    generation_completed_at="2026-08-28T20:07:00Z",
+                    catalog_updated_at="2026-08-28T20:08:00Z",
+                    validation_attempts=1,
+                )
+
+            self.assertEqual(
+                "2026-08-29T05:00:00+09:00",
+                entry["scheduled_for_kst"],
+            )
+            self.assertEqual(120, entry["scheduler_delay_seconds"])
+            self.assertEqual(60, entry["setup_duration_seconds"])
+            self.assertEqual(300, entry["generation_duration_seconds"])
+            self.assertEqual("12345", entry["run_id"])
+            history = json.loads(history_path.read_text(encoding="utf-8"))
+            status = json.loads(status_path.read_text(encoding="utf-8"))
+            self.assertEqual([entry], history)
+            self.assertEqual(entry, status)
+
+    def test_pages_verifier_checks_catalog_and_pdf(self):
+        expected = {
+            "date": "2026-08-29",
+            "status": "published_api",
+            "pdf_url": "outputs/report.pdf",
+        }
+        with (
+            patch.object(
+                publish_verifier,
+                "fetch_json",
+                return_value=[expected],
+            ) as fetch_mock,
+            patch.object(
+                publish_verifier,
+                "asset_is_visible",
+                return_value=True,
+            ) as asset_mock,
+        ):
+            visible = publish_verifier.verify_once(
+                "https://example.test/project/",
+                "2026-08-29",
+                expected,
+            )
+
+        self.assertTrue(visible)
+        self.assertIn("public/reports.json", fetch_mock.call_args.args[0])
+        self.assertIn("outputs/report.pdf", asset_mock.call_args.args[0])
 
     def test_transient_openai_error_is_retried(self):
         class TemporaryOpenAIError(Exception):

@@ -27,6 +27,8 @@ TOPIC_TAXONOMY_PATH = CONFIG_DIR / "topic_taxonomy_v2.json"
 MANIFEST_PATH = DATA_DIR / "manifest.json"
 REPORTS_JSON_PATH = PUBLIC_DIR / "reports.json"
 LATEST_JSON_PATH = PUBLIC_DIR / "latest.json"
+GENERATION_HISTORY_PATH = PUBLIC_DIR / "generation-history.json"
+GENERATION_STATUS_PATH = PUBLIC_DIR / "generation-status.json"
 
 
 class TopicPoolExhaustedError(RuntimeError):
@@ -39,6 +41,39 @@ class TopicPoolExhaustedError(RuntimeError):
 
 def get_today_kst() -> str:
     return datetime.now(ZoneInfo("Asia/Seoul")).strftime("%Y-%m-%d")
+
+
+def utc_now_iso() -> str:
+    return datetime.now(ZoneInfo("UTC")).isoformat().replace("+00:00", "Z")
+
+
+def parse_iso_datetime(value: str) -> datetime | None:
+    text = str(value or "").strip()
+    if not text:
+        return None
+    try:
+        return datetime.fromisoformat(text.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+
+
+def seconds_between(start: str, end: str) -> int | None:
+    start_time = parse_iso_datetime(start)
+    end_time = parse_iso_datetime(end)
+    if not start_time or not end_time:
+        return None
+    return max(0, round((end_time - start_time).total_seconds()))
+
+
+def scheduled_for_kst(report_date: str, cron_expression: str) -> str | None:
+    schedule_times = {
+        "0 20 * * *": "05:00:00",
+        "15 23 * * *": "08:15:00",
+    }
+    schedule_time = schedule_times.get(str(cron_expression).strip())
+    if not schedule_time:
+        return None
+    return f"{report_date}T{schedule_time}+09:00"
 
 
 def resolve_report_date(explicit_date: str | None = None) -> str:
@@ -1021,6 +1056,78 @@ def update_public_catalog(report: dict, html_path: Path, pdf_path: Path):
     save_json(MANIFEST_PATH, manifest)
 
 
+def record_generation_timeline(
+    report: dict,
+    generation_started_at: str,
+    generation_completed_at: str,
+    catalog_updated_at: str,
+    validation_attempts: int,
+) -> dict:
+    """성공한 API 생성의 예약·실행·저장 시각을 공개 이력에 누적한다."""
+    report_date = str(report.get("date", "")).strip()
+    schedule_cron = os.getenv("REPORT_SCHEDULE_CRON", "").strip()
+    workflow_started_at = os.getenv("REPORT_RUN_STARTED_AT", "").strip()
+    run_id = os.getenv("GITHUB_RUN_ID", "").strip()
+    repository = os.getenv("GITHUB_REPOSITORY", "").strip()
+    server_url = os.getenv("GITHUB_SERVER_URL", "https://github.com").rstrip("/")
+    run_url = (
+        f"{server_url}/{repository}/actions/runs/{run_id}"
+        if repository and run_id
+        else ""
+    )
+    scheduled_at = scheduled_for_kst(report_date, schedule_cron)
+
+    entry = {
+        "date": report_date,
+        "title": report.get("title", ""),
+        "status": report.get("status", "published_api"),
+        "event_name": os.getenv("GITHUB_EVENT_NAME", "local"),
+        "schedule_cron": schedule_cron,
+        "scheduled_for_kst": scheduled_at,
+        "workflow_started_at": workflow_started_at,
+        "generation_started_at": generation_started_at,
+        "generation_completed_at": generation_completed_at,
+        "catalog_updated_at": catalog_updated_at,
+        "scheduler_delay_seconds": (
+            seconds_between(scheduled_at, workflow_started_at)
+            if scheduled_at and workflow_started_at
+            else None
+        ),
+        "setup_duration_seconds": seconds_between(
+            workflow_started_at,
+            generation_started_at,
+        ),
+        "generation_duration_seconds": seconds_between(
+            generation_started_at,
+            catalog_updated_at,
+        ),
+        "validation_attempts": validation_attempts,
+        "run_id": run_id,
+        "run_attempt": os.getenv("GITHUB_RUN_ATTEMPT", ""),
+        "run_url": run_url,
+        "source_sha": os.getenv("GITHUB_SHA", ""),
+    }
+
+    history = load_json(GENERATION_HISTORY_PATH, default=[])
+    if not isinstance(history, list):
+        history = []
+    if run_id:
+        history = [
+            item for item in history
+            if str(item.get("run_id", "")) != run_id
+        ]
+    history.append(entry)
+    history.sort(
+        key=lambda item: str(item.get("catalog_updated_at", "")),
+        reverse=True,
+    )
+    history = history[:30]
+
+    save_json(GENERATION_HISTORY_PATH, history)
+    save_json(GENERATION_STATUS_PATH, entry)
+    return entry
+
+
 def save_render_publish_report(report: dict, topic_db: dict, mode: str = "mock"):
     today = resolve_report_date(str(report.get("date", "")).strip() or None)
     report["date"] = today
@@ -1413,6 +1520,7 @@ def run_api(report_date: str | None = None):
         report_date if report_date is not None else os.getenv("REPORT_DATE", "")
     ).strip()
     today = resolve_report_date(report_date)
+    generation_started_at = utc_now_iso()
 
     if os.getenv("REPORT_SKIP_EXISTING_DATE", "0") == "1" or requested_date:
         published_reports = load_json(REPORTS_JSON_PATH, default=[])
@@ -1503,7 +1611,22 @@ def run_api(report_date: str | None = None):
             )
             continue
 
+        generation_completed_at = utc_now_iso()
         save_render_publish_report(report, topic_db, mode="api")
+        catalog_updated_at = utc_now_iso()
+        try:
+            timeline = record_generation_timeline(
+                report=report,
+                generation_started_at=generation_started_at,
+                generation_completed_at=generation_completed_at,
+                catalog_updated_at=catalog_updated_at,
+                validation_attempts=attempt_number,
+            )
+            print("생성 타임라인 기록 완료")
+            print(json.dumps(timeline, ensure_ascii=False))
+        except Exception as exc:
+            # 측정 정보 실패가 검증 완료 리포트의 발행을 막지 않도록 한다.
+            print(f"경고: 생성 타임라인을 기록하지 못했습니다: {exc}")
         return
 
     raise RuntimeError("리포트 생성 시도 횟수를 소진했습니다.")

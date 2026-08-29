@@ -74,7 +74,7 @@ h1 {
 
 .summary-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 18px;
   margin: 24px 0 42px;
 }
@@ -111,6 +111,71 @@ h1 {
   margin: 0;
   font-size: 30px;
   letter-spacing: -0.04em;
+}
+
+.timeline-description {
+  margin: -6px 0 18px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.timeline-list {
+  display: grid;
+  gap: 12px;
+}
+
+.timeline-card {
+  padding: 20px 22px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+.timeline-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 14px;
+  margin-bottom: 14px;
+}
+
+.timeline-heading strong {
+  color: var(--accent-dark);
+}
+
+.timeline-heading span {
+  flex: 1 1 360px;
+  font-weight: 700;
+}
+
+.timeline-heading a {
+  color: var(--accent-dark);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px 18px;
+  margin: 0;
+}
+
+.timeline-grid div {
+  min-width: 0;
+}
+
+.timeline-grid dt {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.timeline-grid dd {
+  margin: 2px 0 0;
+  font-size: 14px;
+  overflow-wrap: anywhere;
 }
 
 .archive-toolbar {
@@ -388,6 +453,10 @@ h1 {
   }
 
   .archive-toolbar {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-grid {
     grid-template-columns: 1fr;
   }
 

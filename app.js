@@ -3,6 +3,8 @@ const reportListEl = document.getElementById("report-list");
 const reportCountEl = document.getElementById("report-count");
 const latestDateEl = document.getElementById("latest-date");
 const siteStatusEl = document.getElementById("site-status");
+const automationStatusEl = document.getElementById("automation-status");
+const generationHistoryEl = document.getElementById("generation-history");
 const archiveCategoryEl = document.getElementById("archive-category");
 const archiveMonthEl = document.getElementById("archive-month");
 const archiveSortEl = document.getElementById("archive-sort");
@@ -51,6 +53,78 @@ const CATEGORY_CLASS_MAP = new Map(
 );
 
 let publishedReports = [];
+
+function formatKstTimestamp(value) {
+  const date = new Date(String(value || ""));
+  if (Number.isNaN(date.getTime())) {
+    return "-";
+  }
+  return new Intl.DateTimeFormat("ko-KR", {
+    timeZone: "Asia/Seoul",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false,
+  }).format(date);
+}
+
+function formatDuration(totalSeconds) {
+  const seconds = Number(totalSeconds);
+  if (!Number.isFinite(seconds) || seconds < 0) {
+    return "-";
+  }
+  const minutes = Math.floor(seconds / 60);
+  const remainder = Math.round(seconds % 60);
+  return minutes > 0 ? `${minutes}분 ${remainder}초` : `${remainder}초`;
+}
+
+function renderGenerationHistory(history) {
+  const entries = Array.isArray(history)
+    ? history.filter((item) => item && typeof item === "object").slice(0, 10)
+    : [];
+
+  generationHistoryEl.classList.remove("loading-card");
+  if (entries.length === 0) {
+    automationStatusEl.textContent = "측정 대기";
+    generationHistoryEl.innerHTML = `
+      <div class="empty">05:00 예약 변경 이후의 측정 기록이 아직 없습니다.</div>
+    `;
+    return;
+  }
+
+  const latest = entries[0];
+  automationStatusEl.textContent = `${latest.date || "-"} · 정상`;
+  generationHistoryEl.innerHTML = entries
+    .map((entry) => {
+      const scheduleLabel = entry.scheduled_for_kst
+        ? formatKstTimestamp(entry.scheduled_for_kst)
+        : "수동 실행";
+      const runLink = entry.run_url
+        ? `<a href="${escapeHtml(entry.run_url)}" target="_blank" rel="noopener">Actions 로그</a>`
+        : "";
+      return `
+        <article class="timeline-card">
+          <div class="timeline-heading">
+            <strong>${escapeHtml(entry.date || "-")}</strong>
+            <span>${escapeHtml(entry.title || "제목 없음")}</span>
+            ${runLink}
+          </div>
+          <dl class="timeline-grid">
+            <div><dt>예약</dt><dd>${escapeHtml(scheduleLabel)}</dd></div>
+            <div><dt>실제 시작</dt><dd>${escapeHtml(formatKstTimestamp(entry.workflow_started_at))}</dd></div>
+            <div><dt>저장 완료</dt><dd>${escapeHtml(formatKstTimestamp(entry.catalog_updated_at))}</dd></div>
+            <div><dt>예약 지연</dt><dd>${escapeHtml(formatDuration(entry.scheduler_delay_seconds))}</dd></div>
+            <div><dt>환경 준비</dt><dd>${escapeHtml(formatDuration(entry.setup_duration_seconds))}</dd></div>
+            <div><dt>생성·검증</dt><dd>${escapeHtml(formatDuration(entry.generation_duration_seconds))}</dd></div>
+          </dl>
+        </article>
+      `;
+    })
+    .join("");
+}
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -349,7 +423,12 @@ async function loadJson(path) {
 
 async function init() {
   try {
-    const reports = await loadJson("public/reports.json");
+    const [reports, generationHistory] = await Promise.all([
+      loadJson("public/reports.json"),
+      loadJson("public/generation-history.json").catch(() => []),
+    ]);
+
+    renderGenerationHistory(generationHistory);
 
     publishedReports = Array.isArray(reports)
       ? reports
@@ -391,6 +470,7 @@ async function init() {
     console.error(error);
 
     siteStatusEl.textContent = "Error";
+    automationStatusEl.textContent = "확인 필요";
     reportCountEl.textContent = "-";
     latestDateEl.textContent = "-";
     archiveCategoryEl.disabled = true;
