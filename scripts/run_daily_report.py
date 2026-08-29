@@ -24,6 +24,7 @@ CONFIG_DIR = ROOT_DIR / "config"
 TOPIC_DB_PATH = DATA_DIR / "topic_db.json"
 TOPIC_DB_SQLITE_PATH = DATA_DIR / "topic_db.sqlite"
 TOPIC_TAXONOMY_PATH = CONFIG_DIR / "topic_taxonomy_v2.json"
+QUOTATION_SOURCE_TYPES_PATH = CONFIG_DIR / "quotation_source_types.json"
 MANIFEST_PATH = DATA_DIR / "manifest.json"
 REPORTS_JSON_PATH = PUBLIC_DIR / "reports.json"
 LATEST_JSON_PATH = PUBLIC_DIR / "latest.json"
@@ -548,13 +549,16 @@ def create_mock_report(today: str, topic: dict) -> dict:
             "그것은 화면의 속도, 배우의 몸짓, 관객의 시선, 문화적 농담을 다시 배열하는 작업이다. "
             "영상 번역은 서로 다른 언어권의 관객이 같은 장면을 각자의 감각으로 이해하도록 돕는 문화적 설계다."
         ),
+        "summary_note": {
+            "body": "영상 번역은 언어뿐 아니라 화면의 시간, 시선, 목소리를 함께 다시 설계하는 작업이다."
+        },
         "quotation": {
-            "kind": "expert_advice",
+            "source_type": "research",
+            "kind": "paraphrase",
             "quote": "영상 번역은 말의 의미뿐 아니라 장면의 시간과 관객의 읽기 속도를 함께 설계해야 한다.",
             "attribution": "영상 번역 연구의 일반 원칙",
             "source_title": "영상 번역 개요 자료",
-            "source_url": "https://example.com",
-            "context": "화면의 시간 제약이 번역 선택에 미치는 영향을 설명한다."
+            "source_url": "https://example.com"
         },
         "sections": [
             {
@@ -757,11 +761,40 @@ def get_report_palette(main_category: str) -> dict:
     })
 
 
+def load_quotation_source_types() -> dict[str, str]:
+    """첨언 출처 유형 id와 PDF 소제목을 설정 파일에서 불러온다."""
+    config = load_json(QUOTATION_SOURCE_TYPES_PATH, default={})
+    raw_types = config.get("types", []) if isinstance(config, dict) else []
+    if not isinstance(raw_types, list) or not raw_types:
+        raise ValueError("quotation_source_types 설정에 types 목록이 필요합니다.")
+
+    source_types = {}
+    for index, item in enumerate(raw_types, start=1):
+        if not isinstance(item, dict):
+            raise ValueError(f"quotation_source_types.types[{index}]가 객체가 아닙니다.")
+        source_type_id = str(item.get("id", "")).strip()
+        label = str(item.get("label", "")).strip()
+        if not re.fullmatch(r"[a-z][a-z0-9_]*", source_type_id):
+            raise ValueError(
+                f"quotation 출처 유형 id가 올바르지 않습니다: {source_type_id or '(빈 값)'}"
+            )
+        if not label:
+            raise ValueError(f"quotation 출처 유형 '{source_type_id}'의 label이 비었습니다.")
+        if source_type_id in source_types:
+            raise ValueError(f"중복된 quotation 출처 유형 id입니다: {source_type_id}")
+        source_types[source_type_id] = label
+    return source_types
+
+
 def render_html(report: dict, output_path: Path):
     env = Environment(loader=FileSystemLoader(str(TEMPLATES_DIR)))
     template = env.get_template("report.html.j2")
     palette = get_report_palette(report.get("category", {}).get("main", ""))
-    html = template.render(report=report, palette=palette)
+    html = template.render(
+        report=report,
+        palette=palette,
+        quotation_source_types=load_quotation_source_types(),
+    )
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(html, encoding="utf-8")
@@ -1375,7 +1408,19 @@ def validate_report_structure(report: dict) -> None:
         "partial and corrupt",
         "body: 5문단 작성 required",
         "자동화 파이프라인 설명",
+        "section_notes_",
+        "paragraph_count_",
+        "general_structure",
+        "length_minimum_",
+        "paragraphs_maximum_",
     )
+    instruction_snake_case = re.compile(
+        r"\b(?:section|sections|section_notes|paragraph|paragraphs|body|label|labels|"
+        r"schema|json|response|instruction|system|prompt|minimum|maximum|required|must|check)"
+        r"(?:_[a-z0-9]+){2,}\b",
+        re.IGNORECASE,
+    )
+    section_body_path = re.compile(r"^report\.sections\[\d+\]\.body\[\d+\]$")
 
     def iter_text_nodes(value, path="report"):
         if isinstance(value, str):
@@ -1417,9 +1462,23 @@ def validate_report_structure(report: dict) -> None:
             marker in lowered
             for marker in ('"sections"', '"label"', '"id"', '"title"', '"body"')
         )
-        if matched_fragment or json_key_hits >= 3:
-            reason = matched_fragment or f"JSON 필드 표식 {json_key_hits}개"
-            leaked_instruction_text.append(f"{text_path} ({reason})")
+        leak_reasons = []
+        if matched_fragment:
+            leak_reasons.append(matched_fragment)
+        if json_key_hits >= 3:
+            leak_reasons.append(f"JSON 필드 표식 {json_key_hits}개")
+        if instruction_snake_case.search(lowered):
+            leak_reasons.append("내부 지시문 형태의 snake_case 문자열")
+        if any(fragment in lowered for fragment in ("},{", "}],{", "},{\"")):
+            leak_reasons.append("직렬화된 JSON 조각")
+        if section_body_path.match(text_path) and ("\n" in text_value or "\r" in text_value):
+            leak_reasons.append("본문 문단 내부 개행")
+        if len(text_value) - len(text_value.rstrip()) > 3:
+            leak_reasons.append("과도한 후행 공백")
+        if leak_reasons:
+            leaked_instruction_text.append(
+                f"{text_path} ({', '.join(dict.fromkeys(leak_reasons))})"
+            )
 
     if too_short:
         raise ValueError("본문 분량이 부족합니다. " + " / ".join(too_short))
@@ -1473,7 +1532,7 @@ def validate_report_structure(report: dict) -> None:
         raise ValueError("quotation은 출처가 있는 인용·전문가 첨언 객체여야 합니다.")
 
     quotation_required = [
-        "kind", "quote", "attribution", "source_title", "source_url", "context"
+        "source_type", "kind", "quote", "attribution", "source_title", "source_url"
     ]
     missing_quotation_fields = [
         field for field in quotation_required
@@ -1485,8 +1544,17 @@ def validate_report_structure(report: dict) -> None:
             + ", ".join(missing_quotation_fields)
         )
 
-    if quotation.get("kind") not in {"direct_quote", "expert_advice"}:
-        raise ValueError("quotation.kind는 direct_quote 또는 expert_advice여야 합니다.")
+    if quotation.get("kind") not in {"direct_quote", "paraphrase"}:
+        raise ValueError("quotation.kind는 direct_quote 또는 paraphrase여야 합니다.")
+
+    source_types = load_quotation_source_types()
+    quotation_source_type = str(quotation.get("source_type", "")).strip()
+    if quotation_source_type not in source_types:
+        raise ValueError(
+            "quotation.source_type이 등록된 출처 유형이 아닙니다: "
+            f"{quotation_source_type or '(빈 값)'}. "
+            "허용값: " + ", ".join(source_types)
+        )
 
     quotation_url = str(quotation.get("source_url", "")).strip()
     if not quotation_url.startswith(("https://", "http://")):

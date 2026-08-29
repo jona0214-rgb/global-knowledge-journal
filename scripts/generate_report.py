@@ -23,6 +23,7 @@ DATA_DIR = ROOT_DIR / "data"
 OUTPUTS_DIR = ROOT_DIR / "outputs"
 
 STYLE_GUIDE_PATH = CONFIG_DIR / "style_guide_v1_8.md"
+QUOTATION_SOURCE_TYPES_PATH = CONFIG_DIR / "quotation_source_types.json"
 SYSTEM_PROMPT_PATH = PROMPTS_DIR / "system_prompt.md"
 REPORT_WRITER_PROMPT_PATH = PROMPTS_DIR / "report_writer_prompt.md"
 REPORT_SCHEMA_PATH = SCHEMAS_DIR / "report.schema.json"
@@ -64,6 +65,7 @@ def build_user_prompt(
     validation_feedback: str = "",
 ) -> str:
     style_guide = load_text(STYLE_GUIDE_PATH)
+    quotation_source_types = load_text(QUOTATION_SOURCE_TYPES_PATH)
     topic_db = load_text(TOPIC_DB_PATH)
     prompt_template = load_text(REPORT_WRITER_PROMPT_PATH)
 
@@ -137,6 +139,10 @@ def build_user_prompt(
     prompt = prompt_template.replace("{{ today }}", today)
     prompt = prompt.replace("{{ selected_topic }}", selected_topic_json)
     prompt = prompt.replace("{{ style_guide }}", style_guide)
+    prompt = prompt.replace(
+        "{{ quotation_source_types }}",
+        quotation_source_types,
+    )
     prompt = prompt.replace("{{ topic_db }}", topic_db)
 
     correction_prompt = ""

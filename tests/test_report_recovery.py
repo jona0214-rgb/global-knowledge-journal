@@ -57,6 +57,33 @@ import verify_published_site as publish_verifier
 
 
 class ReportRecoveryTests(unittest.TestCase):
+    def load_validatable_latest_report(self):
+        latest = report_runner.load_json(report_runner.LATEST_JSON_PATH, default={})
+        report_path = ROOT_DIR / latest["html_path"].replace(".html", ".json")
+        report = copy.deepcopy(report_runner.load_json(report_path, default={}))
+
+        quotation = report.get("quotation", {})
+        quotation.setdefault("source_type", "book")
+        if quotation.get("kind") == "expert_advice":
+            quotation["kind"] = "paraphrase"
+
+        for section in report.get("sections", []):
+            body = [
+                paragraph.strip()
+                for paragraph in section.get("body", [])
+                if isinstance(paragraph, str)
+                and not paragraph.strip().lower().startswith("section_notes_")
+            ]
+            if section.get("id") == "04" and len(body) < 5:
+                body.append(
+                    "이 사례는 향신료 교역이 상품 이동에 그치지 않고 기업 권력과 식민 통치, "
+                    "지역 사회의 삶을 함께 바꾼 역사적 과정이었음을 구체적으로 보여준다. "
+                    "따라서 교역의 성과뿐 아니라 그 비용과 책임도 함께 살펴야 한다."
+                )
+            section["body"] = body
+
+        return report
+
     def test_resolve_report_date_accepts_past_date(self):
         with patch.object(report_runner, "get_today_kst", return_value="2026-08-27"):
             self.assertEqual(
@@ -82,9 +109,7 @@ class ReportRecoveryTests(unittest.TestCase):
         )
 
     def test_validation_reuses_exact_source_url_after_normalized_match(self):
-        latest = report_runner.load_json(report_runner.LATEST_JSON_PATH, default={})
-        report_path = ROOT_DIR / latest["html_path"].replace(".html", ".json")
-        report = copy.deepcopy(report_runner.load_json(report_path, default={}))
+        report = self.load_validatable_latest_report()
         exact_source_url = report["sources"][0]["url"]
         separator = "&" if "?" in exact_source_url else "?"
         report["quotation"]["source_url"] = (
@@ -94,6 +119,89 @@ class ReportRecoveryTests(unittest.TestCase):
         report_runner.validate_report_structure(report)
 
         self.assertEqual(exact_source_url, report["quotation"]["source_url"])
+
+    def test_validation_rejects_snake_case_instruction_leak(self):
+        report = self.load_validatable_latest_report()
+        case_study = next(
+            section for section in report["sections"] if section.get("id") == "04"
+        )
+        case_study["body"][-1] = (
+            "section_notes_paragraph_count_check_must_match_required_4_paragraphs_"
+            "length_minimum_4_paragraphs_maximum_10_paragraphs_section_labels_"
+            "general_structure"
+        )
+
+        with self.assertRaisesRegex(
+            ValueError,
+            "시스템 지시문·JSON 생성 메모",
+        ):
+            report_runner.validate_report_structure(report)
+
+    def test_validation_rejects_body_padding_newlines(self):
+        report = self.load_validatable_latest_report()
+        report["sections"][0]["body"][0] += "\n\n\n"
+
+        with self.assertRaisesRegex(ValueError, "본문 문단 내부 개행"):
+            report_runner.validate_report_structure(report)
+
+    def test_validation_rejects_unregistered_quotation_source_type(self):
+        report = self.load_validatable_latest_report()
+        report["quotation"]["source_type"] = "podcast"
+
+        with self.assertRaisesRegex(ValueError, "등록된 출처 유형이 아닙니다"):
+            report_runner.validate_report_structure(report)
+
+    def test_new_quotation_source_type_can_be_added_in_config(self):
+        report = self.load_validatable_latest_report()
+        report["quotation"]["source_type"] = "podcast"
+
+        with tempfile.TemporaryDirectory() as temp_dir:
+            source_types_path = Path(temp_dir) / "quotation_source_types.json"
+            source_types_path.write_text(
+                json.dumps(
+                    {
+                        "version": "1.1",
+                        "types": [
+                            {
+                                "id": "podcast",
+                                "label": "팟캐스트에서의 대화",
+                                "description": "공개 팟캐스트 대화",
+                            }
+                        ],
+                    },
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8",
+            )
+            with patch.object(
+                report_runner,
+                "QUOTATION_SOURCE_TYPES_PATH",
+                source_types_path,
+            ):
+                report_runner.validate_report_structure(report)
+
+    def test_report_prompt_loads_configured_quotation_source_types(self):
+        prompt = report_generator.build_user_prompt(
+            today="2026-08-30",
+            selected_topic={
+                "topic": "출처 유형 검증",
+                "main_category": "역사·문화",
+                "mid_category": "기록문화",
+                "sub_category": "출처 분류",
+            },
+        )
+
+        self.assertIn('"id": "book"', prompt)
+        self.assertIn("도서 속의 문장", prompt)
+        self.assertNotIn("{{ quotation_source_types }}", prompt)
+
+    def test_template_does_not_render_legacy_expert_heading(self):
+        template_text = (
+            ROOT_DIR / "templates" / "report.html.j2"
+        ).read_text(encoding="utf-8")
+
+        self.assertNotIn("전문가의 첨언", template_text)
+        self.assertIn("관련 문헌에서의 관점", template_text)
 
     def test_backfill_keeps_newest_catalog_item_as_latest(self):
         with tempfile.TemporaryDirectory() as temp_dir:
