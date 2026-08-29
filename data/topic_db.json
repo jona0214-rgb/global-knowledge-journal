@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-08-28",
+  "updated_at": "2026-08-29",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -293,6 +293,28 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260828_bamui_bitgwa_saengtaegye_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260828_bamui_bitgwa_saengtaegye_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "date": "2026-08-29",
+      "title": "향신료 교역의 세계사: 맛은 어떻게 제국과 항로를 움직였나",
+      "main_category": "역사·문화",
+      "mid_category": "교역문화",
+      "sub_category": "향신료와 해상무역",
+      "detail_category": "교역로와 제국의 경쟁",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "향신료",
+        "교역로",
+        "제국경쟁",
+        "해상무역",
+        "무역항로",
+        "식민주의",
+        "경제사",
+        "문화교류"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260829_hyangsinryo_gyoyeog_hist_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260829_hyangsinryo_gyoyeog_hist_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -309,9 +331,9 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "자연·환경·지리",
-    "next_main_category": "역사·문화",
-    "next_index": 7,
+    "last_main_category": "역사·문화",
+    "next_main_category": "예술·디자인",
+    "next_index": 8,
     "completed_cycles": 1,
     "published_counts": {
       "인문·철학": 2,
@@ -321,12 +343,11 @@
       "기술·공학": 2,
       "생명·건강": 1,
       "자연·환경·지리": 1,
-      "역사·문화": 2,
+      "역사·문화": 3,
       "예술·디자인": 1,
       "언어·미디어·지식": 2
     },
     "recent_main_categories": [
-      "언어·미디어·지식",
       "예술·디자인",
       "언어·미디어·지식",
       "인문·철학",
@@ -335,7 +356,8 @@
       "과학·수학",
       "기술·공학",
       "생명·건강",
-      "자연·환경·지리"
+      "자연·환경·지리",
+      "역사·문화"
     ]
   },
   "candidate_pool": [
@@ -514,7 +536,7 @@
       "main_category": "역사·문화",
       "mid_category": "교역문화",
       "priority": 0.8,
-      "status": "candidate",
+      "status": "used",
       "sub_category": "향신료와 해상무역",
       "detail_category": "교역로와 제국의 경쟁",
       "source": "legacy_migration"
