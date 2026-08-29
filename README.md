@@ -35,7 +35,10 @@ OpenAI API와 GitHub Actions를 이용해
 
 ## 자동 실행
 
-GitHub Actions가 매일 오전 6시 15분(Asia/Seoul)에 API 리포트를 생성합니다.
+GitHub Actions가 매일 오전 5시(Asia/Seoul)에 API 리포트 생성을 요청합니다.
+오전 8시 15분에는 복구 예약을 한 번 더 실행하며, 이미 발행된 날짜는 건너뜁니다.
+GitHub 예약 실행은 지연될 수 있으므로 예약 시각, 실제 실행 시작, 생성·검증 완료
+시각을 별도 기록해 다음 실행들의 지연 시간을 비교합니다.
 예약 실행은 항상 `api` 모드이며, 수동 실행에서는 `mock` 또는 `api`를 선택할 수 있습니다.
 같은 날짜에 정식 리포트가 이미 있으면 예약 재실행은 생성과 API 호출을 건너뜁니다.
 검증을 통과한 API 리포트만 결과 파일과 공개 카탈로그에 반영됩니다.
@@ -74,3 +77,8 @@ GitHub Actions가 매일 오전 6시 15분(Asia/Seoul)에 API 리포트를 생�
 - `outputs/`: 발행된 JSON, HTML, PDF
 - `public/latest.json`: 최신 리포트 정보
 - `public/reports.json`: 날짜별 공개 리포트 목록
+- `public/generation-status.json`: 가장 최근 성공 실행의 생성 타임라인
+- `public/generation-history.json`: 최근 30회 성공 실행의 예약·시작·완료 이력
+
+GitHub Pages에 목록과 PDF가 실제로 반영된 시각은 각 Actions 실행의
+`Verify report is visible on GitHub Pages` 단계와 실행 Summary에서 확인합니다.
