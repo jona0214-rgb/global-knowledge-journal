@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-08-30",
+  "updated_at": "2026-08-31",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -337,6 +337,28 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260830_saek_e_jeryosa_anggoneun_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260830_saek_e_jeryosa_anggoneun_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "date": "2026-08-31",
+      "title": "사전의 권위: 단어의 뜻은 누가 결정하고 기록하는가",
+      "main_category": "언어·미디어·지식",
+      "mid_category": "사전학",
+      "sub_category": "어휘의 표준화",
+      "detail_category": "사전 편찬과 언어 규범",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "사전",
+        "어휘 표준화",
+        "언어 규범",
+        "단어 뜻",
+        "권위",
+        "사전 편찬",
+        "언어 변화",
+        "어휘 기록"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260831_dictionary_authority_wor_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260831_dictionary_authority_wor_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -353,10 +375,10 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "예술·디자인",
-    "next_main_category": "언어·미디어·지식",
-    "next_index": 9,
-    "completed_cycles": 1,
+    "last_main_category": "언어·미디어·지식",
+    "next_main_category": "인문·철학",
+    "next_index": 0,
+    "completed_cycles": 2,
     "published_counts": {
       "인문·철학": 2,
       "사회·정치·법": 1,
@@ -367,10 +389,9 @@
       "자연·환경·지리": 1,
       "역사·문화": 3,
       "예술·디자인": 2,
-      "언어·미디어·지식": 2
+      "언어·미디어·지식": 3
     },
     "recent_main_categories": [
-      "언어·미디어·지식",
       "인문·철학",
       "사회·정치·법",
       "경제·경영",
@@ -379,7 +400,8 @@
       "생명·건강",
       "자연·환경·지리",
       "역사·문화",
-      "예술·디자인"
+      "예술·디자인",
+      "언어·미디어·지식"
     ]
   },
   "candidate_pool": [
@@ -870,7 +892,7 @@
       "detail_category": "사전 편찬과 언어 규범",
       "priority": 0.79,
       "main_category": "언어·미디어·지식",
-      "status": "candidate",
+      "status": "used",
       "source": "taxonomy_seed"
     },
     {
