@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-09-02",
+    "title": "인구조사의 정치학: 국가는 왜 사람을 세고 분류하는가",
+    "status": "published_api",
+    "event_name": "schedule",
+    "schedule_cron": "15 23 * * *",
+    "scheduled_for_kst": "2026-09-02T08:15:00+09:00",
+    "workflow_started_at": "2026-09-02T01:00:40Z",
+    "generation_started_at": "2026-09-02T01:01:13.411671Z",
+    "generation_completed_at": "2026-09-02T01:04:00.214315Z",
+    "catalog_updated_at": "2026-09-02T01:04:01.507448Z",
+    "scheduler_delay_seconds": 6340,
+    "setup_duration_seconds": 33,
+    "generation_duration_seconds": 168,
+    "validation_attempts": 2,
+    "run_id": "33577643795",
+    "run_attempt": "1",
+    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/33577643795",
+    "source_sha": "2d09388ec80005d77015cce54acfff3fb23ae5fc"
+  },
+  {
     "date": "2026-09-01",
     "title": "도덕적 운의 역설: 결과가 사람의 책임을 바꾸는가",
     "status": "published_api",

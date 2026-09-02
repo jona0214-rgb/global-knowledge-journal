@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-09-02",
+    "title": "인구조사의 정치학: 국가는 왜 사람을 세고 분류하는가",
+    "subtitle": "국가가 인구를 측정하고 분류하는 행위의 역사와 사회적 의미",
+    "main_category": "사회·정치·법",
+    "mid_category": "국가와 행정",
+    "sub_category": "인구 통계 제도",
+    "detail_category": "센서스와 국가의 시선",
+    "taxonomy_version": "2.0",
+    "html_path": "outputs/20260902_population_survey_politi_Report.html",
+    "pdf_path": "outputs/20260902_population_survey_politi_Report.pdf",
+    "html_url": "outputs/20260902_population_survey_politi_Report.html",
+    "pdf_url": "outputs/20260902_population_survey_politi_Report.pdf",
+    "status": "published_api"
+  },
+  {
     "date": "2026-09-01",
     "title": "도덕적 운의 역설: 결과가 사람의 책임을 바꾸는가",
     "subtitle": "우연과 결과가 도덕적 책임에 미치는 영향과 그 함의를 탐구하다",

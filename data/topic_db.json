@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-09-01",
+  "updated_at": "2026-09-02",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -381,6 +381,28 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260901_moral_luck_paradox_resul_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260901_moral_luck_paradox_resul_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "date": "2026-09-02",
+      "title": "인구조사의 정치학: 국가는 왜 사람을 세고 분류하는가",
+      "main_category": "사회·정치·법",
+      "mid_category": "국가와 행정",
+      "sub_category": "인구 통계 제도",
+      "detail_category": "센서스와 국가의 시선",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "인구조사",
+        "센서스",
+        "사회통제",
+        "통계제도",
+        "국가권력",
+        "분류 체계",
+        "데이터 정치학",
+        "행정관리"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260902_population_survey_politi_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260902_population_survey_politi_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -397,13 +419,13 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "인문·철학",
-    "next_main_category": "사회·정치·법",
-    "next_index": 1,
+    "last_main_category": "사회·정치·법",
+    "next_main_category": "경제·경영",
+    "next_index": 2,
     "completed_cycles": 2,
     "published_counts": {
       "인문·철학": 3,
-      "사회·정치·법": 1,
+      "사회·정치·법": 2,
       "경제·경영": 1,
       "과학·수학": 1,
       "기술·공학": 2,
@@ -414,7 +436,6 @@
       "언어·미디어·지식": 3
     },
     "recent_main_categories": [
-      "사회·정치·법",
       "경제·경영",
       "과학·수학",
       "기술·공학",
@@ -423,7 +444,8 @@
       "역사·문화",
       "예술·디자인",
       "언어·미디어·지식",
-      "인문·철학"
+      "인문·철학",
+      "사회·정치·법"
     ]
   },
   "candidate_pool": [
@@ -644,7 +666,7 @@
       "detail_category": "센서스와 국가의 시선",
       "priority": 0.79,
       "main_category": "사회·정치·법",
-      "status": "candidate",
+      "status": "used",
       "source": "taxonomy_seed"
     },
     {
