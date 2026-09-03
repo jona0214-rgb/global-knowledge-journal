@@ -1,3 +1,4 @@
+import copy
 import json
 import os
 import time
@@ -36,6 +37,21 @@ TRANSIENT_OPENAI_ERRORS = (
     RateLimitError,
 )
 
+REQUIRED_SECTION_IDS = (
+    "01",
+    "02",
+    "03",
+    "03-1",
+    "03-2",
+    "03-3",
+    "03-4",
+    "03-5",
+    "04",
+    "05",
+    "06",
+)
+API_SOURCE_KEYS = tuple(f"source_{index}" for index in range(1, 7))
+
 
 def load_text(path: Path) -> str:
     if not path.exists():
@@ -57,6 +73,138 @@ def save_json(path: Path, data: Dict[str, Any]) -> None:
 
     with path.open("w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
+
+
+def build_api_response_schema(canonical_schema: Dict[str, Any]) -> Dict[str, Any]:
+    """API 응답에서 교차 필드 제약을 구조적으로 강제하는 wire schema를 만든다.
+
+    OpenAI Structured Outputs는 배열의 고유 ID나 다른 배열 원소의 URL 참조를
+    직접 강제하지 못한다. API 응답에만 고정 키 객체를 사용하고, 저장 전 기존
+    공개 JSON 형식으로 정규화해 렌더러와 카탈로그 호환성을 유지한다.
+    """
+    schema = copy.deepcopy(canonical_schema)
+    properties = schema["properties"]
+
+    section_schema = properties["sections"]
+    variants = section_schema["items"]["anyOf"]
+    variants_by_id = {}
+    for variant in variants:
+        section_ids = variant.get("properties", {}).get("id", {}).get("enum", [])
+        if len(section_ids) != 1:
+            raise ValueError("section schema의 각 anyOf 항목에는 단일 id enum이 필요합니다.")
+        variants_by_id[section_ids[0]] = variant
+
+    missing_section_schemas = [
+        section_id
+        for section_id in REQUIRED_SECTION_IDS
+        if section_id not in variants_by_id
+    ]
+    if missing_section_schemas:
+        raise ValueError(
+            "API schema로 변환할 필수 section 정의가 없습니다: "
+            + ", ".join(missing_section_schemas)
+        )
+
+    properties["sections"] = {
+        "type": "object",
+        "description": (
+            "고정 섹션 객체. 각 키와 내부 id는 일치하며 모든 키가 정확히 한 번 필요하다."
+        ),
+        "additionalProperties": False,
+        "required": list(REQUIRED_SECTION_IDS),
+        "properties": {
+            section_id: variants_by_id[section_id]
+            for section_id in REQUIRED_SECTION_IDS
+        },
+    }
+
+    source_item_schema = properties["sources"]["items"]
+    properties["sources"] = {
+        "type": "object",
+        "description": "정확히 6개의 출처를 source_1부터 source_6까지 작성한다.",
+        "additionalProperties": False,
+        "required": list(API_SOURCE_KEYS),
+        "properties": {
+            source_key: copy.deepcopy(source_item_schema)
+            for source_key in API_SOURCE_KEYS
+        },
+    }
+
+    quotation_schema = properties["quotation"]
+    quotation_properties = quotation_schema["properties"]
+    quotation_properties.pop("source_title", None)
+    quotation_properties.pop("source_url", None)
+    quotation_properties["source_key"] = {
+        "type": "string",
+        "enum": list(API_SOURCE_KEYS),
+        "description": (
+            "인용·첨언의 근거가 되는 sources 키. 제목과 URL은 코드가 해당 출처에서 연결한다."
+        ),
+    }
+    quotation_schema["required"] = [
+        field
+        for field in quotation_schema["required"]
+        if field not in {"source_title", "source_url"}
+    ] + ["source_key"]
+
+    return schema
+
+
+def normalize_api_report(report: Dict[str, Any]) -> Dict[str, Any]:
+    """API wire format을 렌더링·저장용 canonical report 형식으로 변환한다."""
+    sections = report.get("sections")
+    if isinstance(sections, dict):
+        missing_sections = [
+            section_id
+            for section_id in REQUIRED_SECTION_IDS
+            if not isinstance(sections.get(section_id), dict)
+        ]
+        if missing_sections:
+            raise ValueError(
+                "API 응답의 고정 섹션이 누락되었습니다: "
+                + ", ".join(missing_sections)
+            )
+
+        normalized_sections = []
+        for section_id in REQUIRED_SECTION_IDS:
+            section = sections[section_id]
+            section["id"] = section_id
+            normalized_sections.append(section)
+        report["sections"] = normalized_sections
+
+    sources = report.get("sources")
+    source_map = sources if isinstance(sources, dict) else None
+    if source_map is not None:
+        missing_sources = [
+            source_key
+            for source_key in API_SOURCE_KEYS
+            if not isinstance(source_map.get(source_key), dict)
+        ]
+        if missing_sources:
+            raise ValueError(
+                "API 응답의 고정 출처가 누락되었습니다: "
+                + ", ".join(missing_sources)
+            )
+        report["sources"] = [source_map[source_key] for source_key in API_SOURCE_KEYS]
+
+    quotation = report.get("quotation")
+    if isinstance(quotation, dict) and "source_key" in quotation:
+        if source_map is None:
+            raise ValueError(
+                "quotation.source_key를 해석하려면 sources가 고정 키 객체여야 합니다."
+            )
+        source_key = str(quotation.get("source_key", "")).strip()
+        source = source_map.get(source_key)
+        if not isinstance(source, dict):
+            raise ValueError(
+                "quotation.source_key가 유효한 sources 키가 아닙니다: "
+                f"{source_key or '(빈 값)'}"
+            )
+        quotation["source_title"] = str(source.get("title", "")).strip()
+        quotation["source_url"] = str(source.get("url", "")).strip()
+        quotation.pop("source_key", None)
+
+    return report
 
 
 def build_user_prompt(
@@ -156,11 +304,12 @@ def build_user_prompt(
 {validation_feedback}
 
 이전 초안을 부분 수정하거나 이어 쓰지 말고 전체 JSON을 처음부터 다시 작성하세요.
-특히 sections는 정확히 11개 객체이며 다음 id를 아래 순서대로 각각 정확히 한 번만 사용해야 합니다.
+특히 sections는 다음 11개 키를 모두 갖는 고정 객체이며, 각 값의 내부 id도 키와 같아야 합니다.
 
 01, 02, 03, 03-1, 03-2, 03-3, 03-4, 03-5, 04, 05, 06
 
-중복 id, 누락 id, 추가 section 객체는 모두 금지합니다.
+중복 id, 누락 키, 추가 section 키는 모두 금지합니다.
+quotation.source_key는 source_1부터 source_6 중 실제 인용 근거가 되는 키를 선택하세요.
 """.strip()
 
     prompt_parts = [topic_lock]
@@ -251,7 +400,7 @@ def generate_report_with_api(
 
     schema_doc = load_json(REPORT_SCHEMA_PATH)
     schema_name = schema_doc.get("name", "daily_report")
-    schema = schema_doc["schema"]
+    schema = build_api_response_schema(schema_doc["schema"])
 
     timeout_seconds = float(os.getenv("OPENAI_TIMEOUT_SECONDS", "600"))
     max_retries = int(os.getenv("OPENAI_MAX_RETRIES", "0"))
@@ -305,7 +454,7 @@ def generate_report_with_api(
             f"원본 응답을 저장했습니다: {debug_path}"
         ) from exc
 
-    return report
+    return normalize_api_report(report)
 
 
 def generate_report(

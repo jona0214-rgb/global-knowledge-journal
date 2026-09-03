@@ -180,8 +180,7 @@ quotation은 요약을 반복하는 문구가 아니라, 주제와 직접 연결
 - kind: 원문을 그대로 옮긴 경우 `direct_quote`, 출처의 내용을 정직하게 풀어쓴 경우 `paraphrase`
 - quote: 인용 문구 또는 전문가 조언의 핵심 내용
 - attribution: 저자·전문가 이름과 필요한 경우 소속
-- source_title: 책·논문·강연·기관 자료의 정확한 제목
-- source_url: 독자가 원문 또는 공식 자료를 확인할 수 있는 URL
+- source_key: 아래 Sources의 `source_1`~`source_6` 중 인용 근거가 되는 출처의 키
 
 출처 유형 설정:
 
@@ -196,8 +195,8 @@ quotation은 요약을 반복하는 문구가 아니라, 주제와 직접 연결
 - 직접 인용은 원문을 확인할 수 있을 때만 사용하고 80자 안팎의 짧은 문구로 제한한다.
 - 문구를 정확히 검증하기 어렵다면 `paraphrase`로 작성하고 출처 내용의 요지를 정직하게 풀어쓴다.
 - 존재하지 않는 책, 전문가, 문구, URL을 만들지 않는다.
-- quotation.source_url은 Sources 항목 하나의 url 값을 복사해 문자 하나까지 완전히 같은 문자열로 작성한다.
-- quotation에만 별도 URL을 쓰거나, 같은 문서의 다른 주소·추적 매개변수·끝 슬래시 변형을 쓰지 않는다.
+- quotation에는 출처 제목과 URL을 다시 쓰지 않고 `source_key`만 지정한다.
+- 선택한 source_key의 source는 quote의 실제 근거 자료여야 한다. 관련 없는 출처 키를 연결하지 않는다.
 - 요약문을 권위자의 실제 발언처럼 꾸미지 않는다.
 - attribution에는 사람 이름과 직업·소속까지만 적고, 문장 선정 이유나 리포트와의 연결 설명은 넣지 않는다.
 
@@ -205,8 +204,8 @@ quotation은 요약을 반복하는 문구가 아니라, 주제와 직접 연결
 
 ## 7. Sections 작성 규칙
 
-sections 배열은 다음 11개 id를 반드시 모두 포함한다.
-각 id는 정확히 한 번만 사용하며, sections는 정확히 11개 객체로 작성한다.
+sections는 다음 11개 id를 키로 사용하는 고정 객체로 작성한다.
+각 키는 정확히 한 번만 존재해야 하며, 각 값의 내부 id도 해당 키와 같아야 한다.
 
 - 01
 - 02
@@ -444,7 +443,16 @@ further_reading은 3~5개로 작성한다.
 
 ## 18. Sources
 
-sources는 리포트 작성에 참고한 출처 목록이다.
+sources는 리포트 작성에 참고한 출처를 담는 고정 키 객체다.
+
+다음 6개 키를 모두 정확히 한 번씩 작성한다.
+
+- source_1
+- source_2
+- source_3
+- source_4
+- source_5
+- source_6
 
 각 source는 다음을 포함한다.
 
@@ -455,7 +463,7 @@ sources는 리포트 작성에 참고한 출처 목록이다.
 
 주의:
 
-- 출처는 6~8개로 작성한다.
+- 출처는 정확히 6개로 작성한다.
 - URL은 가능한 한 실제 기관 또는 문서 URL을 사용한다.
 - 내부 프로젝트 정보는 절대 sources에 넣지 않는다.
 - Sources가 PDF에서 너무 길어지지 않게 used_for는 짧게 작성한다.
@@ -493,7 +501,7 @@ sources는 리포트 작성에 참고한 출처 목록이다.
 
 응답 JSON을 제출하기 전에 스스로 다음을 확인한다.
 
-- sections에 01, 02, 03, 03-1, 03-2, 03-3, 03-4, 03-5, 04, 05, 06이 모두 있는가
+- sections 객체에 01, 02, 03, 03-1, 03-2, 03-3, 03-4, 03-5, 04, 05, 06 키가 모두 한 번씩 있는가
 - 03, 04, 05, 06이 표로 대체되지 않았는가
 - 01~06 본문 문단 총합이 최소 36문단 이상인가
 - sections의 body 본문만 합쳐 공백 포함 최소 6,000자 이상인가
@@ -504,11 +512,11 @@ sources는 리포트 작성에 참고한 출처 목록이다.
 - flow_diagram.steps가 최소 4개인가
 - takeaways가 정확히 3개인가
 - section_notes가 정확히 2개인가
-- sources가 최소 5개인가
+- sources에 source_1부터 source_6까지 정확히 6개가 있는가
 - quotation.source_type이 출처 유형 설정에 등록되어 있고 실제 출처 형태와 일치하는가
 - quotation.kind가 검증 가능한 직접 인용은 direct_quote, 출처 요약은 paraphrase로 구분되어 있는가
-- quotation에 attribution·source_title·source_url이 모두 있는가
-- quotation.source_url이 Sources에도 포함되어 있는가
+- quotation에 attribution·source_key가 모두 있는가
+- quotation.source_key가 실제 인용 근거가 되는 Sources 키인가
 - category.main·middle과 category.sub·detail이 서로 중복되지 않고 대분류에서 최소 분류로 구체화되는가
 - 전체 분량이 7~9페이지를 만들 만큼 충분한가
 

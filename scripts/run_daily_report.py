@@ -1675,7 +1675,8 @@ def run_api(report_date: str | None = None):
             validation_feedback = str(exc)
             print(
                 "리포트 구조 검증 실패: "
-                f"{validation_feedback} / 전체 JSON을 한 번 다시 생성합니다."
+                f"{validation_feedback} / 오류 내용을 반영해 전체 JSON을 다시 생성합니다. "
+                f"남은 재생성 횟수: {validation_retries - attempt_index}"
             )
             continue
 
