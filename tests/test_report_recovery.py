@@ -108,6 +108,98 @@ class ReportRecoveryTests(unittest.TestCase):
             report_runner.normalize_source_url_for_comparison(quotation_url),
         )
 
+    def test_api_schema_uses_fixed_sections_and_source_reference(self):
+        canonical_schema = report_generator.load_json(
+            report_generator.REPORT_SCHEMA_PATH
+        )["schema"]
+
+        api_schema = report_generator.build_api_response_schema(canonical_schema)
+        properties = api_schema["properties"]
+
+        self.assertEqual("object", properties["sections"]["type"])
+        self.assertEqual(
+            list(report_generator.REQUIRED_SECTION_IDS),
+            properties["sections"]["required"],
+        )
+        self.assertEqual(
+            set(report_generator.REQUIRED_SECTION_IDS),
+            set(properties["sections"]["properties"]),
+        )
+        self.assertEqual("object", properties["sources"]["type"])
+        self.assertEqual(
+            list(report_generator.API_SOURCE_KEYS),
+            properties["sources"]["required"],
+        )
+        quotation = properties["quotation"]
+        self.assertIn("source_key", quotation["required"])
+        self.assertNotIn("source_url", quotation["properties"])
+        self.assertNotIn("source_title", quotation["properties"])
+        self.assertEqual(
+            list(report_generator.API_SOURCE_KEYS),
+            quotation["properties"]["source_key"]["enum"],
+        )
+
+        # API용 변환이 저장 형식의 기준 schema를 변경하면 안 된다.
+        self.assertEqual("array", canonical_schema["properties"]["sections"]["type"])
+        self.assertEqual("array", canonical_schema["properties"]["sources"]["type"])
+
+    def test_api_report_normalization_prevents_duplicate_sections_and_url_mismatch(self):
+        report = self.load_validatable_latest_report()
+        if len(report["sources"]) < 6:
+            report["sources"].append(
+                {
+                    "publisher": "테스트 기관",
+                    "title": "추가 검증 출처",
+                    "url": "https://example.com/additional-validation-source",
+                    "used_for": "API 출처 슬롯 검증",
+                }
+            )
+
+        report["sections"] = {
+            section["id"]: section
+            for section in reversed(report["sections"])
+        }
+        report["sources"] = {
+            source_key: source
+            for source_key, source in zip(
+                report_generator.API_SOURCE_KEYS,
+                report["sources"][:6],
+            )
+        }
+        selected_source = report["sources"]["source_3"]
+        report["quotation"].pop("source_title", None)
+        report["quotation"].pop("source_url", None)
+        report["quotation"]["source_key"] = "source_3"
+
+        normalized = report_generator.normalize_api_report(report)
+
+        self.assertEqual(
+            list(report_generator.REQUIRED_SECTION_IDS),
+            [section["id"] for section in normalized["sections"]],
+        )
+        self.assertEqual(6, len(normalized["sources"]))
+        self.assertEqual(
+            selected_source["title"],
+            normalized["quotation"]["source_title"],
+        )
+        self.assertEqual(
+            selected_source["url"],
+            normalized["quotation"]["source_url"],
+        )
+        self.assertNotIn("source_key", normalized["quotation"])
+        report_runner.validate_report_structure(normalized)
+
+    def test_api_report_normalization_rejects_missing_fixed_section(self):
+        report = self.load_validatable_latest_report()
+        report["sections"] = {
+            section["id"]: section
+            for section in report["sections"]
+            if section["id"] != "06"
+        }
+
+        with self.assertRaisesRegex(ValueError, "고정 섹션이 누락.*06"):
+            report_generator.normalize_api_report(report)
+
     def test_validation_reuses_exact_source_url_after_normalized_match(self):
         report = self.load_validatable_latest_report()
         exact_source_url = report["sources"][0]["url"]
@@ -291,6 +383,60 @@ class ReportRecoveryTests(unittest.TestCase):
                 report_runner.run_api()
 
         publish_mock.assert_not_called()
+
+    def test_validation_retry_passes_exact_error_feedback_and_then_publishes(self):
+        topic = {
+            "topic": "구조 복구 피드백 테스트",
+            "main_category": "기술·공학",
+            "mid_category": "자동화",
+            "sub_category": "검증",
+            "detail_category": "오류 피드백",
+        }
+        first_report = self.load_validatable_latest_report()
+        second_report = self.load_validatable_latest_report()
+        first_report["title"] = topic["topic"]
+        second_report["title"] = topic["topic"]
+        validation_error = "필수 섹션이 누락되었습니다: 06"
+
+        with (
+            patch.object(report_runner, "load_json", return_value={}),
+            patch.object(report_runner, "select_topic", return_value=topic),
+            patch.object(
+                report_generator,
+                "generate_report",
+                side_effect=[first_report, second_report],
+            ) as generate_mock,
+            patch.object(
+                report_runner,
+                "validate_report_structure",
+                side_effect=[ValueError(validation_error), None],
+            ),
+            patch.object(
+                report_runner,
+                "save_render_publish_report",
+            ) as publish_mock,
+            patch.object(
+                report_runner,
+                "record_generation_timeline",
+                return_value={},
+            ),
+            patch.dict(
+                os.environ,
+                {
+                    "REPORT_SKIP_EXISTING_DATE": "0",
+                    "REPORT_VALIDATION_RETRIES": "2",
+                    "REPORT_DATE": "",
+                },
+            ),
+        ):
+            report_runner.run_api()
+
+        self.assertEqual("", generate_mock.call_args_list[0].kwargs["validation_feedback"])
+        self.assertEqual(
+            validation_error,
+            generate_mock.call_args_list[1].kwargs["validation_feedback"],
+        )
+        publish_mock.assert_called_once()
 
     def test_mock_mode_accepts_recovery_date_without_publishing_catalog(self):
         topic = {"topic": "mock", "main_category": "기술·공학"}
