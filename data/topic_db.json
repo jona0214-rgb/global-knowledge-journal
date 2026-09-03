@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-09-03",
+  "updated_at": "2026-09-04",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -425,6 +425,28 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260903_history_of_price_tags_an_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260903_history_of_price_tags_an_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "date": "2026-09-04",
+      "title": "0의 탄생: 아무것도 없음은 어떻게 수가 되었나",
+      "main_category": "과학·수학",
+      "mid_category": "수학사",
+      "sub_category": "수 개념의 발전",
+      "detail_category": "영의 표기와 연산",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "0",
+        "숫자 개념",
+        "인도 수학",
+        "중세 수학",
+        "위치법",
+        "수학사",
+        "수 체계",
+        "연산"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260904_birth_of_zero_how_nothin_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260904_birth_of_zero_how_nothin_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -441,15 +463,15 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "경제·경영",
-    "next_main_category": "과학·수학",
-    "next_index": 3,
+    "last_main_category": "과학·수학",
+    "next_main_category": "기술·공학",
+    "next_index": 4,
     "completed_cycles": 2,
     "published_counts": {
       "인문·철학": 3,
       "사회·정치·법": 2,
       "경제·경영": 2,
-      "과학·수학": 1,
+      "과학·수학": 2,
       "기술·공학": 2,
       "생명·건강": 1,
       "자연·환경·지리": 1,
@@ -458,7 +480,6 @@
       "언어·미디어·지식": 3
     },
     "recent_main_categories": [
-      "과학·수학",
       "기술·공학",
       "생명·건강",
       "자연·환경·지리",
@@ -467,7 +488,8 @@
       "언어·미디어·지식",
       "인문·철학",
       "사회·정치·법",
-      "경제·경영"
+      "경제·경영",
+      "과학·수학"
     ]
   },
   "candidate_pool": [
@@ -758,7 +780,7 @@
       "detail_category": "영의 표기와 연산",
       "priority": 0.8,
       "main_category": "과학·수학",
-      "status": "candidate",
+      "status": "used",
       "source": "taxonomy_seed"
     },
     {
