@@ -1,6 +1,21 @@
 {
-  "last_updated": "2026-09-02T10:04:01.507106+09:00",
+  "last_updated": "2026-09-03T10:14:33.656074+09:00",
   "reports": [
+    {
+      "date": "2026-09-03",
+      "title": "가격표의 역사: 흥정은 어떻게 고정 가격으로 바뀌었나",
+      "subtitle": "시장 거래의 상징인 흥정에서 근대적 고정 가격 체제로의 전환 과정을 살펴본다",
+      "main_category": "경제·경영",
+      "mid_category": "소비경제",
+      "sub_category": "가격 제도의 변화",
+      "detail_category": "고정 가격과 근대 소매업",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20260903_history_of_price_tags_an_Report.html",
+      "pdf_path": "outputs/20260903_history_of_price_tags_an_Report.pdf",
+      "html_url": "outputs/20260903_history_of_price_tags_an_Report.html",
+      "pdf_url": "outputs/20260903_history_of_price_tags_an_Report.pdf",
+      "status": "published_api"
+    },
     {
       "date": "2026-09-02",
       "title": "인구조사의 정치학: 국가는 왜 사람을 세고 분류하는가",

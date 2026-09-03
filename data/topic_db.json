@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-09-02",
+  "updated_at": "2026-09-03",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -403,6 +403,28 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260902_population_survey_politi_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260902_population_survey_politi_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "date": "2026-09-03",
+      "title": "가격표의 역사: 흥정은 어떻게 고정 가격으로 바뀌었나",
+      "main_category": "경제·경영",
+      "mid_category": "소비경제",
+      "sub_category": "가격 제도의 변화",
+      "detail_category": "고정 가격과 근대 소매업",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "가격표",
+        "흥정",
+        "고정 가격",
+        "근대 소매업",
+        "가격 제도",
+        "시장 변화",
+        "소비자 행동",
+        "상업 역사"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260903_history_of_price_tags_an_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260903_history_of_price_tags_an_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -419,14 +441,14 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "사회·정치·법",
-    "next_main_category": "경제·경영",
-    "next_index": 2,
+    "last_main_category": "경제·경영",
+    "next_main_category": "과학·수학",
+    "next_index": 3,
     "completed_cycles": 2,
     "published_counts": {
       "인문·철학": 3,
       "사회·정치·법": 2,
-      "경제·경영": 1,
+      "경제·경영": 2,
       "과학·수학": 1,
       "기술·공학": 2,
       "생명·건강": 1,
@@ -436,7 +458,6 @@
       "언어·미디어·지식": 3
     },
     "recent_main_categories": [
-      "경제·경영",
       "과학·수학",
       "기술·공학",
       "생명·건강",
@@ -445,7 +466,8 @@
       "예술·디자인",
       "언어·미디어·지식",
       "인문·철학",
-      "사회·정치·법"
+      "사회·정치·법",
+      "경제·경영"
     ]
   },
   "candidate_pool": [
@@ -706,7 +728,7 @@
       "detail_category": "고정 가격과 근대 소매업",
       "priority": 0.79,
       "main_category": "경제·경영",
-      "status": "candidate",
+      "status": "used",
       "source": "taxonomy_seed"
     },
     {
