@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-09-04",
+  "updated_at": "2026-09-05",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -447,6 +447,28 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260904_birth_of_zero_how_nothin_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260904_birth_of_zero_how_nothin_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "date": "2026-09-05",
+      "title": "바닷물을 식수로: 담수화 기술은 물 부족의 해답이 될 수 있는가",
+      "main_category": "기술·공학",
+      "mid_category": "물환경공학",
+      "sub_category": "해수 담수화",
+      "detail_category": "역삼투 공정과 에너지",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "해수 담수화",
+        "역삼투",
+        "에너지 효율",
+        "물 부족",
+        "담수화 플랜트",
+        "해양 기술",
+        "지속가능한 물 관리",
+        "환경 영향"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260905_seawater_to_drinking_wat_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260905_seawater_to_drinking_wat_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -463,16 +485,16 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "과학·수학",
-    "next_main_category": "기술·공학",
-    "next_index": 4,
+    "last_main_category": "기술·공학",
+    "next_main_category": "생명·건강",
+    "next_index": 5,
     "completed_cycles": 2,
     "published_counts": {
       "인문·철학": 3,
       "사회·정치·법": 2,
       "경제·경영": 2,
       "과학·수학": 2,
-      "기술·공학": 2,
+      "기술·공학": 3,
       "생명·건강": 1,
       "자연·환경·지리": 1,
       "역사·문화": 3,
@@ -480,7 +502,6 @@
       "언어·미디어·지식": 3
     },
     "recent_main_categories": [
-      "기술·공학",
       "생명·건강",
       "자연·환경·지리",
       "역사·문화",
@@ -489,7 +510,8 @@
       "인문·철학",
       "사회·정치·법",
       "경제·경영",
-      "과학·수학"
+      "과학·수학",
+      "기술·공학"
     ]
   },
   "candidate_pool": [
@@ -638,7 +660,7 @@
       "main_category": "기술·공학",
       "mid_category": "물환경공학",
       "priority": 0.8,
-      "status": "candidate",
+      "status": "used",
       "sub_category": "해수 담수화",
       "detail_category": "역삼투 공정과 에너지",
       "source": "legacy_migration"
