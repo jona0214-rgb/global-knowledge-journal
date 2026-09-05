@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-09-06",
+    "title": "백신의 기억: 면역계는 어떻게 미래의 감염을 준비하는가",
+    "status": "published_api",
+    "event_name": "schedule",
+    "schedule_cron": "0 20 * * *",
+    "scheduled_for_kst": "2026-09-06T05:00:00+09:00",
+    "workflow_started_at": "2026-09-05T22:00:27Z",
+    "generation_started_at": "2026-09-05T22:00:59.354858Z",
+    "generation_completed_at": "2026-09-05T22:01:57.492746Z",
+    "catalog_updated_at": "2026-09-05T22:01:58.827761Z",
+    "scheduler_delay_seconds": 7227,
+    "setup_duration_seconds": 32,
+    "generation_duration_seconds": 59,
+    "validation_attempts": 1,
+    "run_id": "33994650015",
+    "run_attempt": "1",
+    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/33994650015",
+    "source_sha": "3e626d7e14cd1ef80080d8e8bc3dd10707a1c30e"
+  },
+  {
     "date": "2026-09-05",
     "title": "바닷물을 식수로: 담수화 기술은 물 부족의 해답이 될 수 있는가",
     "status": "published_api",

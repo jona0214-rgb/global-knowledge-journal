@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-09-06",
+    "title": "백신의 기억: 면역계는 어떻게 미래의 감염을 준비하는가",
+    "subtitle": "면역 기억의 메커니즘과 백신의 역할 이해하기",
+    "main_category": "생명·건강",
+    "mid_category": "면역학",
+    "sub_category": "적응 면역",
+    "detail_category": "면역 기억의 형성",
+    "taxonomy_version": "2.0",
+    "html_path": "outputs/20260906_vaccine_memory_how_the_i_Report.html",
+    "pdf_path": "outputs/20260906_vaccine_memory_how_the_i_Report.pdf",
+    "html_url": "outputs/20260906_vaccine_memory_how_the_i_Report.html",
+    "pdf_url": "outputs/20260906_vaccine_memory_how_the_i_Report.pdf",
+    "status": "published_api"
+  },
+  {
     "date": "2026-09-05",
     "title": "바닷물을 식수로: 담수화 기술은 물 부족의 해답이 될 수 있는가",
     "subtitle": "역삼투 공정 중심으로 본 해수 담수화의 가능성 및 한계",
