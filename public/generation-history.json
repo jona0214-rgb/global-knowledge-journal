@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-09-08",
+    "title": "냉장고의 사회사: 차가운 상자는 어떻게 일상을 바꾸었나",
+    "status": "published_api",
+    "event_name": "schedule",
+    "schedule_cron": "0 20 * * *",
+    "scheduled_for_kst": "2026-09-08T05:00:00+09:00",
+    "workflow_started_at": "2026-09-07T22:43:44Z",
+    "generation_started_at": "2026-09-07T22:44:18.140440Z",
+    "generation_completed_at": "2026-09-07T22:45:20.635401Z",
+    "catalog_updated_at": "2026-09-07T22:45:21.899621Z",
+    "scheduler_delay_seconds": 9824,
+    "setup_duration_seconds": 34,
+    "generation_duration_seconds": 64,
+    "validation_attempts": 1,
+    "run_id": "34167642821",
+    "run_attempt": "1",
+    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/34167642821",
+    "source_sha": "068f3d0009a555d2ba71a634f6ae8f7f54fdec4f"
+  },
+  {
     "date": "2026-09-07",
     "title": "몬순의 지리학: 계절풍은 어떻게 문명과 농업을 움직였나",
     "status": "published_api",

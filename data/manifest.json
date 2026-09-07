@@ -1,6 +1,21 @@
 {
-  "last_updated": "2026-09-07T10:01:24.217929+09:00",
+  "last_updated": "2026-09-08T07:45:21.899073+09:00",
   "reports": [
+    {
+      "date": "2026-09-08",
+      "title": "냉장고의 사회사: 차가운 상자는 어떻게 일상을 바꾸었나",
+      "subtitle": "냉장 기술의 발전과 가전제품이 일상문화에 미친 영향 탐구",
+      "main_category": "역사·문화",
+      "mid_category": "생활문화사",
+      "sub_category": "가전과 식생활",
+      "detail_category": "냉장 기술과 가정의 변화",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20260908_history_of_refrigerator_Report.html",
+      "pdf_path": "outputs/20260908_history_of_refrigerator_Report.pdf",
+      "html_url": "outputs/20260908_history_of_refrigerator_Report.html",
+      "pdf_url": "outputs/20260908_history_of_refrigerator_Report.pdf",
+      "status": "published_api"
+    },
     {
       "date": "2026-09-07",
       "title": "몬순의 지리학: 계절풍은 어떻게 문명과 농업을 움직였나",
