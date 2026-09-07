@@ -1,6 +1,21 @@
 {
-  "last_updated": "2026-09-06T07:01:58.827238+09:00",
+  "last_updated": "2026-09-07T10:01:24.217929+09:00",
   "reports": [
+    {
+      "date": "2026-09-07",
+      "title": "몬순의 지리학: 계절풍은 어떻게 문명과 농업을 움직였나",
+      "subtitle": "계절풍의 작동 원리와 인류 문명에 미친 영향, 그리고 현대적 의미를 짚다",
+      "main_category": "자연·환경·지리",
+      "mid_category": "기후지리",
+      "sub_category": "계절풍 기후",
+      "detail_category": "몬순과 인간 생활",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20260907_monsun_geography_how_sea_Report.html",
+      "pdf_path": "outputs/20260907_monsun_geography_how_sea_Report.pdf",
+      "html_url": "outputs/20260907_monsun_geography_how_sea_Report.html",
+      "pdf_url": "outputs/20260907_monsun_geography_how_sea_Report.pdf",
+      "status": "published_api"
+    },
     {
       "date": "2026-09-06",
       "title": "백신의 기억: 면역계는 어떻게 미래의 감염을 준비하는가",

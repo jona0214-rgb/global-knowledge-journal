@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-09-06",
+  "updated_at": "2026-09-07",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -491,6 +491,28 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260906_vaccine_memory_how_the_i_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260906_vaccine_memory_how_the_i_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "date": "2026-09-07",
+      "title": "몬순의 지리학: 계절풍은 어떻게 문명과 농업을 움직였나",
+      "main_category": "자연·환경·지리",
+      "mid_category": "기후지리",
+      "sub_category": "계절풍 기후",
+      "detail_category": "몬순과 인간 생활",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "몬순",
+        "계절풍",
+        "농업",
+        "문명",
+        "기후변화",
+        "지리적 특성",
+        "문화적 영향",
+        "자연환경"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260907_monsun_geography_how_sea_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260907_monsun_geography_how_sea_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -507,9 +529,9 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "생명·건강",
-    "next_main_category": "자연·환경·지리",
-    "next_index": 6,
+    "last_main_category": "자연·환경·지리",
+    "next_main_category": "역사·문화",
+    "next_index": 7,
     "completed_cycles": 2,
     "published_counts": {
       "인문·철학": 3,
@@ -518,13 +540,12 @@
       "과학·수학": 2,
       "기술·공학": 3,
       "생명·건강": 2,
-      "자연·환경·지리": 1,
+      "자연·환경·지리": 2,
       "역사·문화": 3,
       "예술·디자인": 2,
       "언어·미디어·지식": 3
     },
     "recent_main_categories": [
-      "자연·환경·지리",
       "역사·문화",
       "예술·디자인",
       "언어·미디어·지식",
@@ -533,7 +554,8 @@
       "경제·경영",
       "과학·수학",
       "기술·공학",
-      "생명·건강"
+      "생명·건강",
+      "자연·환경·지리"
     ]
   },
   "candidate_pool": [
@@ -924,7 +946,7 @@
       "detail_category": "몬순과 인간 생활",
       "priority": 0.8,
       "main_category": "자연·환경·지리",
-      "status": "candidate",
+      "status": "used",
       "source": "taxonomy_seed"
     },
     {
