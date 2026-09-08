@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-09-08",
+  "updated_at": "2026-09-09",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -535,6 +535,28 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260908_history_of_refrigerator_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260908_history_of_refrigerator_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "date": "2026-09-09",
+      "title": "미술관의 빛: 조명은 어떻게 작품을 다시 보이게 하는가",
+      "main_category": "예술·디자인",
+      "mid_category": "전시디자인",
+      "sub_category": "조명과 관람 경험",
+      "detail_category": "작품 보존과 시각 연출",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "미술관 조명",
+        "작품 보존",
+        "전시디자인",
+        "시각 연출",
+        "관람 경험",
+        "LED 조명",
+        "빛 공해",
+        "미술관 환경"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260909_museum_light_how_lightin_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260909_museum_light_how_lightin_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -551,9 +573,9 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "역사·문화",
-    "next_main_category": "예술·디자인",
-    "next_index": 8,
+    "last_main_category": "예술·디자인",
+    "next_main_category": "언어·미디어·지식",
+    "next_index": 9,
     "completed_cycles": 2,
     "published_counts": {
       "인문·철학": 3,
@@ -564,11 +586,10 @@
       "생명·건강": 2,
       "자연·환경·지리": 2,
       "역사·문화": 4,
-      "예술·디자인": 2,
+      "예술·디자인": 3,
       "언어·미디어·지식": 3
     },
     "recent_main_categories": [
-      "예술·디자인",
       "언어·미디어·지식",
       "인문·철학",
       "사회·정치·법",
@@ -577,7 +598,8 @@
       "기술·공학",
       "생명·건강",
       "자연·환경·지리",
-      "역사·문화"
+      "역사·문화",
+      "예술·디자인"
     ]
   },
   "candidate_pool": [
@@ -1038,7 +1060,7 @@
       "detail_category": "작품 보존과 시각 연출",
       "priority": 0.79,
       "main_category": "예술·디자인",
-      "status": "candidate",
+      "status": "used",
       "source": "taxonomy_seed"
     },
     {

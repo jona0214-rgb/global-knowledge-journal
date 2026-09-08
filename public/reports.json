@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-09-09",
+    "title": "미술관의 빛: 조명은 어떻게 작품을 다시 보이게 하는가",
+    "subtitle": "전시 공간에서 조명이 예술 작품의 감상과 보존에 어떻게 기여하는가",
+    "main_category": "예술·디자인",
+    "mid_category": "전시디자인",
+    "sub_category": "조명과 관람 경험",
+    "detail_category": "작품 보존과 시각 연출",
+    "taxonomy_version": "2.0",
+    "html_path": "outputs/20260909_museum_light_how_lightin_Report.html",
+    "pdf_path": "outputs/20260909_museum_light_how_lightin_Report.pdf",
+    "html_url": "outputs/20260909_museum_light_how_lightin_Report.html",
+    "pdf_url": "outputs/20260909_museum_light_how_lightin_Report.pdf",
+    "status": "published_api"
+  },
+  {
     "date": "2026-09-08",
     "title": "냉장고의 사회사: 차가운 상자는 어떻게 일상을 바꾸었나",
     "subtitle": "냉장 기술의 발전과 가전제품이 일상문화에 미친 영향 탐구",
