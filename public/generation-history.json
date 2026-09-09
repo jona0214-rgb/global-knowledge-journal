@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-09-10",
+    "title": "라디오의 목소리: 보이지 않는 매체는 어떻게 대중을 만들었나",
+    "status": "published_api",
+    "event_name": "schedule",
+    "schedule_cron": "0 20 * * *",
+    "scheduled_for_kst": "2026-09-10T05:00:00+09:00",
+    "workflow_started_at": "2026-09-09T22:25:30Z",
+    "generation_started_at": "2026-09-09T22:26:14.584907Z",
+    "generation_completed_at": "2026-09-09T22:27:41.184647Z",
+    "catalog_updated_at": "2026-09-09T22:27:42.590653Z",
+    "scheduler_delay_seconds": 8730,
+    "setup_duration_seconds": 45,
+    "generation_duration_seconds": 88,
+    "validation_attempts": 1,
+    "run_id": "34412134742",
+    "run_attempt": "1",
+    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/34412134742",
+    "source_sha": "779281cf488f167816d636f6dcbb4ea1d470be01"
+  },
+  {
     "date": "2026-09-09",
     "title": "미술관의 빛: 조명은 어떻게 작품을 다시 보이게 하는가",
     "status": "published_api",

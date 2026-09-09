@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-09-10",
+    "title": "라디오의 목소리: 보이지 않는 매체는 어떻게 대중을 만들었나",
+    "subtitle": "음성으로 소통하며 현실의 경계를 허문 라디오 매체의 역사와 사회적 영향",
+    "main_category": "언어·미디어·지식",
+    "mid_category": "방송미디어",
+    "sub_category": "라디오 문화",
+    "detail_category": "음성 방송과 대중 형성",
+    "taxonomy_version": "2.0",
+    "html_path": "outputs/20260910_radio_no_voice_how_invis_Report.html",
+    "pdf_path": "outputs/20260910_radio_no_voice_how_invis_Report.pdf",
+    "html_url": "outputs/20260910_radio_no_voice_how_invis_Report.html",
+    "pdf_url": "outputs/20260910_radio_no_voice_how_invis_Report.pdf",
+    "status": "published_api"
+  },
+  {
     "date": "2026-09-09",
     "title": "미술관의 빛: 조명은 어떻게 작품을 다시 보이게 하는가",
     "subtitle": "전시 공간에서 조명이 예술 작품의 감상과 보존에 어떻게 기여하는가",
