@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-09-10",
+  "updated_at": "2026-09-11",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -579,6 +579,28 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260910_radio_no_voice_how_invis_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260910_radio_no_voice_how_invis_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "date": "2026-09-11",
+      "title": "나는 누구인가: 기억은 정체성을 얼마나 보존하는가",
+      "main_category": "인문·철학",
+      "mid_category": "심리철학",
+      "sub_category": "개인 동일성",
+      "detail_category": "기억과 자아의 연속성",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "개인 동일성",
+        "기억",
+        "자아 연속성",
+        "심리철학",
+        "정체성",
+        "기억 이론",
+        "철학적 탐구",
+        "기억과 자아"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260911_naneun_nuguingga_gieog_e_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260911_naneun_nuguingga_gieog_e_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -595,12 +617,12 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "언어·미디어·지식",
-    "next_main_category": "인문·철학",
-    "next_index": 0,
+    "last_main_category": "인문·철학",
+    "next_main_category": "사회·정치·법",
+    "next_index": 1,
     "completed_cycles": 3,
     "published_counts": {
-      "인문·철학": 3,
+      "인문·철학": 4,
       "사회·정치·법": 2,
       "경제·경영": 2,
       "과학·수학": 2,
@@ -612,7 +634,6 @@
       "언어·미디어·지식": 4
     },
     "recent_main_categories": [
-      "인문·철학",
       "사회·정치·법",
       "경제·경영",
       "과학·수학",
@@ -621,7 +642,8 @@
       "자연·환경·지리",
       "역사·문화",
       "예술·디자인",
-      "언어·미디어·지식"
+      "언어·미디어·지식",
+      "인문·철학"
     ]
   },
   "candidate_pool": [
@@ -822,7 +844,7 @@
       "detail_category": "기억과 자아의 연속성",
       "priority": 0.77,
       "main_category": "인문·철학",
-      "status": "candidate",
+      "status": "used",
       "source": "taxonomy_seed"
     },
     {

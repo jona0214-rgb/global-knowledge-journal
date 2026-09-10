@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-09-11",
+    "title": "나는 누구인가: 기억은 정체성을 얼마나 보존하는가",
+    "subtitle": "기억과 자아의 연속성에 대한 철학적 탐색",
+    "main_category": "인문·철학",
+    "mid_category": "심리철학",
+    "sub_category": "개인 동일성",
+    "detail_category": "기억과 자아의 연속성",
+    "taxonomy_version": "2.0",
+    "html_path": "outputs/20260911_naneun_nuguingga_gieog_e_Report.html",
+    "pdf_path": "outputs/20260911_naneun_nuguingga_gieog_e_Report.pdf",
+    "html_url": "outputs/20260911_naneun_nuguingga_gieog_e_Report.html",
+    "pdf_url": "outputs/20260911_naneun_nuguingga_gieog_e_Report.pdf",
+    "status": "published_api"
+  },
+  {
     "date": "2026-09-10",
     "title": "라디오의 목소리: 보이지 않는 매체는 어떻게 대중을 만들었나",
     "subtitle": "음성으로 소통하며 현실의 경계를 허문 라디오 매체의 역사와 사회적 영향",
