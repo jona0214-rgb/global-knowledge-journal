@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-09-13",
+    "title": "회계의 발명: 장부는 어떻게 기업의 언어가 되었나",
+    "subtitle": "복식부기의 역사와 확산을 통해 본 기업 경영의 기반",
+    "main_category": "경제·경영",
+    "mid_category": "기업경영",
+    "sub_category": "회계와 조직 관리",
+    "detail_category": "복식부기의 확산",
+    "taxonomy_version": "2.0",
+    "html_path": "outputs/20260913_invention_of_accounting__Report.html",
+    "pdf_path": "outputs/20260913_invention_of_accounting__Report.pdf",
+    "html_url": "outputs/20260913_invention_of_accounting__Report.html",
+    "pdf_url": "outputs/20260913_invention_of_accounting__Report.pdf",
+    "status": "published_api"
+  },
+  {
     "date": "2026-09-12",
     "title": "배심원의 판단: 시민은 어떻게 법의 결론에 참여하는가",
     "subtitle": "배심제도 속에서 시민 배심원들이 법적 결론 도출에 어떻게 관여하는지 탐구한다",
