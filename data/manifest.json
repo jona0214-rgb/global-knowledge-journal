@@ -1,6 +1,21 @@
 {
-  "last_updated": "2026-09-14T10:07:30.924463+09:00",
+  "last_updated": "2026-09-15T08:06:49.644461+09:00",
   "reports": [
+    {
+      "date": "2026-09-15",
+      "title": "전력망의 균형: 전기는 어떻게 매 순간 수요를 따라가는가",
+      "subtitle": "전력 시스템 내 수요-공급 동기화의 이해와 미래 과제",
+      "main_category": "기술·공학",
+      "mid_category": "전기공학",
+      "sub_category": "전력 시스템",
+      "detail_category": "수요와 공급의 실시간 균형",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20260915_jeollyeongmang_balancing_Report.html",
+      "pdf_path": "outputs/20260915_jeollyeongmang_balancing_Report.pdf",
+      "html_url": "outputs/20260915_jeollyeongmang_balancing_Report.html",
+      "pdf_url": "outputs/20260915_jeollyeongmang_balancing_Report.pdf",
+      "status": "published_api"
+    },
     {
       "date": "2026-09-14",
       "title": "주기율표의 질서: 원소는 어떻게 자리를 찾아갔나",

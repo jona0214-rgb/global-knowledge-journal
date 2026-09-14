@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-09-14",
+  "updated_at": "2026-09-15",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -667,6 +667,28 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260914_jukiyurpyoui_jillye_woon_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260914_jukiyurpyoui_jillye_woon_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "date": "2026-09-15",
+      "title": "전력망의 균형: 전기는 어떻게 매 순간 수요를 따라가는가",
+      "main_category": "기술·공학",
+      "mid_category": "전기공학",
+      "sub_category": "전력 시스템",
+      "detail_category": "수요와 공급의 실시간 균형",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "전력망",
+        "수요와 공급",
+        "실시간 균형",
+        "전력 시스템",
+        "스마트 그리드",
+        "주파수 조정",
+        "에너지 저장",
+        "재생 에너지"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260915_jeollyeongmang_balancing_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260915_jeollyeongmang_balancing_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -683,16 +705,16 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "과학·수학",
-    "next_main_category": "기술·공학",
-    "next_index": 4,
+    "last_main_category": "기술·공학",
+    "next_main_category": "생명·건강",
+    "next_index": 5,
     "completed_cycles": 3,
     "published_counts": {
       "인문·철학": 4,
       "사회·정치·법": 3,
       "경제·경영": 3,
       "과학·수학": 3,
-      "기술·공학": 3,
+      "기술·공학": 4,
       "생명·건강": 2,
       "자연·환경·지리": 2,
       "역사·문화": 4,
@@ -700,7 +722,6 @@
       "언어·미디어·지식": 4
     },
     "recent_main_categories": [
-      "기술·공학",
       "생명·건강",
       "자연·환경·지리",
       "역사·문화",
@@ -709,7 +730,8 @@
       "인문·철학",
       "사회·정치·법",
       "경제·경영",
-      "과학·수학"
+      "과학·수학",
+      "기술·공학"
     ]
   },
   "candidate_pool": [
@@ -1040,7 +1062,7 @@
       "detail_category": "수요와 공급의 실시간 균형",
       "priority": 0.79,
       "main_category": "기술·공학",
-      "status": "candidate",
+      "status": "used",
       "source": "taxonomy_seed"
     },
     {
