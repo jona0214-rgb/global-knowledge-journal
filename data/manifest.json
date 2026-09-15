@@ -1,6 +1,21 @@
 {
-  "last_updated": "2026-09-15T08:06:49.644461+09:00",
+  "last_updated": "2026-09-16T07:51:37.403427+09:00",
   "reports": [
+    {
+      "date": "2026-09-16",
+      "title": "장내 미생물의 생태계: 몸속 공동체는 건강에 무엇을 하는가",
+      "subtitle": "복잡한 장내 미생물이 인체 건강에 미치는 영향을 해석하다",
+      "main_category": "생명·건강",
+      "mid_category": "미생물학",
+      "sub_category": "인체 마이크로바이옴",
+      "detail_category": "장내 균총과 대사",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20260916_gut_microbiome_ecosystem_Report.html",
+      "pdf_path": "outputs/20260916_gut_microbiome_ecosystem_Report.pdf",
+      "html_url": "outputs/20260916_gut_microbiome_ecosystem_Report.html",
+      "pdf_url": "outputs/20260916_gut_microbiome_ecosystem_Report.pdf",
+      "status": "published_api"
+    },
     {
       "date": "2026-09-15",
       "title": "전력망의 균형: 전기는 어떻게 매 순간 수요를 따라가는가",
