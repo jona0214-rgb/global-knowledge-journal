@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-09-16",
+  "updated_at": "2026-09-17",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -711,6 +711,28 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260916_gut_microbiome_ecosystem_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260916_gut_microbiome_ecosystem_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "date": "2026-09-17",
+      "title": "강의 기억: 하천은 왜 굽이치고 길을 바꾸는가",
+      "main_category": "자연·환경·지리",
+      "mid_category": "지형학",
+      "sub_category": "하천 지형",
+      "detail_category": "사행천과 유로 변화",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "하천",
+        "사행천",
+        "유로 변화",
+        "침식과 퇴적",
+        "자연 재해",
+        "지형 변동",
+        "수문학",
+        "환경"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260917_river_memory_meandering__Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260917_river_memory_meandering__Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -727,9 +749,9 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "생명·건강",
-    "next_main_category": "자연·환경·지리",
-    "next_index": 6,
+    "last_main_category": "자연·환경·지리",
+    "next_main_category": "역사·문화",
+    "next_index": 7,
     "completed_cycles": 3,
     "published_counts": {
       "인문·철학": 4,
@@ -738,13 +760,12 @@
       "과학·수학": 3,
       "기술·공학": 4,
       "생명·건강": 3,
-      "자연·환경·지리": 2,
+      "자연·환경·지리": 3,
       "역사·문화": 4,
       "예술·디자인": 3,
       "언어·미디어·지식": 4
     },
     "recent_main_categories": [
-      "자연·환경·지리",
       "역사·문화",
       "예술·디자인",
       "언어·미디어·지식",
@@ -753,7 +774,8 @@
       "경제·경영",
       "과학·수학",
       "기술·공학",
-      "생명·건강"
+      "생명·건강",
+      "자연·환경·지리"
     ]
   },
   "candidate_pool": [
@@ -1154,7 +1176,7 @@
       "detail_category": "사행천과 유로 변화",
       "priority": 0.79,
       "main_category": "자연·환경·지리",
-      "status": "candidate",
+      "status": "used",
       "source": "taxonomy_seed"
     },
     {
