@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-09-17",
+  "updated_at": "2026-09-18",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -733,6 +733,28 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260917_river_memory_meandering__Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260917_river_memory_meandering__Report.pdf",
       "status": "published_api"
+    },
+    {
+      "date": "2026-09-18",
+      "title": "달력의 역사: 인간은 어떻게 시간을 나누고 약속했나",
+      "main_category": "역사·문화",
+      "mid_category": "시간문화",
+      "sub_category": "달력과 역법",
+      "detail_category": "시간 단위의 사회적 합의",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "달력",
+        "역법",
+        "시간 단위",
+        "태양력",
+        "음력",
+        "그레고리력",
+        "사회적 합의",
+        "시간 문화"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260918_history_of_calendars_how_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260918_history_of_calendars_how_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -749,9 +771,9 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "자연·환경·지리",
-    "next_main_category": "역사·문화",
-    "next_index": 7,
+    "last_main_category": "역사·문화",
+    "next_main_category": "예술·디자인",
+    "next_index": 8,
     "completed_cycles": 3,
     "published_counts": {
       "인문·철학": 4,
@@ -761,12 +783,11 @@
       "기술·공학": 4,
       "생명·건강": 3,
       "자연·환경·지리": 3,
-      "역사·문화": 4,
+      "역사·문화": 5,
       "예술·디자인": 3,
       "언어·미디어·지식": 4
     },
     "recent_main_categories": [
-      "역사·문화",
       "예술·디자인",
       "언어·미디어·지식",
       "인문·철학",
@@ -775,7 +796,8 @@
       "과학·수학",
       "기술·공학",
       "생명·건강",
-      "자연·환경·지리"
+      "자연·환경·지리",
+      "역사·문화"
     ]
   },
   "candidate_pool": [
@@ -854,7 +876,7 @@
       "main_category": "역사·문화",
       "mid_category": "시간문화",
       "priority": 0.81,
-      "status": "candidate",
+      "status": "used",
       "sub_category": "달력과 역법",
       "detail_category": "시간 단위의 사회적 합의",
       "source": "legacy_migration"

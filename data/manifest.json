@@ -1,6 +1,21 @@
 {
-  "last_updated": "2026-09-17T07:50:32.489190+09:00",
+  "last_updated": "2026-09-18T07:48:36.868542+09:00",
   "reports": [
+    {
+      "date": "2026-09-18",
+      "title": "달력의 역사: 인간은 어떻게 시간을 나누고 약속했나",
+      "subtitle": "시간을 사회적으로 나누고 관리하는 달력과 역법의 여정",
+      "main_category": "역사·문화",
+      "mid_category": "시간문화",
+      "sub_category": "달력과 역법",
+      "detail_category": "시간 단위의 사회적 합의",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20260918_history_of_calendars_how_Report.html",
+      "pdf_path": "outputs/20260918_history_of_calendars_how_Report.pdf",
+      "html_url": "outputs/20260918_history_of_calendars_how_Report.html",
+      "pdf_url": "outputs/20260918_history_of_calendars_how_Report.pdf",
+      "status": "published_api"
+    },
     {
       "date": "2026-09-17",
       "title": "강의 기억: 하천은 왜 굽이치고 길을 바꾸는가",
