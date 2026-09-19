@@ -1,6 +1,21 @@
 {
-  "last_updated": "2026-09-19T10:12:53.932554+09:00",
+  "last_updated": "2026-09-20T07:18:21.827274+09:00",
   "reports": [
+    {
+      "date": "2026-09-20",
+      "title": "유튜브 알고리즘의 구조와 사회적 영향: 정보 편향과 공론장의 변화",
+      "subtitle": "유튜브 추천 알고리즘이 어떻게 정보 소비를 재편하고 공론장을 변화시키는가",
+      "main_category": "언어·미디어·지식",
+      "mid_category": "미디어와 지식분류",
+      "sub_category": "디지털 미디어 분석",
+      "detail_category": "알고리즘과 대중 인식",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20260920_youtube_algorithm_struct_Report.html",
+      "pdf_path": "outputs/20260920_youtube_algorithm_struct_Report.pdf",
+      "html_url": "outputs/20260920_youtube_algorithm_struct_Report.html",
+      "pdf_url": "outputs/20260920_youtube_algorithm_struct_Report.pdf",
+      "status": "published_api"
+    },
     {
       "date": "2026-09-19",
       "title": "사진의 프레임: 카메라는 어떻게 현실을 선택하는가",

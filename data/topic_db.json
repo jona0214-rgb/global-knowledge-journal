@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-09-19",
+  "updated_at": "2026-09-20",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -777,6 +777,28 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260919_photoframe_how_camera_se_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260919_photoframe_how_camera_se_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "date": "2026-09-20",
+      "title": "유튜브 알고리즘의 구조와 사회적 영향: 정보 편향과 공론장의 변화",
+      "main_category": "언어·미디어·지식",
+      "mid_category": "미디어와 지식분류",
+      "sub_category": "디지털 미디어 분석",
+      "detail_category": "알고리즘과 대중 인식",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "유튜브 알고리즘",
+        "추천 시스템",
+        "정보 편향",
+        "공론장",
+        "소셜 미디어",
+        "디지털 민주주의",
+        "인공 지능",
+        "미디어 윤리"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260920_youtube_algorithm_struct_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260920_youtube_algorithm_struct_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -793,10 +815,10 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "예술·디자인",
-    "next_main_category": "언어·미디어·지식",
-    "next_index": 9,
-    "completed_cycles": 3,
+    "last_main_category": "언어·미디어·지식",
+    "next_main_category": "인문·철학",
+    "next_index": 0,
+    "completed_cycles": 4,
     "published_counts": {
       "인문·철학": 4,
       "사회·정치·법": 3,
@@ -807,10 +829,9 @@
       "자연·환경·지리": 3,
       "역사·문화": 5,
       "예술·디자인": 4,
-      "언어·미디어·지식": 4
+      "언어·미디어·지식": 5
     },
     "recent_main_categories": [
-      "언어·미디어·지식",
       "인문·철학",
       "사회·정치·법",
       "경제·경영",
@@ -819,7 +840,8 @@
       "생명·건강",
       "자연·환경·지리",
       "역사·문화",
-      "예술·디자인"
+      "예술·디자인",
+      "언어·미디어·지식"
     ]
   },
   "candidate_pool": [
@@ -1322,6 +1344,56 @@
       "main_category": "언어·미디어·지식",
       "status": "used",
       "source": "taxonomy_seed"
+    },
+    {
+      "topic": "언어의 다양성 보존: 소멸 위기 언어는 어떻게 연구되고 있나",
+      "main_category": "언어·미디어·지식",
+      "mid_category": "언어",
+      "sub_category": "언어학",
+      "detail_category": "언어 다양성과 보존",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "번역 기술 혁신과 인공지능: 미래의 통역은 어떻게 변할까",
+      "main_category": "언어·미디어·지식",
+      "mid_category": "번역",
+      "sub_category": "기술과 번역",
+      "detail_category": "AI 번역 기술 동향",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "오디오북의 성장과 청취 문화: 글 없는 독서는 어떻게 지식 소비를 재편하는가",
+      "main_category": "언어·미디어·지식",
+      "mid_category": "출판",
+      "sub_category": "디지털 출판",
+      "detail_category": "오디오북과 문화 변화",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "미디어 리터러시 교육: 정보 홍수 시대에 비판적 사고는 어떻게 길러지는가",
+      "main_category": "언어·미디어·지식",
+      "mid_category": "미디어와 지식분류",
+      "sub_category": "미디어 교육",
+      "detail_category": "미디어 리터러시와 사회 변화",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "유튜브 알고리즘의 구조와 사회적 영향: 정보 편향과 공론장의 변화",
+      "main_category": "언어·미디어·지식",
+      "mid_category": "미디어와 지식분류",
+      "sub_category": "디지털 미디어 분석",
+      "detail_category": "알고리즘과 대중 인식",
+      "priority": 1.0,
+      "status": "used",
+      "source": "api_generated"
     }
   ],
   "taxonomy_version": "2.0"
