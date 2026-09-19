@@ -1,6 +1,21 @@
 {
-  "last_updated": "2026-09-18T07:48:36.868542+09:00",
+  "last_updated": "2026-09-19T10:12:53.932554+09:00",
   "reports": [
+    {
+      "date": "2026-09-19",
+      "title": "사진의 프레임: 카메라는 어떻게 현실을 선택하는가",
+      "subtitle": "사진에서 프레이밍은 단순한 구도가 아니라 현실의 선택과 의미 형성의 과정이다.",
+      "main_category": "예술·디자인",
+      "mid_category": "사진미학",
+      "sub_category": "구도와 시선",
+      "detail_category": "프레이밍의 의미 작용",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20260919_photoframe_how_camera_se_Report.html",
+      "pdf_path": "outputs/20260919_photoframe_how_camera_se_Report.pdf",
+      "html_url": "outputs/20260919_photoframe_how_camera_se_Report.html",
+      "pdf_url": "outputs/20260919_photoframe_how_camera_se_Report.pdf",
+      "status": "published_api"
+    },
     {
       "date": "2026-09-18",
       "title": "달력의 역사: 인간은 어떻게 시간을 나누고 약속했나",

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-09-18",
+  "updated_at": "2026-09-19",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -755,6 +755,28 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260918_history_of_calendars_how_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260918_history_of_calendars_how_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "date": "2026-09-19",
+      "title": "사진의 프레임: 카메라는 어떻게 현실을 선택하는가",
+      "main_category": "예술·디자인",
+      "mid_category": "사진미학",
+      "sub_category": "구도와 시선",
+      "detail_category": "프레이밍의 의미 작용",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "사진",
+        "프레이밍",
+        "구도",
+        "시선",
+        "리얼리티 선택",
+        "시각예술",
+        "사진미학",
+        "사회적 의미"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260919_photoframe_how_camera_se_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260919_photoframe_how_camera_se_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -771,9 +793,9 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "역사·문화",
-    "next_main_category": "예술·디자인",
-    "next_index": 8,
+    "last_main_category": "예술·디자인",
+    "next_main_category": "언어·미디어·지식",
+    "next_index": 9,
     "completed_cycles": 3,
     "published_counts": {
       "인문·철학": 4,
@@ -784,11 +806,10 @@
       "생명·건강": 3,
       "자연·환경·지리": 3,
       "역사·문화": 5,
-      "예술·디자인": 3,
+      "예술·디자인": 4,
       "언어·미디어·지식": 4
     },
     "recent_main_categories": [
-      "예술·디자인",
       "언어·미디어·지식",
       "인문·철학",
       "사회·정치·법",
@@ -797,7 +818,8 @@
       "기술·공학",
       "생명·건강",
       "자연·환경·지리",
-      "역사·문화"
+      "역사·문화",
+      "예술·디자인"
     ]
   },
   "candidate_pool": [
@@ -1268,7 +1290,7 @@
       "detail_category": "프레이밍의 의미 작용",
       "priority": 0.78,
       "main_category": "예술·디자인",
-      "status": "candidate",
+      "status": "used",
       "source": "taxonomy_seed"
     },
     {
