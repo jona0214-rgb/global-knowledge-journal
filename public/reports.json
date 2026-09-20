@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-09-21",
+    "title": "의례의 철학: 반복되는 행위는 어떻게 의미가 되는가",
+    "subtitle": "인간 사회에서 의례는 어떻게 반복을 통해 의미와 가치를 구축하는가",
+    "main_category": "인문·철학",
+    "mid_category": "종교철학",
+    "sub_category": "의례와 상징",
+    "detail_category": "반복 행위의 의미 형성",
+    "taxonomy_version": "2.0",
+    "html_path": "outputs/20260921_philosophy_of_ritual_rep_Report.html",
+    "pdf_path": "outputs/20260921_philosophy_of_ritual_rep_Report.pdf",
+    "html_url": "outputs/20260921_philosophy_of_ritual_rep_Report.html",
+    "pdf_url": "outputs/20260921_philosophy_of_ritual_rep_Report.pdf",
+    "status": "published_api"
+  },
+  {
     "date": "2026-09-20",
     "title": "유튜브 알고리즘의 구조와 사회적 영향: 정보 편향과 공론장의 변화",
     "subtitle": "유튜브 추천 알고리즘이 어떻게 정보 소비를 재편하고 공론장을 변화시키는가",

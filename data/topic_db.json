@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-09-20",
+  "updated_at": "2026-09-21",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -799,6 +799,28 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260920_youtube_algorithm_struct_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260920_youtube_algorithm_struct_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "date": "2026-09-21",
+      "title": "의례의 철학: 반복되는 행위는 어떻게 의미가 되는가",
+      "main_category": "인문·철학",
+      "mid_category": "종교철학",
+      "sub_category": "의례와 상징",
+      "detail_category": "반복 행위의 의미 형성",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "의례",
+        "반복 행위",
+        "의미 형성",
+        "종교철학",
+        "상징",
+        "문화 행위",
+        "사회적 기능",
+        "철학적 해석"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260921_philosophy_of_ritual_rep_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260921_philosophy_of_ritual_rep_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -815,12 +837,12 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "언어·미디어·지식",
-    "next_main_category": "인문·철학",
-    "next_index": 0,
+    "last_main_category": "인문·철학",
+    "next_main_category": "사회·정치·법",
+    "next_index": 1,
     "completed_cycles": 4,
     "published_counts": {
-      "인문·철학": 4,
+      "인문·철학": 5,
       "사회·정치·법": 3,
       "경제·경영": 3,
       "과학·수학": 3,
@@ -832,7 +854,6 @@
       "언어·미디어·지식": 5
     },
     "recent_main_categories": [
-      "인문·철학",
       "사회·정치·법",
       "경제·경영",
       "과학·수학",
@@ -841,7 +862,8 @@
       "자연·환경·지리",
       "역사·문화",
       "예술·디자인",
-      "언어·미디어·지식"
+      "언어·미디어·지식",
+      "인문·철학"
     ]
   },
   "candidate_pool": [
@@ -1052,7 +1074,7 @@
       "detail_category": "반복 행위의 의미 형성",
       "priority": 0.75,
       "main_category": "인문·철학",
-      "status": "candidate",
+      "status": "used",
       "source": "taxonomy_seed"
     },
     {
