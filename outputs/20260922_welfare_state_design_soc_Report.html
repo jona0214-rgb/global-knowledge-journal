@@ -1,0 +1,2383 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>복지국가의 설계: 사회적 위험은 어디까지 공동 책임인가</title>
+
+<style>
+@page {
+  size: A4;
+}
+
+:root {
+  --paper: #fafffe;
+  --ink: #1d2d2e;
+  --body: #293c3d;
+  --muted: #607374;
+  --line: #b8cecc;
+  --line-soft: #dce9e8;
+  --accent: #477d7b;
+  --accent-dark: #2f5756;
+  --table-header: #dcebea;
+  --box-bg: #f1f7f7;
+  --box-bg-strong: #e5f0ef;
+  --screen-bg: #edf4f3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:
+    "Noto Sans KR",
+    "Noto Sans CJK KR",
+    "Pretendard",
+    "NanumGothic",
+    "Nanum Gothic",
+    "Malgun Gothic",
+    "Apple SD Gothic Neo",
+    sans-serif;
+  color: var(--body);
+  background: var(--screen-bg);
+  line-height: 1.62;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+
+
+  
+  
+
+
+.report-page {
+  background: var(--paper);
+}
+
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 7px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 10.8px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.print-header,
+.print-footer {
+  display: none;
+}
+
+.cover {
+  margin-bottom: 15px;
+  padding-bottom: 13px;
+  border-bottom: 1.5px solid var(--accent-dark);
+}
+
+.journal-label {
+  margin: 0 0 8px;
+  color: var(--accent);
+  font-size: 11.2px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+h1 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 33px;
+  line-height: 1.16;
+  letter-spacing: -0.055em;
+  font-weight: 900;
+}
+
+.subtitle {
+  margin: 9px 0 0;
+  color: var(--muted);
+  font-size: 14.7px;
+  line-height: 1.48;
+}
+
+.meta-table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 11.7px;
+  background: transparent;
+}
+
+.meta-table th,
+.meta-table td {
+  border: 0;
+  padding: 4px 5px;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.meta-table th {
+  background: transparent;
+  color: var(--muted);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.meta-table th:first-child,
+.meta-table td:nth-child(2) {
+  padding-left: 0;
+}
+
+.meta-table .meta-category,
+.meta-table .meta-field {
+  white-space: nowrap;
+}
+
+.meta-table .meta-difficulty-label {
+  padding-left: 18px;
+}
+
+.quotation-block {
+  margin: 13px 0 17px;
+  padding: 12px 15px;
+  background: var(--box-bg);
+  border-left: 4px solid var(--accent);
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.quotation-kind {
+  margin: 0 0 4px;
+  color: var(--accent);
+  font-size: 10.7px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+
+.quotation-text {
+  margin: 0 0 6px;
+  color: var(--ink);
+  font-size: 13.1px;
+  line-height: 1.58;
+}
+
+.quotation-source {
+  margin: 0;
+  color: var(--muted);
+  font-size: 10.6px;
+  line-height: 1.45;
+}
+
+.quotation-source a {
+  color: var(--accent-dark);
+  text-decoration: none;
+}
+
+.keyword-line {
+  margin-top: 9px;
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+  color: var(--body);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.keyword-line strong {
+  color: var(--accent);
+}
+
+.abstract {
+  margin: 15px 0 13px;
+  padding: 12px 14px;
+  background: var(--box-bg);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--accent);
+}
+
+.abstract-title {
+  margin: 0 0 5px;
+  color: var(--accent-dark);
+  font-size: 14.2px;
+  font-weight: 900;
+}
+
+.abstract-summary {
+  margin: 11px 0 0;
+  color: var(--accent-dark);
+  font-weight: 700;
+}
+
+.note-box {
+  margin: 11px 0 17px;
+  padding: 11px 14px;
+  background: var(--box-bg);
+  border: 1px solid var(--line);
+}
+
+.note-box p {
+  margin-bottom: 5px;
+}
+
+.note-caption {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 11.4px;
+  line-height: 1.45;
+}
+
+.section {
+  display: contents;
+  margin: 0 0 20px;
+  padding: 0;
+  border: 0;
+}
+
+.section > p:last-child {
+  margin-bottom: 20px;
+}
+
+.section .section-lead {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line-soft);
+}
+
+.section.first-section .section-lead {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.section-label {
+  margin-bottom: 4px;
+  color: var(--accent);
+  font-size: 11.3px;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  break-after: avoid;
+}
+
+.section-title {
+  margin: 0 0 8px;
+  color: var(--ink);
+  font-size: 20.5px;
+  line-height: 1.28;
+  letter-spacing: -0.04em;
+  font-weight: 700;
+  break-after: avoid;
+}
+
+.subsection {
+  margin: 0 0 17px;
+  padding: 0;
+  border: 0;
+}
+
+.subsection .section-lead {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line-soft);
+}
+
+.subsection-title {
+  margin: 0 0 7px;
+  color: var(--ink);
+  font-size: 16.2px;
+  line-height: 1.35;
+  letter-spacing: -0.035em;
+  font-weight: 700;
+  break-after: avoid;
+}
+
+.subsection-title .subsection-label-inline {
+  color: var(--accent);
+  margin-right: 4px;
+}
+
+.section-lead {
+  display: block;
+}
+
+p {
+  margin: 0 0 8px;
+  font-size: 13.25px;
+  line-height: 1.64;
+  orphans: 3;
+  widows: 3;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+strong {
+  color: var(--accent-dark);
+}
+
+.keep-together,
+.table-block,
+.term-box,
+.flow-block,
+.takeaway-block,
+.reading-block,
+.abstract,
+.note-box {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.term-box {
+  margin: 14px 0 16px;
+  padding: 0;
+  background: transparent;
+  border: 0;
+}
+
+.box-title {
+  margin: 0 0 9px;
+  color: var(--accent-dark);
+  font-size: 15.5px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.term-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.term-item {
+  min-height: 68px;
+  padding: 9px 10px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.term-item:nth-child(2n) {
+  border-right: 0;
+}
+
+.term-item:nth-last-child(-n+2) {
+  border-bottom: 0;
+}
+
+.term-name {
+  margin: 0 0 4px;
+  color: var(--accent);
+  font-size: 12.8px;
+  font-weight: 900;
+}
+
+.term-description {
+  margin: 0;
+  color: var(--body);
+  font-size: 11.9px;
+  line-height: 1.5;
+}
+
+.flow-block {
+  margin: 14px 0 20px;
+  padding: 12px 14px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+}
+
+.flow-title {
+  margin: 0 0 6px;
+  color: var(--accent-dark);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.flow-steps {
+  display: flex;
+  align-items: stretch;
+  gap: 6px;
+  margin: 8px 0;
+}
+
+.flow-step {
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 6px 7px;
+  background: var(--box-bg-strong);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-size: 11.7px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 1.35;
+}
+
+.flow-arrow {
+  display: flex;
+  align-items: center;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.caption,
+.flow-caption {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 10.8px;
+  line-height: 1.42;
+  text-align: center;
+}
+
+.table-block {
+  margin: 16px 0 20px;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.table-title {
+  margin: 0 0 6px;
+  color: var(--accent-dark);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin-top: 5px;
+  background: var(--paper);
+  font-size: 11.5px;
+}
+
+th,
+td {
+  border: 1px solid var(--line);
+  padding: 5.6px 6.4px;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 1.45;
+}
+
+th {
+  background: var(--table-header);
+  color: var(--accent-dark);
+  font-weight: 900;
+}
+
+.table-block th:first-child,
+.table-block td:first-child {
+  width: 15%;
+  font-weight: 900;
+}
+
+.takeaway-block {
+  margin: 20px 0 20px;
+}
+
+.takeaway-title {
+  margin: 0;
+  color: var(--accent);
+  font-size: 11.3px;
+  font-weight: 900;
+  letter-spacing: 0.07em;
+}
+
+.takeaway-subtitle {
+  margin: 3px 0 10px;
+  color: var(--ink);
+  font-size: 19px;
+  line-height: 1.28;
+  letter-spacing: -0.04em;
+  font-weight: 900;
+}
+
+.takeaway-list {
+  display: grid;
+  gap: 8px;
+}
+
+.takeaway-card {
+  padding: 10px 12px;
+  background: var(--box-bg);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--accent);
+}
+
+.takeaway-card-title {
+  margin: 0 0 4px;
+  color: var(--accent);
+  font-size: 12.7px;
+  font-weight: 900;
+}
+
+.takeaway-card p {
+  margin-bottom: 0;
+}
+
+.reading-block {
+  margin: 18px 0 12px;
+}
+
+.reading-list {
+  margin: 7px 0 0;
+  padding-left: 17px;
+}
+
+.reading-list li {
+  margin: 5px 0;
+  font-size: 12.3px;
+  line-height: 1.5;
+}
+
+.sources {
+  margin-top: 15px;
+  padding-top: 9px;
+  border-top: 1px solid var(--line);
+}
+
+.final-reference-page {
+  break-before: page;
+  page-break-before: always;
+}
+
+.sources-title {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-size: 13.5px;
+  font-weight: 900;
+}
+
+.source-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.source-list li {
+  display: block;
+  margin: 0 0 4px;
+  color: var(--muted);
+  font-size: 9.8px;
+  line-height: 1.42;
+}
+
+.source-list li:last-child {
+  margin-bottom: 0;
+}
+
+.source-list a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.footer-note {
+  margin-top: 18px;
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 10.2px;
+  text-align: center;
+}
+
+@media screen {
+  .report-page {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 34px 42px 52px;
+    box-shadow: 0 18px 42px rgba(57, 38, 20, 0.08);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .report-page {
+    padding: 24px 18px 40px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .meta-table,
+  .meta-table tbody,
+  .meta-table tr,
+  .meta-table th,
+  .meta-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .meta-table th {
+    border-bottom: 0;
+  }
+
+  .term-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .term-item,
+  .term-item:nth-child(2n),
+  .term-item:nth-last-child(-n+2) {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .term-item:last-child {
+    border-bottom: 0;
+  }
+
+  .flow-steps {
+    flex-direction: column;
+  }
+
+  .flow-arrow {
+    justify-content: center;
+    transform: rotate(90deg);
+  }
+}
+
+@media print {
+  body {
+    background: #ffffff;
+  }
+
+  .screen-header {
+    display: none;
+  }
+
+  /* The repeating header is supplied by Playwright's header template. */
+  .print-header {
+    display: none !important;
+  }
+
+  .print-footer {
+    display: none;
+  }
+
+  .report-page {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    /* Keep Playwright's running header/footer above every page fragment. */
+    background: transparent;
+    box-shadow: none;
+  }
+
+  h1 {
+    font-size: 28.5px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+
+  .journal-label {
+    font-size: 10.3px;
+  }
+
+  .meta-table {
+    font-size: 10.4px;
+  }
+
+  .meta-table th,
+  .meta-table td {
+    padding: 4.5px 5.6px;
+  }
+
+  .keyword-line {
+    font-size: 11px;
+  }
+
+  .abstract {
+    margin: 12px 0 10px;
+    padding: 10px 12px;
+  }
+
+  .section {
+    margin: 0 0 16px;
+    padding: 0;
+  }
+
+  .section > p:last-child {
+    margin-bottom: 16px;
+  }
+
+  .section .section-lead {
+    margin-top: 15px;
+    padding-top: 11px;
+  }
+
+  .section.first-section .section-lead {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .subsection {
+    margin: 0 0 16px;
+    padding: 0;
+  }
+
+  .subsection .section-lead {
+    margin-top: 15px;
+    padding-top: 10px;
+  }
+
+  .section-title {
+    font-size: 18.2px;
+  }
+
+  .subsection-title {
+    font-size: 14.8px;
+  }
+
+  p {
+    font-size: 12.15px;
+    line-height: 1.62;
+    margin-bottom: 7px;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .section-label,
+  .section-title,
+  .subsection-title {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .final-reference-page {
+    break-before: page;
+    page-break-before: always;
+  }
+
+  .final-reference-page .reading-block,
+  .final-reference-page .table-block,
+  .final-reference-page .sources {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .final-reference-page .source-list li {
+    font-size: 9.2px;
+    line-height: 1.35;
+  }
+
+  .term-description {
+    font-size: 10.7px;
+  }
+
+  .flow-step {
+    font-size: 10.6px;
+    min-height: 30px;
+    padding: 5px 5px;
+  }
+
+  table {
+    font-size: 10.25px;
+  }
+
+  th,
+  td {
+    padding: 4.5px 5.3px;
+  }
+
+  .caption,
+  .flow-caption {
+    font-size: 9.7px;
+  }
+
+  .takeaway-card {
+    padding: 8px 10px;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .reading-list li {
+    font-size: 10.9px;
+  }
+
+  .footer-note {
+    display: none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="print-header">
+  <div>GLOBAL KNOWLEDGE JOURNAL / 2026.09.22</div>
+  <div>사회·정치·법 / 사회정책</div>
+</div>
+<div class="print-footer"></div>
+
+<main class="report-page">
+  <header class="screen-header">
+    <div>GLOBAL KNOWLEDGE JOURNAL / 2026.09.22</div>
+    <div>사회·정치·법 / 사회정책</div>
+  </header>
+
+  <section class="cover keep-together">
+    <p class="journal-label">GLOBAL KNOWLEDGE JOURNAL / 사회·정치·법 · 사회정책</p>
+    <h1>복지국가의 설계: 사회적 위험은 어디까지 공동 책임인가</h1>
+    <p class="subtitle">복지국가 내 사회적 위험 분담의 원리와 한계를 탐구하다</p>
+
+    <table class="meta-table">
+      <colgroup>
+        <col style="width: 10%" />
+        <col style="width: 20%" />
+        <col style="width: 10%" />
+        <col style="width: 37%" />
+        <col style="width: 10%" />
+        <col style="width: 13%" />
+      </colgroup>
+      <tbody>
+        <tr>
+          <th>발행일</th>
+          <td>2026년 09월 22일</td>
+          <th>카테고리</th>
+          <td class="meta-category">사회·정치·법 &gt; 사회정책</td>
+          <th class="meta-difficulty-label">난이도</th>
+          <td>중</td>
+        </tr>
+        <tr>
+          <th>예상 시간</th>
+          <td>20분</td>
+          <th>분야</th>
+          <td class="meta-field" colspan="3">복지와 사회보장 &gt; 사회적 위험의 분담</td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+    <div class="keyword-line">
+      <strong>핵심어:</strong>
+      
+        복지국가 · 
+      
+        사회적 위험 · 
+      
+        공동 책임 · 
+      
+        사회보장제도 · 
+      
+        사회적 연대 · 
+      
+        위험 분산 · 
+      
+        복지 설계 · 
+      
+        사회안전망
+      
+    </div>
+    
+  </section>
+
+  
+  <section class="abstract keep-together">
+    <h2 class="abstract-title">Abstract</h2>
+    
+    <p>일상에서 누구나 예상치 못한 위험에 직면할 수 있다. 복지국가는 이런 사회적 위험을 어떻게 공동으로 책임질 것인가를 고민하는 체계이다. 이 리포트는 복지국가 설계의 역사와 사회적 위험의 분담 메커니즘을 탐구한다. 다양한 제도와 사례를 통해 그 한계와 오늘날 과제를 살펴본다. 독자는 복지국가 내 위험 분담의 원리와 현실적 도전을 이해할 수 있을 것이다.</p>
+    
+    
+    <p class="abstract-summary">복지국가의 사회적 위험 분담은 공동 책임의 원칙과 제도적 설계를 통해 지속가능성을 도모하는 사회적 대화이다.</p>
+    
+  </section>
+  
+
+  
+  <aside class="quotation-block">
+    <p class="quotation-kind">
+      
+      
+        도서 속의 문장
+      
+    </p>
+    <blockquote class="quotation-text">“"복지국가는 시민 각자의 위험과 곤경을 사회가 함께 짊어지도록 설계된 사회적 계약이다."”</blockquote>
+    <p class="quotation-source">
+      — 토마스 파게트(복지경제학자),
+      <a href="https://press.princeton.edu/books/hardcover/9780691155361/the-welfare-state-and-social-solidarity">The Welfare State and Social Solidarity</a>
+    </p>
+  </aside>
+  
+
+  
+    
+    
+    
+      
+
+
+
+
+
+<section class="section section-id-01 first-section ">
+  <div class="section-lead">
+  
+    <div class="section-label">01 / CONTEXT</div>
+    <h2 class="section-title">복지국가와 사회적 위험 분담의 중요성</h2>
+  
+  
+  <p>현대 사회는 산업화와 도시화에 따른 복잡한 위험들이 증가함에 따라 개인과 가정만으로는 감당하지 못하는 사회적 위험들이 많아졌다. 이러한 위험에는 실업, 질병, 노령, 사고 등이 포함되며, 이는 개인의 경제적 어려움뿐 아니라 사회적 불평등과 분열로 이어진다. 그래서 국가와 사회가 공동으로 이를 책임지는 복지국가의 개념이 대두되었고 점차 확산되었다.</p>
+  
+  </div>
+  
+  <p>복지국가란 국민의 기본적 생활을 보장하기 위해 건강, 교육, 주거 등 다양한 영역에서 사회적 위험을 국가가 관리하고 분담하는 체계다. 이러한 설계는 단순한 공적 복지가 아니라 사회적 연대와 책임을 바탕으로 한다. 오늘날 전 세계적으로 고령화, 비정규직 확대, 신종 위험들이 등장하며 복지국가 모델은 새로운 도전에 직면해 있다.</p>
+  
+  <p>사회적 위험의 분담 문제는 명확한 경계가 없다. 어느 정도까지 국가·사회·가족·시장 등 다양한 주체가 역할을 분담해야 할지에 대한 논쟁은 복지정책의 핵심이다. 또한, 위험 분담의 범위와 방식이 복지체계의 지속가능성과 직결되어 정부와 국민 모두에게 중요한 과제가 되었다.</p>
+  
+  <p>최근 글로벌 경제 변화와 위기 상황에서 복지국가의 사회적 위험 공동 책임 원칙은 재조명되고 있다. 특히 개인주의 확산과 재정 부담 증가 속에서 어떤 위험을 사회가 함께 짊어지고 어떻게 분배할 것인가의 문제는 복지정책의 미래 방향을 가늠하는 시금석이다. 따라서 본 리포트는 복지국가 설계에서 이러한 사회적 위험 분담의 의미와 한계를 다각도로 분석한다.</p>
+  
+</section>
+
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+    
+    
+    
+      
+
+
+
+
+
+<section class="section section-id-02  ">
+  <div class="section-lead">
+  
+    <div class="section-label">02 / BEGINNER'S MAP</div>
+    <h2 class="section-title">복지국가와 사회적 위험 개념 정리</h2>
+  
+  
+  <p>복지국가는 사회 구성원 모두의 기본적인 삶의 질을 보장하기 위한 국가의 책임과 역할을 뜻하며, 이를 위해 다양한 사회보장제도를 운영한다. 사회적 위험은 개인이 혼자 감당하기 어려운 경제적, 사회적 어려움을 초래하는 사건이나 상태를 말한다. 이러한 위험에는 실업, 노령, 질병 등이 포함된다.</p>
+  
+  </div>
+  
+  <p>사회적 위험 분담은 이러한 위험 발생 시 개인뿐 아니라 사회 전체가 함께 그 부담을 나누고 지원하는 과정을 의미한다. 이에는 사회보험, 공공부조, 가족부양, 시장 기구 등이 역할을 분담하는데, 각 방식은 위험을 관리하고 완화하는 서로 다른 원리와 구조를 지닌다. 이해를 돕기 위해 핵심 용어를 정리하면 다음과 같다.</p>
+  
+</section>
+
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+
+  
+  <section class="term-box keep-together">
+    <h2 class="box-title">핵심 용어</h2>
+    <div class="term-grid">
+      
+      <div class="term-item">
+        <p class="term-name">복지국가</p>
+        <p class="term-description">국가가 국민의 기본 생활을 보장하고 사회적 위험을 분담하는 정책 체계다.</p>
+      </div>
+      
+      <div class="term-item">
+        <p class="term-name">사회적 위험</p>
+        <p class="term-description">질병, 실업, 노령 등 개인이 부담하기 어려운 위험으로, 사회가 함께 책임진다.</p>
+      </div>
+      
+      <div class="term-item">
+        <p class="term-name">사회보험</p>
+        <p class="term-description">국가와 국민이 보험료를 부담해 위험 발생 시 혜택을 주는 복지 제도다.</p>
+      </div>
+      
+      <div class="term-item">
+        <p class="term-name">공동 책임</p>
+        <p class="term-description">사회 구성원이 위험과 비용을 함께 나누는 원리로, 복지국가 설계의 핵심이다.</p>
+      </div>
+      
+    </div>
+  </section>
+  
+
+  
+  <section class="flow-block keep-together">
+    
+    
+      
+    
+    <h2 class="flow-title"><strong>복지국가 사회적 위험 분담의 작동 흐름도</strong></h2>
+    <div class="flow-steps">
+      
+      <div class="flow-step">사회적 위험 인식</div>
+      
+      <div class="flow-arrow">→</div>
+      
+      
+      <div class="flow-step">공동 책임 범위 설정</div>
+      
+      <div class="flow-arrow">→</div>
+      
+      
+      <div class="flow-step">제도 및 법률 설계</div>
+      
+      <div class="flow-arrow">→</div>
+      
+      
+      <div class="flow-step">재원 조달 및 집행</div>
+      
+      <div class="flow-arrow">→</div>
+      
+      
+      <div class="flow-step">모니터링과 제도 개선</div>
+      
+      
+    </div>
+    
+    <div class="flow-caption">사회적 위험 분담 과정은 위험 인식부터 제도 설계, 재원 조달, 그리고 지속적인 평가와 개선을 통해 이루어진다.</div>
+    
+  </section>
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      
+
+
+
+
+
+<section class="section section-id-03  ">
+  <div class="section-lead">
+  
+    <div class="section-label">03 / DEEP DIVE</div>
+    <h2 class="section-title">복지국가 설계와 사회적 위험 분담의 핵심 질문과 구조</h2>
+  
+  
+  <p>복지국가 설계의 중심 쟁점은 사회적 위험을 어디까지, 어떤 방식으로 공동 책임으로 인정할 것인가이다. 즉, 위험의 범위 설정, 부담 주체 및 방식, 자원의 배분 효율성, 그리고 사회통합에 미치는 영향이 핵심 질문이다. 다양한 사회적 위험이 존재하므로 단일한 해법은 없다.</p>
+  
+  </div>
+  
+  <p>이 리포트에서는 다섯 가지 하위 주제로 분석을 전개한다. 첫째, 복지국가 설계의 역사적 출발점을 이해한다. 둘째, 복지제도의 작동 원리와 제도의 변화 과정을 살펴본다. 셋째, 사회와 문화에 미친 영향에 주목한다. 넷째, 위험 분담의 기준과 관리 방식 변화에 주목한다. 마지막으로, 현재 쟁점과 미래 과제를 검토한다. 순차적으로 읽으며 복지국가 설계의 다층적 이해를 도모하도록 한다.</p>
+  
+</section>
+
+    
+  
+    
+    
+    
+      
+
+
+
+
+
+<section class="section section-id-03_1  subsection">
+  <div class="section-lead">
+  
+    <h2 class="subsection-title"><span class="subsection-label-inline">03-1.</span>복지국가 설계의 역사적 기원</h2>
+  
+  
+  <p>복지국가의 개념은 19세기 말 유럽에서 근대 산업사회가 심화되면서 노동자와 취약계층의 생활 안정을 위해 처음 등장했다. 특히 독일 비스마르크 시대 공적 사회보험은 국가가 사회적 위험을 조직적으로 분담하는 모델을 제공했다. 이는 급격한 경제 변화 속 국민 다수의 위험 보호와 사회 질서 안정을 위한 제도였다.</p>
+  
+  </div>
+  
+  <p>이후 20세기 중반 영국, 스웨덴 등 북유럽 국가들이 복지국가 체제를 확장했다. 제2차 세계대전 후 국가의 적극적 복지책임이 강조되며 보편적 의료, 교육, 연금 등이 발전했다. 이 시기는 복지국가가 사회통합과 경제발전을 동시에 추구하는 시기로 자리 잡았다. 역사는 오늘날 위험 분담 구조의 근간을 이해하는 데 필수다.</p>
+  
+  <p>복지국가 설계의 초기 모델마다 위험에 대한 접근과 책임 분담의 범위가 달랐다. 이를 역사적으로 검토하는 것은 현재 사회적 위험 분담의 한계와 가능성을 진단하는 출발점으로, 위험의 공공성과 개인성 사이 긴장을 이해하는 데 도움을 준다. 이러한 역사를 통해 현대 복지의 다면성을 입체적으로 조망할 수 있다.</p>
+  
+</section>
+
+    
+  
+    
+    
+    
+      
+
+
+
+
+
+<section class="section section-id-03_2  subsection">
+  <div class="section-lead">
+  
+    <h2 class="subsection-title"><span class="subsection-label-inline">03-2.</span>사회적 위험 분담의 구조와 작동 원리</h2>
+  
+  
+  <p>사회적 위험 분담은 행위자 간 역할과 책임을 분배하는 제도적 구조를 포함한다. 주로 국가, 시장, 가족, 개인의 네 가지 주체가 상호작용하며 위험을 분산하고 보장한다. 국가 중심의 사회보험은 기여와 급여 시스템으로 위험 발생 시 공적 지원을 제공한다. 반면 시장은 보험회사나 금융상품을 통한 위험 이전 기능을 수행한다.</p>
+  
+  </div>
+  
+  <p>이와 더불어 가족과 지역사회는 사회적 돌봄과 비공식적 지원을 제공한다. 사회적 위험의 특성별로 금융화, 재분배, 예방, 대응 등 다양한 정책 도구가 활용되며, 기술과 정보기술의 발달은 복지 행정과 위험 평가·관리 방식을 변모시키고 있다. 예를 들어 빅데이터 기반 위험 평가와 맞춤형 복지 서비스가 확대되고 있다.</p>
+  
+  <p>작동 원리는 위험의 공동부담과 연대성을 기반으로 하며, 위험 발생에 따른 비용을 사회 전체가 나누는 연대 지불 메커니즘이 핵심이다. 그러나 효율성과 형평성, 지속 가능성 간의 균형이 항상 문제시되며, 제도 설계와 운영에서 이러한 갈등을 해결하기 위한 혁신이 요구되고 있다.</p>
+  
+</section>
+
+    
+  
+    
+    
+    
+      
+
+
+
+
+
+<section class="section section-id-03_3  subsection">
+  <div class="section-lead">
+  
+    <h2 class="subsection-title"><span class="subsection-label-inline">03-3</span>사회적 위험과 생활문화의 상호작용</h2>
+  
+  
+  <p>복지국가의 위험 분담은 단순한 경제적 지원을 넘어서 사회 구성원의 생활과 문화에 깊은 영향을 미친다. 사회적 위험이 공동 책임으로 인식되면서 개인의 불안이 경감되고, 사회적 연대감이 증진되며, 이는 사회적 신뢰와 참여로 이어진다. 반면 복지 수혜에 대한 사회통념과 책임 소재에 대한 문화적 이해도 함께 변화한다.</p>
+  
+  </div>
+  
+  <p>생활문화 측면에서 가족과 공동체의 역할 변화가 주목된다. 예컨대, 전통적 가족 중심 사회에서는 노령이나 질병 위험이 가족 내에서 주로 해결되었지만, 근대 복지국가에서는 국가와 시장이 이를 분담하며 가족 구조와 돌봄 방식에 변화를 유발한다. 이러한 문화적 변화는 사회적 위험의 의미와 분담 방식에 영향을 미친다.</p>
+  
+  <p>또한, 사회적 위험에 대한 태도와 인식은 거주 지역, 계층, 세대 등에 따라 다르며, 이는 복지 정책 수용과 참여에 직결된다. 이러한 문화적 차이를 이해하지 못하면 제도의 효율적인 설계가 어렵다. 따라서 위험 분담은 사회문화적 맥락을 고려한 복합적인 현상으로 접근해야 한다.</p>
+  
+</section>
+
+    
+  
+    
+    
+    
+      
+
+
+
+
+
+<section class="section section-id-03_4  subsection">
+  <div class="section-lead">
+  
+    <h2 class="subsection-title"><span class="subsection-label-inline">03-4</span>사회적 위험 분담의 기준과 관리 방식 변화</h2>
+  
+  
+  <p>복지국가의 설계에서는 어떤 위험을 사회적 책임으로 인정할 것인가를 결정하는 기준이 매우 중요하다. 이 기준은 사회적 합의, 법률, 경제적 지속 가능성, 형평성을 고려하며 변화한다. 과거에는 노동과 소득 불안정에 집중했으나 최근에는 환경 문제, 비정규직, 정신 건강 등 신규 위험이 포함되며 기준이 확장되고 있다.</p>
+  
+  </div>
+  
+  <p>관리 방식도 지난 수십 년간 기술 발전과 행정 개혁으로 변모했다. 디지털 행정과 데이터 기반 복지 측정은 위험의 진단과 관리 효율성을 높였으나 개인 정보 보호 문제와 복지 사각지대 발생 위험도 동시에 증대했다. 또, 위험 평가 프로토콜과 표준화 작업은 복지 분배의 투명성과 공정성을 제고하는 데 기여한다.</p>
+  
+  <p>이러한 변화는 복지제도의 적응력과 회복력을 높이는 방향으로 진화하고 있다. 관리 방식의 혁신은 복지국가의 지속가능성과 신뢰성 확보를 위하여 필수적이며, 위험 분담을 사회적, 행정적으로 통제·촉진하는 핵심 요소로 자리 잡고 있다. 이에 따라 정책 설계와 평가 체계도 지속적으로 재조정되고 있다.</p>
+  
+</section>
+
+    
+  
+    
+    
+    
+      
+
+
+
+
+
+<section class="section section-id-03_5  subsection">
+  <div class="section-lead">
+  
+    <h2 class="subsection-title"><span class="subsection-label-inline">03-5</span>오늘날 쟁점과 복지국가 미래 과제</h2>
+  
+  
+  <p>현대 복지국가는 재정적 한계, 인구 고령화, 노동시장 변화 등 다중적 위기에 직면해 있다. 이러한 상황에서 사회적 위험 분담의 범위와 방식은 재검토가 필요하며, 과도한 부담 전가나 복지 의존 우려도 제기된다. 동시에 아무도 소외되지 않는 보편적 복지 체계 유지라는 가치 충돌도 지속된다.</p>
+  
+  </div>
+  
+  <p>기술 발전과 글로벌화는 복지국가의 위험 분담에 새로운 도전과 기회를 제공한다. 인공지능, 빅데이터 활용을 통한 맞춤형 복지 서비스 확대와 자동화로 인한 노동 불안정성 증가는 정책 설계에 복합적인 영향을 미친다. 글로벌 금융위기, 팬데믹 등 시기적 위기 상황도 제도적 유연성 강화를 요구한다.</p>
+  
+  <p>미래에는 사회적 위험 분담을 위한 보다 지속가능하고 포용적인 모델 구축이 핵심 과제가 될 전망이다. 개인 책임 강화와 사회적 연대의 조화, 다양한 이해관계자 간 협력 강화, 지속적 모니터링과 개방형 거버넌스가 중요한 정책 방향이라 할 수 있다. 복지국가의 설계는 이러한 복합성과 변화에 유연하게 대응해야 한다.</p>
+  
+</section>
+
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+
+  
+
+  
+  
+    
+<section class="table-block keep-together">
+  <div class="table-title"><표1> 복지국가 모델별 사회적 위험 분담 특징 비교</div>
+  <table>
+    <thead>
+      <tr>
+        
+        <th>모델</th>
+        
+        <th>책임 주체</th>
+        
+        <th>분담 방식</th>
+        
+        <th>포함 위험 범위</th>
+        
+        <th>재원 조달 방식</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      
+      
+      <tr>
+        
+        <td>
+          
+            보편적 복지국가
+          
+        </td>
+        
+        <td>
+          
+            국가 중심
+          
+        </td>
+        
+        <td>
+          
+            평등 분배
+          
+        </td>
+        
+        <td>
+          
+            실업, 노령, 건강
+          
+        </td>
+        
+        <td>
+          
+            일반세, 사회보험
+          
+        </td>
+        
+      </tr>
+      
+      
+      <tr>
+        
+        <td>
+          
+            선별적 복지국가
+          
+        </td>
+        
+        <td>
+          
+            국가 및 사회
+          
+        </td>
+        
+        <td>
+          
+            필요 중심 지원
+          
+        </td>
+        
+        <td>
+          
+            빈곤층 대상 위험
+          
+        </td>
+        
+        <td>
+          
+            일반세, 보조금
+          
+        </td>
+        
+      </tr>
+      
+      
+      <tr>
+        
+        <td>
+          
+            사회보험 모델
+          
+        </td>
+        
+        <td>
+          
+            국가와 근로자
+          
+        </td>
+        
+        <td>
+          
+            기여 기반 지원
+          
+        </td>
+        
+        <td>
+          
+            노동 관련 위험
+          
+        </td>
+        
+        <td>
+          
+            보험료
+          
+        </td>
+        
+      </tr>
+      
+      
+      <tr>
+        
+        <td>
+          
+            시장 중심 모델
+          
+        </td>
+        
+        <td>
+          
+            시장과 개인
+          
+        </td>
+        
+        <td>
+          
+            개인 계약 중심
+          
+        </td>
+        
+        <td>
+          
+            자율 선택 위험
+          
+        </td>
+        
+        <td>
+          
+            보험료, 직접 지불
+          
+        </td>
+        
+      </tr>
+      
+      
+      <tr>
+        
+        <td>
+          
+            혼합 모델
+          
+        </td>
+        
+        <td>
+          
+            국가, 시장, 가족
+          
+        </td>
+        
+        <td>
+          
+            복합적 조합
+          
+        </td>
+        
+        <td>
+          
+            종합적 위험 포괄
+          
+        </td>
+        
+        <td>
+          
+            복수원천
+          
+        </td>
+        
+      </tr>
+      
+    </tbody>
+  </table>
+  
+  <div class="caption">복지국가는 사회적 위험 분담의 주체·범위·재원 조달 방식에서 다양한 모델이 존재한다.</div>
+  
+</section>
+
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      
+
+
+
+
+
+<section class="section section-id-04  ">
+  <div class="section-lead">
+  
+    <div class="section-label">04 / CASE STUDY</div>
+    <h2 class="section-title">스웨덴 복지국가: 포괄적 사회보험과 공동책임 모델</h2>
+  
+  
+  <p>스웨덴은 북유럽 복지국가 모델의 대표 사례로, 사회적 위험 분담에서 국가와 개인 간의 균형을 강조한다. 20세기 초반부터 노동자 보호와 국민복지를 위해 개발된 사회보험 체계는 실업, 질병, 출산, 노령 등 다양한 위험을 포괄적으로 관리한다. 이는 강력한 재분배 정책과 연계되어 고도의 평등을 실현했다.</p>
+  
+  </div>
+  
+  <p>국가 주도의 보편적 복지 서비스 제공과 산별 노조 및 사용자 단체의 협력으로 위험 분담은 보다 체계화되었다. 스웨덴의 사회보험은 기여금 기반이나 소득 재분배 기능이 강하고, 법적 권리로서 국민 모두가 혜택을 누릴 수 있도록 설계되었다. 이러한 공동책임 모델은 높은 사회적 신뢰와 연대를 기반으로 한다.</p>
+  
+  <p>이 제도는 당시 산업화와 자본주의 시장경제의 부작용으로 인한 빈곤과 불평등 문제를 해결하는 데 기여했다. 노동시장의 불확실성과 사회 위험에 대한 포괄적 대응은 사회 전체의 안정성과 경제적 지속가능성 확보에 중요한 역할을 수행하였다. 이는 이후 복지국가 모델 발전에 큰 영향을 미쳤다.</p>
+  
+  <p>스웨덴 사례는 사회적 위험 분담의 국가 책임 강화를 통한 사회통합과 효율적 위험 관리의 가능성을 보여준다. 그러나 최근 경제적 압박과 인구 구조 변화로 기존 체계의 재조정이 요구되고 있어, 복지국가 설계의 유연성 및 공동 책임 범위에 대한 지속적인 논의가 필요하다. 오늘날 이 사례를 통해 우리는 복지국가 설계의 복합적 도전과제들을 다시금 고찰할 수 있다.</p>
+  
+  <p>복지국가 설계에 있어 스웨덴 모델은 위험 분담을 통한 사회적 연대와 함께 제도적 적응성의 중요성을 시사한다. 글로벌 변화와 개인화 경향 속에서 국가와 시민 간 공동 책임의 재조율이 어떻게 이루어질지 미래 설계에 귀중한 교훈을 남긴다. 이를 바탕으로 각국은 자국 상황에 맞는 위험 분담 체계 개발에 참고하기에 충분하다.</p>
+  
+</section>
+
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+
+  
+
+  
+    
+    
+      
+
+<section class="note-box keep-together">
+  
+  <p><strong>스웨덴 사례는 포괄적 사회보험과 국가-사회 협력 모델의 효과와 한계를 오늘날 복지 논의에 남긴 귀중한 자산이다.</strong></p>
+  
+  
+  <div class="note-caption">사례 보충: 스웨덴 복지모델의 사회적 책임과 지속가능성</div>
+  
+</section>
+
+
+    
+  
+    
+    
+  
+
+
+  
+
+  
+  
+
+  
+  
+    
+<section class="table-block keep-together">
+  <div class="table-title"><표2> 스웨덴 복지국가 모델이 보여주는 특징</div>
+  <table>
+    <thead>
+      <tr>
+        
+        <th>구분</th>
+        
+        <th>설명</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      
+      
+      <tr>
+        
+        <td>
+          
+            보편성
+          
+        </td>
+        
+        <td>
+          
+            모든 시민에게 균등한 복지 서비스 제공
+          
+        </td>
+        
+      </tr>
+      
+      
+      <tr>
+        
+        <td>
+          
+            사회보험
+          
+        </td>
+        
+        <td>
+          
+            고용 기반의 사회보험 체계 발전
+          
+        </td>
+        
+      </tr>
+      
+      
+      <tr>
+        
+        <td>
+          
+            공동책임
+          
+        </td>
+        
+        <td>
+          
+            국가와 노동조합 등 사회 주체의 협력
+          
+        </td>
+        
+      </tr>
+      
+      
+      <tr>
+        
+        <td>
+          
+            재분배
+          
+        </td>
+        
+        <td>
+          
+            소득 과세를 통한 평등 지향
+          
+        </td>
+        
+      </tr>
+      
+      
+      <tr>
+        
+        <td>
+          
+            적응성
+          
+        </td>
+        
+        <td>
+          
+            신규 사회 위험에 대한 정책적 대응
+          
+        </td>
+        
+      </tr>
+      
+    </tbody>
+  </table>
+  
+  <div class="caption">스웨덴 모델은 국가 주도 보편복지와 사회 각 주체의 협력을 통한 공동 책임이 특징이다.</div>
+  
+</section>
+
+  
+
+  
+  
+
+  
+  
+
+
+
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      
+
+
+
+
+
+<section class="section section-id-05  ">
+  <div class="section-lead">
+  
+    <div class="section-label">05 / CURRENT STATE</div>
+    <h2 class="section-title">사회적 위험 분담의 현재 동향과 쟁점</h2>
+  
+  
+  <p>현재 각국 복지국가는 인구 고령화, 노동시장의 유연화, 디지털 경제 확산 등 구조적 변화에 직면해 있으며, 이는 사회적 위험 분담의 방식에 중대한 영향을 끼치고 있다. 전통적인 정규직 중심 사회보험 모델은 비정규직과 플랫폼 노동자 증가에 대응하기 어렵다. 이에 새로운 위험 분류와 보장 방식에 대한 논의가 활발하다.</p>
+  
+  </div>
+  
+  <p>재정 지속 가능성 문제도 주요 현안이다. 복지 지출이 국가 재정 부담을 가중시키면서 재원 조달과 복지 서비스 효율성 개선이 함께 요구된다. 또한, 사회적 위험 분담 과정에서의 형평성과 공정성 문제, 사회적 신뢰 저하, 복지 갈등이 일부 국가에서 심화되고 있다. 이는 사회통합을 저해하는 정치적 도전으로 작용한다.</p>
+  
+  <p>기술혁신은 복지서비스 전달 방식을 혁신하고 있다. 빅데이터, 인공지능 등이 위험 예측과 서비스 맞춤화에 활용되나, 개인정보 침해 및 기술 격차 문제도 부각된다. 사회적 위험 관리의 투명성 및 신뢰 확보와 기술의 윤리적 활용이라는 난제도 존재한다. 이와 함께 글로벌 경제 불확실성과 팬데믹같은 충격 대응력 강화가 사회안전망 설계의 중요한 축으로 자리잡고 있다.</p>
+  
+  <p>환경변화와 기후위기는 새로운 사회적 위험 요인이 되며, 피해 지역과 계층의 분담 문제를 껴안아야 한다. 이에 복지국가는 전통 위험과 함께 기후위험, 건강 불평등 등 복합적 위험들을 통합적으로 다루는 방향으로 확장되고 있다. 이 과정에서 국제 협력과 정부간 역할 분담도 점차 중요해지고 있다.</p>
+  
+  <p>향후 복지국가는 자신들의 제도를 유연화하고 포괄성을 확보하는 한편, 국민 참여를 통한 위험 분담 설계의 사회적 합의를 강화해야 한다. 이는 공동 책임의 범위와 한계를 국민 모두가 납득할 수 있도록 투명하고 민주적인 거버넌스 모델을 구축하는 노력을 포함한다. 이러한 변화는 복지국가 설계 전반에 걸쳐 필수적인 과제로 남아 있다.</p>
+  
+</section>
+
+    
+  
+    
+    
+    
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+<section class="table-block keep-together">
+  <div class="table-title"><표3> 현대 복지국가 사회적 위험 분담의 주요 쟁점</div>
+  <table>
+    <thead>
+      <tr>
+        
+        <th>쟁점</th>
+        
+        <th>내용</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      
+      
+      <tr>
+        
+        <td>
+          
+            재정 지속 가능성
+          
+        </td>
+        
+        <td>
+          
+            복지 지출 증가에 따른 재원 부족 우려
+          
+        </td>
+        
+      </tr>
+      
+      
+      <tr>
+        
+        <td>
+          
+            노동시장 변화
+          
+        </td>
+        
+        <td>
+          
+            비정규직 등 새로운 위험 대응 미비
+          
+        </td>
+        
+      </tr>
+      
+      
+      <tr>
+        
+        <td>
+          
+            기술 발전
+          
+        </td>
+        
+        <td>
+          
+            ICT 활용과 개인정보 보호 균형 문제
+          
+        </td>
+        
+      </tr>
+      
+      
+      <tr>
+        
+        <td>
+          
+            사회적 신뢰
+          
+        </td>
+        
+        <td>
+          
+            복지 사각지대 및 형평성 논란
+          
+        </td>
+        
+      </tr>
+      
+      
+      <tr>
+        
+        <td>
+          
+            사회통합
+          
+        </td>
+        
+        <td>
+          
+            복지 갈등과 공동체 약화 우려
+          
+        </td>
+        
+      </tr>
+      
+    </tbody>
+  </table>
+  
+  <div class="caption">오늘날 복지국가는 재정, 노동시장, 기술, 신뢰, 통합 측면에서 다각적 도전에 직면해 있다.</div>
+  
+</section>
+
+  
+
+  
+  
+
+
+
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      
+
+
+
+
+
+<section class="section section-id-06  ">
+  <div class="section-lead">
+  
+    <div class="section-label">06 / IMPLICATIONS</div>
+    <h2 class="section-title">개인과 사회에 미치는 복지국가 위험 분담의 의미</h2>
+  
+  
+  <p>사회적 위험의 공동 분담은 개인의 안전망을 제공하여 불안과 불확실성을 줄이는 데 기여한다. 이는 개인의 삶의 질 향상뿐 아니라 경제활동 참여 동기 부여에도 긍정적 영향을 미친다. 한편, 개인의 책임과 국가 지원의 균형은 사회 구성원의 자율성과 복지의 지속가능성 확보를 위한 중요한 고민거리다.</p>
+  
+  </div>
+  
+  <p>사회 구조적으로는 복지국가가 위험 분담을 통해 사회통합과 평등을 증진시킨다. 위험이 사회 전체로 분산됨으로써 빈곤과 소외 계층이 줄고, 계층 간 갈등 완화에 기여한다. 그러나 과도한 재정 부담과 정책 집행의 부조화는 사회적 갈등과 제도 불신으로 이어질 수 있어 이를 해소할 방안 모색이 필요하다.</p>
+  
+  <p>기술적·제도적 측면에서는 데이터와 ICT 활용이 위험 평가와 복지 전달의 효율성을 높이며 맞춤형 서비스 제공을 가능하게 한다. 그러나 기술 편향과 개인정보 보호 문제에 대한 제도적·윤리적 대응이 요구되며, 기술 발전이 복지국가 역할 변화를 촉진한다. 기술과 인권의 조화는 미래 설계에서 핵심 요소다.</p>
+  
+  <p>문화적 의미로는 공동 책임의식과 사회적 연대는 복지국가의 근간이다. 위험 분담에 대한 사회적 합의가 견고할수록 복지제도가 신뢰받고 지속적 지원 기반이 마련된다. 동시에 개인주의 확산과 다양성 확대에 따른 복지담론의 변화가 문화적 긴장과 새로운 사회적 규범 형성을 자극한다.</p>
+  
+  <p>미래를 위해 주목해야 할 질문은 복지국가가 어떻게 변화하는 사회적 위험을 모두 포괄하되 지속가능성을 확보할 것인가, 그리고 다양한 이해관계자의 역할 조정과 사회적 합의를 효과적으로 이끌어낼 방안은 무엇인가이다. 이는 복지국가 설계의 근본적 재검토를 요구하는 문제로 지나치기 어렵다.</p>
+  
+</section>
+
+    
+  
+
+  
+
+  
+    
+    
+  
+    
+    
+      
+
+<section class="note-box keep-together">
+  
+  <p><strong>공동 책임의 확장은 개인과 사회 간 긴장 완화와 복지국가의 미래 설계에 핵심적이며, 지속적인 사회적 합의가 필요하다.</strong></p>
+  
+  
+  <div class="note-caption">함의 보충: 사회적 책임과 공동체 강화</div>
+  
+</section>
+
+
+    
+  
+
+
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+  <section class="takeaway-block">
+    <div class="takeaway-title">07 / TAKEAWAYS</div>
+    <h2 class="takeaway-subtitle">핵심 정리와 한마디</h2>
+    <div class="takeaway-list">
+      
+      <div class="takeaway-card">
+        
+          
+          <h3 class="takeaway-card-title">핵심 정리</h3>
+          
+          
+          <p>복지국가 설계는 사회적 위험을 누구까지, 어떻게 책임질지에 관한 근본적 사회적 계약의 문제다.</p>
+          
+        
+      </div>
+      
+      <div class="takeaway-card">
+        
+          
+          <h3 class="takeaway-card-title">요약</h3>
+          
+          
+          <p>사회적 위험 분담은 역사적 전통과 제도적 구조, 문화적 인식에 따라 다양하게 표현되며 변화한다.</p>
+          
+        
+      </div>
+      
+      <div class="takeaway-card">
+        
+          
+          <h3 class="takeaway-card-title">한마디</h3>
+          
+          
+          <p>복지국가는 개인의 불확실성을 사회의 연대로 바꾸는 공동 책임의 제도적 실현이다.</p>
+          
+        
+      </div>
+      
+    </div>
+  </section>
+  
+
+  <div class="final-reference-page">
+  <section class="reading-block">
+    <div class="section-label">08 / FURTHER READING</div>
+    <h2 class="section-title">더 읽을거리</h2>
+
+    
+  </section>
+
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+<section class="table-block keep-together">
+  <div class="table-title"><표4> 복지국가와 사회적 위험 분담 관련 도서 및 탐구 키워드</div>
+  <table>
+    <thead>
+      <tr>
+        
+        <th>구분</th>
+        
+        <th>내용</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      
+      
+      <tr>
+        
+        <td>
+          
+            관련 도서
+          
+        </td>
+        
+        <td>
+          
+            『복지국가의 미래』 - 조지프 스티글리츠
+          
+        </td>
+        
+      </tr>
+      
+      
+      <tr>
+        
+        <td>
+          
+            관련 도서
+          
+        </td>
+        
+        <td>
+          
+            『사회적 위험과 복지 제도』 - 잔 와츠
+          
+        </td>
+        
+      </tr>
+      
+      
+      <tr>
+        
+        <td>
+          
+            탐구 키워드
+          
+        </td>
+        
+        <td>
+          
+            사회보험, 위험 분담, 복지 지속 가능성
+          
+        </td>
+        
+      </tr>
+      
+      
+      <tr>
+        
+        <td>
+          
+            확장 주제
+          
+        </td>
+        
+        <td>
+          
+            고령화, 노동시장 유연화, 복지 거버넌스
+          
+        </td>
+        
+      </tr>
+      
+      
+      <tr>
+        
+        <td>
+          
+            탐구 키워드
+          
+        </td>
+        
+        <td>
+          
+            사회적 연대, 포용적 복지정책, 재정 정책
+          
+        </td>
+        
+      </tr>
+      
+      
+      <tr>
+        
+        <td>
+          
+            관련 도서
+          
+        </td>
+        
+        <td>
+          
+            『복지국가와 사회적 연대』 - 카를 울만
+          
+        </td>
+        
+      </tr>
+      
+    </tbody>
+  </table>
+  
+  <div class="caption">복지국가 연구에 유용한 도서와 키워드를 정리하여 더 깊은 학습을 지원한다.</div>
+  
+</section>
+
+  
+
+
+
+  
+  <section class="sources">
+    <h2 class="sources-title">Sources</h2>
+    <ul class="source-list">
+      
+      <li>
+        
+          <strong>OECD</strong>
+          , Social Protection and Well-being
+          , <a href="https://www.oecd.org/social/social-protection-and-well-being.htm">link</a>
+          , 현대 복지국가의 사회보장 및 위험 분담 현황 개관
+        
+      </li>
+      
+      <li>
+        
+          <strong>Princeton University Press</strong>
+          , The Welfare State and Social Solidarity
+          , <a href="https://press.princeton.edu/books/hardcover/9780691155361/the-welfare-state-and-social-solidarity">link</a>
+          , 복지국가의 공동책임 원칙 및 역사적 배경
+        
+      </li>
+      
+      <li>
+        
+          <strong>European Social Policy Network</strong>
+          , The Swedish Welfare Model: Evolution and Key Features
+          , <a href="https://ec.europa.eu/social/main.jsp?catId=738&langId=en&pubId=8131&furtherPubs=yes">link</a>
+          , 스웨덴 복지국가 사례 분석
+        
+      </li>
+      
+      <li>
+        
+          <strong>World Bank</strong>
+          , Social Safety Nets and Social Insurance for Developing Countries
+          , <a href="https://documents.worldbank.org/en/publication/documents-reports/documentdetail/241121468765544340/social-safety-nets-and-social-insurance-for-developing-countries">link</a>
+          , 사회적 위험 분담의 국제적 정책 동향과 쟁점
+        
+      </li>
+      
+      <li>
+        
+          <strong>International Labour Organization</strong>
+          , Social Protection Floors Recommendation
+          , <a href="https://www.ilo.org/global/topics/social-security/lang--en/index.htm">link</a>
+          , 사회적 위험 대응을 위한 국제 권고 및 기준 제시
+        
+      </li>
+      
+      <li>
+        
+          <strong>UNDP</strong>
+          , Social Risk Management and Inclusive Development
+          , <a href="https://www.undp.org/publications/social-risk-management-and-inclusive-development">link</a>
+          , 사회적 위험과 복지 정책의 포괄적 확장 방향
+        
+      </li>
+      
+    </ul>
+  </section>
+  
+  </div>
+
+  <footer class="footer-note">
+    GLOBAL KNOWLEDGE JOURNAL · 2026.09.22
+  </footer>
+</main>
+</body>
+</html>
+
+
