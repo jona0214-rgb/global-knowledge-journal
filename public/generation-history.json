@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-09-23",
+    "title": "컨테이너의 경제학: 표준 상자는 어떻게 세계 무역을 재편했나",
+    "status": "published_api",
+    "event_name": "schedule",
+    "schedule_cron": "0 20 * * *",
+    "scheduled_for_kst": "2026-09-23T05:00:00+09:00",
+    "workflow_started_at": "2026-09-22T22:51:23Z",
+    "generation_started_at": "2026-09-22T22:51:55.716489Z",
+    "generation_completed_at": "2026-09-22T22:54:57.282501Z",
+    "catalog_updated_at": "2026-09-22T22:54:58.607109Z",
+    "scheduler_delay_seconds": 10283,
+    "setup_duration_seconds": 33,
+    "generation_duration_seconds": 183,
+    "validation_attempts": 3,
+    "run_id": "35794545388",
+    "run_attempt": "1",
+    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/35794545388",
+    "source_sha": "9f52dbc675267ac8f2125260ad56ea47d39f3fb8"
+  },
+  {
     "date": "2026-09-22",
     "title": "복지국가의 설계: 사회적 위험은 어디까지 공동 책임인가",
     "status": "published_api",
