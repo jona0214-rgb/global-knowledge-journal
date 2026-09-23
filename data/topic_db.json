@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-09-23",
+  "updated_at": "2026-09-24",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -865,6 +865,28 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260923_container_economics_how__Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260923_container_economics_how__Report.pdf",
       "status": "published_api"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "엔트로피의 세계: 무질서는 왜 한 방향으로 증가하는가",
+      "main_category": "과학·수학",
+      "mid_category": "물리학",
+      "sub_category": "열역학과 시간",
+      "detail_category": "엔트로피 증가 법칙",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "엔트로피",
+        "열역학",
+        "무질서",
+        "시간의 방향성",
+        "에너지 분포",
+        "열역학 법칙",
+        "물리학 기초",
+        "통계역학"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260924_entropy_world_why_disord_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260924_entropy_world_why_disord_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -881,15 +903,15 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "경제·경영",
-    "next_main_category": "과학·수학",
-    "next_index": 3,
+    "last_main_category": "과학·수학",
+    "next_main_category": "기술·공학",
+    "next_index": 4,
     "completed_cycles": 4,
     "published_counts": {
       "인문·철학": 5,
       "사회·정치·법": 4,
       "경제·경영": 4,
-      "과학·수학": 3,
+      "과학·수학": 4,
       "기술·공학": 4,
       "생명·건강": 3,
       "자연·환경·지리": 3,
@@ -898,7 +920,6 @@
       "언어·미디어·지식": 5
     },
     "recent_main_categories": [
-      "과학·수학",
       "기술·공학",
       "생명·건강",
       "자연·환경·지리",
@@ -907,7 +928,8 @@
       "언어·미디어·지식",
       "인문·철학",
       "사회·정치·법",
-      "경제·경영"
+      "경제·경영",
+      "과학·수학"
     ]
   },
   "candidate_pool": [
@@ -1218,7 +1240,7 @@
       "detail_category": "엔트로피 증가 법칙",
       "priority": 0.78,
       "main_category": "과학·수학",
-      "status": "candidate",
+      "status": "used",
       "source": "taxonomy_seed"
     },
     {

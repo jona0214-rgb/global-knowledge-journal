@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-09-24",
+    "title": "엔트로피의 세계: 무질서는 왜 한 방향으로 증가하는가",
+    "status": "published_api",
+    "event_name": "schedule",
+    "schedule_cron": "0 20 * * *",
+    "scheduled_for_kst": "2026-09-24T05:00:00+09:00",
+    "workflow_started_at": "2026-09-23T22:52:00Z",
+    "generation_started_at": "2026-09-23T22:52:32.544235Z",
+    "generation_completed_at": "2026-09-23T22:53:37.667960Z",
+    "catalog_updated_at": "2026-09-23T22:53:38.966215Z",
+    "scheduler_delay_seconds": 10320,
+    "setup_duration_seconds": 33,
+    "generation_duration_seconds": 66,
+    "validation_attempts": 1,
+    "run_id": "35930640838",
+    "run_attempt": "1",
+    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/35930640838",
+    "source_sha": "2210378b838a26509723746bf4f1f8f4650ea764"
+  },
+  {
     "date": "2026-09-23",
     "title": "컨테이너의 경제학: 표준 상자는 어떻게 세계 무역을 재편했나",
     "status": "published_api",
