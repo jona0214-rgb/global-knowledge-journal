@@ -1,6 +1,21 @@
 {
-  "last_updated": "2026-09-24T07:53:38.965506+09:00",
+  "last_updated": "2026-09-25T08:10:11.563240+09:00",
   "reports": [
+    {
+      "date": "2026-09-25",
+      "title": "엘리베이터의 도시사: 수직 이동은 어떻게 마천루를 가능하게 했나",
+      "subtitle": "수직 이동 기술이 도시 풍경과 건축 양식을 어떻게 변화시켰나",
+      "main_category": "기술·공학",
+      "mid_category": "기계공학",
+      "sub_category": "수직 교통 기술",
+      "detail_category": "안전장치와 고층 건축",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20260925_elevator_urban_history_s_Report.html",
+      "pdf_path": "outputs/20260925_elevator_urban_history_s_Report.pdf",
+      "html_url": "outputs/20260925_elevator_urban_history_s_Report.html",
+      "pdf_url": "outputs/20260925_elevator_urban_history_s_Report.pdf",
+      "status": "published_api"
+    },
     {
       "date": "2026-09-24",
       "title": "엔트로피의 세계: 무질서는 왜 한 방향으로 증가하는가",
