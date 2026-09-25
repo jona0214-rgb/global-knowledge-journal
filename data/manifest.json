@@ -1,6 +1,21 @@
 {
-  "last_updated": "2026-09-25T08:10:11.563240+09:00",
+  "last_updated": "2026-09-26T08:15:41.695464+09:00",
   "reports": [
+    {
+      "date": "2026-09-26",
+      "title": "통증의 역설: 아픔은 왜 몸을 보호하면서 삶을 무너뜨리는가",
+      "subtitle": "통증의 신경생리와 급성 및 만성 통증의 이중적 역할 탐구",
+      "main_category": "생명·건강",
+      "mid_category": "의학과 감각",
+      "sub_category": "통증의 신경기전",
+      "detail_category": "급성 통증과 만성 통증",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20260926_pain_paradox_why_pain_pr_Report.html",
+      "pdf_path": "outputs/20260926_pain_paradox_why_pain_pr_Report.pdf",
+      "html_url": "outputs/20260926_pain_paradox_why_pain_pr_Report.html",
+      "pdf_url": "outputs/20260926_pain_paradox_why_pain_pr_Report.pdf",
+      "status": "published_api"
+    },
     {
       "date": "2026-09-25",
       "title": "엘리베이터의 도시사: 수직 이동은 어떻게 마천루를 가능하게 했나",
