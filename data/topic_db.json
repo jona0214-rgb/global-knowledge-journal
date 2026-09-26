@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-09-26",
+  "updated_at": "2026-09-27",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -931,6 +931,28 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260926_pain_paradox_why_pain_pr_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260926_pain_paradox_why_pain_pr_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "date": "2026-09-27",
+      "title": "흙 한 줌의 세계: 토양은 어떻게 생태계를 떠받치는가",
+      "main_category": "자연·환경·지리",
+      "mid_category": "토양생태",
+      "sub_category": "토양 형성과 순환",
+      "detail_category": "토양 미생물과 영양분",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "토양 생태계",
+        "미생물 활동",
+        "영양분 순환",
+        "토양 형성",
+        "생물 다양성",
+        "탄소 저장",
+        "토양 건강",
+        "영양분 공급"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260927_soil_ecosystem_support_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260927_soil_ecosystem_support_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -947,9 +969,9 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "생명·건강",
-    "next_main_category": "자연·환경·지리",
-    "next_index": 6,
+    "last_main_category": "자연·환경·지리",
+    "next_main_category": "역사·문화",
+    "next_index": 7,
     "completed_cycles": 4,
     "published_counts": {
       "인문·철학": 5,
@@ -958,13 +980,12 @@
       "과학·수학": 4,
       "기술·공학": 5,
       "생명·건강": 4,
-      "자연·환경·지리": 3,
+      "자연·환경·지리": 4,
       "역사·문화": 5,
       "예술·디자인": 4,
       "언어·미디어·지식": 5
     },
     "recent_main_categories": [
-      "자연·환경·지리",
       "역사·문화",
       "예술·디자인",
       "언어·미디어·지식",
@@ -973,7 +994,8 @@
       "경제·경영",
       "과학·수학",
       "기술·공학",
-      "생명·건강"
+      "생명·건강",
+      "자연·환경·지리"
     ]
   },
   "candidate_pool": [
@@ -1384,7 +1406,7 @@
       "detail_category": "토양 미생물과 영양분",
       "priority": 0.78,
       "main_category": "자연·환경·지리",
-      "status": "candidate",
+      "status": "used",
       "source": "taxonomy_seed"
     },
     {

@@ -1,6 +1,21 @@
 {
-  "last_updated": "2026-09-26T08:15:41.695464+09:00",
+  "last_updated": "2026-09-27T07:42:13.437774+09:00",
   "reports": [
+    {
+      "date": "2026-09-27",
+      "title": "흙 한 줌의 세계: 토양은 어떻게 생태계를 떠받치는가",
+      "subtitle": "토양 미생물과 영양분의 역할을 중심으로 생태계 유지 원리 탐구",
+      "main_category": "자연·환경·지리",
+      "mid_category": "토양생태",
+      "sub_category": "토양 형성과 순환",
+      "detail_category": "토양 미생물과 영양분",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20260927_soil_ecosystem_support_Report.html",
+      "pdf_path": "outputs/20260927_soil_ecosystem_support_Report.pdf",
+      "html_url": "outputs/20260927_soil_ecosystem_support_Report.html",
+      "pdf_url": "outputs/20260927_soil_ecosystem_support_Report.pdf",
+      "status": "published_api"
+    },
     {
       "date": "2026-09-26",
       "title": "통증의 역설: 아픔은 왜 몸을 보호하면서 삶을 무너뜨리는가",
