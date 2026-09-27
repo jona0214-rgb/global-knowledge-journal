@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-09-27",
+  "updated_at": "2026-09-28",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -953,6 +953,28 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260927_soil_ecosystem_support_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260927_soil_ecosystem_support_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "date": "2026-09-28",
+      "title": "우표의 세계사: 작은 종이는 어떻게 국가와 제국을 연결했나",
+      "main_category": "역사·문화",
+      "mid_category": "통신문화사",
+      "sub_category": "우편과 시각문화",
+      "detail_category": "우표 제도의 확산",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "우표",
+        "우편제도",
+        "통신사",
+        "근대사",
+        "국가 상징",
+        "제국주의",
+        "시각문화",
+        "글로벌 교류"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260928_history_of_postage_stamp_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260928_history_of_postage_stamp_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -969,9 +991,9 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "자연·환경·지리",
-    "next_main_category": "역사·문화",
-    "next_index": 7,
+    "last_main_category": "역사·문화",
+    "next_main_category": "예술·디자인",
+    "next_index": 8,
     "completed_cycles": 4,
     "published_counts": {
       "인문·철학": 5,
@@ -981,12 +1003,11 @@
       "기술·공학": 5,
       "생명·건강": 4,
       "자연·환경·지리": 4,
-      "역사·문화": 5,
+      "역사·문화": 6,
       "예술·디자인": 4,
       "언어·미디어·지식": 5
     },
     "recent_main_categories": [
-      "역사·문화",
       "예술·디자인",
       "언어·미디어·지식",
       "인문·철학",
@@ -995,7 +1016,8 @@
       "과학·수학",
       "기술·공학",
       "생명·건강",
-      "자연·환경·지리"
+      "자연·환경·지리",
+      "역사·문화"
     ]
   },
   "candidate_pool": [
@@ -1436,7 +1458,7 @@
       "detail_category": "우표 제도의 확산",
       "priority": 0.78,
       "main_category": "역사·문화",
-      "status": "candidate",
+      "status": "used",
       "source": "taxonomy_seed"
     },
     {
