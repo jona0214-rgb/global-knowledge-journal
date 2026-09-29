@@ -1,6 +1,21 @@
 {
-  "last_updated": "2026-09-28T07:58:26.408470+09:00",
+  "last_updated": "2026-09-29T11:35:33.219697+09:00",
   "reports": [
+    {
+      "date": "2026-09-29",
+      "title": "지속가능한 건축 재료: 친환경 디자인의 혁신과 실천",
+      "subtitle": "환경과 미래를 고려한 건축재료의 변화와 적용 전략",
+      "main_category": "예술·디자인",
+      "mid_category": "건축",
+      "sub_category": "건축재료",
+      "detail_category": "친환경 재료와 지속가능성",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20260929_sustainable_building_mat_Report.html",
+      "pdf_path": "outputs/20260929_sustainable_building_mat_Report.pdf",
+      "html_url": "outputs/20260929_sustainable_building_mat_Report.html",
+      "pdf_url": "outputs/20260929_sustainable_building_mat_Report.pdf",
+      "status": "published_api"
+    },
     {
       "date": "2026-09-28",
       "title": "우표의 세계사: 작은 종이는 어떻게 국가와 제국을 연결했나",

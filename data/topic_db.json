@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-09-28",
+  "updated_at": "2026-09-29",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -975,6 +975,28 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260928_history_of_postage_stamp_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260928_history_of_postage_stamp_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "date": "2026-09-29",
+      "title": "지속가능한 건축 재료: 친환경 디자인의 혁신과 실천",
+      "main_category": "예술·디자인",
+      "mid_category": "건축",
+      "sub_category": "건축재료",
+      "detail_category": "친환경 재료와 지속가능성",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "지속가능성",
+        "친환경 건축",
+        "재생 소재",
+        "탄소 저감",
+        "에너지 효율",
+        "건축 혁신",
+        "환경 영향",
+        "건축 디자인"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260929_sustainable_building_mat_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260929_sustainable_building_mat_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -991,9 +1013,9 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "역사·문화",
-    "next_main_category": "예술·디자인",
-    "next_index": 8,
+    "last_main_category": "예술·디자인",
+    "next_main_category": "언어·미디어·지식",
+    "next_index": 9,
     "completed_cycles": 4,
     "published_counts": {
       "인문·철학": 5,
@@ -1004,11 +1026,10 @@
       "생명·건강": 4,
       "자연·환경·지리": 4,
       "역사·문화": 6,
-      "예술·디자인": 4,
+      "예술·디자인": 5,
       "언어·미디어·지식": 5
     },
     "recent_main_categories": [
-      "예술·디자인",
       "언어·미디어·지식",
       "인문·철학",
       "사회·정치·법",
@@ -1017,7 +1038,8 @@
       "기술·공학",
       "생명·건강",
       "자연·환경·지리",
-      "역사·문화"
+      "역사·문화",
+      "예술·디자인"
     ]
   },
   "candidate_pool": [
@@ -1569,6 +1591,56 @@
       "detail_category": "알고리즘과 대중 인식",
       "priority": 1.0,
       "status": "used",
+      "source": "api_generated"
+    },
+    {
+      "topic": "디지털 아트의 진화: 기술은 현대 미술을 어떻게 재구성하는가",
+      "main_category": "예술·디자인",
+      "mid_category": "미술",
+      "sub_category": "현대미술",
+      "detail_category": "디지털 미디어 아트",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "전통 음악의 보존과 변용: 지역 음악은 어떻게 세계와 소통하는가",
+      "main_category": "예술·디자인",
+      "mid_category": "음악",
+      "sub_category": "민속음악",
+      "detail_category": "세계화와 민속음악의 변화",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "지속가능한 건축 재료: 친환경 디자인의 혁신과 실천",
+      "main_category": "예술·디자인",
+      "mid_category": "건축",
+      "sub_category": "건축재료",
+      "detail_category": "친환경 재료와 지속가능성",
+      "priority": 1.0,
+      "status": "used",
+      "source": "api_generated"
+    },
+    {
+      "topic": "무용과 신체 표현의 사회문화적 의미",
+      "main_category": "예술·디자인",
+      "mid_category": "공연",
+      "sub_category": "무용",
+      "detail_category": "신체 표현과 문화적 정체성",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "제품 디자인에서 사용자 경험(UX)의 혁신: 기능을 넘어 감성으로",
+      "main_category": "예술·디자인",
+      "mid_category": "디자인",
+      "sub_category": "산업디자인",
+      "detail_category": "사용자 경험과 감성 디자인",
+      "priority": 1.0,
+      "status": "candidate",
       "source": "api_generated"
     }
   ],
