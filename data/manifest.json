@@ -1,6 +1,21 @@
 {
-  "last_updated": "2026-09-29T11:35:33.219697+09:00",
+  "last_updated": "2026-09-30T11:07:13.901794+09:00",
   "reports": [
+    {
+      "date": "2026-09-30",
+      "title": "오디오북의 성장과 청취 문화: 글 없는 독서는 어떻게 지식 소비를 재편하는가",
+      "subtitle": "음성 중심 독서의 부상과 디지털 시대 지식 소비의 변화",
+      "main_category": "언어·미디어·지식",
+      "mid_category": "출판",
+      "sub_category": "디지털 출판",
+      "detail_category": "오디오북과 문화 변화",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20260930_audiobook_growth_and_lis_Report.html",
+      "pdf_path": "outputs/20260930_audiobook_growth_and_lis_Report.pdf",
+      "html_url": "outputs/20260930_audiobook_growth_and_lis_Report.html",
+      "pdf_url": "outputs/20260930_audiobook_growth_and_lis_Report.pdf",
+      "status": "published_api"
+    },
     {
       "date": "2026-09-29",
       "title": "지속가능한 건축 재료: 친환경 디자인의 혁신과 실천",

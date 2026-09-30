@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-09-29",
+  "updated_at": "2026-09-30",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -997,6 +997,28 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260929_sustainable_building_mat_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260929_sustainable_building_mat_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "date": "2026-09-30",
+      "title": "오디오북의 성장과 청취 문화: 글 없는 독서는 어떻게 지식 소비를 재편하는가",
+      "main_category": "언어·미디어·지식",
+      "mid_category": "출판",
+      "sub_category": "디지털 출판",
+      "detail_category": "오디오북과 문화 변화",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "오디오북",
+        "청취 문화",
+        "디지털 출판",
+        "지식 소비",
+        "음성 미디어",
+        "독서 경험",
+        "미디어 변화",
+        "음성 콘텐츠"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260930_audiobook_growth_and_lis_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260930_audiobook_growth_and_lis_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -1013,10 +1035,10 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "예술·디자인",
-    "next_main_category": "언어·미디어·지식",
-    "next_index": 9,
-    "completed_cycles": 4,
+    "last_main_category": "언어·미디어·지식",
+    "next_main_category": "인문·철학",
+    "next_index": 0,
+    "completed_cycles": 5,
     "published_counts": {
       "인문·철학": 5,
       "사회·정치·법": 4,
@@ -1027,10 +1049,9 @@
       "자연·환경·지리": 4,
       "역사·문화": 6,
       "예술·디자인": 5,
-      "언어·미디어·지식": 5
+      "언어·미디어·지식": 6
     },
     "recent_main_categories": [
-      "언어·미디어·지식",
       "인문·철학",
       "사회·정치·법",
       "경제·경영",
@@ -1039,7 +1060,8 @@
       "생명·건강",
       "자연·환경·지리",
       "역사·문화",
-      "예술·디자인"
+      "예술·디자인",
+      "언어·미디어·지식"
     ]
   },
   "candidate_pool": [
@@ -1570,7 +1592,7 @@
       "sub_category": "디지털 출판",
       "detail_category": "오디오북과 문화 변화",
       "priority": 1.0,
-      "status": "candidate",
+      "status": "used",
       "source": "api_generated"
     },
     {
