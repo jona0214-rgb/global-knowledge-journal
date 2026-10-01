@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-09-30",
+  "updated_at": "2026-10-01",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -1019,6 +1019,29 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260930_audiobook_growth_and_lis_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20260930_audiobook_growth_and_lis_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "date": "2026-10-01",
+      "title": "현대 사상에서 포스트휴머니즘이 인간 이해에 던진 질문",
+      "main_category": "인문·철학",
+      "mid_category": "사상",
+      "sub_category": "현대 사상",
+      "detail_category": "포스트휴머니즘과 정체성",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "포스트휴머니즘",
+        "인간 이해",
+        "정체성",
+        "현대철학",
+        "기술철학",
+        "인간중심주의",
+        "비인간",
+        "사이보그",
+        "탈인간"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261001_posthumanism_questions_i_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261001_posthumanism_questions_i_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -1035,12 +1058,12 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "언어·미디어·지식",
-    "next_main_category": "인문·철학",
-    "next_index": 0,
+    "last_main_category": "인문·철학",
+    "next_main_category": "사회·정치·법",
+    "next_index": 1,
     "completed_cycles": 5,
     "published_counts": {
-      "인문·철학": 5,
+      "인문·철학": 6,
       "사회·정치·법": 4,
       "경제·경영": 4,
       "과학·수학": 4,
@@ -1052,7 +1075,6 @@
       "언어·미디어·지식": 6
     },
     "recent_main_categories": [
-      "인문·철학",
       "사회·정치·법",
       "경제·경영",
       "과학·수학",
@@ -1061,7 +1083,8 @@
       "자연·환경·지리",
       "역사·문화",
       "예술·디자인",
-      "언어·미디어·지식"
+      "언어·미디어·지식",
+      "인문·철학"
     ]
   },
   "candidate_pool": [
@@ -1661,6 +1684,56 @@
       "mid_category": "디자인",
       "sub_category": "산업디자인",
       "detail_category": "사용자 경험과 감성 디자인",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "철학적 인식론에서 직관의 역할과 한계는 무엇인가",
+      "main_category": "인문·철학",
+      "mid_category": "철학",
+      "sub_category": "인식론",
+      "detail_category": "직관과 지식 형성",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "윤리적 소비: 개인의 선택이 사회와 환경에 미치는 영향",
+      "main_category": "인문·철학",
+      "mid_category": "윤리",
+      "sub_category": "응용 윤리",
+      "detail_category": "소비 행위와 윤리적 책임",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "현대 사상에서 포스트휴머니즘이 인간 이해에 던진 질문",
+      "main_category": "인문·철학",
+      "mid_category": "사상",
+      "sub_category": "현대 사상",
+      "detail_category": "포스트휴머니즘과 정체성",
+      "priority": 1.0,
+      "status": "used",
+      "source": "api_generated"
+    },
+    {
+      "topic": "종교적 신념과 정신 건강: 긍정적·부정적 영향 분석",
+      "main_category": "인문·철학",
+      "mid_category": "종교와 인간 이해",
+      "sub_category": "종교 사회학",
+      "detail_category": "종교 신앙과 심리 건강",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "동양 철학에서 ‘무(無)’ 개념의 존재론적 의미와 현대적 해석",
+      "main_category": "인문·철학",
+      "mid_category": "철학",
+      "sub_category": "동양철학",
+      "detail_category": "무(無)의 철학적 탐구",
       "priority": 1.0,
       "status": "candidate",
       "source": "api_generated"
