@@ -1,6 +1,21 @@
 {
-  "last_updated": "2026-10-01T11:08:45.017769+09:00",
+  "last_updated": "2026-10-03T08:42:01.120614+09:00",
   "reports": [
+    {
+      "date": "2026-10-03",
+      "title": "관료제의 두 얼굴: 규칙은 어떻게 공정성과 경직성을 함께 만드는가",
+      "subtitle": "관료제 내 규칙의 이중성: 공정성 확보와 체계 경직성의 딜레마",
+      "main_category": "사회·정치·법",
+      "mid_category": "행정학",
+      "sub_category": "조직과 규칙",
+      "detail_category": "관료제의 효율과 한계",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20261003_bureaucracy_two_faces_ru_Report.html",
+      "pdf_path": "outputs/20261003_bureaucracy_two_faces_ru_Report.pdf",
+      "html_url": "outputs/20261003_bureaucracy_two_faces_ru_Report.html",
+      "pdf_url": "outputs/20261003_bureaucracy_two_faces_ru_Report.pdf",
+      "status": "published_api"
+    },
     {
       "date": "2026-10-01",
       "title": "현대 사상에서 포스트휴머니즘이 인간 이해에 던진 질문",
