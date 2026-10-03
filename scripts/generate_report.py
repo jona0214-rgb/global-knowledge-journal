@@ -53,6 +53,14 @@ REQUIRED_SECTION_IDS = (
 API_SOURCE_KEYS = tuple(f"source_{index}" for index in range(1, 7))
 
 
+class RetryableReportGenerationError(RuntimeError):
+    """새 API 응답으로 다시 생성하면 복구할 수 있는 오류."""
+
+    def __init__(self, message: str, feedback: str | None = None):
+        super().__init__(message)
+        self.feedback = feedback or message
+
+
 def load_text(path: Path) -> str:
     if not path.exists():
         raise FileNotFoundError(f"파일을 찾을 수 없습니다: {path}")
@@ -381,6 +389,156 @@ def call_openai_with_transient_retries(
     raise RuntimeError(f"{operation_name} 재시도 흐름이 비정상 종료되었습니다.")
 
 
+def save_api_response_debug(
+    raw_text: str,
+    response_id: str,
+    status: str,
+    reason: str,
+) -> Path:
+    """실패한 원문을 공개 산출물과 분리된 임시 진단 파일로 저장한다."""
+    safe_response_id = "".join(
+        character
+        for character in str(response_id or "unknown")
+        if character.isalnum() or character in {"-", "_"}
+    ) or "unknown"
+    debug_path = OUTPUTS_DIR / (
+        f"api_response_debug_{safe_response_id}_{time.time_ns()}.txt"
+    )
+    debug_path.parent.mkdir(parents=True, exist_ok=True)
+    debug_path.write_text(
+        "\n".join(
+            [
+                f"response_id={response_id or 'unknown'}",
+                f"status={status or 'unknown'}",
+                f"reason={reason or 'unknown'}",
+                "--- raw output ---",
+                raw_text,
+            ]
+        ),
+        encoding="utf-8",
+    )
+    return debug_path
+
+
+def get_response_refusal(response: Any) -> str:
+    """Responses API 출력에서 거부 메시지가 있으면 반환한다."""
+    for output_item in getattr(response, "output", None) or []:
+        if getattr(output_item, "type", "") != "message":
+            continue
+        for content_item in getattr(output_item, "content", None) or []:
+            if getattr(content_item, "type", "") == "refusal":
+                return str(getattr(content_item, "refusal", "")).strip()
+    return ""
+
+
+def log_response_metadata(response: Any) -> None:
+    """원문이나 비밀값 없이 응답 종료 상태와 토큰 사용량만 기록한다."""
+    usage = getattr(response, "usage", None)
+    metadata = {
+        "response_id": str(getattr(response, "id", "") or "unknown"),
+        "status": str(getattr(response, "status", "") or "unknown"),
+        "input_tokens": getattr(usage, "input_tokens", None),
+        "output_tokens": getattr(usage, "output_tokens", None),
+        "total_tokens": getattr(usage, "total_tokens", None),
+    }
+    print("OpenAI API 응답 메타데이터: " + json.dumps(metadata, ensure_ascii=False))
+
+
+def parse_report_response(response: Any) -> Dict[str, Any]:
+    """완료된 Structured Output만 JSON으로 변환한다."""
+    response_id = str(getattr(response, "id", "") or "unknown")
+    status = str(getattr(response, "status", "") or "unknown")
+    incomplete_details = getattr(response, "incomplete_details", None)
+    incomplete_reason = str(
+        getattr(incomplete_details, "reason", "") or "unknown"
+    )
+    raw_text = str(getattr(response, "output_text", "") or "")
+
+    log_response_metadata(response)
+
+    if status != "completed":
+        debug_path = save_api_response_debug(
+            raw_text=raw_text,
+            response_id=response_id,
+            status=status,
+            reason=incomplete_reason,
+        )
+        if status == "incomplete" and incomplete_reason == "content_filter":
+            raise RuntimeError(
+                "OpenAI API 응답이 콘텐츠 필터로 중단되었습니다. "
+                f"응답 ID={response_id}, 진단 파일={debug_path}"
+            )
+
+        feedback = (
+            "이전 API 응답이 완전한 JSON으로 종료되지 않았습니다. "
+            f"status={status}, reason={incomplete_reason}. "
+            "처음부터 끝까지 완결된 단일 JSON 객체를 다시 작성하세요."
+        )
+        raise RetryableReportGenerationError(
+            "OpenAI API 응답이 완료되지 않았습니다. "
+            f"응답 ID={response_id}, status={status}, "
+            f"reason={incomplete_reason}, 진단 파일={debug_path}",
+            feedback=feedback,
+        )
+
+    refusal = get_response_refusal(response)
+    if refusal:
+        raise RuntimeError(
+            "OpenAI API가 리포트 생성을 거부했습니다. "
+            f"응답 ID={response_id}"
+        )
+
+    if not raw_text.strip():
+        debug_path = save_api_response_debug(
+            raw_text=raw_text,
+            response_id=response_id,
+            status=status,
+            reason="empty_output",
+        )
+        raise RetryableReportGenerationError(
+            "OpenAI API가 빈 응답을 반환했습니다. "
+            f"응답 ID={response_id}, 진단 파일={debug_path}",
+            feedback=(
+                "이전 API 응답이 비어 있었습니다. "
+                "스키마의 모든 필드를 포함한 완결된 단일 JSON 객체를 작성하세요."
+            ),
+        )
+
+    try:
+        report = json.loads(raw_text)
+    except json.JSONDecodeError as exc:
+        debug_path = save_api_response_debug(
+            raw_text=raw_text,
+            response_id=response_id,
+            status=status,
+            reason=(
+                f"json_decode_error_line_{exc.lineno}_column_{exc.colno}"
+            ),
+        )
+        raise RetryableReportGenerationError(
+            "OpenAI API 응답을 JSON으로 해석하지 못했습니다. "
+            f"응답 ID={response_id}, line={exc.lineno}, column={exc.colno}, "
+            f"진단 파일={debug_path}",
+            feedback=(
+                "이전 API 응답은 JSON 구문이 완결되지 않았습니다. "
+                f"line={exc.lineno}, column={exc.colno}. "
+                "설명·코드펜스 없이 처음부터 끝까지 유효한 단일 JSON 객체를 "
+                "다시 작성하세요."
+            ),
+        ) from exc
+
+    try:
+        return normalize_api_report(report)
+    except ValueError as exc:
+        raise RetryableReportGenerationError(
+            f"OpenAI API 응답 정규화에 실패했습니다: {exc}",
+            feedback=(
+                "이전 API 응답의 고정 섹션 또는 출처 구조가 잘못되었습니다: "
+                f"{exc}. 전체 JSON을 올바른 구조로 다시 작성하세요."
+            ),
+        ) from exc
+
+
 def generate_report_with_api(
     today: str,
     selected_topic: Dict[str, Any],
@@ -404,9 +562,13 @@ def generate_report_with_api(
 
     timeout_seconds = float(os.getenv("OPENAI_TIMEOUT_SECONDS", "600"))
     max_retries = int(os.getenv("OPENAI_MAX_RETRIES", "0"))
+    max_output_tokens = int(os.getenv("OPENAI_MAX_OUTPUT_TOKENS", "24000"))
+    if max_output_tokens <= 0:
+        raise ValueError("OPENAI_MAX_OUTPUT_TOKENS는 1 이상의 정수여야 합니다.")
     print(
         "OpenAI API 요청 시작: "
-        f"요청당 제한 {timeout_seconds:g}초, 최대 재시도 {max_retries}회"
+        f"요청당 제한 {timeout_seconds:g}초, 최대 재시도 {max_retries}회, "
+        f"최대 출력 {max_output_tokens}토큰"
     )
 
     try:
@@ -431,6 +593,7 @@ def generate_report_with_api(
                         "strict": True,
                     }
                 },
+                max_output_tokens=max_output_tokens,
             ),
             "OpenAI 리포트 생성",
         )
@@ -440,21 +603,7 @@ def generate_report_with_api(
             f"요청당 {timeout_seconds:g}초, 최대 재시도 {max_retries}회"
         ) from exc
 
-    raw_text = response.output_text
-
-    try:
-        report = json.loads(raw_text)
-    except json.JSONDecodeError as exc:
-        debug_path = OUTPUTS_DIR / "api_raw_response_debug.txt"
-        debug_path.parent.mkdir(parents=True, exist_ok=True)
-        debug_path.write_text(raw_text, encoding="utf-8")
-
-        raise RuntimeError(
-            "OpenAI API 응답을 JSON으로 해석하지 못했습니다. "
-            f"원본 응답을 저장했습니다: {debug_path}"
-        ) from exc
-
-    return normalize_api_report(report)
+    return parse_report_response(response)
 
 
 def generate_report(

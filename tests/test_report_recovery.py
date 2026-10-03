@@ -6,7 +6,7 @@ import tempfile
 import types
 import unittest
 from pathlib import Path
-from unittest.mock import patch
+from unittest.mock import Mock, patch
 
 
 ROOT_DIR = Path(__file__).resolve().parents[1]
@@ -97,6 +97,34 @@ class ReportRecoveryTests(unittest.TestCase):
                 report_runner.resolve_report_date("2026/08/26")
             with self.assertRaisesRegex(ValueError, "미래 날짜"):
                 report_runner.resolve_report_date("2026-08-28")
+
+    def test_scheduled_recovery_selects_oldest_recent_missing_date(self):
+        published_reports = [
+            {"date": "2026-10-01", "status": "published_api"},
+            {"date": "2026-10-03", "status": "published_api"},
+            {"date": "2026-10-02", "status": "published_mock"},
+        ]
+
+        selected = report_runner.select_scheduled_report_date(
+            current_date="2026-10-03",
+            published_reports=published_reports,
+            lookback_days=3,
+        )
+
+        self.assertEqual("2026-10-02", selected)
+
+    def test_effective_backfill_date_is_exported_for_followup_steps(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            github_env_path = Path(temp_dir) / "github-env.txt"
+            with patch.dict(
+                os.environ,
+                {"GITHUB_ENV": str(github_env_path)},
+            ):
+                report_runner.export_effective_report_date("2026-10-02")
+
+            env_text = github_env_path.read_text(encoding="utf-8")
+
+        self.assertIn("REPORT_EFFECTIVE_DATE=2026-10-02", env_text)
 
     def test_source_url_normalization_ignores_tracking_and_trailing_slash(self):
         source_url = "https://Example.com/article/?b=2&a=1"
@@ -229,12 +257,103 @@ class ReportRecoveryTests(unittest.TestCase):
         ):
             report_runner.validate_report_structure(report)
 
-    def test_validation_rejects_body_padding_newlines(self):
+    def test_whitespace_normalization_repairs_body_padding_newlines(self):
         report = self.load_validatable_latest_report()
         report["sections"][0]["body"][0] += "\n\n\n"
 
-        with self.assertRaisesRegex(ValueError, "본문 문단 내부 개행"):
-            report_runner.validate_report_structure(report)
+        report_runner.normalize_report_whitespace(report)
+
+        self.assertNotIn("\n", report["sections"][0]["body"][0])
+        report_runner.validate_report_structure(report)
+
+    def test_incomplete_api_response_is_retryable_and_saved_for_diagnostics(self):
+        response = types.SimpleNamespace(
+            id="resp_incomplete_test",
+            status="incomplete",
+            incomplete_details=types.SimpleNamespace(reason="max_output_tokens"),
+            output_text='{"title":"잘린 응답"',
+            output=[],
+            usage=types.SimpleNamespace(
+                input_tokens=100,
+                output_tokens=24000,
+                total_tokens=24100,
+            ),
+        )
+
+        with tempfile.TemporaryDirectory() as temp_dir:
+            with patch.object(report_generator, "OUTPUTS_DIR", Path(temp_dir)):
+                with self.assertRaisesRegex(
+                    report_generator.RetryableReportGenerationError,
+                    "max_output_tokens",
+                ) as raised:
+                    report_generator.parse_report_response(response)
+
+            debug_files = list(Path(temp_dir).glob("api_response_debug_*.txt"))
+
+        self.assertEqual(1, len(debug_files))
+        self.assertIn("완전한 JSON", raised.exception.feedback)
+
+    def test_malformed_completed_api_response_is_retryable(self):
+        response = types.SimpleNamespace(
+            id="resp_malformed_test",
+            status="completed",
+            incomplete_details=None,
+            output_text='{"title":"닫히지 않은 JSON"',
+            output=[],
+            usage=None,
+        )
+
+        with tempfile.TemporaryDirectory() as temp_dir:
+            with patch.object(report_generator, "OUTPUTS_DIR", Path(temp_dir)):
+                with self.assertRaisesRegex(
+                    report_generator.RetryableReportGenerationError,
+                    "JSON으로 해석",
+                ):
+                    report_generator.parse_report_response(response)
+
+            debug_files = list(Path(temp_dir).glob("api_response_debug_*.txt"))
+
+        self.assertEqual(1, len(debug_files))
+
+    def test_api_request_sets_explicit_output_token_budget(self):
+        response = types.SimpleNamespace(
+            id="resp_complete_test",
+            status="completed",
+            incomplete_details=None,
+            output_text="{}",
+            output=[],
+            usage=None,
+        )
+        create_mock = Mock(return_value=response)
+        client = types.SimpleNamespace(
+            responses=types.SimpleNamespace(create=create_mock)
+        )
+
+        with (
+            patch.object(report_generator, "get_openai_client", return_value=client),
+            patch.object(report_generator, "load_text", return_value="prompt"),
+            patch.object(report_generator, "build_user_prompt", return_value="user"),
+            patch.object(
+                report_generator,
+                "load_json",
+                return_value={"name": "daily_report", "schema": {}},
+            ),
+            patch.object(report_generator, "build_api_response_schema", return_value={}),
+            patch.object(report_generator, "parse_report_response", return_value={}),
+            patch.dict(
+                os.environ,
+                {
+                    "OPENAI_MODEL": "gpt-4.1-mini",
+                    "OPENAI_MAX_OUTPUT_TOKENS": "24000",
+                },
+            ),
+        ):
+            report_generator.generate_report_with_api(
+                today="2026-10-02",
+                selected_topic={"topic": "응답 복구"},
+            )
+
+        self.assertEqual(24000, create_mock.call_args.kwargs["max_output_tokens"])
 
     def test_validation_rejects_unregistered_quotation_source_type(self):
         report = self.load_validatable_latest_report()
@@ -437,6 +556,123 @@ class ReportRecoveryTests(unittest.TestCase):
             generate_mock.call_args_list[1].kwargs["validation_feedback"],
         )
         publish_mock.assert_called_once()
+
+    def test_response_parse_failure_retries_and_then_publishes(self):
+        topic = {
+            "topic": "API 응답 복구 테스트",
+            "main_category": "기술·공학",
+            "mid_category": "자동화",
+            "sub_category": "검증",
+            "detail_category": "파싱 복구",
+        }
+        recovered_report = self.load_validatable_latest_report()
+        recovered_report["title"] = topic["topic"]
+        retry_error = report_generator.RetryableReportGenerationError(
+            "JSON 파싱 실패",
+            feedback="완결된 JSON을 다시 작성하세요.",
+        )
+
+        with (
+            patch.object(report_runner, "load_json", return_value={}),
+            patch.object(report_runner, "select_topic", return_value=topic),
+            patch.object(
+                report_generator,
+                "generate_report",
+                side_effect=[retry_error, recovered_report],
+            ) as generate_mock,
+            patch.object(report_runner, "validate_report_structure"),
+            patch.object(report_runner, "save_render_publish_report") as publish_mock,
+            patch.object(report_runner, "record_generation_timeline", return_value={}),
+            patch.dict(
+                os.environ,
+                {
+                    "REPORT_SKIP_EXISTING_DATE": "0",
+                    "REPORT_VALIDATION_RETRIES": "2",
+                    "REPORT_DATE": "",
+                },
+            ),
+        ):
+            report_runner.run_api()
+
+        self.assertEqual(2, generate_mock.call_count)
+        self.assertEqual(
+            "완결된 JSON을 다시 작성하세요.",
+            generate_mock.call_args_list[1].kwargs["validation_feedback"],
+        )
+        publish_mock.assert_called_once()
+
+    def test_scheduled_run_generates_the_oldest_recent_missing_date(self):
+        topic = {
+            "topic": "예약 백필 통합 테스트",
+            "main_category": "기술·공학",
+            "mid_category": "자동화",
+            "sub_category": "복구",
+            "detail_category": "누락일 생성",
+        }
+        report = self.load_validatable_latest_report()
+        report["title"] = topic["topic"]
+        published_reports = [
+            {"date": "2026-10-01", "status": "published_api"},
+            {"date": "2026-10-03", "status": "published_api"},
+        ]
+
+        def load_json_for_run(path, default=None):
+            if Path(path) == report_runner.REPORTS_JSON_PATH:
+                return published_reports
+            if Path(path) == report_runner.TOPIC_DB_PATH:
+                return {}
+            return default
+
+        with tempfile.TemporaryDirectory() as temp_dir:
+            github_env_path = Path(temp_dir) / "github-env.txt"
+            with (
+                patch.object(report_runner, "get_today_kst", return_value="2026-10-03"),
+                patch.object(report_runner, "load_json", side_effect=load_json_for_run),
+                patch.object(report_runner, "select_topic", return_value=topic),
+                patch.object(
+                    report_generator,
+                    "generate_report",
+                    return_value=report,
+                ) as generate_mock,
+                patch.object(report_runner, "validate_report_structure"),
+                patch.object(
+                    report_runner,
+                    "save_render_publish_report",
+                ) as publish_mock,
+                patch.object(
+                    report_runner,
+                    "record_generation_timeline",
+                    return_value={},
+                ),
+                patch.dict(
+                    os.environ,
+                    {
+                        "REPORT_SKIP_EXISTING_DATE": "1",
+                        "REPORT_RECOVER_MISSING_DAYS": "3",
+                        "REPORT_VALIDATION_RETRIES": "2",
+                        "REPORT_DATE": "",
+                        "GITHUB_ENV": str(github_env_path),
+                        "GITHUB_STEP_SUMMARY": "",
+                    },
+                ),
+            ):
+                report_runner.run_api()
+
+            exported_env = github_env_path.read_text(encoding="utf-8")
+
+        self.assertEqual("2026-10-02", generate_mock.call_args.kwargs["today"])
+        self.assertEqual("2026-10-02", publish_mock.call_args.args[0]["date"])
+        self.assertIn("REPORT_EFFECTIVE_DATE=2026-10-02", exported_env)
+
+    def test_workflow_uploads_api_failure_diagnostics_without_publishing_them(self):
+        workflow_text = (
+            ROOT_DIR / ".github" / "workflows" / "daily-report.yml"
+        ).read_text(encoding="utf-8")
+
+        self.assertIn("Upload API failure diagnostics", workflow_text)
+        self.assertIn("outputs/api_response_debug_*.txt", workflow_text)
+        self.assertIn("if-no-files-found: ignore", workflow_text)
+        self.assertIn("REPORT_RECOVER_MISSING_DAYS", workflow_text)
 
     def test_mock_mode_accepts_recovery_date_without_publishing_catalog(self):
         topic = {"topic": "mock", "main_category": "기술·공학"}

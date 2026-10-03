@@ -47,11 +47,15 @@ jobs:
       REPORT_MODE: ${{ github.event_name == 'schedule' && 'api' || github.event.inputs.report_mode || 'mock' }}
       # 같은 날짜에 이미 정식 발행된 리포트가 있으면 예약 재실행은 건너뜁니다.
       REPORT_SKIP_EXISTING_DATE: ${{ github.event_name == 'schedule' && '1' || '0' }}
+      # 예약 실행은 최근 3일 중 가장 오래된 미발행 날짜를 우선 복구합니다.
+      REPORT_RECOVER_MISSING_DAYS: ${{ github.event_name == 'schedule' && '3' || '1' }}
       REPORT_DATE: ${{ github.event.inputs.report_date || '' }}
       REPORT_SCHEDULE_CRON: ${{ github.event.schedule || '' }}
       SITE_BASE_URL: https://jona0214-rgb.github.io/global-knowledge-journal/
       OPENAI_MODEL: gpt-4.1-mini
       OPENAI_TIMEOUT_SECONDS: "600"
+      # 정상 리포트보다 넉넉하되 비정상 반복 출력을 제한한다.
+      OPENAI_MAX_OUTPUT_TOKENS: "24000"
       # SDK 내부 장시간 재시도 대신 연결 끊김·429·5xx만 짧게 재시도합니다.
       OPENAI_MAX_RETRIES: "0"
       OPENAI_CONNECTION_RETRIES: "2"
@@ -191,17 +195,27 @@ jobs:
           path: outputs/
           retention-days: 3
 
+      - name: Upload API failure diagnostics
+        if: failure() && env.REPORT_MODE == 'api'
+        uses: actions/upload-artifact@v4
+        with:
+          name: api-failure-diagnostics-${{ github.run_id }}-${{ github.run_attempt }}
+          path: outputs/api_response_debug_*.txt
+          if-no-files-found: ignore
+          retention-days: 3
+
       - name: Show recovery procedure
         if: failure()
         run: |
           {
             echo "## Daily report recovery"
             echo ""
-            echo "1. Open the failed step and identify API connection, structure validation, PDF page count, or setup failure."
-            echo "2. A scheduled failure is retried automatically at 08:15 KST."
-            echo "3. To retry today manually:"
+            echo "1. Open the failed step and identify API connection, incomplete response, structure validation, PDF page count, or setup failure."
+            echo "2. For an incomplete or malformed API response, download the api-failure-diagnostics artifact."
+            echo "3. A scheduled failure is retried automatically at 08:15 KST."
+            echo "4. To retry today manually:"
             echo '   `gh workflow run daily-report.yml --ref main -f report_mode=api`'
-            echo "4. To recover a missing date:"
+            echo "5. To recover a missing date:"
             echo '   `gh workflow run daily-report.yml --ref main -f report_mode=api -f report_date=YYYY-MM-DD`'
             echo ""
             echo "Incomplete reports remain unpublished because validation and PDF checks run before catalog updates."
