@@ -5,7 +5,7 @@ import os
 import re
 import sqlite3
 import tempfile
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 from zoneinfo import ZoneInfo
@@ -98,6 +98,47 @@ def resolve_report_date(explicit_date: str | None = None) -> str:
             f"미래 날짜의 리포트는 생성할 수 없습니다: {requested_date}"
         )
     return requested_date
+
+
+def select_scheduled_report_date(
+    current_date: str,
+    published_reports: list,
+    lookback_days: int,
+) -> str:
+    """최근 기간에서 가장 오래된 미발행 날짜를 예약 실행 대상으로 고른다."""
+    if lookback_days < 1:
+        raise ValueError("REPORT_RECOVER_MISSING_DAYS는 1 이상의 정수여야 합니다.")
+
+    current = datetime.strptime(current_date, "%Y-%m-%d").date()
+    published_dates = {
+        str(item.get("date", "")).strip()
+        for item in published_reports
+        if isinstance(item, dict) and item.get("status") == "published_api"
+    }
+    candidates = [
+        (current - timedelta(days=days_ago)).isoformat()
+        for days_ago in reversed(range(lookback_days))
+    ]
+    return next(
+        (candidate for candidate in candidates if candidate not in published_dates),
+        current_date,
+    )
+
+
+def export_effective_report_date(report_date: str) -> None:
+    """후속 Actions 단계가 자동 선택된 백필 날짜를 사용하도록 전달한다."""
+    github_env_path = str(os.getenv("GITHUB_ENV", "")).strip()
+    if github_env_path:
+        with Path(github_env_path).open("a", encoding="utf-8") as env_file:
+            env_file.write(f"\nREPORT_EFFECTIVE_DATE={report_date}\n")
+
+    step_summary_path = str(os.getenv("GITHUB_STEP_SUMMARY", "")).strip()
+    if step_summary_path:
+        with Path(step_summary_path).open("a", encoding="utf-8") as summary_file:
+            summary_file.write(
+                "\n- Effective report date after missing-date scan: "
+                f"`{report_date}`\n"
+            )
 
 
 def compact_date(date_text: str) -> str:
@@ -1252,6 +1293,28 @@ def normalize_table_rows(report: dict) -> dict:
     return report
 
 
+def normalize_report_whitespace(report: dict) -> dict:
+    """검증 전에 안전하게 고칠 수 있는 공백·개행만 정규화한다."""
+    sections = report.get("sections", [])
+    if not isinstance(sections, list):
+        return report
+
+    for section in sections:
+        if not isinstance(section, dict):
+            continue
+        body = section.get("body", [])
+        if not isinstance(body, list):
+            continue
+        section["body"] = [
+            re.sub(r"\s+", " ", paragraph).strip()
+            if isinstance(paragraph, str)
+            else paragraph
+            for paragraph in body
+        ]
+
+    return report
+
+
 def run_mock(report_date: str | None = None):
     today = resolve_report_date(report_date)
 
@@ -1580,6 +1643,7 @@ def validate_report_structure(report: dict) -> None:
 
 def run_api(report_date: str | None = None):
     from generate_report import (
+        RetryableReportGenerationError,
         generate_report,
         generate_topic_candidates_with_api,
     )
@@ -1590,10 +1654,31 @@ def run_api(report_date: str | None = None):
     today = resolve_report_date(report_date)
     generation_started_at = utc_now_iso()
 
-    if os.getenv("REPORT_SKIP_EXISTING_DATE", "0") == "1" or requested_date:
+    skip_existing_date = os.getenv("REPORT_SKIP_EXISTING_DATE", "0") == "1"
+    recovery_lookback_days = int(os.getenv("REPORT_RECOVER_MISSING_DAYS", "1"))
+    if recovery_lookback_days < 1:
+        raise ValueError("REPORT_RECOVER_MISSING_DAYS는 1 이상의 정수여야 합니다.")
+
+    published_reports = []
+    if skip_existing_date or requested_date:
         published_reports = load_json(REPORTS_JSON_PATH, default=[])
         if not isinstance(published_reports, list):
             published_reports = []
+
+        if skip_existing_date and not requested_date:
+            selected_date = select_scheduled_report_date(
+                current_date=today,
+                published_reports=published_reports,
+                lookback_days=recovery_lookback_days,
+            )
+            if selected_date != today:
+                print(
+                    "최근 미발행 날짜 자동 복구: "
+                    f"오늘 {today} 대신 {selected_date} 리포트를 생성합니다."
+                )
+            today = selected_date
+
+        export_effective_report_date(today)
         already_published = any(
             isinstance(item, dict)
             and item.get("date") == today
@@ -1606,6 +1691,8 @@ def run_api(report_date: str | None = None):
                 "중복 생성·덮어쓰기를 건너뜁니다."
             )
             return
+    else:
+        export_effective_report_date(today)
 
     topic_db = load_json(TOPIC_DB_PATH, default={})
     try:
@@ -1656,15 +1743,29 @@ def run_api(report_date: str | None = None):
         attempt_number = attempt_index + 1
         print(f"리포트 생성 시도 {attempt_number}/{total_attempts}")
 
-        report = generate_report(
-            today=today,
-            selected_topic=topic,
-            validation_feedback=validation_feedback,
-        )
+        try:
+            report = generate_report(
+                today=today,
+                selected_topic=topic,
+                validation_feedback=validation_feedback,
+            )
+        except RetryableReportGenerationError as exc:
+            if attempt_index >= validation_retries:
+                raise
+
+            validation_feedback = exc.feedback
+            print(
+                "API 응답 복구 가능한 오류: "
+                f"{exc} / 새 응답을 요청합니다. "
+                f"남은 재생성 횟수: {validation_retries - attempt_index}"
+            )
+            continue
+
         # 모델 응답의 날짜를 신뢰하지 않고 실행에서 확정한 발행일을 고정한다.
         report["date"] = today
         report = enforce_selected_topic(report, topic)
         report = normalize_table_rows(report)
+        report = normalize_report_whitespace(report)
 
         try:
             validate_report_structure(report)
