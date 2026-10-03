@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-03T08:42:01.120614+09:00",
+  "last_updated": "2026-10-04T07:49:35.689250+09:00",
   "reports": [
     {
       "date": "2026-10-03",
@@ -14,6 +14,21 @@
       "pdf_path": "outputs/20261003_bureaucracy_two_faces_ru_Report.pdf",
       "html_url": "outputs/20261003_bureaucracy_two_faces_ru_Report.html",
       "pdf_url": "outputs/20261003_bureaucracy_two_faces_ru_Report.pdf",
+      "status": "published_api"
+    },
+    {
+      "date": "2026-10-02",
+      "title": "주식 시장의 심리학: 투자자 행동은 어떻게 시장을 움직이는가",
+      "subtitle": "투자자의 심리는 어떻게 주식 시장의 역동성을 만들어내는가",
+      "main_category": "경제·경영",
+      "mid_category": "금융",
+      "sub_category": "자본시장",
+      "detail_category": "행동금융학",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20261002_psychology_of_stock_mark_Report.html",
+      "pdf_path": "outputs/20261002_psychology_of_stock_mark_Report.pdf",
+      "html_url": "outputs/20261002_psychology_of_stock_mark_Report.html",
+      "pdf_url": "outputs/20261002_psychology_of_stock_mark_Report.pdf",
       "status": "published_api"
     },
     {

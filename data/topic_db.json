@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-10-03",
+  "updated_at": "2026-10-02",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -1064,6 +1064,28 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261003_bureaucracy_two_faces_ru_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261003_bureaucracy_two_faces_ru_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "date": "2026-10-02",
+      "title": "주식 시장의 심리학: 투자자 행동은 어떻게 시장을 움직이는가",
+      "main_category": "경제·경영",
+      "mid_category": "금융",
+      "sub_category": "자본시장",
+      "detail_category": "행동금융학",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "주식 시장",
+        "투자자 행동",
+        "심리학",
+        "행동금융학",
+        "시장 변동성",
+        "과잉반응",
+        "심리적 편향",
+        "투자 결정"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261002_psychology_of_stock_mark_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261002_psychology_of_stock_mark_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -1080,14 +1102,14 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "사회·정치·법",
-    "next_main_category": "경제·경영",
-    "next_index": 2,
+    "last_main_category": "경제·경영",
+    "next_main_category": "과학·수학",
+    "next_index": 3,
     "completed_cycles": 5,
     "published_counts": {
       "인문·철학": 6,
       "사회·정치·법": 5,
-      "경제·경영": 4,
+      "경제·경영": 5,
       "과학·수학": 4,
       "기술·공학": 5,
       "생명·건강": 4,
@@ -1097,7 +1119,6 @@
       "언어·미디어·지식": 6
     },
     "recent_main_categories": [
-      "경제·경영",
       "과학·수학",
       "기술·공학",
       "생명·건강",
@@ -1106,7 +1127,8 @@
       "예술·디자인",
       "언어·미디어·지식",
       "인문·철학",
-      "사회·정치·법"
+      "사회·정치·법",
+      "경제·경영"
     ]
   },
   "candidate_pool": [
@@ -1756,6 +1778,56 @@
       "mid_category": "철학",
       "sub_category": "동양철학",
       "detail_category": "무(無)의 철학적 탐구",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "주식 시장의 심리학: 투자자 행동은 어떻게 시장을 움직이는가",
+      "main_category": "경제·경영",
+      "mid_category": "금융",
+      "sub_category": "자본시장",
+      "detail_category": "행동금융학",
+      "priority": 1.0,
+      "status": "used",
+      "source": "api_generated"
+    },
+    {
+      "topic": "노동 임금과 생산성 간 역학: 경제 성장에 미치는 영향 분석",
+      "main_category": "경제·경영",
+      "mid_category": "노동",
+      "sub_category": "임금 체계",
+      "detail_category": "생산성 연계 임금",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "기업 브랜드 가치 측정 방법과 소비자 신뢰의 관계",
+      "main_category": "경제·경영",
+      "mid_category": "기업과 소비",
+      "sub_category": "브랜딩",
+      "detail_category": "브랜드 자산 평가",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "가계부채의 경제적 영향과 금융 안정성 분석",
+      "main_category": "경제·경영",
+      "mid_category": "금융",
+      "sub_category": "가계 금융",
+      "detail_category": "부채 영향 평가",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "공정 무역 운동과 글로벌 공급망의 변화",
+      "main_category": "경제·경영",
+      "mid_category": "경제",
+      "sub_category": "국제 무역",
+      "detail_category": "사회적 무역 기준과 실천",
       "priority": 1.0,
       "status": "candidate",
       "source": "api_generated"
