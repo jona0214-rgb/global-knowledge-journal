@@ -44,8 +44,6 @@ const elementIds = [
   "report-count",
   "latest-date",
   "site-status",
-  "automation-status",
-  "generation-history",
   "archive-category",
   "archive-month",
   "archive-sort",
@@ -58,21 +56,12 @@ elements.get("archive-sort").value = "newest";
 const reports = JSON.parse(
   await fs.readFile(new URL("../public/reports.json", import.meta.url), "utf8"),
 );
-const generationHistory = [
-  {
-    date: "2026-08-29",
-    title: "향신료 교역의 세계사",
-    scheduled_for_kst: "2026-08-29T05:00:00+09:00",
-    workflow_started_at: "2026-08-29T03:10:00Z",
-    catalog_updated_at: "2026-08-29T03:16:50Z",
-    scheduler_delay_seconds: 25800,
-    setup_duration_seconds: 30,
-    generation_duration_seconds: 400,
-    run_url: "https://github.com/example/run/1",
-  },
-];
 const appSource = await fs.readFile(
   new URL("../app.js", import.meta.url),
+  "utf8",
+);
+const indexSource = await fs.readFile(
+  new URL("../index.html", import.meta.url),
   "utf8",
 );
 
@@ -104,8 +93,7 @@ const context = vm.createContext({
   },
   fetch: async (path) => ({
     ok: true,
-    json: async () =>
-      String(path).includes("generation-history") ? generationHistory : reports,
+    json: async () => reports,
   }),
 });
 
@@ -119,8 +107,6 @@ const resetButton = elements.get("archive-reset");
 const resultCount = elements.get("archive-result-count");
 const reportList = elements.get("report-list");
 const latestReport = elements.get("latest-report");
-const automationStatus = elements.get("automation-status");
-const generationHistoryEl = elements.get("generation-history");
 
 // 발행 데이터가 매일 늘고 구 분류명이 canonical 대분류로 합쳐질 수 있으므로
 // 고정 개수 대신 현재 렌더링된 집계가 존재하는지를 검증한다.
@@ -136,9 +122,8 @@ assert.match(
 );
 assert.match(latestReport.innerHTML, /<dt>대분류<\/dt>/);
 assert.match(latestReport.innerHTML, /<dt>분야<\/dt>/);
-assert.match(automationStatus.textContent, /2026-08-29 · 정상/);
-assert.match(generationHistoryEl.innerHTML, /예약 지연/);
-assert.match(generationHistoryEl.innerHTML, /Actions 로그/);
+assert.match(indexSource, /href="logs\.html"/);
+assert.doesNotMatch(indexSource, /id="generation-history"/);
 
 categorySelect.value = "역사·문화";
 categorySelect.trigger("change");

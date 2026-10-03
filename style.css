@@ -72,9 +72,20 @@ h1 {
   font-size: 18px;
 }
 
+.compact-hero h1 {
+  font-size: clamp(34px, 5vw, 58px);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 26px;
+}
+
 .summary-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 18px;
   margin: 24px 0 42px;
 }
@@ -150,6 +161,30 @@ h1 {
 }
 
 .timeline-heading a {
+  color: var(--accent-dark);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.timeline-state {
+  flex: 0 0 auto !important;
+  padding: 3px 9px;
+  color: var(--accent-dark);
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800 !important;
+}
+
+.timeline-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  margin: -4px 0 14px;
+}
+
+.timeline-links a {
   color: var(--accent-dark);
   font-size: 13px;
   font-weight: 800;

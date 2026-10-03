@@ -17,54 +17,69 @@ on:
         type: string
 
   schedule:
-    # GitHub cron은 UTC 기준입니다. 매일 20:00 UTC = 다음 날 05:00 KST.
-    # 다음 몇 회 실행에서 예약 시각과 실제 시작·공개 시각의 차이를 측정합니다.
-    - cron: "0 20 * * *"
-    # 23:15 UTC = 08:15 KST. 첫 실행이 실패했을 때 자동 복구하며,
-    # 이미 발행되었다면 REPORT_SKIP_EXISTING_DATE가 중복 생성을 막습니다.
-    - cron: "15 23 * * *"
-
-concurrency:
-  group: daily-global-knowledge-report
-  cancel-in-progress: false
+    # GitHub cron은 UTC 기준입니다.
+    # 14:45 UTC = 23:45 KST: 작업을 미리 시작하고 00:00 생성 게이트까지 대기.
+    - cron: "45 14 * * *"
+    # 18:15 UTC = 다음 날 03:15 KST: 누락 시 2차 생성 및 복구.
+    - cron: "15 18 * * *"
+    # 18:45 UTC = 다음 날 03:45 KST: 공개 작업을 미리 시작하고 07:00까지 대기.
+    # GitHub 예약 지연이 있으면 07:00 이후 준비되는 즉시 공개합니다.
+    - cron: "45 18 * * *"
 
 permissions:
   contents: write
 
 jobs:
-  generate-report:
+  prepare-report:
+    if: github.event_name == 'workflow_dispatch' || github.event.schedule != '45 18 * * *'
     runs-on: ubuntu-latest
-    # API 생성은 요청당 최대 10분이며 검증 재시도가 두 번 있을 수 있습니다.
-    # 생성·검증(최대 약 30분) 뒤 Pages 공개 확인을 최대 15분 수행합니다.
-    timeout-minutes: 55
+    timeout-minutes: 75
+    concurrency:
+      group: daily-global-knowledge-report-generation
+      cancel-in-progress: false
 
     env:
       REPORT_TIMEZONE: Asia/Seoul
       REPORT_LANGUAGE: ko
       REPORT_MIN_PAGES: "6"
       REPORT_TARGET_PAGES: "7-9"
-      # 예약 실행은 항상 API로 발행하고, 수동 실행만 선택한 모드를 사용합니다.
       REPORT_MODE: ${{ github.event_name == 'schedule' && 'api' || github.event.inputs.report_mode || 'mock' }}
-      # 같은 날짜에 이미 정식 발행된 리포트가 있으면 예약 재실행은 건너뜁니다.
       REPORT_SKIP_EXISTING_DATE: ${{ github.event_name == 'schedule' && '1' || '0' }}
-      # 예약 실행은 최근 3일 중 가장 오래된 미발행 날짜를 우선 복구합니다.
       REPORT_RECOVER_MISSING_DAYS: ${{ github.event_name == 'schedule' && '3' || '1' }}
       REPORT_DATE: ${{ github.event.inputs.report_date || '' }}
       REPORT_SCHEDULE_CRON: ${{ github.event.schedule || '' }}
       SITE_BASE_URL: https://jona0214-rgb.github.io/global-knowledge-journal/
       OPENAI_MODEL: gpt-4.1-mini
       OPENAI_TIMEOUT_SECONDS: "600"
-      # 정상 리포트보다 넉넉하되 비정상 반복 출력을 제한한다.
       OPENAI_MAX_OUTPUT_TOKENS: "24000"
-      # SDK 내부 장시간 재시도 대신 연결 끊김·429·5xx만 짧게 재시도합니다.
       OPENAI_MAX_RETRIES: "0"
       OPENAI_CONNECTION_RETRIES: "2"
       OPENAI_RETRY_BASE_SECONDS: "10"
-      # 고정 wire schema 밖의 내용·분량 검증 실패는 오류 피드백과 함께 최대 2회 재생성합니다.
       REPORT_VALIDATION_RETRIES: "2"
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
     steps:
+      - name: Wait for the 00:00 KST generation gate
+        if: github.event_name == 'schedule' && github.event.schedule == '45 14 * * *'
+        shell: bash
+        run: |
+          KST_HOUR="$(TZ=Asia/Seoul date +'%H')"
+          if [ "$KST_HOUR" -ge 12 ]; then
+            TARGET_TEXT="$(TZ=Asia/Seoul date -d 'tomorrow' +'%Y-%m-%d') 00:00:00 +0900"
+          else
+            TARGET_TEXT="$(TZ=Asia/Seoul date +'%Y-%m-%d') 00:00:00 +0900"
+          fi
+          TARGET_EPOCH="$(date -d "$TARGET_TEXT" +%s)"
+          NOW_EPOCH="$(date -u +%s)"
+          WAIT_SECONDS=$((TARGET_EPOCH - NOW_EPOCH))
+
+          if [ "$WAIT_SECONDS" -gt 0 ] && [ "$WAIT_SECONDS" -le 3600 ]; then
+            echo "00:00 KST 생성 게이트까지 ${WAIT_SECONDS}초 대기합니다."
+            sleep "$WAIT_SECONDS"
+          elif [ "$WAIT_SECONDS" -gt 3600 ]; then
+            echo "예약 실행이 크게 지연되어 다음 날이 아닌 현재 날짜 리포트를 즉시 생성합니다."
+          fi
+
       - name: Record workflow start
         shell: bash
         run: |
@@ -77,11 +92,8 @@ jobs:
 
           echo "REPORT_RUN_STARTED_AT=$RUN_STARTED_AT" >> "$GITHUB_ENV"
           echo "REPORT_EFFECTIVE_DATE=$EFFECTIVE_DATE" >> "$GITHUB_ENV"
-          echo "workflow_started_at_utc=$RUN_STARTED_AT"
-          echo "effective_report_date=$EFFECTIVE_DATE"
-          echo "schedule_cron=${REPORT_SCHEDULE_CRON:-manual}"
           {
-            echo "## Schedule timing"
+            echo "## Generation timing"
             echo ""
             echo "- Effective report date: \`$EFFECTIVE_DATE\`"
             echo "- Cron slot: \`${REPORT_SCHEDULE_CRON:-manual}\`"
@@ -90,6 +102,25 @@ jobs:
 
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Prepare scheduled staging branch
+        if: github.event_name == 'schedule'
+        shell: bash
+        run: |
+          git fetch origin main
+          if git ls-remote --exit-code --heads origin report-staging >/dev/null 2>&1; then
+            git fetch origin report-staging
+            git switch --force-create report-staging origin/report-staging
+            if ! git rebase origin/main; then
+              git rebase --abort
+              echo "report-staging을 최신 main 위로 재배치하지 못했습니다." >&2
+              exit 1
+            fi
+          else
+            git switch --create report-staging origin/main
+          fi
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -131,8 +162,7 @@ jobs:
           grep -i "Noto Sans CJK" "$FONT_LIST" | sort -u | sed -n '1,5p'
 
       - name: Install Playwright browser
-        run: |
-          python -m playwright install chromium
+        run: python -m playwright install chromium
 
       - name: Generate daily report
         run: |
@@ -155,15 +185,12 @@ jobs:
 
       - name: Commit generated report
         if: env.REPORT_MODE == 'api'
+        shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           git add data public
-
-          echo "Generated output files:"
-          find outputs -maxdepth 1 -type f \( -name "*.json" -o -name "*.html" -o -name "*.pdf" \) -print
-
           find outputs -maxdepth 1 -type f \( -name "*.json" -o -name "*.html" -o -name "*.pdf" \) -exec git add -f {} +
 
           echo "Staged files:"
@@ -172,12 +199,17 @@ jobs:
           if git diff --cached --quiet; then
             echo "No report changes to commit."
           else
-            git commit -m "chore: generate daily report"
-            git push
+            git commit -m "chore: stage daily report"
+            if [ "$GITHUB_EVENT_NAME" = "schedule" ]; then
+              git push origin HEAD:report-staging
+              echo "검증된 리포트를 report-staging에 저장했습니다. 07:00 공개 전까지 main에는 반영하지 않습니다."
+            else
+              git push origin "HEAD:${GITHUB_REF_NAME}"
+            fi
           fi
 
-      - name: Verify report is visible on GitHub Pages
-        if: env.REPORT_MODE == 'api'
+      - name: Verify manually generated report on GitHub Pages
+        if: github.event_name == 'workflow_dispatch' && env.REPORT_MODE == 'api'
         continue-on-error: true
         timeout-minutes: 16
         run: |
@@ -212,13 +244,118 @@ jobs:
             echo ""
             echo "1. Open the failed step and identify API connection, incomplete response, structure validation, PDF page count, or setup failure."
             echo "2. For an incomplete or malformed API response, download the api-failure-diagnostics artifact."
-            echo "3. A scheduled failure is retried automatically at 08:15 KST."
+            echo "3. A scheduled failure is retried automatically at 03:15 KST."
             echo "4. To retry today manually:"
             echo '   `gh workflow run daily-report.yml --ref main -f report_mode=api`'
             echo "5. To recover a missing date:"
             echo '   `gh workflow run daily-report.yml --ref main -f report_mode=api -f report_date=YYYY-MM-DD`'
             echo ""
-            echo "Incomplete reports remain unpublished because validation and PDF checks run before catalog updates."
+            echo "Scheduled output remains on report-staging until the 07:00 publication gate."
           } >> "$GITHUB_STEP_SUMMARY"
 
+  publish-report:
+    if: github.event_name == 'schedule' && github.event.schedule == '45 18 * * *'
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    concurrency:
+      group: daily-global-knowledge-report-publication
+      cancel-in-progress: false
 
+    env:
+      SITE_BASE_URL: https://jona0214-rgb.github.io/global-knowledge-journal/
+      REPORT_PUBLICATION_CRON: ${{ github.event.schedule }}
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Wait for the 07:00 KST publication gate
+        shell: bash
+        run: |
+          TARGET_TEXT="$(TZ=Asia/Seoul date +'%Y-%m-%d') 07:00:00 +0900"
+          TARGET_EPOCH="$(date -d "$TARGET_TEXT" +%s)"
+          NOW_EPOCH="$(date -u +%s)"
+          WAIT_SECONDS=$((TARGET_EPOCH - NOW_EPOCH))
+
+          if [ "$WAIT_SECONDS" -gt 0 ] && [ "$WAIT_SECONDS" -le 14400 ]; then
+            echo "07:00 KST 공개 게이트까지 ${WAIT_SECONDS}초 대기합니다."
+            sleep "$WAIT_SECONDS"
+          elif [ "$WAIT_SECONDS" -gt 14400 ]; then
+            echo "공개 예약이 하루 이상 지연되어 준비된 리포트를 즉시 확인합니다."
+          else
+            echo "07:00 KST가 지났으므로 준비된 리포트를 즉시 확인합니다."
+          fi
+
+      - name: Wait for a staged report
+        id: staged
+        shell: bash
+        run: |
+          FOUND=0
+          for ATTEMPT in $(seq 1 16); do
+            git fetch origin main
+            if git ls-remote --exit-code --heads origin report-staging >/dev/null 2>&1; then
+              git fetch origin report-staging
+              AHEAD_COUNT="$(git rev-list --count origin/main..origin/report-staging)"
+              if [ "$AHEAD_COUNT" -gt 0 ]; then
+                FOUND=1
+                echo "report-staging에서 공개 대기 커밋 ${AHEAD_COUNT}개를 확인했습니다."
+                break
+              fi
+            fi
+
+            if [ "$ATTEMPT" -lt 16 ]; then
+              echo "공개할 스테이징 결과가 없습니다. 5분 뒤 다시 확인합니다 (${ATTEMPT}/16)."
+              sleep 300
+            fi
+          done
+
+          echo "has_staged_report=$FOUND" >> "$GITHUB_OUTPUT"
+
+      - name: Promote staged report to main
+        if: steps.staged.outputs.has_staged_report == '1'
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git switch --force-create report-staging origin/report-staging
+
+          if ! git rebase origin/main; then
+            git rebase --abort
+            echo "공개 직전 report-staging을 최신 main 위로 재배치하지 못했습니다." >&2
+            exit 1
+          fi
+
+          python scripts/record_publication.py
+          REPORT_DATE="$(python -c 'import json; print(json.load(open("public/latest.json", encoding="utf-8"))["date"])')"
+          git add public/generation-history.json public/generation-status.json
+          git commit -m "chore: record daily report publication"
+          git push origin HEAD:report-staging
+          git push origin HEAD:main
+
+          {
+            echo "## Publication"
+            echo ""
+            echo "- Report date: \`$REPORT_DATE\`"
+            echo "- Publication gate: \`07:00 KST\`"
+            echo "- Main push completed at UTC: \`$(date -u +'%Y-%m-%dT%H:%M:%SZ')\`"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Verify report is visible on GitHub Pages
+        if: steps.staged.outputs.has_staged_report == '1'
+        continue-on-error: true
+        timeout-minutes: 16
+        run: |
+          python scripts/verify_published_site.py \
+            --base-url "$SITE_BASE_URL" \
+            --date "$REPORT_EFFECTIVE_DATE" \
+            --timeout-seconds 900 \
+            --interval-seconds 15
+
+      - name: Report missing staged output
+        if: steps.staged.outputs.has_staged_report != '1'
+        run: |
+          echo "07:00 이후 75분 동안 공개할 스테이징 리포트를 찾지 못했습니다." >&2
+          exit 1

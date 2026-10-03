@@ -68,6 +68,8 @@ def seconds_between(start: str, end: str) -> int | None:
 
 def scheduled_for_kst(report_date: str, cron_expression: str) -> str | None:
     schedule_times = {
+        "45 14 * * *": "00:00:00",
+        "15 18 * * *": "03:15:00",
         "0 20 * * *": "05:00:00",
         "15 23 * * *": "08:15:00",
     }
