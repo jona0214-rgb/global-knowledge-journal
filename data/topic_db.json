@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-10-04",
+  "updated_at": "2026-10-05",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -1108,6 +1108,28 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261004_science_of_chaos_how_sma_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261004_science_of_chaos_how_sma_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "date": "2026-10-05",
+      "title": "친환경 수처리 기술의 혁신과 도시 물 관리",
+      "main_category": "기술·공학",
+      "mid_category": "도시 인프라와 디지털 기술",
+      "sub_category": "환경 기술",
+      "detail_category": "스마트 수처리 시스템과 지속 가능성",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "친환경 수처리",
+        "도시 물 관리",
+        "스마트 시스템",
+        "지속 가능성",
+        "물 재활용",
+        "에너지 효율",
+        "수질 개선",
+        "환경 정책"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261005_eco_friendly_water_treat_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261005_eco_friendly_water_treat_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -1124,16 +1146,16 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "과학·수학",
-    "next_main_category": "기술·공학",
-    "next_index": 4,
+    "last_main_category": "기술·공학",
+    "next_main_category": "생명·건강",
+    "next_index": 5,
     "completed_cycles": 5,
     "published_counts": {
       "인문·철학": 6,
       "사회·정치·법": 5,
       "경제·경영": 5,
       "과학·수학": 5,
-      "기술·공학": 5,
+      "기술·공학": 6,
       "생명·건강": 4,
       "자연·환경·지리": 4,
       "역사·문화": 6,
@@ -1141,7 +1163,6 @@
       "언어·미디어·지식": 6
     },
     "recent_main_categories": [
-      "기술·공학",
       "생명·건강",
       "자연·환경·지리",
       "역사·문화",
@@ -1150,7 +1171,8 @@
       "인문·철학",
       "사회·정치·법",
       "경제·경영",
-      "과학·수학"
+      "과학·수학",
+      "기술·공학"
     ]
   },
   "candidate_pool": [
@@ -1852,6 +1874,56 @@
       "detail_category": "사회적 무역 기준과 실천",
       "priority": 1.0,
       "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "광섬유 기술과 정보 통신 혁신: 빛으로 연결하는 현대 사회",
+      "main_category": "기술·공학",
+      "mid_category": "산업기술",
+      "sub_category": "통신기술",
+      "detail_category": "광섬유의 원리와 응용",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "스마트 그리드의 발전과 에너지 효율성: 미래 전력망의 설계",
+      "main_category": "기술·공학",
+      "mid_category": "에너지",
+      "sub_category": "전력 시스템",
+      "detail_category": "스마트 그리드 기술과 에너지 관리",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "도시 빅데이터와 디지털 트윈: 스마트 시티 구현의 핵심",
+      "main_category": "기술·공학",
+      "mid_category": "도시 인프라와 디지털 기술",
+      "sub_category": "스마트 시티",
+      "detail_category": "디지털 트윈을 활용한 도시 관리",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "재생 에너지 저장 기술의 진화와 도전 과제",
+      "main_category": "기술·공학",
+      "mid_category": "에너지",
+      "sub_category": "신재생 에너지",
+      "detail_category": "배터리 및 저장 시스템 혁신",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "친환경 수처리 기술의 혁신과 도시 물 관리",
+      "main_category": "기술·공학",
+      "mid_category": "도시 인프라와 디지털 기술",
+      "sub_category": "환경 기술",
+      "detail_category": "스마트 수처리 시스템과 지속 가능성",
+      "priority": 1.0,
+      "status": "used",
       "source": "api_generated"
     }
   ],
