@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-10-02",
+  "updated_at": "2026-10-04",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -1086,6 +1086,28 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261002_psychology_of_stock_mark_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261002_psychology_of_stock_mark_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "date": "2026-10-04",
+      "title": "카오스의 과학: 작은 차이는 어떻게 거대한 변화를 만드는가",
+      "main_category": "과학·수학",
+      "mid_category": "복잡계과학",
+      "sub_category": "비선형 시스템",
+      "detail_category": "초기 조건의 민감성",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "카오스 이론",
+        "복잡계",
+        "비선형 시스템",
+        "초기 조건 민감성",
+        "프랙탈",
+        "나비 효과",
+        "동역학계",
+        "불확정성"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261004_science_of_chaos_how_sma_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261004_science_of_chaos_how_sma_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -1102,15 +1124,15 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "경제·경영",
-    "next_main_category": "과학·수학",
-    "next_index": 3,
+    "last_main_category": "과학·수학",
+    "next_main_category": "기술·공학",
+    "next_index": 4,
     "completed_cycles": 5,
     "published_counts": {
       "인문·철학": 6,
       "사회·정치·법": 5,
       "경제·경영": 5,
-      "과학·수학": 4,
+      "과학·수학": 5,
       "기술·공학": 5,
       "생명·건강": 4,
       "자연·환경·지리": 4,
@@ -1119,7 +1141,6 @@
       "언어·미디어·지식": 6
     },
     "recent_main_categories": [
-      "과학·수학",
       "기술·공학",
       "생명·건강",
       "자연·환경·지리",
@@ -1128,7 +1149,8 @@
       "언어·미디어·지식",
       "인문·철학",
       "사회·정치·법",
-      "경제·경영"
+      "경제·경영",
+      "과학·수학"
     ]
   },
   "candidate_pool": [
@@ -1449,7 +1471,7 @@
       "detail_category": "초기 조건의 민감성",
       "priority": 0.77,
       "main_category": "과학·수학",
-      "status": "candidate",
+      "status": "used",
       "source": "taxonomy_seed"
     },
     {

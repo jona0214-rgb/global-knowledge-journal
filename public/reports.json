@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-10-04",
+    "title": "카오스의 과학: 작은 차이는 어떻게 거대한 변화를 만드는가",
+    "subtitle": "복잡계 속 비선형 시스템과 초기 조건 민감성의 이해",
+    "main_category": "과학·수학",
+    "mid_category": "복잡계과학",
+    "sub_category": "비선형 시스템",
+    "detail_category": "초기 조건의 민감성",
+    "taxonomy_version": "2.0",
+    "html_path": "outputs/20261004_science_of_chaos_how_sma_Report.html",
+    "pdf_path": "outputs/20261004_science_of_chaos_how_sma_Report.pdf",
+    "html_url": "outputs/20261004_science_of_chaos_how_sma_Report.html",
+    "pdf_url": "outputs/20261004_science_of_chaos_how_sma_Report.pdf",
+    "status": "published_api"
+  },
+  {
     "date": "2026-10-03",
     "title": "관료제의 두 얼굴: 규칙은 어떻게 공정성과 경직성을 함께 만드는가",
     "subtitle": "관료제 내 규칙의 이중성: 공정성 확보와 체계 경직성의 딜레마",
