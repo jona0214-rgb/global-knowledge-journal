@@ -1,9 +1,11 @@
 import argparse
-import json
 import os
 from datetime import datetime, time, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
+
+from report_pipeline.json_store import load_json as load_json_file
+from report_pipeline.json_store import save_json_atomic
 
 
 ROOT_DIR = Path(__file__).resolve().parents[1]
@@ -15,16 +17,11 @@ KST = ZoneInfo("Asia/Seoul")
 
 
 def load_json(path: Path, default):
-    if not path.exists():
-        return default
-    return json.loads(path.read_text(encoding="utf-8"))
+    return load_json_file(path, default)
 
 
 def save_json(path: Path, value) -> None:
-    path.write_text(
-        json.dumps(value, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
+    save_json_atomic(path, value)
 
 
 def publication_metadata(published_at: datetime) -> dict:

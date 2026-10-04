@@ -13,6 +13,11 @@ from zoneinfo import ZoneInfo
 from jinja2 import Environment, FileSystemLoader
 from playwright.sync_api import sync_playwright
 
+from report_pipeline.catalog import build_catalog_item, build_report_id, merge_catalog
+from report_pipeline.json_store import load_json as load_json_file
+from report_pipeline.json_store import save_json_atomic
+from report_pipeline.taxonomy import load_aliases as load_taxonomy_aliases_file
+
 
 ROOT_DIR = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT_DIR / "data"
@@ -24,6 +29,7 @@ CONFIG_DIR = ROOT_DIR / "config"
 TOPIC_DB_PATH = DATA_DIR / "topic_db.json"
 TOPIC_DB_SQLITE_PATH = DATA_DIR / "topic_db.sqlite"
 TOPIC_TAXONOMY_PATH = CONFIG_DIR / "topic_taxonomy_v2.json"
+TAXONOMY_ALIASES_PATH = CONFIG_DIR / "taxonomy_aliases.json"
 QUOTATION_SOURCE_TYPES_PATH = CONFIG_DIR / "quotation_source_types.json"
 MANIFEST_PATH = DATA_DIR / "manifest.json"
 REPORTS_JSON_PATH = PUBLIC_DIR / "reports.json"
@@ -153,18 +159,11 @@ def slugify_korean(text: str) -> str:
 
 
 def load_json(path: Path, default):
-    if not path.exists():
-        return default
-
-    with path.open("r", encoding="utf-8") as f:
-        return json.load(f)
+    return load_json_file(path, default)
 
 
 def save_json(path: Path, data):
-    path.parent.mkdir(parents=True, exist_ok=True)
-
-    with path.open("w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
+    save_json_atomic(path, data)
 
 
 def normalize_topic_title(title: str) -> str:
@@ -321,32 +320,13 @@ def canonical_main_category(item: dict, taxonomy: dict) -> str:
     if seed:
         return str(seed.get("main_category", "")).strip()
 
-    legacy_middle_map = {
-        "식생활·가전문화": "역사·문화",
-        "도시인프라": "기술·공학",
-        "행정인프라": "사회·정치·법",
-        "에너지정책": "경제·경영",
-        "위험과 제도": "경제·경영",
-        "재료와 문명": "기술·공학",
-        "물환경공학": "기술·공학",
-        "동물행동": "생명·건강",
-        "생물과 구조": "과학·수학",
-        "생태환경": "자연·환경·지리",
-    }
+    aliases = load_taxonomy_aliases_file(TAXONOMY_ALIASES_PATH)
+    legacy_middle_map = aliases["legacy_middle_category_map"]
     middle_category = str(item.get("mid_category", "")).strip()
     if middle_category in legacy_middle_map:
         return legacy_middle_map[middle_category]
 
-    legacy_main_map = {
-        "인문·철학": "인문·철학",
-        "역사·문화": "역사·문화",
-        "과학·공학": "기술·공학",
-        "경제·사회": "경제·경영",
-        "자연사·생태": "자연·환경·지리",
-        "예술·미학": "예술·디자인",
-        "생활기술·일상문화": "기술·공학",
-        "언어·문자": "언어·미디어·지식",
-    }
+    legacy_main_map = aliases["legacy_main_category_map"]
     return legacy_main_map.get(main_category, "")
 
 
@@ -920,6 +900,12 @@ def update_topic_db(topic_db: dict, report: dict, html_path: Path, pdf_path: Pat
         )
     ]
     recent_reports.append({
+        "report_id": build_report_id({
+            "date": today,
+            "title": report["title"],
+            "title_slug": report.get("title_slug", ""),
+            "html_path": str(html_path.as_posix()),
+        }),
         "date": today,
         "title": report["title"],
         "main_category": report["category"]["main"],
@@ -1055,70 +1041,11 @@ def rebuild_sqlite(topic_db: dict):
 
 
 def update_public_catalog(report: dict, html_path: Path, pdf_path: Path):
-    def to_public_asset_path(path_value) -> str:
-        path_text = str(path_value).replace("\\", "/")
-
-        if "outputs/" in path_text:
-            return "outputs/" + path_text.split("outputs/", 1)[1]
-
-        try:
-            return Path(path_value).resolve().relative_to(ROOT_DIR.resolve()).as_posix()
-        except ValueError:
-            return Path(path_value).name
-
-    def normalize_catalog_item(item: dict) -> dict:
-        normalized = dict(item)
-
-        for key in ["html_path", "pdf_path", "html_url", "pdf_url"]:
-            value = normalized.get(key)
-
-            if value and value != "...":
-                normalized[key] = to_public_asset_path(value)
-
-        if normalized.get("html_path") and not normalized.get("html_url"):
-            normalized["html_url"] = normalized["html_path"]
-
-        if normalized.get("pdf_path") and not normalized.get("pdf_url"):
-            normalized["pdf_url"] = normalized["pdf_path"]
-
-        return normalized
-
     reports = load_json(REPORTS_JSON_PATH, [])
-
-    reports = [
-        normalize_catalog_item(item)
-        for item in reports
-        if isinstance(item, dict)
-    ]
-
-    today = report["date"]
-
-    reports = [
-        item for item in reports
-        if item.get("date") != today
-    ]
-
-    html_public_path = to_public_asset_path(html_path)
-    pdf_public_path = to_public_asset_path(pdf_path)
-
-    item = {
-        "date": today,
-        "title": report["title"],
-        "subtitle": report["subtitle"],
-        "main_category": report["category"]["main"],
-        "mid_category": report["category"]["middle"],
-        "sub_category": report["category"]["sub"],
-        "detail_category": report["category"]["detail"],
-        "taxonomy_version": report.get("taxonomy_version", "2.0"),
-        "html_path": html_public_path,
-        "pdf_path": pdf_public_path,
-        "html_url": html_public_path,
-        "pdf_url": pdf_public_path,
-        "status": report.get("status", "published_mock")
-    }
-
-    reports.append(item)
-    reports.sort(key=lambda x: x["date"], reverse=True)
+    if not isinstance(reports, list):
+        reports = []
+    item = build_catalog_item(ROOT_DIR, report, html_path, pdf_path)
+    reports = merge_catalog(ROOT_DIR, reports, item)
 
     save_json(REPORTS_JSON_PATH, reports)
     # 과거 누락 날짜를 백필해도 홈페이지의 최신 리포트는 가장 최근 날짜를 유지한다.

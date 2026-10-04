@@ -1,0 +1,119 @@
+name: Publish Staged Knowledge Report
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 21:45 UTC = 06:45 KST. 짧게 대기한 뒤 07:00에 스테이징 결과를 공개합니다.
+    - cron: "45 21 * * *"
+
+jobs:
+  publish-report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 110
+    permissions:
+      contents: write
+    concurrency:
+      group: daily-global-knowledge-report-publication
+      cancel-in-progress: false
+
+    env:
+      SITE_BASE_URL: https://jona0214-rgb.github.io/global-knowledge-journal/
+      REPORT_PUBLICATION_CRON: ${{ github.event.schedule || 'manual' }}
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Wait for the 07:00 KST publication gate
+        if: github.event_name == 'schedule'
+        shell: bash
+        run: |
+          TARGET_TEXT="$(TZ=Asia/Seoul date +'%Y-%m-%d') 07:00:00 +0900"
+          TARGET_EPOCH="$(date -d "$TARGET_TEXT" +%s)"
+          NOW_EPOCH="$(date -u +%s)"
+          WAIT_SECONDS=$((TARGET_EPOCH - NOW_EPOCH))
+
+          if [ "$WAIT_SECONDS" -gt 0 ] && [ "$WAIT_SECONDS" -le 3600 ]; then
+            echo "07:00 KST 공개 게이트까지 ${WAIT_SECONDS}초 대기합니다."
+            sleep "$WAIT_SECONDS"
+          else
+            echo "07:00 KST 이후이거나 예약이 지연되어 즉시 공개를 확인합니다."
+          fi
+
+      - name: Wait for a staged report
+        id: staged
+        shell: bash
+        run: |
+          FOUND=0
+          for ATTEMPT in $(seq 1 16); do
+            git fetch origin main
+            if git ls-remote --exit-code --heads origin report-staging >/dev/null 2>&1; then
+              git fetch origin report-staging
+              AHEAD_COUNT="$(git rev-list --count origin/main..origin/report-staging)"
+              if [ "$AHEAD_COUNT" -gt 0 ]; then
+                FOUND=1
+                echo "report-staging에서 공개 대기 커밋 ${AHEAD_COUNT}개를 확인했습니다."
+                break
+              fi
+            fi
+
+            if [ "$ATTEMPT" -lt 16 ]; then
+              echo "공개할 스테이징 결과가 없습니다. 5분 뒤 다시 확인합니다 (${ATTEMPT}/16)."
+              sleep 300
+            fi
+          done
+          echo "has_staged_report=$FOUND" >> "$GITHUB_OUTPUT"
+
+      - name: Promote staged report to main
+        if: steps.staged.outputs.has_staged_report == '1'
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git switch --force-create report-staging origin/report-staging
+
+          if ! git rebase origin/main; then
+            git rebase --abort
+            echo "공개 직전 report-staging을 최신 main 위로 재배치하지 못했습니다." >&2
+            exit 1
+          fi
+
+          python scripts/record_publication.py
+          REPORT_DATE="$(python -c 'import json; print(json.load(open("public/latest.json", encoding="utf-8"))["date"])')"
+          echo "REPORT_EFFECTIVE_DATE=$REPORT_DATE" >> "$GITHUB_ENV"
+          git add public/generation-history.json public/generation-status.json
+          git commit -m "chore: record daily report publication"
+          git push origin HEAD:report-staging
+          git push origin HEAD:main
+
+          {
+            echo "## Publication"
+            echo ""
+            echo "- Report date: \`$REPORT_DATE\`"
+            echo "- Publication gate: \`07:00 KST\`"
+            echo "- Main push completed at UTC: \`$(date -u +'%Y-%m-%dT%H:%M:%SZ')\`"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Verify report is visible on GitHub Pages
+        if: steps.staged.outputs.has_staged_report == '1'
+        timeout-minutes: 16
+        run: |
+          python scripts/verify_published_site.py \
+            --base-url "$SITE_BASE_URL" \
+            --date "$REPORT_EFFECTIVE_DATE" \
+            --timeout-seconds 900 \
+            --interval-seconds 15
+
+      - name: Report missing staged output
+        if: steps.staged.outputs.has_staged_report != '1'
+        run: |
+          echo "07:00 이후 75분 동안 공개할 스테이징 리포트를 찾지 못했습니다." >&2
+          exit 1

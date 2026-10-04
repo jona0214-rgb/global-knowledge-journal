@@ -9,48 +9,26 @@ const archiveSortEl = document.getElementById("archive-sort");
 const archiveResetEl = document.getElementById("archive-reset");
 const archiveResultCountEl = document.getElementById("archive-result-count");
 
-const CATEGORY_ORDER = [
-  "인문·철학",
-  "사회·정치·법",
-  "경제·경영",
-  "과학·수학",
-  "기술·공학",
-  "생명·건강",
-  "자연·환경·지리",
-  "역사·문화",
-  "예술·디자인",
-  "언어·미디어·지식",
-];
-
-const LEGACY_MIDDLE_CATEGORY_MAP = {
-  "식생활·가전문화": "역사·문화",
-  도시인프라: "기술·공학",
-  행정인프라: "사회·정치·법",
-  에너지정책: "경제·경영",
-  "위험과 제도": "경제·경영",
-  "재료와 문명": "기술·공학",
-  물환경공학: "기술·공학",
-  동물행동: "생명·건강",
-  "생물과 구조": "과학·수학",
-  생태환경: "자연·환경·지리",
-};
-
-const LEGACY_MAIN_CATEGORY_MAP = {
-  "인문·철학": "인문·철학",
-  "역사·문화": "역사·문화",
-  "과학·공학": "기술·공학",
-  "경제·사회": "경제·경영",
-  "자연사·생태": "자연·환경·지리",
-  "예술·미학": "예술·디자인",
-  "생활기술·일상문화": "기술·공학",
-  "언어·문자": "언어·미디어·지식",
-};
-
-const CATEGORY_CLASS_MAP = new Map(
-  CATEGORY_ORDER.map((category, index) => [category, `category-tone-${index + 1}`]),
-);
+let CATEGORY_ORDER = [];
+let LEGACY_MIDDLE_CATEGORY_MAP = {};
+let LEGACY_MAIN_CATEGORY_MAP = {};
+let CATEGORY_CLASS_MAP = new Map();
 
 let publishedReports = [];
+
+function configureTaxonomy(taxonomy) {
+  const order = taxonomy?.category_order;
+  const aliases = taxonomy?.aliases;
+  if (!Array.isArray(order) || order.length !== 10 || !aliases) {
+    throw new Error("공개 taxonomy 데이터가 올바르지 않습니다.");
+  }
+  CATEGORY_ORDER = [...order];
+  LEGACY_MAIN_CATEGORY_MAP = { ...(aliases.main || {}) };
+  LEGACY_MIDDLE_CATEGORY_MAP = { ...(aliases.middle || {}) };
+  CATEGORY_CLASS_MAP = new Map(
+    CATEGORY_ORDER.map((category, index) => [category, `category-tone-${index + 1}`]),
+  );
+}
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -349,7 +327,11 @@ async function loadJson(path) {
 
 async function init() {
   try {
-    const reports = await loadJson("public/reports.json");
+    const [taxonomy, reports] = await Promise.all([
+      loadJson("public/api/v1/taxonomy.json"),
+      loadJson("public/api/v1/reports.json"),
+    ]);
+    configureTaxonomy(taxonomy);
 
     publishedReports = Array.isArray(reports)
       ? reports
@@ -400,7 +382,7 @@ async function init() {
     archiveResultCountEl.textContent = "리포트 데이터를 확인할 수 없습니다.";
     latestEl.innerHTML = `
       <div class="empty">
-        리포트 데이터를 불러오지 못했습니다. public/reports.json 파일을 확인하세요.
+        리포트 데이터를 불러오지 못했습니다. public/api/v1 데이터를 확인하세요.
       </div>
     `;
     reportListEl.innerHTML = `

@@ -670,6 +670,9 @@ class ReportRecoveryTests(unittest.TestCase):
         workflow_text = (
             ROOT_DIR / ".github" / "workflows" / "daily-report.yml"
         ).read_text(encoding="utf-8")
+        publish_workflow_text = (
+            ROOT_DIR / ".github" / "workflows" / "publish-report.yml"
+        ).read_text(encoding="utf-8")
 
         self.assertIn("Upload API failure diagnostics", workflow_text)
         self.assertIn("outputs/api_response_debug_*.txt", workflow_text)
@@ -677,10 +680,16 @@ class ReportRecoveryTests(unittest.TestCase):
         self.assertIn("REPORT_RECOVER_MISSING_DAYS", workflow_text)
         self.assertIn('cron: "45 14 * * *"', workflow_text)
         self.assertIn('cron: "15 18 * * *"', workflow_text)
-        self.assertIn('cron: "45 18 * * *"', workflow_text)
         self.assertIn("HEAD:report-staging", workflow_text)
-        self.assertIn("Wait for the 07:00 KST publication gate", workflow_text)
-        self.assertIn("git push origin HEAD:main", workflow_text)
+        self.assertIn("Build and validate public knowledge data", workflow_text)
+        self.assertIn('cron: "45 21 * * *"', publish_workflow_text)
+        self.assertIn("Wait for the 07:00 KST publication gate", publish_workflow_text)
+        self.assertIn("git push origin HEAD:main", publish_workflow_text)
+        self.assertIn(
+            'echo "REPORT_EFFECTIVE_DATE=$REPORT_DATE" >> "$GITHUB_ENV"',
+            publish_workflow_text,
+        )
+        self.assertNotIn("continue-on-error: true", publish_workflow_text)
 
     def test_mock_mode_accepts_recovery_date_without_publishing_catalog(self):
         topic = {"topic": "mock", "main_category": "기술·공학"}

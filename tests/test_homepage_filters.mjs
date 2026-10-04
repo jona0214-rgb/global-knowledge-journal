@@ -54,7 +54,10 @@ const elements = new Map(elementIds.map((id) => [id, new FakeElement(id)]));
 elements.get("archive-sort").value = "newest";
 
 const reports = JSON.parse(
-  await fs.readFile(new URL("../public/reports.json", import.meta.url), "utf8"),
+  await fs.readFile(new URL("../public/api/v1/reports.json", import.meta.url), "utf8"),
+);
+const taxonomy = JSON.parse(
+  await fs.readFile(new URL("../public/api/v1/taxonomy.json", import.meta.url), "utf8"),
 );
 const appSource = await fs.readFile(
   new URL("../app.js", import.meta.url),
@@ -93,7 +96,7 @@ const context = vm.createContext({
   },
   fetch: async (path) => ({
     ok: true,
-    json: async () => reports,
+    json: async () => path.includes("taxonomy.json") ? taxonomy : reports,
   }),
 });
 

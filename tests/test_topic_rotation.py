@@ -1,5 +1,6 @@
 import copy
 import sys
+import tempfile
 import types
 import unittest
 from pathlib import Path
@@ -33,11 +34,22 @@ import run_daily_report as report_runner
 
 class TopicRotationTests(unittest.TestCase):
     def setUp(self):
-        self.taxonomy = report_runner.load_topic_taxonomy()
-        self.topic_db = report_runner.load_json(
-            report_runner.TOPIC_DB_PATH,
-            default={},
+        self.temp_dir = tempfile.TemporaryDirectory()
+        self.catalog_patch = patch.object(
+            report_runner,
+            "REPORTS_JSON_PATH",
+            Path(self.temp_dir.name) / "reports.json",
         )
+        self.catalog_patch.start()
+        self.taxonomy = report_runner.load_topic_taxonomy()
+        self.topic_db = {
+            "recent_reports": [],
+            "category_rotation": {"next_main_category": "인문·철학"},
+        }
+
+    def tearDown(self):
+        self.catalog_patch.stop()
+        self.temp_dir.cleanup()
 
     def test_taxonomy_has_ten_unique_categories_and_fifty_seed_topics(self):
         category_order = self.taxonomy["category_order"]

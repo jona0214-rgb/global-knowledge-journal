@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jona0214-rgb.github.io/global-knowledge-journal/schemas/knowledge_graph.schema.json",
+  "title": "Global Knowledge Journal knowledge graph",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "taxonomy_version",
+    "algorithm_version",
+    "generated_at",
+    "stats",
+    "nodes",
+    "edges"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "taxonomy_version": {"type": "string"},
+    "algorithm_version": {"type": "string"},
+    "generated_at": {"type": "string"},
+    "stats": {"type": "object"},
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "type", "label", "level"],
+        "properties": {
+          "id": {"type": "string"},
+          "type": {"enum": ["category", "middle", "sub", "detail", "report"]},
+          "label": {"type": "string"},
+          "level": {"type": "integer", "minimum": 0, "maximum": 4}
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "source", "target", "kind", "relation_type"],
+        "properties": {
+          "id": {"type": "string"},
+          "source": {"type": "string"},
+          "target": {"type": "string"},
+          "kind": {"enum": ["hierarchy", "semantic"]},
+          "relation_type": {"type": "string"}
+        }
+      }
+    }
+  }
+}
