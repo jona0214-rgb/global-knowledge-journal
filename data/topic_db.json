@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-10-05",
+  "updated_at": "2026-10-06",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -1130,6 +1130,28 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261005_eco_friendly_water_treat_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261005_eco_friendly_water_treat_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "date": "2026-10-06",
+      "title": "줄기세포 연구의 진화: 재생 의학은 어떻게 신체 치유의 미래를 바꾸고 있나",
+      "main_category": "생명·건강",
+      "mid_category": "생물학",
+      "sub_category": "세포생물학",
+      "detail_category": "줄기세포 치료와 재생 의학",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "줄기세포",
+        "재생 의학",
+        "세포 치료",
+        "조직 재생",
+        "배아줄기세포",
+        "유도만능줄기세포",
+        "척수 손상 치료",
+        "맞춤형 치료"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261006_stem_cell_research_evolu_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261006_stem_cell_research_evolu_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -1146,9 +1168,9 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "기술·공학",
-    "next_main_category": "생명·건강",
-    "next_index": 5,
+    "last_main_category": "생명·건강",
+    "next_main_category": "자연·환경·지리",
+    "next_index": 6,
     "completed_cycles": 5,
     "published_counts": {
       "인문·철학": 6,
@@ -1156,14 +1178,13 @@
       "경제·경영": 5,
       "과학·수학": 5,
       "기술·공학": 6,
-      "생명·건강": 4,
+      "생명·건강": 5,
       "자연·환경·지리": 4,
       "역사·문화": 6,
       "예술·디자인": 5,
       "언어·미디어·지식": 6
     },
     "recent_main_categories": [
-      "생명·건강",
       "자연·환경·지리",
       "역사·문화",
       "예술·디자인",
@@ -1172,7 +1193,8 @@
       "사회·정치·법",
       "경제·경영",
       "과학·수학",
-      "기술·공학"
+      "기술·공학",
+      "생명·건강"
     ]
   },
   "candidate_pool": [
@@ -1924,6 +1946,56 @@
       "detail_category": "스마트 수처리 시스템과 지속 가능성",
       "priority": 1.0,
       "status": "used",
+      "source": "api_generated"
+    },
+    {
+      "topic": "줄기세포 연구의 진화: 재생 의학은 어떻게 신체 치유의 미래를 바꾸고 있나",
+      "main_category": "생명·건강",
+      "mid_category": "생물학",
+      "sub_category": "세포생물학",
+      "detail_category": "줄기세포 치료와 재생 의학",
+      "priority": 1.0,
+      "status": "used",
+      "source": "api_generated"
+    },
+    {
+      "topic": "정신 건강에서 마인드풀니스의 역할과 과학적 근거",
+      "main_category": "생명·건강",
+      "mid_category": "건강과 심리",
+      "sub_category": "심리치료",
+      "detail_category": "마인드풀니스 기반 치료 효과 연구",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "유전체 편집 기술 CRISPR의 현재와 윤리적 쟁점",
+      "main_category": "생명·건강",
+      "mid_category": "생물학",
+      "sub_category": "유전학",
+      "detail_category": "CRISPR 기술의 의학 적용과 윤리",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "노화 생물학: 텔로미어와 세포 노화가 건강에 미치는 영향",
+      "main_category": "생명·건강",
+      "mid_category": "의학",
+      "sub_category": "노화 연구",
+      "detail_category": "텔로미어와 노화 관련 질환",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "뇌와 장(腸) 상호작용: 마이크로바이옴이 정신 건강에 미치는 영향",
+      "main_category": "생명·건강",
+      "mid_category": "뇌과학",
+      "sub_category": "신경생물학",
+      "detail_category": "장내 미생물과 뇌 건강 메커니즘",
+      "priority": 1.0,
+      "status": "candidate",
       "source": "api_generated"
     }
   ],

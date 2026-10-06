@@ -1,6 +1,21 @@
 {
-  "last_updated": "2026-10-05T07:59:33.756336+09:00",
+  "last_updated": "2026-10-06T10:16:40.693314+09:00",
   "reports": [
+    {
+      "date": "2026-10-06",
+      "title": "줄기세포 연구의 진화: 재생 의학은 어떻게 신체 치유의 미래를 바꾸고 있나",
+      "subtitle": "줄기세포의 기초부터 최신 치료 기술까지, 재생 의학이 인간 신체 치유 방식을 혁신하는 과정을 살펴본다",
+      "main_category": "생명·건강",
+      "mid_category": "생물학",
+      "sub_category": "세포생물학",
+      "detail_category": "줄기세포 치료와 재생 의학",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20261006_stem_cell_research_evolu_Report.html",
+      "pdf_path": "outputs/20261006_stem_cell_research_evolu_Report.pdf",
+      "html_url": "outputs/20261006_stem_cell_research_evolu_Report.html",
+      "pdf_url": "outputs/20261006_stem_cell_research_evolu_Report.pdf",
+      "status": "published_api"
+    },
     {
       "date": "2026-10-05",
       "title": "친환경 수처리 기술의 혁신과 도시 물 관리",

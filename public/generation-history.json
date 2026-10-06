@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-10-06",
+    "title": "줄기세포 연구의 진화: 재생 의학은 어떻게 신체 치유의 미래를 바꾸고 있나",
+    "status": "published_api",
+    "event_name": "schedule",
+    "schedule_cron": "0 20 * * *",
+    "scheduled_for_kst": "2026-10-06T05:00:00+09:00",
+    "workflow_started_at": "2026-10-06T01:15:14Z",
+    "generation_started_at": "2026-10-06T01:15:45.195797Z",
+    "generation_completed_at": "2026-10-06T01:16:39.683141Z",
+    "catalog_updated_at": "2026-10-06T01:16:40.693921Z",
+    "scheduler_delay_seconds": 18914,
+    "setup_duration_seconds": 31,
+    "generation_duration_seconds": 55,
+    "validation_attempts": 1,
+    "run_id": "37398209833",
+    "run_attempt": "1",
+    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/37398209833",
+    "source_sha": "ef5ab6c35fe0eae4e33b0c6a9a2f8fe173d6eba4"
+  },
+  {
     "date": "2026-10-05",
     "title": "친환경 수처리 기술의 혁신과 도시 물 관리",
     "status": "published_api",
@@ -578,25 +598,5 @@
     "run_attempt": "1",
     "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/34071536875",
     "source_sha": "1103a4d7a7c7751e0b56e65edfdce31bf4ddea1f"
-  },
-  {
-    "date": "2026-09-06",
-    "title": "백신의 기억: 면역계는 어떻게 미래의 감염을 준비하는가",
-    "status": "published_api",
-    "event_name": "schedule",
-    "schedule_cron": "0 20 * * *",
-    "scheduled_for_kst": "2026-09-06T05:00:00+09:00",
-    "workflow_started_at": "2026-09-05T22:00:27Z",
-    "generation_started_at": "2026-09-05T22:00:59.354858Z",
-    "generation_completed_at": "2026-09-05T22:01:57.492746Z",
-    "catalog_updated_at": "2026-09-05T22:01:58.827761Z",
-    "scheduler_delay_seconds": 7227,
-    "setup_duration_seconds": 32,
-    "generation_duration_seconds": 59,
-    "validation_attempts": 1,
-    "run_id": "33994650015",
-    "run_attempt": "1",
-    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/33994650015",
-    "source_sha": "3e626d7e14cd1ef80080d8e8bc3dd10707a1c30e"
   }
 ]
