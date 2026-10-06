@@ -5,6 +5,7 @@ import sys
 import tempfile
 import types
 import unittest
+from datetime import datetime, timezone
 from pathlib import Path
 from unittest.mock import Mock, patch
 
@@ -52,6 +53,7 @@ except ModuleNotFoundError:
     sys.modules["openai"] = openai_stub
 
 import generate_report as report_generator
+import record_publication as publication_recorder
 import run_daily_report as report_runner
 import verify_published_site as publish_verifier
 
@@ -668,11 +670,26 @@ class ReportRecoveryTests(unittest.TestCase):
         workflow_text = (
             ROOT_DIR / ".github" / "workflows" / "daily-report.yml"
         ).read_text(encoding="utf-8")
+        publish_workflow_text = (
+            ROOT_DIR / ".github" / "workflows" / "publish-report.yml"
+        ).read_text(encoding="utf-8")
 
         self.assertIn("Upload API failure diagnostics", workflow_text)
         self.assertIn("outputs/api_response_debug_*.txt", workflow_text)
         self.assertIn("if-no-files-found: ignore", workflow_text)
         self.assertIn("REPORT_RECOVER_MISSING_DAYS", workflow_text)
+        self.assertIn('cron: "45 14 * * *"', workflow_text)
+        self.assertIn('cron: "15 18 * * *"', workflow_text)
+        self.assertIn("HEAD:report-staging", workflow_text)
+        self.assertIn("Build and validate public knowledge data", workflow_text)
+        self.assertIn('cron: "45 21 * * *"', publish_workflow_text)
+        self.assertIn("Wait for the 07:00 KST publication gate", publish_workflow_text)
+        self.assertIn("git push origin HEAD:main", publish_workflow_text)
+        self.assertIn(
+            'echo "REPORT_EFFECTIVE_DATE=$REPORT_DATE" >> "$GITHUB_ENV"',
+            publish_workflow_text,
+        )
+        self.assertNotIn("continue-on-error: true", publish_workflow_text)
 
     def test_mock_mode_accepts_recovery_date_without_publishing_catalog(self):
         topic = {"topic": "mock", "main_category": "기술·공학"}
@@ -688,7 +705,7 @@ class ReportRecoveryTests(unittest.TestCase):
 
         publish_mock.assert_called_once_with(report, {}, mode="mock")
 
-    def test_generation_timeline_records_0500_schedule_delay(self):
+    def test_generation_timeline_records_midnight_schedule_delay(self):
         with tempfile.TemporaryDirectory() as temp_dir:
             temp_path = Path(temp_dir)
             history_path = temp_path / "generation-history.json"
@@ -712,8 +729,8 @@ class ReportRecoveryTests(unittest.TestCase):
                 patch.dict(
                     os.environ,
                     {
-                        "REPORT_SCHEDULE_CRON": "0 20 * * *",
-                        "REPORT_RUN_STARTED_AT": "2026-08-28T20:02:00Z",
+                        "REPORT_SCHEDULE_CRON": "45 14 * * *",
+                        "REPORT_RUN_STARTED_AT": "2026-08-28T15:02:00Z",
                         "GITHUB_EVENT_NAME": "schedule",
                         "GITHUB_RUN_ID": "12345",
                         "GITHUB_RUN_ATTEMPT": "1",
@@ -725,14 +742,14 @@ class ReportRecoveryTests(unittest.TestCase):
             ):
                 entry = report_runner.record_generation_timeline(
                     report=report,
-                    generation_started_at="2026-08-28T20:03:00Z",
-                    generation_completed_at="2026-08-28T20:07:00Z",
-                    catalog_updated_at="2026-08-28T20:08:00Z",
+                    generation_started_at="2026-08-28T15:03:00Z",
+                    generation_completed_at="2026-08-28T15:07:00Z",
+                    catalog_updated_at="2026-08-28T15:08:00Z",
                     validation_attempts=1,
                 )
 
             self.assertEqual(
-                "2026-08-29T05:00:00+09:00",
+                "2026-08-29T00:00:00+09:00",
                 entry["scheduled_for_kst"],
             )
             self.assertEqual(120, entry["scheduler_delay_seconds"])
@@ -743,6 +760,61 @@ class ReportRecoveryTests(unittest.TestCase):
             status = json.loads(status_path.read_text(encoding="utf-8"))
             self.assertEqual([entry], history)
             self.assertEqual(entry, status)
+
+    def test_publication_recorder_updates_generation_log(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            temp_path = Path(temp_dir)
+            latest_path = temp_path / "latest.json"
+            history_path = temp_path / "generation-history.json"
+            status_path = temp_path / "generation-status.json"
+            latest_path.write_text(
+                json.dumps(
+                    {
+                        "date": "2026-10-04",
+                        "title": "공개 기록 테스트",
+                        "status": "published_api",
+                    },
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8",
+            )
+            history_path.write_text(
+                json.dumps(
+                    [{"date": "2026-10-04", "title": "공개 기록 테스트"}],
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8",
+            )
+
+            with (
+                patch.object(publication_recorder, "LATEST_PATH", latest_path),
+                patch.object(publication_recorder, "HISTORY_PATH", history_path),
+                patch.object(publication_recorder, "STATUS_PATH", status_path),
+                patch.dict(
+                    os.environ,
+                    {
+                        "GITHUB_REPOSITORY": "owner/repo",
+                        "GITHUB_RUN_ID": "456",
+                        "GITHUB_SERVER_URL": "https://github.com",
+                        "REPORT_PUBLICATION_CRON": "45 18 * * *",
+                    },
+                ),
+            ):
+                report_date = publication_recorder.record_publication(
+                    datetime(2026, 10, 3, 22, 0, 30, tzinfo=timezone.utc)
+                )
+
+            history = json.loads(history_path.read_text(encoding="utf-8"))
+            status = json.loads(status_path.read_text(encoding="utf-8"))
+
+        self.assertEqual("2026-10-04", report_date)
+        self.assertEqual("2026-10-04T07:00:00+09:00", history[0]["publication_target_kst"])
+        self.assertEqual("2026-10-03T22:00:30Z", history[0]["publication_pushed_at"])
+        self.assertEqual(
+            "https://github.com/owner/repo/actions/runs/456",
+            history[0]["publication_run_url"],
+        )
+        self.assertEqual(history[0], status)
 
     def test_pages_verifier_checks_catalog_and_pdf(self):
         expected = {

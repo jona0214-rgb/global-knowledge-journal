@@ -14,6 +14,8 @@ from openai import (
     RateLimitError,
 )
 
+from report_pipeline.json_store import save_json_atomic
+
 
 ROOT_DIR = Path(__file__).resolve().parents[1]
 
@@ -77,10 +79,7 @@ def load_json(path: Path) -> Dict[str, Any]:
 
 
 def save_json(path: Path, data: Dict[str, Any]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-
-    with path.open("w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
+    save_json_atomic(path, data)
 
 
 def build_api_response_schema(canonical_schema: Dict[str, Any]) -> Dict[str, Any]:

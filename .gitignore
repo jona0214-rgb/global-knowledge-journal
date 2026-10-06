@@ -1,14 +1,22 @@
 .venv/
+.codex-test-venv/
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 
 .env
 .env.*
 !.env.example
 
 logs/
+tmp/
+build/
+dist/
+data/topic_db.sqlite
 
 outputs/*
 !outputs/.gitkeep

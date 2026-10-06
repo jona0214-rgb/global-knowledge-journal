@@ -1,0 +1,3505 @@
+{
+  "schema_version": "1.0",
+  "taxonomy_version": "2.0",
+  "algorithm_version": "hierarchy-v1",
+  "generated_at": "2026-10-06T10:16:40.693314+09:00",
+  "stats": {
+    "categories": 10,
+    "reports": 52,
+    "nodes": 217,
+    "edges": 207,
+    "semantic_edges": 0
+  },
+  "nodes": [
+    {
+      "id": "category:3fc5d02608923758",
+      "type": "category",
+      "label": "인문·철학",
+      "level": 0,
+      "order": 0
+    },
+    {
+      "id": "category:52cb15e614d4481d",
+      "type": "category",
+      "label": "경제·경영",
+      "level": 0,
+      "order": 2
+    },
+    {
+      "id": "category:758a7b1ee4fe67cf",
+      "type": "category",
+      "label": "예술·디자인",
+      "level": 0,
+      "order": 8
+    },
+    {
+      "id": "category:9de06b299a735751",
+      "type": "category",
+      "label": "자연·환경·지리",
+      "level": 0,
+      "order": 6
+    },
+    {
+      "id": "category:a495d7d4da85b458",
+      "type": "category",
+      "label": "언어·미디어·지식",
+      "level": 0,
+      "order": 9
+    },
+    {
+      "id": "category:b8045a9a934d7f69",
+      "type": "category",
+      "label": "기술·공학",
+      "level": 0,
+      "order": 4
+    },
+    {
+      "id": "category:b9ccab27f2a0689e",
+      "type": "category",
+      "label": "사회·정치·법",
+      "level": 0,
+      "order": 1
+    },
+    {
+      "id": "category:c135b09622b60562",
+      "type": "category",
+      "label": "과학·수학",
+      "level": 0,
+      "order": 3
+    },
+    {
+      "id": "category:cb829c377357dd71",
+      "type": "category",
+      "label": "역사·문화",
+      "level": 0,
+      "order": 7
+    },
+    {
+      "id": "category:d1d9ae9d3e816c13",
+      "type": "category",
+      "label": "생명·건강",
+      "level": 0,
+      "order": 5
+    },
+    {
+      "id": "detail:009a377cc7c2c925",
+      "type": "detail",
+      "label": "역삼투 공정과 에너지",
+      "level": 3,
+      "main_category": "기술·공학"
+    },
+    {
+      "id": "detail:080dd9b47a474067",
+      "type": "detail",
+      "label": "냉장 기술과 가정의 변화",
+      "level": 3,
+      "main_category": "역사·문화"
+    },
+    {
+      "id": "detail:0d6eb03b63fa956d",
+      "type": "detail",
+      "label": "공간과 청각 경험",
+      "level": 3,
+      "main_category": "예술·디자인"
+    },
+    {
+      "id": "detail:0e86e35621503412",
+      "type": "detail",
+      "label": "엔트로피 증가 법칙",
+      "level": 3,
+      "main_category": "과학·수학"
+    },
+    {
+      "id": "detail:10a203a3095d20e4",
+      "type": "detail",
+      "label": "주기성과 원자 구조",
+      "level": 3,
+      "main_category": "과학·수학"
+    },
+    {
+      "id": "detail:11d0dc264a2f948b",
+      "type": "detail",
+      "label": "고정 가격과 근대 소매업",
+      "level": 3,
+      "main_category": "경제·경영"
+    },
+    {
+      "id": "detail:1421e8804a13bfb1",
+      "type": "detail",
+      "label": "기억과 자아의 연속성",
+      "level": 3,
+      "main_category": "인문·철학"
+    },
+    {
+      "id": "detail:15a0b1b8a846dda1",
+      "type": "detail",
+      "label": "센서스와 국가의 시선",
+      "level": 3,
+      "main_category": "사회·정치·법"
+    },
+    {
+      "id": "detail:16bf087aa2d5a8a4",
+      "type": "detail",
+      "label": "컨테이너 운송 혁명",
+      "level": 3,
+      "main_category": "경제·경영"
+    },
+    {
+      "id": "detail:1b1dd9b990201286",
+      "type": "detail",
+      "label": "급성 통증과 만성 통증",
+      "level": 3,
+      "main_category": "생명·건강"
+    },
+    {
+      "id": "detail:2118f5b04a1d2bf0",
+      "type": "detail",
+      "label": "행동금융학",
+      "level": 3,
+      "main_category": "경제·경영"
+    },
+    {
+      "id": "detail:2263e0265eec45b3",
+      "type": "detail",
+      "label": "교역로와 제국의 경쟁",
+      "level": 3,
+      "main_category": "역사·문화"
+    },
+    {
+      "id": "detail:285a01795f10d567",
+      "type": "detail",
+      "label": "안전장치와 고층 건축",
+      "level": 3,
+      "main_category": "기술·공학"
+    },
+    {
+      "id": "detail:2ed24e4ba7fb0be3",
+      "type": "detail",
+      "label": "시간 단위의 사회적 합의",
+      "level": 3,
+      "main_category": "역사·문화"
+    },
+    {
+      "id": "detail:34192e149b2ef72f",
+      "type": "detail",
+      "label": "줄기세포 치료와 재생 의학",
+      "level": 3,
+      "main_category": "생명·건강"
+    },
+    {
+      "id": "detail:3420d1fc276cfe21",
+      "type": "detail",
+      "label": "미분류",
+      "level": 3,
+      "main_category": "기술·공학"
+    },
+    {
+      "id": "detail:34c614fc6ec6ac0b",
+      "type": "detail",
+      "label": "몬순과 인간 생활",
+      "level": 3,
+      "main_category": "자연·환경·지리"
+    },
+    {
+      "id": "detail:34c896df57e5bd91",
+      "type": "detail",
+      "label": "미분류",
+      "level": 3,
+      "main_category": "인문·철학"
+    },
+    {
+      "id": "detail:3b365774a37949fa",
+      "type": "detail",
+      "label": "작품 보존과 시각 연출",
+      "level": 3,
+      "main_category": "예술·디자인"
+    },
+    {
+      "id": "detail:3ba9e53991aec4cd",
+      "type": "detail",
+      "label": "우편번호의 사회적 기능",
+      "level": 3,
+      "main_category": "사회·정치·법"
+    },
+    {
+      "id": "detail:41028c5d3d268fbf",
+      "type": "detail",
+      "label": "배심제의 판단 구조",
+      "level": 3,
+      "main_category": "사회·정치·법"
+    },
+    {
+      "id": "detail:419f41c50a4481dd",
+      "type": "detail",
+      "label": "우표 제도의 확산",
+      "level": 3,
+      "main_category": "역사·문화"
+    },
+    {
+      "id": "detail:42275779001e8ea8",
+      "type": "detail",
+      "label": "영의 표기와 연산",
+      "level": 3,
+      "main_category": "과학·수학"
+    },
+    {
+      "id": "detail:44346b93154d0391",
+      "type": "detail",
+      "label": "오디오북과 문화 변화",
+      "level": 3,
+      "main_category": "언어·미디어·지식"
+    },
+    {
+      "id": "detail:4609301005738b82",
+      "type": "detail",
+      "label": "프레이밍의 의미 작용",
+      "level": 3,
+      "main_category": "예술·디자인"
+    },
+    {
+      "id": "detail:49b0e51f9224f853",
+      "type": "detail",
+      "label": "수면 주기와 기억",
+      "level": 3,
+      "main_category": "생명·건강"
+    },
+    {
+      "id": "detail:4c6a522eba7d405e",
+      "type": "detail",
+      "label": "보험과 확률의 결합",
+      "level": 3,
+      "main_category": "경제·경영"
+    },
+    {
+      "id": "detail:582058263345ef47",
+      "type": "detail",
+      "label": "미분류",
+      "level": 3,
+      "main_category": "역사·문화"
+    },
+    {
+      "id": "detail:59cb9a05f050d1ff",
+      "type": "detail",
+      "label": "복식부기의 확산",
+      "level": 3,
+      "main_category": "경제·경영"
+    },
+    {
+      "id": "detail:704d751b6b29c437",
+      "type": "detail",
+      "label": "사회적 위험의 분담",
+      "level": 3,
+      "main_category": "사회·정치·법"
+    },
+    {
+      "id": "detail:71aa9af8ff46142e",
+      "type": "detail",
+      "label": "음성 방송과 대중 형성",
+      "level": 3,
+      "main_category": "언어·미디어·지식"
+    },
+    {
+      "id": "detail:71bf12bf65767030",
+      "type": "detail",
+      "label": "토양 미생물과 영양분",
+      "level": 3,
+      "main_category": "자연·환경·지리"
+    },
+    {
+      "id": "detail:78cd87ec2fe7d8dc",
+      "type": "detail",
+      "label": "관료제의 효율과 한계",
+      "level": 3,
+      "main_category": "사회·정치·법"
+    },
+    {
+      "id": "detail:7b4bad306d9a0419",
+      "type": "detail",
+      "label": "색 재료의 생산과 상징",
+      "level": 3,
+      "main_category": "예술·디자인"
+    },
+    {
+      "id": "detail:84177918c401892e",
+      "type": "detail",
+      "label": "사전 편찬과 언어 규범",
+      "level": 3,
+      "main_category": "언어·미디어·지식"
+    },
+    {
+      "id": "detail:89962e146b94dea5",
+      "type": "detail",
+      "label": "포스트휴머니즘과 정체성",
+      "level": 3,
+      "main_category": "인문·철학"
+    },
+    {
+      "id": "detail:8cabf719751154c5",
+      "type": "detail",
+      "label": "도덕적 운의 문제",
+      "level": 3,
+      "main_category": "인문·철학"
+    },
+    {
+      "id": "detail:947641bbf4d4a5ae",
+      "type": "detail",
+      "label": "사행천과 유로 변화",
+      "level": 3,
+      "main_category": "자연·환경·지리"
+    },
+    {
+      "id": "detail:97581aac4d23abbc",
+      "type": "detail",
+      "label": "미분류",
+      "level": 3,
+      "main_category": "언어·미디어·지식"
+    },
+    {
+      "id": "detail:9bae34a03bd23cf8",
+      "type": "detail",
+      "label": "반복 행위의 의미 형성",
+      "level": 3,
+      "main_category": "인문·철학"
+    },
+    {
+      "id": "detail:9f81f58b346b0012",
+      "type": "detail",
+      "label": "장내 균총과 대사",
+      "level": 3,
+      "main_category": "생명·건강"
+    },
+    {
+      "id": "detail:cfe660dfd3e02bf9",
+      "type": "detail",
+      "label": "알고리즘과 대중 인식",
+      "level": 3,
+      "main_category": "언어·미디어·지식"
+    },
+    {
+      "id": "detail:d0c58170bc66a474",
+      "type": "detail",
+      "label": "초기 조건의 민감성",
+      "level": 3,
+      "main_category": "과학·수학"
+    },
+    {
+      "id": "detail:d5d7ad9795dd6302",
+      "type": "detail",
+      "label": "스마트 수처리 시스템과 지속 가능성",
+      "level": 3,
+      "main_category": "기술·공학"
+    },
+    {
+      "id": "detail:d753586427fcf80f",
+      "type": "detail",
+      "label": "수요와 공급의 실시간 균형",
+      "level": 3,
+      "main_category": "기술·공학"
+    },
+    {
+      "id": "detail:e58bc47e916f76b6",
+      "type": "detail",
+      "label": "면역 기억의 형성",
+      "level": 3,
+      "main_category": "생명·건강"
+    },
+    {
+      "id": "detail:e58e72b2309f3108",
+      "type": "detail",
+      "label": "친환경 재료와 지속가능성",
+      "level": 3,
+      "main_category": "예술·디자인"
+    },
+    {
+      "id": "detail:ea8e27260f35e294",
+      "type": "detail",
+      "label": "확률적 지식의 조건",
+      "level": 3,
+      "main_category": "인문·철학"
+    },
+    {
+      "id": "detail:f140bbe44c7949c0",
+      "type": "detail",
+      "label": "구두점과 읽기 방식",
+      "level": 3,
+      "main_category": "언어·미디어·지식"
+    },
+    {
+      "id": "detail:f3b575b2e43024c9",
+      "type": "detail",
+      "label": "야간 조명과 생체 리듬",
+      "level": 3,
+      "main_category": "자연·환경·지리"
+    },
+    {
+      "id": "detail:fa6a80f10d49067b",
+      "type": "detail",
+      "label": "육각형 구조의 효율",
+      "level": 3,
+      "main_category": "과학·수학"
+    },
+    {
+      "id": "detail:fde540c301a1a76f",
+      "type": "detail",
+      "label": "투명 소재의 기술사",
+      "level": 3,
+      "main_category": "기술·공학"
+    },
+    {
+      "id": "middle:07982383fd448afc",
+      "type": "middle",
+      "label": "의학과 감각",
+      "level": 1,
+      "main_category": "생명·건강"
+    },
+    {
+      "id": "middle:0c14059a47957c6e",
+      "type": "middle",
+      "label": "화학",
+      "level": 1,
+      "main_category": "과학·수학"
+    },
+    {
+      "id": "middle:103e5235497ad2b3",
+      "type": "middle",
+      "label": "토양생태",
+      "level": 1,
+      "main_category": "자연·환경·지리"
+    },
+    {
+      "id": "middle:11ad53c1ad4528cc",
+      "type": "middle",
+      "label": "물리학",
+      "level": 1,
+      "main_category": "과학·수학"
+    },
+    {
+      "id": "middle:205f4adc8f23b507",
+      "type": "middle",
+      "label": "지형학",
+      "level": 1,
+      "main_category": "자연·환경·지리"
+    },
+    {
+      "id": "middle:2400afb8a9adf391",
+      "type": "middle",
+      "label": "재료공학",
+      "level": 1,
+      "main_category": "기술·공학"
+    },
+    {
+      "id": "middle:25e8d50dabe74f2b",
+      "type": "middle",
+      "label": "사회정책",
+      "level": 1,
+      "main_category": "사회·정치·법"
+    },
+    {
+      "id": "middle:2d6f571e40187e90",
+      "type": "middle",
+      "label": "윤리학",
+      "level": 1,
+      "main_category": "인문·철학"
+    },
+    {
+      "id": "middle:2e8379a9df71842a",
+      "type": "middle",
+      "label": "방송미디어",
+      "level": 1,
+      "main_category": "언어·미디어·지식"
+    },
+    {
+      "id": "middle:31276a6327b2d4a9",
+      "type": "middle",
+      "label": "전기공학",
+      "level": 1,
+      "main_category": "기술·공학"
+    },
+    {
+      "id": "middle:31efa95b81f1ef7c",
+      "type": "middle",
+      "label": "사전학",
+      "level": 1,
+      "main_category": "언어·미디어·지식"
+    },
+    {
+      "id": "middle:388a7f51a0fce5c7",
+      "type": "middle",
+      "label": "생물학",
+      "level": 1,
+      "main_category": "생명·건강"
+    },
+    {
+      "id": "middle:3a7c3af3c3ce1592",
+      "type": "middle",
+      "label": "금융",
+      "level": 1,
+      "main_category": "경제·경영"
+    },
+    {
+      "id": "middle:4c070c513f6363c7",
+      "type": "middle",
+      "label": "물환경공학",
+      "level": 1,
+      "main_category": "기술·공학"
+    },
+    {
+      "id": "middle:5eef111a7fc8d608",
+      "type": "middle",
+      "label": "생태환경",
+      "level": 1,
+      "main_category": "자연·환경·지리"
+    },
+    {
+      "id": "middle:5f206a90fa15375d",
+      "type": "middle",
+      "label": "미디어와 지식분류",
+      "level": 1,
+      "main_category": "언어·미디어·지식"
+    },
+    {
+      "id": "middle:69ad88fc2b6dc465",
+      "type": "middle",
+      "label": "면역학",
+      "level": 1,
+      "main_category": "생명·건강"
+    },
+    {
+      "id": "middle:6bb393db31e086c2",
+      "type": "middle",
+      "label": "복잡계과학",
+      "level": 1,
+      "main_category": "과학·수학"
+    },
+    {
+      "id": "middle:6c529e8114138a11",
+      "type": "middle",
+      "label": "기계공학",
+      "level": 1,
+      "main_category": "기술·공학"
+    },
+    {
+      "id": "middle:757f6d7c48bc1a05",
+      "type": "middle",
+      "label": "지식분류",
+      "level": 1,
+      "main_category": "언어·미디어·지식"
+    },
+    {
+      "id": "middle:761c2cc0e0a413e5",
+      "type": "middle",
+      "label": "미생물학",
+      "level": 1,
+      "main_category": "생명·건강"
+    },
+    {
+      "id": "middle:77d31820ff725c5c",
+      "type": "middle",
+      "label": "공간미학",
+      "level": 1,
+      "main_category": "예술·디자인"
+    },
+    {
+      "id": "middle:7cd3173ab73dc489",
+      "type": "middle",
+      "label": "사진미학",
+      "level": 1,
+      "main_category": "예술·디자인"
+    },
+    {
+      "id": "middle:873019f88207822f",
+      "type": "middle",
+      "label": "금융제도",
+      "level": 1,
+      "main_category": "경제·경영"
+    },
+    {
+      "id": "middle:8cbf2eefebf157d5",
+      "type": "middle",
+      "label": "과학철학",
+      "level": 1,
+      "main_category": "인문·철학"
+    },
+    {
+      "id": "middle:8e6727676b60ee0f",
+      "type": "middle",
+      "label": "사법제도",
+      "level": 1,
+      "main_category": "사회·정치·법"
+    },
+    {
+      "id": "middle:925b945a5f319d53",
+      "type": "middle",
+      "label": "행정학",
+      "level": 1,
+      "main_category": "사회·정치·법"
+    },
+    {
+      "id": "middle:9a840b66bd8d3d30",
+      "type": "middle",
+      "label": "심리철학",
+      "level": 1,
+      "main_category": "인문·철학"
+    },
+    {
+      "id": "middle:a6e8bec105c6f692",
+      "type": "middle",
+      "label": "행정제도",
+      "level": 1,
+      "main_category": "사회·정치·법"
+    },
+    {
+      "id": "middle:b1bf48b32ef4f9dc",
+      "type": "middle",
+      "label": "도시 인프라와 디지털 기술",
+      "level": 1,
+      "main_category": "기술·공학"
+    },
+    {
+      "id": "middle:b3a67bbd035724bc",
+      "type": "middle",
+      "label": "도시인프라",
+      "level": 1,
+      "main_category": "기술·공학"
+    },
+    {
+      "id": "middle:b8571f7cc73fec25",
+      "type": "middle",
+      "label": "수학과 자연",
+      "level": 1,
+      "main_category": "과학·수학"
+    },
+    {
+      "id": "middle:baa004598199726d",
+      "type": "middle",
+      "label": "교역문화",
+      "level": 1,
+      "main_category": "역사·문화"
+    },
+    {
+      "id": "middle:c8be5258eb6b9011",
+      "type": "middle",
+      "label": "소비경제",
+      "level": 1,
+      "main_category": "경제·경영"
+    },
+    {
+      "id": "middle:c9fd36b743fc1a12",
+      "type": "middle",
+      "label": "시간문화",
+      "level": 1,
+      "main_category": "역사·문화"
+    },
+    {
+      "id": "middle:cb144e23e2065cf0",
+      "type": "middle",
+      "label": "전시디자인",
+      "level": 1,
+      "main_category": "예술·디자인"
+    },
+    {
+      "id": "middle:d1ca29c1992b6249",
+      "type": "middle",
+      "label": "물류경제",
+      "level": 1,
+      "main_category": "경제·경영"
+    },
+    {
+      "id": "middle:d28f514598eeca17",
+      "type": "middle",
+      "label": "기업경영",
+      "level": 1,
+      "main_category": "경제·경영"
+    },
+    {
+      "id": "middle:d6e43e13b5ff081e",
+      "type": "middle",
+      "label": "통신문화사",
+      "level": 1,
+      "main_category": "역사·문화"
+    },
+    {
+      "id": "middle:da865dcc4593c8cc",
+      "type": "middle",
+      "label": "국가와 행정",
+      "level": 1,
+      "main_category": "사회·정치·법"
+    },
+    {
+      "id": "middle:dd6431f22f48bada",
+      "type": "middle",
+      "label": "문자문화",
+      "level": 1,
+      "main_category": "언어·미디어·지식"
+    },
+    {
+      "id": "middle:dd947ec8f58cea1c",
+      "type": "middle",
+      "label": "기후지리",
+      "level": 1,
+      "main_category": "자연·환경·지리"
+    },
+    {
+      "id": "middle:df3d6656d3780ad9",
+      "type": "middle",
+      "label": "종교철학",
+      "level": 1,
+      "main_category": "인문·철학"
+    },
+    {
+      "id": "middle:e264145b0aeb4a5a",
+      "type": "middle",
+      "label": "출판",
+      "level": 1,
+      "main_category": "언어·미디어·지식"
+    },
+    {
+      "id": "middle:e540b1045ff90846",
+      "type": "middle",
+      "label": "수학사",
+      "level": 1,
+      "main_category": "과학·수학"
+    },
+    {
+      "id": "middle:e9259388404aa6fc",
+      "type": "middle",
+      "label": "신경과학",
+      "level": 1,
+      "main_category": "생명·건강"
+    },
+    {
+      "id": "middle:ead100e4f8ed5e3d",
+      "type": "middle",
+      "label": "정치철학",
+      "level": 1,
+      "main_category": "인문·철학"
+    },
+    {
+      "id": "middle:eadcf5e153b9ad3c",
+      "type": "middle",
+      "label": "생활문화사",
+      "level": 1,
+      "main_category": "역사·문화"
+    },
+    {
+      "id": "middle:ed185c06c3af8635",
+      "type": "middle",
+      "label": "사상",
+      "level": 1,
+      "main_category": "인문·철학"
+    },
+    {
+      "id": "middle:efbda3d2166e9316",
+      "type": "middle",
+      "label": "미술재료",
+      "level": 1,
+      "main_category": "예술·디자인"
+    },
+    {
+      "id": "middle:f916666c3b9a7ed8",
+      "type": "middle",
+      "label": "건축",
+      "level": 1,
+      "main_category": "예술·디자인"
+    },
+    {
+      "id": "report:rpt-20260815-dosiei-hasudo",
+      "type": "report",
+      "label": "도시의 하수도: 보이지 않는 위생 인프라는 어떻게 문명을 바꾸었나",
+      "level": 4,
+      "report_id": "rpt-20260815-dosiei-hasudo",
+      "date": "2026-08-15",
+      "main_category": "기술·공학",
+      "category_path": [
+        "기술·공학",
+        "도시인프라",
+        "미분류",
+        "미분류"
+      ],
+      "html_url": "outputs/20260815_dosiei_hasudo_Report.html",
+      "pdf_url": "outputs/20260815_dosiei_hasudo_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260816-veil-of-ignorance-fair-s",
+      "type": "report",
+      "label": "무지의 베일: 공정한 사회는 어떻게 상상되는가",
+      "level": 4,
+      "report_id": "rpt-20260816-veil-of-ignorance-fair-s",
+      "date": "2026-08-16",
+      "main_category": "인문·철학",
+      "category_path": [
+        "인문·철학",
+        "정치철학",
+        "사회정의론",
+        "미분류"
+      ],
+      "html_url": "outputs/20260816_veil_of_ignorance_fair_s_Report.html",
+      "pdf_url": "outputs/20260816_veil_of_ignorance_fair_s_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260817-time-table-birth-how-mod",
+      "type": "report",
+      "label": "시간표의 탄생: 근대 사회는 어떻게 시간을 표준화했나",
+      "level": 4,
+      "report_id": "rpt-20260817-time-table-birth-how-mod",
+      "date": "2026-08-17",
+      "main_category": "역사·문화",
+      "category_path": [
+        "역사·문화",
+        "시간문화",
+        "시간표와 시간표준화",
+        "미분류"
+      ],
+      "html_url": "outputs/20260817_time_table_birth_how_mod_Report.html",
+      "pdf_url": "outputs/20260817_time_table_birth_how_mod_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260819-library-classification-p",
+      "type": "report",
+      "label": "도서관 분류의 정치학: 지식은 누가 어떤 순서로 배열하는가",
+      "level": 4,
+      "report_id": "rpt-20260819-library-classification-p",
+      "date": "2026-08-19",
+      "main_category": "언어·미디어·지식",
+      "category_path": [
+        "언어·미디어·지식",
+        "지식분류",
+        "도서관 분류 체계",
+        "미분류"
+      ],
+      "html_url": "outputs/20260819_library_classification_p_Report.html",
+      "pdf_url": "outputs/20260819_library_classification_p_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260820-sound-architecture-how-s",
+      "type": "report",
+      "label": "소리의 건축: 공간은 어떻게 듣는 경험을 설계하는가",
+      "level": 4,
+      "report_id": "rpt-20260820-sound-architecture-how-s",
+      "date": "2026-08-20",
+      "main_category": "예술·디자인",
+      "category_path": [
+        "예술·디자인",
+        "공간미학",
+        "건축 음향",
+        "공간과 청각 경험"
+      ],
+      "html_url": "outputs/20260820_sound_architecture_how_s_Report.html",
+      "pdf_url": "outputs/20260820_sound_architecture_how_s_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260821-punctuation-birth-comma",
+      "type": "report",
+      "label": "문장부호의 탄생: 쉼표와 마침표는 어떻게 생각의 호흡이 되었나",
+      "level": 4,
+      "report_id": "rpt-20260821-punctuation-birth-comma",
+      "date": "2026-08-21",
+      "main_category": "언어·미디어·지식",
+      "category_path": [
+        "언어·미디어·지식",
+        "문자문화",
+        "문장부호의 역사",
+        "구두점과 읽기 방식"
+      ],
+      "html_url": "outputs/20260821_punctuation_birth_comma__Report.html",
+      "pdf_url": "outputs/20260821_punctuation_birth_comma__Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260822-philosophy-of-probabilit",
+      "type": "report",
+      "label": "확률과 우연의 철학: 불확실성은 어떻게 지식이 되는가",
+      "level": 4,
+      "report_id": "rpt-20260822-philosophy-of-probabilit",
+      "date": "2026-08-22",
+      "main_category": "인문·철학",
+      "category_path": [
+        "인문·철학",
+        "과학철학",
+        "불확실성의 인식론",
+        "확률적 지식의 조건"
+      ],
+      "html_url": "outputs/20260822_philosophy_of_probabilit_Report.html",
+      "pdf_url": "outputs/20260822_philosophy_of_probabilit_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260823-postal-codes-social-hist",
+      "type": "report",
+      "label": "우편번호의 사회사: 숫자는 어떻게 도시와 사람을 연결했나",
+      "level": 4,
+      "report_id": "rpt-20260823-postal-codes-social-hist",
+      "date": "2026-08-23",
+      "main_category": "사회·정치·법",
+      "category_path": [
+        "사회·정치·법",
+        "행정제도",
+        "주소와 공간 행정",
+        "우편번호의 사회적 기능"
+      ],
+      "html_url": "outputs/20260823_postal_codes_social_hist_Report.html",
+      "pdf_url": "outputs/20260823_postal_codes_social_hist_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260824-insurance-birth-how-risk",
+      "type": "report",
+      "label": "보험의 탄생: 위험은 어떻게 공동의 계산이 되었나",
+      "level": 4,
+      "report_id": "rpt-20260824-insurance-birth-how-risk",
+      "date": "2026-08-24",
+      "main_category": "경제·경영",
+      "category_path": [
+        "경제·경영",
+        "금융제도",
+        "위험의 가격화",
+        "보험과 확률의 결합"
+      ],
+      "html_url": "outputs/20260824_insurance_birth_how_risk_Report.html",
+      "pdf_url": "outputs/20260824_insurance_birth_how_risk_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260825-beolbibeui-suhak-yugakgy",
+      "type": "report",
+      "label": "벌집의 수학: 육각형은 왜 자연의 설계도가 되었나",
+      "level": 4,
+      "report_id": "rpt-20260825-beolbibeui-suhak-yugakgy",
+      "date": "2026-08-25",
+      "main_category": "과학·수학",
+      "category_path": [
+        "과학·수학",
+        "수학과 자연",
+        "기하학적 최적화",
+        "육각형 구조의 효율"
+      ],
+      "html_url": "outputs/20260825_beolbibeui_suhak_yugakgy_Report.html",
+      "pdf_url": "outputs/20260825_beolbibeui_suhak_yugakgy_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260826-sleep-biology-brain-dail",
+      "type": "report",
+      "label": "잠의 생물학: 뇌는 왜 매일 의식을 내려놓는가",
+      "level": 4,
+      "report_id": "rpt-20260826-sleep-biology-brain-dail",
+      "date": "2026-08-26",
+      "main_category": "생명·건강",
+      "category_path": [
+        "생명·건강",
+        "신경과학",
+        "수면과 뇌 기능",
+        "수면 주기와 기억"
+      ],
+      "html_url": "outputs/20260826_sleep_biology_brain_dail_Report.html",
+      "pdf_url": "outputs/20260826_sleep_biology_brain_dail_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260827-history-of-glass-civiliz",
+      "type": "report",
+      "label": "유리의 문명사: 투명한 물질은 어떻게 세계를 바꾸었나",
+      "level": 4,
+      "report_id": "rpt-20260827-history-of-glass-civiliz",
+      "date": "2026-08-27",
+      "main_category": "기술·공학",
+      "category_path": [
+        "기술·공학",
+        "재료공학",
+        "유리와 광학 재료",
+        "투명 소재의 기술사"
+      ],
+      "html_url": "outputs/20260827_history_of_glass_civiliz_Report.html",
+      "pdf_url": "outputs/20260827_history_of_glass_civiliz_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260828-bamui-bitgwa-saengtaegye",
+      "type": "report",
+      "label": "밤의 빛과 생태계: 인공조명은 생명의 시간을 어떻게 바꾸는가",
+      "level": 4,
+      "report_id": "rpt-20260828-bamui-bitgwa-saengtaegye",
+      "date": "2026-08-28",
+      "main_category": "자연·환경·지리",
+      "category_path": [
+        "자연·환경·지리",
+        "생태환경",
+        "빛 공해",
+        "야간 조명과 생체 리듬"
+      ],
+      "html_url": "outputs/20260828_bamui_bitgwa_saengtaegye_Report.html",
+      "pdf_url": "outputs/20260828_bamui_bitgwa_saengtaegye_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260829-hyangsinryo-gyoyeog-hist",
+      "type": "report",
+      "label": "향신료 교역의 세계사: 맛은 어떻게 제국과 항로를 움직였나",
+      "level": 4,
+      "report_id": "rpt-20260829-hyangsinryo-gyoyeog-hist",
+      "date": "2026-08-29",
+      "main_category": "역사·문화",
+      "category_path": [
+        "역사·문화",
+        "교역문화",
+        "향신료와 해상무역",
+        "교역로와 제국의 경쟁"
+      ],
+      "html_url": "outputs/20260829_hyangsinryo_gyoyeog_hist_Report.html",
+      "pdf_url": "outputs/20260829_hyangsinryo_gyoyeog_hist_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260830-saek-e-jeryosa-anggoneun",
+      "type": "report",
+      "label": "색의 재료사: 안료는 어떻게 권력과 감정을 표현했나",
+      "level": 4,
+      "report_id": "rpt-20260830-saek-e-jeryosa-anggoneun",
+      "date": "2026-08-30",
+      "main_category": "예술·디자인",
+      "category_path": [
+        "예술·디자인",
+        "미술재료",
+        "안료와 색채",
+        "색 재료의 생산과 상징"
+      ],
+      "html_url": "outputs/20260830_saek_e_jeryosa_anggoneun_Report.html",
+      "pdf_url": "outputs/20260830_saek_e_jeryosa_anggoneun_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260831-dictionary-authority-wor",
+      "type": "report",
+      "label": "사전의 권위: 단어의 뜻은 누가 결정하고 기록하는가",
+      "level": 4,
+      "report_id": "rpt-20260831-dictionary-authority-wor",
+      "date": "2026-08-31",
+      "main_category": "언어·미디어·지식",
+      "category_path": [
+        "언어·미디어·지식",
+        "사전학",
+        "어휘의 표준화",
+        "사전 편찬과 언어 규범"
+      ],
+      "html_url": "outputs/20260831_dictionary_authority_wor_Report.html",
+      "pdf_url": "outputs/20260831_dictionary_authority_wor_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260901-moral-luck-paradox-resul",
+      "type": "report",
+      "label": "도덕적 운의 역설: 결과가 사람의 책임을 바꾸는가",
+      "level": 4,
+      "report_id": "rpt-20260901-moral-luck-paradox-resul",
+      "date": "2026-09-01",
+      "main_category": "인문·철학",
+      "category_path": [
+        "인문·철학",
+        "윤리학",
+        "책임과 판단",
+        "도덕적 운의 문제"
+      ],
+      "html_url": "outputs/20260901_moral_luck_paradox_resul_Report.html",
+      "pdf_url": "outputs/20260901_moral_luck_paradox_resul_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260902-population-survey-politi",
+      "type": "report",
+      "label": "인구조사의 정치학: 국가는 왜 사람을 세고 분류하는가",
+      "level": 4,
+      "report_id": "rpt-20260902-population-survey-politi",
+      "date": "2026-09-02",
+      "main_category": "사회·정치·법",
+      "category_path": [
+        "사회·정치·법",
+        "국가와 행정",
+        "인구 통계 제도",
+        "센서스와 국가의 시선"
+      ],
+      "html_url": "outputs/20260902_population_survey_politi_Report.html",
+      "pdf_url": "outputs/20260902_population_survey_politi_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260903-history-of-price-tags-an",
+      "type": "report",
+      "label": "가격표의 역사: 흥정은 어떻게 고정 가격으로 바뀌었나",
+      "level": 4,
+      "report_id": "rpt-20260903-history-of-price-tags-an",
+      "date": "2026-09-03",
+      "main_category": "경제·경영",
+      "category_path": [
+        "경제·경영",
+        "소비경제",
+        "가격 제도의 변화",
+        "고정 가격과 근대 소매업"
+      ],
+      "html_url": "outputs/20260903_history_of_price_tags_an_Report.html",
+      "pdf_url": "outputs/20260903_history_of_price_tags_an_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260904-birth-of-zero-how-nothin",
+      "type": "report",
+      "label": "0의 탄생: 아무것도 없음은 어떻게 수가 되었나",
+      "level": 4,
+      "report_id": "rpt-20260904-birth-of-zero-how-nothin",
+      "date": "2026-09-04",
+      "main_category": "과학·수학",
+      "category_path": [
+        "과학·수학",
+        "수학사",
+        "수 개념의 발전",
+        "영의 표기와 연산"
+      ],
+      "html_url": "outputs/20260904_birth_of_zero_how_nothin_Report.html",
+      "pdf_url": "outputs/20260904_birth_of_zero_how_nothin_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260905-seawater-to-drinking-wat",
+      "type": "report",
+      "label": "바닷물을 식수로: 담수화 기술은 물 부족의 해답이 될 수 있는가",
+      "level": 4,
+      "report_id": "rpt-20260905-seawater-to-drinking-wat",
+      "date": "2026-09-05",
+      "main_category": "기술·공학",
+      "category_path": [
+        "기술·공학",
+        "물환경공학",
+        "해수 담수화",
+        "역삼투 공정과 에너지"
+      ],
+      "html_url": "outputs/20260905_seawater_to_drinking_wat_Report.html",
+      "pdf_url": "outputs/20260905_seawater_to_drinking_wat_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260906-vaccine-memory-how-the-i",
+      "type": "report",
+      "label": "백신의 기억: 면역계는 어떻게 미래의 감염을 준비하는가",
+      "level": 4,
+      "report_id": "rpt-20260906-vaccine-memory-how-the-i",
+      "date": "2026-09-06",
+      "main_category": "생명·건강",
+      "category_path": [
+        "생명·건강",
+        "면역학",
+        "적응 면역",
+        "면역 기억의 형성"
+      ],
+      "html_url": "outputs/20260906_vaccine_memory_how_the_i_Report.html",
+      "pdf_url": "outputs/20260906_vaccine_memory_how_the_i_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260907-monsun-geography-how-sea",
+      "type": "report",
+      "label": "몬순의 지리학: 계절풍은 어떻게 문명과 농업을 움직였나",
+      "level": 4,
+      "report_id": "rpt-20260907-monsun-geography-how-sea",
+      "date": "2026-09-07",
+      "main_category": "자연·환경·지리",
+      "category_path": [
+        "자연·환경·지리",
+        "기후지리",
+        "계절풍 기후",
+        "몬순과 인간 생활"
+      ],
+      "html_url": "outputs/20260907_monsun_geography_how_sea_Report.html",
+      "pdf_url": "outputs/20260907_monsun_geography_how_sea_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260908-history-of-refrigerator",
+      "type": "report",
+      "label": "냉장고의 사회사: 차가운 상자는 어떻게 일상을 바꾸었나",
+      "level": 4,
+      "report_id": "rpt-20260908-history-of-refrigerator",
+      "date": "2026-09-08",
+      "main_category": "역사·문화",
+      "category_path": [
+        "역사·문화",
+        "생활문화사",
+        "가전과 식생활",
+        "냉장 기술과 가정의 변화"
+      ],
+      "html_url": "outputs/20260908_history_of_refrigerator_Report.html",
+      "pdf_url": "outputs/20260908_history_of_refrigerator_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260909-museum-light-how-lightin",
+      "type": "report",
+      "label": "미술관의 빛: 조명은 어떻게 작품을 다시 보이게 하는가",
+      "level": 4,
+      "report_id": "rpt-20260909-museum-light-how-lightin",
+      "date": "2026-09-09",
+      "main_category": "예술·디자인",
+      "category_path": [
+        "예술·디자인",
+        "전시디자인",
+        "조명과 관람 경험",
+        "작품 보존과 시각 연출"
+      ],
+      "html_url": "outputs/20260909_museum_light_how_lightin_Report.html",
+      "pdf_url": "outputs/20260909_museum_light_how_lightin_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260910-radio-no-voice-how-invis",
+      "type": "report",
+      "label": "라디오의 목소리: 보이지 않는 매체는 어떻게 대중을 만들었나",
+      "level": 4,
+      "report_id": "rpt-20260910-radio-no-voice-how-invis",
+      "date": "2026-09-10",
+      "main_category": "언어·미디어·지식",
+      "category_path": [
+        "언어·미디어·지식",
+        "방송미디어",
+        "라디오 문화",
+        "음성 방송과 대중 형성"
+      ],
+      "html_url": "outputs/20260910_radio_no_voice_how_invis_Report.html",
+      "pdf_url": "outputs/20260910_radio_no_voice_how_invis_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260911-naneun-nuguingga-gieog-e",
+      "type": "report",
+      "label": "나는 누구인가: 기억은 정체성을 얼마나 보존하는가",
+      "level": 4,
+      "report_id": "rpt-20260911-naneun-nuguingga-gieog-e",
+      "date": "2026-09-11",
+      "main_category": "인문·철학",
+      "category_path": [
+        "인문·철학",
+        "심리철학",
+        "개인 동일성",
+        "기억과 자아의 연속성"
+      ],
+      "html_url": "outputs/20260911_naneun_nuguingga_gieog_e_Report.html",
+      "pdf_url": "outputs/20260911_naneun_nuguingga_gieog_e_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260912-baesimwonui-pandan-simin",
+      "type": "report",
+      "label": "배심원의 판단: 시민은 어떻게 법의 결론에 참여하는가",
+      "level": 4,
+      "report_id": "rpt-20260912-baesimwonui-pandan-simin",
+      "date": "2026-09-12",
+      "main_category": "사회·정치·법",
+      "category_path": [
+        "사회·정치·법",
+        "사법제도",
+        "시민 참여 재판",
+        "배심제의 판단 구조"
+      ],
+      "html_url": "outputs/20260912_baesimwonui_pandan_simin_Report.html",
+      "pdf_url": "outputs/20260912_baesimwonui_pandan_simin_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260913-invention-of-accounting",
+      "type": "report",
+      "label": "회계의 발명: 장부는 어떻게 기업의 언어가 되었나",
+      "level": 4,
+      "report_id": "rpt-20260913-invention-of-accounting",
+      "date": "2026-09-13",
+      "main_category": "경제·경영",
+      "category_path": [
+        "경제·경영",
+        "기업경영",
+        "회계와 조직 관리",
+        "복식부기의 확산"
+      ],
+      "html_url": "outputs/20260913_invention_of_accounting__Report.html",
+      "pdf_url": "outputs/20260913_invention_of_accounting__Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260914-jukiyurpyoui-jillye-woon",
+      "type": "report",
+      "label": "주기율표의 질서: 원소는 어떻게 자리를 찾아갔나",
+      "level": 4,
+      "report_id": "rpt-20260914-jukiyurpyoui-jillye-woon",
+      "date": "2026-09-14",
+      "main_category": "과학·수학",
+      "category_path": [
+        "과학·수학",
+        "화학",
+        "원소 분류 체계",
+        "주기성과 원자 구조"
+      ],
+      "html_url": "outputs/20260914_jukiyurpyoui_jillye_woon_Report.html",
+      "pdf_url": "outputs/20260914_jukiyurpyoui_jillye_woon_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260915-jeollyeongmang-balancing",
+      "type": "report",
+      "label": "전력망의 균형: 전기는 어떻게 매 순간 수요를 따라가는가",
+      "level": 4,
+      "report_id": "rpt-20260915-jeollyeongmang-balancing",
+      "date": "2026-09-15",
+      "main_category": "기술·공학",
+      "category_path": [
+        "기술·공학",
+        "전기공학",
+        "전력 시스템",
+        "수요와 공급의 실시간 균형"
+      ],
+      "html_url": "outputs/20260915_jeollyeongmang_balancing_Report.html",
+      "pdf_url": "outputs/20260915_jeollyeongmang_balancing_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260916-gut-microbiome-ecosystem",
+      "type": "report",
+      "label": "장내 미생물의 생태계: 몸속 공동체는 건강에 무엇을 하는가",
+      "level": 4,
+      "report_id": "rpt-20260916-gut-microbiome-ecosystem",
+      "date": "2026-09-16",
+      "main_category": "생명·건강",
+      "category_path": [
+        "생명·건강",
+        "미생물학",
+        "인체 마이크로바이옴",
+        "장내 균총과 대사"
+      ],
+      "html_url": "outputs/20260916_gut_microbiome_ecosystem_Report.html",
+      "pdf_url": "outputs/20260916_gut_microbiome_ecosystem_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260917-river-memory-meandering",
+      "type": "report",
+      "label": "강의 기억: 하천은 왜 굽이치고 길을 바꾸는가",
+      "level": 4,
+      "report_id": "rpt-20260917-river-memory-meandering",
+      "date": "2026-09-17",
+      "main_category": "자연·환경·지리",
+      "category_path": [
+        "자연·환경·지리",
+        "지형학",
+        "하천 지형",
+        "사행천과 유로 변화"
+      ],
+      "html_url": "outputs/20260917_river_memory_meandering__Report.html",
+      "pdf_url": "outputs/20260917_river_memory_meandering__Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260918-history-of-calendars-how",
+      "type": "report",
+      "label": "달력의 역사: 인간은 어떻게 시간을 나누고 약속했나",
+      "level": 4,
+      "report_id": "rpt-20260918-history-of-calendars-how",
+      "date": "2026-09-18",
+      "main_category": "역사·문화",
+      "category_path": [
+        "역사·문화",
+        "시간문화",
+        "달력과 역법",
+        "시간 단위의 사회적 합의"
+      ],
+      "html_url": "outputs/20260918_history_of_calendars_how_Report.html",
+      "pdf_url": "outputs/20260918_history_of_calendars_how_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260919-photoframe-how-camera-se",
+      "type": "report",
+      "label": "사진의 프레임: 카메라는 어떻게 현실을 선택하는가",
+      "level": 4,
+      "report_id": "rpt-20260919-photoframe-how-camera-se",
+      "date": "2026-09-19",
+      "main_category": "예술·디자인",
+      "category_path": [
+        "예술·디자인",
+        "사진미학",
+        "구도와 시선",
+        "프레이밍의 의미 작용"
+      ],
+      "html_url": "outputs/20260919_photoframe_how_camera_se_Report.html",
+      "pdf_url": "outputs/20260919_photoframe_how_camera_se_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260920-youtube-algorithm-struct",
+      "type": "report",
+      "label": "유튜브 알고리즘의 구조와 사회적 영향: 정보 편향과 공론장의 변화",
+      "level": 4,
+      "report_id": "rpt-20260920-youtube-algorithm-struct",
+      "date": "2026-09-20",
+      "main_category": "언어·미디어·지식",
+      "category_path": [
+        "언어·미디어·지식",
+        "미디어와 지식분류",
+        "디지털 미디어 분석",
+        "알고리즘과 대중 인식"
+      ],
+      "html_url": "outputs/20260920_youtube_algorithm_struct_Report.html",
+      "pdf_url": "outputs/20260920_youtube_algorithm_struct_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260921-philosophy-of-ritual-rep",
+      "type": "report",
+      "label": "의례의 철학: 반복되는 행위는 어떻게 의미가 되는가",
+      "level": 4,
+      "report_id": "rpt-20260921-philosophy-of-ritual-rep",
+      "date": "2026-09-21",
+      "main_category": "인문·철학",
+      "category_path": [
+        "인문·철학",
+        "종교철학",
+        "의례와 상징",
+        "반복 행위의 의미 형성"
+      ],
+      "html_url": "outputs/20260921_philosophy_of_ritual_rep_Report.html",
+      "pdf_url": "outputs/20260921_philosophy_of_ritual_rep_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260922-welfare-state-design-soc",
+      "type": "report",
+      "label": "복지국가의 설계: 사회적 위험은 어디까지 공동 책임인가",
+      "level": 4,
+      "report_id": "rpt-20260922-welfare-state-design-soc",
+      "date": "2026-09-22",
+      "main_category": "사회·정치·법",
+      "category_path": [
+        "사회·정치·법",
+        "사회정책",
+        "복지와 사회보장",
+        "사회적 위험의 분담"
+      ],
+      "html_url": "outputs/20260922_welfare_state_design_soc_Report.html",
+      "pdf_url": "outputs/20260922_welfare_state_design_soc_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260923-container-economics-how",
+      "type": "report",
+      "label": "컨테이너의 경제학: 표준 상자는 어떻게 세계 무역을 재편했나",
+      "level": 4,
+      "report_id": "rpt-20260923-container-economics-how",
+      "date": "2026-09-23",
+      "main_category": "경제·경영",
+      "category_path": [
+        "경제·경영",
+        "물류경제",
+        "표준화와 공급망",
+        "컨테이너 운송 혁명"
+      ],
+      "html_url": "outputs/20260923_container_economics_how__Report.html",
+      "pdf_url": "outputs/20260923_container_economics_how__Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260924-entropy-world-why-disord",
+      "type": "report",
+      "label": "엔트로피의 세계: 무질서는 왜 한 방향으로 증가하는가",
+      "level": 4,
+      "report_id": "rpt-20260924-entropy-world-why-disord",
+      "date": "2026-09-24",
+      "main_category": "과학·수학",
+      "category_path": [
+        "과학·수학",
+        "물리학",
+        "열역학과 시간",
+        "엔트로피 증가 법칙"
+      ],
+      "html_url": "outputs/20260924_entropy_world_why_disord_Report.html",
+      "pdf_url": "outputs/20260924_entropy_world_why_disord_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260925-elevator-urban-history-s",
+      "type": "report",
+      "label": "엘리베이터의 도시사: 수직 이동은 어떻게 마천루를 가능하게 했나",
+      "level": 4,
+      "report_id": "rpt-20260925-elevator-urban-history-s",
+      "date": "2026-09-25",
+      "main_category": "기술·공학",
+      "category_path": [
+        "기술·공학",
+        "기계공학",
+        "수직 교통 기술",
+        "안전장치와 고층 건축"
+      ],
+      "html_url": "outputs/20260925_elevator_urban_history_s_Report.html",
+      "pdf_url": "outputs/20260925_elevator_urban_history_s_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260926-pain-paradox-why-pain-pr",
+      "type": "report",
+      "label": "통증의 역설: 아픔은 왜 몸을 보호하면서 삶을 무너뜨리는가",
+      "level": 4,
+      "report_id": "rpt-20260926-pain-paradox-why-pain-pr",
+      "date": "2026-09-26",
+      "main_category": "생명·건강",
+      "category_path": [
+        "생명·건강",
+        "의학과 감각",
+        "통증의 신경기전",
+        "급성 통증과 만성 통증"
+      ],
+      "html_url": "outputs/20260926_pain_paradox_why_pain_pr_Report.html",
+      "pdf_url": "outputs/20260926_pain_paradox_why_pain_pr_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260927-soil-ecosystem-support",
+      "type": "report",
+      "label": "흙 한 줌의 세계: 토양은 어떻게 생태계를 떠받치는가",
+      "level": 4,
+      "report_id": "rpt-20260927-soil-ecosystem-support",
+      "date": "2026-09-27",
+      "main_category": "자연·환경·지리",
+      "category_path": [
+        "자연·환경·지리",
+        "토양생태",
+        "토양 형성과 순환",
+        "토양 미생물과 영양분"
+      ],
+      "html_url": "outputs/20260927_soil_ecosystem_support_Report.html",
+      "pdf_url": "outputs/20260927_soil_ecosystem_support_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260928-history-of-postage-stamp",
+      "type": "report",
+      "label": "우표의 세계사: 작은 종이는 어떻게 국가와 제국을 연결했나",
+      "level": 4,
+      "report_id": "rpt-20260928-history-of-postage-stamp",
+      "date": "2026-09-28",
+      "main_category": "역사·문화",
+      "category_path": [
+        "역사·문화",
+        "통신문화사",
+        "우편과 시각문화",
+        "우표 제도의 확산"
+      ],
+      "html_url": "outputs/20260928_history_of_postage_stamp_Report.html",
+      "pdf_url": "outputs/20260928_history_of_postage_stamp_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260929-sustainable-building-mat",
+      "type": "report",
+      "label": "지속가능한 건축 재료: 친환경 디자인의 혁신과 실천",
+      "level": 4,
+      "report_id": "rpt-20260929-sustainable-building-mat",
+      "date": "2026-09-29",
+      "main_category": "예술·디자인",
+      "category_path": [
+        "예술·디자인",
+        "건축",
+        "건축재료",
+        "친환경 재료와 지속가능성"
+      ],
+      "html_url": "outputs/20260929_sustainable_building_mat_Report.html",
+      "pdf_url": "outputs/20260929_sustainable_building_mat_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20260930-audiobook-growth-and-lis",
+      "type": "report",
+      "label": "오디오북의 성장과 청취 문화: 글 없는 독서는 어떻게 지식 소비를 재편하는가",
+      "level": 4,
+      "report_id": "rpt-20260930-audiobook-growth-and-lis",
+      "date": "2026-09-30",
+      "main_category": "언어·미디어·지식",
+      "category_path": [
+        "언어·미디어·지식",
+        "출판",
+        "디지털 출판",
+        "오디오북과 문화 변화"
+      ],
+      "html_url": "outputs/20260930_audiobook_growth_and_lis_Report.html",
+      "pdf_url": "outputs/20260930_audiobook_growth_and_lis_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20261001-posthumanism-questions-i",
+      "type": "report",
+      "label": "현대 사상에서 포스트휴머니즘이 인간 이해에 던진 질문",
+      "level": 4,
+      "report_id": "rpt-20261001-posthumanism-questions-i",
+      "date": "2026-10-01",
+      "main_category": "인문·철학",
+      "category_path": [
+        "인문·철학",
+        "사상",
+        "현대 사상",
+        "포스트휴머니즘과 정체성"
+      ],
+      "html_url": "outputs/20261001_posthumanism_questions_i_Report.html",
+      "pdf_url": "outputs/20261001_posthumanism_questions_i_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20261002-psychology-of-stock-mark",
+      "type": "report",
+      "label": "주식 시장의 심리학: 투자자 행동은 어떻게 시장을 움직이는가",
+      "level": 4,
+      "report_id": "rpt-20261002-psychology-of-stock-mark",
+      "date": "2026-10-02",
+      "main_category": "경제·경영",
+      "category_path": [
+        "경제·경영",
+        "금융",
+        "자본시장",
+        "행동금융학"
+      ],
+      "html_url": "outputs/20261002_psychology_of_stock_mark_Report.html",
+      "pdf_url": "outputs/20261002_psychology_of_stock_mark_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20261003-bureaucracy-two-faces-ru",
+      "type": "report",
+      "label": "관료제의 두 얼굴: 규칙은 어떻게 공정성과 경직성을 함께 만드는가",
+      "level": 4,
+      "report_id": "rpt-20261003-bureaucracy-two-faces-ru",
+      "date": "2026-10-03",
+      "main_category": "사회·정치·법",
+      "category_path": [
+        "사회·정치·법",
+        "행정학",
+        "조직과 규칙",
+        "관료제의 효율과 한계"
+      ],
+      "html_url": "outputs/20261003_bureaucracy_two_faces_ru_Report.html",
+      "pdf_url": "outputs/20261003_bureaucracy_two_faces_ru_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20261004-science-of-chaos-how-sma",
+      "type": "report",
+      "label": "카오스의 과학: 작은 차이는 어떻게 거대한 변화를 만드는가",
+      "level": 4,
+      "report_id": "rpt-20261004-science-of-chaos-how-sma",
+      "date": "2026-10-04",
+      "main_category": "과학·수학",
+      "category_path": [
+        "과학·수학",
+        "복잡계과학",
+        "비선형 시스템",
+        "초기 조건의 민감성"
+      ],
+      "html_url": "outputs/20261004_science_of_chaos_how_sma_Report.html",
+      "pdf_url": "outputs/20261004_science_of_chaos_how_sma_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20261005-eco-friendly-water-treat",
+      "type": "report",
+      "label": "친환경 수처리 기술의 혁신과 도시 물 관리",
+      "level": 4,
+      "report_id": "rpt-20261005-eco-friendly-water-treat",
+      "date": "2026-10-05",
+      "main_category": "기술·공학",
+      "category_path": [
+        "기술·공학",
+        "도시 인프라와 디지털 기술",
+        "환경 기술",
+        "스마트 수처리 시스템과 지속 가능성"
+      ],
+      "html_url": "outputs/20261005_eco_friendly_water_treat_Report.html",
+      "pdf_url": "outputs/20261005_eco_friendly_water_treat_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20261006-stem-cell-research-evolu",
+      "type": "report",
+      "label": "줄기세포 연구의 진화: 재생 의학은 어떻게 신체 치유의 미래를 바꾸고 있나",
+      "level": 4,
+      "report_id": "rpt-20261006-stem-cell-research-evolu",
+      "date": "2026-10-06",
+      "main_category": "생명·건강",
+      "category_path": [
+        "생명·건강",
+        "생물학",
+        "세포생물학",
+        "줄기세포 치료와 재생 의학"
+      ],
+      "html_url": "outputs/20261006_stem_cell_research_evolu_Report.html",
+      "pdf_url": "outputs/20261006_stem_cell_research_evolu_Report.pdf"
+    },
+    {
+      "id": "sub:00b963069a84e05f",
+      "type": "sub",
+      "label": "현대 사상",
+      "level": 2,
+      "main_category": "인문·철학"
+    },
+    {
+      "id": "sub:0e442cc2b1d18151",
+      "type": "sub",
+      "label": "문장부호의 역사",
+      "level": 2,
+      "main_category": "언어·미디어·지식"
+    },
+    {
+      "id": "sub:0e5fbd85218ff444",
+      "type": "sub",
+      "label": "비선형 시스템",
+      "level": 2,
+      "main_category": "과학·수학"
+    },
+    {
+      "id": "sub:1f80dbf7a458e748",
+      "type": "sub",
+      "label": "수 개념의 발전",
+      "level": 2,
+      "main_category": "과학·수학"
+    },
+    {
+      "id": "sub:26eb104e96a998bd",
+      "type": "sub",
+      "label": "해수 담수화",
+      "level": 2,
+      "main_category": "기술·공학"
+    },
+    {
+      "id": "sub:28277f0414981dad",
+      "type": "sub",
+      "label": "조직과 규칙",
+      "level": 2,
+      "main_category": "사회·정치·법"
+    },
+    {
+      "id": "sub:2b31de72738e1107",
+      "type": "sub",
+      "label": "하천 지형",
+      "level": 2,
+      "main_category": "자연·환경·지리"
+    },
+    {
+      "id": "sub:2c44356b006ae72e",
+      "type": "sub",
+      "label": "인구 통계 제도",
+      "level": 2,
+      "main_category": "사회·정치·법"
+    },
+    {
+      "id": "sub:3207b77da325030e",
+      "type": "sub",
+      "label": "통증의 신경기전",
+      "level": 2,
+      "main_category": "생명·건강"
+    },
+    {
+      "id": "sub:37c32fe95568d905",
+      "type": "sub",
+      "label": "주소와 공간 행정",
+      "level": 2,
+      "main_category": "사회·정치·법"
+    },
+    {
+      "id": "sub:38cf4ac117ebd85c",
+      "type": "sub",
+      "label": "디지털 미디어 분석",
+      "level": 2,
+      "main_category": "언어·미디어·지식"
+    },
+    {
+      "id": "sub:3c32ed30d0be6df7",
+      "type": "sub",
+      "label": "불확실성의 인식론",
+      "level": 2,
+      "main_category": "인문·철학"
+    },
+    {
+      "id": "sub:4469964c799dd789",
+      "type": "sub",
+      "label": "회계와 조직 관리",
+      "level": 2,
+      "main_category": "경제·경영"
+    },
+    {
+      "id": "sub:47e959a2476d343b",
+      "type": "sub",
+      "label": "위험의 가격화",
+      "level": 2,
+      "main_category": "경제·경영"
+    },
+    {
+      "id": "sub:4ad5be98bb969b76",
+      "type": "sub",
+      "label": "유리와 광학 재료",
+      "level": 2,
+      "main_category": "기술·공학"
+    },
+    {
+      "id": "sub:4d653bbc703ca176",
+      "type": "sub",
+      "label": "빛 공해",
+      "level": 2,
+      "main_category": "자연·환경·지리"
+    },
+    {
+      "id": "sub:527073f8922e2c00",
+      "type": "sub",
+      "label": "환경 기술",
+      "level": 2,
+      "main_category": "기술·공학"
+    },
+    {
+      "id": "sub:55a7ebadac0c308e",
+      "type": "sub",
+      "label": "디지털 출판",
+      "level": 2,
+      "main_category": "언어·미디어·지식"
+    },
+    {
+      "id": "sub:596fe53167acdbb4",
+      "type": "sub",
+      "label": "달력과 역법",
+      "level": 2,
+      "main_category": "역사·문화"
+    },
+    {
+      "id": "sub:5c7b7b2c66e4882e",
+      "type": "sub",
+      "label": "복지와 사회보장",
+      "level": 2,
+      "main_category": "사회·정치·법"
+    },
+    {
+      "id": "sub:5d5781a380658df5",
+      "type": "sub",
+      "label": "전력 시스템",
+      "level": 2,
+      "main_category": "기술·공학"
+    },
+    {
+      "id": "sub:5eb3045749326168",
+      "type": "sub",
+      "label": "가격 제도의 변화",
+      "level": 2,
+      "main_category": "경제·경영"
+    },
+    {
+      "id": "sub:67a5895d7975081c",
+      "type": "sub",
+      "label": "세포생물학",
+      "level": 2,
+      "main_category": "생명·건강"
+    },
+    {
+      "id": "sub:67d010e2bde41175",
+      "type": "sub",
+      "label": "수직 교통 기술",
+      "level": 2,
+      "main_category": "기술·공학"
+    },
+    {
+      "id": "sub:6b74ec372ec20bf8",
+      "type": "sub",
+      "label": "책임과 판단",
+      "level": 2,
+      "main_category": "인문·철학"
+    },
+    {
+      "id": "sub:6be44dda3f43c742",
+      "type": "sub",
+      "label": "구도와 시선",
+      "level": 2,
+      "main_category": "예술·디자인"
+    },
+    {
+      "id": "sub:6e86a1e020e410cb",
+      "type": "sub",
+      "label": "건축재료",
+      "level": 2,
+      "main_category": "예술·디자인"
+    },
+    {
+      "id": "sub:72824612031c42aa",
+      "type": "sub",
+      "label": "수면과 뇌 기능",
+      "level": 2,
+      "main_category": "생명·건강"
+    },
+    {
+      "id": "sub:7cb73285e3d7560c",
+      "type": "sub",
+      "label": "가전과 식생활",
+      "level": 2,
+      "main_category": "역사·문화"
+    },
+    {
+      "id": "sub:87e46684e17d53d1",
+      "type": "sub",
+      "label": "사회정의론",
+      "level": 2,
+      "main_category": "인문·철학"
+    },
+    {
+      "id": "sub:95d8ea92fcca2e21",
+      "type": "sub",
+      "label": "적응 면역",
+      "level": 2,
+      "main_category": "생명·건강"
+    },
+    {
+      "id": "sub:97e0fe3dc8a83cee",
+      "type": "sub",
+      "label": "향신료와 해상무역",
+      "level": 2,
+      "main_category": "역사·문화"
+    },
+    {
+      "id": "sub:aa99a5bde5efdccf",
+      "type": "sub",
+      "label": "자본시장",
+      "level": 2,
+      "main_category": "경제·경영"
+    },
+    {
+      "id": "sub:ae8d8e802269dff6",
+      "type": "sub",
+      "label": "표준화와 공급망",
+      "level": 2,
+      "main_category": "경제·경영"
+    },
+    {
+      "id": "sub:b02695307102c7d0",
+      "type": "sub",
+      "label": "인체 마이크로바이옴",
+      "level": 2,
+      "main_category": "생명·건강"
+    },
+    {
+      "id": "sub:b378875d51e527ff",
+      "type": "sub",
+      "label": "우편과 시각문화",
+      "level": 2,
+      "main_category": "역사·문화"
+    },
+    {
+      "id": "sub:b74bbc1aefd39888",
+      "type": "sub",
+      "label": "안료와 색채",
+      "level": 2,
+      "main_category": "예술·디자인"
+    },
+    {
+      "id": "sub:ba71cba4eff85a4c",
+      "type": "sub",
+      "label": "시간표와 시간표준화",
+      "level": 2,
+      "main_category": "역사·문화"
+    },
+    {
+      "id": "sub:bb178df4ff69a2ff",
+      "type": "sub",
+      "label": "라디오 문화",
+      "level": 2,
+      "main_category": "언어·미디어·지식"
+    },
+    {
+      "id": "sub:bfe96042a95d9ce4",
+      "type": "sub",
+      "label": "토양 형성과 순환",
+      "level": 2,
+      "main_category": "자연·환경·지리"
+    },
+    {
+      "id": "sub:c1a740ba95dcd7a5",
+      "type": "sub",
+      "label": "미분류",
+      "level": 2,
+      "main_category": "기술·공학"
+    },
+    {
+      "id": "sub:c231aa5267ad4bf0",
+      "type": "sub",
+      "label": "도서관 분류 체계",
+      "level": 2,
+      "main_category": "언어·미디어·지식"
+    },
+    {
+      "id": "sub:c4205ae55196be5c",
+      "type": "sub",
+      "label": "조명과 관람 경험",
+      "level": 2,
+      "main_category": "예술·디자인"
+    },
+    {
+      "id": "sub:cb22f45e3fb3478b",
+      "type": "sub",
+      "label": "건축 음향",
+      "level": 2,
+      "main_category": "예술·디자인"
+    },
+    {
+      "id": "sub:d1c4b572c935c483",
+      "type": "sub",
+      "label": "기하학적 최적화",
+      "level": 2,
+      "main_category": "과학·수학"
+    },
+    {
+      "id": "sub:d66978887f14fa65",
+      "type": "sub",
+      "label": "개인 동일성",
+      "level": 2,
+      "main_category": "인문·철학"
+    },
+    {
+      "id": "sub:d8ece351df04595a",
+      "type": "sub",
+      "label": "어휘의 표준화",
+      "level": 2,
+      "main_category": "언어·미디어·지식"
+    },
+    {
+      "id": "sub:dc6898cdc8453ab9",
+      "type": "sub",
+      "label": "계절풍 기후",
+      "level": 2,
+      "main_category": "자연·환경·지리"
+    },
+    {
+      "id": "sub:e277562a60432994",
+      "type": "sub",
+      "label": "원소 분류 체계",
+      "level": 2,
+      "main_category": "과학·수학"
+    },
+    {
+      "id": "sub:ec082c17cd2dbedc",
+      "type": "sub",
+      "label": "시민 참여 재판",
+      "level": 2,
+      "main_category": "사회·정치·법"
+    },
+    {
+      "id": "sub:ef4db1078a7fb909",
+      "type": "sub",
+      "label": "의례와 상징",
+      "level": 2,
+      "main_category": "인문·철학"
+    },
+    {
+      "id": "sub:f19bd4048d307156",
+      "type": "sub",
+      "label": "열역학과 시간",
+      "level": 2,
+      "main_category": "과학·수학"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:007b2fd48f77435b",
+      "source": "detail:10a203a3095d20e4",
+      "target": "report:rpt-20260914-jukiyurpyoui-jillye-woon",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:014a59bf259cdbb1",
+      "source": "sub:38cf4ac117ebd85c",
+      "target": "detail:cfe660dfd3e02bf9",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:015ffac4632dfb45",
+      "source": "sub:d66978887f14fa65",
+      "target": "detail:1421e8804a13bfb1",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:0179e22894aa5d0a",
+      "source": "detail:59cb9a05f050d1ff",
+      "target": "report:rpt-20260913-invention-of-accounting",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:04c1054acbcdc1f3",
+      "source": "middle:ed185c06c3af8635",
+      "target": "sub:00b963069a84e05f",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:057fcab27913a2c2",
+      "source": "detail:4c6a522eba7d405e",
+      "target": "report:rpt-20260824-insurance-birth-how-risk",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:07664732ef43ea75",
+      "source": "detail:e58bc47e916f76b6",
+      "target": "report:rpt-20260906-vaccine-memory-how-the-i",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:07a8c9c51965818f",
+      "source": "detail:1421e8804a13bfb1",
+      "target": "report:rpt-20260911-naneun-nuguingga-gieog-e",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:080b7d4c632cded6",
+      "source": "category:c135b09622b60562",
+      "target": "middle:11ad53c1ad4528cc",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:0a828978e947fb99",
+      "source": "middle:9a840b66bd8d3d30",
+      "target": "sub:d66978887f14fa65",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:0b4c09cfbe00c1da",
+      "source": "detail:71bf12bf65767030",
+      "target": "report:rpt-20260927-soil-ecosystem-support",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:0d1e1042ffc1d199",
+      "source": "detail:8cabf719751154c5",
+      "target": "report:rpt-20260901-moral-luck-paradox-resul",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:0d7d55cfea5b6cd1",
+      "source": "sub:aa99a5bde5efdccf",
+      "target": "detail:2118f5b04a1d2bf0",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:0ec00cf8756df678",
+      "source": "detail:3ba9e53991aec4cd",
+      "target": "report:rpt-20260823-postal-codes-social-hist",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:0fd39b79a007dde9",
+      "source": "category:d1d9ae9d3e816c13",
+      "target": "middle:e9259388404aa6fc",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:13746e93aa4cf858",
+      "source": "sub:0e442cc2b1d18151",
+      "target": "detail:f140bbe44c7949c0",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:141f9abe8a53189b",
+      "source": "detail:78cd87ec2fe7d8dc",
+      "target": "report:rpt-20261003-bureaucracy-two-faces-ru",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:1711ffec304b0667",
+      "source": "category:a495d7d4da85b458",
+      "target": "middle:31efa95b81f1ef7c",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:1732178826e6fe25",
+      "source": "category:3fc5d02608923758",
+      "target": "middle:9a840b66bd8d3d30",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:1b97846e5cc31634",
+      "source": "sub:f19bd4048d307156",
+      "target": "detail:0e86e35621503412",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:203fd405468bbf50",
+      "source": "sub:55a7ebadac0c308e",
+      "target": "detail:44346b93154d0391",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:20f43cb910e53dd7",
+      "source": "sub:5eb3045749326168",
+      "target": "detail:11d0dc264a2f948b",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:214deea7568053f1",
+      "source": "sub:b02695307102c7d0",
+      "target": "detail:9f81f58b346b0012",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:21e1080731db47a2",
+      "source": "detail:89962e146b94dea5",
+      "target": "report:rpt-20261001-posthumanism-questions-i",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:2279cf2fba2127a9",
+      "source": "middle:8e6727676b60ee0f",
+      "target": "sub:ec082c17cd2dbedc",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:230746e1cba6387b",
+      "source": "sub:6b74ec372ec20bf8",
+      "target": "detail:8cabf719751154c5",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:24ede436e39d6ad8",
+      "source": "sub:87e46684e17d53d1",
+      "target": "detail:34c896df57e5bd91",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:2688e6f6e5c1a67c",
+      "source": "category:758a7b1ee4fe67cf",
+      "target": "middle:f916666c3b9a7ed8",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:269877dfd4e72466",
+      "source": "detail:2ed24e4ba7fb0be3",
+      "target": "report:rpt-20260918-history-of-calendars-how",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:296bb0f58b491f69",
+      "source": "sub:6be44dda3f43c742",
+      "target": "detail:4609301005738b82",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:2ae5b198ff0bfe0b",
+      "source": "sub:47e959a2476d343b",
+      "target": "detail:4c6a522eba7d405e",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:2c05fe07a1a90ff6",
+      "source": "detail:fa6a80f10d49067b",
+      "target": "report:rpt-20260825-beolbibeui-suhak-yugakgy",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:2cbe0c810820c1c1",
+      "source": "detail:d0c58170bc66a474",
+      "target": "report:rpt-20261004-science-of-chaos-how-sma",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:2e0ec25184ab613e",
+      "source": "detail:419f41c50a4481dd",
+      "target": "report:rpt-20260928-history-of-postage-stamp",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:2ed132bdbc2308fb",
+      "source": "middle:5f206a90fa15375d",
+      "target": "sub:38cf4ac117ebd85c",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:2f90e1cc5bf37363",
+      "source": "middle:efbda3d2166e9316",
+      "target": "sub:b74bbc1aefd39888",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:308c95f56877c443",
+      "source": "middle:5eef111a7fc8d608",
+      "target": "sub:4d653bbc703ca176",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:3490be357a59acb0",
+      "source": "middle:baa004598199726d",
+      "target": "sub:97e0fe3dc8a83cee",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:34f837c6269e1b5e",
+      "source": "category:758a7b1ee4fe67cf",
+      "target": "middle:efbda3d2166e9316",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:35b137d30752fb0a",
+      "source": "middle:c9fd36b743fc1a12",
+      "target": "sub:ba71cba4eff85a4c",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:36234df30d4252ae",
+      "source": "middle:eadcf5e153b9ad3c",
+      "target": "sub:7cb73285e3d7560c",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:37754a6e82481e2c",
+      "source": "category:b8045a9a934d7f69",
+      "target": "middle:2400afb8a9adf391",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:3827d3d4ff043c3d",
+      "source": "middle:0c14059a47957c6e",
+      "target": "sub:e277562a60432994",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:38cb0c955a6f189f",
+      "source": "category:52cb15e614d4481d",
+      "target": "middle:873019f88207822f",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:3ba4abd5a56ed5b6",
+      "source": "detail:16bf087aa2d5a8a4",
+      "target": "report:rpt-20260923-container-economics-how",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:3dd3318e1926d70c",
+      "source": "sub:4d653bbc703ca176",
+      "target": "detail:f3b575b2e43024c9",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:3fb7274768bc473f",
+      "source": "sub:ae8d8e802269dff6",
+      "target": "detail:16bf087aa2d5a8a4",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:3fd2d3b6a9849263",
+      "source": "detail:0d6eb03b63fa956d",
+      "target": "report:rpt-20260820-sound-architecture-how-s",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:40ed8b4ca993327a",
+      "source": "sub:527073f8922e2c00",
+      "target": "detail:d5d7ad9795dd6302",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:4142520962e6a88a",
+      "source": "detail:fde540c301a1a76f",
+      "target": "report:rpt-20260827-history-of-glass-civiliz",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:421ff19b5e25612a",
+      "source": "sub:2b31de72738e1107",
+      "target": "detail:947641bbf4d4a5ae",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:42d9844ebca966b9",
+      "source": "middle:2e8379a9df71842a",
+      "target": "sub:bb178df4ff69a2ff",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:444500bdad6a626a",
+      "source": "detail:cfe660dfd3e02bf9",
+      "target": "report:rpt-20260920-youtube-algorithm-struct",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:44e9693362185913",
+      "source": "sub:00b963069a84e05f",
+      "target": "detail:89962e146b94dea5",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:456b0dc7972dc5cf",
+      "source": "middle:b1bf48b32ef4f9dc",
+      "target": "sub:527073f8922e2c00",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:464607457f07b839",
+      "source": "sub:d8ece351df04595a",
+      "target": "detail:84177918c401892e",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:472738425120c06a",
+      "source": "middle:07982383fd448afc",
+      "target": "sub:3207b77da325030e",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:477217f0e2e29148",
+      "source": "sub:37c32fe95568d905",
+      "target": "detail:3ba9e53991aec4cd",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:47e656ac3deac984",
+      "source": "category:b8045a9a934d7f69",
+      "target": "middle:31276a6327b2d4a9",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:4a5543c82957d773",
+      "source": "detail:34c614fc6ec6ac0b",
+      "target": "report:rpt-20260907-monsun-geography-how-sea",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:4b2ca19162ef983f",
+      "source": "sub:c1a740ba95dcd7a5",
+      "target": "detail:3420d1fc276cfe21",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:4b5525a4899654f5",
+      "source": "category:d1d9ae9d3e816c13",
+      "target": "middle:388a7f51a0fce5c7",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:4b7f8e35a9032390",
+      "source": "middle:ead100e4f8ed5e3d",
+      "target": "sub:87e46684e17d53d1",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:4ca3f6d7f02c19b1",
+      "source": "sub:596fe53167acdbb4",
+      "target": "detail:2ed24e4ba7fb0be3",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:4efadd2bc220df63",
+      "source": "sub:4ad5be98bb969b76",
+      "target": "detail:fde540c301a1a76f",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:4f701f0ed60fc588",
+      "source": "middle:d28f514598eeca17",
+      "target": "sub:4469964c799dd789",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:4f954708a560fc24",
+      "source": "detail:582058263345ef47",
+      "target": "report:rpt-20260817-time-table-birth-how-mod",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:503143ab94593354",
+      "source": "category:a495d7d4da85b458",
+      "target": "middle:dd6431f22f48bada",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:5087563d26afa44e",
+      "source": "category:cb829c377357dd71",
+      "target": "middle:c9fd36b743fc1a12",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:50b8d97afce0cd3e",
+      "source": "detail:3b365774a37949fa",
+      "target": "report:rpt-20260909-museum-light-how-lightin",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:514432ce3f2a5e8b",
+      "source": "category:3fc5d02608923758",
+      "target": "middle:ed185c06c3af8635",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:51a86e069045a649",
+      "source": "middle:873019f88207822f",
+      "target": "sub:47e959a2476d343b",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:5389aae3fb7c4966",
+      "source": "middle:cb144e23e2065cf0",
+      "target": "sub:c4205ae55196be5c",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:54f16cfb1929dda8",
+      "source": "middle:c9fd36b743fc1a12",
+      "target": "sub:596fe53167acdbb4",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:55aed3972a46085c",
+      "source": "detail:f140bbe44c7949c0",
+      "target": "report:rpt-20260821-punctuation-birth-comma",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:57dd89447b4c25e9",
+      "source": "detail:d753586427fcf80f",
+      "target": "report:rpt-20260915-jeollyeongmang-balancing",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:5a121d93432eec69",
+      "source": "detail:080dd9b47a474067",
+      "target": "report:rpt-20260908-history-of-refrigerator",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:65c7dd6c5b6e2fdc",
+      "source": "detail:704d751b6b29c437",
+      "target": "report:rpt-20260922-welfare-state-design-soc",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:661f007f0da99468",
+      "source": "category:3fc5d02608923758",
+      "target": "middle:8cbf2eefebf157d5",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:66d4c44133f87101",
+      "source": "category:b9ccab27f2a0689e",
+      "target": "middle:25e8d50dabe74f2b",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:6796cfd7f23f7947",
+      "source": "category:3fc5d02608923758",
+      "target": "middle:ead100e4f8ed5e3d",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:6a14667ad1979262",
+      "source": "sub:d1c4b572c935c483",
+      "target": "detail:fa6a80f10d49067b",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:6a20fd4fdb7ecb08",
+      "source": "category:b9ccab27f2a0689e",
+      "target": "middle:a6e8bec105c6f692",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:6d707ec1fbfceb2e",
+      "source": "middle:dd6431f22f48bada",
+      "target": "sub:0e442cc2b1d18151",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:6dd512c7e25007e2",
+      "source": "category:d1d9ae9d3e816c13",
+      "target": "middle:761c2cc0e0a413e5",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:6fe43a18253903e3",
+      "source": "middle:c8be5258eb6b9011",
+      "target": "sub:5eb3045749326168",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:6fe91f16483b6bf7",
+      "source": "category:3fc5d02608923758",
+      "target": "middle:df3d6656d3780ad9",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:70a60c9a6f36606e",
+      "source": "category:758a7b1ee4fe67cf",
+      "target": "middle:7cd3173ab73dc489",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:70baa20485504a53",
+      "source": "category:b8045a9a934d7f69",
+      "target": "middle:4c070c513f6363c7",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:7271984fbf12fbb2",
+      "source": "sub:6e86a1e020e410cb",
+      "target": "detail:e58e72b2309f3108",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:73c47e5bfecd710b",
+      "source": "middle:f916666c3b9a7ed8",
+      "target": "sub:6e86a1e020e410cb",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:745b9c157cd6abfe",
+      "source": "detail:1b1dd9b990201286",
+      "target": "report:rpt-20260926-pain-paradox-why-pain-pr",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:74bbf6005e4fad4c",
+      "source": "category:9de06b299a735751",
+      "target": "middle:dd947ec8f58cea1c",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:75ae5adc82a6e58f",
+      "source": "detail:49b0e51f9224f853",
+      "target": "report:rpt-20260826-sleep-biology-brain-dail",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:75c8215bb5d954fc",
+      "source": "middle:a6e8bec105c6f692",
+      "target": "sub:37c32fe95568d905",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:75efe89276cf882a",
+      "source": "category:a495d7d4da85b458",
+      "target": "middle:5f206a90fa15375d",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:78860d524425e815",
+      "source": "middle:b8571f7cc73fec25",
+      "target": "sub:d1c4b572c935c483",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:789509b5ff81d7bd",
+      "source": "detail:ea8e27260f35e294",
+      "target": "report:rpt-20260822-philosophy-of-probabilit",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:7b0b673fe9ce0963",
+      "source": "middle:31efa95b81f1ef7c",
+      "target": "sub:d8ece351df04595a",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:7be158e1ce34cf66",
+      "source": "category:9de06b299a735751",
+      "target": "middle:5eef111a7fc8d608",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:7de1efc0d5cd3b41",
+      "source": "detail:97581aac4d23abbc",
+      "target": "report:rpt-20260819-library-classification-p",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:7e9f4b16eb964b9d",
+      "source": "sub:b378875d51e527ff",
+      "target": "detail:419f41c50a4481dd",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:7f19d5d480f4acd3",
+      "source": "category:a495d7d4da85b458",
+      "target": "middle:757f6d7c48bc1a05",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:7f3a18581f03b099",
+      "source": "category:9de06b299a735751",
+      "target": "middle:103e5235497ad2b3",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:7f725f189a5bbaab",
+      "source": "middle:d6e43e13b5ff081e",
+      "target": "sub:b378875d51e527ff",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:8486f4f7bc96885c",
+      "source": "detail:9f81f58b346b0012",
+      "target": "report:rpt-20260916-gut-microbiome-ecosystem",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:857e95db3d7ae207",
+      "source": "category:52cb15e614d4481d",
+      "target": "middle:c8be5258eb6b9011",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:8641d30c884c1e40",
+      "source": "category:cb829c377357dd71",
+      "target": "middle:eadcf5e153b9ad3c",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:87e6be7e51e6d863",
+      "source": "sub:bfe96042a95d9ce4",
+      "target": "detail:71bf12bf65767030",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:8992dee1ef77e852",
+      "source": "middle:b3a67bbd035724bc",
+      "target": "sub:c1a740ba95dcd7a5",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:8a2b8daa9812e1e0",
+      "source": "sub:e277562a60432994",
+      "target": "detail:10a203a3095d20e4",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:8dcf328c6bbeee7f",
+      "source": "sub:cb22f45e3fb3478b",
+      "target": "detail:0d6eb03b63fa956d",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:901917ff663eeafa",
+      "source": "category:b8045a9a934d7f69",
+      "target": "middle:b1bf48b32ef4f9dc",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:904fe78cd8576d9a",
+      "source": "sub:67a5895d7975081c",
+      "target": "detail:34192e149b2ef72f",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:906957391d828098",
+      "source": "detail:42275779001e8ea8",
+      "target": "report:rpt-20260904-birth-of-zero-how-nothin",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:935d7aa32387a16b",
+      "source": "sub:7cb73285e3d7560c",
+      "target": "detail:080dd9b47a474067",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:96681c4ba85eba1a",
+      "source": "category:b9ccab27f2a0689e",
+      "target": "middle:8e6727676b60ee0f",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:97c85ce4f9617728",
+      "source": "detail:f3b575b2e43024c9",
+      "target": "report:rpt-20260828-bamui-bitgwa-saengtaegye",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:97f0e81f8efa6166",
+      "source": "middle:dd947ec8f58cea1c",
+      "target": "sub:dc6898cdc8453ab9",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:98c70403edc00f5c",
+      "source": "category:cb829c377357dd71",
+      "target": "middle:baa004598199726d",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:9aed05fcd0fd0a01",
+      "source": "detail:3420d1fc276cfe21",
+      "target": "report:rpt-20260815-dosiei-hasudo",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:9cf9e61fb2dbb5fd",
+      "source": "sub:ba71cba4eff85a4c",
+      "target": "detail:582058263345ef47",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:9d008e5905527a93",
+      "source": "middle:8cbf2eefebf157d5",
+      "target": "sub:3c32ed30d0be6df7",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:9dd4e6de7ffb465d",
+      "source": "category:cb829c377357dd71",
+      "target": "middle:d6e43e13b5ff081e",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:9dec1f21d4ad9974",
+      "source": "detail:15a0b1b8a846dda1",
+      "target": "report:rpt-20260902-population-survey-politi",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:9e0be63f68c0f0d1",
+      "source": "detail:0e86e35621503412",
+      "target": "report:rpt-20260924-entropy-world-why-disord",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:9ec4c61397f9d2b9",
+      "source": "middle:757f6d7c48bc1a05",
+      "target": "sub:c231aa5267ad4bf0",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:a25bc8c139f3ac5b",
+      "source": "detail:34c896df57e5bd91",
+      "target": "report:rpt-20260816-veil-of-ignorance-fair-s",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:a4e918c1cb25b9bf",
+      "source": "middle:388a7f51a0fce5c7",
+      "target": "sub:67a5895d7975081c",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:a4e9d869b65a4f1a",
+      "source": "sub:c4205ae55196be5c",
+      "target": "detail:3b365774a37949fa",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:a5519a321b98f3df",
+      "source": "middle:4c070c513f6363c7",
+      "target": "sub:26eb104e96a998bd",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:a630531c512159c7",
+      "source": "middle:25e8d50dabe74f2b",
+      "target": "sub:5c7b7b2c66e4882e",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:a96bf2f6d059701a",
+      "source": "detail:285a01795f10d567",
+      "target": "report:rpt-20260925-elevator-urban-history-s",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:a97bdc087203fdec",
+      "source": "sub:b74bbc1aefd39888",
+      "target": "detail:7b4bad306d9a0419",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:aaaf6e917a06ce1f",
+      "source": "detail:71aa9af8ff46142e",
+      "target": "report:rpt-20260910-radio-no-voice-how-invis",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:ace47e926834b4bb",
+      "source": "detail:947641bbf4d4a5ae",
+      "target": "report:rpt-20260917-river-memory-meandering",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:ad59ba464ee23f2b",
+      "source": "middle:2400afb8a9adf391",
+      "target": "sub:4ad5be98bb969b76",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:ad94126a69b50422",
+      "source": "detail:11d0dc264a2f948b",
+      "target": "report:rpt-20260903-history-of-price-tags-an",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:aef3b60135b5b42a",
+      "source": "sub:5d5781a380658df5",
+      "target": "detail:d753586427fcf80f",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:b311012dd4795691",
+      "source": "sub:95d8ea92fcca2e21",
+      "target": "detail:e58bc47e916f76b6",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:b33df36e64f7c4ab",
+      "source": "middle:2d6f571e40187e90",
+      "target": "sub:6b74ec372ec20bf8",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:b3d28c4b540e848e",
+      "source": "sub:4469964c799dd789",
+      "target": "detail:59cb9a05f050d1ff",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:b63beb0233e14316",
+      "source": "sub:0e5fbd85218ff444",
+      "target": "detail:d0c58170bc66a474",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:b6ad110264b0343b",
+      "source": "sub:97e0fe3dc8a83cee",
+      "target": "detail:2263e0265eec45b3",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:b6f45e73d88655b3",
+      "source": "category:52cb15e614d4481d",
+      "target": "middle:d1ca29c1992b6249",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:b7126449ca142d8f",
+      "source": "detail:2118f5b04a1d2bf0",
+      "target": "report:rpt-20261002-psychology-of-stock-mark",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:b795d0396c9d809b",
+      "source": "sub:3207b77da325030e",
+      "target": "detail:1b1dd9b990201286",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:bb7a978e436501b4",
+      "source": "middle:103e5235497ad2b3",
+      "target": "sub:bfe96042a95d9ce4",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:bbb93fcd8e39affa",
+      "source": "detail:34192e149b2ef72f",
+      "target": "report:rpt-20261006-stem-cell-research-evolu",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:bc813cc8a10d690c",
+      "source": "category:d1d9ae9d3e816c13",
+      "target": "middle:69ad88fc2b6dc465",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:bcca709271224127",
+      "source": "detail:009a377cc7c2c925",
+      "target": "report:rpt-20260905-seawater-to-drinking-wat",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:bcfe4e4c484b1bcd",
+      "source": "category:b8045a9a934d7f69",
+      "target": "middle:6c529e8114138a11",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:bd1543b1f8cd20d5",
+      "source": "category:52cb15e614d4481d",
+      "target": "middle:3a7c3af3c3ce1592",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:be41059a1908f212",
+      "source": "sub:bb178df4ff69a2ff",
+      "target": "detail:71aa9af8ff46142e",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:bea8075c0fa0d367",
+      "source": "middle:31276a6327b2d4a9",
+      "target": "sub:5d5781a380658df5",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:c0066abff9825b09",
+      "source": "detail:e58e72b2309f3108",
+      "target": "report:rpt-20260929-sustainable-building-mat",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:c2713c0c5a6bec6c",
+      "source": "sub:ef4db1078a7fb909",
+      "target": "detail:9bae34a03bd23cf8",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:c68e6259e76ab992",
+      "source": "middle:e264145b0aeb4a5a",
+      "target": "sub:55a7ebadac0c308e",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:c6b06bf3d0c5f607",
+      "source": "sub:67d010e2bde41175",
+      "target": "detail:285a01795f10d567",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:c78cfbe7a2aaeeba",
+      "source": "category:b9ccab27f2a0689e",
+      "target": "middle:925b945a5f319d53",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:c835affabd4c1b2a",
+      "source": "middle:205f4adc8f23b507",
+      "target": "sub:2b31de72738e1107",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:c971c56620160a2f",
+      "source": "sub:dc6898cdc8453ab9",
+      "target": "detail:34c614fc6ec6ac0b",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:c9a22f849f05f9d4",
+      "source": "middle:925b945a5f319d53",
+      "target": "sub:28277f0414981dad",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:ca9951ac5b22a6a1",
+      "source": "middle:7cd3173ab73dc489",
+      "target": "sub:6be44dda3f43c742",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:cd1ecfad74e741b1",
+      "source": "category:758a7b1ee4fe67cf",
+      "target": "middle:77d31820ff725c5c",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:cf07f9911dc4f600",
+      "source": "sub:3c32ed30d0be6df7",
+      "target": "detail:ea8e27260f35e294",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:d0932f7d8c4dc86f",
+      "source": "middle:e9259388404aa6fc",
+      "target": "sub:72824612031c42aa",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:d321eb20213c15c5",
+      "source": "detail:2263e0265eec45b3",
+      "target": "report:rpt-20260829-hyangsinryo-gyoyeog-hist",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:d34c3bb65ca3e0a1",
+      "source": "detail:44346b93154d0391",
+      "target": "report:rpt-20260930-audiobook-growth-and-lis",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:d43cb4dc7e1f9c38",
+      "source": "middle:da865dcc4593c8cc",
+      "target": "sub:2c44356b006ae72e",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:d497fb13d7257d02",
+      "source": "category:d1d9ae9d3e816c13",
+      "target": "middle:07982383fd448afc",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:d54bf12814b701b0",
+      "source": "sub:1f80dbf7a458e748",
+      "target": "detail:42275779001e8ea8",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:d5daad25f3c763dc",
+      "source": "category:3fc5d02608923758",
+      "target": "middle:2d6f571e40187e90",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:d7a7338542f84b3f",
+      "source": "category:c135b09622b60562",
+      "target": "middle:0c14059a47957c6e",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:da4626f777879e23",
+      "source": "middle:e540b1045ff90846",
+      "target": "sub:1f80dbf7a458e748",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:db382b59d670f921",
+      "source": "category:b9ccab27f2a0689e",
+      "target": "middle:da865dcc4593c8cc",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:dbaba055a76b1ef7",
+      "source": "middle:6c529e8114138a11",
+      "target": "sub:67d010e2bde41175",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:ddc927eb435919dc",
+      "source": "detail:84177918c401892e",
+      "target": "report:rpt-20260831-dictionary-authority-wor",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:de5c4c563b17aa69",
+      "source": "sub:2c44356b006ae72e",
+      "target": "detail:15a0b1b8a846dda1",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:dfacd6b07e6b4620",
+      "source": "middle:6bb393db31e086c2",
+      "target": "sub:0e5fbd85218ff444",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:e049766bcdbfb11d",
+      "source": "middle:df3d6656d3780ad9",
+      "target": "sub:ef4db1078a7fb909",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:e4864c1e30859f77",
+      "source": "category:52cb15e614d4481d",
+      "target": "middle:d28f514598eeca17",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:e617f83ee614f5d5",
+      "source": "middle:d1ca29c1992b6249",
+      "target": "sub:ae8d8e802269dff6",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:e6610b2b37b34e5f",
+      "source": "middle:3a7c3af3c3ce1592",
+      "target": "sub:aa99a5bde5efdccf",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:e6a3900b91cef6a7",
+      "source": "category:b8045a9a934d7f69",
+      "target": "middle:b3a67bbd035724bc",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:e744638300c7dc9c",
+      "source": "sub:26eb104e96a998bd",
+      "target": "detail:009a377cc7c2c925",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:e768c593e63f0bd1",
+      "source": "detail:9bae34a03bd23cf8",
+      "target": "report:rpt-20260921-philosophy-of-ritual-rep",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:e7832e95f43f78c0",
+      "source": "category:c135b09622b60562",
+      "target": "middle:b8571f7cc73fec25",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:e79bb3f3b7c0a0ed",
+      "source": "sub:28277f0414981dad",
+      "target": "detail:78cd87ec2fe7d8dc",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:ea83540c168f7cfb",
+      "source": "category:9de06b299a735751",
+      "target": "middle:205f4adc8f23b507",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:eb1601b3d1d3931a",
+      "source": "middle:69ad88fc2b6dc465",
+      "target": "sub:95d8ea92fcca2e21",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:eba86d2cc85047bd",
+      "source": "middle:77d31820ff725c5c",
+      "target": "sub:cb22f45e3fb3478b",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:ebe6e134d033b01e",
+      "source": "sub:c231aa5267ad4bf0",
+      "target": "detail:97581aac4d23abbc",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:ee03e28b58057627",
+      "source": "middle:11ad53c1ad4528cc",
+      "target": "sub:f19bd4048d307156",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:ee92e9a195dbe95c",
+      "source": "sub:ec082c17cd2dbedc",
+      "target": "detail:41028c5d3d268fbf",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:ef8a2cdf5dcb3d85",
+      "source": "category:a495d7d4da85b458",
+      "target": "middle:2e8379a9df71842a",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:f182574fb21479f5",
+      "source": "middle:761c2cc0e0a413e5",
+      "target": "sub:b02695307102c7d0",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:f187254a4b16daa1",
+      "source": "detail:7b4bad306d9a0419",
+      "target": "report:rpt-20260830-saek-e-jeryosa-anggoneun",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:f2541cb6e98ba29f",
+      "source": "detail:d5d7ad9795dd6302",
+      "target": "report:rpt-20261005-eco-friendly-water-treat",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:f40114a268fe6366",
+      "source": "sub:72824612031c42aa",
+      "target": "detail:49b0e51f9224f853",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:f5838743c59c55df",
+      "source": "category:a495d7d4da85b458",
+      "target": "middle:e264145b0aeb4a5a",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:f6aa542ccff6153a",
+      "source": "detail:4609301005738b82",
+      "target": "report:rpt-20260919-photoframe-how-camera-se",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:f7d6c264587b3963",
+      "source": "category:c135b09622b60562",
+      "target": "middle:e540b1045ff90846",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:f8e1b0b015fecae5",
+      "source": "category:758a7b1ee4fe67cf",
+      "target": "middle:cb144e23e2065cf0",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:fb6013c212271416",
+      "source": "sub:5c7b7b2c66e4882e",
+      "target": "detail:704d751b6b29c437",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:fe1e27eeb68ca14d",
+      "source": "detail:41028c5d3d268fbf",
+      "target": "report:rpt-20260912-baesimwonui-pandan-simin",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:fe3bb56274b0620d",
+      "source": "category:c135b09622b60562",
+      "target": "middle:6bb393db31e086c2",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    }
+  ]
+}
