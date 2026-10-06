@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-10-03",
+  "updated_at": "2026-10-06",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -1064,6 +1064,94 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261003_bureaucracy_two_faces_ru_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261003_bureaucracy_two_faces_ru_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "date": "2026-10-02",
+      "title": "주식 시장의 심리학: 투자자 행동은 어떻게 시장을 움직이는가",
+      "main_category": "경제·경영",
+      "mid_category": "금융",
+      "sub_category": "자본시장",
+      "detail_category": "행동금융학",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "주식 시장",
+        "투자자 행동",
+        "심리학",
+        "행동금융학",
+        "시장 변동성",
+        "과잉반응",
+        "심리적 편향",
+        "투자 결정"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261002_psychology_of_stock_mark_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261002_psychology_of_stock_mark_Report.pdf",
+      "status": "published_api"
+    },
+    {
+      "date": "2026-10-04",
+      "title": "카오스의 과학: 작은 차이는 어떻게 거대한 변화를 만드는가",
+      "main_category": "과학·수학",
+      "mid_category": "복잡계과학",
+      "sub_category": "비선형 시스템",
+      "detail_category": "초기 조건의 민감성",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "카오스 이론",
+        "복잡계",
+        "비선형 시스템",
+        "초기 조건 민감성",
+        "프랙탈",
+        "나비 효과",
+        "동역학계",
+        "불확정성"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261004_science_of_chaos_how_sma_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261004_science_of_chaos_how_sma_Report.pdf",
+      "status": "published_api"
+    },
+    {
+      "date": "2026-10-05",
+      "title": "친환경 수처리 기술의 혁신과 도시 물 관리",
+      "main_category": "기술·공학",
+      "mid_category": "도시 인프라와 디지털 기술",
+      "sub_category": "환경 기술",
+      "detail_category": "스마트 수처리 시스템과 지속 가능성",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "친환경 수처리",
+        "도시 물 관리",
+        "스마트 시스템",
+        "지속 가능성",
+        "물 재활용",
+        "에너지 효율",
+        "수질 개선",
+        "환경 정책"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261005_eco_friendly_water_treat_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261005_eco_friendly_water_treat_Report.pdf",
+      "status": "published_api"
+    },
+    {
+      "date": "2026-10-06",
+      "title": "줄기세포 연구의 진화: 재생 의학은 어떻게 신체 치유의 미래를 바꾸고 있나",
+      "main_category": "생명·건강",
+      "mid_category": "생물학",
+      "sub_category": "세포생물학",
+      "detail_category": "줄기세포 치료와 재생 의학",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "줄기세포",
+        "재생 의학",
+        "세포 치료",
+        "조직 재생",
+        "배아줄기세포",
+        "유도만능줄기세포",
+        "척수 손상 치료",
+        "맞춤형 치료"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261006_stem_cell_research_evolu_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261006_stem_cell_research_evolu_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -1080,33 +1168,33 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "사회·정치·법",
-    "next_main_category": "경제·경영",
-    "next_index": 2,
+    "last_main_category": "생명·건강",
+    "next_main_category": "자연·환경·지리",
+    "next_index": 6,
     "completed_cycles": 5,
     "published_counts": {
       "인문·철학": 6,
       "사회·정치·법": 5,
-      "경제·경영": 4,
-      "과학·수학": 4,
-      "기술·공학": 5,
-      "생명·건강": 4,
+      "경제·경영": 5,
+      "과학·수학": 5,
+      "기술·공학": 6,
+      "생명·건강": 5,
       "자연·환경·지리": 4,
       "역사·문화": 6,
       "예술·디자인": 5,
       "언어·미디어·지식": 6
     },
     "recent_main_categories": [
-      "경제·경영",
-      "과학·수학",
-      "기술·공학",
-      "생명·건강",
       "자연·환경·지리",
       "역사·문화",
       "예술·디자인",
       "언어·미디어·지식",
       "인문·철학",
-      "사회·정치·법"
+      "사회·정치·법",
+      "경제·경영",
+      "과학·수학",
+      "기술·공학",
+      "생명·건강"
     ]
   },
   "candidate_pool": [
@@ -1427,7 +1515,7 @@
       "detail_category": "초기 조건의 민감성",
       "priority": 0.77,
       "main_category": "과학·수학",
-      "status": "candidate",
+      "status": "used",
       "source": "taxonomy_seed"
     },
     {
@@ -1756,6 +1844,156 @@
       "mid_category": "철학",
       "sub_category": "동양철학",
       "detail_category": "무(無)의 철학적 탐구",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "주식 시장의 심리학: 투자자 행동은 어떻게 시장을 움직이는가",
+      "main_category": "경제·경영",
+      "mid_category": "금융",
+      "sub_category": "자본시장",
+      "detail_category": "행동금융학",
+      "priority": 1.0,
+      "status": "used",
+      "source": "api_generated"
+    },
+    {
+      "topic": "노동 임금과 생산성 간 역학: 경제 성장에 미치는 영향 분석",
+      "main_category": "경제·경영",
+      "mid_category": "노동",
+      "sub_category": "임금 체계",
+      "detail_category": "생산성 연계 임금",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "기업 브랜드 가치 측정 방법과 소비자 신뢰의 관계",
+      "main_category": "경제·경영",
+      "mid_category": "기업과 소비",
+      "sub_category": "브랜딩",
+      "detail_category": "브랜드 자산 평가",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "가계부채의 경제적 영향과 금융 안정성 분석",
+      "main_category": "경제·경영",
+      "mid_category": "금융",
+      "sub_category": "가계 금융",
+      "detail_category": "부채 영향 평가",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "공정 무역 운동과 글로벌 공급망의 변화",
+      "main_category": "경제·경영",
+      "mid_category": "경제",
+      "sub_category": "국제 무역",
+      "detail_category": "사회적 무역 기준과 실천",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "광섬유 기술과 정보 통신 혁신: 빛으로 연결하는 현대 사회",
+      "main_category": "기술·공학",
+      "mid_category": "산업기술",
+      "sub_category": "통신기술",
+      "detail_category": "광섬유의 원리와 응용",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "스마트 그리드의 발전과 에너지 효율성: 미래 전력망의 설계",
+      "main_category": "기술·공학",
+      "mid_category": "에너지",
+      "sub_category": "전력 시스템",
+      "detail_category": "스마트 그리드 기술과 에너지 관리",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "도시 빅데이터와 디지털 트윈: 스마트 시티 구현의 핵심",
+      "main_category": "기술·공학",
+      "mid_category": "도시 인프라와 디지털 기술",
+      "sub_category": "스마트 시티",
+      "detail_category": "디지털 트윈을 활용한 도시 관리",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "재생 에너지 저장 기술의 진화와 도전 과제",
+      "main_category": "기술·공학",
+      "mid_category": "에너지",
+      "sub_category": "신재생 에너지",
+      "detail_category": "배터리 및 저장 시스템 혁신",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "친환경 수처리 기술의 혁신과 도시 물 관리",
+      "main_category": "기술·공학",
+      "mid_category": "도시 인프라와 디지털 기술",
+      "sub_category": "환경 기술",
+      "detail_category": "스마트 수처리 시스템과 지속 가능성",
+      "priority": 1.0,
+      "status": "used",
+      "source": "api_generated"
+    },
+    {
+      "topic": "줄기세포 연구의 진화: 재생 의학은 어떻게 신체 치유의 미래를 바꾸고 있나",
+      "main_category": "생명·건강",
+      "mid_category": "생물학",
+      "sub_category": "세포생물학",
+      "detail_category": "줄기세포 치료와 재생 의학",
+      "priority": 1.0,
+      "status": "used",
+      "source": "api_generated"
+    },
+    {
+      "topic": "정신 건강에서 마인드풀니스의 역할과 과학적 근거",
+      "main_category": "생명·건강",
+      "mid_category": "건강과 심리",
+      "sub_category": "심리치료",
+      "detail_category": "마인드풀니스 기반 치료 효과 연구",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "유전체 편집 기술 CRISPR의 현재와 윤리적 쟁점",
+      "main_category": "생명·건강",
+      "mid_category": "생물학",
+      "sub_category": "유전학",
+      "detail_category": "CRISPR 기술의 의학 적용과 윤리",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "노화 생물학: 텔로미어와 세포 노화가 건강에 미치는 영향",
+      "main_category": "생명·건강",
+      "mid_category": "의학",
+      "sub_category": "노화 연구",
+      "detail_category": "텔로미어와 노화 관련 질환",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "뇌와 장(腸) 상호작용: 마이크로바이옴이 정신 건강에 미치는 영향",
+      "main_category": "생명·건강",
+      "mid_category": "뇌과학",
+      "sub_category": "신경생물학",
+      "detail_category": "장내 미생물과 뇌 건강 메커니즘",
       "priority": 1.0,
       "status": "candidate",
       "source": "api_generated"

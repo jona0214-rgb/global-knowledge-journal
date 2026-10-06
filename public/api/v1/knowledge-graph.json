@@ -2,12 +2,12 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-v1",
-  "generated_at": "2026-10-03T08:42:01.120614+09:00",
+  "generated_at": "2026-10-06T10:16:40.693314+09:00",
   "stats": {
     "categories": 10,
-    "reports": 48,
-    "nodes": 201,
-    "edges": 191,
+    "reports": 52,
+    "nodes": 217,
+    "edges": 207,
     "semantic_edges": 0
   },
   "nodes": [
@@ -152,6 +152,13 @@
       "main_category": "생명·건강"
     },
     {
+      "id": "detail:2118f5b04a1d2bf0",
+      "type": "detail",
+      "label": "행동금융학",
+      "level": 3,
+      "main_category": "경제·경영"
+    },
+    {
       "id": "detail:2263e0265eec45b3",
       "type": "detail",
       "label": "교역로와 제국의 경쟁",
@@ -171,6 +178,13 @@
       "label": "시간 단위의 사회적 합의",
       "level": 3,
       "main_category": "역사·문화"
+    },
+    {
+      "id": "detail:34192e149b2ef72f",
+      "type": "detail",
+      "label": "줄기세포 치료와 재생 의학",
+      "level": 3,
+      "main_category": "생명·건강"
     },
     {
       "id": "detail:3420d1fc276cfe21",
@@ -362,6 +376,20 @@
       "main_category": "언어·미디어·지식"
     },
     {
+      "id": "detail:d0c58170bc66a474",
+      "type": "detail",
+      "label": "초기 조건의 민감성",
+      "level": 3,
+      "main_category": "과학·수학"
+    },
+    {
+      "id": "detail:d5d7ad9795dd6302",
+      "type": "detail",
+      "label": "스마트 수처리 시스템과 지속 가능성",
+      "level": 3,
+      "main_category": "기술·공학"
+    },
+    {
       "id": "detail:d753586427fcf80f",
       "type": "detail",
       "label": "수요와 공급의 실시간 균형",
@@ -495,6 +523,20 @@
       "main_category": "언어·미디어·지식"
     },
     {
+      "id": "middle:388a7f51a0fce5c7",
+      "type": "middle",
+      "label": "생물학",
+      "level": 1,
+      "main_category": "생명·건강"
+    },
+    {
+      "id": "middle:3a7c3af3c3ce1592",
+      "type": "middle",
+      "label": "금융",
+      "level": 1,
+      "main_category": "경제·경영"
+    },
+    {
       "id": "middle:4c070c513f6363c7",
       "type": "middle",
       "label": "물환경공학",
@@ -521,6 +563,13 @@
       "label": "면역학",
       "level": 1,
       "main_category": "생명·건강"
+    },
+    {
+      "id": "middle:6bb393db31e086c2",
+      "type": "middle",
+      "label": "복잡계과학",
+      "level": 1,
+      "main_category": "과학·수학"
     },
     {
       "id": "middle:6c529e8114138a11",
@@ -598,6 +647,13 @@
       "label": "행정제도",
       "level": 1,
       "main_category": "사회·정치·법"
+    },
+    {
+      "id": "middle:b1bf48b32ef4f9dc",
+      "type": "middle",
+      "label": "도시 인프라와 디지털 기술",
+      "level": 1,
+      "main_category": "기술·공학"
     },
     {
       "id": "middle:b3a67bbd035724bc",
@@ -1546,6 +1602,23 @@
       "pdf_url": "outputs/20261001_posthumanism_questions_i_Report.pdf"
     },
     {
+      "id": "report:rpt-20261002-psychology-of-stock-mark",
+      "type": "report",
+      "label": "주식 시장의 심리학: 투자자 행동은 어떻게 시장을 움직이는가",
+      "level": 4,
+      "report_id": "rpt-20261002-psychology-of-stock-mark",
+      "date": "2026-10-02",
+      "main_category": "경제·경영",
+      "category_path": [
+        "경제·경영",
+        "금융",
+        "자본시장",
+        "행동금융학"
+      ],
+      "html_url": "outputs/20261002_psychology_of_stock_mark_Report.html",
+      "pdf_url": "outputs/20261002_psychology_of_stock_mark_Report.pdf"
+    },
+    {
       "id": "report:rpt-20261003-bureaucracy-two-faces-ru",
       "type": "report",
       "label": "관료제의 두 얼굴: 규칙은 어떻게 공정성과 경직성을 함께 만드는가",
@@ -1563,6 +1636,57 @@
       "pdf_url": "outputs/20261003_bureaucracy_two_faces_ru_Report.pdf"
     },
     {
+      "id": "report:rpt-20261004-science-of-chaos-how-sma",
+      "type": "report",
+      "label": "카오스의 과학: 작은 차이는 어떻게 거대한 변화를 만드는가",
+      "level": 4,
+      "report_id": "rpt-20261004-science-of-chaos-how-sma",
+      "date": "2026-10-04",
+      "main_category": "과학·수학",
+      "category_path": [
+        "과학·수학",
+        "복잡계과학",
+        "비선형 시스템",
+        "초기 조건의 민감성"
+      ],
+      "html_url": "outputs/20261004_science_of_chaos_how_sma_Report.html",
+      "pdf_url": "outputs/20261004_science_of_chaos_how_sma_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20261005-eco-friendly-water-treat",
+      "type": "report",
+      "label": "친환경 수처리 기술의 혁신과 도시 물 관리",
+      "level": 4,
+      "report_id": "rpt-20261005-eco-friendly-water-treat",
+      "date": "2026-10-05",
+      "main_category": "기술·공학",
+      "category_path": [
+        "기술·공학",
+        "도시 인프라와 디지털 기술",
+        "환경 기술",
+        "스마트 수처리 시스템과 지속 가능성"
+      ],
+      "html_url": "outputs/20261005_eco_friendly_water_treat_Report.html",
+      "pdf_url": "outputs/20261005_eco_friendly_water_treat_Report.pdf"
+    },
+    {
+      "id": "report:rpt-20261006-stem-cell-research-evolu",
+      "type": "report",
+      "label": "줄기세포 연구의 진화: 재생 의학은 어떻게 신체 치유의 미래를 바꾸고 있나",
+      "level": 4,
+      "report_id": "rpt-20261006-stem-cell-research-evolu",
+      "date": "2026-10-06",
+      "main_category": "생명·건강",
+      "category_path": [
+        "생명·건강",
+        "생물학",
+        "세포생물학",
+        "줄기세포 치료와 재생 의학"
+      ],
+      "html_url": "outputs/20261006_stem_cell_research_evolu_Report.html",
+      "pdf_url": "outputs/20261006_stem_cell_research_evolu_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -1575,6 +1699,13 @@
       "label": "문장부호의 역사",
       "level": 2,
       "main_category": "언어·미디어·지식"
+    },
+    {
+      "id": "sub:0e5fbd85218ff444",
+      "type": "sub",
+      "label": "비선형 시스템",
+      "level": 2,
+      "main_category": "과학·수학"
     },
     {
       "id": "sub:1f80dbf7a458e748",
@@ -1668,6 +1799,13 @@
       "main_category": "자연·환경·지리"
     },
     {
+      "id": "sub:527073f8922e2c00",
+      "type": "sub",
+      "label": "환경 기술",
+      "level": 2,
+      "main_category": "기술·공학"
+    },
+    {
       "id": "sub:55a7ebadac0c308e",
       "type": "sub",
       "label": "디지털 출판",
@@ -1701,6 +1839,13 @@
       "label": "가격 제도의 변화",
       "level": 2,
       "main_category": "경제·경영"
+    },
+    {
+      "id": "sub:67a5895d7975081c",
+      "type": "sub",
+      "label": "세포생물학",
+      "level": 2,
+      "main_category": "생명·건강"
     },
     {
       "id": "sub:67d010e2bde41175",
@@ -1764,6 +1909,13 @@
       "label": "향신료와 해상무역",
       "level": 2,
       "main_category": "역사·문화"
+    },
+    {
+      "id": "sub:aa99a5bde5efdccf",
+      "type": "sub",
+      "label": "자본시장",
+      "level": 2,
+      "main_category": "경제·경영"
     },
     {
       "id": "sub:ae8d8e802269dff6",
@@ -1985,6 +2137,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:0d7d55cfea5b6cd1",
+      "source": "sub:aa99a5bde5efdccf",
+      "target": "detail:2118f5b04a1d2bf0",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:0ec00cf8756df678",
       "source": "detail:3ba9e53991aec4cd",
       "target": "report:rpt-20260823-postal-codes-social-hist",
@@ -2118,6 +2277,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:2cbe0c810820c1c1",
+      "source": "detail:d0c58170bc66a474",
+      "target": "report:rpt-20261004-science-of-chaos-how-sma",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:2e0ec25184ab613e",
       "source": "detail:419f41c50a4481dd",
       "target": "report:rpt-20260928-history-of-postage-stamp",
@@ -2223,6 +2389,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:40ed8b4ca993327a",
+      "source": "sub:527073f8922e2c00",
+      "target": "detail:d5d7ad9795dd6302",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:4142520962e6a88a",
       "source": "detail:fde540c301a1a76f",
       "target": "report:rpt-20260827-history-of-glass-civiliz",
@@ -2254,6 +2427,13 @@
       "id": "edge:44e9693362185913",
       "source": "sub:00b963069a84e05f",
       "target": "detail:89962e146b94dea5",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:456b0dc7972dc5cf",
+      "source": "middle:b1bf48b32ef4f9dc",
+      "target": "sub:527073f8922e2c00",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -2296,6 +2476,13 @@
       "id": "edge:4b2ca19162ef983f",
       "source": "sub:c1a740ba95dcd7a5",
       "target": "detail:3420d1fc276cfe21",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:4b5525a4899654f5",
+      "source": "category:d1d9ae9d3e816c13",
+      "target": "middle:388a7f51a0fce5c7",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -2650,6 +2837,20 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:901917ff663eeafa",
+      "source": "category:b8045a9a934d7f69",
+      "target": "middle:b1bf48b32ef4f9dc",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:904fe78cd8576d9a",
+      "source": "sub:67a5895d7975081c",
+      "target": "detail:34192e149b2ef72f",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:906957391d828098",
       "source": "detail:42275779001e8ea8",
       "target": "report:rpt-20260904-birth-of-zero-how-nothin",
@@ -2748,6 +2949,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:a4e918c1cb25b9bf",
+      "source": "middle:388a7f51a0fce5c7",
+      "target": "sub:67a5895d7975081c",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:a4e9d869b65a4f1a",
       "source": "sub:c4205ae55196be5c",
       "target": "detail:3b365774a37949fa",
@@ -2839,6 +3047,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:b63beb0233e14316",
+      "source": "sub:0e5fbd85218ff444",
+      "target": "detail:d0c58170bc66a474",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:b6ad110264b0343b",
       "source": "sub:97e0fe3dc8a83cee",
       "target": "detail:2263e0265eec45b3",
@@ -2853,6 +3068,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:b7126449ca142d8f",
+      "source": "detail:2118f5b04a1d2bf0",
+      "target": "report:rpt-20261002-psychology-of-stock-mark",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:b795d0396c9d809b",
       "source": "sub:3207b77da325030e",
       "target": "detail:1b1dd9b990201286",
@@ -2863,6 +3085,13 @@
       "id": "edge:bb7a978e436501b4",
       "source": "middle:103e5235497ad2b3",
       "target": "sub:bfe96042a95d9ce4",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:bbb93fcd8e39affa",
+      "source": "detail:34192e149b2ef72f",
+      "target": "report:rpt-20261006-stem-cell-research-evolu",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -2884,6 +3113,13 @@
       "id": "edge:bcfe4e4c484b1bcd",
       "source": "category:b8045a9a934d7f69",
       "target": "middle:6c529e8114138a11",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:bd1543b1f8cd20d5",
+      "source": "category:52cb15e614d4481d",
+      "target": "middle:3a7c3af3c3ce1592",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -3070,6 +3306,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:dfacd6b07e6b4620",
+      "source": "middle:6bb393db31e086c2",
+      "target": "sub:0e5fbd85218ff444",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:e049766bcdbfb11d",
       "source": "middle:df3d6656d3780ad9",
       "target": "sub:ef4db1078a7fb909",
@@ -3087,6 +3330,13 @@
       "id": "edge:e617f83ee614f5d5",
       "source": "middle:d1ca29c1992b6249",
       "target": "sub:ae8d8e802269dff6",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:e6610b2b37b34e5f",
+      "source": "middle:3a7c3af3c3ce1592",
+      "target": "sub:aa99a5bde5efdccf",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -3189,6 +3439,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:f2541cb6e98ba29f",
+      "source": "detail:d5d7ad9795dd6302",
+      "target": "report:rpt-20261005-eco-friendly-water-treat",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:f40114a268fe6366",
       "source": "sub:72824612031c42aa",
       "target": "detail:49b0e51f9224f853",
@@ -3234,6 +3491,13 @@
       "id": "edge:fe1e27eeb68ca14d",
       "source": "detail:41028c5d3d268fbf",
       "target": "report:rpt-20260912-baesimwonui-pandan-simin",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:fe3bb56274b0620d",
+      "source": "category:c135b09622b60562",
+      "target": "middle:6bb393db31e086c2",
       "kind": "hierarchy",
       "relation_type": "contains"
     }
