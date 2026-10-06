@@ -5,8 +5,10 @@
 - Report contract: `schemas/report.schema.json`
 - Topic taxonomy: `config/topic_taxonomy_v2.json`
 - Legacy taxonomy aliases: `config/taxonomy_aliases.json`
+- Concept aliases and cross-category hub rules: `config/concept_aliases.json`
 - Operational topic state: `data/topic_db.json`
 - Published report bodies: `outputs/*_Report.json`
+- Curated report concept additions/exclusions: `data/knowledge_annotations.json`
 - Curated semantic relationships: `data/knowledge_edge_overrides.json`
 
 The following are derived and must not be edited by hand:
@@ -41,15 +43,22 @@ replacement so interrupted local writes do not leave truncated files.
 - `scripts/report_pipeline/taxonomy.py`: taxonomy validation and migration
 - `scripts/report_pipeline/catalog.py`: stable IDs and public catalog transforms
 - `scripts/report_pipeline/knowledge_graph.py`: graph model and integrity rules
+- `scripts/report_pipeline/concept_extractor.py`: evidence-backed report concept index
 
 New domain logic belongs in `scripts/report_pipeline/`, not directly in the CLI.
 
 ## Knowledge graph evolution
 
-The initial graph is deterministic and hierarchical. A semantic edge is publishable only
-when it has a relation type, score, human-readable explanation, and evidence. Future
-embedding or model-assisted scoring should generate candidates in a separate cache; only
-reviewed or automatically verified edges should enter the public graph.
+The graph has a deterministic taxonomy hierarchy plus evidence-backed shared concept
+nodes. Concept extraction runs after report publication and never changes the OpenAI
+response contract. Each tag records its source field, and a shared concept must occur in
+at least two reports across at least two main categories. Broad curated pattern hubs are
+bounded to prevent an unreadable all-to-all graph.
+
+A direct semantic report-to-report edge is publishable only when it has a relation type,
+score, human-readable explanation, and evidence. Future embedding or model-assisted
+scoring should generate candidates in a separate cache; only reviewed or automatically
+verified edges should enter the public graph.
 
 Every graph build records `schema_version`, `taxonomy_version`, and `algorithm_version`.
 Changing the public shape requires a new API version instead of silently changing `v1`.

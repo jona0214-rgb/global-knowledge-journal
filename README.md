@@ -11,7 +11,7 @@ HTML/PDF와 공개 카탈로그를 GitHub Pages에 게시하는 프로젝트입�
 - HTML 및 6~9쪽 PDF 렌더링
 - 실패 재생성, 누락 날짜 백필, 스테이징 후 예약 공개
 - 월별·대분류별 공개 아카이브와 자동화 로그
-- 지식 지도용 버전드 taxonomy·리포트·계층 그래프 데이터 생성
+- 지식 지도용 버전드 taxonomy·리포트·세부 개념·그래프 데이터 생성
 
 ## 활성 구조
 
@@ -24,6 +24,7 @@ HTML/PDF와 공개 카탈로그를 GitHub Pages에 게시하는 프로젝트입�
 config/
   topic_taxonomy_v2.json    대분류와 기본 주제의 단일 원본
   taxonomy_aliases.json     구형 분류명 변환 규칙
+  concept_aliases.json      세부 개념 별칭과 교차 분야 허브 규칙
 
 scripts/
   run_daily_report.py       호환 CLI 및 파이프라인 조정
@@ -33,6 +34,9 @@ scripts/
   build_knowledge_graph.py  공개 API와 계층 그래프 생성
   audit_project.py          운영 데이터 일관성 감사
   report_pipeline/          저장·분류·카탈로그·그래프 공통 모듈
+
+data/
+  knowledge_annotations.json  리포트별 개념 수동 추가·제외 보정
 
 public/
   reports.json              기존 공개 카탈로그 호환본
@@ -127,12 +131,20 @@ GitHub 예약 실행 자체가 지연되면 목표 시각보다 늦게 실행될
 
 - `public/api/v1/taxonomy.json`
 - `public/api/v1/reports.json`
+- `public/api/v1/report-concepts.json`
 - `public/api/v1/knowledge-graph.json`
 
-현재 그래프는 대분류→중분류→소분류→세부분류→리포트의 재현 가능한 계층 연결만
-생성합니다. 교차 주제 연결은 `data/knowledge_edge_overrides.json`에 근거와 설명을 가진
-검수된 관계만 추가할 수 있습니다. 향후 의미 유사도 계산도 동일한 그래프 스키마에
-연결하되, 근거 없는 모델 연결은 공개하지 않습니다.
+리포트 JSON의 키워드, 핵심 용어, 흐름도, 섹션 제목, 표 제목, 인용 및 참고 자료에서
+리포트당 25~40개의 세부 태그를 결정론적으로 추출합니다. 모든 태그에는 원문 필드
+위치를 근거로 남기며, 두 개 이상의 리포트와 두 개 이상의 대분류에서 확인된 개념만
+공유 concept 노드로 승격합니다. 넓은 개념 허브는 연결 과밀을 막기 위해 관련도가 높은
+최대 12개 리포트만 연결합니다.
+
+자동 추출은 리포트 생성·검증이 끝난 뒤 실행되므로 OpenAI 응답 스키마나 일일 생성의
+성공 여부에 영향을 주지 않습니다. 별칭과 투명한 패턴 규칙은
+`config/concept_aliases.json`, 개별 리포트의 수동 추가·제외는
+`data/knowledge_annotations.json`에서 확장합니다. 리포트 간 직접 의미 연결은
+`data/knowledge_edge_overrides.json`에 근거와 설명을 가진 검수 관계만 추가할 수 있습니다.
 
 ## 환경변수
 

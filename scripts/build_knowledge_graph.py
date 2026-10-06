@@ -6,6 +6,7 @@ import argparse
 from pathlib import Path
 
 from report_pipeline.catalog import normalize_catalog_item
+from report_pipeline.concept_extractor import build_report_concepts
 from report_pipeline.json_store import load_json, save_json_atomic
 from report_pipeline.knowledge_graph import build_knowledge_graph
 from report_pipeline.taxonomy import (
@@ -21,11 +22,13 @@ REPORTS_PATH = ROOT_DIR / "public" / "reports.json"
 TAXONOMY_PATH = ROOT_DIR / "config" / "topic_taxonomy_v2.json"
 ALIASES_PATH = ROOT_DIR / "config" / "taxonomy_aliases.json"
 OVERRIDES_PATH = ROOT_DIR / "data" / "knowledge_edge_overrides.json"
+CONCEPT_CONFIG_PATH = ROOT_DIR / "config" / "concept_aliases.json"
+ANNOTATIONS_PATH = ROOT_DIR / "data" / "knowledge_annotations.json"
 MANIFEST_PATH = ROOT_DIR / "data" / "manifest.json"
 PUBLIC_API_DIR = ROOT_DIR / "public" / "api" / "v1"
 
 
-def build_public_data() -> tuple[dict, list[dict], dict]:
+def build_public_bundle() -> tuple[dict, list[dict], dict, dict]:
     taxonomy = load_taxonomy(TAXONOMY_PATH)
     aliases = load_aliases(ALIASES_PATH)
     source_reports = load_json(REPORTS_PATH, [])
@@ -51,6 +54,19 @@ def build_public_data() -> tuple[dict, list[dict], dict]:
         latest_date = str(reports[0].get("date", "1970-01-01")) if reports else "1970-01-01"
         generated_at = f"{latest_date}T00:00:00Z"
 
+    concept_config = load_json(CONCEPT_CONFIG_PATH, {})
+    manual_annotations = load_json(
+        ANNOTATIONS_PATH,
+        {"schema_version": "1.0", "reports": {}},
+    )
+    concepts = build_report_concepts(
+        ROOT_DIR,
+        reports,
+        concept_config,
+        manual_annotations,
+        generated_at,
+    )
+
     # 소스 데이터가 바뀌지 않은 재시도는 동일한 산출물을 만들어야 한다.
     # 실행 시각을 쓰면 예약 재시도 때마다 의미 없는 커밋이 생기므로 manifest 시각을 사용한다.
     graph = build_knowledge_graph(
@@ -58,9 +74,17 @@ def build_public_data() -> tuple[dict, list[dict], dict]:
         taxonomy,
         aliases,
         overrides,
+        concept_annotations=concepts,
         generated_at=generated_at,
     )
-    return public_taxonomy, reports, graph
+    return public_taxonomy, reports, concepts, graph
+
+
+def build_public_data() -> tuple[dict, list[dict], dict]:
+    """Backward-compatible three-item result used by audits and older callers."""
+
+    taxonomy, reports, _, graph = build_public_bundle()
+    return taxonomy, reports, graph
 
 
 def main() -> None:
@@ -72,16 +96,19 @@ def main() -> None:
     )
     args = parser.parse_args()
 
-    taxonomy, reports, graph = build_public_data()
+    taxonomy, reports, concepts, graph = build_public_bundle()
     if not args.check:
         save_json_atomic(PUBLIC_API_DIR / "taxonomy.json", taxonomy)
         save_json_atomic(PUBLIC_API_DIR / "reports.json", reports)
+        save_json_atomic(PUBLIC_API_DIR / "report-concepts.json", concepts)
         save_json_atomic(PUBLIC_API_DIR / "knowledge-graph.json", graph)
 
     print(
         "지식 그래프 데이터 검증 완료: "
         f"대분류 {graph['stats']['categories']}개, "
         f"리포트 {graph['stats']['reports']}개, "
+        f"세부 태그 {concepts['stats']['tags']}개, "
+        f"공유 개념 {concepts['stats']['shared_concepts']}개, "
         f"노드 {graph['stats']['nodes']}개, "
         f"연결 {graph['stats']['edges']}개"
     )

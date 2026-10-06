@@ -26,9 +26,9 @@
         "required": ["id", "type", "label", "level"],
         "properties": {
           "id": {"type": "string"},
-          "type": {"enum": ["category", "middle", "sub", "detail", "report"]},
+          "type": {"enum": ["category", "middle", "sub", "detail", "report", "concept"]},
           "label": {"type": "string"},
-          "level": {"type": "integer", "minimum": 0, "maximum": 4}
+          "level": {"type": "integer", "minimum": 0, "maximum": 5}
         }
       }
     },
@@ -41,7 +41,7 @@
           "id": {"type": "string"},
           "source": {"type": "string"},
           "target": {"type": "string"},
-          "kind": {"enum": ["hierarchy", "semantic"]},
+          "kind": {"enum": ["hierarchy", "concept", "semantic"]},
           "relation_type": {"type": "string"}
         }
       }

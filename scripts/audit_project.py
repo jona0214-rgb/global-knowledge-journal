@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from build_knowledge_graph import ROOT_DIR, build_public_data
+from build_knowledge_graph import ROOT_DIR, build_public_bundle
 from report_pipeline.json_store import load_json
 
 
@@ -12,7 +12,7 @@ def main() -> None:
     errors: list[str] = []
     warnings: list[str] = []
 
-    taxonomy, reports, graph = build_public_data()
+    taxonomy, reports, concepts, graph = build_public_bundle()
     report_ids = [report["report_id"] for report in reports]
     dates = [str(report.get("date", "")) for report in reports]
     if len(report_ids) != len(set(report_ids)):
@@ -50,10 +50,23 @@ def main() -> None:
     if orphan_count:
         warnings.append(f"공개 카탈로그에 없는 outputs JSON이 {orphan_count}개 있습니다.")
 
+    concept_report_ids = {
+        str(item.get("report_id", ""))
+        for item in concepts.get("reports", [])
+        if isinstance(item, dict)
+    }
+    if concept_report_ids != set(report_ids):
+        errors.append("세부 개념 인덱스와 공개 카탈로그의 report_id가 다릅니다.")
+    if concepts.get("stats", {}).get("min_tags_per_report", 0) < 25:
+        warnings.append("25개 미만의 세부 태그를 가진 리포트가 있습니다.")
+
     print(
         "프로젝트 감사 완료: "
         f"taxonomy {len(taxonomy['category_order'])}개, "
-        f"리포트 {len(reports)}개, 그래프 노드 {graph['stats']['nodes']}개"
+        f"리포트 {len(reports)}개, "
+        f"세부 태그 {concepts['stats']['tags']}개, "
+        f"공유 개념 {concepts['stats']['shared_concepts']}개, "
+        f"그래프 노드 {graph['stats']['nodes']}개"
     )
     for warning in warnings:
         print(f"WARNING: {warning}")

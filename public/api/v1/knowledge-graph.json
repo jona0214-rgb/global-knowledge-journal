@@ -1,13 +1,15 @@
 {
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
-  "algorithm_version": "hierarchy-v1",
+  "algorithm_version": "hierarchy-concepts-v1",
   "generated_at": "2026-10-06T10:16:40.693314+09:00",
   "stats": {
     "categories": 10,
     "reports": 52,
-    "nodes": 217,
-    "edges": 207,
+    "nodes": 234,
+    "edges": 317,
+    "concepts": 17,
+    "concept_edges": 110,
     "semantic_edges": 0
   },
   "nodes": [
@@ -80,6 +82,282 @@
       "label": "생명·건강",
       "level": 0,
       "order": 5
+    },
+    {
+      "id": "concept:con-135ff1d8963c0c0f",
+      "type": "concept",
+      "label": "분류와 권력",
+      "level": 5,
+      "concept_id": "con-135ff1d8963c0c0f",
+      "concept_type": "mechanism",
+      "report_count": 8,
+      "main_categories": [
+        "과학·수학",
+        "기술·공학",
+        "사회·정치·법",
+        "언어·미디어·지식",
+        "역사·문화",
+        "예술·디자인",
+        "인문·철학"
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "concept:con-1fa6c095da6eff67",
+      "type": "concept",
+      "label": "빛 공해",
+      "level": 5,
+      "concept_id": "con-1fa6c095da6eff67",
+      "concept_type": "concept",
+      "report_count": 2,
+      "main_categories": [
+        "예술·디자인",
+        "자연·환경·지리"
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
+      "id": "concept:con-22940219024d252e",
+      "type": "concept",
+      "label": "불확실성과 판단",
+      "level": 5,
+      "concept_id": "con-22940219024d252e",
+      "concept_type": "concept",
+      "report_count": 12,
+      "main_categories": [
+        "경제·경영",
+        "과학·수학",
+        "기술·공학",
+        "사회·정치·법",
+        "역사·문화",
+        "인문·철학",
+        "자연·환경·지리"
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "concept:con-3167dea0669a3e92",
+      "type": "concept",
+      "label": "산업혁명",
+      "level": 5,
+      "concept_id": "con-3167dea0669a3e92",
+      "concept_type": "concept",
+      "report_count": 2,
+      "main_categories": [
+        "기술·공학",
+        "역사·문화"
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
+      "id": "concept:con-39820d616e59b701",
+      "type": "concept",
+      "label": "공정성과 공동 책임",
+      "level": 5,
+      "concept_id": "con-39820d616e59b701",
+      "concept_type": "concept",
+      "report_count": 12,
+      "main_categories": [
+        "경제·경영",
+        "기술·공학",
+        "사회·정치·법",
+        "언어·미디어·지식",
+        "역사·문화",
+        "인문·철학"
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "concept:con-3bb660b397c07691",
+      "type": "concept",
+      "label": "분류 체계",
+      "level": 5,
+      "concept_id": "con-3bb660b397c07691",
+      "concept_type": "concept",
+      "report_count": 2,
+      "main_categories": [
+        "사회·정치·법",
+        "언어·미디어·지식"
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
+      "id": "concept:con-43053bf3c7f1d7c6",
+      "type": "concept",
+      "label": "확률",
+      "level": 5,
+      "concept_id": "con-43053bf3c7f1d7c6",
+      "concept_type": "concept",
+      "report_count": 2,
+      "main_categories": [
+        "경제·경영",
+        "인문·철학"
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
+      "id": "concept:con-54edfaeaaf2ae146",
+      "type": "concept",
+      "label": "공정성",
+      "level": 5,
+      "concept_id": "con-54edfaeaaf2ae146",
+      "concept_type": "concept",
+      "report_count": 3,
+      "main_categories": [
+        "사회·정치·법",
+        "인문·철학"
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
+      "id": "concept:con-58404b066eaba0aa",
+      "type": "concept",
+      "label": "환경 영향",
+      "level": 5,
+      "concept_id": "con-58404b066eaba0aa",
+      "concept_type": "outcome",
+      "report_count": 3,
+      "main_categories": [
+        "기술·공학",
+        "예술·디자인",
+        "자연·환경·지리"
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
+      "id": "concept:con-58932b140c8d5ebd",
+      "type": "concept",
+      "label": "미생물 생태계",
+      "level": 5,
+      "concept_id": "con-58932b140c8d5ebd",
+      "concept_type": "concept",
+      "report_count": 4,
+      "main_categories": [
+        "기술·공학",
+        "생명·건강",
+        "자연·환경·지리"
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "concept:con-5d0014712c59ecdf",
+      "type": "concept",
+      "label": "에너지 효율과 전환",
+      "level": 5,
+      "concept_id": "con-5d0014712c59ecdf",
+      "concept_type": "outcome",
+      "report_count": 12,
+      "main_categories": [
+        "과학·수학",
+        "기술·공학",
+        "역사·문화",
+        "예술·디자인",
+        "자연·환경·지리"
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "concept:con-75dc266a01c9c786",
+      "type": "concept",
+      "label": "생체 리듬과 환경",
+      "level": 5,
+      "concept_id": "con-75dc266a01c9c786",
+      "concept_type": "mechanism",
+      "report_count": 4,
+      "main_categories": [
+        "기술·공학",
+        "생명·건강",
+        "예술·디자인",
+        "자연·환경·지리"
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "concept:con-96835a5f748ede9b",
+      "type": "concept",
+      "label": "에너지 효율",
+      "level": 5,
+      "concept_id": "con-96835a5f748ede9b",
+      "concept_type": "outcome",
+      "report_count": 4,
+      "main_categories": [
+        "과학·수학",
+        "기술·공학",
+        "예술·디자인"
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
+      "id": "concept:con-9b89960b11d9e6cf",
+      "type": "concept",
+      "label": "환경 영향과 회복력",
+      "level": 5,
+      "concept_id": "con-9b89960b11d9e6cf",
+      "concept_type": "outcome",
+      "report_count": 12,
+      "main_categories": [
+        "경제·경영",
+        "과학·수학",
+        "기술·공학",
+        "사회·정치·법",
+        "생명·건강",
+        "역사·문화",
+        "예술·디자인",
+        "자연·환경·지리"
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "concept:con-9c3ea3b0f43b9c79",
+      "type": "concept",
+      "label": "선택과 프레이밍",
+      "level": 5,
+      "concept_id": "con-9c3ea3b0f43b9c79",
+      "concept_type": "mechanism",
+      "report_count": 4,
+      "main_categories": [
+        "경제·경영",
+        "언어·미디어·지식",
+        "예술·디자인"
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "concept:con-a2ff54106aeeeb39",
+      "type": "concept",
+      "label": "표준화와 동기화",
+      "level": 5,
+      "concept_id": "con-a2ff54106aeeeb39",
+      "concept_type": "mechanism",
+      "report_count": 12,
+      "main_categories": [
+        "경제·경영",
+        "과학·수학",
+        "기술·공학",
+        "사회·정치·법",
+        "생명·건강",
+        "언어·미디어·지식",
+        "역사·문화"
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "concept:con-f6b070ac3797aa0b",
+      "type": "concept",
+      "label": "기억과 정체성",
+      "level": 5,
+      "concept_id": "con-f6b070ac3797aa0b",
+      "concept_type": "concept",
+      "report_count": 12,
+      "main_categories": [
+        "사회·정치·법",
+        "생명·건강",
+        "언어·미디어·지식",
+        "역사·문화",
+        "인문·철학",
+        "자연·환경·지리"
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "detail:009a377cc7c2c925",
@@ -2060,6 +2338,21 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:00c58b48ddf9093a",
+      "source": "report:rpt-20260922-welfare-state-design-soc",
+      "target": "concept:con-9b89960b11d9e6cf",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "sections[6].body[2]",
+          "matched_text": "회복력"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:014a59bf259cdbb1",
       "source": "sub:38cf4ac117ebd85c",
       "target": "detail:cfe660dfd3e02bf9",
@@ -2116,6 +2409,48 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:0881b9752942ab0c",
+      "source": "report:rpt-20260920-youtube-algorithm-struct",
+      "target": "concept:con-39820d616e59b701",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "sections[6].body[1]",
+          "matched_text": "공정성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:092f9259e0ae2361",
+      "source": "report:rpt-20260921-philosophy-of-ritual-rep",
+      "target": "concept:con-f6b070ac3797aa0b",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "sections[0].body[0]",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "sections[0].body[1]",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "sections[1].body[0]",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "sections[2].body[0]",
+          "matched_text": "정체성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:0a828978e947fb99",
       "source": "middle:9a840b66bd8d3d30",
       "target": "sub:d66978887f14fa65",
@@ -2128,6 +2463,29 @@
       "target": "report:rpt-20260927-soil-ecosystem-support",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:0b7f428569a78f64",
+      "source": "report:rpt-20260824-insurance-birth-how-risk",
+      "target": "concept:con-a2ff54106aeeeb39",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.9,
+      "evidence": [
+        {
+          "reference": "sections[6].body[0]",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "sections[8].body[0]",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "sections[10].body[5]",
+          "matched_text": "표준화"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:0d1e1042ffc1d199",
@@ -2184,6 +2542,83 @@
       "target": "middle:9a840b66bd8d3d30",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:18312450d6852be3",
+      "source": "report:rpt-20260831-dictionary-authority-wor",
+      "target": "concept:con-a2ff54106aeeeb39",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "keywords[1]",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "term_box.items[1].term",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "sections[1].title",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "sections[1].body[1]",
+          "matched_text": "표준화"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:1877bb5c237d06c5",
+      "source": "report:rpt-20261005-eco-friendly-water-treat",
+      "target": "concept:con-5d0014712c59ecdf",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.9,
+      "evidence": [
+        {
+          "reference": "keywords[5]",
+          "matched_text": "에너지 효율"
+        },
+        {
+          "reference": "sections[0].body[1]",
+          "matched_text": "에너지 효율"
+        },
+        {
+          "reference": "sections[1].body[0]",
+          "matched_text": "에너지 효율"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:18885055c25ff483",
+      "source": "report:rpt-20260928-history-of-postage-stamp",
+      "target": "concept:con-a2ff54106aeeeb39",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "term_box.items[3].description",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "sections[4].body[1]",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "sections[6].body[1]",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "sections[10].body[2]",
+          "matched_text": "표준화"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:1b97846e5cc31634",
@@ -2263,11 +2698,53 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:2a7e18a016c7fdfb",
+      "source": "report:rpt-20260909-museum-light-how-lightin",
+      "target": "concept:con-1fa6c095da6eff67",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[6]",
+          "matched_text": "빛 공해"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
       "id": "edge:2ae5b198ff0bfe0b",
       "source": "sub:47e959a2476d343b",
       "target": "detail:4c6a522eba7d405e",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:2b7870fa378fcad6",
+      "source": "report:rpt-20260907-monsun-geography-how-sea",
+      "target": "concept:con-22940219024d252e",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "sections[6].body[1]",
+          "matched_text": "불확실성"
+        },
+        {
+          "reference": "sections[7].body[1]",
+          "matched_text": "불확실성"
+        },
+        {
+          "reference": "sections[8].body[3]",
+          "matched_text": "불확실성"
+        },
+        {
+          "reference": "sections[9].body[1]",
+          "matched_text": "불확실성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:2c05fe07a1a90ff6",
@@ -2284,6 +2761,25 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:2da1b9faf368b5de",
+      "source": "report:rpt-20260918-history-of-calendars-how",
+      "target": "concept:con-135ff1d8963c0c0f",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.8,
+      "evidence": [
+        {
+          "reference": "sections[3].body[1]",
+          "matched_text": "권력 구조"
+        },
+        {
+          "reference": "sections[8].body[3]",
+          "matched_text": "권력 구조"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:2e0ec25184ab613e",
       "source": "detail:419f41c50a4481dd",
       "target": "report:rpt-20260928-history-of-postage-stamp",
@@ -2298,6 +2794,25 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:2f18547a8ccf64b1",
+      "source": "report:rpt-20260917-river-memory-meandering",
+      "target": "concept:con-22940219024d252e",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.8,
+      "evidence": [
+        {
+          "reference": "sections[7].body[0]",
+          "matched_text": "불확실성"
+        },
+        {
+          "reference": "sections[9].body[2]",
+          "matched_text": "불확실성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:2f90e1cc5bf37363",
       "source": "middle:efbda3d2166e9316",
       "target": "sub:b74bbc1aefd39888",
@@ -2305,11 +2820,84 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:3032ed66043c0367",
+      "source": "report:rpt-20261002-psychology-of-stock-mark",
+      "target": "concept:con-9c3ea3b0f43b9c79",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.8,
+      "evidence": [
+        {
+          "reference": "sections[4].body[0]",
+          "matched_text": "확증 편향"
+        },
+        {
+          "reference": "sections[8].body[1]",
+          "matched_text": "확증 편향"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:308c95f56877c443",
       "source": "middle:5eef111a7fc8d608",
       "target": "sub:4d653bbc703ca176",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:310378ae2de04a06",
+      "source": "report:rpt-20260905-seawater-to-drinking-wat",
+      "target": "concept:con-9b89960b11d9e6cf",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "keywords[7]",
+          "matched_text": "환경 영향"
+        },
+        {
+          "reference": "sections[2].body[0]",
+          "matched_text": "환경 영향"
+        },
+        {
+          "reference": "sections[6].body[1]",
+          "matched_text": "환경 영향"
+        },
+        {
+          "reference": "sections[6].body[2]",
+          "matched_text": "환경 영향"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:3479525795ebe41a",
+      "source": "report:rpt-20260919-photoframe-how-camera-se",
+      "target": "concept:con-9c3ea3b0f43b9c79",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "subtitle",
+          "matched_text": "프레이밍"
+        },
+        {
+          "reference": "abstract",
+          "matched_text": "프레이밍"
+        },
+        {
+          "reference": "keywords[1]",
+          "matched_text": "프레이밍"
+        },
+        {
+          "reference": "term_box.items[0].term",
+          "matched_text": "프레이밍"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:3490be357a59acb0",
@@ -2361,6 +2949,33 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:39d9e5ca9a7ce2af",
+      "source": "report:rpt-20260821-punctuation-birth-comma",
+      "target": "concept:con-a2ff54106aeeeb39",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "sections[3].body[2]",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "sections[6].body[1]",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "sections[9].body[2]",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "sections[10].body[1]",
+          "matched_text": "표준화"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:3ba4abd5a56ed5b6",
       "source": "detail:16bf087aa2d5a8a4",
       "target": "report:rpt-20260923-container-economics-how",
@@ -2375,6 +2990,21 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:3f06236c741094c6",
+      "source": "report:rpt-20260827-history-of-glass-civiliz",
+      "target": "concept:con-75dc266a01c9c786",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "sections[9].body[2]",
+          "matched_text": "빛 공해"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:3fb7274768bc473f",
       "source": "sub:ae8d8e802269dff6",
       "target": "detail:16bf087aa2d5a8a4",
@@ -2387,6 +3017,21 @@
       "target": "report:rpt-20260820-sound-architecture-how-s",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:3ff18a9a9c9f0082",
+      "source": "report:rpt-20260817-time-table-birth-how-mod",
+      "target": "concept:con-3167dea0669a3e92",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[5]",
+          "matched_text": "산업혁명"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
     },
     {
       "id": "edge:40ed8b4ca993327a",
@@ -2422,6 +3067,33 @@
       "target": "report:rpt-20260920-youtube-algorithm-struct",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:449060ec2deb554b",
+      "source": "report:rpt-20260902-population-survey-politi",
+      "target": "concept:con-135ff1d8963c0c0f",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "title",
+          "matched_text": "인구조사"
+        },
+        {
+          "reference": "abstract",
+          "matched_text": "인구조사"
+        },
+        {
+          "reference": "keywords[0]",
+          "matched_text": "인구조사"
+        },
+        {
+          "reference": "keywords[1]",
+          "matched_text": "센서스"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:44e9693362185913",
@@ -2466,11 +3138,76 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:488596e60d5e950d",
+      "source": "report:rpt-20260819-library-classification-p",
+      "target": "concept:con-a2ff54106aeeeb39",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.9,
+      "evidence": [
+        {
+          "reference": "sections[4].body[2]",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "sections[6].body[2]",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "sections[9].body[4]",
+          "matched_text": "표준화"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:48d6a731b8f085e7",
+      "source": "report:rpt-20260826-sleep-biology-brain-dail",
+      "target": "concept:con-f6b070ac3797aa0b",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "subtitle",
+          "matched_text": "기억"
+        },
+        {
+          "reference": "abstract",
+          "matched_text": "기억"
+        },
+        {
+          "reference": "keywords[2]",
+          "matched_text": "기억"
+        },
+        {
+          "reference": "term_box.items[1].description",
+          "matched_text": "기억"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:4a5543c82957d773",
       "source": "detail:34c614fc6ec6ac0b",
       "target": "report:rpt-20260907-monsun-geography-how-sea",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:4acc8e12200e7e5f",
+      "source": "report:rpt-20260819-library-classification-p",
+      "target": "concept:con-3bb660b397c07691",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[2]",
+          "matched_text": "분류 체계"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
     },
     {
       "id": "edge:4b2ca19162ef983f",
@@ -2499,6 +3236,36 @@
       "target": "detail:2ed24e4ba7fb0be3",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:4ce1a7cb83b6580b",
+      "source": "report:rpt-20260905-seawater-to-drinking-wat",
+      "target": "concept:con-39820d616e59b701",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "sections[10].body[1]",
+          "matched_text": "공정성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:4d1267242440f3a4",
+      "source": "report:rpt-20260929-sustainable-building-mat",
+      "target": "concept:con-58404b066eaba0aa",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[6]",
+          "matched_text": "환경 영향"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
     },
     {
       "id": "edge:4efadd2bc220df63",
@@ -2550,6 +3317,33 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:51457b938ecf4858",
+      "source": "report:rpt-20260816-veil-of-ignorance-fair-s",
+      "target": "concept:con-39820d616e59b701",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "title",
+          "matched_text": "무지의 베일"
+        },
+        {
+          "reference": "abstract",
+          "matched_text": "무지의 베일"
+        },
+        {
+          "reference": "keywords[0]",
+          "matched_text": "무지의 베일"
+        },
+        {
+          "reference": "keywords[1]",
+          "matched_text": "공정성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:51a86e069045a649",
       "source": "middle:873019f88207822f",
       "target": "sub:47e959a2476d343b",
@@ -2557,11 +3351,41 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:520aa0e9dfa8970f",
+      "source": "report:rpt-20261004-science-of-chaos-how-sma",
+      "target": "concept:con-9b89960b11d9e6cf",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "sections[10].body[0]",
+          "matched_text": "회복력"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:5389aae3fb7c4966",
       "source": "middle:cb144e23e2065cf0",
       "target": "sub:c4205ae55196be5c",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:5410267f387f8481",
+      "source": "report:rpt-20260923-container-economics-how",
+      "target": "concept:con-9b89960b11d9e6cf",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "sections[9].body[2]",
+          "matched_text": "환경 영향"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:54f16cfb1929dda8",
@@ -2578,6 +3402,33 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:57c4e40b74a72550",
+      "source": "report:rpt-20260912-baesimwonui-pandan-simin",
+      "target": "concept:con-39820d616e59b701",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "keywords[5]",
+          "matched_text": "공정성"
+        },
+        {
+          "reference": "term_box.items[3].term",
+          "matched_text": "공정성"
+        },
+        {
+          "reference": "sections[0].body[0]",
+          "matched_text": "공정성"
+        },
+        {
+          "reference": "sections[2].body[0]",
+          "matched_text": "공정성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:57dd89447b4c25e9",
       "source": "detail:d753586427fcf80f",
       "target": "report:rpt-20260915-jeollyeongmang-balancing",
@@ -2585,11 +3436,202 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:57e4a4e5f8c36345",
+      "source": "report:rpt-20260915-jeollyeongmang-balancing",
+      "target": "concept:con-22940219024d252e",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "sections[6].body[1]",
+          "matched_text": "불확실성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:58049411714a72bf",
+      "source": "report:rpt-20260916-gut-microbiome-ecosystem",
+      "target": "concept:con-58932b140c8d5ebd",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "title",
+          "matched_text": "미생물"
+        },
+        {
+          "reference": "subtitle",
+          "matched_text": "미생물"
+        },
+        {
+          "reference": "abstract",
+          "matched_text": "미생물"
+        },
+        {
+          "reference": "keywords[0]",
+          "matched_text": "미생물"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:5a121d93432eec69",
       "source": "detail:080dd9b47a474067",
       "target": "report:rpt-20260908-history-of-refrigerator",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:5a7ed9cc7a49b506",
+      "source": "report:rpt-20260920-youtube-algorithm-struct",
+      "target": "concept:con-9c3ea3b0f43b9c79",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "title",
+          "matched_text": "정보 편향"
+        },
+        {
+          "reference": "keywords[1]",
+          "matched_text": "추천 시스템"
+        },
+        {
+          "reference": "keywords[2]",
+          "matched_text": "정보 편향"
+        },
+        {
+          "reference": "term_box.items[1].term",
+          "matched_text": "정보 편향"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:5d576c510e1e3e92",
+      "source": "report:rpt-20260822-philosophy-of-probabilit",
+      "target": "concept:con-22940219024d252e",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "title",
+          "matched_text": "불확실성"
+        },
+        {
+          "reference": "subtitle",
+          "matched_text": "불확실성"
+        },
+        {
+          "reference": "abstract",
+          "matched_text": "불확실성"
+        },
+        {
+          "reference": "keywords[2]",
+          "matched_text": "불확실성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:5d9aaba2cd041442",
+      "source": "report:rpt-20260908-history-of-refrigerator",
+      "target": "concept:con-9b89960b11d9e6cf",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.8,
+      "evidence": [
+        {
+          "reference": "sections[7].body[0]",
+          "matched_text": "환경 영향"
+        },
+        {
+          "reference": "sections[9].body[1]",
+          "matched_text": "환경 영향"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:6076bf2bfacd1742",
+      "source": "report:rpt-20260902-population-survey-politi",
+      "target": "concept:con-f6b070ac3797aa0b",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "sections[2].body[0]",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "sections[5].body[0]",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "sections[5].body[1]",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "sections[6].body[0]",
+          "matched_text": "정체성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:6090906512d5e795",
+      "source": "report:rpt-20260816-veil-of-ignorance-fair-s",
+      "target": "concept:con-54edfaeaaf2ae146",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.8,
+      "evidence": [
+        {
+          "reference": "keywords[1]",
+          "matched_text": "공정성"
+        },
+        {
+          "reference": "term_box.items[1].term",
+          "matched_text": "공정성(fairness)"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
+      "id": "edge:62ff5cc8951344af",
+      "source": "report:rpt-20260905-seawater-to-drinking-wat",
+      "target": "concept:con-96835a5f748ede9b",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[2]",
+          "matched_text": "에너지 효율"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
+      "id": "edge:646eecfa078bf8f9",
+      "source": "report:rpt-20260929-sustainable-building-mat",
+      "target": "concept:con-96835a5f748ede9b",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[4]",
+          "matched_text": "에너지 효율"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
     },
     {
       "id": "edge:65c7dd6c5b6e2fdc",
@@ -2606,6 +3648,33 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:66267d69ae811292",
+      "source": "report:rpt-20260908-history-of-refrigerator",
+      "target": "concept:con-5d0014712c59ecdf",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "sections[0].body[2]",
+          "matched_text": "에너지 효율"
+        },
+        {
+          "reference": "sections[7].body[0]",
+          "matched_text": "에너지 효율"
+        },
+        {
+          "reference": "sections[9].body[1]",
+          "matched_text": "에너지 효율"
+        },
+        {
+          "reference": "sections[10].body[2]",
+          "matched_text": "에너지 효율"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:66d4c44133f87101",
       "source": "category:b9ccab27f2a0689e",
       "target": "middle:25e8d50dabe74f2b",
@@ -2613,11 +3682,80 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:66da9a96e83e650c",
+      "source": "report:rpt-20260831-dictionary-authority-wor",
+      "target": "concept:con-f6b070ac3797aa0b",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "sections[0].body[3]",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "sections[5].body[1]",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "sections[7].body[2]",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "sections[8].body[2]",
+          "matched_text": "정체성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:6796cfd7f23f7947",
       "source": "category:3fc5d02608923758",
       "target": "middle:ead100e4f8ed5e3d",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:67aabeff7e757134",
+      "source": "report:rpt-20260909-museum-light-how-lightin",
+      "target": "concept:con-5d0014712c59ecdf",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "term_box.items[3].description",
+          "matched_text": "에너지 효율"
+        },
+        {
+          "reference": "sections[0].body[1]",
+          "matched_text": "에너지 효율"
+        },
+        {
+          "reference": "sections[1].body[1]",
+          "matched_text": "에너지 효율"
+        },
+        {
+          "reference": "sections[4].body[0]",
+          "matched_text": "에너지 효율"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:6834769604b85015",
+      "source": "report:rpt-20260915-jeollyeongmang-balancing",
+      "target": "concept:con-9b89960b11d9e6cf",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "sections[9].body[3]",
+          "matched_text": "탄소 저감"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:6a14667ad1979262",
@@ -2632,6 +3770,71 @@
       "target": "middle:a6e8bec105c6f692",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:6bcda7b82f154fca",
+      "source": "report:rpt-20260819-library-classification-p",
+      "target": "concept:con-39820d616e59b701",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.9,
+      "evidence": [
+        {
+          "reference": "sections[7].body[0]",
+          "matched_text": "공정성"
+        },
+        {
+          "reference": "sections[10].body[2]",
+          "matched_text": "공정성"
+        },
+        {
+          "reference": "sections[10].body[4]",
+          "matched_text": "공정성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:6d452f8ff9889165",
+      "source": "report:rpt-20260901-moral-luck-paradox-resul",
+      "target": "concept:con-39820d616e59b701",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "sections[0].body[3]",
+          "matched_text": "공정성"
+        },
+        {
+          "reference": "sections[3].body[2]",
+          "matched_text": "공정성"
+        },
+        {
+          "reference": "sections[4].body[1]",
+          "matched_text": "공정성"
+        },
+        {
+          "reference": "sections[7].body[2]",
+          "matched_text": "공정성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:6d4cde0cce743589",
+      "source": "report:rpt-20260824-insurance-birth-how-risk",
+      "target": "concept:con-43053bf3c7f1d7c6",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "term_box.items[2].term",
+          "matched_text": "확률"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
     },
     {
       "id": "edge:6d707ec1fbfceb2e",
@@ -2676,11 +3879,68 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:71c07d4c2d7dacd3",
+      "source": "report:rpt-20260820-sound-architecture-how-s",
+      "target": "concept:con-5d0014712c59ecdf",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "sections[9].body[3]",
+          "matched_text": "에너지 효율"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:71e000b2fed043f9",
+      "source": "report:rpt-20260824-insurance-birth-how-risk",
+      "target": "concept:con-39820d616e59b701",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.9,
+      "evidence": [
+        {
+          "reference": "sections[4].body[1]",
+          "matched_text": "공정성"
+        },
+        {
+          "reference": "sections[9].body[1]",
+          "matched_text": "사회적 위험"
+        },
+        {
+          "reference": "sections[10].body[6]",
+          "matched_text": "사회적 위험"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:7271984fbf12fbb2",
       "source": "sub:6e86a1e020e410cb",
       "target": "detail:e58e72b2309f3108",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:738e398246bd2eba",
+      "source": "report:rpt-20260902-population-survey-politi",
+      "target": "concept:con-39820d616e59b701",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.8,
+      "evidence": [
+        {
+          "reference": "sections[7].body[1]",
+          "matched_text": "공정성"
+        },
+        {
+          "reference": "sections[9].body[2]",
+          "matched_text": "공정성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:73c47e5bfecd710b",
@@ -2697,11 +3957,53 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:74ab81a1e9f171a0",
+      "source": "report:rpt-20260815-dosiei-hasudo",
+      "target": "concept:con-58932b140c8d5ebd",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "sections[4].body[1]",
+          "matched_text": "미생물"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:74bbf6005e4fad4c",
       "source": "category:9de06b299a735751",
       "target": "middle:dd947ec8f58cea1c",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:7555a8277e079993",
+      "source": "report:rpt-20260929-sustainable-building-mat",
+      "target": "concept:con-9b89960b11d9e6cf",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "keywords[3]",
+          "matched_text": "탄소 저감"
+        },
+        {
+          "reference": "keywords[6]",
+          "matched_text": "환경 영향"
+        },
+        {
+          "reference": "term_box.items[1].description",
+          "matched_text": "환경 영향"
+        },
+        {
+          "reference": "sections[0].body[0]",
+          "matched_text": "환경 영향"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:75ae5adc82a6e58f",
@@ -2739,6 +4041,21 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:79d97d7e523d4b7c",
+      "source": "report:rpt-20260829-hyangsinryo-gyoyeog-hist",
+      "target": "concept:con-22940219024d252e",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "sections[9].body[3]",
+          "matched_text": "시장 변동성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:7b0b673fe9ce0963",
       "source": "middle:31efa95b81f1ef7c",
       "target": "sub:d8ece351df04595a",
@@ -2746,11 +4063,65 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:7b60b090b0b28bf3",
+      "source": "report:rpt-20260911-naneun-nuguingga-gieog-e",
+      "target": "concept:con-f6b070ac3797aa0b",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "title",
+          "matched_text": "기억"
+        },
+        {
+          "reference": "subtitle",
+          "matched_text": "기억"
+        },
+        {
+          "reference": "abstract",
+          "matched_text": "기억"
+        },
+        {
+          "reference": "keywords[1]",
+          "matched_text": "기억"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:7be158e1ce34cf66",
       "source": "category:9de06b299a735751",
       "target": "middle:5eef111a7fc8d608",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:7dba19003127a2d1",
+      "source": "report:rpt-20260918-history-of-calendars-how",
+      "target": "concept:con-f6b070ac3797aa0b",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "sections[0].body[3]",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "sections[5].body[1]",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "sections[7].body[1]",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "sections[9].body[2]",
+          "matched_text": "정체성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:7de1efc0d5cd3b41",
@@ -2781,11 +4152,76 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:7f5e3ebf1612146a",
+      "source": "report:rpt-20260929-sustainable-building-mat",
+      "target": "concept:con-5d0014712c59ecdf",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "keywords[4]",
+          "matched_text": "에너지 효율"
+        },
+        {
+          "reference": "sections[0].body[1]",
+          "matched_text": "에너지 효율"
+        },
+        {
+          "reference": "sections[1].body[0]",
+          "matched_text": "에너지 효율"
+        },
+        {
+          "reference": "sections[1].body[1]",
+          "matched_text": "에너지 효율"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:7f725f189a5bbaab",
       "source": "middle:d6e43e13b5ff081e",
       "target": "sub:b378875d51e527ff",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:813af4250e65cf76",
+      "source": "report:rpt-20260827-history-of-glass-civiliz",
+      "target": "concept:con-5d0014712c59ecdf",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.8,
+      "evidence": [
+        {
+          "reference": "sections[6].body[1]",
+          "matched_text": "에너지 효율"
+        },
+        {
+          "reference": "sections[9].body[2]",
+          "matched_text": "에너지 효율"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:83ab456d08b296cf",
+      "source": "report:rpt-20260914-jukiyurpyoui-jillye-woon",
+      "target": "concept:con-135ff1d8963c0c0f",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.8,
+      "evidence": [
+        {
+          "reference": "sections[3].body[1]",
+          "matched_text": "분류 체계"
+        },
+        {
+          "reference": "sections[7].body[1]",
+          "matched_text": "분류 체계"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:8486f4f7bc96885c",
@@ -2809,11 +4245,95 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:8665e3af5854545e",
+      "source": "report:rpt-20260817-time-table-birth-how-mod",
+      "target": "concept:con-a2ff54106aeeeb39",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "title",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "subtitle",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "abstract",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "keywords[1]",
+          "matched_text": "표준화"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:871f83f12ea162c5",
+      "source": "report:rpt-20260925-elevator-urban-history-s",
+      "target": "concept:con-135ff1d8963c0c0f",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "sections[5].body[1]",
+          "matched_text": "권력 구조"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:87e6be7e51e6d863",
       "source": "sub:bfe96042a95d9ce4",
       "target": "detail:71bf12bf65767030",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:883d68c8cacf0610",
+      "source": "report:rpt-20260825-beolbibeui-suhak-yugakgy",
+      "target": "concept:con-96835a5f748ede9b",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[5]",
+          "matched_text": "에너지 효율"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
+      "id": "edge:88e9e6ffe13d674b",
+      "source": "report:rpt-20260826-sleep-biology-brain-dail",
+      "target": "concept:con-75dc266a01c9c786",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "subtitle",
+          "matched_text": "수면 주기"
+        },
+        {
+          "reference": "abstract",
+          "matched_text": "수면 주기"
+        },
+        {
+          "reference": "keywords[0]",
+          "matched_text": "수면 주기"
+        },
+        {
+          "reference": "sections[0].body[2]",
+          "matched_text": "수면 주기"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:8992dee1ef77e852",
@@ -2830,11 +4350,68 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:8c4f349fe489be52",
+      "source": "report:rpt-20260905-seawater-to-drinking-wat",
+      "target": "concept:con-58932b140c8d5ebd",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "sections[6].body[0]",
+          "matched_text": "미생물"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:8d6b4f7f45e7594e",
+      "source": "report:rpt-20260925-elevator-urban-history-s",
+      "target": "concept:con-5d0014712c59ecdf",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "sections[4].body[2]",
+          "matched_text": "에너지 효율"
+        },
+        {
+          "reference": "sections[9].body[0]",
+          "matched_text": "에너지 효율"
+        },
+        {
+          "reference": "sections[9].body[3]",
+          "matched_text": "에너지 효율"
+        },
+        {
+          "reference": "sections[10].body[4]",
+          "matched_text": "에너지 효율"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:8dcf328c6bbeee7f",
       "source": "sub:cb22f45e3fb3478b",
       "target": "detail:0d6eb03b63fa956d",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:8eb4c5300b335948",
+      "source": "report:rpt-20260831-dictionary-authority-wor",
+      "target": "concept:con-135ff1d8963c0c0f",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "sections[5].body[1]",
+          "matched_text": "권력 구조"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:901917ff663eeafa",
@@ -2858,6 +4435,25 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:92a09a34cc5d5cfb",
+      "source": "report:rpt-20260924-entropy-world-why-disord",
+      "target": "concept:con-5d0014712c59ecdf",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.8,
+      "evidence": [
+        {
+          "reference": "sections[6].body[1]",
+          "matched_text": "에너지 효율"
+        },
+        {
+          "reference": "sections[9].body[1]",
+          "matched_text": "에너지 저장"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:935d7aa32387a16b",
       "source": "sub:7cb73285e3d7560c",
       "target": "detail:080dd9b47a474067",
@@ -2865,11 +4461,72 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:94d1d5a83bc79191",
+      "source": "report:rpt-20260823-postal-codes-social-hist",
+      "target": "concept:con-a2ff54106aeeeb39",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "sections[0].body[2]",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "sections[2].body[1]",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "sections[6].body[1]",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "sections[7].body[1]",
+          "matched_text": "표준화"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:953be3dc85ce8787",
+      "source": "report:rpt-20260912-baesimwonui-pandan-simin",
+      "target": "concept:con-54edfaeaaf2ae146",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.8,
+      "evidence": [
+        {
+          "reference": "keywords[5]",
+          "matched_text": "공정성"
+        },
+        {
+          "reference": "term_box.items[3].term",
+          "matched_text": "공정성(Fairness)"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
       "id": "edge:96681c4ba85eba1a",
       "source": "category:b9ccab27f2a0689e",
       "target": "middle:8e6727676b60ee0f",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:97c4b16a9c877212",
+      "source": "report:rpt-20260915-jeollyeongmang-balancing",
+      "target": "concept:con-a2ff54106aeeeb39",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "subtitle",
+          "matched_text": "동기화"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:97c85ce4f9617728",
@@ -2886,11 +4543,56 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:9879f464cf78f951",
+      "source": "report:rpt-20261005-eco-friendly-water-treat",
+      "target": "concept:con-96835a5f748ede9b",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[5]",
+          "matched_text": "에너지 효율"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
       "id": "edge:98c70403edc00f5c",
       "source": "category:cb829c377357dd71",
       "target": "middle:baa004598199726d",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:99aa8afc73ef95ce",
+      "source": "report:rpt-20260907-monsun-geography-how-sea",
+      "target": "concept:con-9b89960b11d9e6cf",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "sections[8].body[4]",
+          "matched_text": "회복력"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:99d0b1de349a1e48",
+      "source": "report:rpt-20261006-stem-cell-research-evolu",
+      "target": "concept:con-9b89960b11d9e6cf",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "sections[9].body[3]",
+          "matched_text": "환경 영향"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:9aed05fcd0fd0a01",
@@ -2928,6 +4630,33 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:9e0747aea64ed4ad",
+      "source": "report:rpt-20260918-history-of-calendars-how",
+      "target": "concept:con-a2ff54106aeeeb39",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "sections[0].body[2]",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "sections[2].body[1]",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "sections[4].body[0]",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "sections[4].body[1]",
+          "matched_text": "표준화"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:9e0be63f68c0f0d1",
       "source": "detail:0e86e35621503412",
       "target": "report:rpt-20260924-entropy-world-why-disord",
@@ -2942,11 +4671,122 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:9f7ed354440107ec",
+      "source": "report:rpt-20260815-dosiei-hasudo",
+      "target": "concept:con-3167dea0669a3e92",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[5]",
+          "matched_text": "산업혁명"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
+      "id": "edge:a14ad0e42691283b",
+      "source": "report:rpt-20260819-library-classification-p",
+      "target": "concept:con-135ff1d8963c0c0f",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "subtitle",
+          "matched_text": "분류 체계"
+        },
+        {
+          "reference": "abstract",
+          "matched_text": "분류 체계"
+        },
+        {
+          "reference": "keywords[1]",
+          "matched_text": "지식 배열"
+        },
+        {
+          "reference": "keywords[2]",
+          "matched_text": "분류 체계"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:a21001c43f98d6c4",
+      "source": "report:rpt-20261002-psychology-of-stock-mark",
+      "target": "concept:con-22940219024d252e",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "keywords[4]",
+          "matched_text": "시장 변동성"
+        },
+        {
+          "reference": "sections[0].body[3]",
+          "matched_text": "불확실성"
+        },
+        {
+          "reference": "sections[4].body[1]",
+          "matched_text": "시장 변동성"
+        },
+        {
+          "reference": "sections[7].body[0]",
+          "matched_text": "불확실성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:a25bc8c139f3ac5b",
       "source": "detail:34c896df57e5bd91",
       "target": "report:rpt-20260816-veil-of-ignorance-fair-s",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:a2e5fe89d6738ab2",
+      "source": "report:rpt-20260823-postal-codes-social-hist",
+      "target": "concept:con-9b89960b11d9e6cf",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "sections[9].body[3]",
+          "matched_text": "환경 영향"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:a32e80e775a4cbf8",
+      "source": "report:rpt-20261005-eco-friendly-water-treat",
+      "target": "concept:con-9b89960b11d9e6cf",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "keywords[6]",
+          "matched_text": "수질 개선"
+        },
+        {
+          "reference": "sections[1].body[0]",
+          "matched_text": "환경 영향"
+        },
+        {
+          "reference": "sections[5].body[0]",
+          "matched_text": "수질 개선"
+        },
+        {
+          "reference": "sections[9].body[0]",
+          "matched_text": "환경 영향"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:a4e918c1cb25b9bf",
@@ -2991,11 +4831,57 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:aa9177d7457fd149",
+      "source": "report:rpt-20260828-bamui-bitgwa-saengtaegye",
+      "target": "concept:con-1fa6c095da6eff67",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.9,
+      "evidence": [
+        {
+          "reference": "keywords[2]",
+          "matched_text": "빛 공해"
+        },
+        {
+          "reference": "category.sub",
+          "matched_text": "빛 공해"
+        },
+        {
+          "reference": "term_box.items[0].term",
+          "matched_text": "빛 공해"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
       "id": "edge:aaaf6e917a06ce1f",
       "source": "detail:71aa9af8ff46142e",
       "target": "report:rpt-20260910-radio-no-voice-how-invis",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:aae3a0dfa350417a",
+      "source": "report:rpt-20260903-history-of-price-tags-an",
+      "target": "concept:con-22940219024d252e",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.9,
+      "evidence": [
+        {
+          "reference": "sections[1].body[1]",
+          "matched_text": "불확실성"
+        },
+        {
+          "reference": "sections[3].body[1]",
+          "matched_text": "불확실성"
+        },
+        {
+          "reference": "sections[3].body[2]",
+          "matched_text": "불확실성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:ace47e926834b4bb",
@@ -3019,11 +4905,72 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:adafcf7986703c2c",
+      "source": "report:rpt-20260822-philosophy-of-probabilit",
+      "target": "concept:con-43053bf3c7f1d7c6",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.8,
+      "evidence": [
+        {
+          "reference": "keywords[0]",
+          "matched_text": "확률"
+        },
+        {
+          "reference": "term_box.items[0].term",
+          "matched_text": "확률(Probability)"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
+      "id": "edge:aebd9816524f04e6",
+      "source": "report:rpt-20260901-moral-luck-paradox-resul",
+      "target": "concept:con-22940219024d252e",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "sections[9].body[3]",
+          "matched_text": "불확실성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:aef3b60135b5b42a",
       "source": "sub:5d5781a380658df5",
       "target": "detail:d753586427fcf80f",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:b26d50fbcb07f09f",
+      "source": "report:rpt-20260923-container-economics-how",
+      "target": "concept:con-a2ff54106aeeeb39",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "abstract",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "keywords[2]",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "term_box.items[2].term",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "sections[0].body[0]",
+          "matched_text": "표준화"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:b311012dd4795691",
@@ -3045,6 +4992,60 @@
       "target": "detail:59cb9a05f050d1ff",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:b4cdb8c00c102952",
+      "source": "report:rpt-20260824-insurance-birth-how-risk",
+      "target": "concept:con-22940219024d252e",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "abstract",
+          "matched_text": "불확실성"
+        },
+        {
+          "reference": "term_box.items[1].description",
+          "matched_text": "불확실성"
+        },
+        {
+          "reference": "sections[0].body[0]",
+          "matched_text": "불확실성"
+        },
+        {
+          "reference": "sections[0].body[3]",
+          "matched_text": "불확실성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:b4f2dc635674decc",
+      "source": "report:rpt-20260915-jeollyeongmang-balancing",
+      "target": "concept:con-5d0014712c59ecdf",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "title",
+          "matched_text": "전력망"
+        },
+        {
+          "reference": "abstract",
+          "matched_text": "에너지 저장"
+        },
+        {
+          "reference": "keywords[0]",
+          "matched_text": "전력망"
+        },
+        {
+          "reference": "keywords[6]",
+          "matched_text": "에너지 저장"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:b63beb0233e14316",
@@ -3096,6 +5097,33 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:bc0498d0bb1dadac",
+      "source": "report:rpt-20260910-radio-no-voice-how-invis",
+      "target": "concept:con-f6b070ac3797aa0b",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "term_box.items[2].description",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "sections[0].body[3]",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "sections[3].body[0]",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "sections[5].body[0]",
+          "matched_text": "정체성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:bc813cc8a10d690c",
       "source": "category:d1d9ae9d3e816c13",
       "target": "middle:69ad88fc2b6dc465",
@@ -3124,6 +5152,21 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:bd65465879e2bec1",
+      "source": "report:rpt-20260819-library-classification-p",
+      "target": "concept:con-9c3ea3b0f43b9c79",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "sections[9].body[0]",
+          "matched_text": "추천 시스템"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:be41059a1908f212",
       "source": "sub:bb178df4ff69a2ff",
       "target": "detail:71aa9af8ff46142e",
@@ -3138,6 +5181,33 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:bff43217c53d6e6a",
+      "source": "report:rpt-20260828-bamui-bitgwa-saengtaegye",
+      "target": "concept:con-75dc266a01c9c786",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "title",
+          "matched_text": "인공조명"
+        },
+        {
+          "reference": "subtitle",
+          "matched_text": "생체 리듬"
+        },
+        {
+          "reference": "abstract",
+          "matched_text": "생체 리듬"
+        },
+        {
+          "reference": "keywords[0]",
+          "matched_text": "인공조명"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:c0066abff9825b09",
       "source": "detail:e58e72b2309f3108",
       "target": "report:rpt-20260929-sustainable-building-mat",
@@ -3150,6 +5220,33 @@
       "target": "detail:9bae34a03bd23cf8",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:c4d8f93eeaf9a319",
+      "source": "report:rpt-20260905-seawater-to-drinking-wat",
+      "target": "concept:con-5d0014712c59ecdf",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "keywords[2]",
+          "matched_text": "에너지 효율"
+        },
+        {
+          "reference": "term_box.items[3].description",
+          "matched_text": "에너지 효율"
+        },
+        {
+          "reference": "sections[1].body[1]",
+          "matched_text": "에너지 효율"
+        },
+        {
+          "reference": "sections[2].body[0]",
+          "matched_text": "에너지 효율"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:c68e6259e76ab992",
@@ -3173,11 +5270,53 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:c7c9c8052d244407",
+      "source": "report:rpt-20260823-postal-codes-social-hist",
+      "target": "concept:con-f6b070ac3797aa0b",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "sections[0].body[2]",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "sections[1].body[1]",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "sections[5].body[0]",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "sections[5].body[2]",
+          "matched_text": "기억"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:c835affabd4c1b2a",
       "source": "middle:205f4adc8f23b507",
       "target": "sub:2b31de72738e1107",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:c9114428575c751c",
+      "source": "report:rpt-20260828-bamui-bitgwa-saengtaegye",
+      "target": "concept:con-58404b066eaba0aa",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[4]",
+          "matched_text": "환경 영향"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
     },
     {
       "id": "edge:c971c56620160a2f",
@@ -3201,6 +5340,33 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:cbf7012f94660bf0",
+      "source": "report:rpt-20260828-bamui-bitgwa-saengtaegye",
+      "target": "concept:con-5d0014712c59ecdf",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "term_box.items[3].description",
+          "matched_text": "에너지 효율"
+        },
+        {
+          "reference": "sections[7].body[0]",
+          "matched_text": "에너지 효율"
+        },
+        {
+          "reference": "sections[9].body[1]",
+          "matched_text": "에너지 효율"
+        },
+        {
+          "reference": "sections[10].body[2]",
+          "matched_text": "에너지 효율"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:cd1ecfad74e741b1",
       "source": "category:758a7b1ee4fe67cf",
       "target": "middle:77d31820ff725c5c",
@@ -3215,11 +5381,88 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:cfaa4eab0821e893",
+      "source": "report:rpt-20260909-museum-light-how-lightin",
+      "target": "concept:con-75dc266a01c9c786",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "abstract",
+          "matched_text": "인공조명"
+        },
+        {
+          "reference": "keywords[6]",
+          "matched_text": "빛 공해"
+        },
+        {
+          "reference": "sections[0].body[1]",
+          "matched_text": "인공조명"
+        },
+        {
+          "reference": "sections[3].title",
+          "matched_text": "인공조명"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:d0932f7d8c4dc86f",
       "source": "middle:e9259388404aa6fc",
       "target": "sub:72824612031c42aa",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:d1fc4837f2f0a85c",
+      "source": "report:rpt-20261004-science-of-chaos-how-sma",
+      "target": "concept:con-22940219024d252e",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "sections[0].body[0]",
+          "matched_text": "불확실성"
+        },
+        {
+          "reference": "sections[0].body[2]",
+          "matched_text": "불확실성"
+        },
+        {
+          "reference": "sections[0].body[3]",
+          "matched_text": "불확실성"
+        },
+        {
+          "reference": "sections[1].body[1]",
+          "matched_text": "초기 조건의 민감성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:d29518148a663a4b",
+      "source": "report:rpt-20260914-jukiyurpyoui-jillye-woon",
+      "target": "concept:con-a2ff54106aeeeb39",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.9,
+      "evidence": [
+        {
+          "reference": "sections[5].body[2]",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "sections[7].body[2]",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "sections[10].body[1]",
+          "matched_text": "표준화"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:d321eb20213c15c5",
@@ -3234,6 +5477,29 @@
       "target": "report:rpt-20260930-audiobook-growth-and-lis",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:d382b8617665ea6f",
+      "source": "report:rpt-20260828-bamui-bitgwa-saengtaegye",
+      "target": "concept:con-9b89960b11d9e6cf",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.9,
+      "evidence": [
+        {
+          "reference": "keywords[4]",
+          "matched_text": "환경 영향"
+        },
+        {
+          "reference": "keywords[6]",
+          "matched_text": "생태계 교란"
+        },
+        {
+          "reference": "sections[9].body[0]",
+          "matched_text": "생태계 교란"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:d43cb4dc7e1f9c38",
@@ -3264,6 +5530,25 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:d6e89a92a39e465c",
+      "source": "report:rpt-20260830-saek-e-jeryosa-anggoneun",
+      "target": "concept:con-135ff1d8963c0c0f",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.8,
+      "evidence": [
+        {
+          "reference": "sections[0].body[1]",
+          "matched_text": "권력 구조"
+        },
+        {
+          "reference": "sections[8].body[2]",
+          "matched_text": "권력 구조"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:d7a7338542f84b3f",
       "source": "category:c135b09622b60562",
       "target": "middle:0c14059a47957c6e",
@@ -3285,11 +5570,76 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:db63fa5dc50b71c4",
+      "source": "report:rpt-20260905-seawater-to-drinking-wat",
+      "target": "concept:con-58404b066eaba0aa",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[7]",
+          "matched_text": "환경 영향"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
       "id": "edge:dbaba055a76b1ef7",
       "source": "middle:6c529e8114138a11",
       "target": "sub:67d010e2bde41175",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:dc0eccaed55460fd",
+      "source": "report:rpt-20260922-welfare-state-design-soc",
+      "target": "concept:con-22940219024d252e",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.9,
+      "evidence": [
+        {
+          "reference": "sections[8].body[2]",
+          "matched_text": "불확실성"
+        },
+        {
+          "reference": "sections[9].body[2]",
+          "matched_text": "불확실성"
+        },
+        {
+          "reference": "sections[10].body[0]",
+          "matched_text": "불확실성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:dcd9ce2be6cbeb70",
+      "source": "report:rpt-20261003-bureaucracy-two-faces-ru",
+      "target": "concept:con-39820d616e59b701",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "title",
+          "matched_text": "공정성"
+        },
+        {
+          "reference": "subtitle",
+          "matched_text": "공정성"
+        },
+        {
+          "reference": "abstract",
+          "matched_text": "공정성"
+        },
+        {
+          "reference": "keywords[2]",
+          "matched_text": "공정성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:ddc927eb435919dc",
@@ -3320,11 +5670,57 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:e214b25aa6d0301f",
+      "source": "report:rpt-20260928-history-of-postage-stamp",
+      "target": "concept:con-f6b070ac3797aa0b",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "abstract",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "term_box.items[1].term",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "sections[0].body[1]",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "sections[2].body[1]",
+          "matched_text": "정체성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:e4864c1e30859f77",
       "source": "category:52cb15e614d4481d",
       "target": "middle:d28f514598eeca17",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:e5633c292a3aa015",
+      "source": "report:rpt-20260902-population-survey-politi",
+      "target": "concept:con-3bb660b397c07691",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.8,
+      "evidence": [
+        {
+          "reference": "keywords[5]",
+          "matched_text": "분류 체계"
+        },
+        {
+          "reference": "term_box.items[3].term",
+          "matched_text": "분류 체계(classification system)"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
     },
     {
       "id": "edge:e617f83ee614f5d5",
@@ -3346,6 +5742,29 @@
       "target": "middle:b3a67bbd035724bc",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:e728dfadfa26743d",
+      "source": "report:rpt-20260816-veil-of-ignorance-fair-s",
+      "target": "concept:con-135ff1d8963c0c0f",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.9,
+      "evidence": [
+        {
+          "reference": "sections[7].body[0]",
+          "matched_text": "권력 구조"
+        },
+        {
+          "reference": "sections[8].body[2]",
+          "matched_text": "권력 구조"
+        },
+        {
+          "reference": "sections[9].body[2]",
+          "matched_text": "권력 구조"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:e744638300c7dc9c",
@@ -3376,6 +5795,67 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:e7c2de73da1f43b1",
+      "source": "report:rpt-20260924-entropy-world-why-disord",
+      "target": "concept:con-22940219024d252e",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "term_box.items[0].description",
+          "matched_text": "불확실성"
+        },
+        {
+          "reference": "sections[0].body[2]",
+          "matched_text": "불확실성"
+        },
+        {
+          "reference": "sections[4].body[1]",
+          "matched_text": "불확실성"
+        },
+        {
+          "reference": "sections[5].body[0]",
+          "matched_text": "불확실성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:e8cecc88415dd7fe",
+      "source": "report:rpt-20260903-history-of-price-tags-an",
+      "target": "concept:con-39820d616e59b701",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.8,
+      "evidence": [
+        {
+          "reference": "sections[7].body[1]",
+          "matched_text": "공정성"
+        },
+        {
+          "reference": "sections[10].body[4]",
+          "matched_text": "공정성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:e908bce015845205",
+      "source": "report:rpt-20260825-beolbibeui-suhak-yugakgy",
+      "target": "concept:con-5d0014712c59ecdf",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[5]",
+          "matched_text": "에너지 효율"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:ea83540c168f7cfb",
       "source": "category:9de06b299a735751",
       "target": "middle:205f4adc8f23b507",
@@ -3402,6 +5882,60 @@
       "target": "detail:97581aac4d23abbc",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:ece6c651269b310c",
+      "source": "report:rpt-20260922-welfare-state-design-soc",
+      "target": "concept:con-39820d616e59b701",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "title",
+          "matched_text": "공동 책임"
+        },
+        {
+          "reference": "subtitle",
+          "matched_text": "사회적 위험"
+        },
+        {
+          "reference": "abstract",
+          "matched_text": "사회적 위험"
+        },
+        {
+          "reference": "keywords[1]",
+          "matched_text": "사회적 위험"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:ed9e7568fc7defe2",
+      "source": "report:rpt-20261006-stem-cell-research-evolu",
+      "target": "concept:con-a2ff54106aeeeb39",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "sections[6].body[1]",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "sections[8].body[2]",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "sections[9].body[1]",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "sections[10].body[2]",
+          "matched_text": "표준화"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:ee03e28b58057627",
@@ -3446,6 +5980,40 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:f2d2ed22f0be633c",
+      "source": "report:rpt-20260829-hyangsinryo-gyoyeog-hist",
+      "target": "concept:con-39820d616e59b701",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "sections[7].body[2]",
+          "matched_text": "공정성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:f3f1e049c5f58e65",
+      "source": "report:rpt-20261003-bureaucracy-two-faces-ru",
+      "target": "concept:con-54edfaeaaf2ae146",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.8,
+      "evidence": [
+        {
+          "reference": "keywords[2]",
+          "matched_text": "공정성"
+        },
+        {
+          "reference": "term_box.items[1].term",
+          "matched_text": "공정성"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
       "id": "edge:f40114a268fe6366",
       "source": "sub:72824612031c42aa",
       "target": "detail:49b0e51f9224f853",
@@ -3474,6 +6042,33 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:f8235632a5db4fa7",
+      "source": "report:rpt-20261001-posthumanism-questions-i",
+      "target": "concept:con-f6b070ac3797aa0b",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "subtitle",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "abstract",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "keywords[2]",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "term_box.items[2].term",
+          "matched_text": "정체성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:f8e1b0b015fecae5",
       "source": "category:758a7b1ee4fe67cf",
       "target": "middle:cb144e23e2065cf0",
@@ -3488,6 +6083,33 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:fdfc2315fcada877",
+      "source": "report:rpt-20260927-soil-ecosystem-support",
+      "target": "concept:con-58932b140c8d5ebd",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "subtitle",
+          "matched_text": "미생물"
+        },
+        {
+          "reference": "abstract",
+          "matched_text": "미생물"
+        },
+        {
+          "reference": "keywords[0]",
+          "matched_text": "토양 생태계"
+        },
+        {
+          "reference": "keywords[1]",
+          "matched_text": "미생물"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:fe1e27eeb68ca14d",
       "source": "detail:41028c5d3d268fbf",
       "target": "report:rpt-20260912-baesimwonui-pandan-simin",
@@ -3500,6 +6122,60 @@
       "target": "middle:6bb393db31e086c2",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:ff64c8fc319c2729",
+      "source": "report:rpt-20260906-vaccine-memory-how-the-i",
+      "target": "concept:con-f6b070ac3797aa0b",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "title",
+          "matched_text": "기억"
+        },
+        {
+          "reference": "subtitle",
+          "matched_text": "기억"
+        },
+        {
+          "reference": "abstract",
+          "matched_text": "기억"
+        },
+        {
+          "reference": "keywords[1]",
+          "matched_text": "기억"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:ff83a55878a8183d",
+      "source": "report:rpt-20260917-river-memory-meandering",
+      "target": "concept:con-f6b070ac3797aa0b",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "title",
+          "matched_text": "기억"
+        },
+        {
+          "reference": "sections[0].body[2]",
+          "matched_text": "기억"
+        },
+        {
+          "reference": "sections[3].body[1]",
+          "matched_text": "기억"
+        },
+        {
+          "reference": "sections[3].body[2]",
+          "matched_text": "기억"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     }
   ]
 }

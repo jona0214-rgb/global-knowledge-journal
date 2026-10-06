@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "max_tags_per_report": 40,
+  "aliases": {
+    "Bayes' theorem": "베이즈 정리",
+    "Bayes’ theorem": "베이즈 정리",
+    "DDC": "듀이십진분류법",
+    "Dewey Decimal Classification": "듀이십진분류법",
+    "GMT": "그리니치 평균시",
+    "Greenwich Mean Time": "그리니치 평균시",
+    "iPS 세포": "유도만능줄기세포",
+    "induced pluripotent stem cell": "유도만능줄기세포",
+    "loss aversion": "손실회피",
+    "herd behavior": "군중심리"
+  },
+  "stop_labels": [
+    "핵심 용어",
+    "현재 쟁점과 미래 과제",
+    "개인과 사회에 미치는 영향",
+    "핵심 정리",
+    "결론",
+    "요약"
+  ],
+  "hub_rules": [
+    {
+      "label": "표준화와 동기화",
+      "type": "mechanism",
+      "max_reports": 12,
+      "patterns": ["표준화", "표준 시간", "표준시", "동기화", "호환성"]
+    },
+    {
+      "label": "분류와 권력",
+      "type": "mechanism",
+      "max_reports": 12,
+      "patterns": ["분류 체계", "분류 기준", "지식 배열", "인구조사", "센서스", "권력 구조"]
+    },
+    {
+      "label": "불확실성과 판단",
+      "type": "concept",
+      "max_reports": 12,
+      "patterns": ["불확실성", "확률적 판단", "위험 판단", "초기 조건의 민감성", "시장 변동성"]
+    },
+    {
+      "label": "선택과 프레이밍",
+      "type": "mechanism",
+      "max_reports": 12,
+      "patterns": ["프레이밍", "정보 편향", "추천 시스템", "선택 구조", "확증 편향"]
+    },
+    {
+      "label": "기억과 정체성",
+      "type": "concept",
+      "max_reports": 12,
+      "patterns": ["기억", "정체성", "자아 연속성", "면역 기억"]
+    },
+    {
+      "label": "공정성과 공동 책임",
+      "type": "concept",
+      "max_reports": 12,
+      "patterns": ["공정성", "무지의 베일", "공동 책임", "사회적 위험", "절차적 정의"]
+    },
+    {
+      "label": "생체 리듬과 환경",
+      "type": "mechanism",
+      "max_reports": 12,
+      "patterns": ["생체 리듬", "수면 주기", "인공조명", "빛 공해", "일주기"]
+    },
+    {
+      "label": "미생물 생태계",
+      "type": "concept",
+      "max_reports": 12,
+      "patterns": ["미생물", "마이크로바이옴", "장내 균총", "토양 생태계"]
+    },
+    {
+      "label": "에너지 효율과 전환",
+      "type": "outcome",
+      "max_reports": 12,
+      "patterns": ["에너지 효율", "에너지 저장", "전력망", "에너지 전환"]
+    },
+    {
+      "label": "환경 영향과 회복력",
+      "type": "outcome",
+      "max_reports": 12,
+      "patterns": ["환경 영향", "생태계 교란", "탄소 저감", "수질 개선", "회복력"]
+    }
+  ]
+}
