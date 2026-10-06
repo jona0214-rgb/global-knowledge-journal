@@ -50,3 +50,4 @@ jobs:
           node-version: "24"
       - run: node tests/test_homepage_filters.mjs
       - run: node tests/test_logs_page.mjs
+      - run: node tests/test_knowledge_map.mjs

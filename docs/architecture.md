@@ -63,6 +63,13 @@ verified edges should enter the public graph.
 Every graph build records `schema_version`, `taxonomy_version`, and `algorithm_version`.
 Changing the public shape requires a new API version instead of silently changing `v1`.
 
+`knowledge-map.html` and `knowledge-map.js` are a dependency-free SVG client of the
+versioned public graph. Pure indexing, scoring, and layout calculations live in
+`knowledge-map-core.mjs` so they can be tested without a browser. The overview renders
+only category nodes; selecting a category progressively reveals taxonomy, reports, and
+shared concepts. The detail panel is the authoritative navigation surface for opening
+reports and inspecting the exact cross-category report set behind a concept.
+
 ## Storage policy
 
 Generated binaries currently remain in Git for GitHub Pages compatibility. This does not

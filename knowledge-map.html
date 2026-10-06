@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Knowledge Map · Global Knowledge Journal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page map-page">
+      <header class="hero compact-hero map-hero">
+        <p class="eyebrow">CONNECTED KNOWLEDGE</p>
+        <h1>Knowledge Map</h1>
+        <p class="subtitle">
+          발행된 리포트가 어떤 분류와 개념을 통해 서로 이어지는지 탐색합니다.
+          대분류를 선택하면 그 안의 분야와 리포트가 펼쳐지고, 공유 개념을 따라
+          다른 분야의 리포트로 이동할 수 있습니다.
+        </p>
+        <div class="hero-actions">
+          <a class="button secondary" href="index.html">리포트 홈으로</a>
+          <button id="map-reset" class="button map-reset" type="button">전체 지도</button>
+        </div>
+      </header>
+
+      <section class="map-summary" aria-label="지식 지도 현황">
+        <article class="summary-card">
+          <span class="summary-label">대분류</span>
+          <strong id="map-category-count">-</strong>
+        </article>
+        <article class="summary-card">
+          <span class="summary-label">리포트</span>
+          <strong id="map-report-count">-</strong>
+        </article>
+        <article class="summary-card">
+          <span class="summary-label">공유 개념</span>
+          <strong id="map-concept-count">-</strong>
+        </article>
+      </section>
+
+      <section class="section map-section">
+        <div class="map-toolbar">
+          <div>
+            <p class="section-kicker">EXPLORE</p>
+            <h2 id="map-title">대분류 연결 지도</h2>
+            <p id="map-description" class="map-description" aria-live="polite">
+              연결점이 가장 많은 대분류가 중앙에 배치됩니다.
+            </p>
+          </div>
+          <div class="map-search-wrap">
+            <label for="map-search">리포트·공유 개념 검색</label>
+            <input
+              id="map-search"
+              type="search"
+              placeholder="예: 불확실성, 도시, 생태"
+              autocomplete="off"
+            />
+            <div id="map-search-results" class="map-search-results" hidden></div>
+          </div>
+        </div>
+
+        <div id="map-error" class="empty" hidden></div>
+        <div class="knowledge-map-layout">
+          <div class="map-canvas-wrap">
+            <svg
+              id="knowledge-map"
+              class="knowledge-map"
+              viewBox="0 0 1200 1000"
+              role="img"
+              aria-labelledby="map-title map-description"
+            ></svg>
+            <div class="map-legend" aria-label="지식 지도 범례">
+              <span><i class="legend-dot category-dot"></i>대분류</span>
+              <span><i class="legend-dot taxonomy-dot"></i>중·소분류</span>
+              <span><i class="legend-dot report-dot"></i>리포트</span>
+              <span><i class="legend-dot concept-dot"></i>공유 개념</span>
+            </div>
+          </div>
+
+          <aside id="map-details" class="map-details" aria-live="polite">
+            <p class="section-kicker">GUIDE</p>
+            <h2>지도를 선택해 보세요</h2>
+            <p>
+              원 위에 마우스를 올리거나 키보드로 초점을 이동할 수 있습니다.
+              대분류를 선택하면 분야와 리포트가 궤도 형태로 펼쳐집니다.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>Connections are derived from evidence-backed report concepts.</p>
+      </footer>
+    </main>
+
+    <script type="module" src="knowledge-map.js"></script>
+  </body>
+</html>
