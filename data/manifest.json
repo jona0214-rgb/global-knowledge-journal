@@ -1,6 +1,22 @@
 {
-  "last_updated": "2026-10-06T10:16:40.693314+09:00",
+  "last_updated": "2026-10-07T05:01:13.628846+09:00",
   "reports": [
+    {
+      "date": "2026-10-07",
+      "title": "섬의 생물지리학: 고립은 어떻게 새로운 종을 만드는가",
+      "subtitle": "섬이라는 고립된 환경에서 생명의 다양성이 어떻게 진화하는지를 탐구한다",
+      "main_category": "자연·환경·지리",
+      "mid_category": "생물지리",
+      "sub_category": "섬 생태계",
+      "detail_category": "고립과 종 분화",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20261007_seom_biologeography_how__Report.html",
+      "pdf_path": "outputs/20261007_seom_biologeography_how__Report.pdf",
+      "status": "published_api",
+      "html_url": "outputs/20261007_seom_biologeography_how__Report.html",
+      "pdf_url": "outputs/20261007_seom_biologeography_how__Report.pdf",
+      "report_id": "rpt-20261007-seom-biologeography-how"
+    },
     {
       "date": "2026-10-06",
       "title": "줄기세포 연구의 진화: 재생 의학은 어떻게 신체 치유의 미래를 바꾸고 있나",
@@ -14,7 +30,8 @@
       "pdf_path": "outputs/20261006_stem_cell_research_evolu_Report.pdf",
       "html_url": "outputs/20261006_stem_cell_research_evolu_Report.html",
       "pdf_url": "outputs/20261006_stem_cell_research_evolu_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20261006-stem-cell-research-evolu"
     },
     {
       "date": "2026-10-05",
@@ -29,7 +46,8 @@
       "pdf_path": "outputs/20261005_eco_friendly_water_treat_Report.pdf",
       "html_url": "outputs/20261005_eco_friendly_water_treat_Report.html",
       "pdf_url": "outputs/20261005_eco_friendly_water_treat_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20261005-eco-friendly-water-treat"
     },
     {
       "date": "2026-10-04",
@@ -44,7 +62,8 @@
       "pdf_path": "outputs/20261004_science_of_chaos_how_sma_Report.pdf",
       "html_url": "outputs/20261004_science_of_chaos_how_sma_Report.html",
       "pdf_url": "outputs/20261004_science_of_chaos_how_sma_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20261004-science-of-chaos-how-sma"
     },
     {
       "date": "2026-10-03",
@@ -59,7 +78,8 @@
       "pdf_path": "outputs/20261003_bureaucracy_two_faces_ru_Report.pdf",
       "html_url": "outputs/20261003_bureaucracy_two_faces_ru_Report.html",
       "pdf_url": "outputs/20261003_bureaucracy_two_faces_ru_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20261003-bureaucracy-two-faces-ru"
     },
     {
       "date": "2026-10-02",
@@ -74,7 +94,8 @@
       "pdf_path": "outputs/20261002_psychology_of_stock_mark_Report.pdf",
       "html_url": "outputs/20261002_psychology_of_stock_mark_Report.html",
       "pdf_url": "outputs/20261002_psychology_of_stock_mark_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20261002-psychology-of-stock-mark"
     },
     {
       "date": "2026-10-01",
@@ -89,7 +110,8 @@
       "pdf_path": "outputs/20261001_posthumanism_questions_i_Report.pdf",
       "html_url": "outputs/20261001_posthumanism_questions_i_Report.html",
       "pdf_url": "outputs/20261001_posthumanism_questions_i_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20261001-posthumanism-questions-i"
     },
     {
       "date": "2026-09-30",
@@ -104,7 +126,8 @@
       "pdf_path": "outputs/20260930_audiobook_growth_and_lis_Report.pdf",
       "html_url": "outputs/20260930_audiobook_growth_and_lis_Report.html",
       "pdf_url": "outputs/20260930_audiobook_growth_and_lis_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260930-audiobook-growth-and-lis"
     },
     {
       "date": "2026-09-29",
@@ -119,7 +142,8 @@
       "pdf_path": "outputs/20260929_sustainable_building_mat_Report.pdf",
       "html_url": "outputs/20260929_sustainable_building_mat_Report.html",
       "pdf_url": "outputs/20260929_sustainable_building_mat_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260929-sustainable-building-mat"
     },
     {
       "date": "2026-09-28",
@@ -134,7 +158,8 @@
       "pdf_path": "outputs/20260928_history_of_postage_stamp_Report.pdf",
       "html_url": "outputs/20260928_history_of_postage_stamp_Report.html",
       "pdf_url": "outputs/20260928_history_of_postage_stamp_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260928-history-of-postage-stamp"
     },
     {
       "date": "2026-09-27",
@@ -149,7 +174,8 @@
       "pdf_path": "outputs/20260927_soil_ecosystem_support_Report.pdf",
       "html_url": "outputs/20260927_soil_ecosystem_support_Report.html",
       "pdf_url": "outputs/20260927_soil_ecosystem_support_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260927-soil-ecosystem-support"
     },
     {
       "date": "2026-09-26",
@@ -164,7 +190,8 @@
       "pdf_path": "outputs/20260926_pain_paradox_why_pain_pr_Report.pdf",
       "html_url": "outputs/20260926_pain_paradox_why_pain_pr_Report.html",
       "pdf_url": "outputs/20260926_pain_paradox_why_pain_pr_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260926-pain-paradox-why-pain-pr"
     },
     {
       "date": "2026-09-25",
@@ -179,7 +206,8 @@
       "pdf_path": "outputs/20260925_elevator_urban_history_s_Report.pdf",
       "html_url": "outputs/20260925_elevator_urban_history_s_Report.html",
       "pdf_url": "outputs/20260925_elevator_urban_history_s_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260925-elevator-urban-history-s"
     },
     {
       "date": "2026-09-24",
@@ -194,7 +222,8 @@
       "pdf_path": "outputs/20260924_entropy_world_why_disord_Report.pdf",
       "html_url": "outputs/20260924_entropy_world_why_disord_Report.html",
       "pdf_url": "outputs/20260924_entropy_world_why_disord_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260924-entropy-world-why-disord"
     },
     {
       "date": "2026-09-23",
@@ -209,7 +238,8 @@
       "pdf_path": "outputs/20260923_container_economics_how__Report.pdf",
       "html_url": "outputs/20260923_container_economics_how__Report.html",
       "pdf_url": "outputs/20260923_container_economics_how__Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260923-container-economics-how"
     },
     {
       "date": "2026-09-22",
@@ -224,7 +254,8 @@
       "pdf_path": "outputs/20260922_welfare_state_design_soc_Report.pdf",
       "html_url": "outputs/20260922_welfare_state_design_soc_Report.html",
       "pdf_url": "outputs/20260922_welfare_state_design_soc_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260922-welfare-state-design-soc"
     },
     {
       "date": "2026-09-21",
@@ -239,7 +270,8 @@
       "pdf_path": "outputs/20260921_philosophy_of_ritual_rep_Report.pdf",
       "html_url": "outputs/20260921_philosophy_of_ritual_rep_Report.html",
       "pdf_url": "outputs/20260921_philosophy_of_ritual_rep_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260921-philosophy-of-ritual-rep"
     },
     {
       "date": "2026-09-20",
@@ -254,7 +286,8 @@
       "pdf_path": "outputs/20260920_youtube_algorithm_struct_Report.pdf",
       "html_url": "outputs/20260920_youtube_algorithm_struct_Report.html",
       "pdf_url": "outputs/20260920_youtube_algorithm_struct_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260920-youtube-algorithm-struct"
     },
     {
       "date": "2026-09-19",
@@ -269,7 +302,8 @@
       "pdf_path": "outputs/20260919_photoframe_how_camera_se_Report.pdf",
       "html_url": "outputs/20260919_photoframe_how_camera_se_Report.html",
       "pdf_url": "outputs/20260919_photoframe_how_camera_se_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260919-photoframe-how-camera-se"
     },
     {
       "date": "2026-09-18",
@@ -284,7 +318,8 @@
       "pdf_path": "outputs/20260918_history_of_calendars_how_Report.pdf",
       "html_url": "outputs/20260918_history_of_calendars_how_Report.html",
       "pdf_url": "outputs/20260918_history_of_calendars_how_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260918-history-of-calendars-how"
     },
     {
       "date": "2026-09-17",
@@ -299,7 +334,8 @@
       "pdf_path": "outputs/20260917_river_memory_meandering__Report.pdf",
       "html_url": "outputs/20260917_river_memory_meandering__Report.html",
       "pdf_url": "outputs/20260917_river_memory_meandering__Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260917-river-memory-meandering"
     },
     {
       "date": "2026-09-16",
@@ -314,7 +350,8 @@
       "pdf_path": "outputs/20260916_gut_microbiome_ecosystem_Report.pdf",
       "html_url": "outputs/20260916_gut_microbiome_ecosystem_Report.html",
       "pdf_url": "outputs/20260916_gut_microbiome_ecosystem_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260916-gut-microbiome-ecosystem"
     },
     {
       "date": "2026-09-15",
@@ -329,7 +366,8 @@
       "pdf_path": "outputs/20260915_jeollyeongmang_balancing_Report.pdf",
       "html_url": "outputs/20260915_jeollyeongmang_balancing_Report.html",
       "pdf_url": "outputs/20260915_jeollyeongmang_balancing_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260915-jeollyeongmang-balancing"
     },
     {
       "date": "2026-09-14",
@@ -344,7 +382,8 @@
       "pdf_path": "outputs/20260914_jukiyurpyoui_jillye_woon_Report.pdf",
       "html_url": "outputs/20260914_jukiyurpyoui_jillye_woon_Report.html",
       "pdf_url": "outputs/20260914_jukiyurpyoui_jillye_woon_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260914-jukiyurpyoui-jillye-woon"
     },
     {
       "date": "2026-09-13",
@@ -359,7 +398,8 @@
       "pdf_path": "outputs/20260913_invention_of_accounting__Report.pdf",
       "html_url": "outputs/20260913_invention_of_accounting__Report.html",
       "pdf_url": "outputs/20260913_invention_of_accounting__Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260913-invention-of-accounting"
     },
     {
       "date": "2026-09-12",
@@ -374,7 +414,8 @@
       "pdf_path": "outputs/20260912_baesimwonui_pandan_simin_Report.pdf",
       "html_url": "outputs/20260912_baesimwonui_pandan_simin_Report.html",
       "pdf_url": "outputs/20260912_baesimwonui_pandan_simin_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260912-baesimwonui-pandan-simin"
     },
     {
       "date": "2026-09-11",
@@ -389,7 +430,8 @@
       "pdf_path": "outputs/20260911_naneun_nuguingga_gieog_e_Report.pdf",
       "html_url": "outputs/20260911_naneun_nuguingga_gieog_e_Report.html",
       "pdf_url": "outputs/20260911_naneun_nuguingga_gieog_e_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260911-naneun-nuguingga-gieog-e"
     },
     {
       "date": "2026-09-10",
@@ -404,7 +446,8 @@
       "pdf_path": "outputs/20260910_radio_no_voice_how_invis_Report.pdf",
       "html_url": "outputs/20260910_radio_no_voice_how_invis_Report.html",
       "pdf_url": "outputs/20260910_radio_no_voice_how_invis_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260910-radio-no-voice-how-invis"
     },
     {
       "date": "2026-09-09",
@@ -419,7 +462,8 @@
       "pdf_path": "outputs/20260909_museum_light_how_lightin_Report.pdf",
       "html_url": "outputs/20260909_museum_light_how_lightin_Report.html",
       "pdf_url": "outputs/20260909_museum_light_how_lightin_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260909-museum-light-how-lightin"
     },
     {
       "date": "2026-09-08",
@@ -434,7 +478,8 @@
       "pdf_path": "outputs/20260908_history_of_refrigerator_Report.pdf",
       "html_url": "outputs/20260908_history_of_refrigerator_Report.html",
       "pdf_url": "outputs/20260908_history_of_refrigerator_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260908-history-of-refrigerator"
     },
     {
       "date": "2026-09-07",
@@ -449,7 +494,8 @@
       "pdf_path": "outputs/20260907_monsun_geography_how_sea_Report.pdf",
       "html_url": "outputs/20260907_monsun_geography_how_sea_Report.html",
       "pdf_url": "outputs/20260907_monsun_geography_how_sea_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260907-monsun-geography-how-sea"
     },
     {
       "date": "2026-09-06",
@@ -464,7 +510,8 @@
       "pdf_path": "outputs/20260906_vaccine_memory_how_the_i_Report.pdf",
       "html_url": "outputs/20260906_vaccine_memory_how_the_i_Report.html",
       "pdf_url": "outputs/20260906_vaccine_memory_how_the_i_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260906-vaccine-memory-how-the-i"
     },
     {
       "date": "2026-09-05",
@@ -479,7 +526,8 @@
       "pdf_path": "outputs/20260905_seawater_to_drinking_wat_Report.pdf",
       "html_url": "outputs/20260905_seawater_to_drinking_wat_Report.html",
       "pdf_url": "outputs/20260905_seawater_to_drinking_wat_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260905-seawater-to-drinking-wat"
     },
     {
       "date": "2026-09-04",
@@ -494,7 +542,8 @@
       "pdf_path": "outputs/20260904_birth_of_zero_how_nothin_Report.pdf",
       "html_url": "outputs/20260904_birth_of_zero_how_nothin_Report.html",
       "pdf_url": "outputs/20260904_birth_of_zero_how_nothin_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260904-birth-of-zero-how-nothin"
     },
     {
       "date": "2026-09-03",
@@ -509,7 +558,8 @@
       "pdf_path": "outputs/20260903_history_of_price_tags_an_Report.pdf",
       "html_url": "outputs/20260903_history_of_price_tags_an_Report.html",
       "pdf_url": "outputs/20260903_history_of_price_tags_an_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260903-history-of-price-tags-an"
     },
     {
       "date": "2026-09-02",
@@ -524,7 +574,8 @@
       "pdf_path": "outputs/20260902_population_survey_politi_Report.pdf",
       "html_url": "outputs/20260902_population_survey_politi_Report.html",
       "pdf_url": "outputs/20260902_population_survey_politi_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260902-population-survey-politi"
     },
     {
       "date": "2026-09-01",
@@ -539,7 +590,8 @@
       "pdf_path": "outputs/20260901_moral_luck_paradox_resul_Report.pdf",
       "html_url": "outputs/20260901_moral_luck_paradox_resul_Report.html",
       "pdf_url": "outputs/20260901_moral_luck_paradox_resul_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260901-moral-luck-paradox-resul"
     },
     {
       "date": "2026-08-31",
@@ -554,7 +606,8 @@
       "pdf_path": "outputs/20260831_dictionary_authority_wor_Report.pdf",
       "html_url": "outputs/20260831_dictionary_authority_wor_Report.html",
       "pdf_url": "outputs/20260831_dictionary_authority_wor_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260831-dictionary-authority-wor"
     },
     {
       "date": "2026-08-30",
@@ -569,7 +622,8 @@
       "pdf_path": "outputs/20260830_saek_e_jeryosa_anggoneun_Report.pdf",
       "html_url": "outputs/20260830_saek_e_jeryosa_anggoneun_Report.html",
       "pdf_url": "outputs/20260830_saek_e_jeryosa_anggoneun_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260830-saek-e-jeryosa-anggoneun"
     },
     {
       "date": "2026-08-29",
@@ -584,7 +638,8 @@
       "pdf_path": "outputs/20260829_hyangsinryo_gyoyeog_hist_Report.pdf",
       "html_url": "outputs/20260829_hyangsinryo_gyoyeog_hist_Report.html",
       "pdf_url": "outputs/20260829_hyangsinryo_gyoyeog_hist_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260829-hyangsinryo-gyoyeog-hist"
     },
     {
       "date": "2026-08-28",
@@ -599,7 +654,8 @@
       "pdf_path": "outputs/20260828_bamui_bitgwa_saengtaegye_Report.pdf",
       "html_url": "outputs/20260828_bamui_bitgwa_saengtaegye_Report.html",
       "pdf_url": "outputs/20260828_bamui_bitgwa_saengtaegye_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260828-bamui-bitgwa-saengtaegye"
     },
     {
       "date": "2026-08-27",
@@ -614,7 +670,8 @@
       "pdf_path": "outputs/20260827_history_of_glass_civiliz_Report.pdf",
       "html_url": "outputs/20260827_history_of_glass_civiliz_Report.html",
       "pdf_url": "outputs/20260827_history_of_glass_civiliz_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260827-history-of-glass-civiliz"
     },
     {
       "date": "2026-08-26",
@@ -629,7 +686,8 @@
       "pdf_path": "outputs/20260826_sleep_biology_brain_dail_Report.pdf",
       "html_url": "outputs/20260826_sleep_biology_brain_dail_Report.html",
       "pdf_url": "outputs/20260826_sleep_biology_brain_dail_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260826-sleep-biology-brain-dail"
     },
     {
       "date": "2026-08-25",
@@ -644,7 +702,8 @@
       "pdf_path": "outputs/20260825_beolbibeui_suhak_yugakgy_Report.pdf",
       "html_url": "outputs/20260825_beolbibeui_suhak_yugakgy_Report.html",
       "pdf_url": "outputs/20260825_beolbibeui_suhak_yugakgy_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260825-beolbibeui-suhak-yugakgy"
     },
     {
       "date": "2026-08-24",
@@ -659,7 +718,8 @@
       "pdf_path": "outputs/20260824_insurance_birth_how_risk_Report.pdf",
       "html_url": "outputs/20260824_insurance_birth_how_risk_Report.html",
       "pdf_url": "outputs/20260824_insurance_birth_how_risk_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260824-insurance-birth-how-risk"
     },
     {
       "date": "2026-08-23",
@@ -674,7 +734,8 @@
       "pdf_path": "outputs/20260823_postal_codes_social_hist_Report.pdf",
       "html_url": "outputs/20260823_postal_codes_social_hist_Report.html",
       "pdf_url": "outputs/20260823_postal_codes_social_hist_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260823-postal-codes-social-hist"
     },
     {
       "date": "2026-08-22",
@@ -689,7 +750,8 @@
       "pdf_path": "outputs/20260822_philosophy_of_probabilit_Report.pdf",
       "html_url": "outputs/20260822_philosophy_of_probabilit_Report.html",
       "pdf_url": "outputs/20260822_philosophy_of_probabilit_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260822-philosophy-of-probabilit"
     },
     {
       "date": "2026-08-21",
@@ -704,7 +766,8 @@
       "pdf_path": "outputs/20260821_punctuation_birth_comma__Report.pdf",
       "html_url": "outputs/20260821_punctuation_birth_comma__Report.html",
       "pdf_url": "outputs/20260821_punctuation_birth_comma__Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260821-punctuation-birth-comma"
     },
     {
       "date": "2026-08-20",
@@ -719,7 +782,8 @@
       "pdf_path": "outputs/20260820_sound_architecture_how_s_Report.pdf",
       "html_url": "outputs/20260820_sound_architecture_how_s_Report.html",
       "pdf_url": "outputs/20260820_sound_architecture_how_s_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260820-sound-architecture-how-s"
     },
     {
       "date": "2026-08-19",
@@ -732,7 +796,8 @@
       "pdf_path": "outputs/20260819_library_classification_p_Report.pdf",
       "html_url": "outputs/20260819_library_classification_p_Report.html",
       "pdf_url": "outputs/20260819_library_classification_p_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260819-library-classification-p"
     },
     {
       "date": "2026-08-17",
@@ -745,7 +810,8 @@
       "pdf_path": "outputs/20260817_time_table_birth_how_mod_Report.pdf",
       "html_url": "outputs/20260817_time_table_birth_how_mod_Report.html",
       "pdf_url": "outputs/20260817_time_table_birth_how_mod_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260817-time-table-birth-how-mod"
     },
     {
       "date": "2026-08-16",
@@ -758,7 +824,8 @@
       "pdf_path": "outputs/20260816_veil_of_ignorance_fair_s_Report.pdf",
       "html_url": "outputs/20260816_veil_of_ignorance_fair_s_Report.html",
       "pdf_url": "outputs/20260816_veil_of_ignorance_fair_s_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260816-veil-of-ignorance-fair-s"
     },
     {
       "date": "2026-08-15",
@@ -771,7 +838,8 @@
       "pdf_path": "outputs/20260815_dosiei_hasudo_Report.pdf",
       "html_url": "outputs/20260815_dosiei_hasudo_Report.html",
       "pdf_url": "outputs/20260815_dosiei_hasudo_Report.pdf",
-      "status": "published_api"
+      "status": "published_api",
+      "report_id": "rpt-20260815-dosiei-hasudo"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-10-06",
+  "updated_at": "2026-10-07",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -1152,6 +1152,29 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261006_stem_cell_research_evolu_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261006_stem_cell_research_evolu_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "report_id": "rpt-20261007-seom-biologeography-how-isolation-creates-new-sp",
+      "date": "2026-10-07",
+      "title": "섬의 생물지리학: 고립은 어떻게 새로운 종을 만드는가",
+      "main_category": "자연·환경·지리",
+      "mid_category": "생물지리",
+      "sub_category": "섬 생태계",
+      "detail_category": "고립과 종 분화",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "섬 생태계",
+        "종 분화",
+        "격리 진화",
+        "생물 다양성",
+        "적응 방산",
+        "고립 효과",
+        "진화 메커니즘",
+        "생태계 고립"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261007_seom_biologeography_how__Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261007_seom_biologeography_how__Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -1168,9 +1191,9 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "생명·건강",
-    "next_main_category": "자연·환경·지리",
-    "next_index": 6,
+    "last_main_category": "자연·환경·지리",
+    "next_main_category": "역사·문화",
+    "next_index": 7,
     "completed_cycles": 5,
     "published_counts": {
       "인문·철학": 6,
@@ -1179,13 +1202,12 @@
       "과학·수학": 5,
       "기술·공학": 6,
       "생명·건강": 5,
-      "자연·환경·지리": 4,
+      "자연·환경·지리": 5,
       "역사·문화": 6,
       "예술·디자인": 5,
       "언어·미디어·지식": 6
     },
     "recent_main_categories": [
-      "자연·환경·지리",
       "역사·문화",
       "예술·디자인",
       "언어·미디어·지식",
@@ -1194,7 +1216,8 @@
       "경제·경영",
       "과학·수학",
       "기술·공학",
-      "생명·건강"
+      "생명·건강",
+      "자연·환경·지리"
     ]
   },
   "candidate_pool": [
@@ -1615,7 +1638,7 @@
       "detail_category": "고립과 종 분화",
       "priority": 0.77,
       "main_category": "자연·환경·지리",
-      "status": "candidate",
+      "status": "used",
       "source": "taxonomy_seed"
     },
     {

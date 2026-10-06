@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-10-07",
+    "title": "섬의 생물지리학: 고립은 어떻게 새로운 종을 만드는가",
+    "status": "published_api",
+    "event_name": "schedule",
+    "schedule_cron": "45 14 * * *",
+    "scheduled_for_kst": "2026-10-07T00:00:00+09:00",
+    "workflow_started_at": "2026-10-06T19:51:24Z",
+    "generation_started_at": "2026-10-06T19:59:49.948609Z",
+    "generation_completed_at": "2026-10-06T20:01:12.172311Z",
+    "catalog_updated_at": "2026-10-06T20:01:13.630562Z",
+    "scheduler_delay_seconds": 17484,
+    "setup_duration_seconds": 506,
+    "generation_duration_seconds": 84,
+    "validation_attempts": 1,
+    "run_id": "37521992877",
+    "run_attempt": "1",
+    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/37521992877",
+    "source_sha": "0125e13d3a972b51d6e9faf2a888599ca41f07a5"
+  },
+  {
     "date": "2026-10-06",
     "title": "줄기세포 연구의 진화: 재생 의학은 어떻게 신체 치유의 미래를 바꾸고 있나",
     "status": "published_api",
@@ -578,25 +598,5 @@
     "run_attempt": "1",
     "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/34167642821",
     "source_sha": "068f3d0009a555d2ba71a634f6ae8f7f54fdec4f"
-  },
-  {
-    "date": "2026-09-07",
-    "title": "몬순의 지리학: 계절풍은 어떻게 문명과 농업을 움직였나",
-    "status": "published_api",
-    "event_name": "schedule",
-    "schedule_cron": "15 23 * * *",
-    "scheduled_for_kst": "2026-09-07T08:15:00+09:00",
-    "workflow_started_at": "2026-09-07T00:59:44Z",
-    "generation_started_at": "2026-09-07T01:00:17.642622Z",
-    "generation_completed_at": "2026-09-07T01:01:22.896652Z",
-    "catalog_updated_at": "2026-09-07T01:01:24.218467Z",
-    "scheduler_delay_seconds": 6284,
-    "setup_duration_seconds": 34,
-    "generation_duration_seconds": 67,
-    "validation_attempts": 1,
-    "run_id": "34071536875",
-    "run_attempt": "1",
-    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/34071536875",
-    "source_sha": "1103a4d7a7c7751e0b56e65edfdce31bf4ddea1f"
   }
 ]

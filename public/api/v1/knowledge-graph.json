@@ -2,12 +2,12 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-10-06T10:16:40.693314+09:00",
+  "generated_at": "2026-10-07T05:01:13.628846+09:00",
   "stats": {
     "categories": 10,
-    "reports": 52,
-    "nodes": 234,
-    "edges": 317,
+    "reports": 53,
+    "nodes": 238,
+    "edges": 321,
     "concepts": 17,
     "concept_edges": 110,
     "semantic_edges": 0
@@ -449,6 +449,13 @@
       "label": "안전장치와 고층 건축",
       "level": 3,
       "main_category": "기술·공학"
+    },
+    {
+      "id": "detail:2e2e4cc4651ece06",
+      "type": "detail",
+      "label": "고립과 종 분화",
+      "level": 3,
+      "main_category": "자연·환경·지리"
     },
     {
       "id": "detail:2ed24e4ba7fb0be3",
@@ -1072,6 +1079,13 @@
       "label": "미술재료",
       "level": 1,
       "main_category": "예술·디자인"
+    },
+    {
+      "id": "middle:f17d822c4ccc785f",
+      "type": "middle",
+      "label": "생물지리",
+      "level": 1,
+      "main_category": "자연·환경·지리"
     },
     {
       "id": "middle:f916666c3b9a7ed8",
@@ -1965,6 +1979,23 @@
       "pdf_url": "outputs/20261006_stem_cell_research_evolu_Report.pdf"
     },
     {
+      "id": "report:rpt-20261007-seom-biologeography-how",
+      "type": "report",
+      "label": "섬의 생물지리학: 고립은 어떻게 새로운 종을 만드는가",
+      "level": 4,
+      "report_id": "rpt-20261007-seom-biologeography-how",
+      "date": "2026-10-07",
+      "main_category": "자연·환경·지리",
+      "category_path": [
+        "자연·환경·지리",
+        "생물지리",
+        "섬 생태계",
+        "고립과 종 분화"
+      ],
+      "html_url": "outputs/20261007_seom_biologeography_how__Report.html",
+      "pdf_url": "outputs/20261007_seom_biologeography_how__Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -2166,6 +2197,13 @@
       "label": "가전과 식생활",
       "level": 2,
       "main_category": "역사·문화"
+    },
+    {
+      "id": "sub:81de53730768699c",
+      "type": "sub",
+      "label": "섬 생태계",
+      "level": 2,
+      "main_category": "자연·환경·지리"
     },
     {
       "id": "sub:87e46684e17d53d1",
@@ -4454,6 +4492,13 @@
       "provenance": "curated-pattern-rule"
     },
     {
+      "id": "edge:932de3d55f1df541",
+      "source": "category:9de06b299a735751",
+      "target": "middle:f17d822c4ccc785f",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:935d7aa32387a16b",
       "source": "sub:7cb73285e3d7560c",
       "target": "detail:080dd9b47a474067",
@@ -4602,6 +4647,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:9b9902034022020d",
+      "source": "detail:2e2e4cc4651ece06",
+      "target": "report:rpt-20261007-seom-biologeography-how",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:9cf9e61fb2dbb5fd",
       "source": "sub:ba71cba4eff85a4c",
       "target": "detail:582058263345ef47",
@@ -4612,6 +4664,13 @@
       "id": "edge:9d008e5905527a93",
       "source": "middle:8cbf2eefebf157d5",
       "target": "sub:3c32ed30d0be6df7",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:9d58a2e311fbbc1a",
+      "source": "sub:81de53730768699c",
+      "target": "detail:2e2e4cc4651ece06",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -6079,6 +6138,13 @@
       "id": "edge:fb6013c212271416",
       "source": "sub:5c7b7b2c66e4882e",
       "target": "detail:704d751b6b29c437",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:fc7974073a203f05",
+      "source": "middle:f17d822c4ccc785f",
+      "target": "sub:81de53730768699c",
       "kind": "hierarchy",
       "relation_type": "contains"
     },

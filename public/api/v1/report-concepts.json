@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-10-06T10:16:40.693314+09:00",
+  "generated_at": "2026-10-07T05:01:13.628846+09:00",
   "stats": {
-    "reports": 52,
-    "tags": 1938,
+    "reports": 53,
+    "tags": 1975,
     "shared_concepts": 17,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -28539,6 +28539,554 @@
             {
               "reference": "further_reading[2].title",
               "matched_text": "줄기세포 분화 기전"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "report_id": "rpt-20261007-seom-biologeography-how",
+      "date": "2026-10-07",
+      "title": "섬의 생물지리학: 고립은 어떻게 새로운 종을 만드는가",
+      "main_category": "자연·환경·지리",
+      "tags": [
+        {
+          "tag_id": "tag-01a9470b7b6dff4c",
+          "label": "격리 진화",
+          "normalized_label": "격리 진화",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "격리 진화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3b784247934f1859",
+          "label": "고립 효과",
+          "normalized_label": "고립 효과",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "고립 효과"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-eadd9c97e529def4",
+          "label": "생물 다양성",
+          "normalized_label": "생물 다양성",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "생물 다양성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-01229b74eca45f8c",
+          "label": "생태계 고립",
+          "normalized_label": "생태계 고립",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "생태계 고립"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e13400d5daaee202",
+          "label": "섬 생태계",
+          "normalized_label": "섬 생태계",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "섬 생태계"
+            },
+            {
+              "reference": "category.sub",
+              "matched_text": "섬 생태계"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-384e3c91bb810522",
+          "label": "적응 방산",
+          "normalized_label": "적응 방산",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [
+            "Adaptive Radiation"
+          ],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "적응 방산"
+            },
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "적응 방산 (Adaptive Radiation)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-db5418d57acd57a5",
+          "label": "종 분화",
+          "normalized_label": "종 분화",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [
+            "Speciation"
+          ],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "종 분화"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "종 분화 (Speciation)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6f5c64e4216af33f",
+          "label": "진화 메커니즘",
+          "normalized_label": "진화 메커니즘",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "진화 메커니즘"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-09c85d415bee6529",
+          "label": "고립",
+          "normalized_label": "고립",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [
+            "Isolation"
+          ],
+          "evidence": [
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "고립 (Isolation)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-31ff523d3ce1ae6a",
+          "label": "유전적 부동",
+          "normalized_label": "유전적 부동",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [
+            "Genetic Drift"
+          ],
+          "evidence": [
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "유전적 부동 (Genetic Drift)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d9b95d5f7c027a7b",
+          "label": "생물지리",
+          "normalized_label": "생물지리",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "생물지리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e083dcf6757b3f12",
+          "label": "고립과 종 분화",
+          "normalized_label": "고립과 종 분화",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "고립과 종 분화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7c55c8c1b1bb4e0f",
+          "label": "앨프리드 러셀 월리스",
+          "normalized_label": "앨프리드 러셀 월리스",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [
+            "자연학자"
+          ],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "앨프리드 러셀 월리스(자연학자)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b65c5218dcc858ec",
+          "label": "새로운 종의 확립 및 진화 지속",
+          "normalized_label": "새로운 종의 확립 및 진화 지속",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "새로운 종의 확립 및 진화 지속"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-758cc4fc0a88a881",
+          "label": "생물의 초기 정착과 고립",
+          "normalized_label": "생물의 초기 정착과 고립",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "생물의 초기 정착과 고립"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ff89b845003fb41e",
+          "label": "유전자 흐름 제한 및 변이 축적",
+          "normalized_label": "유전자 흐름 제한 및 변이 축적",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "유전자 흐름 제한 및 변이 축적"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d345d465d12721cc",
+          "label": "적응 방산과 생태계 분화",
+          "normalized_label": "적응 방산과 생태계 분화",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "적응 방산과 생태계 분화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5a6d23f6c70c87a4",
+          "label": "지질학적 섬 형성",
+          "normalized_label": "지질학적 섬 형성",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "지질학적 섬 형성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e8086bddbeeaa297",
+          "label": "갈라파고스 제도의 핀치새: 섬 고립과 종 분화의 대표적 사례",
+          "normalized_label": "갈라파고스 제도의 핀치새: 섬 고립과 종 분화의 대표적 사례",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "갈라파고스 제도의 핀치새: 섬 고립과 종 분화의 대표적 사례"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-89d8631678d0b2d1",
+          "label": "고립이 작용하는 진화 메커니즘",
+          "normalized_label": "고립이 작용하는 진화 메커니즘",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "고립이 작용하는 진화 메커니즘"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ad8909a14996e9fe",
+          "label": "기본 이해: 핵심 용어와 개념",
+          "normalized_label": "기본 이해: 핵심 용어와 개념",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "기본 이해: 핵심 용어와 개념"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-91e1c3659cda7eec",
+          "label": "섬 고립의 역사적 배경",
+          "normalized_label": "섬 고립의 역사적 배경",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "섬 고립의 역사적 배경"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2aba9bfa9131a19e",
+          "label": "섬 생태계와 생물지리학의 중요성",
+          "normalized_label": "섬 생태계와 생물지리학의 중요성",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "섬 생태계와 생물지리학의 중요성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c475321a464c0701",
+          "label": "섬 생태계와 인간 사회에 미친 영향",
+          "normalized_label": "섬 생태계와 인간 사회에 미친 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "섬 생태계와 인간 사회에 미친 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-67589c12552f520a",
+          "label": "섬의 고립과 종 분화가 우리에게 주는 의미",
+          "normalized_label": "섬의 고립과 종 분화가 우리에게 주는 의미",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "섬의 고립과 종 분화가 우리에게 주는 의미"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-db3c47d34d602d17",
+          "label": "섬의 생물지리학을 깊이 이해하기",
+          "normalized_label": "섬의 생물지리학을 깊이 이해하기",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "섬의 생물지리학을 깊이 이해하기"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-04962c03e90bda3a",
+          "label": "종 분화 연구의 기준과 관리 방식 변화",
+          "normalized_label": "종 분화 연구의 기준과 관리 방식 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "종 분화 연구의 기준과 관리 방식 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-11065a008154b80f",
+          "label": "현재 섬 생물지리학의 현황과 쟁점",
+          "normalized_label": "현재 섬 생물지리학의 현황과 쟁점",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "현재 섬 생물지리학의 현황과 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-865846b80453588d",
+          "label": "현재 쟁점과 앞으로의 도전 과제",
+          "normalized_label": "현재 쟁점과 앞으로의 도전 과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[7].title",
+              "matched_text": "현재 쟁점과 앞으로의 도전 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d74471c3a31c6b2f",
+          "label": "The Geographical Distribution of Animals",
+          "normalized_label": "The Geographical Distribution of Animals",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "The Geographical Distribution of Animals"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d05a0fec8d59f2aa",
+          "label": "갈라파고스 핀치새 종별 부리 형태와 기능",
+          "normalized_label": "갈라파고스 핀치새 종별 부리 형태와 기능",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 갈라파고스 핀치새 종별 부리 형태와 기능"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-43452bd6272f1ba6",
+          "label": "본 리포트 관련 도서 및 연구 주제",
+          "normalized_label": "본 리포트 관련 도서 및 연구 주제",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 본 리포트 관련 도서 및 연구 주제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b281774eb8a6ff7c",
+          "label": "섬 생물 다양성 보전에 직면한 주요 쟁점",
+          "normalized_label": "섬 생물 다양성 보전에 직면한 주요 쟁점",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 섬 생물 다양성 보전에 직면한 주요 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8141d4b98a9bec30",
+          "label": "섬과 육상 생태계의 진화 특징 비교",
+          "normalized_label": "섬과 육상 생태계의 진화 특징 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 섬과 육상 생태계의 진화 특징 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5b6dd6fe3510524a",
+          "label": "생물 다양성과 기후 변화",
+          "normalized_label": "생물 다양성과 기후 변화",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "생물 다양성과 기후 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6612d0230b7c09e6",
+          "label": "섬의 생물지리학",
+          "normalized_label": "섬의 생물지리학",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "섬의 생물지리학"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-59d47b8eb10317b9",
+          "label": "진화론과 섬 생물학",
+          "normalized_label": "진화론과 섬 생물학",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "진화론과 섬 생물학"
             }
           ]
         }
