@@ -1,4 +1,4 @@
-"""Deterministic hierarchy graph builder for published reports.
+"""Deterministic hierarchy and concept graph builder for published reports.
 
 Semantic cross-report edges are deliberately supplied through a versioned override
 file until an explainable scoring pipeline is introduced. This keeps the first
@@ -31,6 +31,7 @@ def build_knowledge_graph(
     aliases: dict[str, Any],
     overrides: dict[str, Any] | None = None,
     generated_at: str | None = None,
+    concept_annotations: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     nodes: dict[str, dict[str, Any]] = {}
     edges: dict[str, dict[str, Any]] = {}
@@ -39,15 +40,23 @@ def build_knowledge_graph(
     def add_node(node: dict[str, Any]) -> None:
         nodes.setdefault(node["id"], node)
 
-    def add_edge(source: str, target: str, relation_type: str, **extra: Any) -> None:
+    def add_edge(
+        source: str,
+        target: str,
+        relation_type: str,
+        *,
+        kind: str | None = None,
+        **extra: Any,
+    ) -> None:
         edge_id = _edge_id(source, target, relation_type)
+        edge_kind = kind or ("hierarchy" if relation_type == "contains" else "semantic")
         edges.setdefault(
             edge_id,
             {
                 "id": edge_id,
                 "source": source,
                 "target": target,
-                "kind": "hierarchy" if relation_type == "contains" else "semantic",
+                "kind": edge_kind,
                 "relation_type": relation_type,
                 **extra,
             },
@@ -112,6 +121,43 @@ def build_knowledge_graph(
         add_edge(sub_id, detail_id, "contains")
         add_edge(detail_id, report_node_id, "contains")
 
+    concept_annotations = concept_annotations or {"shared_concepts": []}
+    for concept in concept_annotations.get("shared_concepts", []):
+        concept_id = str(concept.get("concept_id", "")).strip()
+        if not concept_id:
+            raise ValueError("공유 concept에는 concept_id가 필요합니다.")
+        concept_node_id = f"concept:{concept_id}"
+        add_node(
+            {
+                "id": concept_node_id,
+                "type": "concept",
+                "label": concept.get("label", ""),
+                "level": 5,
+                "concept_id": concept_id,
+                "concept_type": concept.get("type", "concept"),
+                "report_count": int(concept.get("report_count", 0)),
+                "main_categories": concept.get("main_categories", []),
+                "provenance": concept.get("provenance", ""),
+            }
+        )
+        for member in concept.get("reports", []):
+            report_id = str(member.get("report_id", ""))
+            report_node_id = report_node_ids.get(report_id)
+            evidence = member.get("evidence", [])
+            if not report_node_id:
+                raise ValueError("공유 concept가 존재하지 않는 report_id를 참조합니다.")
+            if not isinstance(evidence, list) or not evidence:
+                raise ValueError("concept 연결에는 evidence가 필요합니다.")
+            add_edge(
+                report_node_id,
+                concept_node_id,
+                "has_concept",
+                kind="concept",
+                score=min(1.0, 0.6 + len(evidence) * 0.1),
+                evidence=evidence,
+                provenance=concept.get("provenance", ""),
+            )
+
     overrides = overrides or {"edges": []}
     for relation in overrides.get("edges", []):
         source_id = report_node_ids.get(str(relation.get("source_report_id", "")))
@@ -138,13 +184,15 @@ def build_knowledge_graph(
     graph = {
         "schema_version": "1.0",
         "taxonomy_version": taxonomy["taxonomy_version"],
-        "algorithm_version": "hierarchy-v1",
+        "algorithm_version": "hierarchy-concepts-v1",
         "generated_at": generated_at or datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
         "stats": {
             "categories": len(category_ids),
             "reports": len(published),
             "nodes": len(nodes),
             "edges": len(edges),
+            "concepts": sum(1 for node in nodes.values() if node["type"] == "concept"),
+            "concept_edges": sum(1 for edge in edges.values() if edge["kind"] == "concept"),
             "semantic_edges": sum(1 for edge in edges.values() if edge["kind"] == "semantic"),
         },
         "nodes": sorted(nodes.values(), key=lambda node: node["id"]),
@@ -174,3 +222,7 @@ def validate_knowledge_graph(graph: dict[str, Any]) -> None:
             raise ValueError("knowledge graph edge가 존재하지 않는 node를 참조합니다.")
         if edge.get("source") == edge.get("target"):
             raise ValueError("knowledge graph에는 자기 연결을 허용하지 않습니다.")
+        if edge.get("kind") not in {"hierarchy", "concept", "semantic"}:
+            raise ValueError("knowledge graph edge kind가 유효하지 않습니다.")
+        if edge.get("kind") in {"concept", "semantic"} and not edge.get("evidence"):
+            raise ValueError("concept 및 semantic edge에는 evidence가 필요합니다.")

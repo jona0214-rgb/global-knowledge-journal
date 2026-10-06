@@ -31,6 +31,8 @@ jobs:
           scripts/verify_published_site.py
           scripts/build_knowledge_graph.py
           scripts/audit_project.py
+          scripts/report_pipeline/concept_extractor.py
+          scripts/report_pipeline/knowledge_graph.py
       - name: Run Python tests
         run: python -m unittest discover -s tests -p "test_*.py"
       - name: Audit project data

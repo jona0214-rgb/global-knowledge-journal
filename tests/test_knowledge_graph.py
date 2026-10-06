@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT_DIR = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT_DIR / "scripts"))
 
-from build_knowledge_graph import build_public_data  # noqa: E402
+from build_knowledge_graph import build_public_bundle, build_public_data  # noqa: E402
 from report_pipeline.knowledge_graph import (  # noqa: E402
     build_knowledge_graph,
     validate_knowledge_graph,
@@ -27,11 +27,33 @@ class KnowledgeGraphTests(unittest.TestCase):
         self.assertEqual(len(reports), graph["stats"]["reports"])
         self.assertEqual(10, graph["stats"]["categories"])
         self.assertEqual(0, graph["stats"]["semantic_edges"])
+        self.assertGreater(graph["stats"]["concepts"], 0)
+        self.assertGreater(graph["stats"]["concept_edges"], 0)
         validate_knowledge_graph(graph)
 
+    def test_public_concepts_are_integrated_into_graph(self):
+        _, reports, concepts, graph = build_public_bundle()
+
+        self.assertEqual(len(reports), concepts["stats"]["reports"])
+        self.assertEqual(
+            concepts["stats"]["shared_concepts"],
+            graph["stats"]["concepts"],
+        )
+        concept_node_ids = {
+            node["id"] for node in graph["nodes"] if node["type"] == "concept"
+        }
+        self.assertTrue(concept_node_ids)
+        self.assertTrue(
+            all(
+                edge["target"] in concept_node_ids and edge.get("evidence")
+                for edge in graph["edges"]
+                if edge["kind"] == "concept"
+            )
+        )
+
     def test_public_graph_build_is_deterministic(self):
-        first = build_public_data()[2]
-        second = build_public_data()[2]
+        first = build_public_bundle()
+        second = build_public_bundle()
 
         self.assertEqual(first, second)
 

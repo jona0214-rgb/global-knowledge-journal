@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jona0214-rgb.github.io/global-knowledge-journal/schemas/report_concepts.schema.json",
+  "title": "Global Knowledge Journal report concepts",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "algorithm_version",
+    "generated_at",
+    "stats",
+    "reports",
+    "shared_concepts"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "algorithm_version": {"type": "string"},
+    "generated_at": {"type": "string"},
+    "stats": {"type": "object"},
+    "reports": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["report_id", "date", "title", "main_category", "tags"],
+        "properties": {
+          "report_id": {"type": "string"},
+          "date": {"type": "string"},
+          "title": {"type": "string"},
+          "main_category": {"type": "string"},
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "tag_id",
+                "label",
+                "normalized_label",
+                "type",
+                "weight",
+                "aliases",
+                "evidence"
+              ],
+              "properties": {
+                "tag_id": {"type": "string"},
+                "label": {"type": "string"},
+                "normalized_label": {"type": "string"},
+                "type": {"type": "string"},
+                "weight": {"type": "number", "minimum": 0, "maximum": 1},
+                "aliases": {"type": "array", "items": {"type": "string"}},
+                "evidence": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "object",
+                    "required": ["reference", "matched_text"],
+                    "properties": {
+                      "reference": {"type": "string"},
+                      "matched_text": {"type": "string"}
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "shared_concepts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "concept_id",
+          "label",
+          "type",
+          "provenance",
+          "report_count",
+          "main_categories",
+          "reports"
+        ],
+        "properties": {
+          "concept_id": {"type": "string"},
+          "label": {"type": "string"},
+          "normalized_label": {"type": "string"},
+          "type": {"type": "string"},
+          "provenance": {"enum": ["exact-normalized-tag", "curated-pattern-rule"]},
+          "report_count": {"type": "integer", "minimum": 2},
+          "main_categories": {
+            "type": "array",
+            "minItems": 2,
+            "items": {"type": "string"}
+          },
+          "reports": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "object",
+              "required": ["report_id", "evidence"],
+              "properties": {
+                "report_id": {"type": "string"},
+                "evidence": {"type": "array", "minItems": 1}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
