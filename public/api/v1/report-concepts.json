@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-10-07T05:01:13.628846+09:00",
+  "generated_at": "2026-10-08T05:13:42.034634+09:00",
   "stats": {
-    "reports": 53,
-    "tags": 1975,
+    "reports": 54,
+    "tags": 2013,
     "shared_concepts": 17,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -29091,6 +29091,560 @@
           ]
         }
       ]
+    },
+    {
+      "report_id": "rpt-20261008-jeontong-uibok-social-st",
+      "date": "2026-10-08",
+      "title": "전통 의복과 사회신분: 복식문화의 변화와 의미",
+      "main_category": "역사·문화",
+      "tags": [
+        {
+          "tag_id": "tag-6e0596554de8935f",
+          "label": "문화적 상징",
+          "normalized_label": "문화적 상징",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "문화적 상징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2b106ed5ead53296",
+          "label": "복식문화",
+          "normalized_label": "복식문화",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "복식문화"
+            },
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "복식문화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-705d1903895d5468",
+          "label": "사회 구조",
+          "normalized_label": "사회 구조",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "사회 구조"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4e629c6d734f9af9",
+          "label": "사회신분",
+          "normalized_label": "사회신분",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "사회신분"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b73132e853b7017f",
+          "label": "신분 표현",
+          "normalized_label": "신분 표현",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "신분 표현"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "신분 표현"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5706dc2e4e995b00",
+          "label": "역사적 변화",
+          "normalized_label": "역사적 변화",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "역사적 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-28c7e546f5b72d56",
+          "label": "전통 의복",
+          "normalized_label": "전통 의복",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "전통 의복"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "전통 의복"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-251f3fb0903e1404",
+          "label": "복식 제도",
+          "normalized_label": "복식 제도",
+          "type": "institution",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "복식 제도"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2835e1c458512d1c",
+          "label": "복식 규범",
+          "normalized_label": "복식 규범",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "복식 규범"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ab95d5290d81eb78",
+          "label": "문화",
+          "normalized_label": "문화",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "문화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-036d9f6d31e11354",
+          "label": "복식사",
+          "normalized_label": "복식사",
+          "type": "domain",
+          "weight": 0.93,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.sub",
+              "matched_text": "복식사"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0f0c85e49e539edf",
+          "label": "의복을 통한 신분 표현과 사회 변화",
+          "normalized_label": "의복을 통한 신분 표현과 사회 변화",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "의복을 통한 신분 표현과 사회 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-42a7e6499168b160",
+          "label": "게오르크 짐멜",
+          "normalized_label": "게오르크 짐멜",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [
+            "사회학자"
+          ],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "게오르크 짐멜(사회학자)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-cec3818f0666d6ef",
+          "label": "기원과 초기 신분 복식",
+          "normalized_label": "기원과 초기 신분 복식",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "기원과 초기 신분 복식"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-57c8491232c19e78",
+          "label": "복식 관리와 제도 변화",
+          "normalized_label": "복식 관리와 제도 변화",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "복식 관리와 제도 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-01503c2ef1a5ad7e",
+          "label": "복식 규범과 계층 구분",
+          "normalized_label": "복식 규범과 계층 구분",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "복식 규범과 계층 구분"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7406b6c1adb68a38",
+          "label": "사회문화적 영향과 정체성",
+          "normalized_label": "사회문화적 영향과 정체성",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "사회문화적 영향과 정체성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3bed6d41a0ac4ff7",
+          "label": "현대적 재해석과 지속",
+          "normalized_label": "현대적 재해석과 지속",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "현대적 재해석과 지속"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0091d83d3d2ae158",
+          "label": "개인과 사회에 미치는 전통 의복의 문화적 의미",
+          "normalized_label": "개인과 사회에 미치는 전통 의복의 문화적 의미",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "개인과 사회에 미치는 전통 의복의 문화적 의미"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f7de06e1bde12699",
+          "label": "기본 개념과 핵심 용어 이해",
+          "normalized_label": "기본 개념과 핵심 용어 이해",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "기본 개념과 핵심 용어 이해"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-996e453f7c22df2e",
+          "label": "복식 규범과 신분 관리 방식의 변화",
+          "normalized_label": "복식 규범과 신분 관리 방식의 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "복식 규범과 신분 관리 방식의 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-04192319cb5cf012",
+          "label": "복식과 신분 표현의 역사적 기원",
+          "normalized_label": "복식과 신분 표현의 역사적 기원",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "복식과 신분 표현의 역사적 기원"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1b99ae1e3a42c694",
+          "label": "복식과 신분: 핵심 질문과 연구 방향",
+          "normalized_label": "복식과 신분: 핵심 질문과 연구 방향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "복식과 신분: 핵심 질문과 연구 방향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a453c547f2cd1c31",
+          "label": "복식문화가 사회·생활에 미친 영향",
+          "normalized_label": "복식문화가 사회·생활에 미친 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "복식문화가 사회·생활에 미친 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c95e262d8680445b",
+          "label": "복식의 구조와 신분 체계의 작동 원리",
+          "normalized_label": "복식의 구조와 신분 체계의 작동 원리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "복식의 구조와 신분 체계의 작동 원리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-06863bacca99d646",
+          "label": "전통 의복과 사회신분의 역사적 맥락",
+          "normalized_label": "전통 의복과 사회신분의 역사적 맥락",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "전통 의복과 사회신분의 역사적 맥락"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-44b5438d518bc63b",
+          "label": "전통 의복과 신분 표현의 현대적 양상",
+          "normalized_label": "전통 의복과 신분 표현의 현대적 양상",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "전통 의복과 신분 표현의 현대적 양상"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b1e86b1d335a2499",
+          "label": "조선시대 복식과 신분 제도의 상징적 표현",
+          "normalized_label": "조선시대 복식과 신분 제도의 상징적 표현",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "조선시대 복식과 신분 제도의 상징적 표현"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-928a057f4462d2e3",
+          "label": "현대 복식문화의 쟁점과 미래 과제",
+          "normalized_label": "현대 복식문화의 쟁점과 미래 과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[7].title",
+              "matched_text": "현대 복식문화의 쟁점과 미래 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-75ca5565ddca0649",
+          "label": "복식문화와 사회구조",
+          "normalized_label": "복식문화와 사회구조",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "복식문화와 사회구조"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f4bd420e9d6b1ead",
+          "label": "관련 도서·탐구 키워드·확장 주제",
+          "normalized_label": "관련 도서·탐구 키워드·확장 주제",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 관련 도서·탐구 키워드·확장 주제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4ad172414a961998",
+          "label": "전통 복식과 사회 신분 표현 비교",
+          "normalized_label": "전통 복식과 사회 신분 표현 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 전통 복식과 사회 신분 표현 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c83bcdb68c9ce1cf",
+          "label": "조선시대 특수 복식의 신분별 특징",
+          "normalized_label": "조선시대 특수 복식의 신분별 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 조선시대 특수 복식의 신분별 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-169423d3f4da280d",
+          "label": "현대 전통 복식문화의 쟁점 비교",
+          "normalized_label": "현대 전통 복식문화의 쟁점 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 현대 전통 복식문화의 쟁점 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6adff1c5d04865e1",
+          "label": "『복식과 문화: 신분과 정체성의 시각적 표현』",
+          "normalized_label": "『복식과 문화: 신분과 정체성의 시각적 표현』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "『복식과 문화: 신분과 정체성의 시각적 표현』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4a150a7400722a83",
+          "label": "『복식문화와 권력: 신분과 옷의 사회사』",
+          "normalized_label": "『복식문화와 권력: 신분과 옷의 사회사』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "『복식문화와 권력: 신분과 옷의 사회사』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4dd0566b17514d73",
+          "label": "『한국 전통복식사』",
+          "normalized_label": "『한국 전통복식사』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "『한국 전통복식사』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-dbcb8087c6fe303c",
+          "label": "복식과 신분 표현",
+          "normalized_label": "복식과 신분 표현",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[3].title",
+              "matched_text": "복식과 신분 표현"
+            }
+          ]
+        }
+      ]
     }
   ],
   "shared_concepts": [
@@ -30447,7 +31001,7 @@
       "normalized_label": "분류와 권력",
       "type": "mechanism",
       "provenance": "curated-pattern-rule",
-      "report_count": 8,
+      "report_count": 9,
       "main_categories": [
         "과학·수학",
         "기술·공학",
@@ -30570,6 +31124,19 @@
           "evidence": [
             {
               "reference": "sections[5].body[1]",
+              "matched_text": "권력 구조"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261008-jeontong-uibok-social-st",
+          "evidence": [
+            {
+              "reference": "abstract",
+              "matched_text": "권력 구조"
+            },
+            {
+              "reference": "sections[6].body[0]",
               "matched_text": "권력 구조"
             }
           ]

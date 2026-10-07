@@ -2,14 +2,14 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-10-07T05:01:13.628846+09:00",
+  "generated_at": "2026-10-08T05:13:42.034634+09:00",
   "stats": {
     "categories": 10,
-    "reports": 53,
-    "nodes": 238,
-    "edges": 321,
+    "reports": 54,
+    "nodes": 242,
+    "edges": 326,
     "concepts": 17,
-    "concept_edges": 110,
+    "concept_edges": 111,
     "semantic_edges": 0
   },
   "nodes": [
@@ -90,7 +90,7 @@
       "level": 5,
       "concept_id": "con-135ff1d8963c0c0f",
       "concept_type": "mechanism",
-      "report_count": 8,
+      "report_count": 9,
       "main_categories": [
         "과학·수학",
         "기술·공학",
@@ -500,6 +500,13 @@
       "main_category": "예술·디자인"
     },
     {
+      "id": "detail:3ba3997b8ef44d53",
+      "type": "detail",
+      "label": "의복을 통한 신분 표현과 사회 변화",
+      "level": 3,
+      "main_category": "역사·문화"
+    },
+    {
       "id": "detail:3ba9e53991aec4cd",
       "type": "detail",
       "label": "우편번호의 사회적 기능",
@@ -757,6 +764,13 @@
       "label": "물리학",
       "level": 1,
       "main_category": "과학·수학"
+    },
+    {
+      "id": "middle:17be3d647f8a5139",
+      "type": "middle",
+      "label": "문화",
+      "level": 1,
+      "main_category": "역사·문화"
     },
     {
       "id": "middle:205f4adc8f23b507",
@@ -1996,6 +2010,23 @@
       "pdf_url": "outputs/20261007_seom_biologeography_how__Report.pdf"
     },
     {
+      "id": "report:rpt-20261008-jeontong-uibok-social-st",
+      "type": "report",
+      "label": "전통 의복과 사회신분: 복식문화의 변화와 의미",
+      "level": 4,
+      "report_id": "rpt-20261008-jeontong-uibok-social-st",
+      "date": "2026-10-08",
+      "main_category": "역사·문화",
+      "category_path": [
+        "역사·문화",
+        "문화",
+        "복식사",
+        "의복을 통한 신분 표현과 사회 변화"
+      ],
+      "html_url": "outputs/20261008_jeontong_uibok_social_st_Report.html",
+      "pdf_url": "outputs/20261008_jeontong_uibok_social_st_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -2211,6 +2242,13 @@
       "label": "사회정의론",
       "level": 2,
       "main_category": "인문·철학"
+    },
+    {
+      "id": "sub:93a394e59d99c71b",
+      "type": "sub",
+      "label": "복식사",
+      "level": 2,
+      "main_category": "역사·문화"
     },
     {
       "id": "sub:95d8ea92fcca2e21",
@@ -2492,6 +2530,13 @@
       "id": "edge:0a828978e947fb99",
       "source": "middle:9a840b66bd8d3d30",
       "target": "sub:d66978887f14fa65",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:0ade262316b22d55",
+      "source": "detail:3ba3997b8ef44d53",
+      "target": "report:rpt-20261008-jeontong-uibok-social-st",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -4533,6 +4578,13 @@
       "provenance": "curated-pattern-rule"
     },
     {
+      "id": "edge:952a302e85d06bd0",
+      "source": "middle:17be3d647f8a5139",
+      "target": "sub:93a394e59d99c71b",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:953be3dc85ce8787",
       "source": "report:rpt-20260912-baesimwonui-pandan-simin",
       "target": "concept:con-54edfaeaaf2ae146",
@@ -5142,6 +5194,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:bb3f95dbba3f30ea",
+      "source": "category:cb829c377357dd71",
+      "target": "middle:17be3d647f8a5139",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:bb7a978e436501b4",
       "source": "middle:103e5235497ad2b3",
       "target": "sub:bfe96042a95d9ce4",
@@ -5715,6 +5774,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:dea19a4edb4912fd",
+      "source": "sub:93a394e59d99c71b",
+      "target": "detail:3ba3997b8ef44d53",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:dfacd6b07e6b4620",
       "source": "middle:6bb393db31e086c2",
       "target": "sub:0e5fbd85218ff444",
@@ -5910,6 +5976,25 @@
         {
           "reference": "keywords[5]",
           "matched_text": "에너지 효율"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:ea7d3a34a2408b14",
+      "source": "report:rpt-20261008-jeontong-uibok-social-st",
+      "target": "concept:con-135ff1d8963c0c0f",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.8,
+      "evidence": [
+        {
+          "reference": "abstract",
+          "matched_text": "권력 구조"
+        },
+        {
+          "reference": "sections[6].body[0]",
+          "matched_text": "권력 구조"
         }
       ],
       "provenance": "curated-pattern-rule"

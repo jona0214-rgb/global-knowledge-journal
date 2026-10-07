@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-10-07",
+  "updated_at": "2026-10-08",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -1175,6 +1175,29 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261007_seom_biologeography_how__Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261007_seom_biologeography_how__Report.pdf",
       "status": "published_api"
+    },
+    {
+      "report_id": "rpt-20261008-jeontong-uibok-social-status",
+      "date": "2026-10-08",
+      "title": "전통 의복과 사회신분: 복식문화의 변화와 의미",
+      "main_category": "역사·문화",
+      "mid_category": "문화",
+      "sub_category": "복식사",
+      "detail_category": "의복을 통한 신분 표현과 사회 변화",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "전통 의복",
+        "사회신분",
+        "복식문화",
+        "신분 표현",
+        "역사적 변화",
+        "문화적 상징",
+        "복식 제도",
+        "사회 구조"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261008_jeontong_uibok_social_st_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261008_jeontong_uibok_social_st_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -1191,9 +1214,9 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "자연·환경·지리",
-    "next_main_category": "역사·문화",
-    "next_index": 7,
+    "last_main_category": "역사·문화",
+    "next_main_category": "예술·디자인",
+    "next_index": 8,
     "completed_cycles": 5,
     "published_counts": {
       "인문·철학": 6,
@@ -1203,12 +1226,11 @@
       "기술·공학": 6,
       "생명·건강": 5,
       "자연·환경·지리": 5,
-      "역사·문화": 6,
+      "역사·문화": 7,
       "예술·디자인": 5,
       "언어·미디어·지식": 6
     },
     "recent_main_categories": [
-      "역사·문화",
       "예술·디자인",
       "언어·미디어·지식",
       "인문·철학",
@@ -1217,7 +1239,8 @@
       "과학·수학",
       "기술·공학",
       "생명·건강",
-      "자연·환경·지리"
+      "자연·환경·지리",
+      "역사·문화"
     ]
   },
   "candidate_pool": [
@@ -2019,6 +2042,56 @@
       "detail_category": "장내 미생물과 뇌 건강 메커니즘",
       "priority": 1.0,
       "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "왕실 의례와 권력: 전통이 정치에 끼친 영향",
+      "main_category": "역사·문화",
+      "mid_category": "역사",
+      "sub_category": "정치사",
+      "detail_category": "왕실 의례의 정치적 상징성과 변화",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "고대 실크로드의 생활문화와 문화교류",
+      "main_category": "역사·문화",
+      "mid_category": "문명",
+      "sub_category": "교역로 문화",
+      "detail_category": "실크로드를 통한 일상용품과 문화의 교환",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "전통 음악과 무용의 지역별 사회문화적 기능",
+      "main_category": "역사·문화",
+      "mid_category": "역사",
+      "sub_category": "문화사",
+      "detail_category": "음악과 무용이 공동체 정체성에 미친 영향",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "고대 도시의 시장과 상업문화",
+      "main_category": "역사·문화",
+      "mid_category": "교역과 생활문화",
+      "sub_category": "시장문화",
+      "detail_category": "고대 도시 시장의 역사와 경제 사회적 역할",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "전통 의복과 사회신분: 복식문화의 변화와 의미",
+      "main_category": "역사·문화",
+      "mid_category": "문화",
+      "sub_category": "복식사",
+      "detail_category": "의복을 통한 신분 표현과 사회 변화",
+      "priority": 1.0,
+      "status": "used",
       "source": "api_generated"
     }
   ],
