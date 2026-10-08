@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-10-08",
+  "updated_at": "2026-10-09",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -1198,6 +1198,29 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261008_jeontong_uibok_social_st_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261008_jeontong_uibok_social_st_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "report_id": "rpt-20261009-product-design-ux-innovation-emotion",
+      "date": "2026-10-09",
+      "title": "제품 디자인에서 사용자 경험(UX)의 혁신: 기능을 넘어 감성으로",
+      "main_category": "예술·디자인",
+      "mid_category": "디자인",
+      "sub_category": "산업디자인",
+      "detail_category": "사용자 경험과 감성 디자인",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "사용자 경험",
+        "UX 혁신",
+        "감성 디자인",
+        "제품 디자인",
+        "산업디자인",
+        "사용자 인터페이스",
+        "감성 반응",
+        "디자인 트렌드"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261009_product_design_ux_innova_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261009_product_design_ux_innova_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -1214,9 +1237,9 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "역사·문화",
-    "next_main_category": "예술·디자인",
-    "next_index": 8,
+    "last_main_category": "예술·디자인",
+    "next_main_category": "언어·미디어·지식",
+    "next_index": 9,
     "completed_cycles": 5,
     "published_counts": {
       "인문·철학": 6,
@@ -1227,11 +1250,10 @@
       "생명·건강": 5,
       "자연·환경·지리": 5,
       "역사·문화": 7,
-      "예술·디자인": 5,
+      "예술·디자인": 6,
       "언어·미디어·지식": 6
     },
     "recent_main_categories": [
-      "예술·디자인",
       "언어·미디어·지식",
       "인문·철학",
       "사회·정치·법",
@@ -1240,7 +1262,8 @@
       "기술·공학",
       "생명·건강",
       "자연·환경·지리",
-      "역사·문화"
+      "역사·문화",
+      "예술·디자인"
     ]
   },
   "candidate_pool": [
@@ -1841,7 +1864,7 @@
       "sub_category": "산업디자인",
       "detail_category": "사용자 경험과 감성 디자인",
       "priority": 1.0,
-      "status": "candidate",
+      "status": "used",
       "source": "api_generated"
     },
     {

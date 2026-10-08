@@ -2,12 +2,12 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-10-08T05:13:42.034634+09:00",
+  "generated_at": "2026-10-09T05:12:41.304146+09:00",
   "stats": {
     "categories": 10,
-    "reports": 54,
-    "nodes": 242,
-    "edges": 326,
+    "reports": 55,
+    "nodes": 246,
+    "edges": 330,
     "concepts": 17,
     "concept_edges": 111,
     "semantic_edges": 0
@@ -545,6 +545,13 @@
       "id": "detail:4609301005738b82",
       "type": "detail",
       "label": "프레이밍의 의미 작용",
+      "level": 3,
+      "main_category": "예술·디자인"
+    },
+    {
+      "id": "detail:48a64d367095f594",
+      "type": "detail",
+      "label": "사용자 경험과 감성 디자인",
       "level": 3,
       "main_category": "예술·디자인"
     },
@@ -1105,6 +1112,13 @@
       "id": "middle:f916666c3b9a7ed8",
       "type": "middle",
       "label": "건축",
+      "level": 1,
+      "main_category": "예술·디자인"
+    },
+    {
+      "id": "middle:fe8b996f66a99759",
+      "type": "middle",
+      "label": "디자인",
       "level": 1,
       "main_category": "예술·디자인"
     },
@@ -2027,6 +2041,23 @@
       "pdf_url": "outputs/20261008_jeontong_uibok_social_st_Report.pdf"
     },
     {
+      "id": "report:rpt-20261009-product-design-ux-innova",
+      "type": "report",
+      "label": "제품 디자인에서 사용자 경험(UX)의 혁신: 기능을 넘어 감성으로",
+      "level": 4,
+      "report_id": "rpt-20261009-product-design-ux-innova",
+      "date": "2026-10-09",
+      "main_category": "예술·디자인",
+      "category_path": [
+        "예술·디자인",
+        "디자인",
+        "산업디자인",
+        "사용자 경험과 감성 디자인"
+      ],
+      "html_url": "outputs/20261009_product_design_ux_innova_Report.html",
+      "pdf_url": "outputs/20261009_product_design_ux_innova_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -2046,6 +2077,13 @@
       "label": "비선형 시스템",
       "level": 2,
       "main_category": "과학·수학"
+    },
+    {
+      "id": "sub:1432fa68bd4e2fd6",
+      "type": "sub",
+      "label": "산업디자인",
+      "level": 2,
+      "main_category": "예술·디자인"
     },
     {
       "id": "sub:1f80dbf7a458e748",
@@ -2599,6 +2637,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:10b9395dc53de4e5",
+      "source": "category:758a7b1ee4fe67cf",
+      "target": "middle:fe8b996f66a99759",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:13746e93aa4cf858",
       "source": "sub:0e442cc2b1d18151",
       "target": "detail:f140bbe44c7949c0",
@@ -2714,6 +2759,13 @@
       "id": "edge:203fd405468bbf50",
       "source": "sub:55a7ebadac0c308e",
       "target": "detail:44346b93154d0391",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:209f9b0ffc8fbcd5",
+      "source": "detail:48a64d367095f594",
+      "target": "report:rpt-20261009-product-design-ux-innova",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -4640,6 +4692,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:98691637b55c6753",
+      "source": "middle:fe8b996f66a99759",
+      "target": "sub:1432fa68bd4e2fd6",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:9879f464cf78f951",
       "source": "report:rpt-20261005-eco-friendly-water-treat",
       "target": "concept:con-96835a5f748ede9b",
@@ -4737,6 +4796,13 @@
       "id": "edge:9dec1f21d4ad9974",
       "source": "detail:15a0b1b8a846dda1",
       "target": "report:rpt-20260902-population-survey-politi",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:9df89b1747dd3abc",
+      "source": "sub:1432fa68bd4e2fd6",
+      "target": "detail:48a64d367095f594",
       "kind": "hierarchy",
       "relation_type": "contains"
     },

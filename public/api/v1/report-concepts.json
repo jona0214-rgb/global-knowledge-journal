@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-10-08T05:13:42.034634+09:00",
+  "generated_at": "2026-10-09T05:12:41.304146+09:00",
   "stats": {
-    "reports": 54,
-    "tags": 2013,
+    "reports": 55,
+    "tags": 2051,
     "shared_concepts": 17,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -29641,6 +29641,566 @@
             {
               "reference": "further_reading[3].title",
               "matched_text": "복식과 신분 표현"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "report_id": "rpt-20261009-product-design-ux-innova",
+      "date": "2026-10-09",
+      "title": "제품 디자인에서 사용자 경험(UX)의 혁신: 기능을 넘어 감성으로",
+      "main_category": "예술·디자인",
+      "tags": [
+        {
+          "tag_id": "tag-e5c225902d7c81bc",
+          "label": "UX 혁신",
+          "normalized_label": "UX 혁신",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "UX 혁신"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-018ba240c93ace3d",
+          "label": "감성 디자인",
+          "normalized_label": "감성 디자인",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "감성 디자인"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "감성 디자인"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-734a6cfaff95664b",
+          "label": "디자인 트렌드",
+          "normalized_label": "디자인 트렌드",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "디자인 트렌드"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-41b6e21bb664e60e",
+          "label": "사용자 경험",
+          "normalized_label": "사용자 경험",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [
+            "UX"
+          ],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "사용자 경험"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "사용자 경험(UX)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-357afb2204285eac",
+          "label": "사용자 인터페이스",
+          "normalized_label": "사용자 인터페이스",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [
+            "UI"
+          ],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "사용자 인터페이스"
+            },
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "사용자 인터페이스(UI)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-de142c9219cfa669",
+          "label": "산업디자인",
+          "normalized_label": "산업디자인",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "산업디자인"
+            },
+            {
+              "reference": "category.sub",
+              "matched_text": "산업디자인"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-01f0ec08da9b846e",
+          "label": "제품 디자인",
+          "normalized_label": "제품 디자인",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "제품 디자인"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-47be80daafea5ae1",
+          "label": "감성 반응",
+          "normalized_label": "감성 반응",
+          "type": "mechanism",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "감성 반응"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1d4b132a1cc21565",
+          "label": "개인화 경험",
+          "normalized_label": "개인화 경험",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "개인화 경험"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-20dcbd8599454889",
+          "label": "디자인",
+          "normalized_label": "디자인",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "디자인"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-855cb387257522f9",
+          "label": "사용자 경험과 감성 디자인",
+          "normalized_label": "사용자 경험과 감성 디자인",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "사용자 경험과 감성 디자인"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2a02274de9d86625",
+          "label": "도널드 노먼",
+          "normalized_label": "도널드 노먼",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "도널드 노먼, 《감성 디자인》 저자"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4840d2a751643a5a",
+          "label": "감성 디자인 도입",
+          "normalized_label": "감성 디자인 도입",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "감성 디자인 도입"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-cf1776cdd2e1b202",
+          "label": "개인화 및 맞춤형 UX",
+          "normalized_label": "개인화 및 맞춤형 UX",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "개인화 및 맞춤형 UX"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-993ccd3df71a8388",
+          "label": "기능 중심 디자인",
+          "normalized_label": "기능 중심 디자인",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "기능 중심 디자인"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ca86f210685bd2db",
+          "label": "사용성 개선",
+          "normalized_label": "사용성 개선",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "사용성 개선"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c785efc94a96ecbc",
+          "label": "지속적 사용자 피드백 및 개선",
+          "normalized_label": "지속적 사용자 피드백 및 개선",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "지속적 사용자 피드백 및 개선"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8a5b3152e8cf038f",
+          "label": "UX 혁신을 이해하는 다섯 가지 관점",
+          "normalized_label": "UX 혁신을 이해하는 다섯 가지 관점",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "UX 혁신을 이해하는 다섯 가지 관점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a36d2266de143d38",
+          "label": "UX 혁신의 측정과 관리 체계 변화",
+          "normalized_label": "UX 혁신의 측정과 관리 체계 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "UX 혁신의 측정과 관리 체계 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a05b149eebb94ca5",
+          "label": "UX 혁신이 개인과 사회에 던지는 의미",
+          "normalized_label": "UX 혁신이 개인과 사회에 던지는 의미",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "UX 혁신이 개인과 사회에 던지는 의미"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c9258c1cae04a2d2",
+          "label": "UX와 감성 디자인의 작동 원리",
+          "normalized_label": "UX와 감성 디자인의 작동 원리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "UX와 감성 디자인의 작동 원리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1b136126b0568763",
+          "label": "사용자 경험(UX)의 역사적 출발점",
+          "normalized_label": "사용자 경험(UX)의 역사적 출발점",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "사용자 경험(UX)의 역사적 출발점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3188f0097061cd17",
+          "label": "사용자 경험과 감성 디자인의 기본 개념",
+          "normalized_label": "사용자 경험과 감성 디자인의 기본 개념",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "사용자 경험과 감성 디자인의 기본 개념"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2bc235bc5faea76c",
+          "label": "사회와 문화에 미친 UX 혁신의 영향",
+          "normalized_label": "사회와 문화에 미친 UX 혁신의 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "사회와 문화에 미친 UX 혁신의 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-bc317d1c36a1a97b",
+          "label": "애플의 감성 UX 혁신 사례",
+          "normalized_label": "애플의 감성 UX 혁신 사례",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "애플의 감성 UX 혁신 사례"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d263b134b5374cf3",
+          "label": "제품 디자인과 사용자 경험의 변천",
+          "normalized_label": "제품 디자인과 사용자 경험의 변천",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "제품 디자인과 사용자 경험의 변천"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-715670a91b73b5e1",
+          "label": "현대 제품 디자인에서의 UX 혁신 동향",
+          "normalized_label": "현대 제품 디자인에서의 UX 혁신 동향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "현대 제품 디자인에서의 UX 혁신 동향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ba1642ec44087fcc",
+          "label": "현재 쟁점과 향후 과제",
+          "normalized_label": "현재 쟁점과 향후 과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[7].title",
+              "matched_text": "현재 쟁점과 향후 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1b26875c600ec908",
+          "label": "Emotional Design: Why We Love (or Hate) Everyday Things",
+          "normalized_label": "Emotional Design: Why We Love (or Hate) Everyday Things",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "Emotional Design: Why We Love (or Hate) Everyday Things"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f4bd420e9d6b1ead",
+          "label": "관련 도서·탐구 키워드·확장 주제",
+          "normalized_label": "관련 도서·탐구 키워드·확장 주제",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 관련 도서·탐구 키워드·확장 주제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8fd87884fb244105",
+          "label": "기능 중심 디자인과 감성 디자인 비교",
+          "normalized_label": "기능 중심 디자인과 감성 디자인 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 기능 중심 디자인과 감성 디자인 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-965738574a1c0903",
+          "label": "애플 사례에서 드러난 감성 UX 특징",
+          "normalized_label": "애플 사례에서 드러난 감성 UX 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 애플 사례에서 드러난 감성 UX 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9b42cdfe5a16c14a",
+          "label": "현대 UX 혁신의 주요 쟁점",
+          "normalized_label": "현대 UX 혁신의 주요 쟁점",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 현대 UX 혁신의 주요 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b4db25ddc076bc90",
+          "label": "『감성 디자인』",
+          "normalized_label": "『감성 디자인』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "『감성 디자인』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6e75799ec6db6433",
+          "label": "『사용자 경험의 설계』",
+          "normalized_label": "『사용자 경험의 설계』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "『사용자 경험의 설계』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f6d46c052a728e9f",
+          "label": "『인터랙션 디자인』",
+          "normalized_label": "『인터랙션 디자인』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "『인터랙션 디자인』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8445703371d5ff5d",
+          "label": "디지털 서비스 디자인과 소비자 행동 연구",
+          "normalized_label": "디지털 서비스 디자인과 소비자 행동 연구",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[4].title",
+              "matched_text": "디지털 서비스 디자인과 소비자 행동 연구"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ad816bdd2e122216",
+          "label": "사용자 심리와 감성 공학 논문 모음",
+          "normalized_label": "사용자 심리와 감성 공학 논문 모음",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[3].title",
+              "matched_text": "사용자 심리와 감성 공학 논문 모음"
             }
           ]
         }
