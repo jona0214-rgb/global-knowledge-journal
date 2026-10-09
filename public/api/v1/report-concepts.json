@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-10-09T05:12:41.304146+09:00",
+  "generated_at": "2026-10-10T04:53:41.120826+09:00",
   "stats": {
-    "reports": 55,
-    "tags": 2051,
+    "reports": 56,
+    "tags": 2089,
     "shared_concepts": 17,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -30205,6 +30205,560 @@
           ]
         }
       ]
+    },
+    {
+      "report_id": "rpt-20261010-language-diversity-conse",
+      "date": "2026-10-10",
+      "title": "언어의 다양성 보존: 소멸 위기 언어는 어떻게 연구되고 있나",
+      "main_category": "언어·미디어·지식",
+      "tags": [
+        {
+          "tag_id": "tag-a7b5e39c667b8148",
+          "label": "디지털 기록",
+          "normalized_label": "디지털 기록",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "디지털 기록"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7aa740fb4f3ac2f0",
+          "label": "문화 보존",
+          "normalized_label": "문화 보존",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "문화 보존"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-978e3796e9b7d4eb",
+          "label": "사회언어학",
+          "normalized_label": "사회언어학",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "사회언어학"
+            },
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "사회언어학"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-eb659198d889e693",
+          "label": "언어 다양성",
+          "normalized_label": "언어 다양성",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "언어 다양성"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "언어 다양성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d6f391a552919476",
+          "label": "언어 정책",
+          "normalized_label": "언어 정책",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "언어 정책"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7202941cf4a308d5",
+          "label": "언어 활성화",
+          "normalized_label": "언어 활성화",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "언어 활성화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c0b665dc78034e63",
+          "label": "언어학 연구",
+          "normalized_label": "언어학 연구",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "언어학 연구"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f1556f50aab903a5",
+          "label": "소멸 위기 언어",
+          "normalized_label": "소멸 위기 언어",
+          "type": "problem",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "소멸 위기 언어"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "소멸 위기 언어"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1cbf64bc6cee3445",
+          "label": "언어 보존",
+          "normalized_label": "언어 보존",
+          "type": "method",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "언어 보존"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b84d5c717c7ff98c",
+          "label": "언어",
+          "normalized_label": "언어",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "언어"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9d80fe6a9732a6a7",
+          "label": "언어학",
+          "normalized_label": "언어학",
+          "type": "domain",
+          "weight": 0.93,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.sub",
+              "matched_text": "언어학"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-dba6d0df9a4dcb55",
+          "label": "언어 다양성과 보존",
+          "normalized_label": "언어 다양성과 보존",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "언어 다양성과 보존"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b42857235ee19256",
+          "label": "데이비드 크리스탈",
+          "normalized_label": "데이비드 크리스탈",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [
+            "David Crystal"
+          ],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "데이비드 크리스탈(David Crystal), 언어학자"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-bfdbb6fb58290e28",
+          "label": "기록 및 문서화",
+          "normalized_label": "기록 및 문서화",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "기록 및 문서화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f369e927defed372",
+          "label": "보존 및 활성화 전략",
+          "normalized_label": "보존 및 활성화 전략",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "보존 및 활성화 전략"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1e355e2fc322ae84",
+          "label": "사회문화 분석",
+          "normalized_label": "사회문화 분석",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "사회문화 분석"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-73ac346e0293bb9c",
+          "label": "언어 현황 평가",
+          "normalized_label": "언어 현황 평가",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "언어 현황 평가"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8177e5ceaf2d8ea9",
+          "label": "정책 및 기술 지원",
+          "normalized_label": "정책 및 기술 지원",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "정책 및 기술 지원"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-298029875fe84108",
+          "label": "개인과 사회에 미치는 언어 다양성 보존의 의미",
+          "normalized_label": "개인과 사회에 미치는 언어 다양성 보존의 의미",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "개인과 사회에 미치는 언어 다양성 보존의 의미"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6cb24d858b382ae4",
+          "label": "소멸 위기 언어 연구와 보존 현황",
+          "normalized_label": "소멸 위기 언어 연구와 보존 현황",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "소멸 위기 언어 연구와 보존 현황"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-62ea4bb5b73b7606",
+          "label": "소멸 위기 언어 연구의 핵심 질문과 분석 체계",
+          "normalized_label": "소멸 위기 언어 연구의 핵심 질문과 분석 체계",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "소멸 위기 언어 연구의 핵심 질문과 분석 체계"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d016418c6d47a608",
+          "label": "언어 구조와 변화: 소멸 위기 언어의 특성",
+          "normalized_label": "언어 구조와 변화: 소멸 위기 언어의 특성",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "언어 구조와 변화: 소멸 위기 언어의 특성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0a8d8d1d20793fd3",
+          "label": "언어 다양성 보존의 중요성",
+          "normalized_label": "언어 다양성 보존의 중요성",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "언어 다양성 보존의 중요성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-28cbb3687642b392",
+          "label": "언어 다양성과 보존을 위한 기본 용어와 개념",
+          "normalized_label": "언어 다양성과 보존을 위한 기본 용어와 개념",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "언어 다양성과 보존을 위한 기본 용어와 개념"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-09d895db866cd2dd",
+          "label": "언어 다양성의 역사적 출발점과 소멸 과정",
+          "normalized_label": "언어 다양성의 역사적 출발점과 소멸 과정",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "언어 다양성의 역사적 출발점과 소멸 과정"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-151a4f5897a34be9",
+          "label": "언어 보존 기준과 기록·관리 방식을 중심으로",
+          "normalized_label": "언어 보존 기준과 기록·관리 방식을 중심으로",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "언어 보존 기준과 기록·관리 방식을 중심으로"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-48f86ce0f0eec361",
+          "label": "언어와 사회문화: 언어 다양성이 공동체에 미치는 영향",
+          "normalized_label": "언어와 사회문화: 언어 다양성이 공동체에 미치는 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "언어와 사회문화: 언어 다양성이 공동체에 미치는 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d28fc95a8852fa63",
+          "label": "하와이 언어 부활 운동: 소멸 위기 언어의 성공적 복원",
+          "normalized_label": "하와이 언어 부활 운동: 소멸 위기 언어의 성공적 복원",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "하와이 언어 부활 운동: 소멸 위기 언어의 성공적 복원"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fa1f0dfb1b9871f2",
+          "label": "현대의 쟁점과 미래 과제",
+          "normalized_label": "현대의 쟁점과 미래 과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[7].title",
+              "matched_text": "현대의 쟁점과 미래 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e5a7df673d7d46bf",
+          "label": "Language Death",
+          "normalized_label": "Language Death",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "Language Death"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f4bd420e9d6b1ead",
+          "label": "관련 도서·탐구 키워드·확장 주제",
+          "normalized_label": "관련 도서·탐구 키워드·확장 주제",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 관련 도서·탐구 키워드·확장 주제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-aec29d9403b8c5e3",
+          "label": "소멸 위기 언어 연구 주요 방법 비교",
+          "normalized_label": "소멸 위기 언어 연구 주요 방법 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 소멸 위기 언어 연구 주요 방법 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f075ccf7ba40d6f8",
+          "label": "하와이 언어 부활 운동의 주요 특징",
+          "normalized_label": "하와이 언어 부활 운동의 주요 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 하와이 언어 부활 운동의 주요 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-66b4a921900d780c",
+          "label": "현대 소멸 위기 언어 보존의 주요 쟁점",
+          "normalized_label": "현대 소멸 위기 언어 보존의 주요 쟁점",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 현대 소멸 위기 언어 보존의 주요 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2d4a15194ffccf25",
+          "label": "『디지털 인류학과 언어 보존』",
+          "normalized_label": "『디지털 인류학과 언어 보존』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[3].title",
+              "matched_text": "『디지털 인류학과 언어 보존』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-05a75d149872ff64",
+          "label": "『세계 언어 보고서』",
+          "normalized_label": "『세계 언어 보고서』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "『세계 언어 보고서』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3737d7b70db7f04a",
+          "label": "『언어와 문화 다양성』",
+          "normalized_label": "『언어와 문화 다양성』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "『언어와 문화 다양성』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ab014e82443e8f30",
+          "label": "사회언어학 연구 논문집",
+          "normalized_label": "사회언어학 연구 논문집",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "사회언어학 연구 논문집"
+            }
+          ]
+        }
+      ]
     }
   ],
   "shared_concepts": [
@@ -30624,27 +31178,6 @@
           ]
         },
         {
-          "report_id": "rpt-20260921-philosophy-of-ritual-rep",
-          "evidence": [
-            {
-              "reference": "sections[0].body[0]",
-              "matched_text": "정체성"
-            },
-            {
-              "reference": "sections[0].body[1]",
-              "matched_text": "정체성"
-            },
-            {
-              "reference": "sections[1].body[0]",
-              "matched_text": "정체성"
-            },
-            {
-              "reference": "sections[2].body[0]",
-              "matched_text": "정체성"
-            }
-          ]
-        },
-        {
           "report_id": "rpt-20260928-history-of-postage-stamp",
           "evidence": [
             {
@@ -30682,6 +31215,27 @@
             },
             {
               "reference": "term_box.items[2].term",
+              "matched_text": "정체성"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261010-language-diversity-conse",
+          "evidence": [
+            {
+              "reference": "abstract",
+              "matched_text": "정체성"
+            },
+            {
+              "reference": "sections[0].body[3]",
+              "matched_text": "정체성"
+            },
+            {
+              "reference": "sections[5].body[0]",
+              "matched_text": "정체성"
+            },
+            {
+              "reference": "sections[8].body[1]",
               "matched_text": "정체성"
             }
           ]
@@ -31561,7 +32115,7 @@
       "normalized_label": "분류와 권력",
       "type": "mechanism",
       "provenance": "curated-pattern-rule",
-      "report_count": 9,
+      "report_count": 10,
       "main_categories": [
         "과학·수학",
         "기술·공학",
@@ -31698,6 +32252,15 @@
             {
               "reference": "sections[6].body[0]",
               "matched_text": "권력 구조"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261010-language-diversity-conse",
+          "evidence": [
+            {
+              "reference": "sections[6].body[0]",
+              "matched_text": "분류 기준"
             }
           ]
         }

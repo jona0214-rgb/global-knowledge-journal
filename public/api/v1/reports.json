@@ -1,5 +1,21 @@
 [
   {
+    "date": "2026-10-10",
+    "title": "언어의 다양성 보존: 소멸 위기 언어는 어떻게 연구되고 있나",
+    "subtitle": "급변하는 세계에서 언어 다양성의 중요성과 보존 연구의 현황",
+    "main_category": "언어·미디어·지식",
+    "mid_category": "언어",
+    "sub_category": "언어학",
+    "detail_category": "언어 다양성과 보존",
+    "taxonomy_version": "2.0",
+    "html_path": "outputs/20261010_language_diversity_conse_Report.html",
+    "pdf_path": "outputs/20261010_language_diversity_conse_Report.pdf",
+    "status": "published_api",
+    "html_url": "outputs/20261010_language_diversity_conse_Report.html",
+    "pdf_url": "outputs/20261010_language_diversity_conse_Report.pdf",
+    "report_id": "rpt-20261010-language-diversity-conse"
+  },
+  {
     "date": "2026-10-09",
     "title": "제품 디자인에서 사용자 경험(UX)의 혁신: 기능을 넘어 감성으로",
     "subtitle": "제품 디자인에서 기능적 측면을 넘어 감성적 사용자 경험의 중요성과 혁신 동향",

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-10-09",
+  "updated_at": "2026-10-10",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -1221,6 +1221,29 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261009_product_design_ux_innova_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261009_product_design_ux_innova_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "report_id": "rpt-20261010-language-diversity-conservation-endangered-langu",
+      "date": "2026-10-10",
+      "title": "언어의 다양성 보존: 소멸 위기 언어는 어떻게 연구되고 있나",
+      "main_category": "언어·미디어·지식",
+      "mid_category": "언어",
+      "sub_category": "언어학",
+      "detail_category": "언어 다양성과 보존",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "언어 다양성",
+        "소멸 위기 언어",
+        "언어학 연구",
+        "문화 보존",
+        "언어 활성화",
+        "디지털 기록",
+        "사회언어학",
+        "언어 정책"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261010_language_diversity_conse_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261010_language_diversity_conse_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -1237,10 +1260,10 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "예술·디자인",
-    "next_main_category": "언어·미디어·지식",
-    "next_index": 9,
-    "completed_cycles": 5,
+    "last_main_category": "언어·미디어·지식",
+    "next_main_category": "인문·철학",
+    "next_index": 0,
+    "completed_cycles": 6,
     "published_counts": {
       "인문·철학": 6,
       "사회·정치·법": 5,
@@ -1251,10 +1274,9 @@
       "자연·환경·지리": 5,
       "역사·문화": 7,
       "예술·디자인": 6,
-      "언어·미디어·지식": 6
+      "언어·미디어·지식": 7
     },
     "recent_main_categories": [
-      "언어·미디어·지식",
       "인문·철학",
       "사회·정치·법",
       "경제·경영",
@@ -1263,7 +1285,8 @@
       "생명·건강",
       "자연·환경·지리",
       "역사·문화",
-      "예술·디자인"
+      "예술·디자인",
+      "언어·미디어·지식"
     ]
   },
   "candidate_pool": [
@@ -1774,7 +1797,7 @@
       "sub_category": "언어학",
       "detail_category": "언어 다양성과 보존",
       "priority": 1.0,
-      "status": "candidate",
+      "status": "used",
       "source": "api_generated"
     },
     {

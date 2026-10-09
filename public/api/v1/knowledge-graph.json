@@ -2,14 +2,14 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-10-09T05:12:41.304146+09:00",
+  "generated_at": "2026-10-10T04:53:41.120826+09:00",
   "stats": {
     "categories": 10,
-    "reports": 55,
-    "nodes": 246,
-    "edges": 330,
+    "reports": 56,
+    "nodes": 250,
+    "edges": 335,
     "concepts": 17,
-    "concept_edges": 111,
+    "concept_edges": 112,
     "semantic_edges": 0
   },
   "nodes": [
@@ -90,7 +90,7 @@
       "level": 5,
       "concept_id": "con-135ff1d8963c0c0f",
       "concept_type": "mechanism",
-      "report_count": 9,
+      "report_count": 10,
       "main_categories": [
         "과학·수학",
         "기술·공학",
@@ -570,6 +570,13 @@
       "main_category": "경제·경영"
     },
     {
+      "id": "detail:565923b7397eb282",
+      "type": "detail",
+      "label": "언어 다양성과 보존",
+      "level": 3,
+      "main_category": "언어·미디어·지식"
+    },
+    {
       "id": "detail:582058263345ef47",
       "type": "detail",
       "label": "미분류",
@@ -743,6 +750,13 @@
       "label": "투명 소재의 기술사",
       "level": 3,
       "main_category": "기술·공학"
+    },
+    {
+      "id": "middle:0513aac18de937c6",
+      "type": "middle",
+      "label": "언어",
+      "level": 1,
+      "main_category": "언어·미디어·지식"
     },
     {
       "id": "middle:07982383fd448afc",
@@ -2058,6 +2072,23 @@
       "pdf_url": "outputs/20261009_product_design_ux_innova_Report.pdf"
     },
     {
+      "id": "report:rpt-20261010-language-diversity-conse",
+      "type": "report",
+      "label": "언어의 다양성 보존: 소멸 위기 언어는 어떻게 연구되고 있나",
+      "level": 4,
+      "report_id": "rpt-20261010-language-diversity-conse",
+      "date": "2026-10-10",
+      "main_category": "언어·미디어·지식",
+      "category_path": [
+        "언어·미디어·지식",
+        "언어",
+        "언어학",
+        "언어 다양성과 보존"
+      ],
+      "html_url": "outputs/20261010_language_diversity_conse_Report.html",
+      "pdf_url": "outputs/20261010_language_diversity_conse_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -2084,6 +2115,13 @@
       "label": "산업디자인",
       "level": 2,
       "main_category": "예술·디자인"
+    },
+    {
+      "id": "sub:1e055424d9021ab2",
+      "type": "sub",
+      "label": "언어학",
+      "level": 2,
+      "main_category": "언어·미디어·지식"
     },
     {
       "id": "sub:1f80dbf7a458e748",
@@ -2502,6 +2540,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:0627b685d4d7e72b",
+      "source": "middle:0513aac18de937c6",
+      "target": "sub:1e055424d9021ab2",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:07664732ef43ea75",
       "source": "detail:e58bc47e916f76b6",
       "target": "report:rpt-20260906-vaccine-memory-how-the-i",
@@ -2533,33 +2578,6 @@
         {
           "reference": "sections[6].body[1]",
           "matched_text": "공정성"
-        }
-      ],
-      "provenance": "curated-pattern-rule"
-    },
-    {
-      "id": "edge:092f9259e0ae2361",
-      "source": "report:rpt-20260921-philosophy-of-ritual-rep",
-      "target": "concept:con-f6b070ac3797aa0b",
-      "kind": "concept",
-      "relation_type": "has_concept",
-      "score": 1.0,
-      "evidence": [
-        {
-          "reference": "sections[0].body[0]",
-          "matched_text": "정체성"
-        },
-        {
-          "reference": "sections[0].body[1]",
-          "matched_text": "정체성"
-        },
-        {
-          "reference": "sections[1].body[0]",
-          "matched_text": "정체성"
-        },
-        {
-          "reference": "sections[2].body[0]",
-          "matched_text": "정체성"
         }
       ],
       "provenance": "curated-pattern-rule"
@@ -3844,6 +3862,13 @@
       "provenance": "curated-pattern-rule"
     },
     {
+      "id": "edge:66e307f6902ac3e8",
+      "source": "sub:1e055424d9021ab2",
+      "target": "detail:565923b7397eb282",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:6796cfd7f23f7947",
       "source": "category:3fc5d02608923758",
       "target": "middle:ead100e4f8ed5e3d",
@@ -3903,6 +3928,13 @@
       "id": "edge:6a20fd4fdb7ecb08",
       "source": "category:b9ccab27f2a0689e",
       "target": "middle:a6e8bec105c6f692",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:6bab1186ab9be8cb",
+      "source": "detail:565923b7397eb282",
+      "target": "report:rpt-20261010-language-diversity-conse",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -6047,6 +6079,13 @@
       "provenance": "curated-pattern-rule"
     },
     {
+      "id": "edge:e9a1855a484f6e32",
+      "source": "category:a495d7d4da85b458",
+      "target": "middle:0513aac18de937c6",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:ea7d3a34a2408b14",
       "source": "report:rpt-20261008-jeontong-uibok-social-st",
       "target": "concept:con-135ff1d8963c0c0f",
@@ -6071,6 +6110,33 @@
       "target": "middle:205f4adc8f23b507",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:ea8ed7dfaccf7c10",
+      "source": "report:rpt-20261010-language-diversity-conse",
+      "target": "concept:con-f6b070ac3797aa0b",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "abstract",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "sections[0].body[3]",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "sections[5].body[0]",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "sections[8].body[1]",
+          "matched_text": "정체성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:eb1601b3d1d3931a",
@@ -6167,6 +6233,21 @@
       "target": "middle:2e8379a9df71842a",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:f0d798adab530994",
+      "source": "report:rpt-20261010-language-diversity-conse",
+      "target": "concept:con-135ff1d8963c0c0f",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "sections[6].body[0]",
+          "matched_text": "분류 기준"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:f182574fb21479f5",
