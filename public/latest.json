@@ -1,16 +1,16 @@
 {
-  "date": "2026-10-10",
-  "title": "언어의 다양성 보존: 소멸 위기 언어는 어떻게 연구되고 있나",
-  "subtitle": "급변하는 세계에서 언어 다양성의 중요성과 보존 연구의 현황",
-  "main_category": "언어·미디어·지식",
-  "mid_category": "언어",
-  "sub_category": "언어학",
-  "detail_category": "언어 다양성과 보존",
+  "date": "2026-10-11",
+  "title": "철학적 인식론에서 직관의 역할과 한계는 무엇인가",
+  "subtitle": "철학에서 인식의 출발점으로서 직관의 의미와 그 한계를 탐구하다",
+  "main_category": "인문·철학",
+  "mid_category": "철학",
+  "sub_category": "인식론",
+  "detail_category": "직관과 지식 형성",
   "taxonomy_version": "2.0",
-  "html_path": "outputs/20261010_language_diversity_conse_Report.html",
-  "pdf_path": "outputs/20261010_language_diversity_conse_Report.pdf",
+  "html_path": "outputs/20261011_philosophical_epistemolo_Report.html",
+  "pdf_path": "outputs/20261011_philosophical_epistemolo_Report.pdf",
   "status": "published_api",
-  "html_url": "outputs/20261010_language_diversity_conse_Report.html",
-  "pdf_url": "outputs/20261010_language_diversity_conse_Report.pdf",
-  "report_id": "rpt-20261010-language-diversity-conse"
+  "html_url": "outputs/20261011_philosophical_epistemolo_Report.html",
+  "pdf_url": "outputs/20261011_philosophical_epistemolo_Report.pdf",
+  "report_id": "rpt-20261011-philosophical-epistemolo"
 }

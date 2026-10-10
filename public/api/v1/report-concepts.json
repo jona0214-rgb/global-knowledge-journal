@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-10-10T04:53:41.120826+09:00",
+  "generated_at": "2026-10-11T03:57:39.157404+09:00",
   "stats": {
-    "reports": 56,
-    "tags": 2089,
+    "reports": 57,
+    "tags": 2124,
     "shared_concepts": 17,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -30755,6 +30755,538 @@
             {
               "reference": "further_reading[2].title",
               "matched_text": "사회언어학 연구 논문집"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "report_id": "rpt-20261011-philosophical-epistemolo",
+      "date": "2026-10-11",
+      "title": "철학적 인식론에서 직관의 역할과 한계는 무엇인가",
+      "main_category": "인문·철학",
+      "tags": [
+        {
+          "tag_id": "tag-b6f83fd8aad83096",
+          "label": "경험주의",
+          "normalized_label": "경험주의",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [
+            "Empiricism"
+          ],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "경험주의"
+            },
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "경험주의(Empiricism)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-385dbef7978fa67c",
+          "label": "인식 구조",
+          "normalized_label": "인식 구조",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "인식 구조"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c1702a486a3c30ba",
+          "label": "인식론",
+          "normalized_label": "인식론",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [
+            "Epistemology"
+          ],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "인식론"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "인식론(Epistemology)"
+            },
+            {
+              "reference": "category.sub",
+              "matched_text": "인식론"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-545e3c6e0d3638e5",
+          "label": "인지 한계",
+          "normalized_label": "인지 한계",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "인지 한계"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ba660f91be58f474",
+          "label": "지식 형성",
+          "normalized_label": "지식 형성",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "지식 형성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4178f66b8d651318",
+          "label": "직관",
+          "normalized_label": "직관",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [
+            "Intuition"
+          ],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "직관"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "직관(Intuition)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3e5af89defec2642",
+          "label": "철학",
+          "normalized_label": "철학",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "철학"
+            },
+            {
+              "reference": "category.middle",
+              "matched_text": "철학"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1f245c9c9179590a",
+          "label": "합리주의",
+          "normalized_label": "합리주의",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [
+            "Rationalism"
+          ],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "합리주의"
+            },
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "합리주의(Rationalism)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ddf21d05039f4780",
+          "label": "직관과 지식 형성",
+          "normalized_label": "직관과 지식 형성",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "직관과 지식 형성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6e251c8b140b5bf7",
+          "label": "에드문트 후설",
+          "normalized_label": "에드문트 후설",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [
+            "철학자"
+          ],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "에드문트 후설(철학자)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-404977a96a058133",
+          "label": "비판적 관리와 평가",
+          "normalized_label": "비판적 관리와 평가",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "비판적 관리와 평가"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1ab88ea2e145be05",
+          "label": "사회문화적 영향과 의미",
+          "normalized_label": "사회문화적 영향과 의미",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "사회문화적 영향과 의미"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a0bab662d4b3bf45",
+          "label": "직관 개념의 역사적 발전",
+          "normalized_label": "직관 개념의 역사적 발전",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "직관 개념의 역사적 발전"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c9e67ce78c08ede7",
+          "label": "직관의 인식 구조와 기능",
+          "normalized_label": "직관의 인식 구조와 기능",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "직관의 인식 구조와 기능"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-16c7dc939a68d388",
+          "label": "현대 쟁점과 미래 연구",
+          "normalized_label": "현대 쟁점과 미래 연구",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "현대 쟁점과 미래 연구"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f7de06e1bde12699",
+          "label": "기본 개념과 핵심 용어 이해",
+          "normalized_label": "기본 개념과 핵심 용어 이해",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "기본 개념과 핵심 용어 이해"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-06862f4d977d33a0",
+          "label": "직관 연구의 철학적·사회적 함의",
+          "normalized_label": "직관 연구의 철학적·사회적 함의",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "직관 연구의 철학적·사회적 함의"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-73087bd760a1e7dd",
+          "label": "직관에 관한 기준과 관리 방식의 변화",
+          "normalized_label": "직관에 관한 기준과 관리 방식의 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "직관에 관한 기준과 관리 방식의 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fd2f3ceb7fdf9f55",
+          "label": "직관의 구조와 인식 작동 원리",
+          "normalized_label": "직관의 구조와 인식 작동 원리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "직관의 구조와 인식 작동 원리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-bb6a5ba566792c51",
+          "label": "직관의 역사적 출발점",
+          "normalized_label": "직관의 역사적 출발점",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "직관의 역사적 출발점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-bec9eb2f24dd7922",
+          "label": "직관의 역할과 한계: 심층 분석",
+          "normalized_label": "직관의 역할과 한계: 심층 분석",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "직관의 역할과 한계: 심층 분석"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e71efc6c92984549",
+          "label": "직관의 현재적 의미와 현대 인식론",
+          "normalized_label": "직관의 현재적 의미와 현대 인식론",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "직관의 현재적 의미와 현대 인식론"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1a6a661b52cb80c8",
+          "label": "직관이 사회와 문화에 미친 영향",
+          "normalized_label": "직관이 사회와 문화에 미친 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "직관이 사회와 문화에 미친 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4c6eb25a48186281",
+          "label": "철학적 인식론과 직관의 중요성",
+          "normalized_label": "철학적 인식론과 직관의 중요성",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "철학적 인식론과 직관의 중요성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fcb33828b735d5c0",
+          "label": "칸트 철학에서 직관의 지식 형성 역할",
+          "normalized_label": "칸트 철학에서 직관의 지식 형성 역할",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "칸트 철학에서 직관의 지식 형성 역할"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2734eb73e1c746d4",
+          "label": "현대 인식론에서 직관의 쟁점과 미래 과제",
+          "normalized_label": "현대 인식론에서 직관의 쟁점과 미래 과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[7].title",
+              "matched_text": "현대 인식론에서 직관의 쟁점과 미래 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ce91940f15409e08",
+          "label": "Ideas: General Introduction to Pure Phenomenology",
+          "normalized_label": "Ideas: General Introduction to Pure Phenomenology",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "Ideas: General Introduction to Pure Phenomenology"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fdd8d005968b10a0",
+          "label": "직관 관련 철학 입장 비교",
+          "normalized_label": "직관 관련 철학 입장 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 직관 관련 철학 입장 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1e3aa8089aabdd18",
+          "label": "철학적 직관 연구 관련 도서 및 탐구 키워드",
+          "normalized_label": "철학적 직관 연구 관련 도서 및 탐구 키워드",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 철학적 직관 연구 관련 도서 및 탐구 키워드"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8d7119a5291d3949",
+          "label": "칸트 철학에서 순수 직관의 특징",
+          "normalized_label": "칸트 철학에서 순수 직관의 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 칸트 철학에서 순수 직관의 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7e1ceda8abbd94ec",
+          "label": "현대 인식론의 직관 관련 주요 쟁점",
+          "normalized_label": "현대 인식론의 직관 관련 주요 쟁점",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 현대 인식론의 직관 관련 주요 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3f0775782d23b18d",
+          "label": "Philosophy in the Flesh",
+          "normalized_label": "Philosophy in the Flesh",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "Philosophy in the Flesh"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-30506b233fbd1322",
+          "label": "The Rationality of Intuition",
+          "normalized_label": "The Rationality of Intuition",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[3].title",
+              "matched_text": "The Rationality of Intuition"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-100664252e8c4e20",
+          "label": "Thinking, Fast and Slow",
+          "normalized_label": "Thinking, Fast and Slow",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "Thinking, Fast and Slow"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-514857db5a490efc",
+          "label": "『순수 이성 비판』",
+          "normalized_label": "『순수 이성 비판』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "『순수 이성 비판』"
             }
           ]
         }

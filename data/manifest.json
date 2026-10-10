@@ -1,6 +1,22 @@
 {
-  "last_updated": "2026-10-10T04:53:41.120826+09:00",
+  "last_updated": "2026-10-11T03:57:39.157404+09:00",
   "reports": [
+    {
+      "date": "2026-10-11",
+      "title": "철학적 인식론에서 직관의 역할과 한계는 무엇인가",
+      "subtitle": "철학에서 인식의 출발점으로서 직관의 의미와 그 한계를 탐구하다",
+      "main_category": "인문·철학",
+      "mid_category": "철학",
+      "sub_category": "인식론",
+      "detail_category": "직관과 지식 형성",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20261011_philosophical_epistemolo_Report.html",
+      "pdf_path": "outputs/20261011_philosophical_epistemolo_Report.pdf",
+      "status": "published_api",
+      "html_url": "outputs/20261011_philosophical_epistemolo_Report.html",
+      "pdf_url": "outputs/20261011_philosophical_epistemolo_Report.pdf",
+      "report_id": "rpt-20261011-philosophical-epistemolo"
+    },
     {
       "date": "2026-10-10",
       "title": "언어의 다양성 보존: 소멸 위기 언어는 어떻게 연구되고 있나",

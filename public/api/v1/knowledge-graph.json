@@ -2,12 +2,12 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-10-10T04:53:41.120826+09:00",
+  "generated_at": "2026-10-11T03:57:39.157404+09:00",
   "stats": {
     "categories": 10,
-    "reports": 56,
-    "nodes": 250,
-    "edges": 335,
+    "reports": 57,
+    "nodes": 254,
+    "edges": 339,
     "concepts": 17,
     "concept_edges": 112,
     "semantic_edges": 0
@@ -379,6 +379,13 @@
       "label": "공간과 청각 경험",
       "level": 3,
       "main_category": "예술·디자인"
+    },
+    {
+      "id": "detail:0d8f33e9bdde43d8",
+      "type": "detail",
+      "label": "직관과 지식 형성",
+      "level": 3,
+      "main_category": "인문·철학"
     },
     {
       "id": "detail:0e86e35621503412",
@@ -958,6 +965,13 @@
       "id": "middle:9a840b66bd8d3d30",
       "type": "middle",
       "label": "심리철학",
+      "level": 1,
+      "main_category": "인문·철학"
+    },
+    {
+      "id": "middle:9cd5243332ac9316",
+      "type": "middle",
+      "label": "철학",
       "level": 1,
       "main_category": "인문·철학"
     },
@@ -2089,6 +2103,23 @@
       "pdf_url": "outputs/20261010_language_diversity_conse_Report.pdf"
     },
     {
+      "id": "report:rpt-20261011-philosophical-epistemolo",
+      "type": "report",
+      "label": "철학적 인식론에서 직관의 역할과 한계는 무엇인가",
+      "level": 4,
+      "report_id": "rpt-20261011-philosophical-epistemolo",
+      "date": "2026-10-11",
+      "main_category": "인문·철학",
+      "category_path": [
+        "인문·철학",
+        "철학",
+        "인식론",
+        "직관과 지식 형성"
+      ],
+      "html_url": "outputs/20261011_philosophical_epistemolo_Report.html",
+      "pdf_url": "outputs/20261011_philosophical_epistemolo_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -2316,6 +2347,13 @@
       "id": "sub:87e46684e17d53d1",
       "type": "sub",
       "label": "사회정의론",
+      "level": 2,
+      "main_category": "인문·철학"
+    },
+    {
+      "id": "sub:92dbbf32055e96c8",
+      "type": "sub",
+      "label": "인식론",
       "level": 2,
       "main_category": "인문·철학"
     },
@@ -4476,6 +4514,13 @@
       "provenance": "exact-normalized-tag"
     },
     {
+      "id": "edge:8857280dc9565cff",
+      "source": "middle:9cd5243332ac9316",
+      "target": "sub:92dbbf32055e96c8",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:88e9e6ffe13d674b",
       "source": "report:rpt-20260826-sleep-biology-brain-dail",
       "target": "concept:con-75dc266a01c9c786",
@@ -4598,6 +4643,13 @@
       "id": "edge:906957391d828098",
       "source": "detail:42275779001e8ea8",
       "target": "report:rpt-20260904-birth-of-zero-how-nothin",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:917b6632c7c5739d",
+      "source": "sub:92dbbf32055e96c8",
+      "target": "detail:0d8f33e9bdde43d8",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -5549,6 +5601,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:ca97477ef2260884",
+      "source": "detail:0d8f33e9bdde43d8",
+      "target": "report:rpt-20261011-philosophical-epistemolo",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:ca9951ac5b22a6a1",
       "source": "middle:7cd3173ab73dc489",
       "target": "sub:6be44dda3f43c742",
@@ -5735,6 +5794,13 @@
       "id": "edge:d54bf12814b701b0",
       "source": "sub:1f80dbf7a458e748",
       "target": "detail:42275779001e8ea8",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:d56dd6be66a32538",
+      "source": "category:3fc5d02608923758",
+      "target": "middle:9cd5243332ac9316",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
