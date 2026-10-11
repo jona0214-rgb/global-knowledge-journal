@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-10-11",
+  "updated_at": "2026-10-12",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -1267,6 +1267,29 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261011_philosophical_epistemolo_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261011_philosophical_epistemolo_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "report_id": "rpt-20261012-local-governance-development-resident-participat",
+      "date": "2026-10-12",
+      "title": "지방자치제도의 발전과 주민참여 정책의 효과",
+      "main_category": "사회·정치·법",
+      "mid_category": "제도와 행정",
+      "sub_category": "지방행정",
+      "detail_category": "한국 및 해외 사례를 통한 주민참여 활성화",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "지방자치제도",
+        "주민참여",
+        "행정민주주의",
+        "정책효과",
+        "참여민주주의",
+        "한국 지방자치",
+        "해외 사례",
+        "지역 공동체"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261012_local_governance_develop_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261012_local_governance_develop_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -1283,13 +1306,13 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "인문·철학",
-    "next_main_category": "사회·정치·법",
-    "next_index": 1,
+    "last_main_category": "사회·정치·법",
+    "next_main_category": "경제·경영",
+    "next_index": 2,
     "completed_cycles": 6,
     "published_counts": {
       "인문·철학": 7,
-      "사회·정치·법": 5,
+      "사회·정치·법": 6,
       "경제·경영": 5,
       "과학·수학": 5,
       "기술·공학": 6,
@@ -1300,7 +1323,6 @@
       "언어·미디어·지식": 7
     },
     "recent_main_categories": [
-      "사회·정치·법",
       "경제·경영",
       "과학·수학",
       "기술·공학",
@@ -1309,7 +1331,8 @@
       "역사·문화",
       "예술·디자인",
       "언어·미디어·지식",
-      "인문·철학"
+      "인문·철학",
+      "사회·정치·법"
     ]
   },
   "candidate_pool": [
@@ -2161,6 +2184,56 @@
       "detail_category": "의복을 통한 신분 표현과 사회 변화",
       "priority": 1.0,
       "status": "used",
+      "source": "api_generated"
+    },
+    {
+      "topic": "시민 불복종의 역사와 정치적 효과",
+      "main_category": "사회·정치·법",
+      "mid_category": "정치",
+      "sub_category": "정치행동",
+      "detail_category": "시민 불복종 사례와 영향 분석",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "법정 언어의 다양성과 법률 접근성 문제",
+      "main_category": "사회·정치·법",
+      "mid_category": "법률",
+      "sub_category": "법률언어학",
+      "detail_category": "다언어 사회에서 법률 번역과 해석의 도전",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "사회구조 변화와 고용 형태 다변화의 법제도적 대응",
+      "main_category": "사회·정치·법",
+      "mid_category": "사회구조",
+      "sub_category": "고용·노동구조",
+      "detail_category": "비정규직, 프리랜서 증가와 노동법 개혁",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "지방자치제도의 발전과 주민참여 정책의 효과",
+      "main_category": "사회·정치·법",
+      "mid_category": "제도와 행정",
+      "sub_category": "지방행정",
+      "detail_category": "한국 및 해외 사례를 통한 주민참여 활성화",
+      "priority": 1.0,
+      "status": "used",
+      "source": "api_generated"
+    },
+    {
+      "topic": "디지털 감시와 프라이버시 권리의 균형",
+      "main_category": "사회·정치·법",
+      "mid_category": "법률",
+      "sub_category": "정보법",
+      "detail_category": "국가 안보와 개인 정보 보호의 법적 충돌",
+      "priority": 1.0,
+      "status": "candidate",
       "source": "api_generated"
     }
   ],

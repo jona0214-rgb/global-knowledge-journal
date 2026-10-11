@@ -2,12 +2,12 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-10-11T03:57:39.157404+09:00",
+  "generated_at": "2026-10-12T04:15:37.135194+09:00",
   "stats": {
     "categories": 10,
-    "reports": 57,
-    "nodes": 254,
-    "edges": 339,
+    "reports": 58,
+    "nodes": 258,
+    "edges": 343,
     "concepts": 17,
     "concept_edges": 112,
     "semantic_edges": 0
@@ -710,6 +710,13 @@
       "main_category": "기술·공학"
     },
     {
+      "id": "detail:dc0300e1abd565e5",
+      "type": "detail",
+      "label": "한국 및 해외 사례를 통한 주민참여 활성화",
+      "level": 3,
+      "main_category": "사회·정치·법"
+    },
+    {
       "id": "detail:e58bc47e916f76b6",
       "type": "detail",
       "label": "면역 기억의 형성",
@@ -904,6 +911,13 @@
       "label": "기계공학",
       "level": 1,
       "main_category": "기술·공학"
+    },
+    {
+      "id": "middle:7192221e7d7c97c4",
+      "type": "middle",
+      "label": "제도와 행정",
+      "level": 1,
+      "main_category": "사회·정치·법"
     },
     {
       "id": "middle:757f6d7c48bc1a05",
@@ -2120,6 +2134,23 @@
       "pdf_url": "outputs/20261011_philosophical_epistemolo_Report.pdf"
     },
     {
+      "id": "report:rpt-20261012-local-governance-develop",
+      "type": "report",
+      "label": "지방자치제도의 발전과 주민참여 정책의 효과",
+      "level": 4,
+      "report_id": "rpt-20261012-local-governance-develop",
+      "date": "2026-10-12",
+      "main_category": "사회·정치·법",
+      "category_path": [
+        "사회·정치·법",
+        "제도와 행정",
+        "지방행정",
+        "한국 및 해외 사례를 통한 주민참여 활성화"
+      ],
+      "html_url": "outputs/20261012_local_governance_develop_Report.html",
+      "pdf_url": "outputs/20261012_local_governance_develop_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -2146,6 +2177,13 @@
       "label": "산업디자인",
       "level": 2,
       "main_category": "예술·디자인"
+    },
+    {
+      "id": "sub:1609ad7c27bfa6df",
+      "type": "sub",
+      "label": "지방행정",
+      "level": 2,
+      "main_category": "사회·정치·법"
     },
     {
       "id": "sub:1e055424d9021ab2",
@@ -3497,6 +3535,13 @@
       "id": "edge:50b8d97afce0cd3e",
       "source": "detail:3b365774a37949fa",
       "target": "report:rpt-20260909-museum-light-how-lightin",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:513574487e83088c",
+      "source": "detail:dc0300e1abd565e5",
+      "target": "report:rpt-20261012-local-governance-develop",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -5309,6 +5354,13 @@
       "provenance": "curated-pattern-rule"
     },
     {
+      "id": "edge:b61f679f4c64eb43",
+      "source": "category:b9ccab27f2a0689e",
+      "target": "middle:7192221e7d7c97c4",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:b63beb0233e14316",
       "source": "sub:0e5fbd85218ff444",
       "target": "detail:d0c58170bc66a474",
@@ -6111,6 +6163,13 @@
       "provenance": "curated-pattern-rule"
     },
     {
+      "id": "edge:e80944480edc2c69",
+      "source": "middle:7192221e7d7c97c4",
+      "target": "sub:1609ad7c27bfa6df",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:e8cecc88415dd7fe",
       "source": "report:rpt-20260903-history-of-price-tags-an",
       "target": "concept:con-39820d616e59b701",
@@ -6222,6 +6281,13 @@
       "id": "edge:ebe6e134d033b01e",
       "source": "sub:c231aa5267ad4bf0",
       "target": "detail:97581aac4d23abbc",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:ece1d5e11b6e846a",
+      "source": "sub:1609ad7c27bfa6df",
+      "target": "detail:dc0300e1abd565e5",
       "kind": "hierarchy",
       "relation_type": "contains"
     },

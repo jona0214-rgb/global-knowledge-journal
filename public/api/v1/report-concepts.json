@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-10-11T03:57:39.157404+09:00",
+  "generated_at": "2026-10-12T04:15:37.135194+09:00",
   "stats": {
-    "reports": 57,
-    "tags": 2124,
+    "reports": 58,
+    "tags": 2161,
     "shared_concepts": 17,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -31287,6 +31287,548 @@
             {
               "reference": "further_reading[0].title",
               "matched_text": "『순수 이성 비판』"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "report_id": "rpt-20261012-local-governance-develop",
+      "date": "2026-10-12",
+      "title": "지방자치제도의 발전과 주민참여 정책의 효과",
+      "main_category": "사회·정치·법",
+      "tags": [
+        {
+          "tag_id": "tag-619f0ff14c6c7568",
+          "label": "정책효과",
+          "normalized_label": "정책효과",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "정책효과"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f9f0c79b83af84d9",
+          "label": "주민참여",
+          "normalized_label": "주민참여",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "주민참여"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "주민참여"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1d8d20d70c2f101d",
+          "label": "지역 공동체",
+          "normalized_label": "지역 공동체",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "지역 공동체"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3e8f2161d8913436",
+          "label": "참여민주주의",
+          "normalized_label": "참여민주주의",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "참여민주주의"
+            },
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "참여민주주의"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6e6af314f4c2bd60",
+          "label": "한국 지방자치",
+          "normalized_label": "한국 지방자치",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "한국 지방자치"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-233b729c1d2bfa26",
+          "label": "해외 사례",
+          "normalized_label": "해외 사례",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "해외 사례"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-793ce8ec3ef844f4",
+          "label": "행정민주주의",
+          "normalized_label": "행정민주주의",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "행정민주주의"
+            },
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "행정민주주의"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-353c6137bbf1baa3",
+          "label": "지방자치제도",
+          "normalized_label": "지방자치제도",
+          "type": "institution",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "지방자치제도"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "지방자치제도"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d6e3670bebe16db0",
+          "label": "제도와 행정",
+          "normalized_label": "제도와 행정",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "제도와 행정"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7394fc7972906404",
+          "label": "지방행정",
+          "normalized_label": "지방행정",
+          "type": "domain",
+          "weight": 0.93,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.sub",
+              "matched_text": "지방행정"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-264be5e4fb886490",
+          "label": "한국 및 해외 사례를 통한 주민참여 활성화",
+          "normalized_label": "한국 및 해외 사례를 통한 주민참여 활성화",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "한국 및 해외 사례를 통한 주민참여 활성화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7087150c7a0e7183",
+          "label": "OECD 지방정부 리포트",
+          "normalized_label": "OECD 지방정부 리포트",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "OECD 지방정부 리포트"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3e8234e3b0634671",
+          "label": "디지털 참여 플랫폼 확대",
+          "normalized_label": "디지털 참여 플랫폼 확대",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "디지털 참여 플랫폼 확대"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8d104954a4ab5e6e",
+          "label": "주민참여제도 도입과 제도화",
+          "normalized_label": "주민참여제도 도입과 제도화",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "주민참여제도 도입과 제도화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c7cfaf712b18aff1",
+          "label": "중앙 집중적 행정 체제",
+          "normalized_label": "중앙 집중적 행정 체제",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "중앙 집중적 행정 체제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4a2aa2f73b126a87",
+          "label": "지방자치 법제화 및 민선 지방정부 출범",
+          "normalized_label": "지방자치 법제화 및 민선 지방정부 출범",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "지방자치 법제화 및 민선 지방정부 출범"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a304efd216525628",
+          "label": "참여 확대에 따른 정책 효과 및 평가",
+          "normalized_label": "참여 확대에 따른 정책 효과 및 평가",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "참여 확대에 따른 정책 효과 및 평가"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-bb23418beeaa6a7f",
+          "label": "기준, 규칙, 측정과 관리 방식의 진화",
+          "normalized_label": "기준, 규칙, 측정과 관리 방식의 진화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "기준, 규칙, 측정과 관리 방식의 진화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0d4475a03a9a2375",
+          "label": "사회문화적 영향과 지역공동체 강화",
+          "normalized_label": "사회문화적 영향과 지역공동체 강화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "사회문화적 영향과 지역공동체 강화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7bc6ccfc2e6cae8c",
+          "label": "제도적 작동 원리와 구조의 변화",
+          "normalized_label": "제도적 작동 원리와 구조의 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "제도적 작동 원리와 구조의 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-eefbbdb9a4de7dd8",
+          "label": "주요 개념과 기본 용어 정리",
+          "normalized_label": "주요 개념과 기본 용어 정리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "주요 개념과 기본 용어 정리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-99c460608c52420f",
+          "label": "지방자치와 주민참여의 사회적 의미와 미래 전망",
+          "normalized_label": "지방자치와 주민참여의 사회적 의미와 미래 전망",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "지방자치와 주민참여의 사회적 의미와 미래 전망"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2414f7fbd28b78fe",
+          "label": "지방자치와 주민참여의 역사적 출발점",
+          "normalized_label": "지방자치와 주민참여의 역사적 출발점",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "지방자치와 주민참여의 역사적 출발점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-69c261e119579bd0",
+          "label": "지방자치제도의 역사적 배경과 현대적 중요성",
+          "normalized_label": "지방자치제도의 역사적 배경과 현대적 중요성",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "지방자치제도의 역사적 배경과 현대적 중요성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fda210fd23cb1efb",
+          "label": "한국 행정안전부의 주민참여예산제도 사례",
+          "normalized_label": "한국 행정안전부의 주민참여예산제도 사례",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "한국 행정안전부의 주민참여예산제도 사례"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8c79659017c02c0f",
+          "label": "핵심 쟁점과 분석의 틀",
+          "normalized_label": "핵심 쟁점과 분석의 틀",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "핵심 쟁점과 분석의 틀"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1d423f7a7fc4adf0",
+          "label": "현대 지방자치 및 주민참여 정책 현황",
+          "normalized_label": "현대 지방자치 및 주민참여 정책 현황",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "현대 지방자치 및 주민참여 정책 현황"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f05a5bd0e925d772",
+          "label": "현재 쟁점과 미래 발전 과제",
+          "normalized_label": "현재 쟁점과 미래 발전 과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[7].title",
+              "matched_text": "현재 쟁점과 미래 발전 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c05994851efb8a29",
+          "label": "OECD Handbook on Multi-level Governance",
+          "normalized_label": "OECD Handbook on Multi-level Governance",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "OECD Handbook on Multi-level Governance"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f4bd420e9d6b1ead",
+          "label": "관련 도서·탐구 키워드·확장 주제",
+          "normalized_label": "관련 도서·탐구 키워드·확장 주제",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 관련 도서·탐구 키워드·확장 주제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0f23aacb9044d19d",
+          "label": "한국과 주요 해외 주민참여 제도 비교",
+          "normalized_label": "한국과 주요 해외 주민참여 제도 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 한국과 주요 해외 주민참여 제도 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3d87bd765856d776",
+          "label": "행정안전부 주민참여예산제도 핵심 특징",
+          "normalized_label": "행정안전부 주민참여예산제도 핵심 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 행정안전부 주민참여예산제도 핵심 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1c42decb1852066a",
+          "label": "현재 주민참여 정책의 주요 쟁점 및 이슈",
+          "normalized_label": "현재 주민참여 정책의 주요 쟁점 및 이슈",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 현재 주민참여 정책의 주요 쟁점 및 이슈"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1eb83ad1f80f09b8",
+          "label": "OECD 지방정부 보고서",
+          "normalized_label": "OECD 지방정부 보고서",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[4].title",
+              "matched_text": "OECD 지방정부 보고서"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-10b3ecae640870b5",
+          "label": "『Local Democracy and the Transformation of the Russian State』",
+          "normalized_label": "『Local Democracy and the Transformation of the Russian State』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "『Local Democracy and the Transformation of the Russian State』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-cf38b3581a57b291",
+          "label": "『The Oxford Handbook of Local and Regional Democracy in Europe』",
+          "normalized_label": "『The Oxford Handbook of Local and Regional Democracy in Europe』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "『The Oxford Handbook of Local and Regional Democracy in Europe』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4a7e0845bb2c645e",
+          "label": "참고 키워드: 행정민주주의, 협치, 분권화, 디지털 참여, 정책 거버넌스",
+          "normalized_label": "참고 키워드: 행정민주주의, 협치, 분권화, 디지털 참여, 정책 거버넌스",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[3].title",
+              "matched_text": "참고 키워드: 행정민주주의, 협치, 분권화, 디지털 참여, 정책 거버넌스"
             }
           ]
         }

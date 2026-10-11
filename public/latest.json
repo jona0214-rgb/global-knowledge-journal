@@ -1,16 +1,16 @@
 {
-  "date": "2026-10-11",
-  "title": "철학적 인식론에서 직관의 역할과 한계는 무엇인가",
-  "subtitle": "철학에서 인식의 출발점으로서 직관의 의미와 그 한계를 탐구하다",
-  "main_category": "인문·철학",
-  "mid_category": "철학",
-  "sub_category": "인식론",
-  "detail_category": "직관과 지식 형성",
+  "date": "2026-10-12",
+  "title": "지방자치제도의 발전과 주민참여 정책의 효과",
+  "subtitle": "지방자치의 진화와 주민의 직접 참여가 정책과 사회에 미치는 영향",
+  "main_category": "사회·정치·법",
+  "mid_category": "제도와 행정",
+  "sub_category": "지방행정",
+  "detail_category": "한국 및 해외 사례를 통한 주민참여 활성화",
   "taxonomy_version": "2.0",
-  "html_path": "outputs/20261011_philosophical_epistemolo_Report.html",
-  "pdf_path": "outputs/20261011_philosophical_epistemolo_Report.pdf",
+  "html_path": "outputs/20261012_local_governance_develop_Report.html",
+  "pdf_path": "outputs/20261012_local_governance_develop_Report.pdf",
   "status": "published_api",
-  "html_url": "outputs/20261011_philosophical_epistemolo_Report.html",
-  "pdf_url": "outputs/20261011_philosophical_epistemolo_Report.pdf",
-  "report_id": "rpt-20261011-philosophical-epistemolo"
+  "html_url": "outputs/20261012_local_governance_develop_Report.html",
+  "pdf_url": "outputs/20261012_local_governance_develop_Report.pdf",
+  "report_id": "rpt-20261012-local-governance-develop"
 }
