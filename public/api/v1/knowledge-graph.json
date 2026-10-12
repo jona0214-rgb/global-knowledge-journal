@@ -2,12 +2,12 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-10-12T04:15:37.135194+09:00",
+  "generated_at": "2026-10-13T07:17:07.561687+09:00",
   "stats": {
     "categories": 10,
-    "reports": 58,
-    "nodes": 258,
-    "edges": 343,
+    "reports": 59,
+    "nodes": 262,
+    "edges": 347,
     "concepts": 17,
     "concept_edges": 112,
     "semantic_edges": 0
@@ -682,6 +682,13 @@
       "main_category": "생명·건강"
     },
     {
+      "id": "detail:c505075bb528cf21",
+      "type": "detail",
+      "label": "생산성 연계 임금",
+      "level": 3,
+      "main_category": "경제·경영"
+    },
+    {
       "id": "detail:cfe660dfd3e02bf9",
       "type": "detail",
       "label": "알고리즘과 대중 인식",
@@ -974,6 +981,13 @@
       "label": "행정학",
       "level": 1,
       "main_category": "사회·정치·법"
+    },
+    {
+      "id": "middle:949307e3ea588e52",
+      "type": "middle",
+      "label": "노동",
+      "level": 1,
+      "main_category": "경제·경영"
     },
     {
       "id": "middle:9a840b66bd8d3d30",
@@ -2151,6 +2165,23 @@
       "pdf_url": "outputs/20261012_local_governance_develop_Report.pdf"
     },
     {
+      "id": "report:rpt-20261013-labor-wages-productivity",
+      "type": "report",
+      "label": "노동 임금과 생산성 간 역학: 경제 성장에 미치는 영향 분석",
+      "level": 4,
+      "report_id": "rpt-20261013-labor-wages-productivity",
+      "date": "2026-10-13",
+      "main_category": "경제·경영",
+      "category_path": [
+        "경제·경영",
+        "노동",
+        "임금 체계",
+        "생산성 연계 임금"
+      ],
+      "html_url": "outputs/20261013_labor_wages_productivity_Report.html",
+      "pdf_url": "outputs/20261013_labor_wages_productivity_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -2322,6 +2353,13 @@
       "id": "sub:5eb3045749326168",
       "type": "sub",
       "label": "가격 제도의 변화",
+      "level": 2,
+      "main_category": "경제·경영"
+    },
+    {
+      "id": "sub:637dd7b065713827",
+      "type": "sub",
+      "label": "임금 체계",
       "level": 2,
       "main_category": "경제·경영"
     },
@@ -2581,6 +2619,13 @@
       "provenance": "curated-pattern-rule"
     },
     {
+      "id": "edge:00dbc662a056799c",
+      "source": "sub:637dd7b065713827",
+      "target": "detail:c505075bb528cf21",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:014a59bf259cdbb1",
       "source": "sub:38cf4ac117ebd85c",
       "target": "detail:cfe660dfd3e02bf9",
@@ -2642,21 +2687,6 @@
       "target": "middle:11ad53c1ad4528cc",
       "kind": "hierarchy",
       "relation_type": "contains"
-    },
-    {
-      "id": "edge:0881b9752942ab0c",
-      "source": "report:rpt-20260920-youtube-algorithm-struct",
-      "target": "concept:con-39820d616e59b701",
-      "kind": "concept",
-      "relation_type": "has_concept",
-      "score": 0.7,
-      "evidence": [
-        {
-          "reference": "sections[6].body[1]",
-          "matched_text": "공정성"
-        }
-      ],
-      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:0a828978e947fb99",
@@ -2846,6 +2876,20 @@
       "id": "edge:1b97846e5cc31634",
       "source": "sub:f19bd4048d307156",
       "target": "detail:0e86e35621503412",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:1c68e2ab68b20472",
+      "source": "detail:c505075bb528cf21",
+      "target": "report:rpt-20261013-labor-wages-productivity",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:1f4d747bdf7b4aaa",
+      "source": "middle:949307e3ea588e52",
+      "target": "sub:637dd7b065713827",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -4481,6 +4525,33 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:84cf06dd5cd14ba5",
+      "source": "report:rpt-20261013-labor-wages-productivity",
+      "target": "concept:con-39820d616e59b701",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "sections[5].body[1]",
+          "matched_text": "공정성"
+        },
+        {
+          "reference": "sections[6].body[2]",
+          "matched_text": "공정성"
+        },
+        {
+          "reference": "sections[7].body[1]",
+          "matched_text": "공정성"
+        },
+        {
+          "reference": "sections[9].body[4]",
+          "matched_text": "공정성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:857e95db3d7ae207",
       "source": "category:52cb15e614d4481d",
       "target": "middle:c8be5258eb6b9011",
@@ -5615,6 +5686,13 @@
         }
       ],
       "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:c7e99842983d54dc",
+      "source": "category:52cb15e614d4481d",
+      "target": "middle:949307e3ea588e52",
+      "kind": "hierarchy",
+      "relation_type": "contains"
     },
     {
       "id": "edge:c835affabd4c1b2a",

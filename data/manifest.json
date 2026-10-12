@@ -1,6 +1,22 @@
 {
-  "last_updated": "2026-10-12T04:15:37.135194+09:00",
+  "last_updated": "2026-10-13T07:17:07.561687+09:00",
   "reports": [
+    {
+      "date": "2026-10-13",
+      "title": "노동 임금과 생산성 간 역학: 경제 성장에 미치는 영향 분석",
+      "subtitle": "임금과 생산성의 상호작용이 경제 발전에 미치는 복합적 영향 연구",
+      "main_category": "경제·경영",
+      "mid_category": "노동",
+      "sub_category": "임금 체계",
+      "detail_category": "생산성 연계 임금",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20261013_labor_wages_productivity_Report.html",
+      "pdf_path": "outputs/20261013_labor_wages_productivity_Report.pdf",
+      "status": "published_api",
+      "html_url": "outputs/20261013_labor_wages_productivity_Report.html",
+      "pdf_url": "outputs/20261013_labor_wages_productivity_Report.pdf",
+      "report_id": "rpt-20261013-labor-wages-productivity"
+    },
     {
       "date": "2026-10-12",
       "title": "지방자치제도의 발전과 주민참여 정책의 효과",

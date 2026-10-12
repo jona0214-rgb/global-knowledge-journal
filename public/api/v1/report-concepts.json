@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-10-12T04:15:37.135194+09:00",
+  "generated_at": "2026-10-13T07:17:07.561687+09:00",
   "stats": {
-    "reports": 58,
-    "tags": 2161,
+    "reports": 59,
+    "tags": 2195,
     "shared_concepts": 17,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -31833,6 +31833,514 @@
           ]
         }
       ]
+    },
+    {
+      "report_id": "rpt-20261013-labor-wages-productivity",
+      "date": "2026-10-13",
+      "title": "노동 임금과 생산성 간 역학: 경제 성장에 미치는 영향 분석",
+      "main_category": "경제·경영",
+      "tags": [
+        {
+          "tag_id": "tag-0da3e77dec365c29",
+          "label": "경제 성장",
+          "normalized_label": "경제 성장",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "경제 성장"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2348ea6e896bde1b",
+          "label": "노동 경제학",
+          "normalized_label": "노동 경제학",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "노동 경제학"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fa2d5cede4d07af3",
+          "label": "노동 임금",
+          "normalized_label": "노동 임금",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "노동 임금"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "노동 임금"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-13fd583a75235994",
+          "label": "생산성",
+          "normalized_label": "생산성",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "생산성"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "생산성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-84ca3716e0296b06",
+          "label": "생산성 연계 임금",
+          "normalized_label": "생산성 연계 임금",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "생산성 연계 임금"
+            },
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "생산성 연계 임금"
+            },
+            {
+              "reference": "category.detail",
+              "matched_text": "생산성 연계 임금"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-04a17317befbf35e",
+          "label": "임금 격차",
+          "normalized_label": "임금 격차",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "임금 격차"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-962938863880821f",
+          "label": "임금 체계",
+          "normalized_label": "임금 체계",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "임금 체계"
+            },
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "임금 체계"
+            },
+            {
+              "reference": "category.sub",
+              "matched_text": "임금 체계"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c1384911f8aa0e1f",
+          "label": "노동시장",
+          "normalized_label": "노동시장",
+          "type": "institution",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "노동시장"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4100f555bb97db3b",
+          "label": "노동",
+          "normalized_label": "노동",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "노동"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-eae96bb68c54d7d9",
+          "label": "피터 드러커",
+          "normalized_label": "피터 드러커",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "피터 드러커, 경영학자"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a589180d878d232f",
+          "label": "경제 성장 촉진",
+          "normalized_label": "경제 성장 촉진",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "경제 성장 촉진"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-40c806c9b5b4f234",
+          "label": "생산성 영향 요인 분석",
+          "normalized_label": "생산성 영향 요인 분석",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "생산성 영향 요인 분석"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e28bea7c71964226",
+          "label": "성과 평가 및 보상",
+          "normalized_label": "성과 평가 및 보상",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "성과 평가 및 보상"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-21c04f375dd6ca77",
+          "label": "임금 체계 설정",
+          "normalized_label": "임금 체계 설정",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "임금 체계 설정"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1807d54911df0013",
+          "label": "임금-생산성 연계 설계",
+          "normalized_label": "임금-생산성 연계 설계",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "임금-생산성 연계 설계"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-00d7d30982447d32",
+          "label": "경제·사회·문화에서의 임금과 생산성 영향",
+          "normalized_label": "경제·사회·문화에서의 임금과 생산성 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "경제·사회·문화에서의 임금과 생산성 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-455cdd86576eab3f",
+          "label": "노동 임금과 생산성: 경제 성장의 쌍두마차",
+          "normalized_label": "노동 임금과 생산성: 경제 성장의 쌍두마차",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "노동 임금과 생산성: 경제 성장의 쌍두마차"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a5b72b9eeda559e9",
+          "label": "노동 임금과 생산성: 현대 경제에서의 현실과 변화",
+          "normalized_label": "노동 임금과 생산성: 현대 경제에서의 현실과 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "노동 임금과 생산성: 현대 경제에서의 현실과 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-77135057661e4ed7",
+          "label": "노동 임금과 생산성의 기초 개념",
+          "normalized_label": "노동 임금과 생산성의 기초 개념",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "노동 임금과 생산성의 기초 개념"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-73ae2015f5537337",
+          "label": "임금 및 생산성 관리와 측정의 진화",
+          "normalized_label": "임금 및 생산성 관리와 측정의 진화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "임금 및 생산성 관리와 측정의 진화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ad462ffb78b7fa3e",
+          "label": "임금 체계와 생산성 연계의 구조적 변화",
+          "normalized_label": "임금 체계와 생산성 연계의 구조적 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "임금 체계와 생산성 연계의 구조적 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a9b8a12ed980d0a0",
+          "label": "임금과 생산성 관계의 역사적 기원",
+          "normalized_label": "임금과 생산성 관계의 역사적 기원",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "임금과 생산성 관계의 역사적 기원"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b188b06809acb38a",
+          "label": "임금과 생산성: 핵심 질문과 다섯 가지 심층 분석",
+          "normalized_label": "임금과 생산성: 핵심 질문과 다섯 가지 심층 분석",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "임금과 생산성: 핵심 질문과 다섯 가지 심층 분석"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e601a2baa07b76e7",
+          "label": "임금과 생산성이 개인과 사회에 주는 시사점",
+          "normalized_label": "임금과 생산성이 개인과 사회에 주는 시사점",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "임금과 생산성이 개인과 사회에 주는 시사점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-50414a85042cc0b8",
+          "label": "핀란드의 생산성 연계 임금 도입 사례",
+          "normalized_label": "핀란드의 생산성 연계 임금 도입 사례",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "핀란드의 생산성 연계 임금 도입 사례"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-db6a275a6748839d",
+          "label": "현대 임금 생산성 쟁점과 미래 방향",
+          "normalized_label": "현대 임금 생산성 쟁점과 미래 방향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[7].title",
+              "matched_text": "현대 임금 생산성 쟁점과 미래 방향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-70c99eeaec06917b",
+          "label": "Management Challenges for the 21st Century",
+          "normalized_label": "Management Challenges for the 21st Century",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "Management Challenges for the 21st Century"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f4bd420e9d6b1ead",
+          "label": "관련 도서·탐구 키워드·확장 주제",
+          "normalized_label": "관련 도서·탐구 키워드·확장 주제",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 관련 도서·탐구 키워드·확장 주제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1024a221904e7e69",
+          "label": "임금 체계 유형별 특징 비교",
+          "normalized_label": "임금 체계 유형별 특징 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 임금 체계 유형별 특징 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-df839a79bf238fc9",
+          "label": "핀란드 생산성 연계 임금 사례 특성",
+          "normalized_label": "핀란드 생산성 연계 임금 사례 특성",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 핀란드 생산성 연계 임금 사례 특성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e39141c15d1d53e4",
+          "label": "현대 임금과 생산성 관련 주요 쟁점",
+          "normalized_label": "현대 임금과 생산성 관련 주요 쟁점",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 현대 임금과 생산성 관련 주요 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d3e15fd18a4603af",
+          "label": "Labor Economics: Theory, Evidence, and Policy",
+          "normalized_label": "Labor Economics: Theory, Evidence, and Policy",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "Labor Economics: Theory, Evidence, and Policy"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1d6ac03d417fd673",
+          "label": "The Productivity Puzzle",
+          "normalized_label": "The Productivity Puzzle",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "The Productivity Puzzle"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-cdc3505163d6e81e",
+          "label": "Wage Policy and Economic Growth",
+          "normalized_label": "Wage Policy and Economic Growth",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "Wage Policy and Economic Growth"
+            }
+          ]
+        }
+      ]
     }
   ],
   "shared_concepts": [
@@ -31994,15 +32502,6 @@
           ]
         },
         {
-          "report_id": "rpt-20260920-youtube-algorithm-struct",
-          "evidence": [
-            {
-              "reference": "sections[6].body[1]",
-              "matched_text": "공정성"
-            }
-          ]
-        },
-        {
           "report_id": "rpt-20260922-welfare-state-design-soc",
           "evidence": [
             {
@@ -32040,6 +32539,27 @@
             },
             {
               "reference": "keywords[2]",
+              "matched_text": "공정성"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261013-labor-wages-productivity",
+          "evidence": [
+            {
+              "reference": "sections[5].body[1]",
+              "matched_text": "공정성"
+            },
+            {
+              "reference": "sections[6].body[2]",
+              "matched_text": "공정성"
+            },
+            {
+              "reference": "sections[7].body[1]",
+              "matched_text": "공정성"
+            },
+            {
+              "reference": "sections[9].body[4]",
               "matched_text": "공정성"
             }
           ]
