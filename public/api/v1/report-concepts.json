@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-10-13T07:17:07.561687+09:00",
+  "generated_at": "2026-10-14T05:27:53.177433+09:00",
   "stats": {
-    "reports": 59,
-    "tags": 2195,
+    "reports": 60,
+    "tags": 2232,
     "shared_concepts": 17,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -32341,6 +32341,554 @@
           ]
         }
       ]
+    },
+    {
+      "report_id": "rpt-20261014-quantum-computing-and-in",
+      "date": "2026-10-14",
+      "title": "양자컴퓨팅과 정보 이론: 물리학이 재정의하는 계산의 미래",
+      "main_category": "과학·수학",
+      "tags": [
+        {
+          "tag_id": "tag-bd6afab6e7b3f70c",
+          "label": "양자 얽힘",
+          "normalized_label": "양자 얽힘",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [
+            "Quantum Entanglement"
+          ],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "양자 얽힘"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "양자 얽힘(Quantum Entanglement)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-bb4e55f490dfcce1",
+          "label": "양자역학",
+          "normalized_label": "양자역학",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "양자역학"
+            },
+            {
+              "reference": "category.sub",
+              "matched_text": "양자역학"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-404e93446b62a129",
+          "label": "양자컴퓨팅",
+          "normalized_label": "양자컴퓨팅",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "양자컴퓨팅"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-201239f45acfbaa6",
+          "label": "정보 보안",
+          "normalized_label": "정보 보안",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "정보 보안"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-acfd8ed58da421f7",
+          "label": "퀀텀 비트",
+          "normalized_label": "퀀텀 비트",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "퀀텀 비트"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-55743d28edb55e7d",
+          "label": "큐비트",
+          "normalized_label": "큐비트",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [
+            "Qubit"
+          ],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "큐비트"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "큐비트(Qubit)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5eb320ef846ebf28",
+          "label": "정보 이론",
+          "normalized_label": "정보 이론",
+          "type": "method",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "정보 이론"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-835e1c481d4fac75",
+          "label": "양자 알고리즘",
+          "normalized_label": "양자 알고리즘",
+          "type": "technology",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "양자 알고리즘"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-029e24fbae175bed",
+          "label": "양자 디코히런스",
+          "normalized_label": "양자 디코히런스",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "양자 디코히런스"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6aa1477968661d55",
+          "label": "양자 암호화",
+          "normalized_label": "양자 암호화",
+          "type": "technology",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "양자 암호화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ed9413ff91ca5bd2",
+          "label": "물리",
+          "normalized_label": "물리",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "물리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5a6018870414e880",
+          "label": "양자정보과학",
+          "normalized_label": "양자정보과학",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "양자정보과학"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-84fcff46192e96ab",
+          "label": "리처드 파인만",
+          "normalized_label": "리처드 파인만",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [
+            "물리학자"
+          ],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "리처드 파인만 (물리학자)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-24318598e6b13389",
+          "label": "양자 게이트와 회로 구성",
+          "normalized_label": "양자 게이트와 회로 구성",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "양자 게이트와 회로 구성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3dcde27e3db3b6b8",
+          "label": "양자 알고리즘 실행",
+          "normalized_label": "양자 알고리즘 실행",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "양자 알고리즘 실행"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-576033d76d09bebb",
+          "label": "양자역학 원리 이해",
+          "normalized_label": "양자역학 원리 이해",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "양자역학 원리 이해"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-52aa17f398ebdd4b",
+          "label": "정보 측정과 해석",
+          "normalized_label": "정보 측정과 해석",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "정보 측정과 해석"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-60ac6ac57a19afc4",
+          "label": "큐비트 및 중첩 상태 형성",
+          "normalized_label": "큐비트 및 중첩 상태 형성",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "큐비트 및 중첩 상태 형성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d3ec703a76e680aa",
+          "label": "구글의 양자 우위 선언과 그 영향",
+          "normalized_label": "구글의 양자 우위 선언과 그 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "구글의 양자 우위 선언과 그 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e0af56aed971d386",
+          "label": "사회·문화적 영향과 응용 분야",
+          "normalized_label": "사회·문화적 영향과 응용 분야",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "사회·문화적 영향과 응용 분야"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f4d97250d0ad903a",
+          "label": "양자 정보 처리와 작동 원리",
+          "normalized_label": "양자 정보 처리와 작동 원리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "양자 정보 처리와 작동 원리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6597af83119f46d9",
+          "label": "양자컴퓨팅 기술의 현주소와 도전",
+          "normalized_label": "양자컴퓨팅 기술의 현주소와 도전",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "양자컴퓨팅 기술의 현주소와 도전"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-740e21663529b422",
+          "label": "양자컴퓨팅 기준과 측정, 관리 방식",
+          "normalized_label": "양자컴퓨팅 기준과 측정, 관리 방식",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "양자컴퓨팅 기준과 측정, 관리 방식"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7a3fd5b18eed9048",
+          "label": "양자컴퓨팅과 정보 이론: 새로운 계산 혁명의 서막",
+          "normalized_label": "양자컴퓨팅과 정보 이론: 새로운 계산 혁명의 서막",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "양자컴퓨팅과 정보 이론: 새로운 계산 혁명의 서막"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-860bd26a45fad84a",
+          "label": "양자컴퓨팅과 정보 이론의 기초 개념과 용어",
+          "normalized_label": "양자컴퓨팅과 정보 이론의 기초 개념과 용어",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "양자컴퓨팅과 정보 이론의 기초 개념과 용어"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0ea9d1be3fa2699e",
+          "label": "양자컴퓨팅과 정보 이론의 핵심 질문과 심층 분석",
+          "normalized_label": "양자컴퓨팅과 정보 이론의 핵심 질문과 심층 분석",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "양자컴퓨팅과 정보 이론의 핵심 질문과 심층 분석"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c6642b14c93a804e",
+          "label": "양자컴퓨팅과 정보 이론이 우리 삶과 사회에 미치는 영향",
+          "normalized_label": "양자컴퓨팅과 정보 이론이 우리 삶과 사회에 미치는 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "양자컴퓨팅과 정보 이론이 우리 삶과 사회에 미치는 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-482ffc0c69f9c4c5",
+          "label": "양자컴퓨팅의 역사와 기원",
+          "normalized_label": "양자컴퓨팅의 역사와 기원",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "양자컴퓨팅의 역사와 기원"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f6621d53d11feadf",
+          "label": "현재 쟁점과 미래 도전 과제",
+          "normalized_label": "현재 쟁점과 미래 도전 과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[7].title",
+              "matched_text": "현재 쟁점과 미래 도전 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7cb23dd18ccc1d47",
+          "label": "Quantum Computation and Quantum Information",
+          "normalized_label": "Quantum Computation and Quantum Information",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "Quantum Computation and Quantum Information"
+            },
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "Quantum Computation and Quantum Information"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-230bc07705b7cf5f",
+          "label": "고전 컴퓨팅과 양자컴퓨팅 비교",
+          "normalized_label": "고전 컴퓨팅과 양자컴퓨팅 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 고전 컴퓨팅과 양자컴퓨팅 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c9ffa504a391c234",
+          "label": "구글 Sycamore 양자 우위 시험의 특징",
+          "normalized_label": "구글 Sycamore 양자 우위 시험의 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 구글 Sycamore 양자 우위 시험의 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d0a20126b6feacda",
+          "label": "양자컴퓨팅과 정보 이론 관련 참고 자료",
+          "normalized_label": "양자컴퓨팅과 정보 이론 관련 참고 자료",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 양자컴퓨팅과 정보 이론 관련 참고 자료"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9a1216ac7aaad091",
+          "label": "현재 양자컴퓨팅의 주요 기술적 쟁점",
+          "normalized_label": "현재 양자컴퓨팅의 주요 기술적 쟁점",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 현재 양자컴퓨팅의 주요 기술적 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fa6f3e6dc0596f1d",
+          "label": "Quantum Information Theory",
+          "normalized_label": "Quantum Information Theory",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "Quantum Information Theory"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-146cb98c96333963",
+          "label": "Quantum Mechanics: The Theoretical Minimum",
+          "normalized_label": "Quantum Mechanics: The Theoretical Minimum",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[3].title",
+              "matched_text": "Quantum Mechanics: The Theoretical Minimum"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-dfe1d2320fc1ee8b",
+          "label": "The Age of Entanglement",
+          "normalized_label": "The Age of Entanglement",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "The Age of Entanglement"
+            }
+          ]
+        }
+      ]
     }
   ],
   "shared_concepts": [
@@ -32846,7 +33394,6 @@
       "main_categories": [
         "경제·경영",
         "과학·수학",
-        "기술·공학",
         "사회·정치·법",
         "역사·문화",
         "인문·철학",
@@ -32952,15 +33499,6 @@
           ]
         },
         {
-          "report_id": "rpt-20260915-jeollyeongmang-balancing",
-          "evidence": [
-            {
-              "reference": "sections[6].body[1]",
-              "matched_text": "불확실성"
-            }
-          ]
-        },
-        {
           "report_id": "rpt-20260917-river-memory-meandering",
           "evidence": [
             {
@@ -33050,6 +33588,19 @@
             {
               "reference": "sections[1].body[1]",
               "matched_text": "초기 조건의 민감성"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261014-quantum-computing-and-in",
+          "evidence": [
+            {
+              "reference": "sections[7].body[0]",
+              "matched_text": "불확실성"
+            },
+            {
+              "reference": "sections[9].body[4]",
+              "matched_text": "불확실성"
             }
           ]
         }

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-10-13",
+  "updated_at": "2026-10-14",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -1313,6 +1313,29 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261013_labor_wages_productivity_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261013_labor_wages_productivity_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "report_id": "rpt-20261014-quantum-computing-and-information-theory",
+      "date": "2026-10-14",
+      "title": "양자컴퓨팅과 정보 이론: 물리학이 재정의하는 계산의 미래",
+      "main_category": "과학·수학",
+      "mid_category": "물리",
+      "sub_category": "양자역학",
+      "detail_category": "양자정보과학",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "양자컴퓨팅",
+        "정보 이론",
+        "양자역학",
+        "퀀텀 비트",
+        "양자 얽힘",
+        "양자 알고리즘",
+        "정보 보안",
+        "큐비트"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261014_quantum_computing_and_in_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261014_quantum_computing_and_in_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -1329,15 +1352,15 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "경제·경영",
-    "next_main_category": "과학·수학",
-    "next_index": 3,
+    "last_main_category": "과학·수학",
+    "next_main_category": "기술·공학",
+    "next_index": 4,
     "completed_cycles": 6,
     "published_counts": {
       "인문·철학": 7,
       "사회·정치·법": 6,
       "경제·경영": 6,
-      "과학·수학": 5,
+      "과학·수학": 6,
       "기술·공학": 6,
       "생명·건강": 5,
       "자연·환경·지리": 5,
@@ -1346,7 +1369,6 @@
       "언어·미디어·지식": 7
     },
     "recent_main_categories": [
-      "과학·수학",
       "기술·공학",
       "생명·건강",
       "자연·환경·지리",
@@ -1355,7 +1377,8 @@
       "언어·미디어·지식",
       "인문·철학",
       "사회·정치·법",
-      "경제·경영"
+      "경제·경영",
+      "과학·수학"
     ]
   },
   "candidate_pool": [
@@ -2255,6 +2278,56 @@
       "mid_category": "법률",
       "sub_category": "정보법",
       "detail_category": "국가 안보와 개인 정보 보호의 법적 충돌",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "양자컴퓨팅과 정보 이론: 물리학이 재정의하는 계산의 미래",
+      "main_category": "과학·수학",
+      "mid_category": "물리",
+      "sub_category": "양자역학",
+      "detail_category": "양자정보과학",
+      "priority": 1.0,
+      "status": "used",
+      "source": "api_generated"
+    },
+    {
+      "topic": "화학 반응 속도론의 이해: 촉매는 어떻게 반응을 가속하는가",
+      "main_category": "과학·수학",
+      "mid_category": "화학",
+      "sub_category": "물리화학",
+      "detail_category": "촉매 작용 메커니즘",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "별의 진화: 수소 핵융합에서 초신성까지 우주의 거대한 순환",
+      "main_category": "과학·수학",
+      "mid_category": "천문",
+      "sub_category": "성운과 별",
+      "detail_category": "별의 수명과 진화 단계",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "수학적 귀납법과 논리: 과학적 사고의 근간을 이루는 증명의 힘",
+      "main_category": "과학·수학",
+      "mid_category": "수학과 과학적 사고",
+      "sub_category": "수학 논리",
+      "detail_category": "증명 기법과 사고력 향상",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "과학적 모델링의 원리와 한계: 복잡계 이해를 위한 도구로서의 수학",
+      "main_category": "과학·수학",
+      "mid_category": "수학과 과학적 사고",
+      "sub_category": "과학 방법론",
+      "detail_category": "수학적 모델링과 시뮬레이션",
       "priority": 1.0,
       "status": "candidate",
       "source": "api_generated"

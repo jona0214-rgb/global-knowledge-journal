@@ -2,12 +2,12 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-10-13T07:17:07.561687+09:00",
+  "generated_at": "2026-10-14T05:27:53.177433+09:00",
   "stats": {
     "categories": 10,
-    "reports": 59,
-    "nodes": 262,
-    "edges": 347,
+    "reports": 60,
+    "nodes": 266,
+    "edges": 351,
     "concepts": 17,
     "concept_edges": 112,
     "semantic_edges": 0
@@ -127,7 +127,6 @@
       "main_categories": [
         "경제·경영",
         "과학·수학",
-        "기술·공학",
         "사회·정치·법",
         "역사·문화",
         "인문·철학",
@@ -365,6 +364,13 @@
       "label": "역삼투 공정과 에너지",
       "level": 3,
       "main_category": "기술·공학"
+    },
+    {
+      "id": "detail:01587145e11a92d9",
+      "type": "detail",
+      "label": "양자정보과학",
+      "level": 3,
+      "main_category": "과학·수학"
     },
     {
       "id": "detail:080dd9b47a474067",
@@ -1002,6 +1008,13 @@
       "label": "철학",
       "level": 1,
       "main_category": "인문·철학"
+    },
+    {
+      "id": "middle:a1f31271f0d82e58",
+      "type": "middle",
+      "label": "물리",
+      "level": 1,
+      "main_category": "과학·수학"
     },
     {
       "id": "middle:a6e8bec105c6f692",
@@ -2182,6 +2195,23 @@
       "pdf_url": "outputs/20261013_labor_wages_productivity_Report.pdf"
     },
     {
+      "id": "report:rpt-20261014-quantum-computing-and-in",
+      "type": "report",
+      "label": "양자컴퓨팅과 정보 이론: 물리학이 재정의하는 계산의 미래",
+      "level": 4,
+      "report_id": "rpt-20261014-quantum-computing-and-in",
+      "date": "2026-10-14",
+      "main_category": "과학·수학",
+      "category_path": [
+        "과학·수학",
+        "물리",
+        "양자역학",
+        "양자정보과학"
+      ],
+      "html_url": "outputs/20261014_quantum_computing_and_in_Report.html",
+      "pdf_url": "outputs/20261014_quantum_computing_and_in_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -2453,6 +2483,13 @@
       "label": "향신료와 해상무역",
       "level": 2,
       "main_category": "역사·문화"
+    },
+    {
+      "id": "sub:a1190e4b9aa3df96",
+      "type": "sub",
+      "label": "양자역학",
+      "level": 2,
+      "main_category": "과학·수학"
     },
     {
       "id": "sub:aa99a5bde5efdccf",
@@ -3682,6 +3719,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:56e04d11a7ac4e63",
+      "source": "sub:a1190e4b9aa3df96",
+      "target": "detail:01587145e11a92d9",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:57c4e40b74a72550",
       "source": "report:rpt-20260912-baesimwonui-pandan-simin",
       "target": "concept:con-39820d616e59b701",
@@ -3714,21 +3758,6 @@
       "target": "report:rpt-20260915-jeollyeongmang-balancing",
       "kind": "hierarchy",
       "relation_type": "contains"
-    },
-    {
-      "id": "edge:57e4a4e5f8c36345",
-      "source": "report:rpt-20260915-jeollyeongmang-balancing",
-      "target": "concept:con-22940219024d252e",
-      "kind": "concept",
-      "relation_type": "has_concept",
-      "score": 0.7,
-      "evidence": [
-        {
-          "reference": "sections[6].body[1]",
-          "matched_text": "불확실성"
-        }
-      ],
-      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:58049411714a72bf",
@@ -4045,6 +4074,13 @@
       "provenance": "curated-pattern-rule"
     },
     {
+      "id": "edge:69cac11dcdd89397",
+      "source": "middle:a1f31271f0d82e58",
+      "target": "sub:a1190e4b9aa3df96",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:6a14667ad1979262",
       "source": "sub:d1c4b572c935c483",
       "target": "detail:fa6a80f10d49067b",
@@ -4214,6 +4250,13 @@
       "id": "edge:7271984fbf12fbb2",
       "source": "sub:6e86a1e020e410cb",
       "target": "detail:e58e72b2309f3108",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:7288da7716318aa3",
+      "source": "detail:01587145e11a92d9",
+      "target": "report:rpt-20261014-quantum-computing-and-in",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -4494,6 +4537,25 @@
         {
           "reference": "sections[9].body[2]",
           "matched_text": "에너지 효율"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:838466cc407c66e5",
+      "source": "report:rpt-20261014-quantum-computing-and-in",
+      "target": "concept:con-22940219024d252e",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.8,
+      "evidence": [
+        {
+          "reference": "sections[7].body[0]",
+          "matched_text": "불확실성"
+        },
+        {
+          "reference": "sections[9].body[4]",
+          "matched_text": "불확실성"
         }
       ],
       "provenance": "curated-pattern-rule"
@@ -6064,6 +6126,13 @@
       "id": "edge:de5c4c563b17aa69",
       "source": "sub:2c44356b006ae72e",
       "target": "detail:15a0b1b8a846dda1",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:de97326dc5e37d29",
+      "source": "category:c135b09622b60562",
+      "target": "middle:a1f31271f0d82e58",
       "kind": "hierarchy",
       "relation_type": "contains"
     },

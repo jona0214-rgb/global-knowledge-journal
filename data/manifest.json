@@ -1,6 +1,22 @@
 {
-  "last_updated": "2026-10-13T07:17:07.561687+09:00",
+  "last_updated": "2026-10-14T05:27:53.177433+09:00",
   "reports": [
+    {
+      "date": "2026-10-14",
+      "title": "양자컴퓨팅과 정보 이론: 물리학이 재정의하는 계산의 미래",
+      "subtitle": "양자역학 원리가 컴퓨팅과 정보 처리 방식을 어떻게 혁신하는가",
+      "main_category": "과학·수학",
+      "mid_category": "물리",
+      "sub_category": "양자역학",
+      "detail_category": "양자정보과학",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20261014_quantum_computing_and_in_Report.html",
+      "pdf_path": "outputs/20261014_quantum_computing_and_in_Report.pdf",
+      "status": "published_api",
+      "html_url": "outputs/20261014_quantum_computing_and_in_Report.html",
+      "pdf_url": "outputs/20261014_quantum_computing_and_in_Report.pdf",
+      "report_id": "rpt-20261014-quantum-computing-and-in"
+    },
     {
       "date": "2026-10-13",
       "title": "노동 임금과 생산성 간 역학: 경제 성장에 미치는 영향 분석",
