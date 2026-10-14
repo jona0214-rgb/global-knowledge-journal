@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-10-14T05:27:53.177433+09:00",
+  "generated_at": "2026-10-15T03:57:52.024850+09:00",
   "stats": {
-    "reports": 60,
-    "tags": 2232,
+    "reports": 61,
+    "tags": 2272,
     "shared_concepts": 17,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -32889,6 +32889,578 @@
           ]
         }
       ]
+    },
+    {
+      "report_id": "rpt-20261015-renewable-energy-storage",
+      "date": "2026-10-15",
+      "title": "재생 에너지 저장 기술의 진화와 도전 과제",
+      "main_category": "기술·공학",
+      "tags": [
+        {
+          "tag_id": "tag-358b1a4d379b8b68",
+          "label": "미래 에너지",
+          "normalized_label": "미래 에너지",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "미래 에너지"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2e39e9367f7817f0",
+          "label": "에너지 저장",
+          "normalized_label": "에너지 저장",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "에너지 저장"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ff467abcebc91e2d",
+          "label": "에너지 전환",
+          "normalized_label": "에너지 전환",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "에너지 전환"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fc131feead283ab5",
+          "label": "재생 에너지",
+          "normalized_label": "재생 에너지",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "재생 에너지"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "재생 에너지"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-96835a5f748ede9b",
+          "label": "에너지 효율",
+          "normalized_label": "에너지 효율",
+          "type": "outcome",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "에너지 효율"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0b79738783ed7ebd",
+          "label": "전력망 안정화",
+          "normalized_label": "전력망 안정화",
+          "type": "outcome",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "전력망 안정화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e0ea961f1d248997",
+          "label": "배터리 기술",
+          "normalized_label": "배터리 기술",
+          "type": "technology",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "배터리 기술"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-42e67bc7c761bfa4",
+          "label": "친환경 기술",
+          "normalized_label": "친환경 기술",
+          "type": "technology",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "친환경 기술"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-950c882afc63184d",
+          "label": "전력망 안정성",
+          "normalized_label": "전력망 안정성",
+          "type": "outcome",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "전력망 안정성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-29f695eda9c67604",
+          "label": "배터리",
+          "normalized_label": "배터리",
+          "type": "technology",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "배터리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9d5addd128e59de2",
+          "label": "에너지 밀도",
+          "normalized_label": "에너지 밀도",
+          "type": "technology",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "에너지 밀도"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fd57cd8f2764b1c2",
+          "label": "에너지",
+          "normalized_label": "에너지",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "에너지"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3a0b5544698f9b62",
+          "label": "신재생 에너지",
+          "normalized_label": "신재생 에너지",
+          "type": "domain",
+          "weight": 0.93,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.sub",
+              "matched_text": "신재생 에너지"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-399b59052171d4c9",
+          "label": "배터리 및 저장 시스템 혁신",
+          "normalized_label": "배터리 및 저장 시스템 혁신",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "배터리 및 저장 시스템 혁신"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-77f361a7ed1a2ddc",
+          "label": "국제에너지기구(IEA) 보고서",
+          "normalized_label": "국제에너지기구(IEA) 보고서",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "국제에너지기구(IEA) 보고서"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b59b5f978abe026d",
+          "label": "기술 초기 수력 저장",
+          "normalized_label": "기술 초기 수력 저장",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "기술 초기 수력 저장"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6823a5f8d7851250",
+          "label": "미래형 대용량 저장 기술",
+          "normalized_label": "미래형 대용량 저장 기술",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "미래형 대용량 저장 기술"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c5fb88326f2d76b1",
+          "label": "스마트 그리드와 제어 발전",
+          "normalized_label": "스마트 그리드와 제어 발전",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "스마트 그리드와 제어 발전"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2e2f07ab25da3265",
+          "label": "재생 에너지 통합 증가",
+          "normalized_label": "재생 에너지 통합 증가",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "재생 에너지 통합 증가"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0209b4833b44de7f",
+          "label": "전기화학 배터리 개발",
+          "normalized_label": "전기화학 배터리 개발",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "전기화학 배터리 개발"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-636d3fa027a66298",
+          "label": "에너지 저장 기술의 구조와 작동 원리",
+          "normalized_label": "에너지 저장 기술의 구조와 작동 원리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "에너지 저장 기술의 구조와 작동 원리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-17d1744167b4929d",
+          "label": "에너지 저장 성능 기준과 관리 체계의 변화",
+          "normalized_label": "에너지 저장 성능 기준과 관리 체계의 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "에너지 저장 성능 기준과 관리 체계의 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1136f558b2d017c3",
+          "label": "재생 에너지 저장 기술 분석: 핵심 질문과 세부 탐구",
+          "normalized_label": "재생 에너지 저장 기술 분석: 핵심 질문과 세부 탐구",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "재생 에너지 저장 기술 분석: 핵심 질문과 세부 탐구"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d08febaa1bb66ae1",
+          "label": "재생 에너지 저장 기술의 기본 개념과 용어",
+          "normalized_label": "재생 에너지 저장 기술의 기본 개념과 용어",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "재생 에너지 저장 기술의 기본 개념과 용어"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ad62de1b0841bee7",
+          "label": "재생 에너지 저장 기술의 역사적 기원",
+          "normalized_label": "재생 에너지 저장 기술의 역사적 기원",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "재생 에너지 저장 기술의 역사적 기원"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fa0995bd1dd907ce",
+          "label": "재생 에너지 저장 기술의 중요성과 부상 배경",
+          "normalized_label": "재생 에너지 저장 기술의 중요성과 부상 배경",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "재생 에너지 저장 기술의 중요성과 부상 배경"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-822a14f8acc30f9e",
+          "label": "재생 에너지 저장 기술의 현재 동향과 문제점",
+          "normalized_label": "재생 에너지 저장 기술의 현재 동향과 문제점",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "재생 에너지 저장 기술의 현재 동향과 문제점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-bd02880c1f9c3780",
+          "label": "재생 에너지 저장 기술이 개인과 사회에 주는 의미",
+          "normalized_label": "재생 에너지 저장 기술이 개인과 사회에 주는 의미",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "재생 에너지 저장 기술이 개인과 사회에 주는 의미"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-63d0b990f4fcad4c",
+          "label": "재생 에너지 저장 기술이 사회에 미친 영향",
+          "normalized_label": "재생 에너지 저장 기술이 사회에 미친 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "재생 에너지 저장 기술이 사회에 미친 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f6621d53d11feadf",
+          "label": "현재 쟁점과 미래 도전 과제",
+          "normalized_label": "현재 쟁점과 미래 도전 과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[7].title",
+              "matched_text": "현재 쟁점과 미래 도전 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-347cfc985a333add",
+          "label": "호주 대규모 에너지 저장 프로젝트 사례 분석",
+          "normalized_label": "호주 대규모 에너지 저장 프로젝트 사례 분석",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "호주 대규모 에너지 저장 프로젝트 사례 분석"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-db8e4d1facebb010",
+          "label": "Global Energy Storage Report 2025",
+          "normalized_label": "Global Energy Storage Report 2025",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "Global Energy Storage Report 2025"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1a83060d62ac9bb5",
+          "label": "더 읽을거리: 도서, 탐구 키워드, 확장 주제",
+          "normalized_label": "더 읽을거리: 도서, 탐구 키워드, 확장 주제",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 더 읽을거리: 도서, 탐구 키워드, 확장 주제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-db76f1facd71d6f5",
+          "label": "재생 에너지 저장 기술 현재 쟁점",
+          "normalized_label": "재생 에너지 저장 기술 현재 쟁점",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 재생 에너지 저장 기술 현재 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1900b23b1aab0772",
+          "label": "주요 에너지 저장 기술 비교",
+          "normalized_label": "주요 에너지 저장 기술 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 주요 에너지 저장 기술 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c26b090a93914820",
+          "label": "호주 AES 프로젝트 특징",
+          "normalized_label": "호주 AES 프로젝트 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 호주 AES 프로젝트 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-34c4c53852d33ca3",
+          "label": "Energy Storage Systems: Fundamentals and Applications",
+          "normalized_label": "Energy Storage Systems: Fundamentals and Applications",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "Energy Storage Systems: Fundamentals and Applications"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-87ec3ec1c4f2dc10",
+          "label": "배터리 재활용과 지속 가능성",
+          "normalized_label": "배터리 재활용과 지속 가능성",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[3].title",
+              "matched_text": "배터리 재활용과 지속 가능성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8bda5344ebe6df0f",
+          "label": "스마트 그리드와 에너지 저장의 융합",
+          "normalized_label": "스마트 그리드와 에너지 저장의 융합",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "스마트 그리드와 에너지 저장의 융합"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f486276c1adbc060",
+          "label": "재생에너지 저장 기술 트렌드와 전망",
+          "normalized_label": "재생에너지 저장 기술 트렌드와 전망",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "재생에너지 저장 기술 트렌드와 전망"
+            }
+          ]
+        }
+      ]
     }
   ],
   "shared_concepts": [
@@ -33622,15 +34194,6 @@
       ],
       "reports": [
         {
-          "report_id": "rpt-20260820-sound-architecture-how-s",
-          "evidence": [
-            {
-              "reference": "sections[9].body[3]",
-              "matched_text": "에너지 효율"
-            }
-          ]
-        },
-        {
           "report_id": "rpt-20260825-beolbibeui-suhak-yugakgy",
           "evidence": [
             {
@@ -33825,6 +34388,27 @@
             },
             {
               "reference": "sections[1].body[0]",
+              "matched_text": "에너지 효율"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261015-renewable-energy-storage",
+          "evidence": [
+            {
+              "reference": "title",
+              "matched_text": "에너지 저장"
+            },
+            {
+              "reference": "abstract",
+              "matched_text": "에너지 저장"
+            },
+            {
+              "reference": "keywords[1]",
+              "matched_text": "에너지 저장"
+            },
+            {
+              "reference": "keywords[3]",
               "matched_text": "에너지 효율"
             }
           ]
@@ -34412,6 +34996,66 @@
       ]
     },
     {
+      "concept_id": "con-96835a5f748ede9b",
+      "label": "에너지 효율",
+      "normalized_label": "에너지 효율",
+      "type": "outcome",
+      "provenance": "exact-normalized-tag",
+      "report_count": 5,
+      "main_categories": [
+        "과학·수학",
+        "기술·공학",
+        "예술·디자인"
+      ],
+      "reports": [
+        {
+          "report_id": "rpt-20260825-beolbibeui-suhak-yugakgy",
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "에너지 효율"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20260905-seawater-to-drinking-wat",
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "에너지 효율"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20260929-sustainable-building-mat",
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "에너지 효율"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261005-eco-friendly-water-treat",
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "에너지 효율"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261015-renewable-energy-storage",
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "에너지 효율"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "concept_id": "con-58932b140c8d5ebd",
       "label": "미생물 생태계",
       "normalized_label": "미생물 생태계",
@@ -34648,57 +35292,6 @@
             {
               "reference": "sections[8].body[1]",
               "matched_text": "확증 편향"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "concept_id": "con-96835a5f748ede9b",
-      "label": "에너지 효율",
-      "normalized_label": "에너지 효율",
-      "type": "outcome",
-      "provenance": "exact-normalized-tag",
-      "report_count": 4,
-      "main_categories": [
-        "과학·수학",
-        "기술·공학",
-        "예술·디자인"
-      ],
-      "reports": [
-        {
-          "report_id": "rpt-20260825-beolbibeui-suhak-yugakgy",
-          "evidence": [
-            {
-              "reference": "keywords[5]",
-              "matched_text": "에너지 효율"
-            }
-          ]
-        },
-        {
-          "report_id": "rpt-20260905-seawater-to-drinking-wat",
-          "evidence": [
-            {
-              "reference": "keywords[2]",
-              "matched_text": "에너지 효율"
-            }
-          ]
-        },
-        {
-          "report_id": "rpt-20260929-sustainable-building-mat",
-          "evidence": [
-            {
-              "reference": "keywords[4]",
-              "matched_text": "에너지 효율"
-            }
-          ]
-        },
-        {
-          "report_id": "rpt-20261005-eco-friendly-water-treat",
-          "evidence": [
-            {
-              "reference": "keywords[5]",
-              "matched_text": "에너지 효율"
             }
           ]
         }

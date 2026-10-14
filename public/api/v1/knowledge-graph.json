@@ -2,14 +2,14 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-10-14T05:27:53.177433+09:00",
+  "generated_at": "2026-10-15T03:57:52.024850+09:00",
   "stats": {
     "categories": 10,
-    "reports": 60,
-    "nodes": 266,
-    "edges": 351,
+    "reports": 61,
+    "nodes": 270,
+    "edges": 356,
     "concepts": 17,
-    "concept_edges": 112,
+    "concept_edges": 113,
     "semantic_edges": 0
   },
   "nodes": [
@@ -278,7 +278,7 @@
       "level": 5,
       "concept_id": "con-96835a5f748ede9b",
       "concept_type": "outcome",
-      "report_count": 4,
+      "report_count": 5,
       "main_categories": [
         "과학·수학",
         "기술·공학",
@@ -709,6 +709,13 @@
       "main_category": "과학·수학"
     },
     {
+      "id": "detail:d0f82319ea979eab",
+      "type": "detail",
+      "label": "배터리 및 저장 시스템 혁신",
+      "level": 3,
+      "main_category": "기술·공학"
+    },
+    {
       "id": "detail:d5d7ad9795dd6302",
       "type": "detail",
       "label": "스마트 수처리 시스템과 지속 가능성",
@@ -903,6 +910,13 @@
       "label": "미디어와 지식분류",
       "level": 1,
       "main_category": "언어·미디어·지식"
+    },
+    {
+      "id": "middle:6453951fdd49440b",
+      "type": "middle",
+      "label": "에너지",
+      "level": 1,
+      "main_category": "기술·공학"
     },
     {
       "id": "middle:69ad88fc2b6dc465",
@@ -2212,6 +2226,23 @@
       "pdf_url": "outputs/20261014_quantum_computing_and_in_Report.pdf"
     },
     {
+      "id": "report:rpt-20261015-renewable-energy-storage",
+      "type": "report",
+      "label": "재생 에너지 저장 기술의 진화와 도전 과제",
+      "level": 4,
+      "report_id": "rpt-20261015-renewable-energy-storage",
+      "date": "2026-10-15",
+      "main_category": "기술·공학",
+      "category_path": [
+        "기술·공학",
+        "에너지",
+        "신재생 에너지",
+        "배터리 및 저장 시스템 혁신"
+      ],
+      "html_url": "outputs/20261015_renewable_energy_storage_Report.html",
+      "pdf_url": "outputs/20261015_renewable_energy_storage_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -2630,6 +2661,13 @@
       "label": "열역학과 시간",
       "level": 2,
       "main_category": "과학·수학"
+    },
+    {
+      "id": "sub:faa6be21c5964eef",
+      "type": "sub",
+      "label": "신재생 에너지",
+      "level": 2,
+      "main_category": "기술·공학"
     }
   ],
   "edges": [
@@ -3578,6 +3616,13 @@
       "provenance": "exact-normalized-tag"
     },
     {
+      "id": "edge:4d4db38bd2579ac5",
+      "source": "detail:d0f82319ea979eab",
+      "target": "report:rpt-20261015-renewable-energy-storage",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:4efadd2bc220df63",
       "source": "sub:4ad5be98bb969b76",
       "target": "detail:fde540c301a1a76f",
@@ -3681,6 +3726,13 @@
         }
       ],
       "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:52aa7db64b5228ee",
+      "source": "category:b8045a9a934d7f69",
+      "target": "middle:6453951fdd49440b",
+      "kind": "hierarchy",
+      "relation_type": "contains"
     },
     {
       "id": "edge:5389aae3fb7c4966",
@@ -4095,6 +4147,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:6b47cb3398d9cef8",
+      "source": "middle:6453951fdd49440b",
+      "target": "sub:faa6be21c5964eef",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:6bab1186ab9be8cb",
       "source": "detail:565923b7397eb282",
       "target": "report:rpt-20261010-language-diversity-conse",
@@ -4209,21 +4268,6 @@
       "relation_type": "contains"
     },
     {
-      "id": "edge:71c07d4c2d7dacd3",
-      "source": "report:rpt-20260820-sound-architecture-how-s",
-      "target": "concept:con-5d0014712c59ecdf",
-      "kind": "concept",
-      "relation_type": "has_concept",
-      "score": 0.7,
-      "evidence": [
-        {
-          "reference": "sections[9].body[3]",
-          "matched_text": "에너지 효율"
-        }
-      ],
-      "provenance": "curated-pattern-rule"
-    },
-    {
       "id": "edge:71e000b2fed043f9",
       "source": "report:rpt-20260824-insurance-birth-how-risk",
       "target": "concept:con-39820d616e59b701",
@@ -4259,6 +4303,33 @@
       "target": "report:rpt-20261014-quantum-computing-and-in",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:72925638cbc0a437",
+      "source": "report:rpt-20261015-renewable-energy-storage",
+      "target": "concept:con-5d0014712c59ecdf",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "title",
+          "matched_text": "에너지 저장"
+        },
+        {
+          "reference": "abstract",
+          "matched_text": "에너지 저장"
+        },
+        {
+          "reference": "keywords[1]",
+          "matched_text": "에너지 저장"
+        },
+        {
+          "reference": "keywords[3]",
+          "matched_text": "에너지 효율"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:738e398246bd2eba",
@@ -5125,6 +5196,21 @@
       "provenance": "exact-normalized-tag"
     },
     {
+      "id": "edge:9fd671d2640c693a",
+      "source": "report:rpt-20261015-renewable-energy-storage",
+      "target": "concept:con-96835a5f748ede9b",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[3]",
+          "matched_text": "에너지 효율"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
       "id": "edge:a14ad0e42691283b",
       "source": "report:rpt-20260819-library-classification-p",
       "target": "concept:con-135ff1d8963c0c0f",
@@ -5266,6 +5352,13 @@
       "id": "edge:a97bdc087203fdec",
       "source": "sub:b74bbc1aefd39888",
       "target": "detail:7b4bad306d9a0419",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:aa3149ff0939c303",
+      "source": "sub:faa6be21c5964eef",
+      "target": "detail:d0f82319ea979eab",
       "kind": "hierarchy",
       "relation_type": "contains"
     },

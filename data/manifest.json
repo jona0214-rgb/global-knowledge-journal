@@ -1,6 +1,22 @@
 {
-  "last_updated": "2026-10-14T05:27:53.177433+09:00",
+  "last_updated": "2026-10-15T03:57:52.024850+09:00",
   "reports": [
+    {
+      "date": "2026-10-15",
+      "title": "재생 에너지 저장 기술의 진화와 도전 과제",
+      "subtitle": "재생 에너지의 효과적 활용을 위한 저장 기술의 발전과 극복해야 할 과제",
+      "main_category": "기술·공학",
+      "mid_category": "에너지",
+      "sub_category": "신재생 에너지",
+      "detail_category": "배터리 및 저장 시스템 혁신",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20261015_renewable_energy_storage_Report.html",
+      "pdf_path": "outputs/20261015_renewable_energy_storage_Report.pdf",
+      "status": "published_api",
+      "html_url": "outputs/20261015_renewable_energy_storage_Report.html",
+      "pdf_url": "outputs/20261015_renewable_energy_storage_Report.pdf",
+      "report_id": "rpt-20261015-renewable-energy-storage"
+    },
     {
       "date": "2026-10-14",
       "title": "양자컴퓨팅과 정보 이론: 물리학이 재정의하는 계산의 미래",

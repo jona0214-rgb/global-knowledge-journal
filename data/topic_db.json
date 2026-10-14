@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-10-14",
+  "updated_at": "2026-10-15",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -1336,6 +1336,29 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261014_quantum_computing_and_in_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261014_quantum_computing_and_in_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "report_id": "rpt-20261015-renewable-energy-storage-evolution-challenges",
+      "date": "2026-10-15",
+      "title": "재생 에너지 저장 기술의 진화와 도전 과제",
+      "main_category": "기술·공학",
+      "mid_category": "에너지",
+      "sub_category": "신재생 에너지",
+      "detail_category": "배터리 및 저장 시스템 혁신",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "재생 에너지",
+        "에너지 저장",
+        "배터리 기술",
+        "에너지 효율",
+        "전력망 안정화",
+        "에너지 전환",
+        "친환경 기술",
+        "미래 에너지"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261015_renewable_energy_storage_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261015_renewable_energy_storage_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -1352,16 +1375,16 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "과학·수학",
-    "next_main_category": "기술·공학",
-    "next_index": 4,
+    "last_main_category": "기술·공학",
+    "next_main_category": "생명·건강",
+    "next_index": 5,
     "completed_cycles": 6,
     "published_counts": {
       "인문·철학": 7,
       "사회·정치·법": 6,
       "경제·경영": 6,
       "과학·수학": 6,
-      "기술·공학": 6,
+      "기술·공학": 7,
       "생명·건강": 5,
       "자연·환경·지리": 5,
       "역사·문화": 7,
@@ -1369,7 +1392,6 @@
       "언어·미디어·지식": 7
     },
     "recent_main_categories": [
-      "기술·공학",
       "생명·건강",
       "자연·환경·지리",
       "역사·문화",
@@ -1378,7 +1400,8 @@
       "인문·철학",
       "사회·정치·법",
       "경제·경영",
-      "과학·수학"
+      "과학·수학",
+      "기술·공학"
     ]
   },
   "candidate_pool": [
@@ -2119,7 +2142,7 @@
       "sub_category": "신재생 에너지",
       "detail_category": "배터리 및 저장 시스템 혁신",
       "priority": 1.0,
-      "status": "candidate",
+      "status": "used",
       "source": "api_generated"
     },
     {
