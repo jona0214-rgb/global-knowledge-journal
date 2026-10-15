@@ -17,7 +17,12 @@
     "run_id": "38787631676",
     "run_attempt": "1",
     "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/38787631676",
-    "source_sha": "473317107bb030c4e9614023bb876e87a7f22d01"
+    "source_sha": "473317107bb030c4e9614023bb876e87a7f22d01",
+    "publication_target_kst": "2026-10-16T07:00:00+09:00",
+    "publication_pushed_at": "2026-10-15T23:52:37.519810Z",
+    "publication_schedule_cron": "45 21 * * *",
+    "publication_run_id": "38826166608",
+    "publication_run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/38826166608"
   },
   {
     "date": "2026-10-15",
