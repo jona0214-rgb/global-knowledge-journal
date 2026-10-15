@@ -1,16 +1,16 @@
 {
-  "date": "2026-10-15",
-  "title": "재생 에너지 저장 기술의 진화와 도전 과제",
-  "subtitle": "재생 에너지의 효과적 활용을 위한 저장 기술의 발전과 극복해야 할 과제",
-  "main_category": "기술·공학",
-  "mid_category": "에너지",
-  "sub_category": "신재생 에너지",
-  "detail_category": "배터리 및 저장 시스템 혁신",
+  "date": "2026-10-16",
+  "title": "정신 건강에서 마인드풀니스의 역할과 과학적 근거",
+  "subtitle": "심리치료에서 마인드풀니스의 개념과 과학적 효과를 탐구하다",
+  "main_category": "생명·건강",
+  "mid_category": "건강과 심리",
+  "sub_category": "심리치료",
+  "detail_category": "마인드풀니스 기반 치료 효과 연구",
   "taxonomy_version": "2.0",
-  "html_path": "outputs/20261015_renewable_energy_storage_Report.html",
-  "pdf_path": "outputs/20261015_renewable_energy_storage_Report.pdf",
+  "html_path": "outputs/20261016_mindfulness_role_in_ment_Report.html",
+  "pdf_path": "outputs/20261016_mindfulness_role_in_ment_Report.pdf",
   "status": "published_api",
-  "html_url": "outputs/20261015_renewable_energy_storage_Report.html",
-  "pdf_url": "outputs/20261015_renewable_energy_storage_Report.pdf",
-  "report_id": "rpt-20261015-renewable-energy-storage"
+  "html_url": "outputs/20261016_mindfulness_role_in_ment_Report.html",
+  "pdf_url": "outputs/20261016_mindfulness_role_in_ment_Report.pdf",
+  "report_id": "rpt-20261016-mindfulness-role-in-ment"
 }

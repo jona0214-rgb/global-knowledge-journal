@@ -2,12 +2,12 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-10-15T03:57:52.024850+09:00",
+  "generated_at": "2026-10-16T03:45:43.547749+09:00",
   "stats": {
     "categories": 10,
-    "reports": 61,
-    "nodes": 270,
-    "edges": 356,
+    "reports": 62,
+    "nodes": 274,
+    "edges": 360,
     "concepts": 17,
     "concept_edges": 113,
     "semantic_edges": 0
@@ -332,7 +332,6 @@
       "main_categories": [
         "경제·경영",
         "과학·수학",
-        "기술·공학",
         "사회·정치·법",
         "생명·건강",
         "언어·미디어·지식",
@@ -751,6 +750,13 @@
       "main_category": "예술·디자인"
     },
     {
+      "id": "detail:e6bedc0c9d539543",
+      "type": "detail",
+      "label": "마인드풀니스 기반 치료 효과 연구",
+      "level": 3,
+      "main_category": "생명·건강"
+    },
+    {
       "id": "detail:ea8e27260f35e294",
       "type": "detail",
       "label": "확률적 지식의 조건",
@@ -1036,6 +1042,13 @@
       "label": "행정제도",
       "level": 1,
       "main_category": "사회·정치·법"
+    },
+    {
+      "id": "middle:ac71074d27b76d86",
+      "type": "middle",
+      "label": "건강과 심리",
+      "level": 1,
+      "main_category": "생명·건강"
     },
     {
       "id": "middle:b1bf48b32ef4f9dc",
@@ -2243,6 +2256,23 @@
       "pdf_url": "outputs/20261015_renewable_energy_storage_Report.pdf"
     },
     {
+      "id": "report:rpt-20261016-mindfulness-role-in-ment",
+      "type": "report",
+      "label": "정신 건강에서 마인드풀니스의 역할과 과학적 근거",
+      "level": 4,
+      "report_id": "rpt-20261016-mindfulness-role-in-ment",
+      "date": "2026-10-16",
+      "main_category": "생명·건강",
+      "category_path": [
+        "생명·건강",
+        "건강과 심리",
+        "심리치료",
+        "마인드풀니스 기반 치료 효과 연구"
+      ],
+      "html_url": "outputs/20261016_mindfulness_role_in_ment_Report.html",
+      "pdf_url": "outputs/20261016_mindfulness_role_in_ment_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -2353,6 +2383,13 @@
       "label": "회계와 조직 관리",
       "level": 2,
       "main_category": "경제·경영"
+    },
+    {
+      "id": "sub:45db618c1de0b024",
+      "type": "sub",
+      "label": "심리치료",
+      "level": 2,
+      "main_category": "생명·건강"
     },
     {
       "id": "sub:47e959a2476d343b",
@@ -2962,6 +2999,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:1e006562f92260d0",
+      "source": "middle:ac71074d27b76d86",
+      "target": "sub:45db618c1de0b024",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:1f4d747bdf7b4aaa",
       "source": "middle:949307e3ea588e52",
       "target": "sub:637dd7b065713827",
@@ -3260,6 +3304,33 @@
       "target": "middle:efbda3d2166e9316",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:354d22a59f1249eb",
+      "source": "report:rpt-20261016-mindfulness-role-in-ment",
+      "target": "concept:con-a2ff54106aeeeb39",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "sections[3].body[2]",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "sections[6].body[0]",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "sections[6].body[2]",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "sections[9].body[3]",
+          "matched_text": "표준화"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:35b137d30752fb0a",
@@ -3661,6 +3732,13 @@
       "id": "edge:50b8d97afce0cd3e",
       "source": "detail:3b365774a37949fa",
       "target": "report:rpt-20260909-museum-light-how-lightin",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:50f86f4d39392e0c",
+      "source": "detail:e6bedc0c9d539543",
+      "target": "report:rpt-20261016-mindfulness-role-in-ment",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -4996,21 +5074,6 @@
       "relation_type": "contains"
     },
     {
-      "id": "edge:97c4b16a9c877212",
-      "source": "report:rpt-20260915-jeollyeongmang-balancing",
-      "target": "concept:con-a2ff54106aeeeb39",
-      "kind": "concept",
-      "relation_type": "has_concept",
-      "score": 0.7,
-      "evidence": [
-        {
-          "reference": "subtitle",
-          "matched_text": "동기화"
-        }
-      ],
-      "provenance": "curated-pattern-rule"
-    },
-    {
       "id": "edge:97c85ce4f9617728",
       "source": "detail:f3b575b2e43024c9",
       "target": "report:rpt-20260828-bamui-bitgwa-saengtaegye",
@@ -5456,6 +5519,13 @@
       "provenance": "exact-normalized-tag"
     },
     {
+      "id": "edge:adf691edcf252619",
+      "source": "sub:45db618c1de0b024",
+      "target": "detail:e6bedc0c9d539543",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:aebd9816524f04e6",
       "source": "report:rpt-20260901-moral-luck-paradox-resul",
       "target": "concept:con-22940219024d252e",
@@ -5723,6 +5793,13 @@
       "id": "edge:bea8075c0fa0d367",
       "source": "middle:31276a6327b2d4a9",
       "target": "sub:5d5781a380658df5",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:bf9fd99a8cbdfd7c",
+      "source": "category:d1d9ae9d3e816c13",
+      "target": "middle:ac71074d27b76d86",
       "kind": "hierarchy",
       "relation_type": "contains"
     },

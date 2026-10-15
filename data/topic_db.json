@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-10-15",
+  "updated_at": "2026-10-16",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -1359,6 +1359,29 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261015_renewable_energy_storage_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261015_renewable_energy_storage_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "report_id": "rpt-20261016-mindfulness-role-in-mental-health",
+      "date": "2026-10-16",
+      "title": "정신 건강에서 마인드풀니스의 역할과 과학적 근거",
+      "main_category": "생명·건강",
+      "mid_category": "건강과 심리",
+      "sub_category": "심리치료",
+      "detail_category": "마인드풀니스 기반 치료 효과 연구",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "마인드풀니스",
+        "정신 건강",
+        "심리치료",
+        "과학적 근거",
+        "스트레스 완화",
+        "명상",
+        "주의 집중",
+        "인지행동치료"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261016_mindfulness_role_in_ment_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261016_mindfulness_role_in_ment_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -1375,9 +1398,9 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "기술·공학",
-    "next_main_category": "생명·건강",
-    "next_index": 5,
+    "last_main_category": "생명·건강",
+    "next_main_category": "자연·환경·지리",
+    "next_index": 6,
     "completed_cycles": 6,
     "published_counts": {
       "인문·철학": 7,
@@ -1385,14 +1408,13 @@
       "경제·경영": 6,
       "과학·수학": 6,
       "기술·공학": 7,
-      "생명·건강": 5,
+      "생명·건강": 6,
       "자연·환경·지리": 5,
       "역사·문화": 7,
       "예술·디자인": 6,
       "언어·미디어·지식": 7
     },
     "recent_main_categories": [
-      "생명·건강",
       "자연·환경·지리",
       "역사·문화",
       "예술·디자인",
@@ -1401,7 +1423,8 @@
       "사회·정치·법",
       "경제·경영",
       "과학·수학",
-      "기술·공학"
+      "기술·공학",
+      "생명·건강"
     ]
   },
   "candidate_pool": [
@@ -2172,7 +2195,7 @@
       "sub_category": "심리치료",
       "detail_category": "마인드풀니스 기반 치료 효과 연구",
       "priority": 1.0,
-      "status": "candidate",
+      "status": "used",
       "source": "api_generated"
     },
     {

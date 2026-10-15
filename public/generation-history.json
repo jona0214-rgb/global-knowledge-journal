@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-10-16",
+    "title": "정신 건강에서 마인드풀니스의 역할과 과학적 근거",
+    "status": "published_api",
+    "event_name": "schedule",
+    "schedule_cron": "45 14 * * *",
+    "scheduled_for_kst": "2026-10-16T00:00:00+09:00",
+    "workflow_started_at": "2026-10-15T18:40:58Z",
+    "generation_started_at": "2026-10-15T18:41:31.964268Z",
+    "generation_completed_at": "2026-10-15T18:45:42.196997Z",
+    "catalog_updated_at": "2026-10-15T18:45:43.549270Z",
+    "scheduler_delay_seconds": 13258,
+    "setup_duration_seconds": 34,
+    "generation_duration_seconds": 252,
+    "validation_attempts": 2,
+    "run_id": "38787631676",
+    "run_attempt": "1",
+    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/38787631676",
+    "source_sha": "473317107bb030c4e9614023bb876e87a7f22d01"
+  },
+  {
     "date": "2026-10-15",
     "title": "재생 에너지 저장 기술의 진화와 도전 과제",
     "status": "published_api",
@@ -623,25 +643,5 @@
     "run_attempt": "1",
     "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/35159490012",
     "source_sha": "ab1631e6d6f6387a542a32bdd35c82a5ee9b6b13"
-  },
-  {
-    "date": "2026-09-16",
-    "title": "장내 미생물의 생태계: 몸속 공동체는 건강에 무엇을 하는가",
-    "status": "published_api",
-    "event_name": "schedule",
-    "schedule_cron": "0 20 * * *",
-    "scheduled_for_kst": "2026-09-16T05:00:00+09:00",
-    "workflow_started_at": "2026-09-15T22:49:25Z",
-    "generation_started_at": "2026-09-15T22:50:10.232071Z",
-    "generation_completed_at": "2026-09-15T22:51:36.037490Z",
-    "catalog_updated_at": "2026-09-15T22:51:37.404045Z",
-    "scheduler_delay_seconds": 10165,
-    "setup_duration_seconds": 45,
-    "generation_duration_seconds": 87,
-    "validation_attempts": 2,
-    "run_id": "35032821988",
-    "run_attempt": "1",
-    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/35032821988",
-    "source_sha": "a23523c4c313ed2231a78f512bdf0adb06dd0b5f"
   }
 ]

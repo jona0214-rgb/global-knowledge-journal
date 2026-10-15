@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-10-15T03:57:52.024850+09:00",
+  "generated_at": "2026-10-16T03:45:43.547749+09:00",
   "stats": {
-    "reports": 61,
-    "tags": 2272,
+    "reports": 62,
+    "tags": 2310,
     "shared_concepts": 17,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -33461,6 +33461,566 @@
           ]
         }
       ]
+    },
+    {
+      "report_id": "rpt-20261016-mindfulness-role-in-ment",
+      "date": "2026-10-16",
+      "title": "정신 건강에서 마인드풀니스의 역할과 과학적 근거",
+      "main_category": "생명·건강",
+      "tags": [
+        {
+          "tag_id": "tag-6c0775f5db4b04d7",
+          "label": "과학적 근거",
+          "normalized_label": "과학적 근거",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "과학적 근거"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ca0e68e1af5960c0",
+          "label": "마인드풀니스",
+          "normalized_label": "마인드풀니스",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [
+            "Mindfulness"
+          ],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "마인드풀니스"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "마인드풀니스(Mindfulness)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-dc84c947b52a5ed3",
+          "label": "명상",
+          "normalized_label": "명상",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "명상"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d09ebd9d75fa897f",
+          "label": "스트레스 완화",
+          "normalized_label": "스트레스 완화",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "스트레스 완화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7ffba5ddbe14f81e",
+          "label": "인지행동치료",
+          "normalized_label": "인지행동치료",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [
+            "CBT"
+          ],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "인지행동치료"
+            },
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "인지행동치료(CBT)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e60889df94e171df",
+          "label": "정신 건강",
+          "normalized_label": "정신 건강",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "정신 건강"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-edd30d4c64a0a99a",
+          "label": "주의 집중",
+          "normalized_label": "주의 집중",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "주의 집중"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-58cc3904570882bb",
+          "label": "심리치료",
+          "normalized_label": "심리치료",
+          "type": "mechanism",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "심리치료"
+            },
+            {
+              "reference": "category.sub",
+              "matched_text": "심리치료"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-64617f50f08a0bee",
+          "label": "MBSR",
+          "normalized_label": "MBSR",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [
+            "마음챙김 스트레스 감소법"
+          ],
+          "evidence": [
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "MBSR(마음챙김 스트레스 감소법)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-41b2f1ea93027690",
+          "label": "재발 우울증",
+          "normalized_label": "재발 우울증",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "재발 우울증"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-324f6f2c4a681f64",
+          "label": "건강과 심리",
+          "normalized_label": "건강과 심리",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "건강과 심리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7c7cef79676ea127",
+          "label": "마인드풀니스 기반 치료 효과 연구",
+          "normalized_label": "마인드풀니스 기반 치료 효과 연구",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "마인드풀니스 기반 치료 효과 연구"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9504c069ba3e396a",
+          "label": "존 카밧진",
+          "normalized_label": "존 카밧진",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [
+            "Mindfulness의 현대적 창시자"
+          ],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "존 카밧진 (Mindfulness의 현대적 창시자)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d94cff7fda96b6d8",
+          "label": "과거 전통적 명상 기원",
+          "normalized_label": "과거 전통적 명상 기원",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "과거 전통적 명상 기원"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c6ed63109e06e3ef",
+          "label": "과학적 연구 및 임상실험",
+          "normalized_label": "과학적 연구 및 임상실험",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "과학적 연구 및 임상실험"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-741fae4d1055d872",
+          "label": "사회 및 공공기관 확산",
+          "normalized_label": "사회 및 공공기관 확산",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "사회 및 공공기관 확산"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-cff53be4ae66b3bc",
+          "label": "서구 심리치료 접목",
+          "normalized_label": "서구 심리치료 접목",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "서구 심리치료 접목"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-631d2d99ad13417f",
+          "label": "임상 표준화 및 프로그램 개발",
+          "normalized_label": "임상 표준화 및 프로그램 개발",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "임상 표준화 및 프로그램 개발"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a23f7e421f822de4",
+          "label": "마인드풀니스 기반 인지치료(MBCT)의 실제 적용 사례",
+          "normalized_label": "마인드풀니스 기반 인지치료(MBCT)의 실제 적용 사례",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "마인드풀니스 기반 인지치료(MBCT)의 실제 적용 사례"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6a71f0f07f8fbad7",
+          "label": "마인드풀니스 연구의 핵심 질문과 분석 방향",
+          "normalized_label": "마인드풀니스 연구의 핵심 질문과 분석 방향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "마인드풀니스 연구의 핵심 질문과 분석 방향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0a854cceccf11ba2",
+          "label": "마인드풀니스 이해를 위한 기본 개념",
+          "normalized_label": "마인드풀니스 이해를 위한 기본 개념",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "마인드풀니스 이해를 위한 기본 개념"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6823327277cc811d",
+          "label": "마인드풀니스 치료의 기준과 관리 방식의 발전",
+          "normalized_label": "마인드풀니스 치료의 기준과 관리 방식의 발전",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "마인드풀니스 치료의 기준과 관리 방식의 발전"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7c7348a70c37f90c",
+          "label": "마인드풀니스가 개인과 사회에 미치는 의미",
+          "normalized_label": "마인드풀니스가 개인과 사회에 미치는 의미",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "마인드풀니스가 개인과 사회에 미치는 의미"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d7c230e0729b3891",
+          "label": "마인드풀니스가 생활과 사회에 미친 영향",
+          "normalized_label": "마인드풀니스가 생활과 사회에 미친 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "마인드풀니스가 생활과 사회에 미친 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7a00ccce26c0c2c5",
+          "label": "마인드풀니스와 현대 정신 건강의 중요성",
+          "normalized_label": "마인드풀니스와 현대 정신 건강의 중요성",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "마인드풀니스와 현대 정신 건강의 중요성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e2dc87e58b421f9a",
+          "label": "마인드풀니스의 구조와 작동 원리",
+          "normalized_label": "마인드풀니스의 구조와 작동 원리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "마인드풀니스의 구조와 작동 원리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-30301ca308d1d58c",
+          "label": "마인드풀니스의 역사와 출발점",
+          "normalized_label": "마인드풀니스의 역사와 출발점",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "마인드풀니스의 역사와 출발점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a8807271f9442096",
+          "label": "마인드풀니스의 현대적 적용과 쟁점",
+          "normalized_label": "마인드풀니스의 현대적 적용과 쟁점",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "마인드풀니스의 현대적 적용과 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-45ff98410cc40441",
+          "label": "현재 쟁점과 마인드풀니스의 미래 과제",
+          "normalized_label": "현재 쟁점과 마인드풀니스의 미래 과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[7].title",
+              "matched_text": "현재 쟁점과 마인드풀니스의 미래 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d2781d4377ebdc6f",
+          "label": "The Origin and Definition of Mindfulness",
+          "normalized_label": "The Origin and Definition of Mindfulness",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "The Origin and Definition of Mindfulness"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0e999dddc31a4e06",
+          "label": "MBCT 사례가 보여주는 핵심 특성",
+          "normalized_label": "MBCT 사례가 보여주는 핵심 특성",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> MBCT 사례가 보여주는 핵심 특성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f4bd420e9d6b1ead",
+          "label": "관련 도서·탐구 키워드·확장 주제",
+          "normalized_label": "관련 도서·탐구 키워드·확장 주제",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 관련 도서·탐구 키워드·확장 주제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-892be7787a07b3da",
+          "label": "마인드풀니스 치료 관련 현재 쟁점",
+          "normalized_label": "마인드풀니스 치료 관련 현재 쟁점",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 마인드풀니스 치료 관련 현재 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-27c95e3c93217021",
+          "label": "마인드풀니스 프로그램 비교",
+          "normalized_label": "마인드풀니스 프로그램 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 마인드풀니스 프로그램 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-379b63851692cd87",
+          "label": "Altered Traits",
+          "normalized_label": "Altered Traits",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "Altered Traits"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e6b1617fb55fd19a",
+          "label": "Mindfulness-Based Cognitive Therapy for Depression",
+          "normalized_label": "Mindfulness-Based Cognitive Therapy for Depression",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[3].title",
+              "matched_text": "Mindfulness-Based Cognitive Therapy for Depression"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-dd272d61a480401e",
+          "label": "Mindfulness: A Practical Guide to Finding Peace in a Frantic World",
+          "normalized_label": "Mindfulness: A Practical Guide to Finding Peace in a Frantic World",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "Mindfulness: A Practical Guide to Finding Peace in a Frantic World"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-67a826bce68090a6",
+          "label": "The Mindful Way Through Depression",
+          "normalized_label": "The Mindful Way Through Depression",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "The Mindful Way Through Depression"
+            }
+          ]
+        }
+      ]
     }
   ],
   "shared_concepts": [
@@ -34425,7 +34985,6 @@
       "main_categories": [
         "경제·경영",
         "과학·수학",
-        "기술·공학",
         "사회·정치·법",
         "생명·건강",
         "언어·미디어·지식",
@@ -34568,15 +35127,6 @@
           ]
         },
         {
-          "report_id": "rpt-20260915-jeollyeongmang-balancing",
-          "evidence": [
-            {
-              "reference": "subtitle",
-              "matched_text": "동기화"
-            }
-          ]
-        },
-        {
           "report_id": "rpt-20260918-history-of-calendars-how",
           "evidence": [
             {
@@ -34656,6 +35206,27 @@
             },
             {
               "reference": "sections[10].body[2]",
+              "matched_text": "표준화"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261016-mindfulness-role-in-ment",
+          "evidence": [
+            {
+              "reference": "sections[3].body[2]",
+              "matched_text": "표준화"
+            },
+            {
+              "reference": "sections[6].body[0]",
+              "matched_text": "표준화"
+            },
+            {
+              "reference": "sections[6].body[2]",
+              "matched_text": "표준화"
+            },
+            {
+              "reference": "sections[9].body[3]",
               "matched_text": "표준화"
             }
           ]

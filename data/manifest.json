@@ -1,6 +1,22 @@
 {
-  "last_updated": "2026-10-15T03:57:52.024850+09:00",
+  "last_updated": "2026-10-16T03:45:43.547749+09:00",
   "reports": [
+    {
+      "date": "2026-10-16",
+      "title": "정신 건강에서 마인드풀니스의 역할과 과학적 근거",
+      "subtitle": "심리치료에서 마인드풀니스의 개념과 과학적 효과를 탐구하다",
+      "main_category": "생명·건강",
+      "mid_category": "건강과 심리",
+      "sub_category": "심리치료",
+      "detail_category": "마인드풀니스 기반 치료 효과 연구",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20261016_mindfulness_role_in_ment_Report.html",
+      "pdf_path": "outputs/20261016_mindfulness_role_in_ment_Report.pdf",
+      "status": "published_api",
+      "html_url": "outputs/20261016_mindfulness_role_in_ment_Report.html",
+      "pdf_url": "outputs/20261016_mindfulness_role_in_ment_Report.pdf",
+      "report_id": "rpt-20261016-mindfulness-role-in-ment"
+    },
     {
       "date": "2026-10-15",
       "title": "재생 에너지 저장 기술의 진화와 도전 과제",
