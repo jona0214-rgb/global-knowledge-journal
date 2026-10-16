@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-10-16T03:45:43.547749+09:00",
+  "generated_at": "2026-10-17T03:26:48.392341+09:00",
   "stats": {
-    "reports": 62,
-    "tags": 2310,
+    "reports": 63,
+    "tags": 2350,
     "shared_concepts": 17,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -34021,6 +34021,578 @@
           ]
         }
       ]
+    },
+    {
+      "report_id": "rpt-20261017-volcanic-activity-and-la",
+      "date": "2026-10-17",
+      "title": "화산 활동과 지형 형성: 대지의 역동적 변화와 생태계 영향",
+      "main_category": "자연·환경·지리",
+      "tags": [
+        {
+          "tag_id": "tag-d38e81e67dcee3ea",
+          "label": "대지 변화",
+          "normalized_label": "대지 변화",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "대지 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-403affd057818daa",
+          "label": "생태계 변화",
+          "normalized_label": "생태계 변화",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "생태계 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-72d39be15e57fd45",
+          "label": "지질학적 과정",
+          "normalized_label": "지질학적 과정",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "지질학적 과정"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a7767c28c4563370",
+          "label": "지형 형성",
+          "normalized_label": "지형 형성",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "지형 형성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-dfe9c773bd17388c",
+          "label": "화산 분출",
+          "normalized_label": "화산 분출",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "화산 분출"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-71c13831ad160266",
+          "label": "화산 활동",
+          "normalized_label": "화산 활동",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "화산 활동"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2142ac6534ae314e",
+          "label": "장기 생태계 영향",
+          "normalized_label": "장기 생태계 영향",
+          "type": "outcome",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "장기 생태계 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-360b50701a59e61e",
+          "label": "화산재 영향",
+          "normalized_label": "화산재 영향",
+          "type": "outcome",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "화산재 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-85a5dd1bd20d3156",
+          "label": "마그마",
+          "normalized_label": "마그마",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "마그마"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-90258abedf49f034",
+          "label": "용암류",
+          "normalized_label": "용암류",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "용암류"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-af1a74a9b91f82e4",
+          "label": "화산 분출 유형",
+          "normalized_label": "화산 분출 유형",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "화산 분출 유형"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f2841cbde7314795",
+          "label": "화산재",
+          "normalized_label": "화산재",
+          "type": "outcome",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "화산재"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-eea6a19f6391c425",
+          "label": "지질",
+          "normalized_label": "지질",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "지질"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9366a1f2f8eb5e50",
+          "label": "화산학",
+          "normalized_label": "화산학",
+          "type": "domain",
+          "weight": 0.93,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.sub",
+              "matched_text": "화산학"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4a0ca92f17817868",
+          "label": "화산분출이 지형 및 생태계에 미치는 장기 효과",
+          "normalized_label": "화산분출이 지형 및 생태계에 미치는 장기 효과",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "화산분출이 지형 및 생태계에 미치는 장기 효과"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-07cc5344f27fdf18",
+          "label": "Haraldur Sigurdsson",
+          "normalized_label": "Haraldur Sigurdsson",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "Haraldur Sigurdsson, 지질학자"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0a041bc95131f7c3",
+          "label": "마그마 상승 및 압력 증가",
+          "normalized_label": "마그마 상승 및 압력 증가",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "마그마 상승 및 압력 증가"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3da4afe8e3ca340b",
+          "label": "생태계 영향과 회복 과정",
+          "normalized_label": "생태계 영향과 회복 과정",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "생태계 영향과 회복 과정"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-673acfc6a45c03b5",
+          "label": "지표면 분출 및 용암 흐름",
+          "normalized_label": "지표면 분출 및 용암 흐름",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "지표면 분출 및 용암 흐름"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-24edf1116daa324d",
+          "label": "지형 변경과 신지형 생성",
+          "normalized_label": "지형 변경과 신지형 생성",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "지형 변경과 신지형 생성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-299416e9d97e1a75",
+          "label": "화산재 및 가스 방출",
+          "normalized_label": "화산재 및 가스 방출",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "화산재 및 가스 방출"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4df6b670f9d1c94a",
+          "label": "08년 아이슬란드 에이야프야틀라요쿨 화산 분출 사례",
+          "normalized_label": "08년 아이슬란드 에이야프야틀라요쿨 화산 분출 사례",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "2008년 아이슬란드 에이야프야틀라요쿨 화산 분출 사례"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-98cee09eccd0adc2",
+          "label": "화산 분출의 구조와 작동 원리",
+          "normalized_label": "화산 분출의 구조와 작동 원리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "화산 분출의 구조와 작동 원리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-89fa75fa02356b2c",
+          "label": "화산 활동 관리와 규칙 변화",
+          "normalized_label": "화산 활동 관리와 규칙 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "화산 활동 관리와 규칙 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-99e30defc931f1a2",
+          "label": "화산 활동과 그 영향 연구의 핵심 쟁점과 연계",
+          "normalized_label": "화산 활동과 그 영향 연구의 핵심 쟁점과 연계",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "화산 활동과 그 영향 연구의 핵심 쟁점과 연계"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-12430b144b218470",
+          "label": "화산 활동과 지형 변형의 최신 동향과 문제점",
+          "normalized_label": "화산 활동과 지형 변형의 최신 동향과 문제점",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "화산 활동과 지형 변형의 최신 동향과 문제점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e12b2402487095e4",
+          "label": "화산 활동과 지형 변화가 개인 및 사회에 미치는 함의",
+          "normalized_label": "화산 활동과 지형 변화가 개인 및 사회에 미치는 함의",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "화산 활동과 지형 변화가 개인 및 사회에 미치는 함의"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-259745e4fee667e5",
+          "label": "화산 활동과 지형 형성을 이해하는 기본 개념",
+          "normalized_label": "화산 활동과 지형 형성을 이해하는 기본 개념",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "화산 활동과 지형 형성을 이해하는 기본 개념"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e5f34c20fd781c68",
+          "label": "화산 활동의 역사와 기원",
+          "normalized_label": "화산 활동의 역사와 기원",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "화산 활동의 역사와 기원"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-95a9162499788b02",
+          "label": "화산 활동의 중요성과 오늘날의 주목",
+          "normalized_label": "화산 활동의 중요성과 오늘날의 주목",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "화산 활동의 중요성과 오늘날의 주목"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a167014b36b2026b",
+          "label": "화산 활동의 현재 쟁점과 미래 과제",
+          "normalized_label": "화산 활동의 현재 쟁점과 미래 과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[7].title",
+              "matched_text": "화산 활동의 현재 쟁점과 미래 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2cd6cec8f2f247e3",
+          "label": "화산 활동이 사회·문화에 미친 영향",
+          "normalized_label": "화산 활동이 사회·문화에 미친 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "화산 활동이 사회·문화에 미친 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-276feda568e2e6fd",
+          "label": "Volcanoes",
+          "normalized_label": "Volcanoes",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "Volcanoes"
+            },
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "Volcanoes"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-cb930dcbb332e4c8",
+          "label": "관련 도서 · 탐구 키워드 · 확장 주제",
+          "normalized_label": "관련 도서 · 탐구 키워드 · 확장 주제",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 관련 도서 · 탐구 키워드 · 확장 주제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7339907928b859bd",
+          "label": "에이야프야틀라요쿨 화산 2008년 분출 사례 특징",
+          "normalized_label": "에이야프야틀라요쿨 화산 2008년 분출 사례 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 에이야프야틀라요쿨 화산 2008년 분출 사례 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c0e861d2c8307996",
+          "label": "화산 분출 유형별 특징 비교",
+          "normalized_label": "화산 분출 유형별 특징 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 화산 분출 유형별 특징 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a4fb5bf76e3c46ee",
+          "label": "화산 활동 관련 현재 쟁점과 대응 과제",
+          "normalized_label": "화산 활동 관련 현재 쟁점과 대응 과제",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 화산 활동 관련 현재 쟁점과 대응 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6190436c172917be",
+          "label": "Geoenvironmental Disasters",
+          "normalized_label": "Geoenvironmental Disasters",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "Geoenvironmental Disasters"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-25086e3d423bdee8",
+          "label": "Volcanic Hazard and Risk",
+          "normalized_label": "Volcanic Hazard and Risk",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "Volcanic Hazard and Risk"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d01f332551ae11ba",
+          "label": "환경 변화와 지질학적 과정",
+          "normalized_label": "환경 변화와 지질학적 과정",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[3].title",
+              "matched_text": "환경 변화와 지질학적 과정"
+            }
+          ]
+        }
+      ]
     }
   ],
   "shared_concepts": [
@@ -34584,15 +35156,6 @@
           ]
         },
         {
-          "report_id": "rpt-20260901-moral-luck-paradox-resul",
-          "evidence": [
-            {
-              "reference": "sections[9].body[3]",
-              "matched_text": "불확실성"
-            }
-          ]
-        },
-        {
           "report_id": "rpt-20260903-history-of-price-tags-an",
           "evidence": [
             {
@@ -34732,6 +35295,19 @@
             },
             {
               "reference": "sections[9].body[4]",
+              "matched_text": "불확실성"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261017-volcanic-activity-and-la",
+          "evidence": [
+            {
+              "reference": "sections[7].body[0]",
+              "matched_text": "불확실성"
+            },
+            {
+              "reference": "sections[10].body[2]",
               "matched_text": "불확실성"
             }
           ]

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-10-16",
+  "updated_at": "2026-10-17",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -1382,6 +1382,29 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261016_mindfulness_role_in_ment_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261016_mindfulness_role_in_ment_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "report_id": "rpt-20261017-volcanic-activity-and-landform-formation",
+      "date": "2026-10-17",
+      "title": "화산 활동과 지형 형성: 대지의 역동적 변화와 생태계 영향",
+      "main_category": "자연·환경·지리",
+      "mid_category": "지질",
+      "sub_category": "화산학",
+      "detail_category": "화산분출이 지형 및 생태계에 미치는 장기 효과",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "화산 활동",
+        "지형 형성",
+        "생태계 변화",
+        "화산 분출",
+        "지질학적 과정",
+        "대지 변화",
+        "화산재 영향",
+        "장기 생태계 영향"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261017_volcanic_activity_and_la_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261017_volcanic_activity_and_la_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -1398,9 +1421,9 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "생명·건강",
-    "next_main_category": "자연·환경·지리",
-    "next_index": 6,
+    "last_main_category": "자연·환경·지리",
+    "next_main_category": "역사·문화",
+    "next_index": 7,
     "completed_cycles": 6,
     "published_counts": {
       "인문·철학": 7,
@@ -1409,13 +1432,12 @@
       "과학·수학": 6,
       "기술·공학": 7,
       "생명·건강": 6,
-      "자연·환경·지리": 5,
+      "자연·환경·지리": 6,
       "역사·문화": 7,
       "예술·디자인": 6,
       "언어·미디어·지식": 7
     },
     "recent_main_categories": [
-      "자연·환경·지리",
       "역사·문화",
       "예술·디자인",
       "언어·미디어·지식",
@@ -1424,7 +1446,8 @@
       "경제·경영",
       "과학·수학",
       "기술·공학",
-      "생명·건강"
+      "생명·건강",
+      "자연·환경·지리"
     ]
   },
   "candidate_pool": [
@@ -2374,6 +2397,56 @@
       "mid_category": "수학과 과학적 사고",
       "sub_category": "과학 방법론",
       "detail_category": "수학적 모델링과 시뮬레이션",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "빙하기와 지구환경 변화: 과거의 냉각기는 왜 찾아오고 사라졌나",
+      "main_category": "자연·환경·지리",
+      "mid_category": "기후",
+      "sub_category": "지구기후사",
+      "detail_category": "빙하기 원인과 해퇴 메커니즘",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "습지 생태계의 중요성과 보전 전략: 인간과 자연이 공존하는 공간",
+      "main_category": "자연·환경·지리",
+      "mid_category": "생태",
+      "sub_category": "습지생태학",
+      "detail_category": "습지 보전과 생물다양성 유지",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "해양 쓰레기의 지리학: 바다에서 플라스틱은 어떻게 이동하고 축적되나",
+      "main_category": "자연·환경·지리",
+      "mid_category": "해양과 지리",
+      "sub_category": "해양오염",
+      "detail_category": "플라스틱 쓰레기의 이동 경로와 지리적 집중",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "화산 활동과 지형 형성: 대지의 역동적 변화와 생태계 영향",
+      "main_category": "자연·환경·지리",
+      "mid_category": "지질",
+      "sub_category": "화산학",
+      "detail_category": "화산분출이 지형 및 생태계에 미치는 장기 효과",
+      "priority": 1.0,
+      "status": "used",
+      "source": "api_generated"
+    },
+    {
+      "topic": "도시 열섬 현상과 기후변화 대응: 뜨거워지는 도시 공간의 미래",
+      "main_category": "자연·환경·지리",
+      "mid_category": "기후",
+      "sub_category": "도시기후학",
+      "detail_category": "도시 열섬 완화 기술과 정책 사례",
       "priority": 1.0,
       "status": "candidate",
       "source": "api_generated"

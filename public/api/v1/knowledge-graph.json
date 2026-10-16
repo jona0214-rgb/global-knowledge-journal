@@ -2,12 +2,12 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-10-16T03:45:43.547749+09:00",
+  "generated_at": "2026-10-17T03:26:48.392341+09:00",
   "stats": {
     "categories": 10,
-    "reports": 62,
-    "nodes": 274,
-    "edges": 360,
+    "reports": 63,
+    "nodes": 278,
+    "edges": 364,
     "concepts": 17,
     "concept_edges": 113,
     "semantic_edges": 0
@@ -792,6 +792,13 @@
       "main_category": "기술·공학"
     },
     {
+      "id": "detail:fe9aba019e3f94b5",
+      "type": "detail",
+      "label": "화산분출이 지형 및 생태계에 미치는 장기 효과",
+      "level": 3,
+      "main_category": "자연·환경·지리"
+    },
+    {
       "id": "middle:0513aac18de937c6",
       "type": "middle",
       "label": "언어",
@@ -853,6 +860,13 @@
       "label": "사회정책",
       "level": 1,
       "main_category": "사회·정치·법"
+    },
+    {
+      "id": "middle:2654ebe566204fa4",
+      "type": "middle",
+      "label": "지질",
+      "level": 1,
+      "main_category": "자연·환경·지리"
     },
     {
       "id": "middle:2d6f571e40187e90",
@@ -2273,6 +2287,23 @@
       "pdf_url": "outputs/20261016_mindfulness_role_in_ment_Report.pdf"
     },
     {
+      "id": "report:rpt-20261017-volcanic-activity-and-la",
+      "type": "report",
+      "label": "화산 활동과 지형 형성: 대지의 역동적 변화와 생태계 영향",
+      "level": 4,
+      "report_id": "rpt-20261017-volcanic-activity-and-la",
+      "date": "2026-10-17",
+      "main_category": "자연·환경·지리",
+      "category_path": [
+        "자연·환경·지리",
+        "지질",
+        "화산학",
+        "화산분출이 지형 및 생태계에 미치는 장기 효과"
+      ],
+      "html_url": "outputs/20261017_volcanic_activity_and_la_Report.html",
+      "pdf_url": "outputs/20261017_volcanic_activity_and_la_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -2292,6 +2323,13 @@
       "label": "비선형 시스템",
       "level": 2,
       "main_category": "과학·수학"
+    },
+    {
+      "id": "sub:129855c7497cf5e4",
+      "type": "sub",
+      "label": "화산학",
+      "level": 2,
+      "main_category": "자연·환경·지리"
     },
     {
       "id": "sub:1432fa68bd4e2fd6",
@@ -4576,6 +4614,25 @@
       "provenance": "curated-pattern-rule"
     },
     {
+      "id": "edge:7bcfbdc55da77949",
+      "source": "report:rpt-20261017-volcanic-activity-and-la",
+      "target": "concept:con-22940219024d252e",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.8,
+      "evidence": [
+        {
+          "reference": "sections[7].body[0]",
+          "matched_text": "불확실성"
+        },
+        {
+          "reference": "sections[10].body[2]",
+          "matched_text": "불확실성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:7be158e1ce34cf66",
       "source": "category:9de06b299a735751",
       "target": "middle:5eef111a7fc8d608",
@@ -4668,6 +4725,13 @@
       "id": "edge:7f725f189a5bbaab",
       "source": "middle:d6e43e13b5ff081e",
       "target": "sub:b378875d51e527ff",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:80478c1a343c51c2",
+      "source": "category:9de06b299a735751",
+      "target": "middle:2654ebe566204fa4",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -5526,21 +5590,6 @@
       "relation_type": "contains"
     },
     {
-      "id": "edge:aebd9816524f04e6",
-      "source": "report:rpt-20260901-moral-luck-paradox-resul",
-      "target": "concept:con-22940219024d252e",
-      "kind": "concept",
-      "relation_type": "has_concept",
-      "score": 0.7,
-      "evidence": [
-        {
-          "reference": "sections[9].body[3]",
-          "matched_text": "불확실성"
-        }
-      ],
-      "provenance": "curated-pattern-rule"
-    },
-    {
       "id": "edge:aef3b60135b5b42a",
       "source": "sub:5d5781a380658df5",
       "target": "detail:d753586427fcf80f",
@@ -6011,6 +6060,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:cd703eaa2b05a33f",
+      "source": "sub:129855c7497cf5e4",
+      "target": "detail:fe9aba019e3f94b5",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:cf07f9911dc4f600",
       "source": "sub:3c32ed30d0be6df7",
       "target": "detail:ea8e27260f35e294",
@@ -6259,6 +6315,13 @@
       "provenance": "curated-pattern-rule"
     },
     {
+      "id": "edge:dc0f506accefed06",
+      "source": "middle:2654ebe566204fa4",
+      "target": "sub:129855c7497cf5e4",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:dcd9ce2be6cbeb70",
       "source": "report:rpt-20261003-bureaucracy-two-faces-ru",
       "target": "concept:con-39820d616e59b701",
@@ -6289,6 +6352,13 @@
       "id": "edge:ddc927eb435919dc",
       "source": "detail:84177918c401892e",
       "target": "report:rpt-20260831-dictionary-authority-wor",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:de43292641fb4fe2",
+      "source": "detail:fe9aba019e3f94b5",
+      "target": "report:rpt-20261017-volcanic-activity-and-la",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
