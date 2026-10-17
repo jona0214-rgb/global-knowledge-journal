@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-10-17T03:26:48.392341+09:00",
+  "generated_at": "2026-10-18T02:34:17.016457+09:00",
   "stats": {
-    "reports": 63,
-    "tags": 2350,
+    "reports": 64,
+    "tags": 2389,
     "shared_concepts": 17,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -34593,6 +34593,574 @@
           ]
         }
       ]
+    },
+    {
+      "report_id": "rpt-20261018-jeontong-eumak-and-muyon",
+      "date": "2026-10-18",
+      "title": "전통 음악과 무용의 지역별 사회문화적 기능",
+      "main_category": "역사·문화",
+      "tags": [
+        {
+          "tag_id": "tag-d6f02665c14c0f66",
+          "label": "공동체 정체성",
+          "normalized_label": "공동체 정체성",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "공동체 정체성"
+            },
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "공동체 정체성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a1014f054c121672",
+          "label": "무용",
+          "normalized_label": "무용",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "무용"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6695625613ffaf98",
+          "label": "문화적 표현",
+          "normalized_label": "문화적 표현",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "문화적 표현"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-24bc3127cb7944f6",
+          "label": "민속 예술",
+          "normalized_label": "민속 예술",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "민속 예술"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-51ffef318f660e84",
+          "label": "사회문화 기능",
+          "normalized_label": "사회문화 기능",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "사회문화 기능"
+            },
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "사회문화 기능"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8ead8f4346a92271",
+          "label": "역사적 변천",
+          "normalized_label": "역사적 변천",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "역사적 변천"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-aee3ff3ad156b4ed",
+          "label": "전통 음악",
+          "normalized_label": "전통 음악",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "전통 음악"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "전통 음악"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-caf2f5d06e5b8926",
+          "label": "지역 문화",
+          "normalized_label": "지역 문화",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "지역 문화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3a3e00619f8599fd",
+          "label": "전통 무용",
+          "normalized_label": "전통 무용",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "전통 무용"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-bb327348c427877f",
+          "label": "역사",
+          "normalized_label": "역사",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "역사"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-51e01761d7c2f3f2",
+          "label": "문화사",
+          "normalized_label": "문화사",
+          "type": "domain",
+          "weight": 0.93,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.sub",
+              "matched_text": "문화사"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-bbd5d83125f8a70b",
+          "label": "음악과 무용이 공동체 정체성에 미친 영향",
+          "normalized_label": "음악과 무용이 공동체 정체성에 미친 영향",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "음악과 무용이 공동체 정체성에 미친 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f8e2a30e5590ed36",
+          "label": "클리포드 기어츠",
+          "normalized_label": "클리포드 기어츠",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [
+            "문화 인류학자"
+          ],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "클리포드 기어츠(문화 인류학자)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-68bf349f4c3ee3f0",
+          "label": "규범과 관리",
+          "normalized_label": "규범과 관리",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "규범과 관리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-673036593c8d3901",
+          "label": "사회문화 영향",
+          "normalized_label": "사회문화 영향",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "사회문화 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-83911668d7f04f15",
+          "label": "역사적 형성",
+          "normalized_label": "역사적 형성",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "역사적 형성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b4c63f46a8671b80",
+          "label": "현대적 도전",
+          "normalized_label": "현대적 도전",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "현대적 도전"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ed6654e9736036b3",
+          "label": "형식과 구조",
+          "normalized_label": "형식과 구조",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "형식과 구조"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-24319fc9816c087d",
+          "label": "관리와 규범의 변화 양상",
+          "normalized_label": "관리와 규범의 변화 양상",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "관리와 규범의 변화 양상"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0fc1601ab1447e74",
+          "label": "사회문화적 영향과 공동체 생활",
+          "normalized_label": "사회문화적 영향과 공동체 생활",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "사회문화적 영향과 공동체 생활"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5457865b41800c04",
+          "label": "역사적 기원과 문화적 토대",
+          "normalized_label": "역사적 기원과 문화적 토대",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "역사적 기원과 문화적 토대"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1584f02f140b2c90",
+          "label": "전통 음악과 무용의 기초 개념과 용어",
+          "normalized_label": "전통 음악과 무용의 기초 개념과 용어",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "전통 음악과 무용의 기초 개념과 용어"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7b20c808a60a1e53",
+          "label": "전통 음악과 무용의 사회문화적 중요성",
+          "normalized_label": "전통 음악과 무용의 사회문화적 중요성",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "전통 음악과 무용의 사회문화적 중요성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3da093f5ed0699da",
+          "label": "전통 음악과 무용의 현대적 활용과 과제",
+          "normalized_label": "전통 음악과 무용의 현대적 활용과 과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "전통 음악과 무용의 현대적 활용과 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4bbcd3ac2bc09f80",
+          "label": "전통 음악과 무용이 개인과 사회에 주는 의미",
+          "normalized_label": "전통 음악과 무용이 개인과 사회에 주는 의미",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "전통 음악과 무용이 개인과 사회에 주는 의미"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-68dbcb3c31073063",
+          "label": "주제의 핵심 질문과 하위 항목 구성",
+          "normalized_label": "주제의 핵심 질문과 하위 항목 구성",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "주제의 핵심 질문과 하위 항목 구성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ae9d18fd1d733c71",
+          "label": "한국 남도민요와 판소리, 무용의 사회문화 기능",
+          "normalized_label": "한국 남도민요와 판소리, 무용의 사회문화 기능",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "한국 남도민요와 판소리, 무용의 사회문화 기능"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-38ac99eb400c7eba",
+          "label": "현대적 쟁점과 향후 과제",
+          "normalized_label": "현대적 쟁점과 향후 과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[7].title",
+              "matched_text": "현대적 쟁점과 향후 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4d46b5ff1c4241cd",
+          "label": "형식과 구조의 변화와 유지",
+          "normalized_label": "형식과 구조의 변화와 유지",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "형식과 구조의 변화와 유지"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b1416ec22c3f1e31",
+          "label": "The Interpretation of Cultures",
+          "normalized_label": "The Interpretation of Cultures",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "The Interpretation of Cultures"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f4bd420e9d6b1ead",
+          "label": "관련 도서·탐구 키워드·확장 주제",
+          "normalized_label": "관련 도서·탐구 키워드·확장 주제",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 관련 도서·탐구 키워드·확장 주제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3542dbe416db04e2",
+          "label": "남도 민요와 판소리 및 무용의 특징",
+          "normalized_label": "남도 민요와 판소리 및 무용의 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 남도 민요와 판소리 및 무용의 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c328ce759d0510f3",
+          "label": "전통 음악과 무용의 현대적 쟁점",
+          "normalized_label": "전통 음악과 무용의 현대적 쟁점",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 전통 음악과 무용의 현대적 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2a902d3055e80d40",
+          "label": "지역별 전통 음악과 무용 비교",
+          "normalized_label": "지역별 전통 음악과 무용 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 지역별 전통 음악과 무용 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3d96f8086d072842",
+          "label": "『음악과 문화』",
+          "normalized_label": "『음악과 문화』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "『음악과 문화』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6db6cdbe86b746ce",
+          "label": "『한국 민속 음악 개론』",
+          "normalized_label": "『한국 민속 음악 개론』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "『한국 민속 음악 개론』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c9d1da99d5231885",
+          "label": "공동체 정체성 연구",
+          "normalized_label": "공동체 정체성 연구",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "공동체 정체성 연구"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7327377b6e1aac30",
+          "label": "무형문화재 제도와 지역문화",
+          "normalized_label": "무형문화재 제도와 지역문화",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[3].title",
+              "matched_text": "무형문화재 제도와 지역문화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8470f540a2e2e8ed",
+          "label": "인류학에서 본 의례와 몸짓",
+          "normalized_label": "인류학에서 본 의례와 몸짓",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[4].title",
+              "matched_text": "인류학에서 본 의례와 몸짓"
+            }
+          ]
+        }
+      ]
     }
   ],
   "shared_concepts": [
@@ -35003,27 +35571,6 @@
           ]
         },
         {
-          "report_id": "rpt-20260918-history-of-calendars-how",
-          "evidence": [
-            {
-              "reference": "sections[0].body[3]",
-              "matched_text": "정체성"
-            },
-            {
-              "reference": "sections[5].body[1]",
-              "matched_text": "정체성"
-            },
-            {
-              "reference": "sections[7].body[1]",
-              "matched_text": "정체성"
-            },
-            {
-              "reference": "sections[9].body[2]",
-              "matched_text": "정체성"
-            }
-          ]
-        },
-        {
           "report_id": "rpt-20260928-history-of-postage-stamp",
           "evidence": [
             {
@@ -35082,6 +35629,27 @@
             },
             {
               "reference": "sections[8].body[1]",
+              "matched_text": "정체성"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261018-jeontong-eumak-and-muyon",
+          "evidence": [
+            {
+              "reference": "subtitle",
+              "matched_text": "정체성"
+            },
+            {
+              "reference": "abstract",
+              "matched_text": "정체성"
+            },
+            {
+              "reference": "keywords[4]",
+              "matched_text": "정체성"
+            },
+            {
+              "reference": "term_box.items[2].description",
               "matched_text": "정체성"
             }
           ]
@@ -35991,7 +36559,7 @@
       "normalized_label": "분류와 권력",
       "type": "mechanism",
       "provenance": "curated-pattern-rule",
-      "report_count": 10,
+      "report_count": 11,
       "main_categories": [
         "과학·수학",
         "기술·공학",
@@ -36137,6 +36705,15 @@
             {
               "reference": "sections[6].body[0]",
               "matched_text": "분류 기준"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261018-jeontong-eumak-and-muyon",
+          "evidence": [
+            {
+              "reference": "sections[3].body[1]",
+              "matched_text": "권력 구조"
             }
           ]
         }

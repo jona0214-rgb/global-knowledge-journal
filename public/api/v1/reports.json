@@ -1,5 +1,21 @@
 [
   {
+    "date": "2026-10-18",
+    "title": "전통 음악과 무용의 지역별 사회문화적 기능",
+    "subtitle": "지역 전통 음악과 무용이 공동체의 정체성과 사회문화를 형성하는 방식을 탐구한다",
+    "main_category": "역사·문화",
+    "mid_category": "역사",
+    "sub_category": "문화사",
+    "detail_category": "음악과 무용이 공동체 정체성에 미친 영향",
+    "taxonomy_version": "2.0",
+    "html_path": "outputs/20261018_jeontong_eumak_and_muyon_Report.html",
+    "pdf_path": "outputs/20261018_jeontong_eumak_and_muyon_Report.pdf",
+    "status": "published_api",
+    "html_url": "outputs/20261018_jeontong_eumak_and_muyon_Report.html",
+    "pdf_url": "outputs/20261018_jeontong_eumak_and_muyon_Report.pdf",
+    "report_id": "rpt-20261018-jeontong-eumak-and-muyon"
+  },
+  {
     "date": "2026-10-17",
     "title": "화산 활동과 지형 형성: 대지의 역동적 변화와 생태계 영향",
     "subtitle": "화산 분출이 지형 및 생태계에 미치는 장기적 영향과 그 역동적 변화를 탐구하다",

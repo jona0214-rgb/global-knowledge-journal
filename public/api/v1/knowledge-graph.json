@@ -2,14 +2,14 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-10-17T03:26:48.392341+09:00",
+  "generated_at": "2026-10-18T02:34:17.016457+09:00",
   "stats": {
     "categories": 10,
-    "reports": 63,
-    "nodes": 278,
-    "edges": 364,
+    "reports": 64,
+    "nodes": 282,
+    "edges": 369,
     "concepts": 17,
-    "concept_edges": 113,
+    "concept_edges": 114,
     "semantic_edges": 0
   },
   "nodes": [
@@ -90,7 +90,7 @@
       "level": 5,
       "concept_id": "con-135ff1d8963c0c0f",
       "concept_type": "mechanism",
-      "report_count": 10,
+      "report_count": 11,
       "main_categories": [
         "과학·수학",
         "기술·공학",
@@ -687,6 +687,13 @@
       "main_category": "생명·건강"
     },
     {
+      "id": "detail:a9a21d4f38266df1",
+      "type": "detail",
+      "label": "음악과 무용이 공동체 정체성에 미친 영향",
+      "level": 3,
+      "main_category": "역사·문화"
+    },
+    {
       "id": "detail:c505075bb528cf21",
       "type": "detail",
       "label": "생산성 연계 임금",
@@ -1042,6 +1049,13 @@
       "label": "철학",
       "level": 1,
       "main_category": "인문·철학"
+    },
+    {
+      "id": "middle:9ec9757928dd9af9",
+      "type": "middle",
+      "label": "역사",
+      "level": 1,
+      "main_category": "역사·문화"
     },
     {
       "id": "middle:a1f31271f0d82e58",
@@ -2304,6 +2318,23 @@
       "pdf_url": "outputs/20261017_volcanic_activity_and_la_Report.pdf"
     },
     {
+      "id": "report:rpt-20261018-jeontong-eumak-and-muyon",
+      "type": "report",
+      "label": "전통 음악과 무용의 지역별 사회문화적 기능",
+      "level": 4,
+      "report_id": "rpt-20261018-jeontong-eumak-and-muyon",
+      "date": "2026-10-18",
+      "main_category": "역사·문화",
+      "category_path": [
+        "역사·문화",
+        "역사",
+        "문화사",
+        "음악과 무용이 공동체 정체성에 미친 영향"
+      ],
+      "html_url": "outputs/20261018_jeontong_eumak_and_muyon_Report.html",
+      "pdf_url": "outputs/20261018_jeontong_eumak_and_muyon_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -2545,6 +2576,13 @@
       "id": "sub:7cb73285e3d7560c",
       "type": "sub",
       "label": "가전과 식생활",
+      "level": 2,
+      "main_category": "역사·문화"
+    },
+    {
+      "id": "sub:81198d94303e00c0",
+      "type": "sub",
+      "label": "문화사",
       "level": 2,
       "main_category": "역사·문화"
     },
@@ -2946,6 +2984,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:175d97df9fe1d4f1",
+      "source": "detail:a9a21d4f38266df1",
+      "target": "report:rpt-20261018-jeontong-eumak-and-muyon",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:18312450d6852be3",
       "source": "report:rpt-20260831-dictionary-authority-wor",
       "target": "concept:con-a2ff54106aeeeb39",
@@ -3033,6 +3078,13 @@
       "id": "edge:1c68e2ab68b20472",
       "source": "detail:c505075bb528cf21",
       "target": "report:rpt-20261013-labor-wages-productivity",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:1d8c56243716d3d3",
+      "source": "sub:81198d94303e00c0",
+      "target": "detail:a9a21d4f38266df1",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -3851,6 +3903,21 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:52c471691c02f9ce",
+      "source": "report:rpt-20261018-jeontong-eumak-and-muyon",
+      "target": "concept:con-135ff1d8963c0c0f",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "sections[3].body[1]",
+          "matched_text": "권력 구조"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:5389aae3fb7c4966",
       "source": "middle:cb144e23e2065cf0",
       "target": "sub:c4205ae55196be5c",
@@ -4640,33 +4707,6 @@
       "relation_type": "contains"
     },
     {
-      "id": "edge:7dba19003127a2d1",
-      "source": "report:rpt-20260918-history-of-calendars-how",
-      "target": "concept:con-f6b070ac3797aa0b",
-      "kind": "concept",
-      "relation_type": "has_concept",
-      "score": 1.0,
-      "evidence": [
-        {
-          "reference": "sections[0].body[3]",
-          "matched_text": "정체성"
-        },
-        {
-          "reference": "sections[5].body[1]",
-          "matched_text": "정체성"
-        },
-        {
-          "reference": "sections[7].body[1]",
-          "matched_text": "정체성"
-        },
-        {
-          "reference": "sections[9].body[2]",
-          "matched_text": "정체성"
-        }
-      ],
-      "provenance": "curated-pattern-rule"
-    },
-    {
       "id": "edge:7de1efc0d5cd3b41",
       "source": "detail:97581aac4d23abbc",
       "target": "report:rpt-20260819-library-classification-p",
@@ -4908,6 +4948,13 @@
       "id": "edge:8857280dc9565cff",
       "source": "middle:9cd5243332ac9316",
       "target": "sub:92dbbf32055e96c8",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:88b45071a64b99cc",
+      "source": "middle:9ec9757928dd9af9",
+      "target": "sub:81198d94303e00c0",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -5697,6 +5744,13 @@
         }
       ],
       "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:b58aed33ce03a312",
+      "source": "category:cb829c377357dd71",
+      "target": "middle:9ec9757928dd9af9",
+      "kind": "hierarchy",
+      "relation_type": "contains"
     },
     {
       "id": "edge:b61f679f4c64eb43",
@@ -6800,6 +6854,33 @@
         {
           "reference": "sections[7].body[2]",
           "matched_text": "공정성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:f324ce39bf07c0d1",
+      "source": "report:rpt-20261018-jeontong-eumak-and-muyon",
+      "target": "concept:con-f6b070ac3797aa0b",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "subtitle",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "abstract",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "keywords[4]",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "term_box.items[2].description",
+          "matched_text": "정체성"
         }
       ],
       "provenance": "curated-pattern-rule"

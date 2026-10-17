@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-10-17",
+  "updated_at": "2026-10-18",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -1405,6 +1405,29 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261017_volcanic_activity_and_la_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261017_volcanic_activity_and_la_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "report_id": "rpt-20261018-jeontong-eumak-and-muyong-social-functions",
+      "date": "2026-10-18",
+      "title": "전통 음악과 무용의 지역별 사회문화적 기능",
+      "main_category": "역사·문화",
+      "mid_category": "역사",
+      "sub_category": "문화사",
+      "detail_category": "음악과 무용이 공동체 정체성에 미친 영향",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "전통 음악",
+        "무용",
+        "지역 문화",
+        "사회문화 기능",
+        "공동체 정체성",
+        "민속 예술",
+        "문화적 표현",
+        "역사적 변천"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261018_jeontong_eumak_and_muyon_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261018_jeontong_eumak_and_muyon_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -1421,9 +1444,9 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "자연·환경·지리",
-    "next_main_category": "역사·문화",
-    "next_index": 7,
+    "last_main_category": "역사·문화",
+    "next_main_category": "예술·디자인",
+    "next_index": 8,
     "completed_cycles": 6,
     "published_counts": {
       "인문·철학": 7,
@@ -1433,12 +1456,11 @@
       "기술·공학": 7,
       "생명·건강": 6,
       "자연·환경·지리": 6,
-      "역사·문화": 7,
+      "역사·문화": 8,
       "예술·디자인": 6,
       "언어·미디어·지식": 7
     },
     "recent_main_categories": [
-      "역사·문화",
       "예술·디자인",
       "언어·미디어·지식",
       "인문·철학",
@@ -1447,7 +1469,8 @@
       "과학·수학",
       "기술·공학",
       "생명·건강",
-      "자연·환경·지리"
+      "자연·환경·지리",
+      "역사·문화"
     ]
   },
   "candidate_pool": [
@@ -2278,7 +2301,7 @@
       "sub_category": "문화사",
       "detail_category": "음악과 무용이 공동체 정체성에 미친 영향",
       "priority": 1.0,
-      "status": "candidate",
+      "status": "used",
       "source": "api_generated"
     },
     {
