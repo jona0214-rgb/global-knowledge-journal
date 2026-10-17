@@ -46,8 +46,15 @@ for (const category of index.categories) {
 assert.match(indexHtml, /href="knowledge-map\.html"/);
 assert.match(mapHtml, /id="knowledge-map"/);
 assert.match(mapHtml, /type="module" src="knowledge-map\.js"/);
+assert.match(mapHtml, /id="map-reset"/);
+assert.match(mapHtml, /기본 대분류 지도로 돌아가기/);
+assert.match(mapHtml, /외부 대분류/);
 assert.match(mapSource, /public\/api\/v1\/knowledge-graph\.json/);
 assert.match(mapSource, /renderCategory/);
 assert.match(mapSource, /data-report-id/);
+assert.match(mapSource, /function resetMapState/);
+assert.match(mapSource, /searchEl\.value = ""/);
+assert.match(mapSource, /resetEl\.disabled = true/);
+assert.doesNotMatch(mapSource, /className: "map-node-metric"/);
 
 console.log("knowledge_map_test=ok");

@@ -96,16 +96,34 @@ function addText(group, label, options = {}) {
   if (segments.length === 1 || options.singleLine) {
     text.textContent = truncateLabel(label, options.maximum || 20);
   } else {
-    segments.slice(0, 2).forEach((segment, idx) => {
+    const visibleSegments = segments.slice(0, 2);
+    visibleSegments.forEach((segment, idx) => {
       const tspan = svgElement("tspan", {
         x: options.x || 0,
-        dy: idx === 0 ? "0" : "1.15em",
+        dy: idx === 0 && options.centered
+          ? `${-0.55 * (visibleSegments.length - 1)}em`
+          : idx === 0
+            ? "0"
+            : "1.1em",
       });
       tspan.textContent = segment.trim();
       text.append(tspan);
     });
   }
   group.append(text);
+  return text;
+}
+
+function categoryLabelFontSize(label, className) {
+  const longestSegment = Math.max(
+    ...String(label).split("·").map((segment) => segment.trim().length),
+  );
+  if (className.includes("external-category-node")) {
+    return longestSegment >= 7 ? 9 : 11;
+  }
+  if (longestSegment >= 8) return 13;
+  if (longestSegment >= 6) return 15;
+  return 17;
 }
 
 function addInteractiveNode({ node, position, radius, className, color, subtitle, onSelect }) {
@@ -126,21 +144,21 @@ function addInteractiveNode({ node, position, radius, className, color, subtitle
       fill: color || "#fffdf8",
     }),
   );
-  addText(group, node.label, {
-    y: className.includes("category") ? -2 : radius + 17,
-    className: className.includes("category")
+  const isCategory = className.includes("category");
+  const labelElement = addText(group, node.label, {
+    y: isCategory ? 0 : radius + 17,
+    className: isCategory
       ? "map-category-label"
       : "map-node-label",
     maximum: className.includes("report") ? 14 : 16,
-    singleLine: !className.includes("category"),
+    singleLine: !isCategory,
+    centered: isCategory,
   });
-  if (subtitle && className.includes("category")) {
-    addText(group, subtitle, {
-      y: 28,
-      className: "map-node-metric",
-      maximum: 18,
-      singleLine: true,
-    });
+  if (isCategory) {
+    labelElement.setAttribute(
+      "style",
+      `font-size:${categoryLabelFontSize(node.label, className)}px`,
+    );
   }
   group.addEventListener("click", () => onSelect(node));
   group.addEventListener("keydown", (event) => {
@@ -225,6 +243,7 @@ function selectDetail(node) {
 
 function renderOverview() {
   selectedCategoryId = null;
+  resetEl.disabled = true;
   clearMap();
   svg.setAttribute("viewBox", "0 0 1200 820");
   titleEl.textContent = "대분류 연결 지도";
@@ -287,6 +306,7 @@ function layerNodes(descendants, type) {
 
 function renderCategory(category, focusNodeId = null) {
   selectedCategoryId = category.id;
+  resetEl.disabled = false;
   clearMap();
   svg.setAttribute("viewBox", "0 0 1200 1000");
   titleEl.textContent = `${category.label} 지식 궤도`;
@@ -472,7 +492,14 @@ async function init() {
   }
 }
 
-resetEl.addEventListener("click", renderOverview);
+function resetMapState() {
+  searchEl.value = "";
+  searchResultsEl.hidden = true;
+  searchResultsEl.replaceChildren();
+  renderOverview();
+}
+
+resetEl.addEventListener("click", resetMapState);
 searchEl.addEventListener("input", () => renderSearchResults(searchEl.value));
 document.addEventListener("click", (event) => {
   if (!event.target.closest(".map-search-wrap")) searchResultsEl.hidden = true;

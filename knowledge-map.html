@@ -18,7 +18,6 @@
         </p>
         <div class="hero-actions">
           <a class="button secondary" href="index.html">리포트 홈으로</a>
-          <button id="map-reset" class="button map-reset" type="button">전체 지도</button>
         </div>
       </header>
 
@@ -61,6 +60,16 @@
         <div id="map-error" class="empty" hidden></div>
         <div class="knowledge-map-layout">
           <div class="map-canvas-wrap">
+            <button
+              id="map-reset"
+              class="map-reset"
+              type="button"
+              aria-label="기본 대분류 지도로 돌아가기"
+              title="기본 대분류 지도로 돌아가기"
+            >
+              <span aria-hidden="true">⌂</span>
+              기본 지도
+            </button>
             <svg
               id="knowledge-map"
               class="knowledge-map"
@@ -73,6 +82,7 @@
               <span><i class="legend-dot taxonomy-dot"></i>중·소분류</span>
               <span><i class="legend-dot report-dot"></i>리포트</span>
               <span><i class="legend-dot concept-dot"></i>공유 개념</span>
+              <span><i class="legend-dot external-category-dot"></i>외부 대분류</span>
             </div>
           </div>
 
