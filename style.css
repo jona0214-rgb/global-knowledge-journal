@@ -484,11 +484,45 @@ h1 {
 }
 
 .map-reset {
-  border: 0;
+  position: absolute;
+  z-index: 4;
+  top: 14px;
+  left: 14px;
+  display: inline-flex;
+  gap: 7px;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 13px;
+  color: var(--accent-dark);
+  background: rgba(255, 253, 248, 0.94);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  box-shadow: 0 8px 20px rgba(31, 27, 22, 0.12);
   cursor: pointer;
   font: inherit;
   font-size: 14px;
   font-weight: 800;
+  backdrop-filter: blur(8px);
+}
+
+.map-reset span {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.map-reset:hover,
+.map-reset:focus-visible {
+  border-color: var(--accent);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(139, 94, 52, 0.12), 0 8px 20px rgba(31, 27, 22, 0.12);
+}
+
+.map-reset:disabled {
+  color: var(--muted);
+  background: rgba(255, 253, 248, 0.76);
+  box-shadow: none;
+  cursor: default;
+  opacity: 0.7;
 }
 
 .map-summary {
@@ -695,12 +729,6 @@ h1 {
   font-size: 11px;
 }
 
-.map-node-metric {
-  fill: rgba(255, 255, 255, 0.9);
-  font-size: 10px;
-  font-weight: 750;
-}
-
 .map-node-label {
   fill: var(--ink);
   font-size: 10px;
@@ -760,6 +788,7 @@ h1 {
 .taxonomy-dot { background: #fffdf8; border: 1px solid #7d7369; }
 .report-dot { background: #fffdf8; border: 2px solid #536d9a; }
 .concept-dot { background: #f4e7bd; border: 1px solid #9a751f; }
+.external-category-dot { background: #fffdf8; border: 2px dashed #536d9a; }
 
 .map-details {
   position: sticky;
