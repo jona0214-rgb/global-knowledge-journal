@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-10-19",
+    "title": "전통 음악의 보존과 변용: 지역 음악은 어떻게 세계와 소통하는가",
+    "status": "published_api",
+    "event_name": "schedule",
+    "schedule_cron": "45 14 * * *",
+    "scheduled_for_kst": "2026-10-19T00:00:00+09:00",
+    "workflow_started_at": "2026-10-18T17:34:09Z",
+    "generation_started_at": "2026-10-18T17:34:44.964247Z",
+    "generation_completed_at": "2026-10-18T17:35:24.095911Z",
+    "catalog_updated_at": "2026-10-18T17:35:25.318617Z",
+    "scheduler_delay_seconds": 9249,
+    "setup_duration_seconds": 36,
+    "generation_duration_seconds": 40,
+    "validation_attempts": 1,
+    "run_id": "39150183151",
+    "run_attempt": "1",
+    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/39150183151",
+    "source_sha": "67c08b016d35b9e455e7f6944fe25ba361b161eb"
+  },
+  {
     "date": "2026-10-18",
     "title": "전통 음악과 무용의 지역별 사회문화적 기능",
     "status": "published_api",
@@ -638,25 +658,5 @@
     "run_attempt": "1",
     "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/35472871009",
     "source_sha": "dc3ff2d298faf10da67c8805988136c81ba98d11"
-  },
-  {
-    "date": "2026-09-19",
-    "title": "사진의 프레임: 카메라는 어떻게 현실을 선택하는가",
-    "status": "published_api",
-    "event_name": "schedule",
-    "schedule_cron": "15 23 * * *",
-    "scheduled_for_kst": "2026-09-19T08:15:00+09:00",
-    "workflow_started_at": "2026-09-19T01:08:46Z",
-    "generation_started_at": "2026-09-19T01:09:19.448955Z",
-    "generation_completed_at": "2026-09-19T01:12:52.731773Z",
-    "catalog_updated_at": "2026-09-19T01:12:53.933171Z",
-    "scheduler_delay_seconds": 6826,
-    "setup_duration_seconds": 33,
-    "generation_duration_seconds": 214,
-    "validation_attempts": 2,
-    "run_id": "35411707160",
-    "run_attempt": "1",
-    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/35411707160",
-    "source_sha": "533cea7b131640c6ba03899cb55c06b78f6ef375"
   }
 ]

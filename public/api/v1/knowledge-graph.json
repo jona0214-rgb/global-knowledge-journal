@@ -2,14 +2,14 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-10-18T02:34:17.016457+09:00",
+  "generated_at": "2026-10-19T02:35:25.316771+09:00",
   "stats": {
     "categories": 10,
-    "reports": 64,
-    "nodes": 282,
-    "edges": 369,
-    "concepts": 17,
-    "concept_edges": 114,
+    "reports": 65,
+    "nodes": 288,
+    "edges": 377,
+    "concepts": 19,
+    "concept_edges": 118,
     "semantic_edges": 0
   },
   "nodes": [
@@ -340,6 +340,34 @@
       "provenance": "curated-pattern-rule"
     },
     {
+      "id": "concept:con-aee3ff3ad156b4ed",
+      "type": "concept",
+      "label": "전통 음악",
+      "level": 5,
+      "concept_id": "con-aee3ff3ad156b4ed",
+      "concept_type": "concept",
+      "report_count": 2,
+      "main_categories": [
+        "역사·문화",
+        "예술·디자인"
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
+      "id": "concept:con-c48bcb475eea9922",
+      "type": "concept",
+      "label": "글로벌 교류",
+      "level": 5,
+      "concept_id": "con-c48bcb475eea9922",
+      "concept_type": "concept",
+      "report_count": 2,
+      "main_categories": [
+        "역사·문화",
+        "예술·디자인"
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
       "id": "concept:con-f6b070ac3797aa0b",
       "type": "concept",
       "label": "기억과 정체성",
@@ -352,6 +380,7 @@
         "생명·건강",
         "언어·미디어·지식",
         "역사·문화",
+        "예술·디자인",
         "인문·철학",
         "자연·환경·지리"
       ],
@@ -524,6 +553,13 @@
       "label": "우편번호의 사회적 기능",
       "level": 3,
       "main_category": "사회·정치·법"
+    },
+    {
+      "id": "detail:3bb86fbe9fa9a6b6",
+      "type": "detail",
+      "label": "세계화와 민속음악의 변화",
+      "level": 3,
+      "main_category": "예술·디자인"
     },
     {
       "id": "detail:41028c5d3d268fbf",
@@ -923,6 +959,13 @@
       "label": "물환경공학",
       "level": 1,
       "main_category": "기술·공학"
+    },
+    {
+      "id": "middle:55bdeec0654c0d72",
+      "type": "middle",
+      "label": "음악",
+      "level": 1,
+      "main_category": "예술·디자인"
     },
     {
       "id": "middle:5eef111a7fc8d608",
@@ -2335,6 +2378,23 @@
       "pdf_url": "outputs/20261018_jeontong_eumak_and_muyon_Report.pdf"
     },
     {
+      "id": "report:rpt-20261019-jeontong-eumak-bojongwa",
+      "type": "report",
+      "label": "전통 음악의 보존과 변용: 지역 음악은 어떻게 세계와 소통하는가",
+      "level": 4,
+      "report_id": "rpt-20261019-jeontong-eumak-bojongwa",
+      "date": "2026-10-19",
+      "main_category": "예술·디자인",
+      "category_path": [
+        "예술·디자인",
+        "음악",
+        "민속음악",
+        "세계화와 민속음악의 변화"
+      ],
+      "html_url": "outputs/20261019_jeontong_eumak_bojongwa__Report.html",
+      "pdf_url": "outputs/20261019_jeontong_eumak_bojongwa__Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -2354,6 +2414,13 @@
       "label": "비선형 시스템",
       "level": 2,
       "main_category": "과학·수학"
+    },
+    {
+      "id": "sub:1206bf1795d91ab8",
+      "type": "sub",
+      "label": "민속음악",
+      "level": 2,
+      "main_category": "예술·디자인"
     },
     {
       "id": "sub:129855c7497cf5e4",
@@ -3670,6 +3737,25 @@
       "provenance": "curated-pattern-rule"
     },
     {
+      "id": "edge:488d601b03e11fdc",
+      "source": "report:rpt-20261019-jeontong-eumak-bojongwa",
+      "target": "concept:con-aee3ff3ad156b4ed",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.8,
+      "evidence": [
+        {
+          "reference": "keywords[0]",
+          "matched_text": "전통 음악"
+        },
+        {
+          "reference": "term_box.items[0].term",
+          "matched_text": "전통 음악"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
       "id": "edge:48d6a731b8f085e7",
       "source": "report:rpt-20260826-sleep-biology-brain-dail",
       "target": "concept:con-f6b070ac3797aa0b",
@@ -4102,31 +4188,19 @@
       "provenance": "curated-pattern-rule"
     },
     {
-      "id": "edge:6076bf2bfacd1742",
-      "source": "report:rpt-20260902-population-survey-politi",
-      "target": "concept:con-f6b070ac3797aa0b",
+      "id": "edge:5e9fd4cca0e87828",
+      "source": "report:rpt-20261019-jeontong-eumak-bojongwa",
+      "target": "concept:con-c48bcb475eea9922",
       "kind": "concept",
       "relation_type": "has_concept",
-      "score": 1.0,
+      "score": 0.7,
       "evidence": [
         {
-          "reference": "sections[2].body[0]",
-          "matched_text": "정체성"
-        },
-        {
-          "reference": "sections[5].body[0]",
-          "matched_text": "정체성"
-        },
-        {
-          "reference": "sections[5].body[1]",
-          "matched_text": "정체성"
-        },
-        {
-          "reference": "sections[6].body[0]",
-          "matched_text": "정체성"
+          "reference": "keywords[6]",
+          "matched_text": "글로벌 교류"
         }
       ],
-      "provenance": "curated-pattern-rule"
+      "provenance": "exact-normalized-tag"
     },
     {
       "id": "edge:6090906512d5e795",
@@ -5064,6 +5138,13 @@
       "provenance": "curated-pattern-rule"
     },
     {
+      "id": "edge:8f89d2e7287dea72",
+      "source": "detail:3bb86fbe9fa9a6b6",
+      "target": "report:rpt-20261019-jeontong-eumak-bojongwa",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:901917ff663eeafa",
       "source": "category:b8045a9a934d7f69",
       "target": "middle:b1bf48b32ef4f9dc",
@@ -5088,6 +5169,13 @@
       "id": "edge:917b6632c7c5739d",
       "source": "sub:92dbbf32055e96c8",
       "target": "detail:0d8f33e9bdde43d8",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:91849b77705ba5db",
+      "source": "category:758a7b1ee4fe67cf",
+      "target": "middle:55bdeec0654c0d72",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -5597,6 +5685,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:ad3c94343a9177a2",
+      "source": "sub:1206bf1795d91ab8",
+      "target": "detail:3bb86fbe9fa9a6b6",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:ad59ba464ee23f2b",
       "source": "middle:2400afb8a9adf391",
       "target": "sub:4ad5be98bb969b76",
@@ -5633,6 +5728,13 @@
       "id": "edge:adf691edcf252619",
       "source": "sub:45db618c1de0b024",
       "target": "detail:e6bedc0c9d539543",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:ae3b2792b64f3a64",
+      "source": "middle:55bdeec0654c0d72",
+      "target": "sub:1206bf1795d91ab8",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -5741,6 +5843,33 @@
         {
           "reference": "keywords[6]",
           "matched_text": "에너지 저장"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:b4f2fafe09a18863",
+      "source": "report:rpt-20261019-jeontong-eumak-bojongwa",
+      "target": "concept:con-f6b070ac3797aa0b",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "subtitle",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "keywords[4]",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "sections[0].body[0]",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "sections[2].body[0]",
+          "matched_text": "정체성"
         }
       ],
       "provenance": "curated-pattern-rule"
@@ -6247,6 +6376,25 @@
         }
       ],
       "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:d3b8b7ded7025b90",
+      "source": "report:rpt-20261018-jeontong-eumak-and-muyon",
+      "target": "concept:con-aee3ff3ad156b4ed",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.8,
+      "evidence": [
+        {
+          "reference": "keywords[0]",
+          "matched_text": "전통 음악"
+        },
+        {
+          "reference": "term_box.items[0].term",
+          "matched_text": "전통 음악"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
     },
     {
       "id": "edge:d43cb4dc7e1f9c38",
@@ -6972,6 +7120,21 @@
       "target": "detail:704d751b6b29c437",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:fc37dc1495961a4d",
+      "source": "report:rpt-20260928-history-of-postage-stamp",
+      "target": "concept:con-c48bcb475eea9922",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[7]",
+          "matched_text": "글로벌 교류"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
     },
     {
       "id": "edge:fc7974073a203f05",

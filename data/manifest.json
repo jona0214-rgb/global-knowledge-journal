@@ -1,6 +1,22 @@
 {
-  "last_updated": "2026-10-18T02:34:17.016457+09:00",
+  "last_updated": "2026-10-19T02:35:25.316771+09:00",
   "reports": [
+    {
+      "date": "2026-10-19",
+      "title": "전통 음악의 보존과 변용: 지역 음악은 어떻게 세계와 소통하는가",
+      "subtitle": "세계화 시대, 민속음악이 지역적 정체성과 글로벌 대화 속에서 새로운 의미를 발견하는 여정",
+      "main_category": "예술·디자인",
+      "mid_category": "음악",
+      "sub_category": "민속음악",
+      "detail_category": "세계화와 민속음악의 변화",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20261019_jeontong_eumak_bojongwa__Report.html",
+      "pdf_path": "outputs/20261019_jeontong_eumak_bojongwa__Report.pdf",
+      "status": "published_api",
+      "html_url": "outputs/20261019_jeontong_eumak_bojongwa__Report.html",
+      "pdf_url": "outputs/20261019_jeontong_eumak_bojongwa__Report.pdf",
+      "report_id": "rpt-20261019-jeontong-eumak-bojongwa"
+    },
     {
       "date": "2026-10-18",
       "title": "전통 음악과 무용의 지역별 사회문화적 기능",
