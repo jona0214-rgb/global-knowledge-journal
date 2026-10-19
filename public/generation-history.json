@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-10-20",
+    "title": "번역 기술 혁신과 인공지능: 미래의 통역은 어떻게 변할까",
+    "status": "published_api",
+    "event_name": "schedule",
+    "schedule_cron": "45 14 * * *",
+    "scheduled_for_kst": "2026-10-20T00:00:00+09:00",
+    "workflow_started_at": "2026-10-19T20:13:53Z",
+    "generation_started_at": "2026-10-19T20:14:27.285751Z",
+    "generation_completed_at": "2026-10-19T20:15:20.558353Z",
+    "catalog_updated_at": "2026-10-19T20:15:21.871219Z",
+    "scheduler_delay_seconds": 18833,
+    "setup_duration_seconds": 34,
+    "generation_duration_seconds": 55,
+    "validation_attempts": 1,
+    "run_id": "39317561186",
+    "run_attempt": "1",
+    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/39317561186",
+    "source_sha": "492cf80f92116df66be9764d066bff36e9813b8e"
+  },
+  {
     "date": "2026-10-19",
     "title": "전통 음악의 보존과 변용: 지역 음악은 어떻게 세계와 소통하는가",
     "status": "published_api",
@@ -643,25 +663,5 @@
     "run_attempt": "1",
     "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/35541336338",
     "source_sha": "f81261e36a1acd7e18e0d7c823f0b56b7151a005"
-  },
-  {
-    "date": "2026-09-20",
-    "title": "유튜브 알고리즘의 구조와 사회적 영향: 정보 편향과 공론장의 변화",
-    "status": "published_api",
-    "event_name": "schedule",
-    "schedule_cron": "0 20 * * *",
-    "scheduled_for_kst": "2026-09-20T05:00:00+09:00",
-    "workflow_started_at": "2026-09-19T22:16:56Z",
-    "generation_started_at": "2026-09-19T22:17:34.952641Z",
-    "generation_completed_at": "2026-09-19T22:18:20.440862Z",
-    "catalog_updated_at": "2026-09-19T22:18:21.827963Z",
-    "scheduler_delay_seconds": 8216,
-    "setup_duration_seconds": 39,
-    "generation_duration_seconds": 47,
-    "validation_attempts": 1,
-    "run_id": "35472871009",
-    "run_attempt": "1",
-    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/35472871009",
-    "source_sha": "dc3ff2d298faf10da67c8805988136c81ba98d11"
   }
 ]

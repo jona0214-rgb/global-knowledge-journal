@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-10-19T02:35:25.316771+09:00",
+  "generated_at": "2026-10-20T05:15:21.869496+09:00",
   "stats": {
-    "reports": 65,
-    "tags": 2424,
+    "reports": 66,
+    "tags": 2462,
     "shared_concepts": 19,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -35673,6 +35673,556 @@
             {
               "reference": "further_reading[0].title",
               "matched_text": "『음악과 세계문화』"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "report_id": "rpt-20261020-translation-technology-a",
+      "date": "2026-10-20",
+      "title": "번역 기술 혁신과 인공지능: 미래의 통역은 어떻게 변할까",
+      "main_category": "언어·미디어·지식",
+      "tags": [
+        {
+          "tag_id": "tag-47332f80b27fbfef",
+          "label": "기계번역",
+          "normalized_label": "기계번역",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "기계번역"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-233d49fdfbdf5f99",
+          "label": "딥러닝",
+          "normalized_label": "딥러닝",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "딥러닝"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d2ab6127f9a5bb08",
+          "label": "신경망 번역",
+          "normalized_label": "신경망 번역",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "신경망 번역"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2d5f7cd381a95901",
+          "label": "실시간 통역",
+          "normalized_label": "실시간 통역",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "실시간 통역"
+            },
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "실시간 통역"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8a6f105f974b3069",
+          "label": "언어 처리",
+          "normalized_label": "언어 처리",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "언어 처리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c5866f3f9ddbdc87",
+          "label": "인공지능 번역",
+          "normalized_label": "인공지능 번역",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "인공지능 번역"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-eb1f4fb7732c73bb",
+          "label": "자동화",
+          "normalized_label": "자동화",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "자동화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0a08d42ce761e850",
+          "label": "자연어 이해",
+          "normalized_label": "자연어 이해",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "자연어 이해"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-534378e7be4c1518",
+          "label": "신경망 기계번역",
+          "normalized_label": "신경망 기계번역",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [
+            "Neural Machine Translation, NMT"
+          ],
+          "evidence": [
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "신경망 기계번역(Neural Machine Translation, NMT)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-55eb6b4203d43a74",
+          "label": "자연어 처리",
+          "normalized_label": "자연어 처리",
+          "type": "technology",
+          "weight": 0.98,
+          "aliases": [
+            "Natural Language Processing, NLP"
+          ],
+          "evidence": [
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "자연어 처리(Natural Language Processing, NLP)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1d9fb52ca7413753",
+          "label": "편향성",
+          "normalized_label": "편향성",
+          "type": "technology",
+          "weight": 0.98,
+          "aliases": [
+            "Bias"
+          ],
+          "evidence": [
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "편향성(Bias)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7763a192c70cc411",
+          "label": "번역",
+          "normalized_label": "번역",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "번역"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-cb296c7aeeafecc3",
+          "label": "기술과 번역",
+          "normalized_label": "기술과 번역",
+          "type": "domain",
+          "weight": 0.93,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.sub",
+              "matched_text": "기술과 번역"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7d348c197673e8d2",
+          "label": "AI 번역 기술 동향",
+          "normalized_label": "AI 번역 기술 동향",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "AI 번역 기술 동향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f4d61e46da6bab5f",
+          "label": "컴퓨터 언어학 연구자 김지훈",
+          "normalized_label": "컴퓨터 언어학 연구자 김지훈",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "컴퓨터 언어학 연구자 김지훈"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-51bbc19aeaa14757",
+          "label": "딥러닝 신경망 전환",
+          "normalized_label": "딥러닝 신경망 전환",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "딥러닝 신경망 전환"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e2c9052845b317ae",
+          "label": "멀티모달 및 대형 언어 모델 활용",
+          "normalized_label": "멀티모달 및 대형 언어 모델 활용",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "멀티모달 및 대형 언어 모델 활용"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2bb01f939bc08ce3",
+          "label": "실시간 AI 통역 상용화",
+          "normalized_label": "실시간 AI 통역 상용화",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "실시간 AI 통역 상용화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-38be95b4adf01802",
+          "label": "초기 규칙 기반 번역",
+          "normalized_label": "초기 규칙 기반 번역",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "초기 규칙 기반 번역"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5e00ed0019d9a3ee",
+          "label": "통계 기반 번역 도입",
+          "normalized_label": "통계 기반 번역 도입",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "통계 기반 번역 도입"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ef803a6ef5325290",
+          "label": "AI 번역 기술의 구조와 작동 원리",
+          "normalized_label": "AI 번역 기술의 구조와 작동 원리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "AI 번역 기술의 구조와 작동 원리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-62919daf567c2353",
+          "label": "AI 번역 기술의 사회적·문화적 의미와 미래 전망",
+          "normalized_label": "AI 번역 기술의 사회적·문화적 의미와 미래 전망",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "AI 번역 기술의 사회적·문화적 의미와 미래 전망"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-dcaa6c563f766bfb",
+          "label": "AI 번역 기술의 역사와 출발점",
+          "normalized_label": "AI 번역 기술의 역사와 출발점",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "AI 번역 기술의 역사와 출발점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-170d362a501c70ce",
+          "label": "AI 번역 기술의 현주소와 향후 방향",
+          "normalized_label": "AI 번역 기술의 현주소와 향후 방향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "AI 번역 기술의 현주소와 향후 방향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fef21ae482f7f062",
+          "label": "구글 번역의 AI 혁신과 글로벌 소통의 변화",
+          "normalized_label": "구글 번역의 AI 혁신과 글로벌 소통의 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "구글 번역의 AI 혁신과 글로벌 소통의 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1d1ce12f29f9b35f",
+          "label": "기본 개념과 핵심 용어 정리",
+          "normalized_label": "기본 개념과 핵심 용어 정리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "기본 개념과 핵심 용어 정리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4370ad24e0b51c05",
+          "label": "번역 기술 혁신의 핵심 쟁점과 분석",
+          "normalized_label": "번역 기술 혁신의 핵심 쟁점과 분석",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "번역 기술 혁신의 핵심 쟁점과 분석"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-702457acb3b4972a",
+          "label": "번역 기술과 인공지능의 시대적 중요성",
+          "normalized_label": "번역 기술과 인공지능의 시대적 중요성",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "번역 기술과 인공지능의 시대적 중요성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5d5db1f94f8d6eb4",
+          "label": "번역 품질 기준과 관리 방식의 변화",
+          "normalized_label": "번역 품질 기준과 관리 방식의 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "번역 품질 기준과 관리 방식의 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-bf858e0c58ad77c3",
+          "label": "사회·문화에 미친 AI 번역의 영향",
+          "normalized_label": "사회·문화에 미친 AI 번역의 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "사회·문화에 미친 AI 번역의 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b3ea5d807f14a65f",
+          "label": "신경망 기계번역의 최신 연구",
+          "normalized_label": "신경망 기계번역의 최신 연구",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "신경망 기계번역의 최신 연구"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-cd1a48c602149283",
+          "label": "AI 번역 기술 발전 단계 비교",
+          "normalized_label": "AI 번역 기술 발전 단계 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> AI 번역 기술 발전 단계 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-887e161f979353b1",
+          "label": "AI 번역 기술의 현재 쟁점 비교",
+          "normalized_label": "AI 번역 기술의 현재 쟁점 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> AI 번역 기술의 현재 쟁점 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f4bd420e9d6b1ead",
+          "label": "관련 도서·탐구 키워드·확장 주제",
+          "normalized_label": "관련 도서·탐구 키워드·확장 주제",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 관련 도서·탐구 키워드·확장 주제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-62a5f46e5577b598",
+          "label": "구글 번역 사례: 주요 특징과 영향",
+          "normalized_label": "구글 번역 사례: 주요 특징과 영향",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 구글 번역 사례: 주요 특징과 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-493d8d0fd05d0fc2",
+          "label": "기계 번역과 자연어 처리",
+          "normalized_label": "기계 번역과 자연어 처리",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "기계 번역과 자연어 처리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8891ec857ca27652",
+          "label": "다국어 소통과 AI 기술",
+          "normalized_label": "다국어 소통과 AI 기술",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "다국어 소통과 AI 기술"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9b752624cb9caec8",
+          "label": "인공 지능 시대의 번역",
+          "normalized_label": "인공 지능 시대의 번역",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "인공 지능 시대의 번역"
             }
           ]
         }

@@ -2,12 +2,12 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-10-19T02:35:25.316771+09:00",
+  "generated_at": "2026-10-20T05:15:21.869496+09:00",
   "stats": {
     "categories": 10,
-    "reports": 65,
-    "nodes": 288,
-    "edges": 377,
+    "reports": 66,
+    "nodes": 292,
+    "edges": 381,
     "concepts": 19,
     "concept_edges": 118,
     "semantic_edges": 0
@@ -681,6 +681,13 @@
       "main_category": "언어·미디어·지식"
     },
     {
+      "id": "detail:857748ab54dcd802",
+      "type": "detail",
+      "label": "AI 번역 기술 동향",
+      "level": 3,
+      "main_category": "언어·미디어·지식"
+    },
+    {
       "id": "detail:89962e146b94dea5",
       "type": "detail",
       "label": "포스트휴머니즘과 정체성",
@@ -1148,6 +1155,13 @@
       "label": "교역문화",
       "level": 1,
       "main_category": "역사·문화"
+    },
+    {
+      "id": "middle:c5e0c260de4c0040",
+      "type": "middle",
+      "label": "번역",
+      "level": 1,
+      "main_category": "언어·미디어·지식"
     },
     {
       "id": "middle:c8be5258eb6b9011",
@@ -2395,6 +2409,23 @@
       "pdf_url": "outputs/20261019_jeontong_eumak_bojongwa__Report.pdf"
     },
     {
+      "id": "report:rpt-20261020-translation-technology-a",
+      "type": "report",
+      "label": "번역 기술 혁신과 인공지능: 미래의 통역은 어떻게 변할까",
+      "level": 4,
+      "report_id": "rpt-20261020-translation-technology-a",
+      "date": "2026-10-20",
+      "main_category": "언어·미디어·지식",
+      "category_path": [
+        "언어·미디어·지식",
+        "번역",
+        "기술과 번역",
+        "AI 번역 기술 동향"
+      ],
+      "html_url": "outputs/20261020_translation_technology_a_Report.html",
+      "pdf_url": "outputs/20261020_translation_technology_a_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -2435,6 +2466,13 @@
       "label": "산업디자인",
       "level": 2,
       "main_category": "예술·디자인"
+    },
+    {
+      "id": "sub:158bcbe301c0d0bb",
+      "type": "sub",
+      "label": "기술과 번역",
+      "level": 2,
+      "main_category": "언어·미디어·지식"
     },
     {
       "id": "sub:1609ad7c27bfa6df",
@@ -2851,6 +2889,13 @@
     }
   ],
   "edges": [
+    {
+      "id": "edge:006b418912c88448",
+      "source": "middle:c5e0c260de4c0040",
+      "target": "sub:158bcbe301c0d0bb",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
     {
       "id": "edge:007b2fd48f77435b",
       "source": "detail:10a203a3095d20e4",
@@ -3866,6 +3911,13 @@
       "id": "edge:4d4db38bd2579ac5",
       "source": "detail:d0f82319ea979eab",
       "target": "report:rpt-20261015-renewable-energy-storage",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:4eeacdeb1713abe0",
+      "source": "detail:857748ab54dcd802",
+      "target": "report:rpt-20261020-translation-technology-a",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -5381,6 +5433,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:9dae3fc25cefd49d",
+      "source": "category:a495d7d4da85b458",
+      "target": "middle:c5e0c260de4c0040",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:9dd4e6de7ffb465d",
       "source": "category:cb829c377357dd71",
       "target": "middle:d6e43e13b5ff081e",
@@ -5920,6 +5979,13 @@
       "id": "edge:b795d0396c9d809b",
       "source": "sub:3207b77da325030e",
       "target": "detail:1b1dd9b990201286",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:ba35dbab3a281411",
+      "source": "sub:158bcbe301c0d0bb",
+      "target": "detail:857748ab54dcd802",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
