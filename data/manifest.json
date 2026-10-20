@@ -1,6 +1,22 @@
 {
-  "last_updated": "2026-10-20T05:15:21.869496+09:00",
+  "last_updated": "2026-10-21T03:50:15.693030+09:00",
   "reports": [
+    {
+      "date": "2026-10-21",
+      "title": "종교적 신념과 정신 건강: 긍정적·부정적 영향 분석",
+      "subtitle": "종교 신앙이 정신 건강에 미치는 다양한 영향과 쟁점",
+      "main_category": "인문·철학",
+      "mid_category": "종교와 인간 이해",
+      "sub_category": "종교 사회학",
+      "detail_category": "종교 신앙과 심리 건강",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20261021_religious_beliefs_and_me_Report.html",
+      "pdf_path": "outputs/20261021_religious_beliefs_and_me_Report.pdf",
+      "status": "published_api",
+      "html_url": "outputs/20261021_religious_beliefs_and_me_Report.html",
+      "pdf_url": "outputs/20261021_religious_beliefs_and_me_Report.pdf",
+      "report_id": "rpt-20261021-religious-beliefs-and-me"
+    },
     {
       "date": "2026-10-20",
       "title": "번역 기술 혁신과 인공지능: 미래의 통역은 어떻게 변할까",

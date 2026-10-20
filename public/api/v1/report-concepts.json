@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-10-20T05:15:21.869496+09:00",
+  "generated_at": "2026-10-21T03:50:15.693030+09:00",
   "stats": {
-    "reports": 66,
-    "tags": 2462,
-    "shared_concepts": 19,
+    "reports": 67,
+    "tags": 2499,
+    "shared_concepts": 20,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
   },
@@ -36227,6 +36227,544 @@
           ]
         }
       ]
+    },
+    {
+      "report_id": "rpt-20261021-religious-beliefs-and-me",
+      "date": "2026-10-21",
+      "title": "종교적 신념과 정신 건강: 긍정적·부정적 영향 분석",
+      "main_category": "인문·철학",
+      "tags": [
+        {
+          "tag_id": "tag-2cfb64c7619871e3",
+          "label": "사회적 지지",
+          "normalized_label": "사회적 지지",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "사회적 지지"
+            },
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "사회적 지지"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-56e837c065dde042",
+          "label": "신앙 의식",
+          "normalized_label": "신앙 의식",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "신앙 의식"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e60889df94e171df",
+          "label": "정신 건강",
+          "normalized_label": "정신 건강",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "정신 건강"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "정신 건강"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f4084bd6d0b7a92d",
+          "label": "정신 질환",
+          "normalized_label": "정신 질환",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "정신 질환"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f8f5f133c97d9e35",
+          "label": "종교 사회학",
+          "normalized_label": "종교 사회학",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "종교 사회학"
+            },
+            {
+              "reference": "category.sub",
+              "matched_text": "종교 사회학"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2acec1bddc88b434",
+          "label": "종교 신념",
+          "normalized_label": "종교 신념",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "종교 신념"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d84e2a44d8f0ab73",
+          "label": "심리 복지",
+          "normalized_label": "심리 복지",
+          "type": "mechanism",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "심리 복지"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ac285bb22071c8cb",
+          "label": "심리적 영향",
+          "normalized_label": "심리적 영향",
+          "type": "mechanism",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "심리적 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f98d7eff03642f4c",
+          "label": "종교적 신념",
+          "normalized_label": "종교적 신념",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "종교적 신념"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ef9806f5bbb78f9f",
+          "label": "내적 갈등",
+          "normalized_label": "내적 갈등",
+          "type": "problem",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "내적 갈등"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-53f9d34340ee3a71",
+          "label": "종교와 인간 이해",
+          "normalized_label": "종교와 인간 이해",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "종교와 인간 이해"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-65f62a23e0c30876",
+          "label": "종교 신앙과 심리 건강",
+          "normalized_label": "종교 신앙과 심리 건강",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "종교 신앙과 심리 건강"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-be3e361465a4cbf8",
+          "label": "스미스 외",
+          "normalized_label": "스미스 외",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "스미스 외, 정신의학 연구팀(2025)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fd34ba8db56ba33d",
+          "label": "내적 갈등 발생",
+          "normalized_label": "내적 갈등 발생",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "내적 갈등 발생"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0eb63c22c38a6e72",
+          "label": "사회적 지지 제공",
+          "normalized_label": "사회적 지지 제공",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "사회적 지지 제공"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2238e8d84cb82688",
+          "label": "심리적 의미 부여",
+          "normalized_label": "심리적 의미 부여",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "심리적 의미 부여"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b973da9ab06da050",
+          "label": "정신 건강 상태 변화",
+          "normalized_label": "정신 건강 상태 변화",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "정신 건강 상태 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6d30eb07e6cb02fa",
+          "label": "종교적 신념 형성",
+          "normalized_label": "종교적 신념 형성",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "종교적 신념 형성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4e61164da5b3a7fe",
+          "label": "구조와 작동 원리: 종교 신앙의 심리적 메커니즘",
+          "normalized_label": "구조와 작동 원리: 종교 신앙의 심리적 메커니즘",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "구조와 작동 원리: 종교 신앙의 심리적 메커니즘"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-aede7ef54d192d25",
+          "label": "미국 정신 건강과 종교 프로그램의 성공 사례",
+          "normalized_label": "미국 정신 건강과 종교 프로그램의 성공 사례",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "미국 정신 건강과 종교 프로그램의 성공 사례"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b6768ebbf1b8a232",
+          "label": "사회문화적 영향: 종교 신앙이 일상과 사회에 미친 효과",
+          "normalized_label": "사회문화적 영향: 종교 신앙이 일상과 사회에 미친 효과",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "사회문화적 영향: 종교 신앙이 일상과 사회에 미친 효과"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0bc927078e8d2831",
+          "label": "역사적 출발점: 종교 신앙과 정신 건강의 기원",
+          "normalized_label": "역사적 출발점: 종교 신앙과 정신 건강의 기원",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "역사적 출발점: 종교 신앙과 정신 건강의 기원"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7c841a635fe439e6",
+          "label": "종교 신념과 정신 건강 관계의 핵심 쟁점과 분석 틀",
+          "normalized_label": "종교 신념과 정신 건강 관계의 핵심 쟁점과 분석 틀",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "종교 신념과 정신 건강 관계의 핵심 쟁점과 분석 틀"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-abcaf575e42fed8e",
+          "label": "종교 신념과 정신 건강의 기본 개념과 용어",
+          "normalized_label": "종교 신념과 정신 건강의 기본 개념과 용어",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "종교 신념과 정신 건강의 기본 개념과 용어"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8fe0c3c1a6345e92",
+          "label": "종교적 신념과 정신 건강의 미래적 함의와 사회적 의미",
+          "normalized_label": "종교적 신념과 정신 건강의 미래적 함의와 사회적 의미",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "종교적 신념과 정신 건강의 미래적 함의와 사회적 의미"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-beaa988bf96825a7",
+          "label": "종교적 신념과 정신 건강이 중요한 현대 사회적 이슈인 이유",
+          "normalized_label": "종교적 신념과 정신 건강이 중요한 현대 사회적 이슈인 이유",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "종교적 신념과 정신 건강이 중요한 현대 사회적 이슈인 이유"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a78fa2ea0f055144",
+          "label": "측정과 관리: 종교 신앙에 따른 정신 건강 평가와 치료 변화",
+          "normalized_label": "측정과 관리: 종교 신앙에 따른 정신 건강 평가와 치료 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "측정과 관리: 종교 신앙에 따른 정신 건강 평가와 치료 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-33c711426f87fb33",
+          "label": "현대 쟁점과 미래 과제: 종교 신념과 정신 건강의 지속적 연구 방향",
+          "normalized_label": "현대 쟁점과 미래 과제: 종교 신념과 정신 건강의 지속적 연구 방향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[7].title",
+              "matched_text": "현대 쟁점과 미래 과제: 종교 신념과 정신 건강의 지속적 연구 방향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-07f73a4e41d9b10e",
+          "label": "현재 종교 신념과 정신 건강의 연구 동향과 사회적 쟁점",
+          "normalized_label": "현재 종교 신념과 정신 건강의 연구 동향과 사회적 쟁점",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "현재 종교 신념과 정신 건강의 연구 동향과 사회적 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ca4e1c0e46be0055",
+          "label": "Religious Beliefs and Mental Health Outcomes",
+          "normalized_label": "Religious Beliefs and Mental Health Outcomes",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "Religious Beliefs and Mental Health Outcomes"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-32ccca7677c11a86",
+          "label": "관련 도서, 탐구 키워드, 확장 주제",
+          "normalized_label": "관련 도서, 탐구 키워드, 확장 주제",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 관련 도서, 탐구 키워드, 확장 주제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e13d6e0ab4e6ae5f",
+          "label": "미국 정신 건강·종교 프로그램 사례 특징",
+          "normalized_label": "미국 정신 건강·종교 프로그램 사례 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 미국 정신 건강·종교 프로그램 사례 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1ea0686e52a5d8d6",
+          "label": "종교 신념과 정신 건강 영향 유형 비교",
+          "normalized_label": "종교 신념과 정신 건강 영향 유형 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 종교 신념과 정신 건강 영향 유형 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b7c27659c5bc0fd9",
+          "label": "현대 종교 신념과 정신 건강 주요 쟁점",
+          "normalized_label": "현대 종교 신념과 정신 건강 주요 쟁점",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 현대 종교 신념과 정신 건강 주요 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fe872c8f19105f01",
+          "label": "정신 건강과 종교적 대처",
+          "normalized_label": "정신 건강과 종교적 대처",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "정신 건강과 종교적 대처"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c1064c3e0fcf7dd3",
+          "label": "종교 사회학과 현대사회",
+          "normalized_label": "종교 사회학과 현대사회",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "종교 사회학과 현대사회"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b1ef87a4a4228552",
+          "label": "종교 심리학 개론",
+          "normalized_label": "종교 심리학 개론",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "종교 심리학 개론"
+            }
+          ]
+        }
+      ]
     }
   ],
   "shared_concepts": [
@@ -38358,6 +38896,42 @@
             {
               "reference": "term_box.items[0].term",
               "matched_text": "전통 음악"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "concept_id": "con-e60889df94e171df",
+      "label": "정신 건강",
+      "normalized_label": "정신 건강",
+      "type": "concept",
+      "provenance": "exact-normalized-tag",
+      "report_count": 2,
+      "main_categories": [
+        "생명·건강",
+        "인문·철학"
+      ],
+      "reports": [
+        {
+          "report_id": "rpt-20261016-mindfulness-role-in-ment",
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "정신 건강"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261021-religious-beliefs-and-me",
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "정신 건강"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "정신 건강"
             }
           ]
         }

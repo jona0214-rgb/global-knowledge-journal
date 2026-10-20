@@ -2,14 +2,14 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-10-20T05:15:21.869496+09:00",
+  "generated_at": "2026-10-21T03:50:15.693030+09:00",
   "stats": {
     "categories": 10,
-    "reports": 66,
-    "nodes": 292,
-    "edges": 381,
-    "concepts": 19,
-    "concept_edges": 118,
+    "reports": 67,
+    "nodes": 297,
+    "edges": 387,
+    "concepts": 20,
+    "concept_edges": 120,
     "semantic_edges": 0
   },
   "nodes": [
@@ -368,6 +368,20 @@
       "provenance": "exact-normalized-tag"
     },
     {
+      "id": "concept:con-e60889df94e171df",
+      "type": "concept",
+      "label": "정신 건강",
+      "level": 5,
+      "concept_id": "con-e60889df94e171df",
+      "concept_type": "concept",
+      "report_count": 2,
+      "main_categories": [
+        "생명·건강",
+        "인문·철학"
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
       "id": "concept:con-f6b070ac3797aa0b",
       "type": "concept",
       "label": "기억과 정체성",
@@ -637,6 +651,13 @@
       "label": "복식부기의 확산",
       "level": 3,
       "main_category": "경제·경영"
+    },
+    {
+      "id": "detail:69d5c894ab264248",
+      "type": "detail",
+      "label": "종교 신앙과 심리 건강",
+      "level": 3,
+      "main_category": "인문·철학"
     },
     {
       "id": "detail:704d751b6b29c437",
@@ -1162,6 +1183,13 @@
       "label": "번역",
       "level": 1,
       "main_category": "언어·미디어·지식"
+    },
+    {
+      "id": "middle:c658cad92d6979ae",
+      "type": "middle",
+      "label": "종교와 인간 이해",
+      "level": 1,
+      "main_category": "인문·철학"
     },
     {
       "id": "middle:c8be5258eb6b9011",
@@ -2426,6 +2454,23 @@
       "pdf_url": "outputs/20261020_translation_technology_a_Report.pdf"
     },
     {
+      "id": "report:rpt-20261021-religious-beliefs-and-me",
+      "type": "report",
+      "label": "종교적 신념과 정신 건강: 긍정적·부정적 영향 분석",
+      "level": 4,
+      "report_id": "rpt-20261021-religious-beliefs-and-me",
+      "date": "2026-10-21",
+      "main_category": "인문·철학",
+      "category_path": [
+        "인문·철학",
+        "종교와 인간 이해",
+        "종교 사회학",
+        "종교 신앙과 심리 건강"
+      ],
+      "html_url": "outputs/20261021_religious_beliefs_and_me_Report.html",
+      "pdf_url": "outputs/20261021_religious_beliefs_and_me_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -2706,6 +2751,13 @@
       "main_category": "인문·철학"
     },
     {
+      "id": "sub:9126256f16bb64f1",
+      "type": "sub",
+      "label": "종교 사회학",
+      "level": 2,
+      "main_category": "인문·철학"
+    },
+    {
       "id": "sub:92dbbf32055e96c8",
       "type": "sub",
       "label": "인식론",
@@ -2931,6 +2983,21 @@
       "target": "detail:cfe660dfd3e02bf9",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:01539aca5899dc08",
+      "source": "report:rpt-20261016-mindfulness-role-in-ment",
+      "target": "concept:con-e60889df94e171df",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[1]",
+          "matched_text": "정신 건강"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
     },
     {
       "id": "edge:015ffac4632dfb45",
@@ -3828,6 +3895,13 @@
       "provenance": "curated-pattern-rule"
     },
     {
+      "id": "edge:49e5f6c8f46844fd",
+      "source": "middle:c658cad92d6979ae",
+      "target": "sub:9126256f16bb64f1",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:4a5543c82957d773",
       "source": "detail:34c614fc6ec6ac0b",
       "target": "report:rpt-20260907-monsun-geography-how-sea",
@@ -4010,6 +4084,25 @@
         }
       ],
       "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:51a846d76acb57eb",
+      "source": "report:rpt-20261021-religious-beliefs-and-me",
+      "target": "concept:con-e60889df94e171df",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.8,
+      "evidence": [
+        {
+          "reference": "keywords[1]",
+          "matched_text": "정신 건강"
+        },
+        {
+          "reference": "term_box.items[1].term",
+          "matched_text": "정신 건강"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
     },
     {
       "id": "edge:51a86e069045a649",
@@ -6357,6 +6450,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:d15b3c72d6457853",
+      "source": "category:3fc5d02608923758",
+      "target": "middle:c658cad92d6979ae",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:d1fc4837f2f0a85c",
       "source": "report:rpt-20261004-science-of-chaos-how-sma",
       "target": "concept:con-22940219024d252e",
@@ -6556,6 +6656,13 @@
       "id": "edge:dbaba055a76b1ef7",
       "source": "middle:6c529e8114138a11",
       "target": "sub:67d010e2bde41175",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:dbf376fcc67e7da1",
+      "source": "sub:9126256f16bb64f1",
+      "target": "detail:69d5c894ab264248",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -7004,6 +7111,13 @@
       "id": "edge:ee03e28b58057627",
       "source": "middle:11ad53c1ad4528cc",
       "target": "sub:f19bd4048d307156",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:ee47cce86a965244",
+      "source": "detail:69d5c894ab264248",
+      "target": "report:rpt-20261021-religious-beliefs-and-me",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
