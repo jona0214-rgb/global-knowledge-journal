@@ -1,16 +1,16 @@
 {
-  "date": "2026-10-21",
-  "title": "종교적 신념과 정신 건강: 긍정적·부정적 영향 분석",
-  "subtitle": "종교 신앙이 정신 건강에 미치는 다양한 영향과 쟁점",
-  "main_category": "인문·철학",
-  "mid_category": "종교와 인간 이해",
-  "sub_category": "종교 사회학",
-  "detail_category": "종교 신앙과 심리 건강",
+  "date": "2026-10-22",
+  "title": "시민 불복종의 역사와 정치적 효과",
+  "subtitle": "비폭력 저항의 역사와 현대 정치 운동에서의 역할",
+  "main_category": "사회·정치·법",
+  "mid_category": "정치",
+  "sub_category": "정치행동",
+  "detail_category": "시민 불복종 사례와 영향 분석",
   "taxonomy_version": "2.0",
-  "html_path": "outputs/20261021_religious_beliefs_and_me_Report.html",
-  "pdf_path": "outputs/20261021_religious_beliefs_and_me_Report.pdf",
+  "html_path": "outputs/20261022_history_and_political_ef_Report.html",
+  "pdf_path": "outputs/20261022_history_and_political_ef_Report.pdf",
   "status": "published_api",
-  "html_url": "outputs/20261021_religious_beliefs_and_me_Report.html",
-  "pdf_url": "outputs/20261021_religious_beliefs_and_me_Report.pdf",
-  "report_id": "rpt-20261021-religious-beliefs-and-me"
+  "html_url": "outputs/20261022_history_and_political_ef_Report.html",
+  "pdf_url": "outputs/20261022_history_and_political_ef_Report.pdf",
+  "report_id": "rpt-20261022-history-and-political-ef"
 }

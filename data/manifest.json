@@ -1,6 +1,22 @@
 {
-  "last_updated": "2026-10-21T03:50:15.693030+09:00",
+  "last_updated": "2026-10-22T03:58:59.276353+09:00",
   "reports": [
+    {
+      "date": "2026-10-22",
+      "title": "시민 불복종의 역사와 정치적 효과",
+      "subtitle": "비폭력 저항의 역사와 현대 정치 운동에서의 역할",
+      "main_category": "사회·정치·법",
+      "mid_category": "정치",
+      "sub_category": "정치행동",
+      "detail_category": "시민 불복종 사례와 영향 분석",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20261022_history_and_political_ef_Report.html",
+      "pdf_path": "outputs/20261022_history_and_political_ef_Report.pdf",
+      "status": "published_api",
+      "html_url": "outputs/20261022_history_and_political_ef_Report.html",
+      "pdf_url": "outputs/20261022_history_and_political_ef_Report.pdf",
+      "report_id": "rpt-20261022-history-and-political-ef"
+    },
     {
       "date": "2026-10-21",
       "title": "종교적 신념과 정신 건강: 긍정적·부정적 영향 분석",

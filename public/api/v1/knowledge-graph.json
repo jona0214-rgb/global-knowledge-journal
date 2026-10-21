@@ -2,14 +2,14 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-10-21T03:50:15.693030+09:00",
+  "generated_at": "2026-10-22T03:58:59.276353+09:00",
   "stats": {
     "categories": 10,
-    "reports": 67,
-    "nodes": 297,
-    "edges": 387,
+    "reports": 68,
+    "nodes": 301,
+    "edges": 392,
     "concepts": 20,
-    "concept_edges": 120,
+    "concept_edges": 121,
     "semantic_edges": 0
   },
   "nodes": [
@@ -90,7 +90,7 @@
       "level": 5,
       "concept_id": "con-135ff1d8963c0c0f",
       "concept_type": "mechanism",
-      "report_count": 11,
+      "report_count": 12,
       "main_categories": [
         "과학·수학",
         "기술·공학",
@@ -723,6 +723,13 @@
       "main_category": "인문·철학"
     },
     {
+      "id": "detail:8e6b52ee989844ef",
+      "type": "detail",
+      "label": "시민 불복종 사례와 영향 분석",
+      "level": 3,
+      "main_category": "사회·정치·법"
+    },
+    {
       "id": "detail:947641bbf4d4a5ae",
       "type": "detail",
       "label": "사행천과 유로 변화",
@@ -1183,6 +1190,13 @@
       "label": "번역",
       "level": 1,
       "main_category": "언어·미디어·지식"
+    },
+    {
+      "id": "middle:c6250703bc32d78c",
+      "type": "middle",
+      "label": "정치",
+      "level": 1,
+      "main_category": "사회·정치·법"
     },
     {
       "id": "middle:c658cad92d6979ae",
@@ -2471,6 +2485,23 @@
       "pdf_url": "outputs/20261021_religious_beliefs_and_me_Report.pdf"
     },
     {
+      "id": "report:rpt-20261022-history-and-political-ef",
+      "type": "report",
+      "label": "시민 불복종의 역사와 정치적 효과",
+      "level": 4,
+      "report_id": "rpt-20261022-history-and-political-ef",
+      "date": "2026-10-22",
+      "main_category": "사회·정치·법",
+      "category_path": [
+        "사회·정치·법",
+        "정치",
+        "정치행동",
+        "시민 불복종 사례와 영향 분석"
+      ],
+      "html_url": "outputs/20261022_history_and_political_ef_Report.html",
+      "pdf_url": "outputs/20261022_history_and_political_ef_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -2798,6 +2829,13 @@
       "label": "자본시장",
       "level": 2,
       "main_category": "경제·경영"
+    },
+    {
+      "id": "sub:ad464f3898729757",
+      "type": "sub",
+      "label": "정치행동",
+      "level": 2,
+      "main_category": "사회·정치·법"
     },
     {
       "id": "sub:ae8d8e802269dff6",
@@ -3893,6 +3931,13 @@
         }
       ],
       "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:4922184a2bc92058",
+      "source": "sub:ad464f3898729757",
+      "target": "detail:8e6b52ee989844ef",
+      "kind": "hierarchy",
+      "relation_type": "contains"
     },
     {
       "id": "edge:49e5f6c8f46844fd",
@@ -5756,6 +5801,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:a698593596617b41",
+      "source": "category:b9ccab27f2a0689e",
+      "target": "middle:c6250703bc32d78c",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:a96bf2f6d059701a",
       "source": "detail:285a01795f10d567",
       "target": "report:rpt-20260925-elevator-urban-history-s",
@@ -6258,6 +6310,25 @@
         {
           "reference": "sections[2].body[0]",
           "matched_text": "에너지 효율"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:c64c6d3a62f9ebd8",
+      "source": "report:rpt-20261022-history-and-political-ef",
+      "target": "concept:con-135ff1d8963c0c0f",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.8,
+      "evidence": [
+        {
+          "reference": "abstract",
+          "matched_text": "권력 구조"
+        },
+        {
+          "reference": "sections[0].body[0]",
+          "matched_text": "권력 구조"
         }
       ],
       "provenance": "curated-pattern-rule"
@@ -6847,6 +6918,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:e71c04f9c46eba6a",
+      "source": "detail:8e6b52ee989844ef",
+      "target": "report:rpt-20261022-history-and-political-ef",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:e728dfadfa26743d",
       "source": "report:rpt-20260816-veil-of-ignorance-fair-s",
       "target": "concept:con-135ff1d8963c0c0f",
@@ -6969,6 +7047,13 @@
       "id": "edge:e9a1855a484f6e32",
       "source": "category:a495d7d4da85b458",
       "target": "middle:0513aac18de937c6",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:ea180e4f4efb114b",
+      "source": "middle:c6250703bc32d78c",
+      "target": "sub:ad464f3898729757",
       "kind": "hierarchy",
       "relation_type": "contains"
     },

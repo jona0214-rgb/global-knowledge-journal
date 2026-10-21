@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-10-21T03:50:15.693030+09:00",
+  "generated_at": "2026-10-22T03:58:59.276353+09:00",
   "stats": {
-    "reports": 67,
-    "tags": 2499,
+    "reports": 68,
+    "tags": 2535,
     "shared_concepts": 20,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -36765,6 +36765,530 @@
           ]
         }
       ]
+    },
+    {
+      "report_id": "rpt-20261022-history-and-political-ef",
+      "date": "2026-10-22",
+      "title": "시민 불복종의 역사와 정치적 효과",
+      "main_category": "사회·정치·법",
+      "tags": [
+        {
+          "tag_id": "tag-6cb8375e6802cc0d",
+          "label": "공권력",
+          "normalized_label": "공권력",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "공권력"
+            },
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "공권력"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f4750eca7400cc19",
+          "label": "비폭력 저항",
+          "normalized_label": "비폭력 저항",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "비폭력 저항"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "비폭력 저항"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-42beb9ba3516576b",
+          "label": "사회 변혁",
+          "normalized_label": "사회 변혁",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "사회 변혁"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-51a952e90193cacd",
+          "label": "시민 불복종",
+          "normalized_label": "시민 불복종",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "시민 불복종"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "시민 불복종"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-499dc8927ce4768a",
+          "label": "시민 행동",
+          "normalized_label": "시민 행동",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "시민 행동"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2f2c3ae77f37691a",
+          "label": "정의 실현",
+          "normalized_label": "정의 실현",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "정의 실현"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-60e21b9b4b7c841a",
+          "label": "정치 운동",
+          "normalized_label": "정치 운동",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "정치 운동"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fcecd441a7bf1a31",
+          "label": "정치 효과",
+          "normalized_label": "정치 효과",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "정치 효과"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-626662d43752ef0a",
+          "label": "정치적 정당성",
+          "normalized_label": "정치적 정당성",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "정치적 정당성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5d82203b9867e748",
+          "label": "정치",
+          "normalized_label": "정치",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "정치"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3da0fbdce89fffbc",
+          "label": "정치행동",
+          "normalized_label": "정치행동",
+          "type": "domain",
+          "weight": 0.93,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.sub",
+              "matched_text": "정치행동"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-af1618f228edf121",
+          "label": "시민 불복종 사례와 영향 분석",
+          "normalized_label": "시민 불복종 사례와 영향 분석",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "시민 불복종 사례와 영향 분석"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-82fb46019380b7a5",
+          "label": "헨리 데이비드 소로우",
+          "normalized_label": "헨리 데이비드 소로우",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "헨리 데이비드 소로우"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fab0ef510f2f8968",
+          "label": "권력과의 충돌 및 언론 주목",
+          "normalized_label": "권력과의 충돌 및 언론 주목",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "권력과의 충돌 및 언론 주목"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b8d7ddfa2cd82d90",
+          "label": "대중 동원과 조직화",
+          "normalized_label": "대중 동원과 조직화",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "대중 동원과 조직화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-01991d900de23e9f",
+          "label": "법적 부당성 인식",
+          "normalized_label": "법적 부당성 인식",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "법적 부당성 인식"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6ef590ba7654e9be",
+          "label": "비폭력 저항 전략 수립",
+          "normalized_label": "비폭력 저항 전략 수립",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "비폭력 저항 전략 수립"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d81757eb72ea7bfe",
+          "label": "사회·정치적 제도 변화 촉진",
+          "normalized_label": "사회·정치적 제도 변화 촉진",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "사회·정치적 제도 변화 촉진"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-44e9d98178523d52",
+          "label": "구조와 작동 원리: 시민 불복종의 메커니즘",
+          "normalized_label": "구조와 작동 원리: 시민 불복종의 메커니즘",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "구조와 작동 원리: 시민 불복종의 메커니즘"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c3ecdefa139f634e",
+          "label": "사회·문화에 미친 영향과 변혁의 촉매제",
+          "normalized_label": "사회·문화에 미친 영향과 변혁의 촉매제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "사회·문화에 미친 영향과 변혁의 촉매제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-95f2e7335138d826",
+          "label": "시민 불복종 기본 개념과 핵심 용어",
+          "normalized_label": "시민 불복종 기본 개념과 핵심 용어",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "시민 불복종 기본 개념과 핵심 용어"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b88f2e0370c5af7f",
+          "label": "시민 불복종의 사회적·정치적 함의와 미래 방향",
+          "normalized_label": "시민 불복종의 사회적·정치적 함의와 미래 방향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "시민 불복종의 사회적·정치적 함의와 미래 방향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-781a367d3ae31c01",
+          "label": "시민 불복종의 역사적 중요성과 오늘날의 주목",
+          "normalized_label": "시민 불복종의 역사적 중요성과 오늘날의 주목",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "시민 불복종의 역사적 중요성과 오늘날의 주목"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-122b9bbda18b1d5b",
+          "label": "시민 불복종의 역사적 출발과 기원",
+          "normalized_label": "시민 불복종의 역사적 출발과 기원",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "시민 불복종의 역사적 출발과 기원"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-82ebdadea961c4bc",
+          "label": "시민 불복종의 핵심 질문과 분석 구조",
+          "normalized_label": "시민 불복종의 핵심 질문과 분석 구조",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "시민 불복종의 핵심 질문과 분석 구조"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1fa96a672494853e",
+          "label": "인도 독립운동 속 간디의 시민 불복종 전략",
+          "normalized_label": "인도 독립운동 속 간디의 시민 불복종 전략",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "인도 독립운동 속 간디의 시민 불복종 전략"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4b5fe0dc472d6397",
+          "label": "제도적 기준과 관리 변화",
+          "normalized_label": "제도적 기준과 관리 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "제도적 기준과 관리 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a499730051eeff44",
+          "label": "현대 사회에서 시민 불복종의 작동과 쟁점",
+          "normalized_label": "현대 사회에서 시민 불복종의 작동과 쟁점",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "현대 사회에서 시민 불복종의 작동과 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9614056a554df63a",
+          "label": "Civil Disobedience and Other Essays",
+          "normalized_label": "Civil Disobedience and Other Essays",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "Civil Disobedience and Other Essays"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7b152e79f0fe3672",
+          "label": "간디 시민 불복종 운동의 특징",
+          "normalized_label": "간디 시민 불복종 운동의 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 간디 시민 불복종 운동의 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f4bd420e9d6b1ead",
+          "label": "관련 도서·탐구 키워드·확장 주제",
+          "normalized_label": "관련 도서·탐구 키워드·확장 주제",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 관련 도서·탐구 키워드·확장 주제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-946f29f87c391fa0",
+          "label": "시민 불복종 주요 역사적 사례 비교",
+          "normalized_label": "시민 불복종 주요 역사적 사례 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 시민 불복종 주요 역사적 사례 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1d539b36443218e1",
+          "label": "현대 시민 불복종의 주요 쟁점과 영향",
+          "normalized_label": "현대 시민 불복종의 주요 쟁점과 영향",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 현대 시민 불복종의 주요 쟁점과 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fa6d635f2c2f112b",
+          "label": "『비폭력 저항의 기술』",
+          "normalized_label": "『비폭력 저항의 기술』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "『비폭력 저항의 기술』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1453db504474cd49",
+          "label": "『시민 불복종』",
+          "normalized_label": "『시민 불복종』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "『시민 불복종』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-852f2c72c576633e",
+          "label": "『정의란 무엇인가』",
+          "normalized_label": "『정의란 무엇인가』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "『정의란 무엇인가』"
+            }
+          ]
+        }
+      ]
     }
   ],
   "shared_concepts": [
@@ -37256,6 +37780,185 @@
             {
               "reference": "sections[2].body[0]",
               "matched_text": "정체성"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "concept_id": "con-135ff1d8963c0c0f",
+      "label": "분류와 권력",
+      "normalized_label": "분류와 권력",
+      "type": "mechanism",
+      "provenance": "curated-pattern-rule",
+      "report_count": 12,
+      "main_categories": [
+        "과학·수학",
+        "기술·공학",
+        "사회·정치·법",
+        "언어·미디어·지식",
+        "역사·문화",
+        "예술·디자인",
+        "인문·철학"
+      ],
+      "reports": [
+        {
+          "report_id": "rpt-20260816-veil-of-ignorance-fair-s",
+          "evidence": [
+            {
+              "reference": "sections[7].body[0]",
+              "matched_text": "권력 구조"
+            },
+            {
+              "reference": "sections[8].body[2]",
+              "matched_text": "권력 구조"
+            },
+            {
+              "reference": "sections[9].body[2]",
+              "matched_text": "권력 구조"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20260819-library-classification-p",
+          "evidence": [
+            {
+              "reference": "subtitle",
+              "matched_text": "분류 체계"
+            },
+            {
+              "reference": "abstract",
+              "matched_text": "분류 체계"
+            },
+            {
+              "reference": "keywords[1]",
+              "matched_text": "지식 배열"
+            },
+            {
+              "reference": "keywords[2]",
+              "matched_text": "분류 체계"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20260830-saek-e-jeryosa-anggoneun",
+          "evidence": [
+            {
+              "reference": "sections[0].body[1]",
+              "matched_text": "권력 구조"
+            },
+            {
+              "reference": "sections[8].body[2]",
+              "matched_text": "권력 구조"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20260831-dictionary-authority-wor",
+          "evidence": [
+            {
+              "reference": "sections[5].body[1]",
+              "matched_text": "권력 구조"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20260902-population-survey-politi",
+          "evidence": [
+            {
+              "reference": "title",
+              "matched_text": "인구조사"
+            },
+            {
+              "reference": "abstract",
+              "matched_text": "인구조사"
+            },
+            {
+              "reference": "keywords[0]",
+              "matched_text": "인구조사"
+            },
+            {
+              "reference": "keywords[1]",
+              "matched_text": "센서스"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20260914-jukiyurpyoui-jillye-woon",
+          "evidence": [
+            {
+              "reference": "sections[3].body[1]",
+              "matched_text": "분류 체계"
+            },
+            {
+              "reference": "sections[7].body[1]",
+              "matched_text": "분류 체계"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20260918-history-of-calendars-how",
+          "evidence": [
+            {
+              "reference": "sections[3].body[1]",
+              "matched_text": "권력 구조"
+            },
+            {
+              "reference": "sections[8].body[3]",
+              "matched_text": "권력 구조"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20260925-elevator-urban-history-s",
+          "evidence": [
+            {
+              "reference": "sections[5].body[1]",
+              "matched_text": "권력 구조"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261008-jeontong-uibok-social-st",
+          "evidence": [
+            {
+              "reference": "abstract",
+              "matched_text": "권력 구조"
+            },
+            {
+              "reference": "sections[6].body[0]",
+              "matched_text": "권력 구조"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261010-language-diversity-conse",
+          "evidence": [
+            {
+              "reference": "sections[6].body[0]",
+              "matched_text": "분류 기준"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261018-jeontong-eumak-and-muyon",
+          "evidence": [
+            {
+              "reference": "sections[3].body[1]",
+              "matched_text": "권력 구조"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261022-history-and-political-ef",
+          "evidence": [
+            {
+              "reference": "abstract",
+              "matched_text": "권력 구조"
+            },
+            {
+              "reference": "sections[0].body[0]",
+              "matched_text": "권력 구조"
             }
           ]
         }
@@ -38153,172 +38856,6 @@
             {
               "reference": "sections[9].body[3]",
               "matched_text": "환경 영향"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "concept_id": "con-135ff1d8963c0c0f",
-      "label": "분류와 권력",
-      "normalized_label": "분류와 권력",
-      "type": "mechanism",
-      "provenance": "curated-pattern-rule",
-      "report_count": 11,
-      "main_categories": [
-        "과학·수학",
-        "기술·공학",
-        "사회·정치·법",
-        "언어·미디어·지식",
-        "역사·문화",
-        "예술·디자인",
-        "인문·철학"
-      ],
-      "reports": [
-        {
-          "report_id": "rpt-20260816-veil-of-ignorance-fair-s",
-          "evidence": [
-            {
-              "reference": "sections[7].body[0]",
-              "matched_text": "권력 구조"
-            },
-            {
-              "reference": "sections[8].body[2]",
-              "matched_text": "권력 구조"
-            },
-            {
-              "reference": "sections[9].body[2]",
-              "matched_text": "권력 구조"
-            }
-          ]
-        },
-        {
-          "report_id": "rpt-20260819-library-classification-p",
-          "evidence": [
-            {
-              "reference": "subtitle",
-              "matched_text": "분류 체계"
-            },
-            {
-              "reference": "abstract",
-              "matched_text": "분류 체계"
-            },
-            {
-              "reference": "keywords[1]",
-              "matched_text": "지식 배열"
-            },
-            {
-              "reference": "keywords[2]",
-              "matched_text": "분류 체계"
-            }
-          ]
-        },
-        {
-          "report_id": "rpt-20260830-saek-e-jeryosa-anggoneun",
-          "evidence": [
-            {
-              "reference": "sections[0].body[1]",
-              "matched_text": "권력 구조"
-            },
-            {
-              "reference": "sections[8].body[2]",
-              "matched_text": "권력 구조"
-            }
-          ]
-        },
-        {
-          "report_id": "rpt-20260831-dictionary-authority-wor",
-          "evidence": [
-            {
-              "reference": "sections[5].body[1]",
-              "matched_text": "권력 구조"
-            }
-          ]
-        },
-        {
-          "report_id": "rpt-20260902-population-survey-politi",
-          "evidence": [
-            {
-              "reference": "title",
-              "matched_text": "인구조사"
-            },
-            {
-              "reference": "abstract",
-              "matched_text": "인구조사"
-            },
-            {
-              "reference": "keywords[0]",
-              "matched_text": "인구조사"
-            },
-            {
-              "reference": "keywords[1]",
-              "matched_text": "센서스"
-            }
-          ]
-        },
-        {
-          "report_id": "rpt-20260914-jukiyurpyoui-jillye-woon",
-          "evidence": [
-            {
-              "reference": "sections[3].body[1]",
-              "matched_text": "분류 체계"
-            },
-            {
-              "reference": "sections[7].body[1]",
-              "matched_text": "분류 체계"
-            }
-          ]
-        },
-        {
-          "report_id": "rpt-20260918-history-of-calendars-how",
-          "evidence": [
-            {
-              "reference": "sections[3].body[1]",
-              "matched_text": "권력 구조"
-            },
-            {
-              "reference": "sections[8].body[3]",
-              "matched_text": "권력 구조"
-            }
-          ]
-        },
-        {
-          "report_id": "rpt-20260925-elevator-urban-history-s",
-          "evidence": [
-            {
-              "reference": "sections[5].body[1]",
-              "matched_text": "권력 구조"
-            }
-          ]
-        },
-        {
-          "report_id": "rpt-20261008-jeontong-uibok-social-st",
-          "evidence": [
-            {
-              "reference": "abstract",
-              "matched_text": "권력 구조"
-            },
-            {
-              "reference": "sections[6].body[0]",
-              "matched_text": "권력 구조"
-            }
-          ]
-        },
-        {
-          "report_id": "rpt-20261010-language-diversity-conse",
-          "evidence": [
-            {
-              "reference": "sections[6].body[0]",
-              "matched_text": "분류 기준"
-            }
-          ]
-        },
-        {
-          "report_id": "rpt-20261018-jeontong-eumak-and-muyon",
-          "evidence": [
-            {
-              "reference": "sections[3].body[1]",
-              "matched_text": "권력 구조"
             }
           ]
         }
