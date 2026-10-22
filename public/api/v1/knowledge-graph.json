@@ -2,12 +2,12 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-10-22T03:58:59.276353+09:00",
+  "generated_at": "2026-10-23T03:53:01.895632+09:00",
   "stats": {
     "categories": 10,
-    "reports": 68,
-    "nodes": 301,
-    "edges": 392,
+    "reports": 69,
+    "nodes": 305,
+    "edges": 396,
     "concepts": 20,
     "concept_edges": 121,
     "semantic_edges": 0
@@ -520,6 +520,13 @@
       "main_category": "역사·문화"
     },
     {
+      "id": "detail:322412f670ebbefb",
+      "type": "detail",
+      "label": "브랜드 자산 평가",
+      "level": 3,
+      "main_category": "경제·경영"
+    },
+    {
       "id": "detail:34192e149b2ef72f",
       "type": "detail",
       "label": "줄기세포 치료와 재생 의학",
@@ -910,6 +917,13 @@
       "label": "물리학",
       "level": 1,
       "main_category": "과학·수학"
+    },
+    {
+      "id": "middle:122d8c82ed9f59b8",
+      "type": "middle",
+      "label": "기업과 소비",
+      "level": 1,
+      "main_category": "경제·경영"
     },
     {
       "id": "middle:17be3d647f8a5139",
@@ -2502,6 +2516,23 @@
       "pdf_url": "outputs/20261022_history_and_political_ef_Report.pdf"
     },
     {
+      "id": "report:rpt-20261023-corporate-brand-value-me",
+      "type": "report",
+      "label": "기업 브랜드 가치 측정 방법과 소비자 신뢰의 관계",
+      "level": 4,
+      "report_id": "rpt-20261023-corporate-brand-value-me",
+      "date": "2026-10-23",
+      "main_category": "경제·경영",
+      "category_path": [
+        "경제·경영",
+        "기업과 소비",
+        "브랜딩",
+        "브랜드 자산 평가"
+      ],
+      "html_url": "outputs/20261023_corporate_brand_value_me_Report.html",
+      "pdf_url": "outputs/20261023_corporate_brand_value_me_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -2913,6 +2944,13 @@
       "label": "건축 음향",
       "level": 2,
       "main_category": "예술·디자인"
+    },
+    {
+      "id": "sub:cf056f0a7d4b04ad",
+      "type": "sub",
+      "label": "브랜딩",
+      "level": 2,
+      "main_category": "경제·경영"
     },
     {
       "id": "sub:d1c4b572c935c483",
@@ -3609,6 +3647,13 @@
       "id": "edge:34f837c6269e1b5e",
       "source": "category:758a7b1ee4fe67cf",
       "target": "middle:efbda3d2166e9316",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:353b2e9b342ced14",
+      "source": "sub:cf056f0a7d4b04ad",
+      "target": "detail:322412f670ebbefb",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -4911,6 +4956,13 @@
       "provenance": "curated-pattern-rule"
     },
     {
+      "id": "edge:7a4951924081bab6",
+      "source": "detail:322412f670ebbefb",
+      "target": "report:rpt-20261023-corporate-brand-value-me",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:7b0b673fe9ce0963",
       "source": "middle:31efa95b81f1ef7c",
       "target": "sub:d8ece351df04595a",
@@ -5536,6 +5588,13 @@
       "provenance": "curated-pattern-rule"
     },
     {
+      "id": "edge:9a26079fbf3e1c41",
+      "source": "middle:122d8c82ed9f59b8",
+      "target": "sub:cf056f0a7d4b04ad",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:9aed05fcd0fd0a01",
       "source": "detail:3420d1fc276cfe21",
       "target": "report:rpt-20260815-dosiei-hasudo",
@@ -6145,6 +6204,13 @@
       "id": "edge:bb7a978e436501b4",
       "source": "middle:103e5235497ad2b3",
       "target": "sub:bfe96042a95d9ce4",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:bb7e4a952e0bd40f",
+      "source": "category:52cb15e614d4481d",
+      "target": "middle:122d8c82ed9f59b8",
       "kind": "hierarchy",
       "relation_type": "contains"
     },

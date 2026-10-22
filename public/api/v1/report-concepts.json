@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-10-22T03:58:59.276353+09:00",
+  "generated_at": "2026-10-23T03:53:01.895632+09:00",
   "stats": {
-    "reports": 68,
-    "tags": 2535,
+    "reports": 69,
+    "tags": 2570,
     "shared_concepts": 20,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -37285,6 +37285,524 @@
             {
               "reference": "further_reading[1].title",
               "matched_text": "『정의란 무엇인가』"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "report_id": "rpt-20261023-corporate-brand-value-me",
+      "date": "2026-10-23",
+      "title": "기업 브랜드 가치 측정 방법과 소비자 신뢰의 관계",
+      "main_category": "경제·경영",
+      "tags": [
+        {
+          "tag_id": "tag-4bb4348d709334ed",
+          "label": "기업 이미지",
+          "normalized_label": "기업 이미지",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "기업 이미지"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-00849f0c17f4c3bc",
+          "label": "마케팅 전략",
+          "normalized_label": "마케팅 전략",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "마케팅 전략"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a1606fe0a717e4b8",
+          "label": "브랜드 가치",
+          "normalized_label": "브랜드 가치",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "브랜드 가치"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "브랜드 가치"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6211e43b4b1fcd6f",
+          "label": "브랜드 인지도",
+          "normalized_label": "브랜드 인지도",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "브랜드 인지도"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-465d590138f47c56",
+          "label": "브랜드 자산 평가",
+          "normalized_label": "브랜드 자산 평가",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "브랜드 자산 평가"
+            },
+            {
+              "reference": "category.detail",
+              "matched_text": "브랜드 자산 평가"
+            },
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "브랜드 자산 평가"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-69dc179519147c6a",
+          "label": "브랜드 측정 방법",
+          "normalized_label": "브랜드 측정 방법",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "브랜드 측정 방법"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-81d0cebc9948e45d",
+          "label": "소비자 신뢰",
+          "normalized_label": "소비자 신뢰",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "소비자 신뢰"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "소비자 신뢰"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c556fc0525a5c693",
+          "label": "소비자 행동",
+          "normalized_label": "소비자 행동",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "소비자 행동"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-71b05e8b5208dae0",
+          "label": "브랜드 충성도",
+          "normalized_label": "브랜드 충성도",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "브랜드 충성도"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-834253ab0bd304f1",
+          "label": "기업과 소비",
+          "normalized_label": "기업과 소비",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "기업과 소비"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4ef344866fa0ed4e",
+          "label": "브랜딩",
+          "normalized_label": "브랜딩",
+          "type": "domain",
+          "weight": 0.93,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.sub",
+              "matched_text": "브랜딩"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a01c299ceeeae4c8",
+          "label": "데이비드 아커",
+          "normalized_label": "데이비드 아커",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "데이비드 아커, 브랜드 전략 전문가"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e7a645d9dc3c959c",
+          "label": "브랜드 가치 산출",
+          "normalized_label": "브랜드 가치 산출",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "브랜드 가치 산출"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-62b7e6a0c35093be",
+          "label": "브랜드 자산 요소 분석",
+          "normalized_label": "브랜드 자산 요소 분석",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "브랜드 자산 요소 분석"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fcc89616b4760103",
+          "label": "소비자 신뢰 향상 전략",
+          "normalized_label": "소비자 신뢰 향상 전략",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "소비자 신뢰 향상 전략"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-88443aef2b76ae7b",
+          "label": "소비자 인식 조사",
+          "normalized_label": "소비자 인식 조사",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "소비자 인식 조사"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-be965ba86d100a54",
+          "label": "재무 데이터 통합",
+          "normalized_label": "재무 데이터 통합",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "재무 데이터 통합"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-dd661fe8d33505a4",
+          "label": "기업 브랜드 가치 측정과 소비자 신뢰 현황과 과제",
+          "normalized_label": "기업 브랜드 가치 측정과 소비자 신뢰 현황과 과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "기업 브랜드 가치 측정과 소비자 신뢰 현황과 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0e94d5594a4e7167",
+          "label": "기업 브랜드 가치 측정과 소비자 신뢰: 핵심 원리와 상호작용",
+          "normalized_label": "기업 브랜드 가치 측정과 소비자 신뢰: 핵심 원리와 상호작용",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "기업 브랜드 가치 측정과 소비자 신뢰: 핵심 원리와 상호작용"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-982c2dbe8ca9a477",
+          "label": "기업 브랜드 가치 측정의 배경과 중요성",
+          "normalized_label": "기업 브랜드 가치 측정의 배경과 중요성",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "기업 브랜드 가치 측정의 배경과 중요성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-96fb184cfef38977",
+          "label": "브랜드 가치 측정과 관리의 기준 및 변화",
+          "normalized_label": "브랜드 가치 측정과 관리의 기준 및 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "브랜드 가치 측정과 관리의 기준 및 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6abc143003745903",
+          "label": "브랜드 가치 측정과 소비자 신뢰의 사회경제적 함의",
+          "normalized_label": "브랜드 가치 측정과 소비자 신뢰의 사회경제적 함의",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "브랜드 가치 측정과 소비자 신뢰의 사회경제적 함의"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7cb9aa1085f49ef7",
+          "label": "브랜드 가치 측정의 구조와 작동 원리",
+          "normalized_label": "브랜드 가치 측정의 구조와 작동 원리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "브랜드 가치 측정의 구조와 작동 원리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-98f9b3baa230b657",
+          "label": "브랜드 가치 측정의 역사적 기원",
+          "normalized_label": "브랜드 가치 측정의 역사적 기원",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "브랜드 가치 측정의 역사적 기원"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6f9551bf84510f6b",
+          "label": "브랜드 가치와 소비자 신뢰가 사회와 문화에 미친 영향",
+          "normalized_label": "브랜드 가치와 소비자 신뢰가 사회와 문화에 미친 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "브랜드 가치와 소비자 신뢰가 사회와 문화에 미친 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d29c8d9d9ce0a429",
+          "label": "브랜드 가치와 소비자 신뢰의 기본 개념",
+          "normalized_label": "브랜드 가치와 소비자 신뢰의 기본 개념",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "브랜드 가치와 소비자 신뢰의 기본 개념"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d987d9e348d9b486",
+          "label": "애플(Apple)의 브랜드 가치 측정과 소비자 신뢰 구축 사례",
+          "normalized_label": "애플(Apple)의 브랜드 가치 측정과 소비자 신뢰 구축 사례",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "애플(Apple)의 브랜드 가치 측정과 소비자 신뢰 구축 사례"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6540b41c1595c5dc",
+          "label": "현재 쟁점과 미래과제: 브랜드 가치 측정과 소비자 신뢰",
+          "normalized_label": "현재 쟁점과 미래과제: 브랜드 가치 측정과 소비자 신뢰",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[7].title",
+              "matched_text": "현재 쟁점과 미래과제: 브랜드 가치 측정과 소비자 신뢰"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2716aca65c2e33e1",
+          "label": "브랜드 자산 평가 전략",
+          "normalized_label": "브랜드 자산 평가 전략",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "브랜드 자산 평가 전략"
+            },
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "브랜드 자산 평가 전략"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-22023151018b568e",
+          "label": "더 읽을거리: 브랜드 가치와 소비자 신뢰 탐구",
+          "normalized_label": "더 읽을거리: 브랜드 가치와 소비자 신뢰 탐구",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 더 읽을거리: 브랜드 가치와 소비자 신뢰 탐구"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1cec15536c4a314e",
+          "label": "브랜드 가치 측정 주요 방법 비교",
+          "normalized_label": "브랜드 가치 측정 주요 방법 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 브랜드 가치 측정 주요 방법 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9150fc6b13229ab9",
+          "label": "브랜드 가치 측정과 소비자 신뢰 관련 현재 쟁점",
+          "normalized_label": "브랜드 가치 측정과 소비자 신뢰 관련 현재 쟁점",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 브랜드 가치 측정과 소비자 신뢰 관련 현재 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-cd441ab629692b26",
+          "label": "애플 사례가 보여주는 브랜드 가치와 소비자 신뢰 특징",
+          "normalized_label": "애플 사례가 보여주는 브랜드 가치와 소비자 신뢰 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 애플 사례가 보여주는 브랜드 가치와 소비자 신뢰 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e5b7d2a9f57db067",
+          "label": "디지털 시대의 브랜드 가치",
+          "normalized_label": "디지털 시대의 브랜드 가치",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "디지털 시대의 브랜드 가치"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5d1aa2a89bac08a4",
+          "label": "신뢰 경영의 원칙",
+          "normalized_label": "신뢰 경영의 원칙",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "신뢰 경영의 원칙"
             }
           ]
         }

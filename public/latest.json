@@ -1,16 +1,16 @@
 {
-  "date": "2026-10-22",
-  "title": "시민 불복종의 역사와 정치적 효과",
-  "subtitle": "비폭력 저항의 역사와 현대 정치 운동에서의 역할",
-  "main_category": "사회·정치·법",
-  "mid_category": "정치",
-  "sub_category": "정치행동",
-  "detail_category": "시민 불복종 사례와 영향 분석",
+  "date": "2026-10-23",
+  "title": "기업 브랜드 가치 측정 방법과 소비자 신뢰의 관계",
+  "subtitle": "브랜드 가치를 어떻게 정확히 측정하고 소비자 신뢰와 연결할 수 있을까?",
+  "main_category": "경제·경영",
+  "mid_category": "기업과 소비",
+  "sub_category": "브랜딩",
+  "detail_category": "브랜드 자산 평가",
   "taxonomy_version": "2.0",
-  "html_path": "outputs/20261022_history_and_political_ef_Report.html",
-  "pdf_path": "outputs/20261022_history_and_political_ef_Report.pdf",
+  "html_path": "outputs/20261023_corporate_brand_value_me_Report.html",
+  "pdf_path": "outputs/20261023_corporate_brand_value_me_Report.pdf",
   "status": "published_api",
-  "html_url": "outputs/20261022_history_and_political_ef_Report.html",
-  "pdf_url": "outputs/20261022_history_and_political_ef_Report.pdf",
-  "report_id": "rpt-20261022-history-and-political-ef"
+  "html_url": "outputs/20261023_corporate_brand_value_me_Report.html",
+  "pdf_url": "outputs/20261023_corporate_brand_value_me_Report.pdf",
+  "report_id": "rpt-20261023-corporate-brand-value-me"
 }
