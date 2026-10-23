@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-10-23",
+  "updated_at": "2026-10-24",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -1543,6 +1543,29 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261023_corporate_brand_value_me_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261023_corporate_brand_value_me_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "report_id": "rpt-20261024-chemical-kinetics-understanding-how-catalysts-ac",
+      "date": "2026-10-24",
+      "title": "화학 반응 속도론의 이해: 촉매는 어떻게 반응을 가속하는가",
+      "main_category": "과학·수학",
+      "mid_category": "화학",
+      "sub_category": "물리화학",
+      "detail_category": "촉매 작용 메커니즘",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "촉매",
+        "화학 반응 속도론",
+        "활성화 에너지",
+        "반응 메커니즘",
+        "촉매 작용",
+        "촉매 표면",
+        "반응 경로",
+        "에너지 장애"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261024_chemical_kinetics_unders_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261024_chemical_kinetics_unders_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -1559,15 +1582,15 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "경제·경영",
-    "next_main_category": "과학·수학",
-    "next_index": 3,
+    "last_main_category": "과학·수학",
+    "next_main_category": "기술·공학",
+    "next_index": 4,
     "completed_cycles": 7,
     "published_counts": {
       "인문·철학": 8,
       "사회·정치·법": 7,
       "경제·경영": 7,
-      "과학·수학": 6,
+      "과학·수학": 7,
       "기술·공학": 7,
       "생명·건강": 6,
       "자연·환경·지리": 6,
@@ -1576,7 +1599,6 @@
       "언어·미디어·지식": 8
     },
     "recent_main_categories": [
-      "과학·수학",
       "기술·공학",
       "생명·건강",
       "자연·환경·지리",
@@ -1585,7 +1607,8 @@
       "언어·미디어·지식",
       "인문·철학",
       "사회·정치·법",
-      "경제·경영"
+      "경제·경영",
+      "과학·수학"
     ]
   },
   "candidate_pool": [
@@ -2506,7 +2529,7 @@
       "sub_category": "물리화학",
       "detail_category": "촉매 작용 메커니즘",
       "priority": 1.0,
-      "status": "candidate",
+      "status": "used",
       "source": "api_generated"
     },
     {

@@ -2,12 +2,12 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-10-23T03:53:01.895632+09:00",
+  "generated_at": "2026-10-24T03:46:03.196472+09:00",
   "stats": {
     "categories": 10,
-    "reports": 69,
-    "nodes": 305,
-    "edges": 396,
+    "reports": 70,
+    "nodes": 308,
+    "edges": 399,
     "concepts": 20,
     "concept_edges": 121,
     "semantic_edges": 0
@@ -763,6 +763,13 @@
       "label": "장내 균총과 대사",
       "level": 3,
       "main_category": "생명·건강"
+    },
+    {
+      "id": "detail:a57c3dcf44746388",
+      "type": "detail",
+      "label": "촉매 작용 메커니즘",
+      "level": 3,
+      "main_category": "과학·수학"
     },
     {
       "id": "detail:a9a21d4f38266df1",
@@ -2533,6 +2540,23 @@
       "pdf_url": "outputs/20261023_corporate_brand_value_me_Report.pdf"
     },
     {
+      "id": "report:rpt-20261024-chemical-kinetics-unders",
+      "type": "report",
+      "label": "화학 반응 속도론의 이해: 촉매는 어떻게 반응을 가속하는가",
+      "level": 4,
+      "report_id": "rpt-20261024-chemical-kinetics-unders",
+      "date": "2026-10-24",
+      "main_category": "과학·수학",
+      "category_path": [
+        "과학·수학",
+        "화학",
+        "물리화학",
+        "촉매 작용 메커니즘"
+      ],
+      "html_url": "outputs/20261024_chemical_kinetics_unders_Report.html",
+      "pdf_url": "outputs/20261024_chemical_kinetics_unders_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -2727,6 +2751,13 @@
       "label": "전력 시스템",
       "level": 2,
       "main_category": "기술·공학"
+    },
+    {
+      "id": "sub:5d7a566e1097d1a5",
+      "type": "sub",
+      "label": "물리화학",
+      "level": 2,
+      "main_category": "과학·수학"
     },
     {
       "id": "sub:5eb3045749326168",
@@ -3246,6 +3277,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:181a1df893dbac6f",
+      "source": "detail:a57c3dcf44746388",
+      "target": "report:rpt-20261024-chemical-kinetics-unders",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:18312450d6852be3",
       "source": "report:rpt-20260831-dictionary-authority-wor",
       "target": "concept:con-a2ff54106aeeeb39",
@@ -3431,6 +3469,13 @@
       "id": "edge:296bb0f58b491f69",
       "source": "sub:6be44dda3f43c742",
       "target": "detail:4609301005738b82",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:29e842d70a207c87",
+      "source": "middle:0c14059a47957c6e",
+      "target": "sub:5d7a566e1097d1a5",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -5511,6 +5556,13 @@
       "id": "edge:96681c4ba85eba1a",
       "source": "category:b9ccab27f2a0689e",
       "target": "middle:8e6727676b60ee0f",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:968a589d9eaffb45",
+      "source": "sub:5d7a566e1097d1a5",
+      "target": "detail:a57c3dcf44746388",
       "kind": "hierarchy",
       "relation_type": "contains"
     },

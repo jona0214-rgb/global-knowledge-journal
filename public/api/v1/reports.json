@@ -1,5 +1,21 @@
 [
   {
+    "date": "2026-10-24",
+    "title": "화학 반응 속도론의 이해: 촉매는 어떻게 반응을 가속하는가",
+    "subtitle": "촉매 작용 메커니즘의 구조와 원리를 통한 화학 반응 가속 이해",
+    "main_category": "과학·수학",
+    "mid_category": "화학",
+    "sub_category": "물리화학",
+    "detail_category": "촉매 작용 메커니즘",
+    "taxonomy_version": "2.0",
+    "html_path": "outputs/20261024_chemical_kinetics_unders_Report.html",
+    "pdf_path": "outputs/20261024_chemical_kinetics_unders_Report.pdf",
+    "status": "published_api",
+    "html_url": "outputs/20261024_chemical_kinetics_unders_Report.html",
+    "pdf_url": "outputs/20261024_chemical_kinetics_unders_Report.pdf",
+    "report_id": "rpt-20261024-chemical-kinetics-unders"
+  },
+  {
     "date": "2026-10-23",
     "title": "기업 브랜드 가치 측정 방법과 소비자 신뢰의 관계",
     "subtitle": "브랜드 가치를 어떻게 정확히 측정하고 소비자 신뢰와 연결할 수 있을까?",

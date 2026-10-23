@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-10-23T03:53:01.895632+09:00",
+  "generated_at": "2026-10-24T03:46:03.196472+09:00",
   "stats": {
-    "reports": 69,
-    "tags": 2570,
+    "reports": 70,
+    "tags": 2608,
     "shared_concepts": 20,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -37803,6 +37803,566 @@
             {
               "reference": "further_reading[1].title",
               "matched_text": "신뢰 경영의 원칙"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "report_id": "rpt-20261024-chemical-kinetics-unders",
+      "date": "2026-10-24",
+      "title": "화학 반응 속도론의 이해: 촉매는 어떻게 반응을 가속하는가",
+      "main_category": "과학·수학",
+      "tags": [
+        {
+          "tag_id": "tag-4095457e7aba45a5",
+          "label": "촉매",
+          "normalized_label": "촉매",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [
+            "catalyst"
+          ],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "촉매"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "촉매(catalyst)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0db38c950f255931",
+          "label": "촉매 작용",
+          "normalized_label": "촉매 작용",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "촉매 작용"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1c0bd5bb2b3e700e",
+          "label": "촉매 표면",
+          "normalized_label": "촉매 표면",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "촉매 표면"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-97718111a8a4e274",
+          "label": "활성화 에너지",
+          "normalized_label": "활성화 에너지",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [
+            "activation energy"
+          ],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "활성화 에너지"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "활성화 에너지(activation energy)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-44748f9067f8d00a",
+          "label": "반응 경로",
+          "normalized_label": "반응 경로",
+          "type": "mechanism",
+          "weight": 1.0,
+          "aliases": [
+            "reaction pathway"
+          ],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "반응 경로"
+            },
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "반응 경로(reaction pathway)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d6fcdbfcbb1e0c6b",
+          "label": "반응 메커니즘",
+          "normalized_label": "반응 메커니즘",
+          "type": "mechanism",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "반응 메커니즘"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a27d3584c473efef",
+          "label": "화학 반응 속도론",
+          "normalized_label": "화학 반응 속도론",
+          "type": "mechanism",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "화학 반응 속도론"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fbc0f5bada0a1413",
+          "label": "에너지 장애",
+          "normalized_label": "에너지 장애",
+          "type": "problem",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "에너지 장애"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0c124e8f259d1d34",
+          "label": "선택성",
+          "normalized_label": "선택성",
+          "type": "outcome",
+          "weight": 0.98,
+          "aliases": [
+            "selectivity"
+          ],
+          "evidence": [
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "선택성(selectivity)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a25de56152dd1e54",
+          "label": "화학",
+          "normalized_label": "화학",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "화학"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ff1085418c76e8b0",
+          "label": "물리화학",
+          "normalized_label": "물리화학",
+          "type": "domain",
+          "weight": 0.93,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.sub",
+              "matched_text": "물리화학"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c6743ce94a0f85f9",
+          "label": "촉매 작용 메커니즘",
+          "normalized_label": "촉매 작용 메커니즘",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "촉매 작용 메커니즘"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e9eefc606d5166d3",
+          "label": "IUPAC Compendium of Chemical Terminology",
+          "normalized_label": "IUPAC Compendium of Chemical Terminology",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "IUPAC Compendium of Chemical Terminology"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2b4a8ce560aca583",
+          "label": "반응 중간체 형성",
+          "normalized_label": "반응 중간체 형성",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "반응 중간체 형성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-135bb175540c66c3",
+          "label": "반응물의 촉매 표면 흡착",
+          "normalized_label": "반응물의 촉매 표면 흡착",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "반응물의 촉매 표면 흡착"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8eed5d0ebc9c033e",
+          "label": "생성물 분리 및 탈착",
+          "normalized_label": "생성물 분리 및 탈착",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "생성물 분리 및 탈착"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-724d39ac1b544e3a",
+          "label": "촉매 재활용 및 지속 작용",
+          "normalized_label": "촉매 재활용 및 지속 작용",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "촉매 재활용 및 지속 작용"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1f9d03278070f7f6",
+          "label": "활성화 에너지 장벽 감소",
+          "normalized_label": "활성화 에너지 장벽 감소",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "활성화 에너지 장벽 감소"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b766d4fcddc3afae",
+          "label": "반응 속도론과 촉매 작용의 핵심 질문과 연구 방향",
+          "normalized_label": "반응 속도론과 촉매 작용의 핵심 질문과 연구 방향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "반응 속도론과 촉매 작용의 핵심 질문과 연구 방향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-aabc184e2b8eb163",
+          "label": "초보자를 위한 개념 및 용어 정리",
+          "normalized_label": "초보자를 위한 개념 및 용어 정리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "초보자를 위한 개념 및 용어 정리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c3927587b5f874b3",
+          "label": "촉매 연구의 역사적 출발점",
+          "normalized_label": "촉매 연구의 역사적 출발점",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "촉매 연구의 역사적 출발점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a106578da62ca1b4",
+          "label": "촉매 작용 이해가 가져올 미래 사회와 기술의 변화",
+          "normalized_label": "촉매 작용 이해가 가져올 미래 사회와 기술의 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "촉매 작용 이해가 가져올 미래 사회와 기술의 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-171862c850a3a96a",
+          "label": "촉매 활성 평가 및 반응 속도 측정",
+          "normalized_label": "촉매 활성 평가 및 반응 속도 측정",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "촉매 활성 평가 및 반응 속도 측정"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e271e183decacd38",
+          "label": "촉매가 생활과 산업에 미친 영향",
+          "normalized_label": "촉매가 생활과 산업에 미친 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "촉매가 생활과 산업에 미친 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c26b206ecd180ddc",
+          "label": "촉매의 구조와 작동 원리",
+          "normalized_label": "촉매의 구조와 작동 원리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "촉매의 구조와 작동 원리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ca3ef3b582faf289",
+          "label": "하버-보슈 공정에서 촉매가 반응 속도를 혁신한 사례",
+          "normalized_label": "하버-보슈 공정에서 촉매가 반응 속도를 혁신한 사례",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "하버-보슈 공정에서 촉매가 반응 속도를 혁신한 사례"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-80c6ccb932120543",
+          "label": "현대 촉매 속도론 연구와 기술 동향",
+          "normalized_label": "현대 촉매 속도론 연구와 기술 동향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "현대 촉매 속도론 연구와 기술 동향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9283860118bff4fe",
+          "label": "화학 반응 속도론과 촉매 작용의 중요성",
+          "normalized_label": "화학 반응 속도론과 촉매 작용의 중요성",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "화학 반응 속도론과 촉매 작용의 중요성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0bcf003c41fc238c",
+          "label": "Compendium of Chemical Terminology",
+          "normalized_label": "Compendium of Chemical Terminology",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "Compendium of Chemical Terminology"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f4bd420e9d6b1ead",
+          "label": "관련 도서·탐구 키워드·확장 주제",
+          "normalized_label": "관련 도서·탐구 키워드·확장 주제",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 관련 도서·탐구 키워드·확장 주제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-df34d0a507da624b",
+          "label": "촉매 종류별 특징 비교",
+          "normalized_label": "촉매 종류별 특징 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 촉매 종류별 특징 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-59fedada36854d3f",
+          "label": "하버-보슈 공정 촉매 특징",
+          "normalized_label": "하버-보슈 공정 촉매 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 하버-보슈 공정 촉매 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c83ef450a31b80e2",
+          "label": "현재 촉매 속도론의 주요 쟁점",
+          "normalized_label": "현재 촉매 속도론의 주요 쟁점",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 현재 촉매 속도론의 주요 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e94bde770fa51284",
+          "label": "『촉매 과학과 공학』",
+          "normalized_label": "『촉매 과학과 공학』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "『촉매 과학과 공학』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-65b471c824572c47",
+          "label": "『화학 반응 속도론』",
+          "normalized_label": "『화학 반응 속도론』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "『화학 반응 속도론』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-94f2e3c045b1e4c9",
+          "label": "촉매 표면 과학 연구",
+          "normalized_label": "촉매 표면 과학 연구",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "촉매 표면 과학 연구"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-15720060477d0036",
+          "label": "친환경 촉매 공정 개발 동향",
+          "normalized_label": "친환경 촉매 공정 개발 동향",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[4].title",
+              "matched_text": "친환경 촉매 공정 개발 동향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-71f6c2b00819354b",
+          "label": "효소 촉매 메커니즘 연구",
+          "normalized_label": "효소 촉매 메커니즘 연구",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[3].title",
+              "matched_text": "효소 촉매 메커니즘 연구"
             }
           ]
         }
