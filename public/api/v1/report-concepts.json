@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-10-24T03:46:03.196472+09:00",
+  "generated_at": "2026-10-25T02:38:41.923387+09:00",
   "stats": {
-    "reports": 70,
-    "tags": 2608,
+    "reports": 71,
+    "tags": 2646,
     "shared_concepts": 20,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -38367,6 +38367,564 @@
           ]
         }
       ]
+    },
+    {
+      "report_id": "rpt-20261025-gwangseomyu-gisul-inform",
+      "date": "2026-10-25",
+      "title": "광섬유 기술과 정보 통신 혁신: 빛으로 연결하는 현대 사회",
+      "main_category": "기술·공학",
+      "tags": [
+        {
+          "tag_id": "tag-39bf8a41c3fd798e",
+          "label": "광섬유",
+          "normalized_label": "광섬유",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [
+            "Optical Fiber"
+          ],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "광섬유"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "광섬유 (Optical Fiber)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a57ca8982fd98761",
+          "label": "광케이블",
+          "normalized_label": "광케이블",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "광케이블"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-123d4e1417bd9b95",
+          "label": "데이터 전송",
+          "normalized_label": "데이터 전송",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "데이터 전송"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6838aef679c21083",
+          "label": "빛 전송",
+          "normalized_label": "빛 전송",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "빛 전송"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-18d5dce7b5a9a1d4",
+          "label": "정보 통신",
+          "normalized_label": "정보 통신",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [
+            "Information Communication"
+          ],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "정보 통신"
+            },
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "정보 통신 (Information Communication)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d0b411557f432442",
+          "label": "통신 속도",
+          "normalized_label": "통신 속도",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "통신 속도"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c1126bcc01c823a5",
+          "label": "통신 혁신",
+          "normalized_label": "통신 혁신",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "통신 혁신"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4309a6f349d2a915",
+          "label": "네트워크 인프라",
+          "normalized_label": "네트워크 인프라",
+          "type": "technology",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "네트워크 인프라"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-86e6cfd89966f34b",
+          "label": "광대역 통신",
+          "normalized_label": "광대역 통신",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [
+            "Broadband Communication"
+          ],
+          "evidence": [
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "광대역 통신 (Broadband Communication)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7609333d8bfbd01b",
+          "label": "총내반사",
+          "normalized_label": "총내반사",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [
+            "Total Internal Reflection"
+          ],
+          "evidence": [
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "총내반사 (Total Internal Reflection)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7aad2e4b59bf1acf",
+          "label": "산업기술",
+          "normalized_label": "산업기술",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "산업기술"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ad90307e1f885e4d",
+          "label": "통신기술",
+          "normalized_label": "통신기술",
+          "type": "domain",
+          "weight": 0.93,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.sub",
+              "matched_text": "통신기술"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-931e1f5a9dd4df43",
+          "label": "광섬유의 원리와 응용",
+          "normalized_label": "광섬유의 원리와 응용",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "광섬유의 원리와 응용"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-68ae69e85ed66a9a",
+          "label": "앤드류 마커스",
+          "normalized_label": "앤드류 마커스",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [
+            "통신공학 전문가"
+          ],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "앤드류 마커스(통신공학 전문가)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7aeba8708538ed91",
+          "label": "광섬유 개발과 저감쇠 달성",
+          "normalized_label": "광섬유 개발과 저감쇠 달성",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "광섬유 개발과 저감쇠 달성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c0a0815ea24f471a",
+          "label": "미래 고속 네트워크 발전",
+          "normalized_label": "미래 고속 네트워크 발전",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "미래 고속 네트워크 발전"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5881bc179a27ef47",
+          "label": "빛의 전송 원리 발견",
+          "normalized_label": "빛의 전송 원리 발견",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "빛의 전송 원리 발견"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-84435af186da6c9f",
+          "label": "인터넷과 모바일 혁신 지원",
+          "normalized_label": "인터넷과 모바일 혁신 지원",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "인터넷과 모바일 혁신 지원"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-024f9c6a2a50caff",
+          "label": "통신망 상용화 및 보급",
+          "normalized_label": "통신망 상용화 및 보급",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "통신망 상용화 및 보급"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4cf8460061e8529b",
+          "label": "광섬유 관련 표준과 관리 체계",
+          "normalized_label": "광섬유 관련 표준과 관리 체계",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "광섬유 관련 표준과 관리 체계"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-03cd5647da48f3e7",
+          "label": "광섬유 기술의 등장과 정보 통신 혁신의 필요성",
+          "normalized_label": "광섬유 기술의 등장과 정보 통신 혁신의 필요성",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "광섬유 기술의 등장과 정보 통신 혁신의 필요성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-aad60cb8b4e6d78f",
+          "label": "광섬유 기술의 역사적 출발점",
+          "normalized_label": "광섬유 기술의 역사적 출발점",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "광섬유 기술의 역사적 출발점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c2e300aaea7b9c57",
+          "label": "광섬유 기술의 핵심 쟁점과 심층 분석",
+          "normalized_label": "광섬유 기술의 핵심 쟁점과 심층 분석",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "광섬유 기술의 핵심 쟁점과 심층 분석"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-31e2eb73f6516597",
+          "label": "광섬유 기술의 현재 과제와 미래 전망",
+          "normalized_label": "광섬유 기술의 현재 과제와 미래 전망",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[7].title",
+              "matched_text": "광섬유 기술의 현재 과제와 미래 전망"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a41c8eb33aa68f49",
+          "label": "광섬유 기술의 현황과 도전",
+          "normalized_label": "광섬유 기술의 현황과 도전",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "광섬유 기술의 현황과 도전"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-bebbbb55482fe505",
+          "label": "광섬유 기술이 개인과 사회에 주는 의미",
+          "normalized_label": "광섬유 기술이 개인과 사회에 주는 의미",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "광섬유 기술이 개인과 사회에 주는 의미"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fffdf1c29ad305c7",
+          "label": "광섬유가 사회와 문화에 미친 영향",
+          "normalized_label": "광섬유가 사회와 문화에 미친 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "광섬유가 사회와 문화에 미친 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-00f35b286d772f07",
+          "label": "광섬유와 정보 통신의 기본 개념",
+          "normalized_label": "광섬유와 정보 통신의 기본 개념",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "광섬유와 정보 통신의 기본 개념"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9dec0526ec60b066",
+          "label": "광섬유의 구조와 작동 원리",
+          "normalized_label": "광섬유의 구조와 작동 원리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "광섬유의 구조와 작동 원리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-626c44f3ffb6dd91",
+          "label": "한국 인터넷 광섬유 망 구축과 정보화 혁신",
+          "normalized_label": "한국 인터넷 광섬유 망 구축과 정보화 혁신",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "한국 인터넷 광섬유 망 구축과 정보화 혁신"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-675e4526c9a2d084",
+          "label": "Optical Fiber Communications, 5th Edition",
+          "normalized_label": "Optical Fiber Communications, 5th Edition",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "Optical Fiber Communications, 5th Edition"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8b872e57052712a9",
+          "label": "광섬유 기술 관련 도서 및 탐구 키워드",
+          "normalized_label": "광섬유 기술 관련 도서 및 탐구 키워드",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 광섬유 기술 관련 도서 및 탐구 키워드"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1a00551e631cf185",
+          "label": "광섬유 통신의 현재 쟁점",
+          "normalized_label": "광섬유 통신의 현재 쟁점",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 광섬유 통신의 현재 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a3790724b76e3154",
+          "label": "광섬유와 구리선 통신 비교",
+          "normalized_label": "광섬유와 구리선 통신 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 광섬유와 구리선 통신 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6b5fbbf4dfaa1972",
+          "label": "한국 광섬유 인터넷망 구축 주요 특징",
+          "normalized_label": "한국 광섬유 인터넷망 구축 주요 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 한국 광섬유 인터넷망 구축 주요 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0b9663534558e2f6",
+          "label": "Communication Systems",
+          "normalized_label": "Communication Systems",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "Communication Systems"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3d713c4cb64a818f",
+          "label": "Fiber-Optic Communication Systems",
+          "normalized_label": "Fiber-Optic Communication Systems",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "Fiber-Optic Communication Systems"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1790d9840e4eebd3",
+          "label": "Optical Fiber Communications",
+          "normalized_label": "Optical Fiber Communications",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "Optical Fiber Communications"
+            }
+          ]
+        }
+      ]
     }
   ],
   "shared_concepts": [
@@ -39514,7 +40072,7 @@
       "report_count": 12,
       "main_categories": [
         "경제·경영",
-        "과학·수학",
+        "기술·공학",
         "사회·정치·법",
         "생명·건강",
         "언어·미디어·지식",
@@ -39640,23 +40198,6 @@
           ]
         },
         {
-          "report_id": "rpt-20260914-jukiyurpyoui-jillye-woon",
-          "evidence": [
-            {
-              "reference": "sections[5].body[2]",
-              "matched_text": "표준화"
-            },
-            {
-              "reference": "sections[7].body[2]",
-              "matched_text": "표준화"
-            },
-            {
-              "reference": "sections[10].body[1]",
-              "matched_text": "표준화"
-            }
-          ]
-        },
-        {
           "report_id": "rpt-20260918-history-of-calendars-how",
           "evidence": [
             {
@@ -39757,6 +40298,27 @@
             },
             {
               "reference": "sections[9].body[3]",
+              "matched_text": "표준화"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261025-gwangseomyu-gisul-inform",
+          "evidence": [
+            {
+              "reference": "sections[2].body[1]",
+              "matched_text": "표준화"
+            },
+            {
+              "reference": "sections[3].body[2]",
+              "matched_text": "표준화"
+            },
+            {
+              "reference": "sections[6].body[0]",
+              "matched_text": "표준화"
+            },
+            {
+              "reference": "sections[8].body[3]",
               "matched_text": "표준화"
             }
           ]

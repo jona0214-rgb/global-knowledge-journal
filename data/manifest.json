@@ -1,6 +1,22 @@
 {
-  "last_updated": "2026-10-24T03:46:03.196472+09:00",
+  "last_updated": "2026-10-25T02:38:41.923387+09:00",
   "reports": [
+    {
+      "date": "2026-10-25",
+      "title": "광섬유 기술과 정보 통신 혁신: 빛으로 연결하는 현대 사회",
+      "subtitle": "초고속 정보 전송을 가능하게 한 광섬유 기술의 원리와 사회적 의의",
+      "main_category": "기술·공학",
+      "mid_category": "산업기술",
+      "sub_category": "통신기술",
+      "detail_category": "광섬유의 원리와 응용",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20261025_gwangseomyu_gisul_inform_Report.html",
+      "pdf_path": "outputs/20261025_gwangseomyu_gisul_inform_Report.pdf",
+      "status": "published_api",
+      "html_url": "outputs/20261025_gwangseomyu_gisul_inform_Report.html",
+      "pdf_url": "outputs/20261025_gwangseomyu_gisul_inform_Report.pdf",
+      "report_id": "rpt-20261025-gwangseomyu-gisul-inform"
+    },
     {
       "date": "2026-10-24",
       "title": "화학 반응 속도론의 이해: 촉매는 어떻게 반응을 가속하는가",

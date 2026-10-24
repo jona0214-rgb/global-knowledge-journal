@@ -2,12 +2,12 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-10-24T03:46:03.196472+09:00",
+  "generated_at": "2026-10-25T02:38:41.923387+09:00",
   "stats": {
     "categories": 10,
-    "reports": 70,
-    "nodes": 308,
-    "edges": 399,
+    "reports": 71,
+    "nodes": 312,
+    "edges": 403,
     "concepts": 20,
     "concept_edges": 121,
     "semantic_edges": 0
@@ -331,7 +331,7 @@
       "report_count": 12,
       "main_categories": [
         "경제·경영",
-        "과학·수학",
+        "기술·공학",
         "사회·정치·법",
         "생명·건강",
         "언어·미디어·지식",
@@ -751,6 +751,13 @@
       "main_category": "언어·미디어·지식"
     },
     {
+      "id": "detail:983c92f1cf435671",
+      "type": "detail",
+      "label": "광섬유의 원리와 응용",
+      "level": 3,
+      "main_category": "기술·공학"
+    },
+    {
       "id": "detail:9bae34a03bd23cf8",
       "type": "detail",
       "label": "반복 행위의 의미 형성",
@@ -994,6 +1001,13 @@
       "label": "사전학",
       "level": 1,
       "main_category": "언어·미디어·지식"
+    },
+    {
+      "id": "middle:3662778fc59a58eb",
+      "type": "middle",
+      "label": "산업기술",
+      "level": 1,
+      "main_category": "기술·공학"
     },
     {
       "id": "middle:388a7f51a0fce5c7",
@@ -2557,6 +2571,23 @@
       "pdf_url": "outputs/20261024_chemical_kinetics_unders_Report.pdf"
     },
     {
+      "id": "report:rpt-20261025-gwangseomyu-gisul-inform",
+      "type": "report",
+      "label": "광섬유 기술과 정보 통신 혁신: 빛으로 연결하는 현대 사회",
+      "level": 4,
+      "report_id": "rpt-20261025-gwangseomyu-gisul-inform",
+      "date": "2026-10-25",
+      "main_category": "기술·공학",
+      "category_path": [
+        "기술·공학",
+        "산업기술",
+        "통신기술",
+        "광섬유의 원리와 응용"
+      ],
+      "html_url": "outputs/20261025_gwangseomyu_gisul_inform_Report.html",
+      "pdf_url": "outputs/20261025_gwangseomyu_gisul_inform_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -2660,6 +2691,13 @@
       "label": "통증의 신경기전",
       "level": 2,
       "main_category": "생명·건강"
+    },
+    {
+      "id": "sub:370f7b5d1286a69f",
+      "type": "sub",
+      "label": "통신기술",
+      "level": 2,
+      "main_category": "기술·공학"
     },
     {
       "id": "sub:37c32fe95568d905",
@@ -3256,6 +3294,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:154b9d05e88cd934",
+      "source": "middle:3662778fc59a58eb",
+      "target": "sub:370f7b5d1286a69f",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:1711ffec304b0667",
       "source": "category:a495d7d4da85b458",
       "target": "middle:31efa95b81f1ef7c",
@@ -3462,6 +3507,13 @@
       "id": "edge:269877dfd4e72466",
       "source": "detail:2ed24e4ba7fb0be3",
       "target": "report:rpt-20260918-history-of-calendars-how",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:28eb5fd5e8276c7d",
+      "source": "sub:370f7b5d1286a69f",
+      "target": "detail:983c92f1cf435671",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -5361,6 +5413,33 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:8c222c261f2fdcb9",
+      "source": "report:rpt-20261025-gwangseomyu-gisul-inform",
+      "target": "concept:con-a2ff54106aeeeb39",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "sections[2].body[1]",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "sections[3].body[2]",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "sections[6].body[0]",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "sections[8].body[3]",
+          "matched_text": "표준화"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:8c4f349fe489be52",
       "source": "report:rpt-20260905-seawater-to-drinking-wat",
       "target": "concept:con-58932b140c8d5ebd",
@@ -5463,6 +5542,13 @@
       "id": "edge:91849b77705ba5db",
       "source": "category:758a7b1ee4fe67cf",
       "target": "middle:55bdeec0654c0d72",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:92495e7c85ecec60",
+      "source": "detail:983c92f1cf435671",
+      "target": "report:rpt-20261025-gwangseomyu-gisul-inform",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -6673,29 +6759,6 @@
       "provenance": "curated-pattern-rule"
     },
     {
-      "id": "edge:d29518148a663a4b",
-      "source": "report:rpt-20260914-jukiyurpyoui-jillye-woon",
-      "target": "concept:con-a2ff54106aeeeb39",
-      "kind": "concept",
-      "relation_type": "has_concept",
-      "score": 0.9,
-      "evidence": [
-        {
-          "reference": "sections[5].body[2]",
-          "matched_text": "표준화"
-        },
-        {
-          "reference": "sections[7].body[2]",
-          "matched_text": "표준화"
-        },
-        {
-          "reference": "sections[10].body[1]",
-          "matched_text": "표준화"
-        }
-      ],
-      "provenance": "curated-pattern-rule"
-    },
-    {
       "id": "edge:d321eb20213c15c5",
       "source": "detail:2263e0265eec45b3",
       "target": "report:rpt-20260829-hyangsinryo-gyoyeog-hist",
@@ -7564,6 +7627,13 @@
       "id": "edge:fe3bb56274b0620d",
       "source": "category:c135b09622b60562",
       "target": "middle:6bb393db31e086c2",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:ff1f4b6277901f34",
+      "source": "category:b8045a9a934d7f69",
+      "target": "middle:3662778fc59a58eb",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
