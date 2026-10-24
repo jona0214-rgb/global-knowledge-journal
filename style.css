@@ -680,6 +680,32 @@ h1 {
   opacity: 0.42;
 }
 
+.hierarchy-to-middle {
+  stroke: #75685b;
+  stroke-width: 2.2;
+  opacity: 0.56;
+}
+
+.hierarchy-to-sub {
+  stroke: #64837f;
+  stroke-width: 1.7;
+  opacity: 0.52;
+}
+
+.hierarchy-to-detail {
+  stroke: #8f877e;
+  stroke-width: 1.25;
+  stroke-dasharray: 2 4;
+  opacity: 0.5;
+}
+
+.hierarchy-to-report {
+  stroke: #6681a8;
+  stroke-width: 1.35;
+  stroke-dasharray: 7 4;
+  opacity: 0.58;
+}
+
 .concept-connection {
   stroke: #9a751f;
   opacity: 0.62;
@@ -696,19 +722,29 @@ h1 {
   outline: none;
 }
 
-.map-node circle {
+.map-node-visual {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: filter 160ms ease, transform 160ms ease;
+}
+
+.map-node-shape {
   stroke: rgba(31, 27, 22, 0.58);
   stroke-width: 1.5;
   vector-effect: non-scaling-stroke;
-  transition: filter 160ms ease, stroke-width 160ms ease, transform 160ms ease;
+  transition: stroke-width 160ms ease;
 }
 
-.map-node:hover circle,
-.map-node:focus-visible circle {
-  stroke: #1f1b16;
-  stroke-width: 3;
+.map-node:hover .map-node-visual,
+.map-node:focus-visible .map-node-visual {
   filter: drop-shadow(0 8px 10px rgba(31, 27, 22, 0.18));
   transform: scale(1.12);
+}
+
+.map-node:hover .map-node-shape,
+.map-node:focus-visible .map-node-shape {
+  stroke: #1f1b16;
+  stroke-width: 3;
 }
 
 .map-node text {
@@ -739,19 +775,64 @@ h1 {
   stroke-linejoin: round;
 }
 
-.report-node circle {
-  stroke: #536d9a;
+.map-node-type-mark {
+  fill: #524b43;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: -0.06em;
+}
+
+.middle-node .map-node-shape {
+  stroke: #75685b;
+  stroke-width: 2.2;
+}
+
+.sub-node .map-node-shape {
+  stroke: #64837f;
   stroke-width: 2;
 }
 
-.concept-node circle {
+.detail-node .map-node-shape {
+  stroke: #8f877e;
+  stroke-width: 1.7;
+}
+
+.report-node .map-node-shape {
+  stroke: #536d9a;
+  stroke-width: 2.3;
+}
+
+.report-node .map-node-label {
+  fill: #344b70;
+  font-weight: 850;
+}
+
+.report-fold {
+  fill: #cddbed;
+  stroke: #536d9a;
+  stroke-linejoin: round;
+  stroke-width: 1.2;
+  vector-effect: non-scaling-stroke;
+}
+
+.report-glyph-line {
+  stroke: #7b91b0;
+  stroke-linecap: round;
+  stroke-width: 1.4;
+  vector-effect: non-scaling-stroke;
+}
+
+.concept-node .map-node-shape {
   stroke: #9a751f;
   stroke-width: 2;
 }
 
-.focused-node circle {
+.focused-node .map-node-shape {
   stroke: #1f1b16;
   stroke-width: 4;
+}
+
+.focused-node .map-node-visual {
   filter: drop-shadow(0 7px 12px rgba(31, 27, 22, 0.22));
 }
 
@@ -778,17 +859,72 @@ h1 {
   gap: 5px;
 }
 
-.legend-dot {
-  width: 9px;
-  height: 9px;
+.legend-symbol {
+  position: relative;
+  display: inline-block;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  width: 11px;
+  height: 11px;
+}
+
+.category-symbol {
+  background: #536d9a;
   border-radius: 50%;
 }
 
-.category-dot { background: #536d9a; }
-.taxonomy-dot { background: #fffdf8; border: 1px solid #7d7369; }
-.report-dot { background: #fffdf8; border: 2px solid #536d9a; }
-.concept-dot { background: #f4e7bd; border: 1px solid #9a751f; }
-.external-category-dot { background: #fffdf8; border: 2px dashed #536d9a; }
+.middle-symbol {
+  background: #e8ded0;
+  border: 2px solid #75685b;
+  border-radius: 50%;
+}
+
+.sub-symbol {
+  background: #e4efed;
+  border: 2px solid #64837f;
+  border-radius: 3px;
+}
+
+.detail-symbol {
+  width: 9px;
+  height: 9px;
+  margin: 1px;
+  background: #fffdf8;
+  border: 1.5px solid #8f877e;
+  transform: rotate(45deg);
+}
+
+.report-symbol {
+  width: 13px;
+  height: 10px;
+  background: #edf3fa;
+  border: 2px solid #536d9a;
+  border-radius: 2px;
+}
+
+.report-symbol::after {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 4px;
+  height: 4px;
+  background: #cddbed;
+  border-bottom: 1px solid #536d9a;
+  border-left: 1px solid #536d9a;
+  content: "";
+}
+
+.concept-symbol {
+  background: #f4e7bd;
+  border: 1px solid #9a751f;
+  border-radius: 50%;
+}
+
+.external-category-symbol {
+  background: #fffdf8;
+  border: 2px dashed #536d9a;
+  border-radius: 50%;
+}
 
 .map-details {
   position: sticky;

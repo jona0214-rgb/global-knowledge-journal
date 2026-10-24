@@ -126,6 +126,90 @@ function categoryLabelFontSize(label, className) {
   return 17;
 }
 
+function appendNodeVisual(group, { radius, className, color }) {
+  const visual = svgElement("g", { class: "map-node-visual" });
+  const fill = color || "#fffdf8";
+  let shape;
+
+  if (className.includes("report-node")) {
+    shape = svgElement("rect", {
+      x: -27,
+      y: -19,
+      width: 54,
+      height: 38,
+      rx: 7,
+      fill,
+      class: "map-node-shape",
+    });
+    visual.append(shape);
+    visual.append(
+      svgElement("path", {
+        d: "M 14 -19 L 27 -6 L 14 -6 Z",
+        class: "report-fold",
+      }),
+      svgElement("line", {
+        x1: -14,
+        y1: 1,
+        x2: 12,
+        y2: 1,
+        class: "report-glyph-line",
+      }),
+      svgElement("line", {
+        x1: -14,
+        y1: 8,
+        x2: 7,
+        y2: 8,
+        class: "report-glyph-line",
+      }),
+    );
+  } else if (className.includes("sub-node")) {
+    shape = svgElement("rect", {
+      x: -20,
+      y: -16,
+      width: 40,
+      height: 32,
+      rx: 9,
+      fill,
+      class: "map-node-shape",
+    });
+    visual.append(shape);
+  } else if (className.includes("detail-node")) {
+    shape = svgElement("polygon", {
+      points: "0,-18 18,0 0,18 -18,0",
+      fill,
+      class: "map-node-shape",
+    });
+    visual.append(shape);
+  } else {
+    shape = svgElement("circle", {
+      r: radius,
+      fill,
+      class: "map-node-shape",
+    });
+    visual.append(shape);
+  }
+
+  const typeMark = className.includes("middle-node")
+    ? "중"
+    : className.includes("sub-node")
+      ? "소"
+      : className.includes("detail-node")
+        ? "최"
+        : null;
+  if (typeMark) {
+    const mark = svgElement("text", {
+      x: 0,
+      y: 4,
+      class: "map-node-type-mark",
+      "text-anchor": "middle",
+    });
+    mark.textContent = typeMark;
+    visual.append(mark);
+  }
+
+  group.append(visual);
+}
+
 function addInteractiveNode({ node, position, radius, className, color, subtitle, onSelect }) {
   const group = svgElement("g", {
     class: `map-node ${className}`,
@@ -138,12 +222,7 @@ function addInteractiveNode({ node, position, radius, className, color, subtitle
   const title = svgElement("title");
   title.textContent = `${node.label}${subtitle ? ` · ${subtitle}` : ""}`;
   group.append(title);
-  group.append(
-    svgElement("circle", {
-      r: radius,
-      fill: color || "#fffdf8",
-    }),
-  );
+  appendNodeVisual(group, { radius, className, color });
   const isCategory = className.includes("category");
   const labelElement = addText(group, node.label, {
     y: isCategory ? 0 : radius + 17,
@@ -303,7 +382,7 @@ function renderCategory(category, focusNodeId = null) {
   clearMap();
   svg.setAttribute("viewBox", "0 0 1200 1000");
   titleEl.textContent = `${category.label} 지식 궤도`;
-  descriptionEl.textContent = "계층은 부모 분류 주변에 묶이고, 공유 개념은 실제로 연결된 리포트와 다른 대분류의 가중 중심에 배치됩니다.";
+  descriptionEl.textContent = "원은 중분류, 둥근 사각형은 소분류, 마름모는 최소분류, 문서 카드는 리포트입니다. 공유 개념은 실제 연결 근거의 가중 중심에 배치됩니다.";
   const center = { x: 600, y: 500 };
   const descendants = collectDescendants(category.id, index);
   const relevantConcepts = [
@@ -329,7 +408,15 @@ function renderCategory(category, focusNodeId = null) {
   const visibleIds = new Set(positions.keys());
   graph.edges
     .filter((edge) => edge.kind === "hierarchy" && visibleIds.has(edge.source) && visibleIds.has(edge.target))
-    .forEach((edge) => appendLine(edgeGroup, positions.get(edge.source), positions.get(edge.target), "map-edge hierarchy-connection"));
+    .forEach((edge) => {
+      const targetType = index.nodes.get(edge.target)?.type || "taxonomy";
+      appendLine(
+        edgeGroup,
+        positions.get(edge.source),
+        positions.get(edge.target),
+        `map-edge hierarchy-connection hierarchy-to-${targetType}`,
+      );
+    });
   graph.edges
     .filter((edge) => edge.kind === "concept" && visibleIds.has(edge.source) && visibleIds.has(edge.target))
     .forEach((edge) => appendLine(edgeGroup, positions.get(edge.source), positions.get(edge.target), "map-edge concept-connection", 2));
@@ -358,9 +445,9 @@ function renderCategory(category, focusNodeId = null) {
     layers[type].forEach((node) => addInteractiveNode({
       node,
       position: positions.get(node.id),
-      radius: type === "middle" ? 22 : 17,
+      radius: type === "middle" ? 24 : type === "sub" ? 21 : 19,
       className: `taxonomy-node ${type}-node`,
-      color: "#fffdf8",
+      color: type === "middle" ? "#e8ded0" : type === "sub" ? "#e4efed" : "#fffdf8",
       subtitle: TYPE_LABELS[type],
       onSelect: selectDetail,
     }));
@@ -368,9 +455,9 @@ function renderCategory(category, focusNodeId = null) {
   layers.report.forEach((node) => addInteractiveNode({
     node,
     position: positions.get(node.id),
-    radius: node.id === focusNodeId ? 31 : 25,
+    radius: node.id === focusNodeId ? 31 : 28,
     className: `report-node ${node.id === focusNodeId ? "focused-node" : ""}`,
-    color: "#fffdf8",
+    color: "#edf3fa",
     subtitle: node.date,
     onSelect: selectDetail,
   }));
