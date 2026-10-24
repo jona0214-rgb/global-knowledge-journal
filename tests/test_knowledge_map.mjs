@@ -24,6 +24,10 @@ const mapSource = await fs.readFile(
   new URL("../knowledge-map.js", import.meta.url),
   "utf8",
 );
+const styleSource = await fs.readFile(
+  new URL("../style.css", import.meta.url),
+  "utf8",
+);
 
 const index = buildGraphIndex(graph);
 const connections = calculateCategoryConnections(index);
@@ -104,13 +108,25 @@ assert.match(mapHtml, /type="module" src="knowledge-map\.js"/);
 assert.match(mapHtml, /id="map-reset"/);
 assert.match(mapHtml, /기본 대분류 지도로 돌아가기/);
 assert.match(mapHtml, /외부 대분류/);
+assert.match(mapHtml, /middle-symbol/);
+assert.match(mapHtml, /sub-symbol/);
+assert.match(mapHtml, /detail-symbol/);
+assert.match(mapHtml, /report-symbol/);
 assert.match(mapSource, /public\/api\/v1\/knowledge-graph\.json/);
 assert.match(mapSource, /renderCategory/);
 assert.match(mapSource, /createCategoryDetailLayout/);
+assert.match(mapSource, /function appendNodeVisual/);
+assert.match(mapSource, /map-node-shape/);
+assert.match(mapSource, /hierarchy-to-\$\{targetType\}/);
 assert.match(mapSource, /data-report-id/);
 assert.match(mapSource, /function resetMapState/);
 assert.match(mapSource, /searchEl\.value = ""/);
 assert.match(mapSource, /resetEl\.disabled = true/);
 assert.doesNotMatch(mapSource, /className: "map-node-metric"/);
+assert.match(styleSource, /\.middle-node \.map-node-shape/);
+assert.match(styleSource, /\.sub-node \.map-node-shape/);
+assert.match(styleSource, /\.detail-node \.map-node-shape/);
+assert.match(styleSource, /\.report-node \.map-node-shape/);
+assert.match(styleSource, /\.hierarchy-to-report/);
 
 console.log("knowledge_map_test=ok");
