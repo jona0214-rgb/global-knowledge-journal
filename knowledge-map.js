@@ -2,8 +2,8 @@ import {
   buildGraphIndex,
   calculateCategoryConnections,
   collectDescendants,
+  createCategoryDetailLayout,
   createOverviewLayout,
-  positionsOnRing,
   truncateLabel,
 } from "./knowledge-map-core.mjs";
 
@@ -297,50 +297,32 @@ function renderOverview() {
   });
 }
 
-function layerNodes(descendants, type) {
-  return [...descendants]
-    .map((id) => index.nodes.get(id))
-    .filter((node) => node?.type === type)
-    .sort((left, right) => String(left.label).localeCompare(String(right.label), "ko"));
-}
-
 function renderCategory(category, focusNodeId = null) {
   selectedCategoryId = category.id;
   resetEl.disabled = false;
   clearMap();
   svg.setAttribute("viewBox", "0 0 1200 1000");
   titleEl.textContent = `${category.label} 지식 궤도`;
-  descriptionEl.textContent = "중앙에서 바깥으로 중분류, 소분류, 최소분류, 리포트, 공유 개념이 이어집니다. 점선은 다른 대분류와의 연결입니다.";
+  descriptionEl.textContent = "계층은 부모 분류 주변에 묶이고, 공유 개념은 실제로 연결된 리포트와 다른 대분류의 가중 중심에 배치됩니다.";
   const center = { x: 600, y: 500 };
   const descendants = collectDescendants(category.id, index);
-  const layers = {
-    middle: layerNodes(descendants, "middle"),
-    sub: layerNodes(descendants, "sub"),
-    detail: layerNodes(descendants, "detail"),
-    report: layerNodes(descendants, "report"),
-  };
-  const positions = new Map([[category.id, center]]);
-  [
-    ["middle", 105],
-    ["sub", 165],
-    ["detail", 225],
-    ["report", 290],
-  ].forEach(([type, radius], indexValue) => {
-    const ring = positionsOnRing(layers[type], center, radius, -Math.PI / 2 + indexValue * 0.18);
-    ring.forEach((position, id) => positions.set(id, position));
-  });
-
   const relevantConcepts = [
-    ...new Set(layers.report.flatMap((report) => index.reportConcepts.get(report.id) || [])),
+    ...new Set(
+      [...descendants]
+        .map((id) => index.nodes.get(id))
+        .filter((node) => node?.type === "report")
+        .flatMap((report) => index.reportConcepts.get(report.id) || []),
+    ),
   ]
     .map((id) => index.nodes.get(id))
     .filter(Boolean)
     .sort((left, right) => (right.report_count || 0) - (left.report_count || 0))
     .slice(0, 10);
-  positionsOnRing(relevantConcepts, center, 375, -Math.PI / 2 + 0.1).forEach((position, id) => positions.set(id, position));
-
-  const externalCategories = index.categories.filter((item) => item.id !== category.id);
-  positionsOnRing(externalCategories, center, 465, -Math.PI / 2).forEach((position, id) => positions.set(id, position));
+  const {
+    positions,
+    layers,
+    externalCategories,
+  } = createCategoryDetailLayout(category, index, relevantConcepts, { center });
 
   const edgeGroup = svgElement("g", { class: "map-edges" });
   svg.append(edgeGroup);
