@@ -133,42 +133,42 @@ function appendNodeVisual(group, { radius, className, color }) {
 
   if (className.includes("report-node")) {
     shape = svgElement("rect", {
-      x: -27,
-      y: -19,
-      width: 54,
-      height: 38,
-      rx: 7,
+      x: -21,
+      y: -15,
+      width: 42,
+      height: 30,
+      rx: 6,
       fill,
       class: "map-node-shape",
     });
     visual.append(shape);
     visual.append(
       svgElement("path", {
-        d: "M 14 -19 L 27 -6 L 14 -6 Z",
+        d: "M 10 -15 L 21 -4 L 10 -4 Z",
         class: "report-fold",
       }),
       svgElement("line", {
-        x1: -14,
-        y1: 1,
-        x2: 12,
-        y2: 1,
+        x1: -11,
+        y1: 0,
+        x2: 8,
+        y2: 0,
         class: "report-glyph-line",
       }),
       svgElement("line", {
-        x1: -14,
-        y1: 8,
-        x2: 7,
-        y2: 8,
+        x1: -11,
+        y1: 6,
+        x2: 5,
+        y2: 6,
         class: "report-glyph-line",
       }),
     );
   } else if (className.includes("sub-node")) {
     shape = svgElement("rect", {
-      x: -20,
-      y: -16,
-      width: 40,
-      height: 32,
-      rx: 9,
+      x: -39,
+      y: -20,
+      width: 78,
+      height: 40,
+      rx: 11,
       fill,
       class: "map-node-shape",
     });
@@ -189,25 +189,44 @@ function appendNodeVisual(group, { radius, className, color }) {
     visual.append(shape);
   }
 
-  const typeMark = className.includes("middle-node")
-    ? "중"
-    : className.includes("sub-node")
-      ? "소"
-      : className.includes("detail-node")
-        ? "최"
-        : null;
-  if (typeMark) {
-    const mark = svgElement("text", {
-      x: 0,
-      y: 4,
-      class: "map-node-type-mark",
-      "text-anchor": "middle",
-    });
-    mark.textContent = typeMark;
-    visual.append(mark);
-  }
-
   group.append(visual);
+}
+
+function containedLabelLines(label, maximumPerLine = 7) {
+  const compact = String(label || "").replace(/\s+/g, " ").trim();
+  const maximumTotal = maximumPerLine * 2;
+  const clipped = compact.length > maximumTotal
+    ? `${compact.slice(0, maximumTotal - 1)}…`
+    : compact;
+  if (clipped.length <= maximumPerLine) return [clipped];
+
+  const preferredBreak = clipped.lastIndexOf(" ", maximumPerLine + 1);
+  const breakIndex = preferredBreak >= Math.ceil(maximumPerLine * 0.55)
+    ? preferredBreak
+    : maximumPerLine;
+  return [
+    clipped.slice(0, breakIndex).trim(),
+    clipped.slice(breakIndex).trim(),
+  ].filter(Boolean);
+}
+
+function addContainedNodeLabel(group, label, className) {
+  const lines = containedLabelLines(label, className.includes("sub-node") ? 8 : 6);
+  const text = svgElement("text", {
+    x: 0,
+    y: 0,
+    class: "map-contained-label",
+    "text-anchor": "middle",
+  });
+  lines.forEach((line, indexValue) => {
+    const tspan = svgElement("tspan", {
+      x: 0,
+      y: lines.length === 1 ? 3 : -4 + indexValue * 11,
+    });
+    tspan.textContent = line;
+    text.append(tspan);
+  });
+  group.append(text);
 }
 
 function addInteractiveNode({ node, position, radius, className, color, subtitle, onSelect }) {
@@ -224,15 +243,18 @@ function addInteractiveNode({ node, position, radius, className, color, subtitle
   group.append(title);
   appendNodeVisual(group, { radius, className, color });
   const isCategory = className.includes("category");
-  const labelElement = addText(group, node.label, {
-    y: isCategory ? 0 : radius + 17,
-    className: isCategory
-      ? "map-category-label"
-      : "map-node-label",
-    maximum: className.includes("report") ? 14 : 16,
-    singleLine: !isCategory,
-    centered: isCategory,
-  });
+  const containsTaxonomyLabel = className.includes("middle-node") || className.includes("sub-node");
+  const labelElement = containsTaxonomyLabel
+    ? addContainedNodeLabel(group, node.label, className)
+    : addText(group, node.label, {
+      y: isCategory ? 0 : className.includes("report-node") ? 35 : radius + 17,
+      className: isCategory
+        ? "map-category-label"
+        : "map-node-label",
+      maximum: className.includes("report") ? 14 : 16,
+      singleLine: !isCategory,
+      centered: isCategory,
+    });
   if (isCategory) {
     labelElement.setAttribute(
       "style",
@@ -380,10 +402,12 @@ function renderCategory(category, focusNodeId = null) {
   selectedCategoryId = category.id;
   resetEl.disabled = false;
   clearMap();
-  svg.setAttribute("viewBox", "0 0 1200 1000");
-  titleEl.textContent = `${category.label} 지식 궤도`;
-  descriptionEl.textContent = "원은 중분류, 둥근 사각형은 소분류, 마름모는 최소분류, 문서 카드는 리포트입니다. 공유 개념은 실제 연결 근거의 가중 중심에 배치됩니다.";
-  const center = { x: 600, y: 500 };
+  svg.setAttribute("viewBox", "0 0 1280 1080");
+  titleEl.textContent = category.label.endsWith("지식")
+    ? `${category.label} 궤도`
+    : `${category.label} 지식 궤도`;
+  descriptionEl.textContent = "중분류는 원, 소분류는 둥근 사각형, 리포트는 작은 문서 카드로 표시합니다. 최소분류는 복잡도를 낮추기 위해 숨기고 리포트를 가까운 상위 분류에 연결합니다.";
+  const center = { x: 640, y: 520 };
   const descendants = collectDescendants(category.id, index);
   const relevantConcepts = [
     ...new Set(
@@ -401,22 +425,43 @@ function renderCategory(category, focusNodeId = null) {
     positions,
     layers,
     externalCategories,
-  } = createCategoryDetailLayout(category, index, relevantConcepts, { center });
+  } = createCategoryDetailLayout(category, index, relevantConcepts, {
+    center,
+    radii: {
+      middle: 128,
+      sub: 220,
+      detail: 270,
+      report: 325,
+      concept: 420,
+      category: 505,
+    },
+  });
 
   const edgeGroup = svgElement("g", { class: "map-edges" });
   svg.append(edgeGroup);
   const visibleIds = new Set(positions.keys());
-  graph.edges
-    .filter((edge) => edge.kind === "hierarchy" && visibleIds.has(edge.source) && visibleIds.has(edge.target))
-    .forEach((edge) => {
-      const targetType = index.nodes.get(edge.target)?.type || "taxonomy";
-      appendLine(
-        edgeGroup,
-        positions.get(edge.source),
-        positions.get(edge.target),
-        `map-edge hierarchy-connection hierarchy-to-${targetType}`,
-      );
-    });
+  const visibleHierarchyNodes = [
+    ...layers.middle,
+    ...layers.sub,
+    ...layers.report,
+  ];
+  const visibleHierarchyIds = new Set([
+    category.id,
+    ...visibleHierarchyNodes.map((node) => node.id),
+  ]);
+  visibleHierarchyNodes.forEach((node) => {
+    let parentId = index.hierarchyParent.get(node.id);
+    while (parentId && !visibleHierarchyIds.has(parentId)) {
+      parentId = index.hierarchyParent.get(parentId);
+    }
+    if (!parentId) return;
+    appendLine(
+      edgeGroup,
+      positions.get(parentId),
+      positions.get(node.id),
+      `map-edge hierarchy-connection hierarchy-to-${node.type}`,
+    );
+  });
   graph.edges
     .filter((edge) => edge.kind === "concept" && visibleIds.has(edge.source) && visibleIds.has(edge.target))
     .forEach((edge) => appendLine(edgeGroup, positions.get(edge.source), positions.get(edge.target), "map-edge concept-connection", 2));
@@ -441,13 +486,13 @@ function renderCategory(category, focusNodeId = null) {
     subtitle: `${layers.report.length}개 리포트`,
     onSelect: selectDetail,
   });
-  ["middle", "sub", "detail"].forEach((type) => {
+  ["middle", "sub"].forEach((type) => {
     layers[type].forEach((node) => addInteractiveNode({
       node,
       position: positions.get(node.id),
-      radius: type === "middle" ? 24 : type === "sub" ? 21 : 19,
+      radius: type === "middle" ? 34 : 22,
       className: `taxonomy-node ${type}-node`,
-      color: type === "middle" ? "#e8ded0" : type === "sub" ? "#e4efed" : "#fffdf8",
+      color: type === "middle" ? "#e8ded0" : "#e4efed",
       subtitle: TYPE_LABELS[type],
       onSelect: selectDetail,
     }));
@@ -455,7 +500,7 @@ function renderCategory(category, focusNodeId = null) {
   layers.report.forEach((node) => addInteractiveNode({
     node,
     position: positions.get(node.id),
-    radius: node.id === focusNodeId ? 31 : 28,
+    radius: node.id === focusNodeId ? 24 : 21,
     className: `report-node ${node.id === focusNodeId ? "focused-node" : ""}`,
     color: "#edf3fa",
     subtitle: node.date,
