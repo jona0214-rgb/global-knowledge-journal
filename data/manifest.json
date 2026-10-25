@@ -1,6 +1,22 @@
 {
-  "last_updated": "2026-10-25T02:38:41.923387+09:00",
+  "last_updated": "2026-10-26T02:57:10.846134+09:00",
   "reports": [
+    {
+      "date": "2026-10-26",
+      "title": "뇌와 장(腸) 상호작용: 마이크로바이옴이 정신 건강에 미치는 영향",
+      "subtitle": "장내 미생물과 뇌의 복잡한 연결 고리를 이해하다",
+      "main_category": "생명·건강",
+      "mid_category": "뇌과학",
+      "sub_category": "신경생물학",
+      "detail_category": "장내 미생물과 뇌 건강 메커니즘",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20261026_brain_gut_interaction_mi_Report.html",
+      "pdf_path": "outputs/20261026_brain_gut_interaction_mi_Report.pdf",
+      "status": "published_api",
+      "html_url": "outputs/20261026_brain_gut_interaction_mi_Report.html",
+      "pdf_url": "outputs/20261026_brain_gut_interaction_mi_Report.pdf",
+      "report_id": "rpt-20261026-brain-gut-interaction-mi"
+    },
     {
       "date": "2026-10-25",
       "title": "광섬유 기술과 정보 통신 혁신: 빛으로 연결하는 현대 사회",

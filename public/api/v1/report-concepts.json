@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-10-25T02:38:41.923387+09:00",
+  "generated_at": "2026-10-26T02:57:10.846134+09:00",
   "stats": {
-    "reports": 71,
-    "tags": 2646,
+    "reports": 72,
+    "tags": 2683,
     "shared_concepts": 20,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -38925,6 +38925,548 @@
           ]
         }
       ]
+    },
+    {
+      "report_id": "rpt-20261026-brain-gut-interaction-mi",
+      "date": "2026-10-26",
+      "title": "뇌와 장(腸) 상호작용: 마이크로바이옴이 정신 건강에 미치는 영향",
+      "main_category": "생명·건강",
+      "tags": [
+        {
+          "tag_id": "tag-b7e69d21bb229c86",
+          "label": "뇌-장 축",
+          "normalized_label": "뇌-장 축",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "뇌-장 축"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "뇌-장 축"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c5414ab0c93d7c45",
+          "label": "마이크로바이옴",
+          "normalized_label": "마이크로바이옴",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "마이크로바이옴"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "마이크로바이옴"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1808bd47135fd389",
+          "label": "면역 조절",
+          "normalized_label": "면역 조절",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "면역 조절"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f807532419464c74",
+          "label": "세로토닌",
+          "normalized_label": "세로토닌",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "세로토닌"
+            },
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "세로토닌"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ea8179d81ac6693a",
+          "label": "신경생물학",
+          "normalized_label": "신경생물학",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "신경생물학"
+            },
+            {
+              "reference": "category.sub",
+              "matched_text": "신경생물학"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3064c0f2dedc504b",
+          "label": "장내 미생물",
+          "normalized_label": "장내 미생물",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "장내 미생물"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e60889df94e171df",
+          "label": "정신 건강",
+          "normalized_label": "정신 건강",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "정신 건강"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d77591af3413b052",
+          "label": "염증 반응",
+          "normalized_label": "염증 반응",
+          "type": "mechanism",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "염증 반응"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-bb1aedc16658c0c7",
+          "label": "디스바이오시스",
+          "normalized_label": "디스바이오시스",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "디스바이오시스"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-306657a22fe5eb62",
+          "label": "뇌과학",
+          "normalized_label": "뇌과학",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "뇌과학"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-97451e00cf791bd0",
+          "label": "장내 미생물과 뇌 건강 메커니즘",
+          "normalized_label": "장내 미생물과 뇌 건강 메커니즘",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "장내 미생물과 뇌 건강 메커니즘"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d63c246ae9abc22e",
+          "label": "John F. Cryan",
+          "normalized_label": "John F. Cryan",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "John F. Cryan, 신경과학자"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ba0ebfdf81733448",
+          "label": "뇌 기능 및 행동 변화",
+          "normalized_label": "뇌 기능 및 행동 변화",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "뇌 기능 및 행동 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ed0e1e32f3a38cbe",
+          "label": "대사산물 및 신경전달물질 생산",
+          "normalized_label": "대사산물 및 신경전달물질 생산",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "대사산물 및 신경전달물질 생산"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-120eb8d8d561d03b",
+          "label": "신경 및 면역 신호 전달",
+          "normalized_label": "신경 및 면역 신호 전달",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "신경 및 면역 신호 전달"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9e62f8149701c599",
+          "label": "장내 미생물 구성",
+          "normalized_label": "장내 미생물 구성",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "장내 미생물 구성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1598104b04861bf6",
+          "label": "정신 건강 상태 조절",
+          "normalized_label": "정신 건강 상태 조절",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "정신 건강 상태 조절"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9b0218ae2fd5f555",
+          "label": "기본 개념: 뇌, 장, 마이크로바이옴의 연결고리",
+          "normalized_label": "기본 개념: 뇌, 장, 마이크로바이옴의 연결고리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "기본 개념: 뇌, 장, 마이크로바이옴의 연결고리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-85dc9f207c0eea5b",
+          "label": "뇌-장 상호작용 연구의 최신 동향과 과제",
+          "normalized_label": "뇌-장 상호작용 연구의 최신 동향과 과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "뇌-장 상호작용 연구의 최신 동향과 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ef9ba6ee5f9f680d",
+          "label": "뇌-장 축 연구의 사회적·개인적 함의",
+          "normalized_label": "뇌-장 축 연구의 사회적·개인적 함의",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "뇌-장 축 연구의 사회적·개인적 함의"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1f590d5cff4d0eb0",
+          "label": "뇌-장 축 연구의 역사적 출발점",
+          "normalized_label": "뇌-장 축 연구의 역사적 출발점",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "뇌-장 축 연구의 역사적 출발점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ed761802e95b7217",
+          "label": "뇌-장 축의 구조와 작동 원리",
+          "normalized_label": "뇌-장 축의 구조와 작동 원리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "뇌-장 축의 구조와 작동 원리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-06e8ef113a4917c5",
+          "label": "뇌-장 축이 사회와 생활에 미친 영향",
+          "normalized_label": "뇌-장 축이 사회와 생활에 미친 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "뇌-장 축이 사회와 생활에 미친 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e8219b152047ffd4",
+          "label": "마이크로바이옴 기반 우울증 치료 연구 사례",
+          "normalized_label": "마이크로바이옴 기반 우울증 치료 연구 사례",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "마이크로바이옴 기반 우울증 치료 연구 사례"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-873bc879af886583",
+          "label": "배경과 중요성: 뇌-장 상호작용의 부상",
+          "normalized_label": "배경과 중요성: 뇌-장 상호작용의 부상",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "배경과 중요성: 뇌-장 상호작용의 부상"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-671298c8e001a2e1",
+          "label": "진단과 관리 기준의 변화",
+          "normalized_label": "진단과 관리 기준의 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "진단과 관리 기준의 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-cc6109c36e6e5e41",
+          "label": "핵심 질문과 5가지 탐구 방향 안내",
+          "normalized_label": "핵심 질문과 5가지 탐구 방향 안내",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "핵심 질문과 5가지 탐구 방향 안내"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8eefd589da614d05",
+          "label": "현재 연구 쟁점과 미래 과제",
+          "normalized_label": "현재 연구 쟁점과 미래 과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[7].title",
+              "matched_text": "현재 연구 쟁점과 미래 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fc0c3647e29ddc7f",
+          "label": "Gut Microbiota's Influence on Brain and Behaviour",
+          "normalized_label": "Gut Microbiota's Influence on Brain and Behaviour",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "Gut Microbiota's Influence on Brain and Behaviour"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f4bd420e9d6b1ead",
+          "label": "관련 도서·탐구 키워드·확장 주제",
+          "normalized_label": "관련 도서·탐구 키워드·확장 주제",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 관련 도서·탐구 키워드·확장 주제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-23e1c34c0fe05bd8",
+          "label": "뇌-장 축 연구의 현재 쟁점과 대응 방안",
+          "normalized_label": "뇌-장 축 연구의 현재 쟁점과 대응 방안",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 뇌-장 축 연구의 현재 쟁점과 대응 방안"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d54d0598882daaa3",
+          "label": "마이크로바이옴과 정신 건강 관련 주요 미생물군 특징 비교",
+          "normalized_label": "마이크로바이옴과 정신 건강 관련 주요 미생물군 특징 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 마이크로바이옴과 정신 건강 관련 주요 미생물군 특징 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3e6380cf7b9a2da4",
+          "label": "우울증 치료에 마이크로바이옴 기반 접근법 사례 비교",
+          "normalized_label": "우울증 치료에 마이크로바이옴 기반 접근법 사례 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 우울증 치료에 마이크로바이옴 기반 접근법 사례 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b21ad2ab638a5ab9",
+          "label": "『Gut: The Inside Story of Our Body's Most Underrated Organ』",
+          "normalized_label": "『Gut: The Inside Story of Our Body's Most Underrated Organ』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "『Gut: The Inside Story of Our Body's Most Underrated Organ』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-db269c313d341a28",
+          "label": "『The Psychobiotic Revolution』",
+          "normalized_label": "『The Psychobiotic Revolution』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "『The Psychobiotic Revolution』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-492c19f348ae2427",
+          "label": "마이크로바이옴과 면역계 상호작용",
+          "normalized_label": "마이크로바이옴과 면역계 상호작용",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[3].title",
+              "matched_text": "마이크로바이옴과 면역계 상호작용"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b8ce2f03491287fb",
+          "label": "정밀정신의학과 미생물 상호작용 연구 동향 보고서",
+          "normalized_label": "정밀정신의학과 미생물 상호작용 연구 동향 보고서",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "정밀정신의학과 미생물 상호작용 연구 동향 보고서"
+            }
+          ]
+        }
+      ]
     }
   ],
   "shared_concepts": [
@@ -40502,72 +41044,12 @@
       ]
     },
     {
-      "concept_id": "con-96835a5f748ede9b",
-      "label": "에너지 효율",
-      "normalized_label": "에너지 효율",
-      "type": "outcome",
-      "provenance": "exact-normalized-tag",
-      "report_count": 5,
-      "main_categories": [
-        "과학·수학",
-        "기술·공학",
-        "예술·디자인"
-      ],
-      "reports": [
-        {
-          "report_id": "rpt-20260825-beolbibeui-suhak-yugakgy",
-          "evidence": [
-            {
-              "reference": "keywords[5]",
-              "matched_text": "에너지 효율"
-            }
-          ]
-        },
-        {
-          "report_id": "rpt-20260905-seawater-to-drinking-wat",
-          "evidence": [
-            {
-              "reference": "keywords[2]",
-              "matched_text": "에너지 효율"
-            }
-          ]
-        },
-        {
-          "report_id": "rpt-20260929-sustainable-building-mat",
-          "evidence": [
-            {
-              "reference": "keywords[4]",
-              "matched_text": "에너지 효율"
-            }
-          ]
-        },
-        {
-          "report_id": "rpt-20261005-eco-friendly-water-treat",
-          "evidence": [
-            {
-              "reference": "keywords[5]",
-              "matched_text": "에너지 효율"
-            }
-          ]
-        },
-        {
-          "report_id": "rpt-20261015-renewable-energy-storage",
-          "evidence": [
-            {
-              "reference": "keywords[3]",
-              "matched_text": "에너지 효율"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "concept_id": "con-58932b140c8d5ebd",
       "label": "미생물 생태계",
       "normalized_label": "미생물 생태계",
       "type": "concept",
       "provenance": "curated-pattern-rule",
-      "report_count": 4,
+      "report_count": 5,
       "main_categories": [
         "기술·공학",
         "생명·건강",
@@ -40631,6 +41113,87 @@
             {
               "reference": "keywords[1]",
               "matched_text": "미생물"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261026-brain-gut-interaction-mi",
+          "evidence": [
+            {
+              "reference": "title",
+              "matched_text": "마이크로바이옴"
+            },
+            {
+              "reference": "subtitle",
+              "matched_text": "미생물"
+            },
+            {
+              "reference": "abstract",
+              "matched_text": "미생물"
+            },
+            {
+              "reference": "keywords[0]",
+              "matched_text": "마이크로바이옴"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "concept_id": "con-96835a5f748ede9b",
+      "label": "에너지 효율",
+      "normalized_label": "에너지 효율",
+      "type": "outcome",
+      "provenance": "exact-normalized-tag",
+      "report_count": 5,
+      "main_categories": [
+        "과학·수학",
+        "기술·공학",
+        "예술·디자인"
+      ],
+      "reports": [
+        {
+          "report_id": "rpt-20260825-beolbibeui-suhak-yugakgy",
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "에너지 효율"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20260905-seawater-to-drinking-wat",
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "에너지 효율"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20260929-sustainable-building-mat",
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "에너지 효율"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261005-eco-friendly-water-treat",
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "에너지 효율"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261015-renewable-energy-storage",
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "에너지 효율"
             }
           ]
         }
@@ -40857,6 +41420,51 @@
       ]
     },
     {
+      "concept_id": "con-e60889df94e171df",
+      "label": "정신 건강",
+      "normalized_label": "정신 건강",
+      "type": "concept",
+      "provenance": "exact-normalized-tag",
+      "report_count": 3,
+      "main_categories": [
+        "생명·건강",
+        "인문·철학"
+      ],
+      "reports": [
+        {
+          "report_id": "rpt-20261016-mindfulness-role-in-ment",
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "정신 건강"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261021-religious-beliefs-and-me",
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "정신 건강"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "정신 건강"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261026-brain-gut-interaction-mi",
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "정신 건강"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "concept_id": "con-58404b066eaba0aa",
       "label": "환경 영향",
       "normalized_label": "환경 영향",
@@ -41073,42 +41681,6 @@
             {
               "reference": "term_box.items[0].term",
               "matched_text": "전통 음악"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "concept_id": "con-e60889df94e171df",
-      "label": "정신 건강",
-      "normalized_label": "정신 건강",
-      "type": "concept",
-      "provenance": "exact-normalized-tag",
-      "report_count": 2,
-      "main_categories": [
-        "생명·건강",
-        "인문·철학"
-      ],
-      "reports": [
-        {
-          "report_id": "rpt-20261016-mindfulness-role-in-ment",
-          "evidence": [
-            {
-              "reference": "keywords[1]",
-              "matched_text": "정신 건강"
-            }
-          ]
-        },
-        {
-          "report_id": "rpt-20261021-religious-beliefs-and-me",
-          "evidence": [
-            {
-              "reference": "keywords[1]",
-              "matched_text": "정신 건강"
-            },
-            {
-              "reference": "term_box.items[1].term",
-              "matched_text": "정신 건강"
             }
           ]
         }

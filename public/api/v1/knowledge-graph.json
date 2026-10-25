@@ -2,14 +2,14 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-10-25T02:38:41.923387+09:00",
+  "generated_at": "2026-10-26T02:57:10.846134+09:00",
   "stats": {
     "categories": 10,
-    "reports": 71,
-    "nodes": 312,
-    "edges": 403,
+    "reports": 72,
+    "nodes": 316,
+    "edges": 409,
     "concepts": 20,
-    "concept_edges": 121,
+    "concept_edges": 123,
     "semantic_edges": 0
   },
   "nodes": [
@@ -230,7 +230,7 @@
       "level": 5,
       "concept_id": "con-58932b140c8d5ebd",
       "concept_type": "concept",
-      "report_count": 4,
+      "report_count": 5,
       "main_categories": [
         "기술·공학",
         "생명·건강",
@@ -374,7 +374,7 @@
       "level": 5,
       "concept_id": "con-e60889df94e171df",
       "concept_type": "concept",
-      "report_count": 2,
+      "report_count": 3,
       "main_categories": [
         "생명·건강",
         "인문·철학"
@@ -420,6 +420,13 @@
       "label": "냉장 기술과 가정의 변화",
       "level": 3,
       "main_category": "역사·문화"
+    },
+    {
+      "id": "detail:0b7805afdffc7aec",
+      "type": "detail",
+      "label": "장내 미생물과 뇌 건강 메커니즘",
+      "level": 3,
+      "main_category": "생명·건강"
     },
     {
       "id": "detail:0d6eb03b63fa956d",
@@ -1050,6 +1057,13 @@
       "label": "미디어와 지식분류",
       "level": 1,
       "main_category": "언어·미디어·지식"
+    },
+    {
+      "id": "middle:6358647d34f4896d",
+      "type": "middle",
+      "label": "뇌과학",
+      "level": 1,
+      "main_category": "생명·건강"
     },
     {
       "id": "middle:6453951fdd49440b",
@@ -2588,6 +2602,23 @@
       "pdf_url": "outputs/20261025_gwangseomyu_gisul_inform_Report.pdf"
     },
     {
+      "id": "report:rpt-20261026-brain-gut-interaction-mi",
+      "type": "report",
+      "label": "뇌와 장(腸) 상호작용: 마이크로바이옴이 정신 건강에 미치는 영향",
+      "level": 4,
+      "report_id": "rpt-20261026-brain-gut-interaction-mi",
+      "date": "2026-10-26",
+      "main_category": "생명·건강",
+      "category_path": [
+        "생명·건강",
+        "뇌과학",
+        "신경생물학",
+        "장내 미생물과 뇌 건강 메커니즘"
+      ],
+      "html_url": "outputs/20261026_brain_gut_interaction_mi_Report.html",
+      "pdf_url": "outputs/20261026_brain_gut_interaction_mi_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -2859,6 +2890,13 @@
       "label": "가전과 식생활",
       "level": 2,
       "main_category": "역사·문화"
+    },
+    {
+      "id": "sub:7fad4ad282784191",
+      "type": "sub",
+      "label": "신경생물학",
+      "level": 2,
+      "main_category": "생명·건강"
     },
     {
       "id": "sub:81198d94303e00c0",
@@ -3248,6 +3286,13 @@
       "id": "edge:0d1e1042ffc1d199",
       "source": "detail:8cabf719751154c5",
       "target": "report:rpt-20260901-moral-luck-paradox-resul",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:0d2fc89ac8ab898e",
+      "source": "detail:0b7805afdffc7aec",
+      "target": "report:rpt-20261026-brain-gut-interaction-mi",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -4773,6 +4818,13 @@
       "provenance": "curated-pattern-rule"
     },
     {
+      "id": "edge:6c04f6fb95664209",
+      "source": "category:d1d9ae9d3e816c13",
+      "target": "middle:6358647d34f4896d",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:6d452f8ff9889165",
       "source": "report:rpt-20260901-moral-luck-paradox-resul",
       "target": "concept:con-39820d616e59b701",
@@ -5696,6 +5748,33 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:99280e5d43e3999e",
+      "source": "report:rpt-20261026-brain-gut-interaction-mi",
+      "target": "concept:con-58932b140c8d5ebd",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "title",
+          "matched_text": "마이크로바이옴"
+        },
+        {
+          "reference": "subtitle",
+          "matched_text": "미생물"
+        },
+        {
+          "reference": "abstract",
+          "matched_text": "미생물"
+        },
+        {
+          "reference": "keywords[0]",
+          "matched_text": "마이크로바이옴"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:99aa8afc73ef95ce",
       "source": "report:rpt-20260907-monsun-geography-how-sea",
       "target": "concept:con-9b89960b11d9e6cf",
@@ -6415,6 +6494,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:bd4845ad3da16636",
+      "source": "sub:7fad4ad282784191",
+      "target": "detail:0b7805afdffc7aec",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:bd65465879e2bec1",
       "source": "report:rpt-20260819-library-classification-p",
       "target": "concept:con-9c3ea3b0f43b9c79",
@@ -6905,6 +6991,13 @@
       "provenance": "exact-normalized-tag"
     },
     {
+      "id": "edge:db9acf6634030637",
+      "source": "middle:6358647d34f4896d",
+      "target": "sub:7fad4ad282784191",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:dbaba055a76b1ef7",
       "source": "middle:6c529e8114138a11",
       "target": "sub:67d010e2bde41175",
@@ -7050,6 +7143,21 @@
         }
       ],
       "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:e36d0311bd6327cf",
+      "source": "report:rpt-20261026-brain-gut-interaction-mi",
+      "target": "concept:con-e60889df94e171df",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[3]",
+          "matched_text": "정신 건강"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
     },
     {
       "id": "edge:e4864c1e30859f77",
