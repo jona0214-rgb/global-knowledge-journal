@@ -2,14 +2,14 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-10-26T02:57:10.846134+09:00",
+  "generated_at": "2026-10-27T05:21:13.037860+09:00",
   "stats": {
     "categories": 10,
-    "reports": 72,
-    "nodes": 316,
-    "edges": 409,
+    "reports": 73,
+    "nodes": 320,
+    "edges": 414,
     "concepts": 20,
-    "concept_edges": 123,
+    "concept_edges": 124,
     "semantic_edges": 0
   },
   "nodes": [
@@ -215,7 +215,7 @@
       "level": 5,
       "concept_id": "con-58404b066eaba0aa",
       "concept_type": "outcome",
-      "report_count": 3,
+      "report_count": 4,
       "main_categories": [
         "기술·공학",
         "예술·디자인",
@@ -299,7 +299,6 @@
         "과학·수학",
         "기술·공학",
         "사회·정치·법",
-        "생명·건강",
         "역사·문화",
         "예술·디자인",
         "자연·환경·지리"
@@ -413,6 +412,13 @@
       "label": "양자정보과학",
       "level": 3,
       "main_category": "과학·수학"
+    },
+    {
+      "id": "detail:06fd587269769526",
+      "type": "detail",
+      "label": "플라스틱 쓰레기의 이동 경로와 지리적 집중",
+      "level": 3,
+      "main_category": "자연·환경·지리"
     },
     {
       "id": "detail:080dd9b47a474067",
@@ -902,6 +908,13 @@
       "type": "detail",
       "label": "화산분출이 지형 및 생태계에 미치는 장기 효과",
       "level": 3,
+      "main_category": "자연·환경·지리"
+    },
+    {
+      "id": "middle:041acc745080972d",
+      "type": "middle",
+      "label": "해양과 지리",
+      "level": 1,
       "main_category": "자연·환경·지리"
     },
     {
@@ -2619,6 +2632,23 @@
       "pdf_url": "outputs/20261026_brain_gut_interaction_mi_Report.pdf"
     },
     {
+      "id": "report:rpt-20261027-ocean-plastic-geography",
+      "type": "report",
+      "label": "해양 쓰레기의 지리학: 바다에서 플라스틱은 어떻게 이동하고 축적되나",
+      "level": 4,
+      "report_id": "rpt-20261027-ocean-plastic-geography",
+      "date": "2026-10-27",
+      "main_category": "자연·환경·지리",
+      "category_path": [
+        "자연·환경·지리",
+        "해양과 지리",
+        "해양오염",
+        "플라스틱 쓰레기의 이동 경로와 지리적 집중"
+      ],
+      "html_url": "outputs/20261027_ocean_plastic_geography__Report.html",
+      "pdf_url": "outputs/20261027_ocean_plastic_geography__Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -3081,6 +3111,13 @@
       "main_category": "언어·미디어·지식"
     },
     {
+      "id": "sub:da92dcfc6fb82aee",
+      "type": "sub",
+      "label": "해양오염",
+      "level": 2,
+      "main_category": "자연·환경·지리"
+    },
+    {
       "id": "sub:dc6898cdc8453ab9",
       "type": "sub",
       "label": "계절풍 기후",
@@ -3346,6 +3383,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:154dab609309664c",
+      "source": "middle:041acc745080972d",
+      "target": "sub:da92dcfc6fb82aee",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:1711ffec304b0667",
       "source": "category:a495d7d4da85b458",
       "target": "middle:31efa95b81f1ef7c",
@@ -3531,6 +3575,13 @@
       "id": "edge:230746e1cba6387b",
       "source": "sub:6b74ec372ec20bf8",
       "target": "detail:8cabf719751154c5",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:235cc61bfdbf5117",
+      "source": "category:9de06b299a735751",
+      "target": "middle:041acc745080972d",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -3837,6 +3888,13 @@
       "id": "edge:36234df30d4252ae",
       "source": "middle:eadcf5e153b9ad3c",
       "target": "sub:7cb73285e3d7560c",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:366f9c34cdb4cbe4",
+      "source": "sub:da92dcfc6fb82aee",
+      "target": "detail:06fd587269769526",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -4219,6 +4277,21 @@
       "target": "report:rpt-20261015-renewable-energy-storage",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:4e0006b3dd69f5ff",
+      "source": "report:rpt-20261027-ocean-plastic-geography",
+      "target": "concept:con-58404b066eaba0aa",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[7]",
+          "matched_text": "환경 영향"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
     },
     {
       "id": "edge:4eeacdeb1713abe0",
@@ -5790,21 +5863,6 @@
       "provenance": "curated-pattern-rule"
     },
     {
-      "id": "edge:99d0b1de349a1e48",
-      "source": "report:rpt-20261006-stem-cell-research-evolu",
-      "target": "concept:con-9b89960b11d9e6cf",
-      "kind": "concept",
-      "relation_type": "has_concept",
-      "score": 0.7,
-      "evidence": [
-        {
-          "reference": "sections[9].body[3]",
-          "matched_text": "환경 영향"
-        }
-      ],
-      "provenance": "curated-pattern-rule"
-    },
-    {
       "id": "edge:9a26079fbf3e1c41",
       "source": "middle:122d8c82ed9f59b8",
       "target": "sub:cf056f0a7d4b04ad",
@@ -6224,6 +6282,21 @@
       "target": "detail:d753586427fcf80f",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:b25b2f1656ff51c9",
+      "source": "report:rpt-20261027-ocean-plastic-geography",
+      "target": "concept:con-9b89960b11d9e6cf",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[7]",
+          "matched_text": "환경 영향"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:b26d50fbcb07f09f",
@@ -6925,6 +6998,13 @@
       "id": "edge:d56dd6be66a32538",
       "source": "category:3fc5d02608923758",
       "target": "middle:9cd5243332ac9316",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:d577b15170fc4fca",
+      "source": "detail:06fd587269769526",
+      "target": "report:rpt-20261027-ocean-plastic-geography",
       "kind": "hierarchy",
       "relation_type": "contains"
     },

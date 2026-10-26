@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-10-26",
+  "updated_at": "2026-10-27",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -1612,6 +1612,29 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261026_brain_gut_interaction_mi_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261026_brain_gut_interaction_mi_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "report_id": "rpt-20261027-ocean-plastic-geography-movement-accumulation",
+      "date": "2026-10-27",
+      "title": "해양 쓰레기의 지리학: 바다에서 플라스틱은 어떻게 이동하고 축적되나",
+      "main_category": "자연·환경·지리",
+      "mid_category": "해양과 지리",
+      "sub_category": "해양오염",
+      "detail_category": "플라스틱 쓰레기의 이동 경로와 지리적 집중",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "해양 쓰레기",
+        "플라스틱 오염",
+        "해양 순환",
+        "거대 쓰레기 지대",
+        "미세플라스틱",
+        "지리학적 축적",
+        "해류",
+        "환경 영향"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261027_ocean_plastic_geography__Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261027_ocean_plastic_geography__Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -1628,9 +1651,9 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "생명·건강",
-    "next_main_category": "자연·환경·지리",
-    "next_index": 6,
+    "last_main_category": "자연·환경·지리",
+    "next_main_category": "역사·문화",
+    "next_index": 7,
     "completed_cycles": 7,
     "published_counts": {
       "인문·철학": 8,
@@ -1639,13 +1662,12 @@
       "과학·수학": 7,
       "기술·공학": 8,
       "생명·건강": 7,
-      "자연·환경·지리": 6,
+      "자연·환경·지리": 7,
       "역사·문화": 8,
       "예술·디자인": 7,
       "언어·미디어·지식": 8
     },
     "recent_main_categories": [
-      "자연·환경·지리",
       "역사·문화",
       "예술·디자인",
       "언어·미디어·지식",
@@ -1654,7 +1676,8 @@
       "경제·경영",
       "과학·수학",
       "기술·공학",
-      "생명·건강"
+      "생명·건강",
+      "자연·환경·지리"
     ]
   },
   "candidate_pool": [
@@ -2635,7 +2658,7 @@
       "sub_category": "해양오염",
       "detail_category": "플라스틱 쓰레기의 이동 경로와 지리적 집중",
       "priority": 1.0,
-      "status": "candidate",
+      "status": "used",
       "source": "api_generated"
     },
     {

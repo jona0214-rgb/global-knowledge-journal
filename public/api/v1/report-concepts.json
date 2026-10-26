@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-10-26T02:57:10.846134+09:00",
+  "generated_at": "2026-10-27T05:21:13.037860+09:00",
   "stats": {
-    "reports": 72,
-    "tags": 2683,
+    "reports": 73,
+    "tags": 2719,
     "shared_concepts": 20,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -39467,6 +39467,542 @@
           ]
         }
       ]
+    },
+    {
+      "report_id": "rpt-20261027-ocean-plastic-geography",
+      "date": "2026-10-27",
+      "title": "해양 쓰레기의 지리학: 바다에서 플라스틱은 어떻게 이동하고 축적되나",
+      "main_category": "자연·환경·지리",
+      "tags": [
+        {
+          "tag_id": "tag-742f505f09317a3d",
+          "label": "거대 쓰레기 지대",
+          "normalized_label": "거대 쓰레기 지대",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [
+            "Garbage Patch"
+          ],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "거대 쓰레기 지대"
+            },
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "거대 쓰레기 지대(Garbage Patch)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-67fe1f240952047d",
+          "label": "미세플라스틱",
+          "normalized_label": "미세플라스틱",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [
+            "Microplastics"
+          ],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "미세플라스틱"
+            },
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "미세플라스틱(Microplastics)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-cf6635e1236d6228",
+          "label": "지리학적 축적",
+          "normalized_label": "지리학적 축적",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "지리학적 축적"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c35574d8edb4c83b",
+          "label": "해류",
+          "normalized_label": "해류",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [
+            "Ocean Currents"
+          ],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "해류"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "해류(Ocean Currents)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6e512187ec98123a",
+          "label": "해양 쓰레기",
+          "normalized_label": "해양 쓰레기",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [
+            "Marine Debris"
+          ],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "해양 쓰레기"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "해양 쓰레기(Marine Debris)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6f1602f8da4199bf",
+          "label": "해양 순환",
+          "normalized_label": "해양 순환",
+          "type": "mechanism",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "해양 순환"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-58404b066eaba0aa",
+          "label": "환경 영향",
+          "normalized_label": "환경 영향",
+          "type": "outcome",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "환경 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-45b3e96dde12c79c",
+          "label": "플라스틱 오염",
+          "normalized_label": "플라스틱 오염",
+          "type": "problem",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "플라스틱 오염"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a84cbfeb0acc5aa3",
+          "label": "해양과 지리",
+          "normalized_label": "해양과 지리",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "해양과 지리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b70a156cf2eb5d88",
+          "label": "해양오염",
+          "normalized_label": "해양오염",
+          "type": "domain",
+          "weight": 0.93,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.sub",
+              "matched_text": "해양오염"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-769247c5013048ff",
+          "label": "플라스틱 쓰레기의 이동 경로와 지리적 집중",
+          "normalized_label": "플라스틱 쓰레기의 이동 경로와 지리적 집중",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "플라스틱 쓰레기의 이동 경로와 지리적 집중"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-615b893f2dcf3f57",
+          "label": "Jambeck et al",
+          "normalized_label": "Jambeck et al",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "Jambeck et al., 2015, 해양 환경 과학 연구소"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2e9ce6c6b91d1208",
+          "label": "거대 쓰레기 지대 형성",
+          "normalized_label": "거대 쓰레기 지대 형성",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "거대 쓰레기 지대 형성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d0059b41b0bc23a2",
+          "label": "쓰레기의 해양 유입 경로",
+          "normalized_label": "쓰레기의 해양 유입 경로",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "쓰레기의 해양 유입 경로"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e36f39c889c5ff16",
+          "label": "플라스틱 생산 및 소비",
+          "normalized_label": "플라스틱 생산 및 소비",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "플라스틱 생산 및 소비"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4773c7d8d2c50204",
+          "label": "해류와 바람에 의한 해양 이동",
+          "normalized_label": "해류와 바람에 의한 해양 이동",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "해류와 바람에 의한 해양 이동"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-864b807143c0aba7",
+          "label": "해양 생태계 및 인류 건강 영향",
+          "normalized_label": "해양 생태계 및 인류 건강 영향",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "해양 생태계 및 인류 건강 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0935d3c4dad268a8",
+          "label": "개인과 사회, 기술이 맞닥뜨린 해양 쓰레기의 함의",
+          "normalized_label": "개인과 사회, 기술이 맞닥뜨린 해양 쓰레기의 함의",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "개인과 사회, 기술이 맞닥뜨린 해양 쓰레기의 함의"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f7de06e1bde12699",
+          "label": "기본 개념과 핵심 용어 이해",
+          "normalized_label": "기본 개념과 핵심 용어 이해",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "기본 개념과 핵심 용어 이해"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4ff221ad132ed9f8",
+          "label": "북태평양 거대 쓰레기 지대와 국제 협력 사례",
+          "normalized_label": "북태평양 거대 쓰레기 지대와 국제 협력 사례",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "북태평양 거대 쓰레기 지대와 국제 협력 사례"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-642cbf83c0452558",
+          "label": "플라스틱 이동이 생태계와 사회에 미친 영향",
+          "normalized_label": "플라스틱 이동이 생태계와 사회에 미친 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "플라스틱 이동이 생태계와 사회에 미친 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-698f23f51082f5a4",
+          "label": "해양 순환과 플라스틱 이동의 구조",
+          "normalized_label": "해양 순환과 플라스틱 이동의 구조",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "해양 순환과 플라스틱 이동의 구조"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-61825827d0445057",
+          "label": "해양 쓰레기 관리와 모니터링 기준 변화",
+          "normalized_label": "해양 쓰레기 관리와 모니터링 기준 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "해양 쓰레기 관리와 모니터링 기준 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9a0c847039a10934",
+          "label": "해양 쓰레기 문제의 공간적 중요성",
+          "normalized_label": "해양 쓰레기 문제의 공간적 중요성",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "해양 쓰레기 문제의 공간적 중요성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4fdd2b207bdeb8e9",
+          "label": "해양 쓰레기 이슈의 역사적 출발점",
+          "normalized_label": "해양 쓰레기 이슈의 역사적 출발점",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "해양 쓰레기 이슈의 역사적 출발점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2f7a17f7b7df0076",
+          "label": "해양 플라스틱 이동과 축적의 핵심 질문과 하위 주제",
+          "normalized_label": "해양 플라스틱 이동과 축적의 핵심 질문과 하위 주제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "해양 플라스틱 이동과 축적의 핵심 질문과 하위 주제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3836ce7d4e1e672c",
+          "label": "현대 해양 쓰레기 쟁점과 대응 과제",
+          "normalized_label": "현대 해양 쓰레기 쟁점과 대응 과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[7].title",
+              "matched_text": "현대 해양 쓰레기 쟁점과 대응 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-839c2b1116221116",
+          "label": "현대 해양 플라스틱 쓰레기 축적과 관리 현황",
+          "normalized_label": "현대 해양 플라스틱 쓰레기 축적과 관리 현황",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "현대 해양 플라스틱 쓰레기 축적과 관리 현황"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5bb104442bd8a3ae",
+          "label": "플라스틱 해양 이동과 분포 메커니즘 연구",
+          "normalized_label": "플라스틱 해양 이동과 분포 메커니즘 연구",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "플라스틱 해양 이동과 분포 메커니즘 연구"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-82bbc984a87a03c1",
+          "label": "북태평양 거대 쓰레기 지대 사례 특징",
+          "normalized_label": "북태평양 거대 쓰레기 지대 사례 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 북태평양 거대 쓰레기 지대 사례 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-35e8a18a56ef5b5f",
+          "label": "해양 플라스틱 연구 관련 도서·탐구 키워드·확장 주제",
+          "normalized_label": "해양 플라스틱 연구 관련 도서·탐구 키워드·확장 주제",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 해양 플라스틱 연구 관련 도서·탐구 키워드·확장 주제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e32f588ec4aed0a9",
+          "label": "해양 플라스틱 이동과 축적 비교",
+          "normalized_label": "해양 플라스틱 이동과 축적 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 해양 플라스틱 이동과 축적 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d4cc32d770375f4c",
+          "label": "현대 해양 쓰레기 문제의 주요 쟁점과 현황",
+          "normalized_label": "현대 해양 쓰레기 문제의 주요 쟁점과 현황",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 현대 해양 쓰레기 문제의 주요 쟁점과 현황"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1052e2350ed06a79",
+          "label": "국제 환경 협력과 지속가능성",
+          "normalized_label": "국제 환경 협력과 지속가능성",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "국제 환경 협력과 지속가능성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a38eed05c4fc6fdf",
+          "label": "플라스틱 쓰레기와 해양 환경",
+          "normalized_label": "플라스틱 쓰레기와 해양 환경",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "플라스틱 쓰레기와 해양 환경"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7112f64e0f38ebe3",
+          "label": "해양 순환과 환경 변화",
+          "normalized_label": "해양 순환과 환경 변화",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "해양 순환과 환경 변화"
+            }
+          ]
+        }
+      ]
     }
   ],
   "shared_concepts": [
@@ -40879,7 +41415,6 @@
         "과학·수학",
         "기술·공학",
         "사회·정치·법",
-        "생명·건강",
         "역사·문화",
         "예술·디자인",
         "자연·환경·지리"
@@ -41033,10 +41568,10 @@
           ]
         },
         {
-          "report_id": "rpt-20261006-stem-cell-research-evolu",
+          "report_id": "rpt-20261027-ocean-plastic-geography",
           "evidence": [
             {
-              "reference": "sections[9].body[3]",
+              "reference": "keywords[7]",
               "matched_text": "환경 영향"
             }
           ]
@@ -41367,6 +41902,57 @@
       ]
     },
     {
+      "concept_id": "con-58404b066eaba0aa",
+      "label": "환경 영향",
+      "normalized_label": "환경 영향",
+      "type": "outcome",
+      "provenance": "exact-normalized-tag",
+      "report_count": 4,
+      "main_categories": [
+        "기술·공학",
+        "예술·디자인",
+        "자연·환경·지리"
+      ],
+      "reports": [
+        {
+          "report_id": "rpt-20260828-bamui-bitgwa-saengtaegye",
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "환경 영향"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20260905-seawater-to-drinking-wat",
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "환경 영향"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20260929-sustainable-building-mat",
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "환경 영향"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261027-ocean-plastic-geography",
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "환경 영향"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "concept_id": "con-54edfaeaaf2ae146",
       "label": "공정성",
       "normalized_label": "공정성",
@@ -41459,48 +42045,6 @@
             {
               "reference": "keywords[3]",
               "matched_text": "정신 건강"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "concept_id": "con-58404b066eaba0aa",
-      "label": "환경 영향",
-      "normalized_label": "환경 영향",
-      "type": "outcome",
-      "provenance": "exact-normalized-tag",
-      "report_count": 3,
-      "main_categories": [
-        "기술·공학",
-        "예술·디자인",
-        "자연·환경·지리"
-      ],
-      "reports": [
-        {
-          "report_id": "rpt-20260828-bamui-bitgwa-saengtaegye",
-          "evidence": [
-            {
-              "reference": "keywords[4]",
-              "matched_text": "환경 영향"
-            }
-          ]
-        },
-        {
-          "report_id": "rpt-20260905-seawater-to-drinking-wat",
-          "evidence": [
-            {
-              "reference": "keywords[7]",
-              "matched_text": "환경 영향"
-            }
-          ]
-        },
-        {
-          "report_id": "rpt-20260929-sustainable-building-mat",
-          "evidence": [
-            {
-              "reference": "keywords[6]",
-              "matched_text": "환경 영향"
             }
           ]
         }

@@ -1,16 +1,16 @@
 {
-  "date": "2026-10-26",
-  "title": "뇌와 장(腸) 상호작용: 마이크로바이옴이 정신 건강에 미치는 영향",
-  "subtitle": "장내 미생물과 뇌의 복잡한 연결 고리를 이해하다",
-  "main_category": "생명·건강",
-  "mid_category": "뇌과학",
-  "sub_category": "신경생물학",
-  "detail_category": "장내 미생물과 뇌 건강 메커니즘",
+  "date": "2026-10-27",
+  "title": "해양 쓰레기의 지리학: 바다에서 플라스틱은 어떻게 이동하고 축적되나",
+  "subtitle": "바다 속 플라스틱 쓰레기의 이동 경로와 집중지역을 이해하는 공간적 분석",
+  "main_category": "자연·환경·지리",
+  "mid_category": "해양과 지리",
+  "sub_category": "해양오염",
+  "detail_category": "플라스틱 쓰레기의 이동 경로와 지리적 집중",
   "taxonomy_version": "2.0",
-  "html_path": "outputs/20261026_brain_gut_interaction_mi_Report.html",
-  "pdf_path": "outputs/20261026_brain_gut_interaction_mi_Report.pdf",
+  "html_path": "outputs/20261027_ocean_plastic_geography__Report.html",
+  "pdf_path": "outputs/20261027_ocean_plastic_geography__Report.pdf",
   "status": "published_api",
-  "html_url": "outputs/20261026_brain_gut_interaction_mi_Report.html",
-  "pdf_url": "outputs/20261026_brain_gut_interaction_mi_Report.pdf",
-  "report_id": "rpt-20261026-brain-gut-interaction-mi"
+  "html_url": "outputs/20261027_ocean_plastic_geography__Report.html",
+  "pdf_url": "outputs/20261027_ocean_plastic_geography__Report.pdf",
+  "report_id": "rpt-20261027-ocean-plastic-geography"
 }
