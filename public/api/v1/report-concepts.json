@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-10-27T05:21:13.037860+09:00",
+  "generated_at": "2026-10-28T04:42:08.533155+09:00",
   "stats": {
-    "reports": 73,
-    "tags": 2719,
-    "shared_concepts": 20,
+    "reports": 74,
+    "tags": 2757,
+    "shared_concepts": 21,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
   },
@@ -40003,6 +40003,556 @@
           ]
         }
       ]
+    },
+    {
+      "report_id": "rpt-20261028-ancient-silk-road-cultur",
+      "date": "2026-10-28",
+      "title": "고대 실크로드의 생활문화와 문화교류",
+      "main_category": "역사·문화",
+      "tags": [
+        {
+          "tag_id": "tag-7fe0e54e62a52c2d",
+          "label": "고대 경제",
+          "normalized_label": "고대 경제",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "고대 경제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-28f97852b2c893b0",
+          "label": "고대 교역로",
+          "normalized_label": "고대 교역로",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "고대 교역로"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ba322543eda9c90e",
+          "label": "동서 교류",
+          "normalized_label": "동서 교류",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "동서 교류"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4da3d74355664531",
+          "label": "문명 간 접촉",
+          "normalized_label": "문명 간 접촉",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "문명 간 접촉"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-79fcdfdd9a5c2871",
+          "label": "문화 융합",
+          "normalized_label": "문화 융합",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "문화 융합"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8540e20dc1d9ee99",
+          "label": "문화교류",
+          "normalized_label": "문화교류",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "문화교류"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "문화교류"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-25196b70e5d85821",
+          "label": "생활용품 이동",
+          "normalized_label": "생활용품 이동",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "생활용품 이동"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b97e6cc951afee26",
+          "label": "실크로드",
+          "normalized_label": "실크로드",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "실크로드"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "실크로드"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-51189f7ad12c2378",
+          "label": "생활문화",
+          "normalized_label": "생활문화",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "생활문화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-93c083fe1e7ff568",
+          "label": "오아시스 도시",
+          "normalized_label": "오아시스 도시",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "오아시스 도시"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-df80bd991ec6d56b",
+          "label": "문명",
+          "normalized_label": "문명",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "문명"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8e65c35d9e46dd81",
+          "label": "교역로 문화",
+          "normalized_label": "교역로 문화",
+          "type": "domain",
+          "weight": 0.93,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.sub",
+              "matched_text": "교역로 문화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-cfc8b8fb448572e5",
+          "label": "실크로드를 통한 일상용품과 문화의 교환",
+          "normalized_label": "실크로드를 통한 일상용품과 문화의 교환",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "실크로드를 통한 일상용품과 문화의 교환"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-904baa29ed05806c",
+          "label": "마크 만윈",
+          "normalized_label": "마크 만윈",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [
+            "Mark Manwin"
+          ],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "마크 만윈(Mark Manwin), 『고대 실크로드와 문화 교섭』 저자"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0914c630bd3c3337",
+          "label": "사회 제도 및 규범 변화",
+          "normalized_label": "사회 제도 및 규범 변화",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "사회 제도 및 규범 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9d9190d076f4a200",
+          "label": "상업 및 문화 중심지 발전",
+          "normalized_label": "상업 및 문화 중심지 발전",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "상업 및 문화 중심지 발전"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-44cd8305730bd299",
+          "label": "생활용품과 문화 교류 확산",
+          "normalized_label": "생활용품과 문화 교류 확산",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "생활용품과 문화 교류 확산"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-75871fbf7edd928d",
+          "label": "초기 교역로 형성",
+          "normalized_label": "초기 교역로 형성",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "초기 교역로 형성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-37187b440f03da03",
+          "label": "현대적 연구와 문화유산 보존",
+          "normalized_label": "현대적 연구와 문화유산 보존",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "현대적 연구와 문화유산 보존"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-38d7391bfa854d48",
+          "label": "고대 실크로드 관련 핵심 개념과 용어",
+          "normalized_label": "고대 실크로드 관련 핵심 개념과 용어",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "고대 실크로드 관련 핵심 개념과 용어"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-aad4a491d0f7ef2a",
+          "label": "고대 실크로드 생활문화 교류의 현대적 의미와 도전",
+          "normalized_label": "고대 실크로드 생활문화 교류의 현대적 의미와 도전",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "고대 실크로드 생활문화 교류의 현대적 의미와 도전"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-31a6b055b1a60edc",
+          "label": "고대 실크로드의 역사적 중요성과 현대적 시사점",
+          "normalized_label": "고대 실크로드의 역사적 중요성과 현대적 시사점",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "고대 실크로드의 역사적 중요성과 현대적 시사점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-073cf81163b4c877",
+          "label": "교역로의 구조와 운용 방식",
+          "normalized_label": "교역로의 구조와 운용 방식",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "교역로의 구조와 운용 방식"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0ed0074c528f26a9",
+          "label": "생활문화에 미친 실크로드의 영향",
+          "normalized_label": "생활문화에 미친 실크로드의 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "생활문화에 미친 실크로드의 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-035656c845071747",
+          "label": "실크로드와 사회 제도 및 관리의 변화",
+          "normalized_label": "실크로드와 사회 제도 및 관리의 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "실크로드와 사회 제도 및 관리의 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1460d5ced7e7bc00",
+          "label": "실크로드의 생활문화와 문화교류: 핵심 원리와 분석 방향",
+          "normalized_label": "실크로드의 생활문화와 문화교류: 핵심 원리와 분석 방향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "실크로드의 생활문화와 문화교류: 핵심 원리와 분석 방향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2c0e5da364181cd9",
+          "label": "실크로드의 역사적 기원과 형성",
+          "normalized_label": "실크로드의 역사적 기원과 형성",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "실크로드의 역사적 기원과 형성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5c123db4dd22b26f",
+          "label": "오늘날 실크로드 연구의 쟁점과 미래 과제",
+          "normalized_label": "오늘날 실크로드 연구의 쟁점과 미래 과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[7].title",
+              "matched_text": "오늘날 실크로드 연구의 쟁점과 미래 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f7022d5ad7c2fd2c",
+          "label": "타클라마칸 사막 오아시스 도시: 문화교류와 생활문화의 중심지",
+          "normalized_label": "타클라마칸 사막 오아시스 도시: 문화교류와 생활문화의 중심지",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "타클라마칸 사막 오아시스 도시: 문화교류와 생활문화의 중심지"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-040ce693235c625c",
+          "label": "현대 연구에서 바라본 실크로드 생활문화와 교류의 오늘",
+          "normalized_label": "현대 연구에서 바라본 실크로드 생활문화와 교류의 오늘",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "현대 연구에서 바라본 실크로드 생활문화와 교류의 오늘"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8e9ea76765b1e462",
+          "label": "The Silk Road: A New History",
+          "normalized_label": "The Silk Road: A New History",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "The Silk Road: A New History"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0859fef2c3336fa9",
+          "label": "고대 교역로와 문화 교류 특징 비교",
+          "normalized_label": "고대 교역로와 문화 교류 특징 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 고대 교역로와 문화 교류 특징 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f4bd420e9d6b1ead",
+          "label": "관련 도서·탐구 키워드·확장 주제",
+          "normalized_label": "관련 도서·탐구 키워드·확장 주제",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 관련 도서·탐구 키워드·확장 주제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-434c6bf4198a042e",
+          "label": "타클라마칸 오아시스 도시 사례 특징",
+          "normalized_label": "타클라마칸 오아시스 도시 사례 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 타클라마칸 오아시스 도시 사례 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-caf9158b2b83f31c",
+          "label": "현대 실크로드 연구의 쟁점과 해결 과제",
+          "normalized_label": "현대 실크로드 연구의 쟁점과 해결 과제",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 현대 실크로드 연구의 쟁점과 해결 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7764cd7d3331666a",
+          "label": "『고대 교역로와 종교 전파』",
+          "normalized_label": "『고대 교역로와 종교 전파』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "『고대 교역로와 종교 전파』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5f7f8b206f54dbe3",
+          "label": "『실크로드와 문명 교류』",
+          "normalized_label": "『실크로드와 문명 교류』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "『실크로드와 문명 교류』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-74e6aec48fb49a64",
+          "label": "『오아시스 도시의 생활문화』",
+          "normalized_label": "『오아시스 도시의 생활문화』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "『오아시스 도시의 생활문화』"
+            }
+          ]
+        }
+      ]
     }
   ],
   "shared_concepts": [
@@ -42077,6 +42627,38 @@
             {
               "reference": "keywords[6]",
               "matched_text": "글로벌 교류"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "concept_id": "con-79fcdfdd9a5c2871",
+      "label": "문화 융합",
+      "normalized_label": "문화 융합",
+      "type": "concept",
+      "provenance": "exact-normalized-tag",
+      "report_count": 2,
+      "main_categories": [
+        "역사·문화",
+        "예술·디자인"
+      ],
+      "reports": [
+        {
+          "report_id": "rpt-20261019-jeontong-eumak-bojongwa",
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "문화 융합"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261028-ancient-silk-road-cultur",
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "문화 융합"
             }
           ]
         }

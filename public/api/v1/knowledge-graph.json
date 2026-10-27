@@ -2,14 +2,14 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-10-27T05:21:13.037860+09:00",
+  "generated_at": "2026-10-28T04:42:08.533155+09:00",
   "stats": {
     "categories": 10,
-    "reports": 73,
-    "nodes": 320,
-    "edges": 414,
-    "concepts": 20,
-    "concept_edges": 124,
+    "reports": 74,
+    "nodes": 325,
+    "edges": 420,
+    "concepts": 21,
+    "concept_edges": 126,
     "semantic_edges": 0
   },
   "nodes": [
@@ -270,6 +270,20 @@
         "자연·환경·지리"
       ],
       "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "concept:con-79fcdfdd9a5c2871",
+      "type": "concept",
+      "label": "문화 융합",
+      "level": 5,
+      "concept_id": "con-79fcdfdd9a5c2871",
+      "concept_type": "concept",
+      "report_count": 2,
+      "main_categories": [
+        "역사·문화",
+        "예술·디자인"
+      ],
+      "provenance": "exact-normalized-tag"
     },
     {
       "id": "concept:con-96835a5f748ede9b",
@@ -799,6 +813,13 @@
       "main_category": "역사·문화"
     },
     {
+      "id": "detail:bd0dd1da7f7d5123",
+      "type": "detail",
+      "label": "실크로드를 통한 일상용품과 문화의 교환",
+      "level": 3,
+      "main_category": "역사·문화"
+    },
+    {
       "id": "detail:c505075bb528cf21",
       "type": "detail",
       "label": "생산성 연계 임금",
@@ -979,6 +1000,13 @@
       "label": "재료공학",
       "level": 1,
       "main_category": "기술·공학"
+    },
+    {
+      "id": "middle:241c8bf9a695f3e6",
+      "type": "middle",
+      "label": "문명",
+      "level": 1,
+      "main_category": "역사·문화"
     },
     {
       "id": "middle:25e8d50dabe74f2b",
@@ -2649,6 +2677,23 @@
       "pdf_url": "outputs/20261027_ocean_plastic_geography__Report.pdf"
     },
     {
+      "id": "report:rpt-20261028-ancient-silk-road-cultur",
+      "type": "report",
+      "label": "고대 실크로드의 생활문화와 문화교류",
+      "level": 4,
+      "report_id": "rpt-20261028-ancient-silk-road-cultur",
+      "date": "2026-10-28",
+      "main_category": "역사·문화",
+      "category_path": [
+        "역사·문화",
+        "문명",
+        "교역로 문화",
+        "실크로드를 통한 일상용품과 문화의 교환"
+      ],
+      "html_url": "outputs/20261028_ancient_silk_road_cultur_Report.html",
+      "pdf_url": "outputs/20261028_ancient_silk_road_cultur_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -2948,6 +2993,13 @@
       "label": "사회정의론",
       "level": 2,
       "main_category": "인문·철학"
+    },
+    {
+      "id": "sub:8ac42765ed29dba5",
+      "type": "sub",
+      "label": "교역로 문화",
+      "level": 2,
+      "main_category": "역사·문화"
     },
     {
       "id": "sub:9126256f16bb64f1",
@@ -3274,6 +3326,21 @@
       "target": "middle:11ad53c1ad4528cc",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:099601decb4d1f7c",
+      "source": "report:rpt-20261019-jeontong-eumak-bojongwa",
+      "target": "concept:con-79fcdfdd9a5c2871",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[7]",
+          "matched_text": "문화 융합"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
     },
     {
       "id": "edge:0a828978e947fb99",
@@ -5371,6 +5438,13 @@
       "provenance": "curated-pattern-rule"
     },
     {
+      "id": "edge:8450bd72d8579f46",
+      "source": "sub:8ac42765ed29dba5",
+      "target": "detail:bd0dd1da7f7d5123",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:8486f4f7bc96885c",
       "source": "detail:9f81f58b346b0012",
       "target": "report:rpt-20260916-gut-microbiome-ecosystem",
@@ -6644,6 +6718,21 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:c02e4b212d671b0e",
+      "source": "report:rpt-20261028-ancient-silk-road-cultur",
+      "target": "concept:con-79fcdfdd9a5c2871",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[6]",
+          "matched_text": "문화 융합"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
       "id": "edge:c2713c0c5a6bec6c",
       "source": "sub:ef4db1078a7fb909",
       "target": "detail:9bae34a03bd23cf8",
@@ -7198,6 +7287,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:e08974004c97d41e",
+      "source": "middle:241c8bf9a695f3e6",
+      "target": "sub:8ac42765ed29dba5",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:e214b25aa6d0301f",
       "source": "report:rpt-20260928-history-of-postage-stamp",
       "target": "concept:con-f6b070ac3797aa0b",
@@ -7694,6 +7790,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:f4500037a8320423",
+      "source": "category:cb829c377357dd71",
+      "target": "middle:241c8bf9a695f3e6",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:f5838743c59c55df",
       "source": "category:a495d7d4da85b458",
       "target": "middle:e264145b0aeb4a5a",
@@ -7774,6 +7877,13 @@
       "id": "edge:fc7974073a203f05",
       "source": "middle:f17d822c4ccc785f",
       "target": "sub:81de53730768699c",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:fd493602bc4b0edf",
+      "source": "detail:bd0dd1da7f7d5123",
+      "target": "report:rpt-20261028-ancient-silk-road-cultur",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
