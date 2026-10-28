@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-10-28T04:42:08.533155+09:00",
+  "generated_at": "2026-10-29T04:54:51.239070+09:00",
   "stats": {
-    "reports": 74,
-    "tags": 2757,
-    "shared_concepts": 21,
+    "reports": 75,
+    "tags": 2794,
+    "shared_concepts": 23,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
   },
@@ -40553,6 +40553,548 @@
           ]
         }
       ]
+    },
+    {
+      "report_id": "rpt-20261029-dance-and-body-expressio",
+      "date": "2026-10-29",
+      "title": "무용과 신체 표현의 사회문화적 의미",
+      "main_category": "예술·디자인",
+      "tags": [
+        {
+          "tag_id": "tag-a1014f054c121672",
+          "label": "무용",
+          "normalized_label": "무용",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "무용"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "무용"
+            },
+            {
+              "reference": "category.sub",
+              "matched_text": "무용"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ff42c6630cbfe6c7",
+          "label": "문화사",
+          "normalized_label": "문화사",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "문화사"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-25e8a8f77d1e8204",
+          "label": "사회문화",
+          "normalized_label": "사회문화",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "사회문화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5a96eff2fbb575e7",
+          "label": "신체 표현",
+          "normalized_label": "신체 표현",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "신체 표현"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "신체 표현"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-46d4436211b6d7b6",
+          "label": "신체미학",
+          "normalized_label": "신체미학",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "신체미학"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c620ab16402a3238",
+          "label": "전통과 현대",
+          "normalized_label": "전통과 현대",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "전통과 현대"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9581217250e29acf",
+          "label": "정체성",
+          "normalized_label": "정체성",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "정체성"
+            },
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "정체성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-35cf39f1fdccb1b5",
+          "label": "퍼포먼스",
+          "normalized_label": "퍼포먼스",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "퍼포먼스"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d23fbd970b16e546",
+          "label": "사회문화적 의미",
+          "normalized_label": "사회문화적 의미",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "사회문화적 의미"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-97b4c99313f8525b",
+          "label": "공연",
+          "normalized_label": "공연",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "공연"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6dc3ab45494f6ba8",
+          "label": "신체 표현과 문화적 정체성",
+          "normalized_label": "신체 표현과 문화적 정체성",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "신체 표현과 문화적 정체성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-22b43422b67c6bc7",
+          "label": "마사 그레이엄",
+          "normalized_label": "마사 그레이엄",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "마사 그레이엄, 무용가 겸 안무가"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-cf8f73579f0f90ce",
+          "label": "규범과 기준 변화",
+          "normalized_label": "규범과 기준 변화",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "규범과 기준 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c46b229f424b183d",
+          "label": "사회문화적 영향 분석",
+          "normalized_label": "사회문화적 영향 분석",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "사회문화적 영향 분석"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-73eb3e4ebb5b26ad",
+          "label": "신체 표현 구조 이해",
+          "normalized_label": "신체 표현 구조 이해",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "신체 표현 구조 이해"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-491d6c6fd919d232",
+          "label": "역사적 기원 탐색",
+          "normalized_label": "역사적 기원 탐색",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "역사적 기원 탐색"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-aa3def704c7b626b",
+          "label": "현대적 쟁점과 미래 모색",
+          "normalized_label": "현대적 쟁점과 미래 모색",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "현대적 쟁점과 미래 모색"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d59ef6a09d09c55c",
+          "label": "무용 구조와 신체 표현의 사회적 작동 원리",
+          "normalized_label": "무용 구조와 신체 표현의 사회적 작동 원리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "무용 구조와 신체 표현의 사회적 작동 원리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-36c3af0aa2ec7702",
+          "label": "무용 기준과 신체 표현의 규범 변화",
+          "normalized_label": "무용 기준과 신체 표현의 규범 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "무용 기준과 신체 표현의 규범 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-752ca203c9ceb0bd",
+          "label": "무용과 신체 표현: 핵심 질문과 연구 방향",
+          "normalized_label": "무용과 신체 표현: 핵심 질문과 연구 방향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "무용과 신체 표현: 핵심 질문과 연구 방향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2152e6c65ac24bc9",
+          "label": "무용과 신체 표현의 기본 개념 정리",
+          "normalized_label": "무용과 신체 표현의 기본 개념 정리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "무용과 신체 표현의 기본 개념 정리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-904755c9175f5987",
+          "label": "무용과 신체 표현의 사회문화적 중요성",
+          "normalized_label": "무용과 신체 표현의 사회문화적 중요성",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "무용과 신체 표현의 사회문화적 중요성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9552f6de83d95b70",
+          "label": "무용과 신체 표현의 역사적 기원",
+          "normalized_label": "무용과 신체 표현의 역사적 기원",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "무용과 신체 표현의 역사적 기원"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b9b9c3d1e6c1f9d5",
+          "label": "무용과 신체 표현의 현대 쟁점과 미래 과제",
+          "normalized_label": "무용과 신체 표현의 현대 쟁점과 미래 과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[7].title",
+              "matched_text": "무용과 신체 표현의 현대 쟁점과 미래 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6486c5823029c478",
+          "label": "무용과 신체 표현의 현대적 동향과 도전",
+          "normalized_label": "무용과 신체 표현의 현대적 동향과 도전",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "무용과 신체 표현의 현대적 동향과 도전"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-72cfaf95d6946f87",
+          "label": "무용과 신체 표현이 개인과 사회에 주는 함의",
+          "normalized_label": "무용과 신체 표현이 개인과 사회에 주는 함의",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "무용과 신체 표현이 개인과 사회에 주는 함의"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-41fab818135c997b",
+          "label": "무용이 사회와 문화에 미친 영향",
+          "normalized_label": "무용이 사회와 문화에 미친 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "무용이 사회와 문화에 미친 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-83e3385ea2ed1162",
+          "label": "한국 전통 무용의 신체 표현과 문화 정체성",
+          "normalized_label": "한국 전통 무용의 신체 표현과 문화 정체성",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "한국 전통 무용의 신체 표현과 문화 정체성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c6af1a98385473f7",
+          "label": "무용과 몸짓: 문화와 정체성의 표현",
+          "normalized_label": "무용과 몸짓: 문화와 정체성의 표현",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "무용과 몸짓: 문화와 정체성의 표현"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-15b50e019e04316f",
+          "label": "무용 유형과 사회문화적 역할 비교",
+          "normalized_label": "무용 유형과 사회문화적 역할 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 무용 유형과 사회문화적 역할 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-58bd1bf41459d0b9",
+          "label": "무용과 신체 표현 관련 도서 및 확장 주제",
+          "normalized_label": "무용과 신체 표현 관련 도서 및 확장 주제",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 무용과 신체 표현 관련 도서 및 확장 주제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-91a97db1ab568b9d",
+          "label": "한국 전통 무용 사례의 특징",
+          "normalized_label": "한국 전통 무용 사례의 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 한국 전통 무용 사례의 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ca4ebe984f2340cd",
+          "label": "현대 무용과 신체 표현에 대한 주요 쟁점",
+          "normalized_label": "현대 무용과 신체 표현에 대한 주요 쟁점",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 현대 무용과 신체 표현에 대한 주요 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c7c85eab01dc9677",
+          "label": "『무용사』",
+          "normalized_label": "『무용사』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "『무용사』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-952adbfa7e140114",
+          "label": "『신체와 사회』",
+          "normalized_label": "『신체와 사회』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "『신체와 사회』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-08f79bb3e409c2b5",
+          "label": "문화적 신체성 연구 논문",
+          "normalized_label": "문화적 신체성 연구 논문",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "문화적 신체성 연구 논문"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-55ba46c581082f58",
+          "label": "퍼포먼스 이론 입문서",
+          "normalized_label": "퍼포먼스 이론 입문서",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[3].title",
+              "matched_text": "퍼포먼스 이론 입문서"
+            }
+          ]
+        }
+      ]
     }
   ],
   "shared_concepts": [
@@ -40838,27 +41380,6 @@
           ]
         },
         {
-          "report_id": "rpt-20260831-dictionary-authority-wor",
-          "evidence": [
-            {
-              "reference": "sections[0].body[3]",
-              "matched_text": "정체성"
-            },
-            {
-              "reference": "sections[5].body[1]",
-              "matched_text": "정체성"
-            },
-            {
-              "reference": "sections[7].body[2]",
-              "matched_text": "정체성"
-            },
-            {
-              "reference": "sections[8].body[2]",
-              "matched_text": "정체성"
-            }
-          ]
-        },
-        {
           "report_id": "rpt-20260906-vaccine-memory-how-the-i",
           "evidence": [
             {
@@ -41043,6 +41564,27 @@
             },
             {
               "reference": "sections[2].body[0]",
+              "matched_text": "정체성"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261029-dance-and-body-expressio",
+          "evidence": [
+            {
+              "reference": "subtitle",
+              "matched_text": "정체성"
+            },
+            {
+              "reference": "abstract",
+              "matched_text": "정체성"
+            },
+            {
+              "reference": "keywords[3]",
+              "matched_text": "정체성"
+            },
+            {
+              "reference": "term_box.items[3].term",
               "matched_text": "정체성"
             }
           ]
@@ -42601,6 +43143,55 @@
       ]
     },
     {
+      "concept_id": "con-9581217250e29acf",
+      "label": "정체성",
+      "normalized_label": "정체성",
+      "type": "concept",
+      "provenance": "exact-normalized-tag",
+      "report_count": 3,
+      "main_categories": [
+        "예술·디자인",
+        "인문·철학"
+      ],
+      "reports": [
+        {
+          "report_id": "rpt-20260911-naneun-nuguingga-gieog-e",
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "정체성"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261001-posthumanism-questions-i",
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "정체성"
+            },
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "정체성(Identity)"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261029-dance-and-body-expressio",
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "정체성"
+            },
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "정체성"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "concept_id": "con-c48bcb475eea9922",
       "label": "글로벌 교류",
       "normalized_label": "글로벌 교류",
@@ -42627,6 +43218,46 @@
             {
               "reference": "keywords[6]",
               "matched_text": "글로벌 교류"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "concept_id": "con-a1014f054c121672",
+      "label": "무용",
+      "normalized_label": "무용",
+      "type": "concept",
+      "provenance": "exact-normalized-tag",
+      "report_count": 2,
+      "main_categories": [
+        "역사·문화",
+        "예술·디자인"
+      ],
+      "reports": [
+        {
+          "report_id": "rpt-20261018-jeontong-eumak-and-muyon",
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "무용"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261029-dance-and-body-expressio",
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "무용"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "무용"
+            },
+            {
+              "reference": "category.sub",
+              "matched_text": "무용"
             }
           ]
         }

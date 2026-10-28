@@ -2,14 +2,14 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-10-28T04:42:08.533155+09:00",
+  "generated_at": "2026-10-29T04:54:51.239070+09:00",
   "stats": {
     "categories": 10,
-    "reports": 74,
-    "nodes": 325,
-    "edges": 420,
-    "concepts": 21,
-    "concept_edges": 126,
+    "reports": 75,
+    "nodes": 331,
+    "edges": 429,
+    "concepts": 23,
+    "concept_edges": 131,
     "semantic_edges": 0
   },
   "nodes": [
@@ -286,6 +286,20 @@
       "provenance": "exact-normalized-tag"
     },
     {
+      "id": "concept:con-9581217250e29acf",
+      "type": "concept",
+      "label": "정체성",
+      "level": 5,
+      "concept_id": "con-9581217250e29acf",
+      "concept_type": "concept",
+      "report_count": 3,
+      "main_categories": [
+        "예술·디자인",
+        "인문·철학"
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
       "id": "concept:con-96835a5f748ede9b",
       "type": "concept",
       "label": "에너지 효율",
@@ -333,6 +347,20 @@
         "예술·디자인"
       ],
       "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "concept:con-a1014f054c121672",
+      "type": "concept",
+      "label": "무용",
+      "level": 5,
+      "concept_id": "con-a1014f054c121672",
+      "concept_type": "concept",
+      "report_count": 2,
+      "main_categories": [
+        "역사·문화",
+        "예술·디자인"
+      ],
+      "provenance": "exact-normalized-tag"
     },
     {
       "id": "concept:con-a2ff54106aeeeb39",
@@ -862,6 +890,13 @@
       "main_category": "기술·공학"
     },
     {
+      "id": "detail:d7817d381ed06994",
+      "type": "detail",
+      "label": "신체 표현과 문화적 정체성",
+      "level": 3,
+      "main_category": "예술·디자인"
+    },
+    {
       "id": "detail:dc0300e1abd565e5",
       "type": "detail",
       "label": "한국 및 해외 사례를 통한 주민참여 활성화",
@@ -951,6 +986,13 @@
       "label": "의학과 감각",
       "level": 1,
       "main_category": "생명·건강"
+    },
+    {
+      "id": "middle:08ca7aefa5c51cad",
+      "type": "middle",
+      "label": "공연",
+      "level": 1,
+      "main_category": "예술·디자인"
     },
     {
       "id": "middle:0c14059a47957c6e",
@@ -2694,6 +2736,23 @@
       "pdf_url": "outputs/20261028_ancient_silk_road_cultur_Report.pdf"
     },
     {
+      "id": "report:rpt-20261029-dance-and-body-expressio",
+      "type": "report",
+      "label": "무용과 신체 표현의 사회문화적 의미",
+      "level": 4,
+      "report_id": "rpt-20261029-dance-and-body-expressio",
+      "date": "2026-10-29",
+      "main_category": "예술·디자인",
+      "category_path": [
+        "예술·디자인",
+        "공연",
+        "무용",
+        "신체 표현과 문화적 정체성"
+      ],
+      "html_url": "outputs/20261029_dance_and_body_expressio_Report.html",
+      "pdf_url": "outputs/20261029_dance_and_body_expressio_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -2748,6 +2807,13 @@
       "label": "지방행정",
       "level": 2,
       "main_category": "사회·정치·법"
+    },
+    {
+      "id": "sub:1d4310a3eb7eac5e",
+      "type": "sub",
+      "label": "무용",
+      "level": 2,
+      "main_category": "예술·디자인"
     },
     {
       "id": "sub:1e055424d9021ab2",
@@ -4417,6 +4483,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:511945380d15f5dd",
+      "source": "sub:1d4310a3eb7eac5e",
+      "target": "detail:d7817d381ed06994",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:513574487e83088c",
       "source": "detail:dc0300e1abd565e5",
       "target": "report:rpt-20261012-local-governance-develop",
@@ -4817,33 +4890,6 @@
       "relation_type": "contains"
     },
     {
-      "id": "edge:66da9a96e83e650c",
-      "source": "report:rpt-20260831-dictionary-authority-wor",
-      "target": "concept:con-f6b070ac3797aa0b",
-      "kind": "concept",
-      "relation_type": "has_concept",
-      "score": 1.0,
-      "evidence": [
-        {
-          "reference": "sections[0].body[3]",
-          "matched_text": "정체성"
-        },
-        {
-          "reference": "sections[5].body[1]",
-          "matched_text": "정체성"
-        },
-        {
-          "reference": "sections[7].body[2]",
-          "matched_text": "정체성"
-        },
-        {
-          "reference": "sections[8].body[2]",
-          "matched_text": "정체성"
-        }
-      ],
-      "provenance": "curated-pattern-rule"
-    },
-    {
       "id": "edge:66e307f6902ac3e8",
       "source": "sub:1e055424d9021ab2",
       "target": "detail:565923b7397eb282",
@@ -5214,6 +5260,25 @@
       "target": "middle:5f206a90fa15375d",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:77265e5797908896",
+      "source": "report:rpt-20261001-posthumanism-questions-i",
+      "target": "concept:con-9581217250e29acf",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.8,
+      "evidence": [
+        {
+          "reference": "keywords[2]",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "term_box.items[2].term",
+          "matched_text": "정체성(Identity)"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
     },
     {
       "id": "edge:78860d524425e815",
@@ -5838,6 +5903,29 @@
       "provenance": "exact-normalized-tag"
     },
     {
+      "id": "edge:95f4fcd279250d7c",
+      "source": "report:rpt-20261029-dance-and-body-expressio",
+      "target": "concept:con-a1014f054c121672",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.9,
+      "evidence": [
+        {
+          "reference": "keywords[0]",
+          "matched_text": "무용"
+        },
+        {
+          "reference": "term_box.items[0].term",
+          "matched_text": "무용"
+        },
+        {
+          "reference": "category.sub",
+          "matched_text": "무용"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
       "id": "edge:96681c4ba85eba1a",
       "source": "category:b9ccab27f2a0689e",
       "target": "middle:8e6727676b60ee0f",
@@ -5944,6 +6032,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:9a45723671dd1b6d",
+      "source": "middle:08ca7aefa5c51cad",
+      "target": "sub:1d4310a3eb7eac5e",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:9aed05fcd0fd0a01",
       "source": "detail:3420d1fc276cfe21",
       "target": "report:rpt-20260815-dosiei-hasudo",
@@ -5996,6 +6091,13 @@
       "id": "edge:9dec1f21d4ad9974",
       "source": "detail:15a0b1b8a846dda1",
       "target": "report:rpt-20260902-population-survey-politi",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:9df077d927b7e46f",
+      "source": "category:758a7b1ee4fe67cf",
+      "target": "middle:08ca7aefa5c51cad",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -6073,6 +6175,21 @@
         {
           "reference": "keywords[3]",
           "matched_text": "에너지 효율"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
+      "id": "edge:a13436d474c38ac0",
+      "source": "report:rpt-20260911-naneun-nuguingga-gieog-e",
+      "target": "concept:con-9581217250e29acf",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[4]",
+          "matched_text": "정체성"
         }
       ],
       "provenance": "exact-normalized-tag"
@@ -6212,6 +6329,13 @@
       "id": "edge:a698593596617b41",
       "source": "category:b9ccab27f2a0689e",
       "target": "middle:c6250703bc32d78c",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:a8c76f9f355014df",
+      "source": "detail:d7817d381ed06994",
+      "target": "report:rpt-20261029-dance-and-body-expressio",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -6658,6 +6782,33 @@
         {
           "reference": "sections[9].body[0]",
           "matched_text": "추천 시스템"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:bdd2788b9c33a67c",
+      "source": "report:rpt-20261029-dance-and-body-expressio",
+      "target": "concept:con-f6b070ac3797aa0b",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "subtitle",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "abstract",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "keywords[3]",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "term_box.items[3].term",
+          "matched_text": "정체성"
         }
       ],
       "provenance": "curated-pattern-rule"
@@ -7129,6 +7280,40 @@
       "target": "middle:0c14059a47957c6e",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:d8f3ba03f171a9bd",
+      "source": "report:rpt-20261018-jeontong-eumak-and-muyon",
+      "target": "concept:con-a1014f054c121672",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[1]",
+          "matched_text": "무용"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
+      "id": "edge:d9965cb51fee8342",
+      "source": "report:rpt-20261029-dance-and-body-expressio",
+      "target": "concept:con-9581217250e29acf",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.8,
+      "evidence": [
+        {
+          "reference": "keywords[3]",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "term_box.items[3].term",
+          "matched_text": "정체성"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
     },
     {
       "id": "edge:da4626f777879e23",

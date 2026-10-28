@@ -1,5 +1,21 @@
 [
   {
+    "date": "2026-10-29",
+    "title": "무용과 신체 표현의 사회문화적 의미",
+    "subtitle": "무용을 통한 신체 표현이 어떻게 사회문화적 정체성과 의미를 형성하는가",
+    "main_category": "예술·디자인",
+    "mid_category": "공연",
+    "sub_category": "무용",
+    "detail_category": "신체 표현과 문화적 정체성",
+    "taxonomy_version": "2.0",
+    "html_path": "outputs/20261029_dance_and_body_expressio_Report.html",
+    "pdf_path": "outputs/20261029_dance_and_body_expressio_Report.pdf",
+    "status": "published_api",
+    "html_url": "outputs/20261029_dance_and_body_expressio_Report.html",
+    "pdf_url": "outputs/20261029_dance_and_body_expressio_Report.pdf",
+    "report_id": "rpt-20261029-dance-and-body-expressio"
+  },
+  {
     "date": "2026-10-28",
     "title": "고대 실크로드의 생활문화와 문화교류",
     "subtitle": "실크로드를 통한 일상용품과 문화의 교환 이해하기",
