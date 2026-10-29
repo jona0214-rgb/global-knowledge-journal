@@ -1,6 +1,22 @@
 {
-  "last_updated": "2026-10-29T04:54:51.239070+09:00",
+  "last_updated": "2026-10-30T04:54:40.638586+09:00",
   "reports": [
+    {
+      "date": "2026-10-30",
+      "title": "미디어 리터러시 교육: 정보 홍수 시대에 비판적 사고는 어떻게 길러지는가",
+      "subtitle": "정보 과잉 시대, 올바른 미디어 이해와 분석을 통한 비판적 사고 육성 전략",
+      "main_category": "언어·미디어·지식",
+      "mid_category": "미디어와 지식분류",
+      "sub_category": "미디어 교육",
+      "detail_category": "미디어 리터러시와 사회 변화",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20261030_media_literacy_education_Report.html",
+      "pdf_path": "outputs/20261030_media_literacy_education_Report.pdf",
+      "status": "published_api",
+      "html_url": "outputs/20261030_media_literacy_education_Report.html",
+      "pdf_url": "outputs/20261030_media_literacy_education_Report.pdf",
+      "report_id": "rpt-20261030-media-literacy-education"
+    },
     {
       "date": "2026-10-29",
       "title": "무용과 신체 표현의 사회문화적 의미",

@@ -2,14 +2,14 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-10-29T04:54:51.239070+09:00",
+  "generated_at": "2026-10-30T04:54:40.638586+09:00",
   "stats": {
     "categories": 10,
-    "reports": 75,
-    "nodes": 331,
-    "edges": 429,
+    "reports": 76,
+    "nodes": 334,
+    "edges": 433,
     "concepts": 23,
-    "concept_edges": 131,
+    "concept_edges": 132,
     "semantic_edges": 0
   },
   "nodes": [
@@ -340,7 +340,7 @@
       "level": 5,
       "concept_id": "con-9c3ea3b0f43b9c79",
       "concept_type": "mechanism",
-      "report_count": 4,
+      "report_count": 5,
       "main_categories": [
         "경제·경영",
         "언어·미디어·지식",
@@ -608,6 +608,13 @@
       "label": "미분류",
       "level": 3,
       "main_category": "인문·철학"
+    },
+    {
+      "id": "detail:3864bac65277d3ff",
+      "type": "detail",
+      "label": "미디어 리터러시와 사회 변화",
+      "level": 3,
+      "main_category": "언어·미디어·지식"
     },
     {
       "id": "detail:3b365774a37949fa",
@@ -2753,6 +2760,23 @@
       "pdf_url": "outputs/20261029_dance_and_body_expressio_Report.pdf"
     },
     {
+      "id": "report:rpt-20261030-media-literacy-education",
+      "type": "report",
+      "label": "미디어 리터러시 교육: 정보 홍수 시대에 비판적 사고는 어떻게 길러지는가",
+      "level": 4,
+      "report_id": "rpt-20261030-media-literacy-education",
+      "date": "2026-10-30",
+      "main_category": "언어·미디어·지식",
+      "category_path": [
+        "언어·미디어·지식",
+        "미디어와 지식분류",
+        "미디어 교육",
+        "미디어 리터러시와 사회 변화"
+      ],
+      "html_url": "outputs/20261030_media_literacy_education_Report.html",
+      "pdf_url": "outputs/20261030_media_literacy_education_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -3143,6 +3167,13 @@
       "label": "우편과 시각문화",
       "level": 2,
       "main_category": "역사·문화"
+    },
+    {
+      "id": "sub:b46ca2c637f07653",
+      "type": "sub",
+      "label": "미디어 교육",
+      "level": 2,
+      "main_category": "언어·미디어·지식"
     },
     {
       "id": "sub:b74bbc1aefd39888",
@@ -3628,6 +3659,13 @@
       "provenance": "curated-pattern-rule"
     },
     {
+      "id": "edge:193b3b39845669d7",
+      "source": "detail:3864bac65277d3ff",
+      "target": "report:rpt-20261030-media-literacy-education",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:1b97846e5cc31634",
       "source": "sub:f19bd4048d307156",
       "target": "detail:0e86e35621503412",
@@ -3757,6 +3795,13 @@
       "id": "edge:29e842d70a207c87",
       "source": "middle:0c14059a47957c6e",
       "target": "sub:5d7a566e1097d1a5",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:2a7c563440701e77",
+      "source": "middle:5f206a90fa15375d",
+      "target": "sub:b46ca2c637f07653",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -4726,6 +4771,32 @@
         },
         {
           "reference": "term_box.items[1].term",
+          "matched_text": "정보 편향"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:5b44490e07fd9aff",
+      "source": "sub:b46ca2c637f07653",
+      "target": "detail:3864bac65277d3ff",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:5cfc4b9135422641",
+      "source": "report:rpt-20261030-media-literacy-education",
+      "target": "concept:con-9c3ea3b0f43b9c79",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.8,
+      "evidence": [
+        {
+          "reference": "sections[8].body[3]",
+          "matched_text": "정보 편향"
+        },
+        {
+          "reference": "sections[9].body[2]",
           "matched_text": "정보 편향"
         }
       ],

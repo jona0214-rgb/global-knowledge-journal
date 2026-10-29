@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-10-29T04:54:51.239070+09:00",
+  "generated_at": "2026-10-30T04:54:40.638586+09:00",
   "stats": {
-    "reports": 75,
-    "tags": 2794,
+    "reports": 76,
+    "tags": 2831,
     "shared_concepts": 23,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -41095,6 +41095,546 @@
           ]
         }
       ]
+    },
+    {
+      "report_id": "rpt-20261030-media-literacy-education",
+      "date": "2026-10-30",
+      "title": "미디어 리터러시 교육: 정보 홍수 시대에 비판적 사고는 어떻게 길러지는가",
+      "main_category": "언어·미디어·지식",
+      "tags": [
+        {
+          "tag_id": "tag-e4e2eecaf2e4483d",
+          "label": "교육 방법",
+          "normalized_label": "교육 방법",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "교육 방법"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-23fd35e5a42fe3ba",
+          "label": "디지털 미디어",
+          "normalized_label": "디지털 미디어",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "디지털 미디어"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8ed4eaec5ce3456f",
+          "label": "미디어 리터러시",
+          "normalized_label": "미디어 리터러시",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "미디어 리터러시"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "미디어 리터러시"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9ce3e6df647715fd",
+          "label": "비판적 사고",
+          "normalized_label": "비판적 사고",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "비판적 사고"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "비판적 사고"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7b0e29d4ac90cc53",
+          "label": "사회 변화",
+          "normalized_label": "사회 변화",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "사회 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-16aa72c4a0c4e617",
+          "label": "정보 분석",
+          "normalized_label": "정보 분석",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "정보 분석"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ca91f050e5df3dca",
+          "label": "정보 홍수",
+          "normalized_label": "정보 홍수",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "정보 홍수"
+            },
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "정보 홍수"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-42dcd1726969d6fb",
+          "label": "미디어 영향력",
+          "normalized_label": "미디어 영향력",
+          "type": "outcome",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "미디어 영향력"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-387e09da3f8e9eb3",
+          "label": "교육 기준",
+          "normalized_label": "교육 기준",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "교육 기준"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1fa2bd72bc218f8f",
+          "label": "미디어와 지식분류",
+          "normalized_label": "미디어와 지식분류",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "미디어와 지식분류"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3aad32e1f9320cd4",
+          "label": "미디어 교육",
+          "normalized_label": "미디어 교육",
+          "type": "domain",
+          "weight": 0.93,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.sub",
+              "matched_text": "미디어 교육"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b1cad433d2f50db9",
+          "label": "미디어 리터러시와 사회 변화",
+          "normalized_label": "미디어 리터러시와 사회 변화",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "미디어 리터러시와 사회 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-98aa581a8be00478",
+          "label": "헤르베르트 마콰이어",
+          "normalized_label": "헤르베르트 마콰이어",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [
+            "미디어 교육 전문가"
+          ],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "헤르베르트 마콰이어(미디어 교육 전문가)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9f0e68cd6a7a2901",
+          "label": "능동적 생산",
+          "normalized_label": "능동적 생산",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "능동적 생산"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1661c7b2ab4083e1",
+          "label": "맥락 이해",
+          "normalized_label": "맥락 이해",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "맥락 이해"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b147bd9d10b7b072",
+          "label": "비판적 분석",
+          "normalized_label": "비판적 분석",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "비판적 분석"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-01d64dd7e708443a",
+          "label": "윤리적 판단",
+          "normalized_label": "윤리적 판단",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "윤리적 판단"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-bc2e8f88191a5041",
+          "label": "정보 인식",
+          "normalized_label": "정보 인식",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "정보 인식"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-868a2e353c1c7835",
+          "label": "미디어 리터러시 교육의 구조와 작동 원리",
+          "normalized_label": "미디어 리터러시 교육의 구조와 작동 원리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "미디어 리터러시 교육의 구조와 작동 원리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a192d1a47f52936c",
+          "label": "미디어 리터러시 교육의 기본 이해",
+          "normalized_label": "미디어 리터러시 교육의 기본 이해",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "미디어 리터러시 교육의 기본 이해"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e7e4a7e4f3182894",
+          "label": "미디어 리터러시 교육의 기준과 측정, 관리 방법",
+          "normalized_label": "미디어 리터러시 교육의 기준과 측정, 관리 방법",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "미디어 리터러시 교육의 기준과 측정, 관리 방법"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-cc6429daddb96ca0",
+          "label": "미디어 리터러시 교육의 역사적 기원",
+          "normalized_label": "미디어 리터러시 교육의 역사적 기원",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "미디어 리터러시 교육의 역사적 기원"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6aadac7d7d59c09f",
+          "label": "미디어 리터러시 교육의 핵심 쟁점과 구조",
+          "normalized_label": "미디어 리터러시 교육의 핵심 쟁점과 구조",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "미디어 리터러시 교육의 핵심 쟁점과 구조"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a6ee55475556d861",
+          "label": "미디어 리터러시 교육의 현재 동향과 쟁점",
+          "normalized_label": "미디어 리터러시 교육의 현재 동향과 쟁점",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "미디어 리터러시 교육의 현재 동향과 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ce32ecdf95101688",
+          "label": "미디어 리터러시 교육의 현재 쟁점과 미래 과제",
+          "normalized_label": "미디어 리터러시 교육의 현재 쟁점과 미래 과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[7].title",
+              "matched_text": "미디어 리터러시 교육의 현재 쟁점과 미래 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5826c38ce3341fc9",
+          "label": "미디어 리터러시 교육이 개인과 사회에 주는 의미",
+          "normalized_label": "미디어 리터러시 교육이 개인과 사회에 주는 의미",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "미디어 리터러시 교육이 개인과 사회에 주는 의미"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-36479cc204c5ef25",
+          "label": "미디어 리터러시가 생활·사회·문화에 미친 영향",
+          "normalized_label": "미디어 리터러시가 생활·사회·문화에 미친 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "미디어 리터러시가 생활·사회·문화에 미친 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7e339bba15f5f9f0",
+          "label": "정보 홍수 시대의 미디어 리터러시 교육의 중요성",
+          "normalized_label": "정보 홍수 시대의 미디어 리터러시 교육의 중요성",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "정보 홍수 시대의 미디어 리터러시 교육의 중요성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-82ab3fa20f16dc29",
+          "label": "핀란드의 국가 차원 미디어 리터러시 교육",
+          "normalized_label": "핀란드의 국가 차원 미디어 리터러시 교육",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "핀란드의 국가 차원 미디어 리터러시 교육"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4acf945e44715abf",
+          "label": "미디어와 비판적 사고의 중요성",
+          "normalized_label": "미디어와 비판적 사고의 중요성",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "미디어와 비판적 사고의 중요성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fa3ee82a67def678",
+          "label": "미디어 리터러시 교육 관련 도서 및 연구 주제",
+          "normalized_label": "미디어 리터러시 교육 관련 도서 및 연구 주제",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 미디어 리터러시 교육 관련 도서 및 연구 주제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d0cd2dac32175154",
+          "label": "미디어 리터러시 교육의 주요 구성 요소 비교",
+          "normalized_label": "미디어 리터러시 교육의 주요 구성 요소 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 미디어 리터러시 교육의 주요 구성 요소 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6b456983adbd6011",
+          "label": "미디어 리터러시 교육의 현재 쟁점과 대응 방안",
+          "normalized_label": "미디어 리터러시 교육의 현재 쟁점과 대응 방안",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 미디어 리터러시 교육의 현재 쟁점과 대응 방안"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f43f9719a9183ccb",
+          "label": "핀란드 미디어 리터러시 교육 사례 특징",
+          "normalized_label": "핀란드 미디어 리터러시 교육 사례 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 핀란드 미디어 리터러시 교육 사례 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1643d9fd811188e4",
+          "label": "**『디지털 시민성』**",
+          "normalized_label": "**『디지털 시민성』**",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "**『디지털 시민성』**"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-36536d684e642b36",
+          "label": "**『미디어 교육의 이론과 실제』**",
+          "normalized_label": "**『미디어 교육의 이론과 실제』**",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "**『미디어 교육의 이론과 실제』**"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-84ea8eec5245f0cc",
+          "label": "**『정보 과잉 시대의 미디어 활용 전략』**",
+          "normalized_label": "**『정보 과잉 시대의 미디어 활용 전략』**",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "**『정보 과잉 시대의 미디어 활용 전략』**"
+            }
+          ]
+        }
+      ]
     }
   ],
   "shared_concepts": [
@@ -42767,6 +43307,98 @@
       ]
     },
     {
+      "concept_id": "con-9c3ea3b0f43b9c79",
+      "label": "선택과 프레이밍",
+      "normalized_label": "선택과 프레이밍",
+      "type": "mechanism",
+      "provenance": "curated-pattern-rule",
+      "report_count": 5,
+      "main_categories": [
+        "경제·경영",
+        "언어·미디어·지식",
+        "예술·디자인"
+      ],
+      "reports": [
+        {
+          "report_id": "rpt-20260819-library-classification-p",
+          "evidence": [
+            {
+              "reference": "sections[9].body[0]",
+              "matched_text": "추천 시스템"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20260919-photoframe-how-camera-se",
+          "evidence": [
+            {
+              "reference": "subtitle",
+              "matched_text": "프레이밍"
+            },
+            {
+              "reference": "abstract",
+              "matched_text": "프레이밍"
+            },
+            {
+              "reference": "keywords[1]",
+              "matched_text": "프레이밍"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "프레이밍"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20260920-youtube-algorithm-struct",
+          "evidence": [
+            {
+              "reference": "title",
+              "matched_text": "정보 편향"
+            },
+            {
+              "reference": "keywords[1]",
+              "matched_text": "추천 시스템"
+            },
+            {
+              "reference": "keywords[2]",
+              "matched_text": "정보 편향"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "정보 편향"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261002-psychology-of-stock-mark",
+          "evidence": [
+            {
+              "reference": "sections[4].body[0]",
+              "matched_text": "확증 편향"
+            },
+            {
+              "reference": "sections[8].body[1]",
+              "matched_text": "확증 편향"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261030-media-literacy-education",
+          "evidence": [
+            {
+              "reference": "sections[8].body[3]",
+              "matched_text": "정보 편향"
+            },
+            {
+              "reference": "sections[9].body[2]",
+              "matched_text": "정보 편향"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "concept_id": "con-96835a5f748ede9b",
       "label": "에너지 효율",
       "normalized_label": "에너지 효율",
@@ -42909,85 +43541,6 @@
             {
               "reference": "sections[3].title",
               "matched_text": "인공조명"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "concept_id": "con-9c3ea3b0f43b9c79",
-      "label": "선택과 프레이밍",
-      "normalized_label": "선택과 프레이밍",
-      "type": "mechanism",
-      "provenance": "curated-pattern-rule",
-      "report_count": 4,
-      "main_categories": [
-        "경제·경영",
-        "언어·미디어·지식",
-        "예술·디자인"
-      ],
-      "reports": [
-        {
-          "report_id": "rpt-20260819-library-classification-p",
-          "evidence": [
-            {
-              "reference": "sections[9].body[0]",
-              "matched_text": "추천 시스템"
-            }
-          ]
-        },
-        {
-          "report_id": "rpt-20260919-photoframe-how-camera-se",
-          "evidence": [
-            {
-              "reference": "subtitle",
-              "matched_text": "프레이밍"
-            },
-            {
-              "reference": "abstract",
-              "matched_text": "프레이밍"
-            },
-            {
-              "reference": "keywords[1]",
-              "matched_text": "프레이밍"
-            },
-            {
-              "reference": "term_box.items[0].term",
-              "matched_text": "프레이밍"
-            }
-          ]
-        },
-        {
-          "report_id": "rpt-20260920-youtube-algorithm-struct",
-          "evidence": [
-            {
-              "reference": "title",
-              "matched_text": "정보 편향"
-            },
-            {
-              "reference": "keywords[1]",
-              "matched_text": "추천 시스템"
-            },
-            {
-              "reference": "keywords[2]",
-              "matched_text": "정보 편향"
-            },
-            {
-              "reference": "term_box.items[1].term",
-              "matched_text": "정보 편향"
-            }
-          ]
-        },
-        {
-          "report_id": "rpt-20261002-psychology-of-stock-mark",
-          "evidence": [
-            {
-              "reference": "sections[4].body[0]",
-              "matched_text": "확증 편향"
-            },
-            {
-              "reference": "sections[8].body[1]",
-              "matched_text": "확증 편향"
             }
           ]
         }

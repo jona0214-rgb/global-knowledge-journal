@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-10-30",
+    "title": "미디어 리터러시 교육: 정보 홍수 시대에 비판적 사고는 어떻게 길러지는가",
+    "status": "published_api",
+    "event_name": "schedule",
+    "schedule_cron": "45 14 * * *",
+    "scheduled_for_kst": "2026-10-30T00:00:00+09:00",
+    "workflow_started_at": "2026-10-29T19:53:22Z",
+    "generation_started_at": "2026-10-29T19:53:59.181310Z",
+    "generation_completed_at": "2026-10-29T19:54:39.227063Z",
+    "catalog_updated_at": "2026-10-29T19:54:40.640453Z",
+    "scheduler_delay_seconds": 17602,
+    "setup_duration_seconds": 37,
+    "generation_duration_seconds": 41,
+    "validation_attempts": 1,
+    "run_id": "40944094711",
+    "run_attempt": "1",
+    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/40944094711",
+    "source_sha": "78f39e429b4856a3ee8fd5e7e6cac7ce6be204a1"
+  },
+  {
     "date": "2026-10-29",
     "title": "무용과 신체 표현의 사회문화적 의미",
     "status": "published_api",
@@ -693,25 +713,5 @@
     "run_attempt": "1",
     "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/36804309633",
     "source_sha": "5389aae85f8fd4e6a97e2ad299c1f828b52eb6fa"
-  },
-  {
-    "date": "2026-09-30",
-    "title": "오디오북의 성장과 청취 문화: 글 없는 독서는 어떻게 지식 소비를 재편하는가",
-    "status": "published_api",
-    "event_name": "schedule",
-    "schedule_cron": "15 23 * * *",
-    "scheduled_for_kst": "2026-09-30T08:15:00+09:00",
-    "workflow_started_at": "2026-09-30T02:05:52Z",
-    "generation_started_at": "2026-09-30T02:06:29.744828Z",
-    "generation_completed_at": "2026-09-30T02:07:12.537759Z",
-    "catalog_updated_at": "2026-09-30T02:07:13.902668Z",
-    "scheduler_delay_seconds": 10252,
-    "setup_duration_seconds": 38,
-    "generation_duration_seconds": 44,
-    "validation_attempts": 1,
-    "run_id": "36658179901",
-    "run_attempt": "1",
-    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/36658179901",
-    "source_sha": "c950d2d2fd9101b78b6cf18ff730bb4beb52b06d"
   }
 ]
