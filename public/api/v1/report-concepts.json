@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-10-30T04:54:40.638586+09:00",
+  "generated_at": "2026-10-31T04:45:31.871745+09:00",
   "stats": {
-    "reports": 76,
-    "tags": 2831,
-    "shared_concepts": 23,
+    "reports": 77,
+    "tags": 2869,
+    "shared_concepts": 25,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
   },
@@ -41635,6 +41635,556 @@
           ]
         }
       ]
+    },
+    {
+      "report_id": "rpt-20261031-ethical-consumption-indi",
+      "date": "2026-10-31",
+      "title": "윤리적 소비: 개인의 선택이 사회와 환경에 미치는 영향",
+      "main_category": "인문·철학",
+      "tags": [
+        {
+          "tag_id": "tag-ecb70d0f334fb463",
+          "label": "공정 무역",
+          "normalized_label": "공정 무역",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "공정 무역"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "공정 무역"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7b0e29d4ac90cc53",
+          "label": "사회 변화",
+          "normalized_label": "사회 변화",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "사회 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-891f890e162ee5e5",
+          "label": "사회적 책임",
+          "normalized_label": "사회적 책임",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "사회적 책임"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c556fc0525a5c693",
+          "label": "소비자 행동",
+          "normalized_label": "소비자 행동",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "소비자 행동"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f20453856f0bc62f",
+          "label": "윤리적 소비",
+          "normalized_label": "윤리적 소비",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "윤리적 소비"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "윤리적 소비"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3344ad2c05be1b49",
+          "label": "지속 가능한 소비",
+          "normalized_label": "지속 가능한 소비",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "지속 가능한 소비"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-428a729829ff30e2",
+          "label": "환경 보호",
+          "normalized_label": "환경 보호",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "환경 보호"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-58404b066eaba0aa",
+          "label": "환경 영향",
+          "normalized_label": "환경 영향",
+          "type": "outcome",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "환경 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-025c45edf261d051",
+          "label": "ESG 경영",
+          "normalized_label": "ESG 경영",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "ESG 경영"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f802d5ca7e74e24e",
+          "label": "그린워싱",
+          "normalized_label": "그린워싱",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "그린워싱"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4fd546cee4310b64",
+          "label": "윤리",
+          "normalized_label": "윤리",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "윤리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0428ebf20f4c8f34",
+          "label": "응용 윤리",
+          "normalized_label": "응용 윤리",
+          "type": "domain",
+          "weight": 0.93,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.sub",
+              "matched_text": "응용 윤리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e16d31f30f6cbaaa",
+          "label": "소비 행위와 윤리적 책임",
+          "normalized_label": "소비 행위와 윤리적 책임",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "소비 행위와 윤리적 책임"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0135b651eb5bc119",
+          "label": "피터 싱어",
+          "normalized_label": "피터 싱어",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [
+            "윤리학자"
+          ],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "피터 싱어 (윤리학자)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9b86c7521860730c",
+          "label": "가치 판단과 윤리 기준 설정",
+          "normalized_label": "가치 판단과 윤리 기준 설정",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "가치 판단과 윤리 기준 설정"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-79a5cffb52b831e6",
+          "label": "구매 의사 결정",
+          "normalized_label": "구매 의사 결정",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "구매 의사 결정"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-41813245387c9abb",
+          "label": "사회·환경 영향 평가",
+          "normalized_label": "사회·환경 영향 평가",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "사회·환경 영향 평가"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-db63dc3c9ed90761",
+          "label": "정보 탐색 및 인식",
+          "normalized_label": "정보 탐색 및 인식",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "정보 탐색 및 인식"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6b6b4a2f92b96fe7",
+          "label": "행동 실천 및 소비",
+          "normalized_label": "행동 실천 및 소비",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "행동 실천 및 소비"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-aa953341e5f5d155",
+          "label": "공정 무역 운동과 윤리적 소비 실천 사례",
+          "normalized_label": "공정 무역 운동과 윤리적 소비 실천 사례",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "공정 무역 운동과 윤리적 소비 실천 사례"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-373f8a90772ed96c",
+          "label": "생활과 문화에 미친 윤리적 소비의 영향",
+          "normalized_label": "생활과 문화에 미친 윤리적 소비의 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "생활과 문화에 미친 윤리적 소비의 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-923171c69edab34e",
+          "label": "소비 행위의 구조와 사회적 작동 원리",
+          "normalized_label": "소비 행위의 구조와 사회적 작동 원리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "소비 행위의 구조와 사회적 작동 원리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4a61ca31ea7b1a29",
+          "label": "윤리 기준과 관리 방식 변화",
+          "normalized_label": "윤리 기준과 관리 방식 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "윤리 기준과 관리 방식 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6fa7c20f4c29f540",
+          "label": "윤리적 소비가 개인과 사회에 주는 함의",
+          "normalized_label": "윤리적 소비가 개인과 사회에 주는 함의",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "윤리적 소비가 개인과 사회에 주는 함의"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c18536ae6b786016",
+          "label": "윤리적 소비를 구성하는 핵심 질문과 분석의 틀",
+          "normalized_label": "윤리적 소비를 구성하는 핵심 질문과 분석의 틀",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "윤리적 소비를 구성하는 핵심 질문과 분석의 틀"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0d81c4522c01e06b",
+          "label": "윤리적 소비의 역사적 기원과 발전",
+          "normalized_label": "윤리적 소비의 역사적 기원과 발전",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "윤리적 소비의 역사적 기원과 발전"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ba6311bfe593aaaa",
+          "label": "윤리적 소비의 중요성과 부상 배경",
+          "normalized_label": "윤리적 소비의 중요성과 부상 배경",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "윤리적 소비의 중요성과 부상 배경"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-74aaf12090319ed7",
+          "label": "윤리적 소비의 핵심 개념 정리",
+          "normalized_label": "윤리적 소비의 핵심 개념 정리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "윤리적 소비의 핵심 개념 정리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5d07b379493d9eb5",
+          "label": "윤리적 소비의 현재 동향과 과제",
+          "normalized_label": "윤리적 소비의 현재 동향과 과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "윤리적 소비의 현재 동향과 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6e4bcbd87bf459d7",
+          "label": "The Ethics of Consumption by Peter Singer",
+          "normalized_label": "The Ethics of Consumption by Peter Singer",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "The Ethics of Consumption by Peter Singer"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5d7230e9d9dec33d",
+          "label": "공정 무역 사례 주요 특징",
+          "normalized_label": "공정 무역 사례 주요 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 공정 무역 사례 주요 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-37bdff18de4c4ec3",
+          "label": "윤리적 소비 관련 도서 및 연구 주제",
+          "normalized_label": "윤리적 소비 관련 도서 및 연구 주제",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 윤리적 소비 관련 도서 및 연구 주제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6f54df0bb68c198a",
+          "label": "윤리적 소비 관련 현재 쟁점",
+          "normalized_label": "윤리적 소비 관련 현재 쟁점",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 윤리적 소비 관련 현재 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-60e3c70d736da23d",
+          "label": "윤리적 소비 주요 개념 비교",
+          "normalized_label": "윤리적 소비 주요 개념 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 윤리적 소비 주요 개념 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-bf421bddc91bde69",
+          "label": "『ESG 경영과 기업의 사회적 책임』",
+          "normalized_label": "『ESG 경영과 기업의 사회적 책임』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[3].title",
+              "matched_text": "『ESG 경영과 기업의 사회적 책임』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fb98aff67da8863d",
+          "label": "『공정 무역과 글로벌 정체성』",
+          "normalized_label": "『공정 무역과 글로벌 정체성』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "『공정 무역과 글로벌 정체성』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-99808996133b1bb0",
+          "label": "『윤리적 소비의 힘』",
+          "normalized_label": "『윤리적 소비의 힘』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "『윤리적 소비의 힘』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-dbcd4c1ea6736710",
+          "label": "『지속 가능한 소비와 사회 변화』",
+          "normalized_label": "『지속 가능한 소비와 사회 변화』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "『지속 가능한 소비와 사회 변화』"
+            }
+          ]
+        }
+      ]
     }
   ],
   "shared_concepts": [
@@ -41647,7 +42197,6 @@
       "report_count": 12,
       "main_categories": [
         "경제·경영",
-        "기술·공학",
         "사회·정치·법",
         "언어·미디어·지식",
         "역사·문화",
@@ -41766,15 +42315,6 @@
           ]
         },
         {
-          "report_id": "rpt-20260905-seawater-to-drinking-wat",
-          "evidence": [
-            {
-              "reference": "sections[10].body[1]",
-              "matched_text": "공정성"
-            }
-          ]
-        },
-        {
           "report_id": "rpt-20260912-baesimwonui-pandan-simin",
           "evidence": [
             {
@@ -41854,6 +42394,19 @@
             },
             {
               "reference": "sections[9].body[4]",
+              "matched_text": "공정성"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261031-ethical-consumption-indi",
+          "evidence": [
+            {
+              "reference": "sections[0].body[0]",
+              "matched_text": "공정성"
+            },
+            {
+              "reference": "sections[10].body[2]",
               "matched_text": "공정성"
             }
           ]
@@ -43044,11 +43597,11 @@
       "report_count": 12,
       "main_categories": [
         "경제·경영",
-        "과학·수학",
         "기술·공학",
         "사회·정치·법",
         "역사·문화",
         "예술·디자인",
+        "인문·철학",
         "자연·환경·지리"
       ],
       "reports": [
@@ -43170,15 +43723,6 @@
           ]
         },
         {
-          "report_id": "rpt-20261004-science-of-chaos-how-sma",
-          "evidence": [
-            {
-              "reference": "sections[10].body[0]",
-              "matched_text": "회복력"
-            }
-          ]
-        },
-        {
           "report_id": "rpt-20261005-eco-friendly-water-treat",
           "evidence": [
             {
@@ -43201,6 +43745,15 @@
         },
         {
           "report_id": "rpt-20261027-ocean-plastic-geography",
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "환경 영향"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261031-ethical-consumption-indi",
           "evidence": [
             {
               "reference": "keywords[7]",
@@ -43459,6 +44012,67 @@
       ]
     },
     {
+      "concept_id": "con-58404b066eaba0aa",
+      "label": "환경 영향",
+      "normalized_label": "환경 영향",
+      "type": "outcome",
+      "provenance": "exact-normalized-tag",
+      "report_count": 5,
+      "main_categories": [
+        "기술·공학",
+        "예술·디자인",
+        "인문·철학",
+        "자연·환경·지리"
+      ],
+      "reports": [
+        {
+          "report_id": "rpt-20260828-bamui-bitgwa-saengtaegye",
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "환경 영향"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20260905-seawater-to-drinking-wat",
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "환경 영향"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20260929-sustainable-building-mat",
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "환경 영향"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261027-ocean-plastic-geography",
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "환경 영향"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261031-ethical-consumption-indi",
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "환경 영향"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "concept_id": "con-75dc266a01c9c786",
       "label": "생체 리듬과 환경",
       "normalized_label": "생체 리듬과 환경",
@@ -43547,57 +44161,6 @@
       ]
     },
     {
-      "concept_id": "con-58404b066eaba0aa",
-      "label": "환경 영향",
-      "normalized_label": "환경 영향",
-      "type": "outcome",
-      "provenance": "exact-normalized-tag",
-      "report_count": 4,
-      "main_categories": [
-        "기술·공학",
-        "예술·디자인",
-        "자연·환경·지리"
-      ],
-      "reports": [
-        {
-          "report_id": "rpt-20260828-bamui-bitgwa-saengtaegye",
-          "evidence": [
-            {
-              "reference": "keywords[4]",
-              "matched_text": "환경 영향"
-            }
-          ]
-        },
-        {
-          "report_id": "rpt-20260905-seawater-to-drinking-wat",
-          "evidence": [
-            {
-              "reference": "keywords[7]",
-              "matched_text": "환경 영향"
-            }
-          ]
-        },
-        {
-          "report_id": "rpt-20260929-sustainable-building-mat",
-          "evidence": [
-            {
-              "reference": "keywords[6]",
-              "matched_text": "환경 영향"
-            }
-          ]
-        },
-        {
-          "report_id": "rpt-20261027-ocean-plastic-geography",
-          "evidence": [
-            {
-              "reference": "keywords[7]",
-              "matched_text": "환경 영향"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "concept_id": "con-54edfaeaaf2ae146",
       "label": "공정성",
       "normalized_label": "공정성",
@@ -43645,6 +44208,47 @@
             {
               "reference": "term_box.items[1].term",
               "matched_text": "공정성"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "concept_id": "con-c556fc0525a5c693",
+      "label": "소비자 행동",
+      "normalized_label": "소비자 행동",
+      "type": "concept",
+      "provenance": "exact-normalized-tag",
+      "report_count": 3,
+      "main_categories": [
+        "경제·경영",
+        "인문·철학"
+      ],
+      "reports": [
+        {
+          "report_id": "rpt-20260903-history-of-price-tags-an",
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "소비자 행동"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261023-corporate-brand-value-me",
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "소비자 행동"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261031-ethical-consumption-indi",
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "소비자 행동"
             }
           ]
         }
@@ -43919,6 +44523,38 @@
             {
               "reference": "keywords[6]",
               "matched_text": "빛 공해"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "concept_id": "con-7b0e29d4ac90cc53",
+      "label": "사회 변화",
+      "normalized_label": "사회 변화",
+      "type": "concept",
+      "provenance": "exact-normalized-tag",
+      "report_count": 2,
+      "main_categories": [
+        "언어·미디어·지식",
+        "인문·철학"
+      ],
+      "reports": [
+        {
+          "report_id": "rpt-20261030-media-literacy-education",
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "사회 변화"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261031-ethical-consumption-indi",
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "사회 변화"
             }
           ]
         }

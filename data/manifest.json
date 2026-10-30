@@ -1,6 +1,22 @@
 {
-  "last_updated": "2026-10-30T04:54:40.638586+09:00",
+  "last_updated": "2026-10-31T04:45:31.871745+09:00",
   "reports": [
+    {
+      "date": "2026-10-31",
+      "title": "윤리적 소비: 개인의 선택이 사회와 환경에 미치는 영향",
+      "subtitle": "개인 소비가 지구와 사회에 던지는 윤리적 질문과 책임",
+      "main_category": "인문·철학",
+      "mid_category": "윤리",
+      "sub_category": "응용 윤리",
+      "detail_category": "소비 행위와 윤리적 책임",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20261031_ethical_consumption_indi_Report.html",
+      "pdf_path": "outputs/20261031_ethical_consumption_indi_Report.pdf",
+      "status": "published_api",
+      "html_url": "outputs/20261031_ethical_consumption_indi_Report.html",
+      "pdf_url": "outputs/20261031_ethical_consumption_indi_Report.pdf",
+      "report_id": "rpt-20261031-ethical-consumption-indi"
+    },
     {
       "date": "2026-10-30",
       "title": "미디어 리터러시 교육: 정보 홍수 시대에 비판적 사고는 어떻게 길러지는가",

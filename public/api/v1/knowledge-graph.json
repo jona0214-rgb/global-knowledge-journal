@@ -2,14 +2,14 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-10-30T04:54:40.638586+09:00",
+  "generated_at": "2026-10-31T04:45:31.871745+09:00",
   "stats": {
     "categories": 10,
-    "reports": 76,
-    "nodes": 334,
-    "edges": 433,
-    "concepts": 23,
-    "concept_edges": 132,
+    "reports": 77,
+    "nodes": 340,
+    "edges": 443,
+    "concepts": 25,
+    "concept_edges": 138,
     "semantic_edges": 0
   },
   "nodes": [
@@ -158,7 +158,6 @@
       "report_count": 12,
       "main_categories": [
         "경제·경영",
-        "기술·공학",
         "사회·정치·법",
         "언어·미디어·지식",
         "역사·문화",
@@ -215,10 +214,11 @@
       "level": 5,
       "concept_id": "con-58404b066eaba0aa",
       "concept_type": "outcome",
-      "report_count": 4,
+      "report_count": 5,
       "main_categories": [
         "기술·공학",
         "예술·디자인",
+        "인문·철학",
         "자연·환경·지리"
       ],
       "provenance": "exact-normalized-tag"
@@ -286,6 +286,20 @@
       "provenance": "exact-normalized-tag"
     },
     {
+      "id": "concept:con-7b0e29d4ac90cc53",
+      "type": "concept",
+      "label": "사회 변화",
+      "level": 5,
+      "concept_id": "con-7b0e29d4ac90cc53",
+      "concept_type": "concept",
+      "report_count": 2,
+      "main_categories": [
+        "언어·미디어·지식",
+        "인문·철학"
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
       "id": "concept:con-9581217250e29acf",
       "type": "concept",
       "label": "정체성",
@@ -324,11 +338,11 @@
       "report_count": 12,
       "main_categories": [
         "경제·경영",
-        "과학·수학",
         "기술·공학",
         "사회·정치·법",
         "역사·문화",
         "예술·디자인",
+        "인문·철학",
         "자연·환경·지리"
       ],
       "provenance": "curated-pattern-rule"
@@ -405,6 +419,20 @@
       "main_categories": [
         "역사·문화",
         "예술·디자인"
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
+      "id": "concept:con-c556fc0525a5c693",
+      "type": "concept",
+      "label": "소비자 행동",
+      "level": 5,
+      "concept_id": "con-c556fc0525a5c693",
+      "concept_type": "concept",
+      "report_count": 3,
+      "main_categories": [
+        "경제·경영",
+        "인문·철학"
       ],
       "provenance": "exact-normalized-tag"
     },
@@ -762,6 +790,13 @@
       "label": "색 재료의 생산과 상징",
       "level": 3,
       "main_category": "예술·디자인"
+    },
+    {
+      "id": "detail:7da539261fc8f2f1",
+      "type": "detail",
+      "label": "소비 행위와 윤리적 책임",
+      "level": 3,
+      "main_category": "인문·철학"
     },
     {
       "id": "detail:84177918c401892e",
@@ -1280,6 +1315,13 @@
       "label": "물리",
       "level": 1,
       "main_category": "과학·수학"
+    },
+    {
+      "id": "middle:a63feb363d295fe1",
+      "type": "middle",
+      "label": "윤리",
+      "level": 1,
+      "main_category": "인문·철학"
     },
     {
       "id": "middle:a6e8bec105c6f692",
@@ -2777,6 +2819,23 @@
       "pdf_url": "outputs/20261030_media_literacy_education_Report.pdf"
     },
     {
+      "id": "report:rpt-20261031-ethical-consumption-indi",
+      "type": "report",
+      "label": "윤리적 소비: 개인의 선택이 사회와 환경에 미치는 영향",
+      "level": 4,
+      "report_id": "rpt-20261031-ethical-consumption-indi",
+      "date": "2026-10-31",
+      "main_category": "인문·철학",
+      "category_path": [
+        "인문·철학",
+        "윤리",
+        "응용 윤리",
+        "소비 행위와 윤리적 책임"
+      ],
+      "html_url": "outputs/20261031_ethical_consumption_indi_Report.html",
+      "pdf_url": "outputs/20261031_ethical_consumption_indi_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -3048,6 +3107,13 @@
       "label": "수면과 뇌 기능",
       "level": 2,
       "main_category": "생명·건강"
+    },
+    {
+      "id": "sub:777f1cda6a6324e2",
+      "type": "sub",
+      "label": "응용 윤리",
+      "level": 2,
+      "main_category": "인문·철학"
     },
     {
       "id": "sub:7cb73285e3d7560c",
@@ -4420,21 +4486,6 @@
       "relation_type": "contains"
     },
     {
-      "id": "edge:4ce1a7cb83b6580b",
-      "source": "report:rpt-20260905-seawater-to-drinking-wat",
-      "target": "concept:con-39820d616e59b701",
-      "kind": "concept",
-      "relation_type": "has_concept",
-      "score": 0.7,
-      "evidence": [
-        {
-          "reference": "sections[10].body[1]",
-          "matched_text": "공정성"
-        }
-      ],
-      "provenance": "curated-pattern-rule"
-    },
-    {
       "id": "edge:4d1267242440f3a4",
       "source": "report:rpt-20260929-sustainable-building-mat",
       "target": "concept:con-58404b066eaba0aa",
@@ -4600,21 +4651,6 @@
       "target": "sub:47e959a2476d343b",
       "kind": "hierarchy",
       "relation_type": "contains"
-    },
-    {
-      "id": "edge:520aa0e9dfa8970f",
-      "source": "report:rpt-20261004-science-of-chaos-how-sma",
-      "target": "concept:con-9b89960b11d9e6cf",
-      "kind": "concept",
-      "relation_type": "has_concept",
-      "score": 0.7,
-      "evidence": [
-        {
-          "reference": "sections[10].body[0]",
-          "matched_text": "회복력"
-        }
-      ],
-      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:52aa7db64b5228ee",
@@ -4878,6 +4914,21 @@
         {
           "reference": "term_box.items[1].term",
           "matched_text": "공정성(fairness)"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
+      "id": "edge:625088b777510f75",
+      "source": "report:rpt-20260903-history-of-price-tags-an",
+      "target": "concept:con-c556fc0525a5c693",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[6]",
+          "matched_text": "소비자 행동"
         }
       ],
       "provenance": "exact-normalized-tag"
@@ -5444,6 +5495,13 @@
       "id": "edge:7be158e1ce34cf66",
       "source": "category:9de06b299a735751",
       "target": "middle:5eef111a7fc8d608",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:7d3245145c155c84",
+      "source": "middle:a63feb363d295fe1",
+      "target": "sub:777f1cda6a6324e2",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -6214,6 +6272,25 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:9e78049c4cb029d1",
+      "source": "report:rpt-20261031-ethical-consumption-indi",
+      "target": "concept:con-39820d616e59b701",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.8,
+      "evidence": [
+        {
+          "reference": "sections[0].body[0]",
+          "matched_text": "공정성"
+        },
+        {
+          "reference": "sections[10].body[2]",
+          "matched_text": "공정성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:9ec4c61397f9d2b9",
       "source": "middle:757f6d7c48bc1a05",
       "target": "sub:c231aa5267ad4bf0",
@@ -6404,6 +6481,21 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:a7cdc3e21ef1d2b8",
+      "source": "report:rpt-20261023-corporate-brand-value-me",
+      "target": "concept:con-c556fc0525a5c693",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[5]",
+          "matched_text": "소비자 행동"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
       "id": "edge:a8c76f9f355014df",
       "source": "detail:d7817d381ed06994",
       "target": "report:rpt-20261029-dance-and-body-expressio",
@@ -6492,9 +6584,23 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:ad21109bc600477a",
+      "source": "detail:7da539261fc8f2f1",
+      "target": "report:rpt-20261031-ethical-consumption-indi",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:ad3c94343a9177a2",
       "source": "sub:1206bf1795d91ab8",
       "target": "detail:3bb86fbe9fa9a6b6",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:ad3ceb9aad51d5de",
+      "source": "category:3fc5d02608923758",
+      "target": "middle:a63feb363d295fe1",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -6962,6 +7068,21 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:c3a0173947ff4435",
+      "source": "report:rpt-20261031-ethical-consumption-indi",
+      "target": "concept:con-58404b066eaba0aa",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[7]",
+          "matched_text": "환경 영향"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
       "id": "edge:c4d8f93eeaf9a319",
       "source": "report:rpt-20260905-seawater-to-drinking-wat",
       "target": "concept:con-5d0014712c59ecdf",
@@ -7097,6 +7218,21 @@
       "target": "sub:28277f0414981dad",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:ca7c389458ced12b",
+      "source": "report:rpt-20261031-ethical-consumption-indi",
+      "target": "concept:con-9b89960b11d9e6cf",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[7]",
+          "matched_text": "환경 영향"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:ca97477ef2260884",
@@ -7437,6 +7573,21 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:dc0937eab4698895",
+      "source": "report:rpt-20261031-ethical-consumption-indi",
+      "target": "concept:con-7b0e29d4ac90cc53",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[6]",
+          "matched_text": "사회 변화"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
       "id": "edge:dc0eccaed55460fd",
       "source": "report:rpt-20260922-welfare-state-design-soc",
       "target": "concept:con-22940219024d252e",
@@ -7536,6 +7687,21 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:e017e6f2bb1fba2c",
+      "source": "report:rpt-20261030-media-literacy-education",
+      "target": "concept:con-7b0e29d4ac90cc53",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[5]",
+          "matched_text": "사회 변화"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
       "id": "edge:e049766bcdbfb11d",
       "source": "middle:df3d6656d3780ad9",
       "target": "sub:ef4db1078a7fb909",
@@ -7577,6 +7743,21 @@
       "provenance": "curated-pattern-rule"
     },
     {
+      "id": "edge:e2a70b9eed238f31",
+      "source": "report:rpt-20261031-ethical-consumption-indi",
+      "target": "concept:con-c556fc0525a5c693",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[5]",
+          "matched_text": "소비자 행동"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
       "id": "edge:e36d0311bd6327cf",
       "source": "report:rpt-20261026-brain-gut-interaction-mi",
       "target": "concept:con-e60889df94e171df",
@@ -7616,6 +7797,13 @@
         }
       ],
       "provenance": "exact-normalized-tag"
+    },
+    {
+      "id": "edge:e61211019b526e75",
+      "source": "sub:777f1cda6a6324e2",
+      "target": "detail:7da539261fc8f2f1",
+      "kind": "hierarchy",
+      "relation_type": "contains"
     },
     {
       "id": "edge:e617f83ee614f5d5",
