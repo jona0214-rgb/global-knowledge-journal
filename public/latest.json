@@ -1,16 +1,16 @@
 {
-  "date": "2026-10-31",
-  "title": "윤리적 소비: 개인의 선택이 사회와 환경에 미치는 영향",
-  "subtitle": "개인 소비가 지구와 사회에 던지는 윤리적 질문과 책임",
-  "main_category": "인문·철학",
-  "mid_category": "윤리",
-  "sub_category": "응용 윤리",
-  "detail_category": "소비 행위와 윤리적 책임",
+  "date": "2026-11-01",
+  "title": "사회구조 변화와 고용 형태 다변화의 법제도적 대응",
+  "subtitle": "비정규직과 프리랜서 증가에 따른 노동법 개혁의 현황과 방향",
+  "main_category": "사회·정치·법",
+  "mid_category": "사회구조",
+  "sub_category": "고용·노동구조",
+  "detail_category": "비정규직, 프리랜서 증가와 노동법 개혁",
   "taxonomy_version": "2.0",
-  "html_path": "outputs/20261031_ethical_consumption_indi_Report.html",
-  "pdf_path": "outputs/20261031_ethical_consumption_indi_Report.pdf",
+  "html_path": "outputs/20261101_social_structure_change__Report.html",
+  "pdf_path": "outputs/20261101_social_structure_change__Report.pdf",
   "status": "published_api",
-  "html_url": "outputs/20261031_ethical_consumption_indi_Report.html",
-  "pdf_url": "outputs/20261031_ethical_consumption_indi_Report.pdf",
-  "report_id": "rpt-20261031-ethical-consumption-indi"
+  "html_url": "outputs/20261101_social_structure_change__Report.html",
+  "pdf_url": "outputs/20261101_social_structure_change__Report.pdf",
+  "report_id": "rpt-20261101-social-structure-change"
 }

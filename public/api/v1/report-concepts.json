@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-10-31T04:45:31.871745+09:00",
+  "generated_at": "2026-11-01T03:51:13.388196+09:00",
   "stats": {
-    "reports": 77,
-    "tags": 2869,
+    "reports": 78,
+    "tags": 2906,
     "shared_concepts": 25,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -42185,6 +42185,550 @@
           ]
         }
       ]
+    },
+    {
+      "report_id": "rpt-20261101-social-structure-change",
+      "date": "2026-11-01",
+      "title": "사회구조 변화와 고용 형태 다변화의 법제도적 대응",
+      "main_category": "사회·정치·법",
+      "tags": [
+        {
+          "tag_id": "tag-7614d6a73fcbf063",
+          "label": "고용 형태 다양화",
+          "normalized_label": "고용 형태 다양화",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "고용 형태 다양화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-65db5bfe9a84f5f4",
+          "label": "근로기준법",
+          "normalized_label": "근로기준법",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "근로기준법"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c89468b5a1ec1663",
+          "label": "노동법 개혁",
+          "normalized_label": "노동법 개혁",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "노동법 개혁"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-469c51c90e201911",
+          "label": "비정규직",
+          "normalized_label": "비정규직",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "비정규직"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "비정규직"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4cbbb8977cd643a1",
+          "label": "사회구조 변화",
+          "normalized_label": "사회구조 변화",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "사회구조 변화"
+            },
+            {
+              "reference": "further_reading[3].title",
+              "matched_text": "사회구조 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-cc9ad30b531505ec",
+          "label": "프리랜서",
+          "normalized_label": "프리랜서",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "프리랜서"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "프리랜서"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-552282cddc5c2495",
+          "label": "노동시장 유연성",
+          "normalized_label": "노동시장 유연성",
+          "type": "institution",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "노동시장 유연성"
+            },
+            {
+              "reference": "further_reading[4].title",
+              "matched_text": "노동시장 유연성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-933fa6a9c55e9f7b",
+          "label": "법제도 대응",
+          "normalized_label": "법제도 대응",
+          "type": "institution",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "법제도 대응"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1f1519d38f4dbc9f",
+          "label": "노동법",
+          "normalized_label": "노동법",
+          "type": "institution",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "노동법"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d693c423c587f234",
+          "label": "사회안전망",
+          "normalized_label": "사회안전망",
+          "type": "problem",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "사회안전망"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c32f6981bc7c26d0",
+          "label": "사회구조",
+          "normalized_label": "사회구조",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "사회구조"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-df4b243085b979b7",
+          "label": "고용·노동구조",
+          "normalized_label": "고용·노동구조",
+          "type": "domain",
+          "weight": 0.93,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.sub",
+              "matched_text": "고용·노동구조"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-409048cb19942539",
+          "label": "비정규직, 프리랜서 증가와 노동법 개혁",
+          "normalized_label": "비정규직, 프리랜서 증가와 노동법 개혁",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "비정규직, 프리랜서 증가와 노동법 개혁"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ff5934cc111754fd",
+          "label": "국제노동기구",
+          "normalized_label": "국제노동기구",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [
+            "ILO"
+          ],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "국제노동기구(ILO)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-bd0daa7c63f06d1e",
+          "label": "고용 형태 다양화 확대",
+          "normalized_label": "고용 형태 다양화 확대",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "고용 형태 다양화 확대"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e6abd797336221d0",
+          "label": "기존 노동법 한계 인식",
+          "normalized_label": "기존 노동법 한계 인식",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "기존 노동법 한계 인식"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4fc0319b7c258e18",
+          "label": "다변화된 노동시장 적응",
+          "normalized_label": "다변화된 노동시장 적응",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "다변화된 노동시장 적응"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4871193c53290ac0",
+          "label": "법제도 개혁 논의와 실행",
+          "normalized_label": "법제도 개혁 논의와 실행",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "법제도 개혁 논의와 실행"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-765211dea59a2246",
+          "label": "사회구조 변화 발생",
+          "normalized_label": "사회구조 변화 발생",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "사회구조 변화 발생"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-73a61e23463f5834",
+          "label": "고용구조 변화의 역사적 출발점",
+          "normalized_label": "고용구조 변화의 역사적 출발점",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "고용구조 변화의 역사적 출발점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f76d45b412779a02",
+          "label": "기준과 규칙, 관리 방식의 진화",
+          "normalized_label": "기준과 규칙, 관리 방식의 진화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "기준과 규칙, 관리 방식의 진화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b68c2a2088b358ec",
+          "label": "대한민국 비정규직 노동법 개혁 사례",
+          "normalized_label": "대한민국 비정규직 노동법 개혁 사례",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "대한민국 비정규직 노동법 개혁 사례"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-da62c9bbfae18885",
+          "label": "법제도와 노동시장 작동 원리의 변화",
+          "normalized_label": "법제도와 노동시장 작동 원리의 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "법제도와 노동시장 작동 원리의 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a497c228b3ea7216",
+          "label": "법제도적 대응의 핵심 쟁점과 구성",
+          "normalized_label": "법제도적 대응의 핵심 쟁점과 구성",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "법제도적 대응의 핵심 쟁점과 구성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a7bcfc548c26277c",
+          "label": "사회구조 변화와 고용 형태 다변화의 배경",
+          "normalized_label": "사회구조 변화와 고용 형태 다변화의 배경",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "사회구조 변화와 고용 형태 다변화의 배경"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e63c4a479d9b679d",
+          "label": "사회구조 변화와 법제도적 대응의 함의",
+          "normalized_label": "사회구조 변화와 법제도적 대응의 함의",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "사회구조 변화와 법제도적 대응의 함의"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b3026aa65e95452d",
+          "label": "사회와 문화에 미친 영향",
+          "normalized_label": "사회와 문화에 미친 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "사회와 문화에 미친 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-94dd9392dc0a4a47",
+          "label": "핵심 개념 및 용어 정리",
+          "normalized_label": "핵심 개념 및 용어 정리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "핵심 개념 및 용어 정리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-bf7acd4c6fcc00d4",
+          "label": "현재 노동법 개혁 동향과 과제",
+          "normalized_label": "현재 노동법 개혁 동향과 과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "현재 노동법 개혁 동향과 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9c08c29d170c3a21",
+          "label": "The Changing Nature of Work Report 2023",
+          "normalized_label": "The Changing Nature of Work Report 2023",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "The Changing Nature of Work Report 2023"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-53ce963f9845770f",
+          "label": "관련 도서 및 탐구 키워드",
+          "normalized_label": "관련 도서 및 탐구 키워드",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 관련 도서 및 탐구 키워드"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-29c21aaeeee1ddb6",
+          "label": "노동시장 고용 형태 비교",
+          "normalized_label": "노동시장 고용 형태 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 노동시장 고용 형태 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ff1ebeb6ad95dfda",
+          "label": "대한민국 비정규직 노동법 개혁 특징",
+          "normalized_label": "대한민국 비정규직 노동법 개혁 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 대한민국 비정규직 노동법 개혁 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c6feb55d4355da5f",
+          "label": "현재 노동법 개혁의 주요 쟁점과 대응 현황",
+          "normalized_label": "현재 노동법 개혁의 주요 쟁점과 대응 현황",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 현재 노동법 개혁의 주요 쟁점과 대응 현황"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-80b43ce8c777aad7",
+          "label": "『비정규직 문제와 사회정책』",
+          "normalized_label": "『비정규직 문제와 사회정책』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "『비정규직 문제와 사회정책』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4a6d966f2395ccb9",
+          "label": "『플랫폼 노동과 노동법』",
+          "normalized_label": "『플랫폼 노동과 노동법』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "『플랫폼 노동과 노동법』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c5668103636c7f8d",
+          "label": "『한국 노동법 발전사』",
+          "normalized_label": "『한국 노동법 발전사』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "『한국 노동법 발전사』"
+            }
+          ]
+        }
+      ]
     }
   ],
   "shared_concepts": [
@@ -42199,7 +42743,6 @@
         "경제·경영",
         "사회·정치·법",
         "언어·미디어·지식",
-        "역사·문화",
         "인문·철학"
       ],
       "reports": [
@@ -42255,15 +42798,6 @@
             {
               "reference": "sections[10].body[6]",
               "matched_text": "사회적 위험"
-            }
-          ]
-        },
-        {
-          "report_id": "rpt-20260829-hyangsinryo-gyoyeog-hist",
-          "evidence": [
-            {
-              "reference": "sections[7].body[2]",
-              "matched_text": "공정성"
             }
           ]
         },
@@ -42408,6 +42942,15 @@
             {
               "reference": "sections[10].body[2]",
               "matched_text": "공정성"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261101-social-structure-change",
+          "evidence": [
+            {
+              "reference": "term_box.items[3].description",
+              "matched_text": "사회적 위험"
             }
           ]
         }
@@ -42874,7 +43417,6 @@
         "경제·경영",
         "과학·수학",
         "사회·정치·법",
-        "역사·문화",
         "인문·철학",
         "자연·환경·지리"
       ],
@@ -42918,15 +43460,6 @@
             {
               "reference": "sections[0].body[3]",
               "matched_text": "불확실성"
-            }
-          ]
-        },
-        {
-          "report_id": "rpt-20260829-hyangsinryo-gyoyeog-hist",
-          "evidence": [
-            {
-              "reference": "sections[9].body[3]",
-              "matched_text": "시장 변동성"
             }
           ]
         },
@@ -43079,6 +43612,23 @@
           "evidence": [
             {
               "reference": "sections[7].body[0]",
+              "matched_text": "불확실성"
+            },
+            {
+              "reference": "sections[10].body[2]",
+              "matched_text": "불확실성"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261101-social-structure-change",
+          "evidence": [
+            {
+              "reference": "sections[0].body[2]",
+              "matched_text": "시장 변동성"
+            },
+            {
+              "reference": "sections[9].body[2]",
               "matched_text": "불확실성"
             },
             {

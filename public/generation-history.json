@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-11-01",
+    "title": "사회구조 변화와 고용 형태 다변화의 법제도적 대응",
+    "status": "published_api",
+    "event_name": "schedule",
+    "schedule_cron": "45 14 * * *",
+    "scheduled_for_kst": "2026-11-01T00:00:00+09:00",
+    "workflow_started_at": "2026-10-31T18:46:42Z",
+    "generation_started_at": "2026-10-31T18:47:46.757025Z",
+    "generation_completed_at": "2026-10-31T18:51:12.129197Z",
+    "catalog_updated_at": "2026-10-31T18:51:13.390085Z",
+    "scheduler_delay_seconds": 13602,
+    "setup_duration_seconds": 65,
+    "generation_duration_seconds": 207,
+    "validation_attempts": 2,
+    "run_id": "41231046809",
+    "run_attempt": "1",
+    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/41231046809",
+    "source_sha": "b92dfc423bc87aeffb11d885872579c050c03d79"
+  },
+  {
     "date": "2026-10-31",
     "title": "윤리적 소비: 개인의 선택이 사회와 환경에 미치는 영향",
     "status": "published_api",
@@ -703,25 +723,5 @@
     "run_attempt": "1",
     "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/37159661642",
     "source_sha": "f8d12bcfdcfa6350c1febbb5457c7f29dbf8181e"
-  },
-  {
-    "date": "2026-10-03",
-    "title": "관료제의 두 얼굴: 규칙은 어떻게 공정성과 경직성을 함께 만드는가",
-    "status": "published_api",
-    "event_name": "schedule",
-    "schedule_cron": "0 20 * * *",
-    "scheduled_for_kst": "2026-10-03T05:00:00+09:00",
-    "workflow_started_at": "2026-10-02T23:40:46Z",
-    "generation_started_at": "2026-10-02T23:41:19.604356Z",
-    "generation_completed_at": "2026-10-02T23:41:59.879324Z",
-    "catalog_updated_at": "2026-10-02T23:42:01.121462Z",
-    "scheduler_delay_seconds": 13246,
-    "setup_duration_seconds": 34,
-    "generation_duration_seconds": 42,
-    "validation_attempts": 1,
-    "run_id": "37078701202",
-    "run_attempt": "1",
-    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/37078701202",
-    "source_sha": "0549db1b86bb3a2403be87e35165eced84dae9ed"
   }
 ]

@@ -2,12 +2,12 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-10-31T04:45:31.871745+09:00",
+  "generated_at": "2026-11-01T03:51:13.388196+09:00",
   "stats": {
     "categories": 10,
-    "reports": 77,
-    "nodes": 340,
-    "edges": 443,
+    "reports": 78,
+    "nodes": 344,
+    "edges": 447,
     "concepts": 25,
     "concept_edges": 138,
     "semantic_edges": 0
@@ -128,7 +128,6 @@
         "경제·경영",
         "과학·수학",
         "사회·정치·법",
-        "역사·문화",
         "인문·철학",
         "자연·환경·지리"
       ],
@@ -160,7 +159,6 @@
         "경제·경영",
         "사회·정치·법",
         "언어·미디어·지식",
-        "역사·문화",
         "인문·철학"
       ],
       "provenance": "curated-pattern-rule"
@@ -750,6 +748,13 @@
       "main_category": "경제·경영"
     },
     {
+      "id": "detail:5c3eff7cb04da7d1",
+      "type": "detail",
+      "label": "비정규직, 프리랜서 증가와 노동법 개혁",
+      "level": 3,
+      "main_category": "사회·정치·법"
+    },
+    {
       "id": "detail:69d5c894ab264248",
       "type": "detail",
       "label": "종교 신앙과 심리 건강",
@@ -1245,6 +1250,13 @@
       "label": "공간미학",
       "level": 1,
       "main_category": "예술·디자인"
+    },
+    {
+      "id": "middle:7cb71dd6aa0c88dd",
+      "type": "middle",
+      "label": "사회구조",
+      "level": 1,
+      "main_category": "사회·정치·법"
     },
     {
       "id": "middle:7cd3173ab73dc489",
@@ -2836,11 +2848,35 @@
       "pdf_url": "outputs/20261031_ethical_consumption_indi_Report.pdf"
     },
     {
+      "id": "report:rpt-20261101-social-structure-change",
+      "type": "report",
+      "label": "사회구조 변화와 고용 형태 다변화의 법제도적 대응",
+      "level": 4,
+      "report_id": "rpt-20261101-social-structure-change",
+      "date": "2026-11-01",
+      "main_category": "사회·정치·법",
+      "category_path": [
+        "사회·정치·법",
+        "사회구조",
+        "고용·노동구조",
+        "비정규직, 프리랜서 증가와 노동법 개혁"
+      ],
+      "html_url": "outputs/20261101_social_structure_change__Report.html",
+      "pdf_url": "outputs/20261101_social_structure_change__Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
       "level": 2,
       "main_category": "인문·철학"
+    },
+    {
+      "id": "sub:0606243f5d7373bf",
+      "type": "sub",
+      "label": "고용·노동구조",
+      "level": 2,
+      "main_category": "사회·정치·법"
     },
     {
       "id": "sub:0e442cc2b1d18151",
@@ -4779,6 +4815,13 @@
       "provenance": "curated-pattern-rule"
     },
     {
+      "id": "edge:5895f270cbab9fbe",
+      "source": "category:b9ccab27f2a0689e",
+      "target": "middle:7cb71dd6aa0c88dd",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:5a121d93432eec69",
       "source": "detail:080dd9b47a474067",
       "target": "report:rpt-20260908-history-of-refrigerator",
@@ -5336,6 +5379,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:750753247b2b631d",
+      "source": "middle:7cb71dd6aa0c88dd",
+      "target": "sub:0606243f5d7373bf",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:7555a8277e079993",
       "source": "report:rpt-20260929-sustainable-building-mat",
       "target": "concept:con-9b89960b11d9e6cf",
@@ -5417,16 +5467,16 @@
       "relation_type": "contains"
     },
     {
-      "id": "edge:79d97d7e523d4b7c",
-      "source": "report:rpt-20260829-hyangsinryo-gyoyeog-hist",
-      "target": "concept:con-22940219024d252e",
+      "id": "edge:79f9a6139609c8d2",
+      "source": "report:rpt-20261101-social-structure-change",
+      "target": "concept:con-39820d616e59b701",
       "kind": "concept",
       "relation_type": "has_concept",
       "score": 0.7,
       "evidence": [
         {
-          "reference": "sections[9].body[3]",
-          "matched_text": "시장 변동성"
+          "reference": "term_box.items[3].description",
+          "matched_text": "사회적 위험"
         }
       ],
       "provenance": "curated-pattern-rule"
@@ -5804,6 +5854,29 @@
       "target": "detail:10a203a3095d20e4",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:8bef91489f114c59",
+      "source": "report:rpt-20261101-social-structure-change",
+      "target": "concept:con-22940219024d252e",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.9,
+      "evidence": [
+        {
+          "reference": "sections[0].body[2]",
+          "matched_text": "시장 변동성"
+        },
+        {
+          "reference": "sections[9].body[2]",
+          "matched_text": "불확실성"
+        },
+        {
+          "reference": "sections[10].body[2]",
+          "matched_text": "불확실성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:8c222c261f2fdcb9",
@@ -7324,6 +7397,13 @@
       "provenance": "curated-pattern-rule"
     },
     {
+      "id": "edge:cfd3a84d8c7b884b",
+      "source": "detail:5c3eff7cb04da7d1",
+      "target": "report:rpt-20261101-social-structure-change",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:d0932f7d8c4dc86f",
       "source": "middle:e9259388404aa6fc",
       "target": "sub:72824612031c42aa",
@@ -7683,6 +7763,13 @@
       "id": "edge:dfacd6b07e6b4620",
       "source": "middle:6bb393db31e086c2",
       "target": "sub:0e5fbd85218ff444",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:dfd32ba2ee7559a8",
+      "source": "sub:0606243f5d7373bf",
+      "target": "detail:5c3eff7cb04da7d1",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -8164,21 +8251,6 @@
       "target": "report:rpt-20261005-eco-friendly-water-treat",
       "kind": "hierarchy",
       "relation_type": "contains"
-    },
-    {
-      "id": "edge:f2d2ed22f0be633c",
-      "source": "report:rpt-20260829-hyangsinryo-gyoyeog-hist",
-      "target": "concept:con-39820d616e59b701",
-      "kind": "concept",
-      "relation_type": "has_concept",
-      "score": 0.7,
-      "evidence": [
-        {
-          "reference": "sections[7].body[2]",
-          "matched_text": "공정성"
-        }
-      ],
-      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:f324ce39bf07c0d1",
