@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-11-01T03:51:13.388196+09:00",
+  "generated_at": "2026-11-02T04:14:34.132688+09:00",
   "stats": {
-    "reports": 78,
-    "tags": 2906,
-    "shared_concepts": 25,
+    "reports": 79,
+    "tags": 2944,
+    "shared_concepts": 28,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
   },
@@ -42729,6 +42729,560 @@
           ]
         }
       ]
+    },
+    {
+      "report_id": "rpt-20261102-fair-trade-movement-and",
+      "date": "2026-11-02",
+      "title": "공정 무역 운동과 글로벌 공급망의 변화",
+      "main_category": "경제·경영",
+      "tags": [
+        {
+          "tag_id": "tag-baa78954b7876fd7",
+          "label": "공급망 재편",
+          "normalized_label": "공급망 재편",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "공급망 재편"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f2ff25632075d6a0",
+          "label": "공급망 투명성",
+          "normalized_label": "공급망 투명성",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "공급망 투명성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ecb70d0f334fb463",
+          "label": "공정 무역",
+          "normalized_label": "공정 무역",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "공정 무역"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "공정 무역"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ee8912e231463a28",
+          "label": "글로벌 공급망",
+          "normalized_label": "글로벌 공급망",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "글로벌 공급망"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "글로벌 공급망"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-aaa911cda0e0dd59",
+          "label": "무역 불균형",
+          "normalized_label": "무역 불균형",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "무역 불균형"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9fef11f8e59dd677",
+          "label": "사회적 무역 기준",
+          "normalized_label": "사회적 무역 기준",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "사회적 무역 기준"
+            },
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "사회적 무역 기준"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f20453856f0bc62f",
+          "label": "윤리적 소비",
+          "normalized_label": "윤리적 소비",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "윤리적 소비"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7293f7983e59af61",
+          "label": "지속 가능성",
+          "normalized_label": "지속 가능성",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "지속 가능성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f62c80d13b046a60",
+          "label": "투명성",
+          "normalized_label": "투명성",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "투명성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b367eadd35aa44c3",
+          "label": "경제",
+          "normalized_label": "경제",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "경제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-21a354d5a50db1bd",
+          "label": "국제 무역",
+          "normalized_label": "국제 무역",
+          "type": "domain",
+          "weight": 0.93,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.sub",
+              "matched_text": "국제 무역"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-73e8b49fb76ec854",
+          "label": "사회적 무역 기준과 실천",
+          "normalized_label": "사회적 무역 기준과 실천",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "사회적 무역 기준과 실천"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5bb45e1880cdbd3d",
+          "label": "국제 공정 무역 기구",
+          "normalized_label": "국제 공정 무역 기구",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [
+            "2026"
+          ],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "국제 공정 무역 기구(2026)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-26865783df4be3c2",
+          "label": "공정 무역 운동 출현",
+          "normalized_label": "공정 무역 운동 출현",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "공정 무역 운동 출현"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ac77f70c3ae50246",
+          "label": "공정 무역 인증과 기준 도입",
+          "normalized_label": "공정 무역 인증과 기준 도입",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "공정 무역 인증과 기준 도입"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-681a4d2a0fd0167f",
+          "label": "글로벌 공급망 재편",
+          "normalized_label": "글로벌 공급망 재편",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "글로벌 공급망 재편"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b500d802ce496711",
+          "label": "불공정 무역 문제 인식",
+          "normalized_label": "불공정 무역 문제 인식",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "불공정 무역 문제 인식"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a5db675e171d6a95",
+          "label": "지속 가능성과 윤리적 소비 확산",
+          "normalized_label": "지속 가능성과 윤리적 소비 확산",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "지속 가능성과 윤리적 소비 확산"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a84959f4d0b4f332",
+          "label": "공정 무역 운동: 배경과 현대적 의의",
+          "normalized_label": "공정 무역 운동: 배경과 현대적 의의",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "공정 무역 운동: 배경과 현대적 의의"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8660c433e7e9bc1c",
+          "label": "공정 무역 운동과 글로벌 공급망 변화의 함의",
+          "normalized_label": "공정 무역 운동과 글로벌 공급망 변화의 함의",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "공정 무역 운동과 글로벌 공급망 변화의 함의"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5ad0602a5d7ac94d",
+          "label": "공정 무역 운동의 기원과 역사적 발전",
+          "normalized_label": "공정 무역 운동의 기원과 역사적 발전",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "공정 무역 운동의 기원과 역사적 발전"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-11cd24ada190252d",
+          "label": "공정 무역 정책과 글로벌 공급망의 구조 변화",
+          "normalized_label": "공정 무역 정책과 글로벌 공급망의 구조 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "공정 무역 정책과 글로벌 공급망의 구조 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-56e3e8a4aedad80d",
+          "label": "공정 무역과 공급망 변화의 핵심 원리와 분석",
+          "normalized_label": "공정 무역과 공급망 변화의 핵심 원리와 분석",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "공정 무역과 공급망 변화의 핵심 원리와 분석"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a34c93e07a69ee7d",
+          "label": "공정 무역과 글로벌 공급망의 기본 개념",
+          "normalized_label": "공정 무역과 글로벌 공급망의 기본 개념",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "공정 무역과 글로벌 공급망의 기본 개념"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-460c8cd119d4ac48",
+          "label": "공정 무역과 글로벌 공급망의 현재 동향",
+          "normalized_label": "공정 무역과 글로벌 공급망의 현재 동향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "공정 무역과 글로벌 공급망의 현재 동향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ac277c9f70682392",
+          "label": "공정 무역이 사회·문화에 끼친 영향",
+          "normalized_label": "공정 무역이 사회·문화에 끼친 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "공정 무역이 사회·문화에 끼친 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-bb8641e8ec38cfd9",
+          "label": "사회적 무역 기준과 관리 체계 변화",
+          "normalized_label": "사회적 무역 기준과 관리 체계 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "사회적 무역 기준과 관리 체계 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-db3a4c2b414de3f8",
+          "label": "코스타리카의 공정 무역 커피 농장 사례",
+          "normalized_label": "코스타리카의 공정 무역 커피 농장 사례",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "코스타리카의 공정 무역 커피 농장 사례"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e481c8cf8f5dba5e",
+          "label": "현대 공정 무역의 도전과 미래 과제",
+          "normalized_label": "현대 공정 무역의 도전과 미래 과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[7].title",
+              "matched_text": "현대 공정 무역의 도전과 미래 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c7c3befee66dfd3a",
+          "label": "Fair Trade Principles and Criteria",
+          "normalized_label": "Fair Trade Principles and Criteria",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "Fair Trade Principles and Criteria"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b565cfd608d0dfc9",
+          "label": "공정 무역과 전통 무역의 비교",
+          "normalized_label": "공정 무역과 전통 무역의 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 공정 무역과 전통 무역의 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-53ce963f9845770f",
+          "label": "관련 도서 및 탐구 키워드",
+          "normalized_label": "관련 도서 및 탐구 키워드",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 관련 도서 및 탐구 키워드"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-cc933fcc9e3bb4d6",
+          "label": "코스타리카 공정 무역 커피 농장 특징",
+          "normalized_label": "코스타리카 공정 무역 커피 농장 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 코스타리카 공정 무역 커피 농장 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3033f424518b90ef",
+          "label": "현재 공정 무역 관련 주요 쟁점",
+          "normalized_label": "현재 공정 무역 관련 주요 쟁점",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 현재 공정 무역 관련 주요 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9d07e9299654a6fa",
+          "label": "Ethical Consumption",
+          "normalized_label": "Ethical Consumption",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[3].title",
+              "matched_text": "Ethical Consumption"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2a0e23e492b743cb",
+          "label": "The Fair Trade Revolution",
+          "normalized_label": "The Fair Trade Revolution",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "The Fair Trade Revolution"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a10ed4e8db3fc347",
+          "label": "공정 무역의 경제학",
+          "normalized_label": "공정 무역의 경제학",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "공정 무역의 경제학"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0040f85bb15ec3f6",
+          "label": "지속 가능한 공급망 관리",
+          "normalized_label": "지속 가능한 공급망 관리",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "지속 가능한 공급망 관리"
+            }
+          ]
+        }
+      ]
     }
   ],
   "shared_concepts": [
@@ -44899,6 +45453,46 @@
       ]
     },
     {
+      "concept_id": "con-ecb70d0f334fb463",
+      "label": "공정 무역",
+      "normalized_label": "공정 무역",
+      "type": "concept",
+      "provenance": "exact-normalized-tag",
+      "report_count": 2,
+      "main_categories": [
+        "경제·경영",
+        "인문·철학"
+      ],
+      "reports": [
+        {
+          "report_id": "rpt-20261031-ethical-consumption-indi",
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "공정 무역"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "공정 무역"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261102-fair-trade-movement-and",
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "공정 무역"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "공정 무역"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "concept_id": "con-c48bcb475eea9922",
       "label": "글로벌 교류",
       "normalized_label": "글로벌 교류",
@@ -45143,6 +45737,42 @@
       ]
     },
     {
+      "concept_id": "con-f20453856f0bc62f",
+      "label": "윤리적 소비",
+      "normalized_label": "윤리적 소비",
+      "type": "concept",
+      "provenance": "exact-normalized-tag",
+      "report_count": 2,
+      "main_categories": [
+        "경제·경영",
+        "인문·철학"
+      ],
+      "reports": [
+        {
+          "report_id": "rpt-20261031-ethical-consumption-indi",
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "윤리적 소비"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "윤리적 소비"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261102-fair-trade-movement-and",
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "윤리적 소비"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "concept_id": "con-aee3ff3ad156b4ed",
       "label": "전통 음악",
       "normalized_label": "전통 음악",
@@ -45177,6 +45807,38 @@
             {
               "reference": "term_box.items[0].term",
               "matched_text": "전통 음악"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "concept_id": "con-7293f7983e59af61",
+      "label": "지속 가능성",
+      "normalized_label": "지속 가능성",
+      "type": "concept",
+      "provenance": "exact-normalized-tag",
+      "report_count": 2,
+      "main_categories": [
+        "경제·경영",
+        "기술·공학"
+      ],
+      "reports": [
+        {
+          "report_id": "rpt-20261005-eco-friendly-water-treat",
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "지속 가능성"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261102-fair-trade-movement-and",
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "지속 가능성"
             }
           ]
         }

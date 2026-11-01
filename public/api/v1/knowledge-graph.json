@@ -2,14 +2,14 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-11-01T03:51:13.388196+09:00",
+  "generated_at": "2026-11-02T04:14:34.132688+09:00",
   "stats": {
     "categories": 10,
-    "reports": 78,
-    "nodes": 344,
-    "edges": 447,
-    "concepts": 25,
-    "concept_edges": 138,
+    "reports": 79,
+    "nodes": 351,
+    "edges": 457,
+    "concepts": 28,
+    "concept_edges": 144,
     "semantic_edges": 0
   },
   "nodes": [
@@ -254,6 +254,20 @@
       "provenance": "curated-pattern-rule"
     },
     {
+      "id": "concept:con-7293f7983e59af61",
+      "type": "concept",
+      "label": "지속 가능성",
+      "level": 5,
+      "concept_id": "con-7293f7983e59af61",
+      "concept_type": "concept",
+      "report_count": 2,
+      "main_categories": [
+        "경제·경영",
+        "기술·공학"
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
       "id": "concept:con-75dc266a01c9c786",
       "type": "concept",
       "label": "생체 리듬과 환경",
@@ -444,6 +458,34 @@
       "report_count": 3,
       "main_categories": [
         "생명·건강",
+        "인문·철학"
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
+      "id": "concept:con-ecb70d0f334fb463",
+      "type": "concept",
+      "label": "공정 무역",
+      "level": 5,
+      "concept_id": "con-ecb70d0f334fb463",
+      "concept_type": "concept",
+      "report_count": 2,
+      "main_categories": [
+        "경제·경영",
+        "인문·철학"
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
+      "id": "concept:con-f20453856f0bc62f",
+      "type": "concept",
+      "label": "윤리적 소비",
+      "level": 5,
+      "concept_id": "con-f20453856f0bc62f",
+      "concept_type": "concept",
+      "report_count": 2,
+      "main_categories": [
+        "경제·경영",
         "인문·철학"
       ],
       "provenance": "exact-normalized-tag"
@@ -902,6 +944,13 @@
       "main_category": "경제·경영"
     },
     {
+      "id": "detail:c96e4e45a3d4bc5a",
+      "type": "detail",
+      "label": "사회적 무역 기준과 실천",
+      "level": 3,
+      "main_category": "경제·경영"
+    },
+    {
       "id": "detail:cfe660dfd3e02bf9",
       "type": "detail",
       "label": "알고리즘과 대중 인식",
@@ -1166,6 +1215,13 @@
       "label": "물환경공학",
       "level": 1,
       "main_category": "기술·공학"
+    },
+    {
+      "id": "middle:54353972a8423855",
+      "type": "middle",
+      "label": "경제",
+      "level": 1,
+      "main_category": "경제·경영"
     },
     {
       "id": "middle:55bdeec0654c0d72",
@@ -2865,6 +2921,23 @@
       "pdf_url": "outputs/20261101_social_structure_change__Report.pdf"
     },
     {
+      "id": "report:rpt-20261102-fair-trade-movement-and",
+      "type": "report",
+      "label": "공정 무역 운동과 글로벌 공급망의 변화",
+      "level": 4,
+      "report_id": "rpt-20261102-fair-trade-movement-and",
+      "date": "2026-11-02",
+      "main_category": "경제·경영",
+      "category_path": [
+        "경제·경영",
+        "경제",
+        "국제 무역",
+        "사회적 무역 기준과 실천"
+      ],
+      "html_url": "outputs/20261102_fair_trade_movement_and__Report.html",
+      "pdf_url": "outputs/20261102_fair_trade_movement_and__Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -3129,6 +3202,13 @@
       "label": "구도와 시선",
       "level": 2,
       "main_category": "예술·디자인"
+    },
+    {
+      "id": "sub:6cce81dade196c90",
+      "type": "sub",
+      "label": "국제 무역",
+      "level": 2,
+      "main_category": "경제·경영"
     },
     {
       "id": "sub:6e86a1e020e410cb",
@@ -3614,6 +3694,21 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:0ed514eb72869566",
+      "source": "report:rpt-20261005-eco-friendly-water-treat",
+      "target": "concept:con-7293f7983e59af61",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[3]",
+          "matched_text": "지속 가능성"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
       "id": "edge:0fd39b79a007dde9",
       "source": "category:d1d9ae9d3e816c13",
       "target": "middle:e9259388404aa6fc",
@@ -3626,6 +3721,21 @@
       "target": "middle:fe8b996f66a99759",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:10c7c71818495d64",
+      "source": "report:rpt-20261102-fair-trade-movement-and",
+      "target": "concept:con-f20453856f0bc62f",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[5]",
+          "matched_text": "윤리적 소비"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
     },
     {
       "id": "edge:13746e93aa4cf858",
@@ -5176,6 +5286,25 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:6d283024531869e7",
+      "source": "report:rpt-20261031-ethical-consumption-indi",
+      "target": "concept:con-f20453856f0bc62f",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.8,
+      "evidence": [
+        {
+          "reference": "keywords[0]",
+          "matched_text": "윤리적 소비"
+        },
+        {
+          "reference": "term_box.items[0].term",
+          "matched_text": "윤리적 소비"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
       "id": "edge:6d452f8ff9889165",
       "source": "report:rpt-20260901-moral-luck-paradox-resul",
       "target": "concept:con-39820d616e59b701",
@@ -5955,6 +6084,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:8e01f22624ca0f2e",
+      "source": "middle:54353972a8423855",
+      "target": "sub:6cce81dade196c90",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:8eb4c5300b335948",
       "source": "report:rpt-20260831-dictionary-authority-wor",
       "target": "concept:con-135ff1d8963c0c0f",
@@ -6048,6 +6184,13 @@
       "id": "edge:935d7aa32387a16b",
       "source": "sub:7cb73285e3d7560c",
       "target": "detail:080dd9b47a474067",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:94b2236d3a7d5170",
+      "source": "detail:c96e4e45a3d4bc5a",
+      "target": "report:rpt-20261102-fair-trade-movement-and",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -6367,6 +6510,13 @@
       "id": "edge:9ec4c61397f9d2b9",
       "source": "middle:757f6d7c48bc1a05",
       "target": "sub:c231aa5267ad4bf0",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:9f4a800002460156",
+      "source": "sub:6cce81dade196c90",
+      "target": "detail:c96e4e45a3d4bc5a",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -7257,6 +7407,25 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:c820b9a53774d76f",
+      "source": "report:rpt-20261031-ethical-consumption-indi",
+      "target": "concept:con-ecb70d0f334fb463",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.8,
+      "evidence": [
+        {
+          "reference": "keywords[4]",
+          "matched_text": "공정 무역"
+        },
+        {
+          "reference": "term_box.items[1].term",
+          "matched_text": "공정 무역"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
       "id": "edge:c835affabd4c1b2a",
       "source": "middle:205f4adc8f23b507",
       "target": "sub:2b31de72738e1107",
@@ -7562,6 +7731,13 @@
       "provenance": "curated-pattern-rule"
     },
     {
+      "id": "edge:d710afa83f0e1e2f",
+      "source": "category:52cb15e614d4481d",
+      "target": "middle:54353972a8423855",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:d7a7338542f84b3f",
       "source": "category:c135b09622b60562",
       "target": "middle:0c14059a47957c6e",
@@ -7865,6 +8041,21 @@
       "target": "middle:d28f514598eeca17",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:e551196d82a376bc",
+      "source": "report:rpt-20261102-fair-trade-movement-and",
+      "target": "concept:con-7293f7983e59af61",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[3]",
+          "matched_text": "지속 가능성"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
     },
     {
       "id": "edge:e5633c292a3aa015",
@@ -8366,6 +8557,25 @@
       "target": "middle:cb144e23e2065cf0",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:fa222c0d085211cc",
+      "source": "report:rpt-20261102-fair-trade-movement-and",
+      "target": "concept:con-ecb70d0f334fb463",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.8,
+      "evidence": [
+        {
+          "reference": "keywords[0]",
+          "matched_text": "공정 무역"
+        },
+        {
+          "reference": "term_box.items[0].term",
+          "matched_text": "공정 무역"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
     },
     {
       "id": "edge:fb6013c212271416",
