@@ -2,12 +2,12 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-11-02T04:14:34.132688+09:00",
+  "generated_at": "2026-11-03T07:58:51.189667+09:00",
   "stats": {
     "categories": 10,
-    "reports": 79,
-    "nodes": 351,
-    "edges": 457,
+    "reports": 80,
+    "nodes": 355,
+    "edges": 461,
     "concepts": 28,
     "concept_edges": 144,
     "semantic_edges": 0
@@ -578,6 +578,13 @@
       "label": "고정 가격과 근대 소매업",
       "level": 3,
       "main_category": "경제·경영"
+    },
+    {
+      "id": "detail:1219f4488a5ea93c",
+      "type": "detail",
+      "label": "증명 기법과 사고력 향상",
+      "level": 3,
+      "main_category": "과학·수학"
     },
     {
       "id": "detail:1421e8804a13bfb1",
@@ -1292,6 +1299,13 @@
       "label": "지식분류",
       "level": 1,
       "main_category": "언어·미디어·지식"
+    },
+    {
+      "id": "middle:75dca2fed1fc8722",
+      "type": "middle",
+      "label": "수학과 과학적 사고",
+      "level": 1,
+      "main_category": "과학·수학"
     },
     {
       "id": "middle:761c2cc0e0a413e5",
@@ -2938,6 +2952,23 @@
       "pdf_url": "outputs/20261102_fair_trade_movement_and__Report.pdf"
     },
     {
+      "id": "report:rpt-20261103-mathematical-induction-a",
+      "type": "report",
+      "label": "수학적 귀납법과 논리: 과학적 사고의 근간을 이루는 증명의 힘",
+      "level": 4,
+      "report_id": "rpt-20261103-mathematical-induction-a",
+      "date": "2026-11-03",
+      "main_category": "과학·수학",
+      "category_path": [
+        "과학·수학",
+        "수학과 과학적 사고",
+        "수학 논리",
+        "증명 기법과 사고력 향상"
+      ],
+      "html_url": "outputs/20261103_mathematical_induction_a_Report.html",
+      "pdf_url": "outputs/20261103_mathematical_induction_a_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -3018,6 +3049,13 @@
       "id": "sub:1f80dbf7a458e748",
       "type": "sub",
       "label": "수 개념의 발전",
+      "level": 2,
+      "main_category": "과학·수학"
+    },
+    {
+      "id": "sub:243458d67f798959",
+      "type": "sub",
+      "label": "수학 논리",
       "level": 2,
       "main_category": "과학·수학"
     },
@@ -5692,6 +5730,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:7e2349b16b4f10cc",
+      "source": "detail:1219f4488a5ea93c",
+      "target": "report:rpt-20261103-mathematical-induction-a",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:7e9f4b16eb964b9d",
       "source": "sub:b378875d51e527ff",
       "target": "detail:419f41c50a4481dd",
@@ -6882,6 +6927,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:b1a1f6500015ed40",
+      "source": "middle:75dca2fed1fc8722",
+      "target": "sub:243458d67f798959",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:b25b2f1656ff51c9",
       "source": "report:rpt-20261027-ocean-plastic-geography",
       "target": "concept:con-9b89960b11d9e6cf",
@@ -7901,6 +7953,13 @@
       "provenance": "curated-pattern-rule"
     },
     {
+      "id": "edge:dd2ad311afa6560a",
+      "source": "category:c135b09622b60562",
+      "target": "middle:75dca2fed1fc8722",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:ddc927eb435919dc",
       "source": "detail:84177918c401892e",
       "target": "report:rpt-20260831-dictionary-authority-wor",
@@ -8101,6 +8160,13 @@
       "id": "edge:e6a3900b91cef6a7",
       "source": "category:b8045a9a934d7f69",
       "target": "middle:b3a67bbd035724bc",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:e6afd37096ce31dc",
+      "source": "sub:243458d67f798959",
+      "target": "detail:1219f4488a5ea93c",
       "kind": "hierarchy",
       "relation_type": "contains"
     },

@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-11-02T04:14:34.132688+09:00",
+  "generated_at": "2026-11-03T07:58:51.189667+09:00",
   "stats": {
-    "reports": 79,
-    "tags": 2944,
+    "reports": 80,
+    "tags": 2982,
     "shared_concepts": 28,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -43279,6 +43279,556 @@
             {
               "reference": "further_reading[1].title",
               "matched_text": "지속 가능한 공급망 관리"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "report_id": "rpt-20261103-mathematical-induction-a",
+      "date": "2026-11-03",
+      "title": "수학적 귀납법과 논리: 과학적 사고의 근간을 이루는 증명의 힘",
+      "main_category": "과학·수학",
+      "tags": [
+        {
+          "tag_id": "tag-ac86598e264a1596",
+          "label": "과학적 사고",
+          "normalized_label": "과학적 사고",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "과학적 사고"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0a845d6669ed7a47",
+          "label": "논리적 추론",
+          "normalized_label": "논리적 추론",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "논리적 추론"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-dbae3667cc057a79",
+          "label": "논리학",
+          "normalized_label": "논리학",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "논리학"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fddf67785689ddcd",
+          "label": "사고력 향상",
+          "normalized_label": "사고력 향상",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "사고력 향상"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-eb1d2677d05551cd",
+          "label": "수학 논리",
+          "normalized_label": "수학 논리",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "수학 논리"
+            },
+            {
+              "reference": "category.sub",
+              "matched_text": "수학 논리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f31e1414b9da6a72",
+          "label": "수학적 귀납법",
+          "normalized_label": "수학적 귀납법",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "수학적 귀납법"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "수학적 귀납법"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-30353e716f79944e",
+          "label": "증명",
+          "normalized_label": "증명",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "증명"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fd51f0923ac64671",
+          "label": "증명 기법",
+          "normalized_label": "증명 기법",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "증명 기법"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-358722cf0d1fdff2",
+          "label": "논리",
+          "normalized_label": "논리",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "논리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c2ac01ebb116d402",
+          "label": "명제",
+          "normalized_label": "명제",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "명제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-81995846c89b556f",
+          "label": "페아노 공리계",
+          "normalized_label": "페아노 공리계",
+          "type": "method",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "페아노 공리계"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-87f09212fb815b0f",
+          "label": "수학과 과학적 사고",
+          "normalized_label": "수학과 과학적 사고",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "수학과 과학적 사고"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-947267b655915414",
+          "label": "증명 기법과 사고력 향상",
+          "normalized_label": "증명 기법과 사고력 향상",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "증명 기법과 사고력 향상"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1f95e4c5201ad79c",
+          "label": "게오르크 칸토어",
+          "normalized_label": "게오르크 칸토어",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [
+            "수학자"
+          ],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "게오르크 칸토어(수학자)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8359779f02b775c7",
+          "label": "귀납 가정 설정",
+          "normalized_label": "귀납 가정 설정",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "귀납 가정 설정"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c8e1dced2228c407",
+          "label": "귀납 명제 증명",
+          "normalized_label": "귀납 명제 증명",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "귀납 명제 증명"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ed4007265f24efb8",
+          "label": "기본 사례 증명",
+          "normalized_label": "기본 사례 증명",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "기본 사례 증명"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2f47206378c7b54b",
+          "label": "다음 단계로 확장",
+          "normalized_label": "다음 단계로 확장",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "다음 단계로 확장"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f41f34cc49533956",
+          "label": "무한 명제 전체 증명",
+          "normalized_label": "무한 명제 전체 증명",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "무한 명제 전체 증명"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-244e071e946a50d9",
+          "label": "구조와 작동 원리",
+          "normalized_label": "구조와 작동 원리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "구조와 작동 원리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0ad00923b340cc85",
+          "label": "규칙과 관리 방식의 변화",
+          "normalized_label": "규칙과 관리 방식의 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "규칙과 관리 방식의 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b3026aa65e95452d",
+          "label": "사회와 문화에 미친 영향",
+          "normalized_label": "사회와 문화에 미친 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "사회와 문화에 미친 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-45292d7c2f721a66",
+          "label": "수학적 귀납법과 논리가 개인과 사회에 미치는 영향",
+          "normalized_label": "수학적 귀납법과 논리가 개인과 사회에 미치는 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "수학적 귀납법과 논리가 개인과 사회에 미치는 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-72b7498ea5f34202",
+          "label": "수학적 귀납법과 논리의 기본 개념",
+          "normalized_label": "수학적 귀납법과 논리의 기본 개념",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "수학적 귀납법과 논리의 기본 개념"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5346b77968d99557",
+          "label": "수학적 귀납법과 논리의 깊이 있는 이해",
+          "normalized_label": "수학적 귀납법과 논리의 깊이 있는 이해",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "수학적 귀납법과 논리의 깊이 있는 이해"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-24f64c7c73561126",
+          "label": "수학적 귀납법과 논리의 중요성",
+          "normalized_label": "수학적 귀납법과 논리의 중요성",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "수학적 귀납법과 논리의 중요성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-cdaf12fdb3c41588",
+          "label": "수학적 귀납법과 논리의 현대적 동향",
+          "normalized_label": "수학적 귀납법과 논리의 현대적 동향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "수학적 귀납법과 논리의 현대적 동향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f187a6c2e07a86d7",
+          "label": "수학적 귀납법의 역사적 기원",
+          "normalized_label": "수학적 귀납법의 역사적 기원",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "수학적 귀납법의 역사적 기원"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-718ccd455ce78bc2",
+          "label": "페아노 공리계와 귀납법의 확립",
+          "normalized_label": "페아노 공리계와 귀납법의 확립",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "페아노 공리계와 귀납법의 확립"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-17ca7e2c91a7ec30",
+          "label": "페아노 공리와 수학적 귀납법",
+          "normalized_label": "페아노 공리와 수학적 귀납법",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "페아노 공리와 수학적 귀납법"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f4bd420e9d6b1ead",
+          "label": "관련 도서·탐구 키워드·확장 주제",
+          "normalized_label": "관련 도서·탐구 키워드·확장 주제",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 관련 도서·탐구 키워드·확장 주제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1a2ea7b4463c6475",
+          "label": "증명 방법 비교",
+          "normalized_label": "증명 방법 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 증명 방법 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7bc719d3944c17a3",
+          "label": "페아노 공리계의 공리와 역할",
+          "normalized_label": "페아노 공리계의 공리와 역할",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 페아노 공리계의 공리와 역할"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-98e0448e8c481237",
+          "label": "현재 수학적 귀납법 관련 주요 쟁점",
+          "normalized_label": "현재 수학적 귀납법 관련 주요 쟁점",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 현재 수학적 귀납법 관련 주요 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4f04c88b79bc2245",
+          "label": "『과학적 사고의 역사』",
+          "normalized_label": "『과학적 사고의 역사』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "『과학적 사고의 역사』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d4298ae79209d81a",
+          "label": "『논리와 수학적 사고』",
+          "normalized_label": "『논리와 수학적 사고』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "『논리와 수학적 사고』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-763d19a91d98ccbd",
+          "label": "『수학적 귀납법과 증명의 기술』",
+          "normalized_label": "『수학적 귀납법과 증명의 기술』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "『수학적 귀납법과 증명의 기술』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2fc144082a2b1bce",
+          "label": "『컴퓨터 과학과 형식 증명』",
+          "normalized_label": "『컴퓨터 과학과 형식 증명』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[3].title",
+              "matched_text": "『컴퓨터 과학과 형식 증명』"
             }
           ]
         }

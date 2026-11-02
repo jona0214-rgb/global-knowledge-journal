@@ -1,5 +1,21 @@
 [
   {
+    "date": "2026-11-03",
+    "title": "수학적 귀납법과 논리: 과학적 사고의 근간을 이루는 증명의 힘",
+    "subtitle": "기본 원리에서 현대적 응용까지, 과학적 사고를 뒷받침하는 수학적 증명 방법 탐구",
+    "main_category": "과학·수학",
+    "mid_category": "수학과 과학적 사고",
+    "sub_category": "수학 논리",
+    "detail_category": "증명 기법과 사고력 향상",
+    "taxonomy_version": "2.0",
+    "html_path": "outputs/20261103_mathematical_induction_a_Report.html",
+    "pdf_path": "outputs/20261103_mathematical_induction_a_Report.pdf",
+    "status": "published_api",
+    "html_url": "outputs/20261103_mathematical_induction_a_Report.html",
+    "pdf_url": "outputs/20261103_mathematical_induction_a_Report.pdf",
+    "report_id": "rpt-20261103-mathematical-induction-a"
+  },
+  {
     "date": "2026-11-02",
     "title": "공정 무역 운동과 글로벌 공급망의 변화",
     "subtitle": "공정한 거래를 위한 국제적 노력과 공급망 재편의 현실",
