@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-11-03T07:58:51.189667+09:00",
+  "generated_at": "2026-11-04T05:48:27.910663+09:00",
   "stats": {
-    "reports": 80,
-    "tags": 2982,
+    "reports": 81,
+    "tags": 3018,
     "shared_concepts": 28,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -43833,6 +43833,538 @@
           ]
         }
       ]
+    },
+    {
+      "report_id": "rpt-20261104-smart-grid-energy-effici",
+      "date": "2026-11-04",
+      "title": "스마트 그리드의 발전과 에너지 효율성: 미래 전력망의 설계",
+      "main_category": "기술·공학",
+      "tags": [
+        {
+          "tag_id": "tag-15831f5be2957fe9",
+          "label": "디지털 전력망",
+          "normalized_label": "디지털 전력망",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "디지털 전력망"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2d5d17e2ec1c4d26",
+          "label": "미래 전력망",
+          "normalized_label": "미래 전력망",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "미래 전력망"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-305d3afbb837ac84",
+          "label": "분산 전원",
+          "normalized_label": "분산 전원",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "분산 전원"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "분산 전원"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e1a6b0243e49b392",
+          "label": "스마트 그리드",
+          "normalized_label": "스마트 그리드",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "스마트 그리드"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "스마트 그리드"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d9eeb18b88f16e70",
+          "label": "에너지 관리",
+          "normalized_label": "에너지 관리",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "에너지 관리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fc131feead283ab5",
+          "label": "재생 에너지",
+          "normalized_label": "재생 에너지",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "재생 에너지"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-656fc0d43d27abec",
+          "label": "에너지 효율성",
+          "normalized_label": "에너지 효율성",
+          "type": "outcome",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "에너지 효율성"
+            },
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "에너지 효율성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ffa959c19691b9c4",
+          "label": "전력 시스템",
+          "normalized_label": "전력 시스템",
+          "type": "technology",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "전력 시스템"
+            },
+            {
+              "reference": "category.sub",
+              "matched_text": "전력 시스템"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d8904e1c140eddc8",
+          "label": "수요 반응",
+          "normalized_label": "수요 반응",
+          "type": "technology",
+          "weight": 0.98,
+          "aliases": [
+            "Demand Response"
+          ],
+          "evidence": [
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "수요 반응 (Demand Response)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fd57cd8f2764b1c2",
+          "label": "에너지",
+          "normalized_label": "에너지",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "에너지"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6eb78263e0020623",
+          "label": "스마트 그리드 기술과 에너지 관리",
+          "normalized_label": "스마트 그리드 기술과 에너지 관리",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "스마트 그리드 기술과 에너지 관리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ec748f8afac92368",
+          "label": "국제 에너지 기구",
+          "normalized_label": "국제 에너지 기구",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [
+            "IEA"
+          ],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "국제 에너지 기구(IEA)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c26fa5bd956a4f50",
+          "label": "데이터 분석 및 부하 예측",
+          "normalized_label": "데이터 분석 및 부하 예측",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "데이터 분석 및 부하 예측"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-cd08ccb624d1d3bc",
+          "label": "센서 및 계측기 설치",
+          "normalized_label": "센서 및 계측기 설치",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "센서 및 계측기 설치"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-25f594b15e3f21e6",
+          "label": "소비자 피드백과 에너지 최적화",
+          "normalized_label": "소비자 피드백과 에너지 최적화",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "소비자 피드백과 에너지 최적화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-97c54c39c4d82755",
+          "label": "수요 반응 및 전력 분배 조정",
+          "normalized_label": "수요 반응 및 전력 분배 조정",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "수요 반응 및 전력 분배 조정"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ce4ca23d2b347ba2",
+          "label": "실시간 데이터 수집 및 전송",
+          "normalized_label": "실시간 데이터 수집 및 전송",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "실시간 데이터 수집 및 전송"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-981133b5296bb803",
+          "label": "규범과 관리 체계의 변화",
+          "normalized_label": "규범과 관리 체계의 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "규범과 관리 체계의 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e1b0880da49700ee",
+          "label": "기술 구조와 작동 원리",
+          "normalized_label": "기술 구조와 작동 원리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "기술 구조와 작동 원리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-de21c2328b63e7e1",
+          "label": "미국 캘리포니아 스마트 그리드 프로젝트",
+          "normalized_label": "미국 캘리포니아 스마트 그리드 프로젝트",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "미국 캘리포니아 스마트 그리드 프로젝트"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4845881a2bf6bb93",
+          "label": "사회문화적 영향과 에너지 소비 변화",
+          "normalized_label": "사회문화적 영향과 에너지 소비 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "사회문화적 영향과 에너지 소비 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-970dd34b42974a9d",
+          "label": "스마트 그리드 기술 현황과 도전 과제",
+          "normalized_label": "스마트 그리드 기술 현황과 도전 과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "스마트 그리드 기술 현황과 도전 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-50e346c487eec174",
+          "label": "스마트 그리드 기술의 등장과 중요성",
+          "normalized_label": "스마트 그리드 기술의 등장과 중요성",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "스마트 그리드 기술의 등장과 중요성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0dc8aff9287cf9ed",
+          "label": "스마트 그리드 이해를 위한 기본 개념",
+          "normalized_label": "스마트 그리드 이해를 위한 기본 개념",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "스마트 그리드 이해를 위한 기본 개념"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e8d94f85ebfd2422",
+          "label": "스마트 그리드 핵심 쟁점과 심층 분석",
+          "normalized_label": "스마트 그리드 핵심 쟁점과 심층 분석",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "스마트 그리드 핵심 쟁점과 심층 분석"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fe7fdfd5040b6a9e",
+          "label": "스마트 그리드의 사회문화적·기술적 함의",
+          "normalized_label": "스마트 그리드의 사회문화적·기술적 함의",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "스마트 그리드의 사회문화적·기술적 함의"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8e08e5ec61189442",
+          "label": "스마트 그리드의 역사적 출발점",
+          "normalized_label": "스마트 그리드의 역사적 출발점",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "스마트 그리드의 역사적 출발점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d211916dcf672af6",
+          "label": "현안과 미래 과제",
+          "normalized_label": "현안과 미래 과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[7].title",
+              "matched_text": "현안과 미래 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-faad7ab545c855a8",
+          "label": "Smart Grids and Renewable Integration",
+          "normalized_label": "Smart Grids and Renewable Integration",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "Smart Grids and Renewable Integration"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3e93fde967d94ad6",
+          "label": "스마트 그리드 관련 도서와 탐구 키워드",
+          "normalized_label": "스마트 그리드 관련 도서와 탐구 키워드",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 스마트 그리드 관련 도서와 탐구 키워드"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6f8f333371e9da65",
+          "label": "스마트 그리드 도입의 현재 쟁점",
+          "normalized_label": "스마트 그리드 도입의 현재 쟁점",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 스마트 그리드 도입의 현재 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-aff1dcb4e6bb2e80",
+          "label": "스마트 그리드와 전통 전력망 비교",
+          "normalized_label": "스마트 그리드와 전통 전력망 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 스마트 그리드와 전통 전력망 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-540a19a466b384ae",
+          "label": "캘리포니아 스마트 그리드 프로젝트 특징",
+          "normalized_label": "캘리포니아 스마트 그리드 프로젝트 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 캘리포니아 스마트 그리드 프로젝트 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3632f8ef45962c76",
+          "label": "스마트 그리드 기술 개론",
+          "normalized_label": "스마트 그리드 기술 개론",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "스마트 그리드 기술 개론"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5fac9a7560ffe504",
+          "label": "에너지 전환과 디지털 혁신",
+          "normalized_label": "에너지 전환과 디지털 혁신",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "에너지 전환과 디지털 혁신"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6641a6c3184fbc59",
+          "label": "재생 에너지 통합 전략",
+          "normalized_label": "재생 에너지 통합 전략",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "재생 에너지 통합 전략"
+            }
+          ]
+        }
+      ]
     }
   ],
   "shared_concepts": [
@@ -44886,19 +45418,6 @@
           ]
         },
         {
-          "report_id": "rpt-20260924-entropy-world-why-disord",
-          "evidence": [
-            {
-              "reference": "sections[6].body[1]",
-              "matched_text": "에너지 효율"
-            },
-            {
-              "reference": "sections[9].body[1]",
-              "matched_text": "에너지 저장"
-            }
-          ]
-        },
-        {
           "report_id": "rpt-20260925-elevator-urban-history-s",
           "evidence": [
             {
@@ -44974,6 +45493,27 @@
             },
             {
               "reference": "keywords[3]",
+              "matched_text": "에너지 효율"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261104-smart-grid-energy-effici",
+          "evidence": [
+            {
+              "reference": "title",
+              "matched_text": "에너지 효율"
+            },
+            {
+              "reference": "subtitle",
+              "matched_text": "전력망"
+            },
+            {
+              "reference": "abstract",
+              "matched_text": "에너지 효율"
+            },
+            {
+              "reference": "keywords[1]",
               "matched_text": "에너지 효율"
             }
           ]
@@ -45072,23 +45612,6 @@
             },
             {
               "reference": "sections[7].body[1]",
-              "matched_text": "표준화"
-            }
-          ]
-        },
-        {
-          "report_id": "rpt-20260824-insurance-birth-how-risk",
-          "evidence": [
-            {
-              "reference": "sections[6].body[0]",
-              "matched_text": "표준화"
-            },
-            {
-              "reference": "sections[8].body[0]",
-              "matched_text": "표준화"
-            },
-            {
-              "reference": "sections[10].body[5]",
               "matched_text": "표준화"
             }
           ]
@@ -45236,6 +45759,27 @@
             },
             {
               "reference": "sections[8].body[3]",
+              "matched_text": "표준화"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261104-smart-grid-energy-effici",
+          "evidence": [
+            {
+              "reference": "sections[3].body[2]",
+              "matched_text": "표준화"
+            },
+            {
+              "reference": "sections[4].body[2]",
+              "matched_text": "표준화"
+            },
+            {
+              "reference": "sections[6].body[1]",
+              "matched_text": "표준화"
+            },
+            {
+              "reference": "sections[7].body[0]",
               "matched_text": "표준화"
             }
           ]

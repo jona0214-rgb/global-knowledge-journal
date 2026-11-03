@@ -2,12 +2,12 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-11-03T07:58:51.189667+09:00",
+  "generated_at": "2026-11-04T05:48:27.910663+09:00",
   "stats": {
     "categories": 10,
-    "reports": 80,
-    "nodes": 355,
-    "edges": 461,
+    "reports": 81,
+    "nodes": 358,
+    "edges": 464,
     "concepts": 28,
     "concept_edges": 144,
     "semantic_edges": 0
@@ -865,6 +865,13 @@
       "label": "AI 번역 기술 동향",
       "level": 3,
       "main_category": "언어·미디어·지식"
+    },
+    {
+      "id": "detail:881f9aaf3d78c0b8",
+      "type": "detail",
+      "label": "스마트 그리드 기술과 에너지 관리",
+      "level": 3,
+      "main_category": "기술·공학"
     },
     {
       "id": "detail:89962e146b94dea5",
@@ -2969,6 +2976,23 @@
       "pdf_url": "outputs/20261103_mathematical_induction_a_Report.pdf"
     },
     {
+      "id": "report:rpt-20261104-smart-grid-energy-effici",
+      "type": "report",
+      "label": "스마트 그리드의 발전과 에너지 효율성: 미래 전력망의 설계",
+      "level": 4,
+      "report_id": "rpt-20261104-smart-grid-energy-effici",
+      "date": "2026-11-04",
+      "main_category": "기술·공학",
+      "category_path": [
+        "기술·공학",
+        "에너지",
+        "전력 시스템",
+        "스마트 그리드 기술과 에너지 관리"
+      ],
+      "html_url": "outputs/20261104_smart_grid_energy_effici_Report.html",
+      "pdf_url": "outputs/20261104_smart_grid_energy_effici_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -3466,6 +3490,13 @@
       "main_category": "과학·수학"
     },
     {
+      "id": "sub:d48dce06bce6b36f",
+      "type": "sub",
+      "label": "전력 시스템",
+      "level": 2,
+      "main_category": "기술·공학"
+    },
+    {
       "id": "sub:d66978887f14fa65",
       "type": "sub",
       "label": "개인 동일성",
@@ -3660,6 +3691,13 @@
       "provenance": "exact-normalized-tag"
     },
     {
+      "id": "edge:0a28c8f79080ba3e",
+      "source": "detail:881f9aaf3d78c0b8",
+      "target": "report:rpt-20261104-smart-grid-energy-effici",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:0a828978e947fb99",
       "source": "middle:9a840b66bd8d3d30",
       "target": "sub:d66978887f14fa65",
@@ -3679,29 +3717,6 @@
       "target": "report:rpt-20260927-soil-ecosystem-support",
       "kind": "hierarchy",
       "relation_type": "contains"
-    },
-    {
-      "id": "edge:0b7f428569a78f64",
-      "source": "report:rpt-20260824-insurance-birth-how-risk",
-      "target": "concept:con-a2ff54106aeeeb39",
-      "kind": "concept",
-      "relation_type": "has_concept",
-      "score": 0.9,
-      "evidence": [
-        {
-          "reference": "sections[6].body[0]",
-          "matched_text": "표준화"
-        },
-        {
-          "reference": "sections[8].body[0]",
-          "matched_text": "표준화"
-        },
-        {
-          "reference": "sections[10].body[5]",
-          "matched_text": "표준화"
-        }
-      ],
-      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:0d1e1042ffc1d199",
@@ -4705,6 +4720,33 @@
         }
       ],
       "provenance": "exact-normalized-tag"
+    },
+    {
+      "id": "edge:4e73060fe399a66c",
+      "source": "report:rpt-20261104-smart-grid-energy-effici",
+      "target": "concept:con-5d0014712c59ecdf",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "title",
+          "matched_text": "에너지 효율"
+        },
+        {
+          "reference": "subtitle",
+          "matched_text": "전력망"
+        },
+        {
+          "reference": "abstract",
+          "matched_text": "에너지 효율"
+        },
+        {
+          "reference": "keywords[1]",
+          "matched_text": "에너지 효율"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:4eeacdeb1713abe0",
@@ -5818,6 +5860,13 @@
       "provenance": "curated-pattern-rule"
     },
     {
+      "id": "edge:82ba482299d61d7a",
+      "source": "middle:6453951fdd49440b",
+      "target": "sub:d48dce06bce6b36f",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:838466cc407c66e5",
       "source": "report:rpt-20261014-quantum-computing-and-in",
       "target": "concept:con-22940219024d252e",
@@ -6198,25 +6247,6 @@
       "target": "report:rpt-20261025-gwangseomyu-gisul-inform",
       "kind": "hierarchy",
       "relation_type": "contains"
-    },
-    {
-      "id": "edge:92a09a34cc5d5cfb",
-      "source": "report:rpt-20260924-entropy-world-why-disord",
-      "target": "concept:con-5d0014712c59ecdf",
-      "kind": "concept",
-      "relation_type": "has_concept",
-      "score": 0.8,
-      "evidence": [
-        {
-          "reference": "sections[6].body[1]",
-          "matched_text": "에너지 효율"
-        },
-        {
-          "reference": "sections[9].body[1]",
-          "matched_text": "에너지 저장"
-        }
-      ],
-      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:932de3d55f1df541",
@@ -7543,6 +7573,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:caf73a636581ddc3",
+      "source": "sub:d48dce06bce6b36f",
+      "target": "detail:881f9aaf3d78c0b8",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:cbf7012f94660bf0",
       "source": "report:rpt-20260828-bamui-bitgwa-saengtaegye",
       "target": "concept:con-5d0014712c59ecdf",
@@ -8642,6 +8679,33 @@
         }
       ],
       "provenance": "exact-normalized-tag"
+    },
+    {
+      "id": "edge:fb4b4d2e7b917bbf",
+      "source": "report:rpt-20261104-smart-grid-energy-effici",
+      "target": "concept:con-a2ff54106aeeeb39",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "sections[3].body[2]",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "sections[4].body[2]",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "sections[6].body[1]",
+          "matched_text": "표준화"
+        },
+        {
+          "reference": "sections[7].body[0]",
+          "matched_text": "표준화"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:fb6013c212271416",

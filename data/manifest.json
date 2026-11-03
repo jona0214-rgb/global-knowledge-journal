@@ -1,6 +1,22 @@
 {
-  "last_updated": "2026-11-03T07:58:51.189667+09:00",
+  "last_updated": "2026-11-04T05:48:27.910663+09:00",
   "reports": [
+    {
+      "date": "2026-11-04",
+      "title": "스마트 그리드의 발전과 에너지 효율성: 미래 전력망의 설계",
+      "subtitle": "디지털 기술과 에너지 관리 시스템을 통한 차세대 전력망 혁신",
+      "main_category": "기술·공학",
+      "mid_category": "에너지",
+      "sub_category": "전력 시스템",
+      "detail_category": "스마트 그리드 기술과 에너지 관리",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20261104_smart_grid_energy_effici_Report.html",
+      "pdf_path": "outputs/20261104_smart_grid_energy_effici_Report.pdf",
+      "status": "published_api",
+      "html_url": "outputs/20261104_smart_grid_energy_effici_Report.html",
+      "pdf_url": "outputs/20261104_smart_grid_energy_effici_Report.pdf",
+      "report_id": "rpt-20261104-smart-grid-energy-effici"
+    },
     {
       "date": "2026-11-03",
       "title": "수학적 귀납법과 논리: 과학적 사고의 근간을 이루는 증명의 힘",
