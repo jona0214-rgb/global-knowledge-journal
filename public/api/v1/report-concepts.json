@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-11-11T00:22:46.169090+09:00",
+  "generated_at": "2026-11-11T06:06:12.648552+09:00",
   "stats": {
-    "reports": 82,
-    "tags": 3056,
+    "reports": 83,
+    "tags": 3093,
     "shared_concepts": 28,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -44917,6 +44917,542 @@
           ]
         }
       ]
+    },
+    {
+      "report_id": "rpt-20261109-wetland-ecosystem-import",
+      "date": "2026-11-09",
+      "title": "습지 생태계의 중요성과 보전 전략: 인간과 자연이 공존하는 공간",
+      "main_category": "자연·환경·지리",
+      "tags": [
+        {
+          "tag_id": "tag-c6c3f571d63e9279",
+          "label": "기후 조절",
+          "normalized_label": "기후 조절",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "기후 조절"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fdaa830daa4cb4bb",
+          "label": "보전 전략",
+          "normalized_label": "보전 전략",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "보전 전략"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f9ce2805d117c07b",
+          "label": "생물다양성",
+          "normalized_label": "생물다양성",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "생물다양성"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "생물다양성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a89b0b9501690faa",
+          "label": "생태계",
+          "normalized_label": "생태계",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "생태계"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a4bfe75c5dd9a1e9",
+          "label": "수질 정화",
+          "normalized_label": "수질 정화",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "수질 정화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-53340803d7c91cd4",
+          "label": "습지",
+          "normalized_label": "습지",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "습지"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "습지"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-bdf549df314376cb",
+          "label": "습지 복원",
+          "normalized_label": "습지 복원",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "습지 복원"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c85f1da59379924c",
+          "label": "인간과 자연 공존",
+          "normalized_label": "인간과 자연 공존",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "인간과 자연 공존"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-725548b242859784",
+          "label": "생태계 서비스",
+          "normalized_label": "생태계 서비스",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "생태계 서비스"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4b0940b770251d29",
+          "label": "복원 생태학",
+          "normalized_label": "복원 생태학",
+          "type": "outcome",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "복원 생태학"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-affcea135b1d3f17",
+          "label": "생태",
+          "normalized_label": "생태",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "생태"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-bbd68e26cad7cb87",
+          "label": "습지생태학",
+          "normalized_label": "습지생태학",
+          "type": "domain",
+          "weight": 0.93,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.sub",
+              "matched_text": "습지생태학"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c7c797dd00a58114",
+          "label": "습지 보전과 생물다양성 유지",
+          "normalized_label": "습지 보전과 생물다양성 유지",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "습지 보전과 생물다양성 유지"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5aed07a407d2b119",
+          "label": "세계자연보전연맹",
+          "normalized_label": "세계자연보전연맹",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [
+            "IUCN"
+          ],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "세계자연보전연맹(IUCN)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b8c62b6655440500",
+          "label": "모니터링과 지속적 관리",
+          "normalized_label": "모니터링과 지속적 관리",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "모니터링과 지속적 관리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f68bfd6dd49e1652",
+          "label": "보전 목표 설정",
+          "normalized_label": "보전 목표 설정",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "보전 목표 설정"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8297aa8a4bec125c",
+          "label": "복원 및 관리 계획 수립",
+          "normalized_label": "복원 및 관리 계획 수립",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "복원 및 관리 계획 수립"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5ff7aa89c2acaa1b",
+          "label": "습지 조사 및 평가",
+          "normalized_label": "습지 조사 및 평가",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "습지 조사 및 평가"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4c1fe2bddf2fecae",
+          "label": "지역사회 참여 및 협력",
+          "normalized_label": "지역사회 참여 및 협력",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "지역사회 참여 및 협력"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a6f990760b1abd48",
+          "label": "글로벌 습지 보전 현황과 과제",
+          "normalized_label": "글로벌 습지 보전 현황과 과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "글로벌 습지 보전 현황과 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-99523f1c4db5db74",
+          "label": "남한강 중하류 습지 복원의 성공 사례",
+          "normalized_label": "남한강 중하류 습지 복원의 성공 사례",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "남한강 중하류 습지 복원의 성공 사례"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a0e1ba22c246e124",
+          "label": "보전 기준과 관리 방식의 진화",
+          "normalized_label": "보전 기준과 관리 방식의 진화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "보전 기준과 관리 방식의 진화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-401469f3017a24f0",
+          "label": "사회·문화와 습지의 상호작용",
+          "normalized_label": "사회·문화와 습지의 상호작용",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "사회·문화와 습지의 상호작용"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-16e3cad981288a36",
+          "label": "습지 보전의 핵심 질문과 세부 탐구 영역",
+          "normalized_label": "습지 보전의 핵심 질문과 세부 탐구 영역",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "습지 보전의 핵심 질문과 세부 탐구 영역"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fc236b28bfc0421f",
+          "label": "습지 보전이 개인과 사회에 주는 의미",
+          "normalized_label": "습지 보전이 개인과 사회에 주는 의미",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "습지 보전이 개인과 사회에 주는 의미"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e99c62fc678f98de",
+          "label": "습지 이해를 위한 핵심 개념 정리",
+          "normalized_label": "습지 이해를 위한 핵심 개념 정리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "습지 이해를 위한 핵심 개념 정리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0f24f989ab9df9c7",
+          "label": "습지, 생태계의 보배가 다시 주목받다",
+          "normalized_label": "습지, 생태계의 보배가 다시 주목받다",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "습지, 생태계의 보배가 다시 주목받다"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ca328780d156e1e6",
+          "label": "습지의 구조와 생태 기능",
+          "normalized_label": "습지의 구조와 생태 기능",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "습지의 구조와 생태 기능"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2412fcbda5a4352a",
+          "label": "역사적 출발점과 인간의 영향",
+          "normalized_label": "역사적 출발점과 인간의 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "역사적 출발점과 인간의 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-dcea6b861efa7fdc",
+          "label": "습지의 역할과 보전 전략",
+          "normalized_label": "습지의 역할과 보전 전략",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "습지의 역할과 보전 전략"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6c0d99160376964f",
+          "label": "남한강 중하류 습지 복원 사업 주요 특징",
+          "normalized_label": "남한강 중하류 습지 복원 사업 주요 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 남한강 중하류 습지 복원 사업 주요 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-08b1d8da2e6d8b00",
+          "label": "습지 관련 도서 및 탐구 키워드",
+          "normalized_label": "습지 관련 도서 및 탐구 키워드",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 습지 관련 도서 및 탐구 키워드"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3208ed04995c1402",
+          "label": "주요 습지 생태계 기능 비교",
+          "normalized_label": "주요 습지 생태계 기능 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 주요 습지 생태계 기능 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1ec49918d03b7fa1",
+          "label": "현대 습지 보전의 주요 쟁점",
+          "normalized_label": "현대 습지 보전의 주요 쟁점",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 현대 습지 보전의 주요 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b19eaa92929db094",
+          "label": "람사르협약과 글로벌 습지 보전",
+          "normalized_label": "람사르협약과 글로벌 습지 보전",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "람사르협약과 글로벌 습지 보전"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ea6be267ea477937",
+          "label": "생물다양성과 기후변화",
+          "normalized_label": "생물다양성과 기후변화",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "생물다양성과 기후변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5497720a0406287f",
+          "label": "습지 생태학",
+          "normalized_label": "습지 생태학",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "습지 생태학"
+            }
+          ]
+        }
+      ]
     }
   ],
   "shared_concepts": [
@@ -46346,7 +46882,6 @@
       "provenance": "curated-pattern-rule",
       "report_count": 12,
       "main_categories": [
-        "경제·경영",
         "기술·공학",
         "사회·정치·법",
         "역사·문화",
@@ -46443,15 +46978,6 @@
           ]
         },
         {
-          "report_id": "rpt-20260923-container-economics-how",
-          "evidence": [
-            {
-              "reference": "sections[9].body[2]",
-              "matched_text": "환경 영향"
-            }
-          ]
-        },
-        {
           "report_id": "rpt-20260929-sustainable-building-mat",
           "evidence": [
             {
@@ -46508,6 +47034,23 @@
             {
               "reference": "keywords[7]",
               "matched_text": "환경 영향"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261109-wetland-ecosystem-import",
+          "evidence": [
+            {
+              "reference": "sections[7].body[2]",
+              "matched_text": "회복력"
+            },
+            {
+              "reference": "sections[8].body[1]",
+              "matched_text": "수질 개선"
+            },
+            {
+              "reference": "sections[8].body[3]",
+              "matched_text": "수질 개선"
             }
           ]
         }

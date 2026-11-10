@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-11-09",
+    "title": "습지 생태계의 중요성과 보전 전략: 인간과 자연이 공존하는 공간",
+    "status": "published_api",
+    "event_name": "schedule",
+    "schedule_cron": "45 14 * * *",
+    "scheduled_for_kst": "2026-11-09T00:00:00+09:00",
+    "workflow_started_at": "2026-11-10T21:01:40Z",
+    "generation_started_at": "2026-11-10T21:02:14.847039Z",
+    "generation_completed_at": "2026-11-10T21:06:11.210460Z",
+    "catalog_updated_at": "2026-11-10T21:06:12.650445Z",
+    "scheduler_delay_seconds": 194500,
+    "setup_duration_seconds": 35,
+    "generation_duration_seconds": 238,
+    "validation_attempts": 2,
+    "run_id": "42900950659",
+    "run_attempt": "1",
+    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/42900950659",
+    "source_sha": "c49af9cfcde8c4ac6baa1d09f44e7a99a429cb0b"
+  },
+  {
     "date": "2026-11-05",
     "title": "노화 생물학: 텔로미어와 세포 노화가 건강에 미치는 영향",
     "status": "published_api",
@@ -718,30 +738,5 @@
     "publication_schedule_cron": "45 21 * * *",
     "publication_run_id": "37712394363",
     "publication_run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/37712394363"
-  },
-  {
-    "date": "2026-10-07",
-    "title": "섬의 생물지리학: 고립은 어떻게 새로운 종을 만드는가",
-    "status": "published_api",
-    "event_name": "schedule",
-    "schedule_cron": "45 14 * * *",
-    "scheduled_for_kst": "2026-10-07T00:00:00+09:00",
-    "workflow_started_at": "2026-10-06T19:51:24Z",
-    "generation_started_at": "2026-10-06T19:59:49.948609Z",
-    "generation_completed_at": "2026-10-06T20:01:12.172311Z",
-    "catalog_updated_at": "2026-10-06T20:01:13.630562Z",
-    "scheduler_delay_seconds": 17484,
-    "setup_duration_seconds": 506,
-    "generation_duration_seconds": 84,
-    "validation_attempts": 1,
-    "run_id": "37521992877",
-    "run_attempt": "1",
-    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/37521992877",
-    "source_sha": "0125e13d3a972b51d6e9faf2a888599ca41f07a5",
-    "publication_target_kst": "2026-10-07T07:00:00+09:00",
-    "publication_pushed_at": "2026-10-07T01:01:33.064519Z",
-    "publication_schedule_cron": "45 21 * * *",
-    "publication_run_id": "37554992137",
-    "publication_run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/37554992137"
   }
 ]

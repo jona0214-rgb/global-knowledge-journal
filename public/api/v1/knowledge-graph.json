@@ -2,12 +2,12 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-11-11T00:22:46.169090+09:00",
+  "generated_at": "2026-11-11T06:06:12.648552+09:00",
   "stats": {
     "categories": 10,
-    "reports": 82,
-    "nodes": 362,
-    "edges": 468,
+    "reports": 83,
+    "nodes": 366,
+    "edges": 472,
     "concepts": 28,
     "concept_edges": 144,
     "semantic_edges": 0
@@ -349,7 +349,6 @@
       "concept_type": "outcome",
       "report_count": 12,
       "main_categories": [
-        "경제·경영",
         "기술·공학",
         "사회·정치·법",
         "역사·문화",
@@ -776,6 +775,13 @@
       "main_category": "경제·경영"
     },
     {
+      "id": "detail:54f59e19866706d7",
+      "type": "detail",
+      "label": "습지 보전과 생물다양성 유지",
+      "level": 3,
+      "main_category": "자연·환경·지리"
+    },
+    {
       "id": "detail:565923b7397eb282",
       "type": "detail",
       "label": "언어 다양성과 보존",
@@ -1145,6 +1151,13 @@
       "label": "문화",
       "level": 1,
       "main_category": "역사·문화"
+    },
+    {
+      "id": "middle:18b6f771a9ec026b",
+      "type": "middle",
+      "label": "생태",
+      "level": 1,
+      "main_category": "자연·환경·지리"
     },
     {
       "id": "middle:205f4adc8f23b507",
@@ -3024,6 +3037,23 @@
       "pdf_url": "outputs/20261105_aging_biology_telomere_c_Report.pdf"
     },
     {
+      "id": "report:rpt-20261109-wetland-ecosystem-import",
+      "type": "report",
+      "label": "습지 생태계의 중요성과 보전 전략: 인간과 자연이 공존하는 공간",
+      "level": 4,
+      "report_id": "rpt-20261109-wetland-ecosystem-import",
+      "date": "2026-11-09",
+      "main_category": "자연·환경·지리",
+      "category_path": [
+        "자연·환경·지리",
+        "생태",
+        "습지생태학",
+        "습지 보전과 생물다양성 유지"
+      ],
+      "html_url": "outputs/20261109_wetland_ecosystem_import_Report.html",
+      "pdf_url": "outputs/20261109_wetland_ecosystem_import_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -3323,6 +3353,13 @@
       "label": "수면과 뇌 기능",
       "level": 2,
       "main_category": "생명·건강"
+    },
+    {
+      "id": "sub:76bdb8c1d288fde4",
+      "type": "sub",
+      "label": "습지생태학",
+      "level": 2,
+      "main_category": "자연·환경·지리"
     },
     {
       "id": "sub:777f1cda6a6324e2",
@@ -4145,6 +4182,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:2aef2202c0609c4e",
+      "source": "detail:54f59e19866706d7",
+      "target": "report:rpt-20261109-wetland-ecosystem-import",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:2b7870fa378fcad6",
       "source": "report:rpt-20260907-monsun-geography-how-sea",
       "target": "concept:con-22940219024d252e",
@@ -4597,6 +4641,29 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:47467550476b56e5",
+      "source": "report:rpt-20261109-wetland-ecosystem-import",
+      "target": "concept:con-9b89960b11d9e6cf",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.9,
+      "evidence": [
+        {
+          "reference": "sections[7].body[2]",
+          "matched_text": "회복력"
+        },
+        {
+          "reference": "sections[8].body[1]",
+          "matched_text": "수질 개선"
+        },
+        {
+          "reference": "sections[8].body[3]",
+          "matched_text": "수질 개선"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:477217f0e2e29148",
       "source": "sub:37c32fe95568d905",
       "target": "detail:3ba9e53991aec4cd",
@@ -4967,21 +5034,6 @@
       "relation_type": "contains"
     },
     {
-      "id": "edge:5410267f387f8481",
-      "source": "report:rpt-20260923-container-economics-how",
-      "target": "concept:con-9b89960b11d9e6cf",
-      "kind": "concept",
-      "relation_type": "has_concept",
-      "score": 0.7,
-      "evidence": [
-        {
-          "reference": "sections[9].body[2]",
-          "matched_text": "환경 영향"
-        }
-      ],
-      "provenance": "curated-pattern-rule"
-    },
-    {
       "id": "edge:54f16cfb1929dda8",
       "source": "middle:c9fd36b743fc1a12",
       "target": "sub:596fe53167acdbb4",
@@ -5239,6 +5291,13 @@
         }
       ],
       "provenance": "exact-normalized-tag"
+    },
+    {
+      "id": "edge:6385d3040aa4c7b5",
+      "source": "middle:18b6f771a9ec026b",
+      "target": "sub:76bdb8c1d288fde4",
+      "kind": "hierarchy",
+      "relation_type": "contains"
     },
     {
       "id": "edge:646eecfa078bf8f9",
@@ -6853,6 +6912,13 @@
       "provenance": "exact-normalized-tag"
     },
     {
+      "id": "edge:a7e1b18c76beaf0e",
+      "source": "category:9de06b299a735751",
+      "target": "middle:18b6f771a9ec026b",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:a8c76f9f355014df",
       "source": "detail:d7817d381ed06994",
       "target": "report:rpt-20261029-dance-and-body-expressio",
@@ -7816,6 +7882,13 @@
         }
       ],
       "provenance": "exact-normalized-tag"
+    },
+    {
+      "id": "edge:d4273d8ff7303707",
+      "source": "sub:76bdb8c1d288fde4",
+      "target": "detail:54f59e19866706d7",
+      "kind": "hierarchy",
+      "relation_type": "contains"
     },
     {
       "id": "edge:d43cb4dc7e1f9c38",

@@ -1,6 +1,22 @@
 {
-  "last_updated": "2026-11-11T00:22:46.169090+09:00",
+  "last_updated": "2026-11-11T06:06:12.648552+09:00",
   "reports": [
+    {
+      "date": "2026-11-09",
+      "title": "습지 생태계의 중요성과 보전 전략: 인간과 자연이 공존하는 공간",
+      "subtitle": "습지의 생태적 가치와 지속 가능한 보전을 위한 접근법",
+      "main_category": "자연·환경·지리",
+      "mid_category": "생태",
+      "sub_category": "습지생태학",
+      "detail_category": "습지 보전과 생물다양성 유지",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20261109_wetland_ecosystem_import_Report.html",
+      "pdf_path": "outputs/20261109_wetland_ecosystem_import_Report.pdf",
+      "status": "published_api",
+      "html_url": "outputs/20261109_wetland_ecosystem_import_Report.html",
+      "pdf_url": "outputs/20261109_wetland_ecosystem_import_Report.pdf",
+      "report_id": "rpt-20261109-wetland-ecosystem-import"
+    },
     {
       "date": "2026-11-05",
       "title": "노화 생물학: 텔로미어와 세포 노화가 건강에 미치는 영향",
