@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-11-04T05:48:27.910663+09:00",
+  "generated_at": "2026-11-11T00:22:46.169090+09:00",
   "stats": {
-    "reports": 81,
-    "tags": 3018,
+    "reports": 82,
+    "tags": 3056,
     "shared_concepts": 28,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -44361,6 +44361,558 @@
             {
               "reference": "further_reading[2].title",
               "matched_text": "재생 에너지 통합 전략"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "report_id": "rpt-20261105-aging-biology-telomere-c",
+      "date": "2026-11-05",
+      "title": "노화 생물학: 텔로미어와 세포 노화가 건강에 미치는 영향",
+      "main_category": "생명·건강",
+      "tags": [
+        {
+          "tag_id": "tag-755a26084c3ce2ba",
+          "label": "노화",
+          "normalized_label": "노화",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "노화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-67f4566749473e2b",
+          "label": "노화 관련 질환",
+          "normalized_label": "노화 관련 질환",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "노화 관련 질환"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c95780a36018524d",
+          "label": "만성질환",
+          "normalized_label": "만성질환",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "만성질환"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-816a26d8cd158da6",
+          "label": "생물학적 노화",
+          "normalized_label": "생물학적 노화",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "생물학적 노화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b7e987188363c040",
+          "label": "유전자",
+          "normalized_label": "유전자",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "유전자"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-74cb0f777dce8f93",
+          "label": "재생 의학",
+          "normalized_label": "재생 의학",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "재생 의학"
+            },
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "재생 의학"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2af3c70be94a92c2",
+          "label": "텔로미어",
+          "normalized_label": "텔로미어",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "텔로미어"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "텔로미어"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5a8efea7770af487",
+          "label": "세포 노화",
+          "normalized_label": "세포 노화",
+          "type": "technology",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "세포 노화"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "세포 노화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-041ac56626f5d3de",
+          "label": "만성염증",
+          "normalized_label": "만성염증",
+          "type": "mechanism",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "만성염증"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-bedf9adc4c2cb630",
+          "label": "의학",
+          "normalized_label": "의학",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "의학"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4eca8fe8b0bcedae",
+          "label": "노화 연구",
+          "normalized_label": "노화 연구",
+          "type": "domain",
+          "weight": 0.93,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.sub",
+              "matched_text": "노화 연구"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-14fd144271ab510e",
+          "label": "텔로미어와 노화 관련 질환",
+          "normalized_label": "텔로미어와 노화 관련 질환",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "텔로미어와 노화 관련 질환"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-52aae804076414a3",
+          "label": "Elizabeth H. Blackburn",
+          "normalized_label": "Elizabeth H. Blackburn",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "Elizabeth H. Blackburn, 노벨 생리의학상 수상자"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-67047205c284543f",
+          "label": "분자 구조와 기능 분석",
+          "normalized_label": "분자 구조와 기능 분석",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "분자 구조와 기능 분석"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d0c11bb035d7efed",
+          "label": "세포 노화 메커니즘 해명",
+          "normalized_label": "세포 노화 메커니즘 해명",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "세포 노화 메커니즘 해명"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c24404c7cbcc4800",
+          "label": "역사적 발견",
+          "normalized_label": "역사적 발견",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "역사적 발견"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ea0121d6d7edf8fe",
+          "label": "임상 질환 연관성 규명",
+          "normalized_label": "임상 질환 연관성 규명",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "임상 질환 연관성 규명"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9db5b6083e1c823a",
+          "label": "치료 및 예방 전략 개발",
+          "normalized_label": "치료 및 예방 전략 개발",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "치료 및 예방 전략 개발"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0e8a8e2588924ef4",
+          "label": "노화 연구의 급부상과 텔로미어의 중요성",
+          "normalized_label": "노화 연구의 급부상과 텔로미어의 중요성",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "노화 연구의 급부상과 텔로미어의 중요성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f7367148ced3cd2e",
+          "label": "노화 연구의 기준과 텔로미어 측정 및 관리",
+          "normalized_label": "노화 연구의 기준과 텔로미어 측정 및 관리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "노화 연구의 기준과 텔로미어 측정 및 관리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-cc84be9a0984be4d",
+          "label": "노화를 이해하기 위한 기본 용어와 개념",
+          "normalized_label": "노화를 이해하기 위한 기본 용어와 개념",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "노화를 이해하기 위한 기본 용어와 개념"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-dd5896de18599dbd",
+          "label": "일상과 사회에 미치는 텔로미어와 세포 노화의 영향",
+          "normalized_label": "일상과 사회에 미치는 텔로미어와 세포 노화의 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "일상과 사회에 미치는 텔로미어와 세포 노화의 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ede377adefdba3d5",
+          "label": "텔로미어 길이와 심혈관 질환 연구 사례",
+          "normalized_label": "텔로미어 길이와 심혈관 질환 연구 사례",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "텔로미어 길이와 심혈관 질환 연구 사례"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-90f2aa33f85061b2",
+          "label": "텔로미어 및 세포 노화 연구의 최신 동향과 사회적 쟁점",
+          "normalized_label": "텔로미어 및 세포 노화 연구의 최신 동향과 사회적 쟁점",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "텔로미어 및 세포 노화 연구의 최신 동향과 사회적 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-160c471dd4cfc2f9",
+          "label": "텔로미어와 세포 노화 연구가 개인과 사회에 주는 의미",
+          "normalized_label": "텔로미어와 세포 노화 연구가 개인과 사회에 주는 의미",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "텔로미어와 세포 노화 연구가 개인과 사회에 주는 의미"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ea331790889bc91a",
+          "label": "텔로미어와 세포 노화 연구의 역사",
+          "normalized_label": "텔로미어와 세포 노화 연구의 역사",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "텔로미어와 세포 노화 연구의 역사"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6461c4051185bc36",
+          "label": "텔로미어와 세포 노화 이해를 위한 다각적 접근",
+          "normalized_label": "텔로미어와 세포 노화 이해를 위한 다각적 접근",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "텔로미어와 세포 노화 이해를 위한 다각적 접근"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0fc4b2b54304fd88",
+          "label": "텔로미어와 세포 노화의 구조와 작동 원리",
+          "normalized_label": "텔로미어와 세포 노화의 구조와 작동 원리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "텔로미어와 세포 노화의 구조와 작동 원리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5e404b1d974dcf1f",
+          "label": "현황과 미래과제: 노화 생물학의 도전과 전망",
+          "normalized_label": "현황과 미래과제: 노화 생물학의 도전과 전망",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[7].title",
+              "matched_text": "현황과 미래과제: 노화 생물학의 도전과 전망"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b9611f3a3b2110ab",
+          "label": "Telomeres and Aging: The Long and Short of It",
+          "normalized_label": "Telomeres and Aging: The Long and Short of It",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "Telomeres and Aging: The Long and Short of It"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a08e92c8c86d03e7",
+          "label": "관련 도서와 탐구 키워드",
+          "normalized_label": "관련 도서와 탐구 키워드",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 관련 도서와 탐구 키워드"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-cdb79a8a32e5210d",
+          "label": "텔로미어 길이와 심혈관 질환 관련 대규모 연구의 주요 결과",
+          "normalized_label": "텔로미어 길이와 심혈관 질환 관련 대규모 연구의 주요 결과",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 텔로미어 길이와 심혈관 질환 관련 대규모 연구의 주요 결과"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c7d64334eb1bb36c",
+          "label": "텔로미어 및 노화 연구의 현재 쟁점과 해결 과제",
+          "normalized_label": "텔로미어 및 노화 연구의 현재 쟁점과 해결 과제",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 텔로미어 및 노화 연구의 현재 쟁점과 해결 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fc3c59e02cb6ed0c",
+          "label": "텔로미어와 다른 노화 관련 생체지표 비교",
+          "normalized_label": "텔로미어와 다른 노화 관련 생체지표 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 텔로미어와 다른 노화 관련 생체지표 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-701faf9fd734e712",
+          "label": "『노화와 만성질환』",
+          "normalized_label": "『노화와 만성질환』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[3].title",
+              "matched_text": "『노화와 만성질환』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-26515fc26cf82659",
+          "label": "『노화의 생물학』",
+          "normalized_label": "『노화의 생물학』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "『노화의 생물학』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3cb48a1f4f3a519d",
+          "label": "『재생 의학과 노화』",
+          "normalized_label": "『재생 의학과 노화』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "『재생 의학과 노화』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ffb78b898827e084",
+          "label": "『텔로미어의 과학과 노화』",
+          "normalized_label": "『텔로미어의 과학과 노화』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "『텔로미어의 과학과 노화』"
             }
           ]
         }

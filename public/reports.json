@@ -1,5 +1,21 @@
 [
   {
+    "date": "2026-11-05",
+    "title": "노화 생물학: 텔로미어와 세포 노화가 건강에 미치는 영향",
+    "subtitle": "텔로미어의 역할과 세포 노화 메커니즘이 인체 건강과 노화질환에 미치는 영향 탐구",
+    "main_category": "생명·건강",
+    "mid_category": "의학",
+    "sub_category": "노화 연구",
+    "detail_category": "텔로미어와 노화 관련 질환",
+    "taxonomy_version": "2.0",
+    "html_path": "outputs/20261105_aging_biology_telomere_c_Report.html",
+    "pdf_path": "outputs/20261105_aging_biology_telomere_c_Report.pdf",
+    "status": "published_api",
+    "html_url": "outputs/20261105_aging_biology_telomere_c_Report.html",
+    "pdf_url": "outputs/20261105_aging_biology_telomere_c_Report.pdf",
+    "report_id": "rpt-20261105-aging-biology-telomere-c"
+  },
+  {
     "date": "2026-11-04",
     "title": "스마트 그리드의 발전과 에너지 효율성: 미래 전력망의 설계",
     "subtitle": "디지털 기술과 에너지 관리 시스템을 통한 차세대 전력망 혁신",

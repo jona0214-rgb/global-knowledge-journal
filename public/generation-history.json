@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-11-05",
+    "title": "노화 생물학: 텔로미어와 세포 노화가 건강에 미치는 영향",
+    "status": "published_api",
+    "event_name": "workflow_dispatch",
+    "schedule_cron": "",
+    "scheduled_for_kst": null,
+    "workflow_started_at": "2026-11-10T15:21:24Z",
+    "generation_started_at": "2026-11-10T15:21:56.859651Z",
+    "generation_completed_at": "2026-11-10T15:22:44.876213Z",
+    "catalog_updated_at": "2026-11-10T15:22:46.171325Z",
+    "scheduler_delay_seconds": null,
+    "setup_duration_seconds": 33,
+    "generation_duration_seconds": 49,
+    "validation_attempts": 1,
+    "run_id": "42843447274",
+    "run_attempt": "1",
+    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/42843447274",
+    "source_sha": "55233b86b90b8929d98de7efe408370610f4f6b5"
+  },
+  {
     "date": "2026-11-04",
     "title": "스마트 그리드의 발전과 에너지 효율성: 미래 전력망의 설계",
     "status": "published_api",
@@ -723,25 +743,5 @@
     "publication_schedule_cron": "45 21 * * *",
     "publication_run_id": "37554992137",
     "publication_run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/37554992137"
-  },
-  {
-    "date": "2026-10-06",
-    "title": "줄기세포 연구의 진화: 재생 의학은 어떻게 신체 치유의 미래를 바꾸고 있나",
-    "status": "published_api",
-    "event_name": "schedule",
-    "schedule_cron": "0 20 * * *",
-    "scheduled_for_kst": "2026-10-06T05:00:00+09:00",
-    "workflow_started_at": "2026-10-06T01:15:14Z",
-    "generation_started_at": "2026-10-06T01:15:45.195797Z",
-    "generation_completed_at": "2026-10-06T01:16:39.683141Z",
-    "catalog_updated_at": "2026-10-06T01:16:40.693921Z",
-    "scheduler_delay_seconds": 18914,
-    "setup_duration_seconds": 31,
-    "generation_duration_seconds": 55,
-    "validation_attempts": 1,
-    "run_id": "37398209833",
-    "run_attempt": "1",
-    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/37398209833",
-    "source_sha": "ef5ab6c35fe0eae4e33b0c6a9a2f8fe173d6eba4"
   }
 ]

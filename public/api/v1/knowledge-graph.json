@@ -2,12 +2,12 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-11-04T05:48:27.910663+09:00",
+  "generated_at": "2026-11-11T00:22:46.169090+09:00",
   "stats": {
     "categories": 10,
-    "reports": 81,
-    "nodes": 358,
-    "edges": 464,
+    "reports": 82,
+    "nodes": 362,
+    "edges": 468,
     "concepts": 28,
     "concept_edges": 144,
     "semantic_edges": 0
@@ -1007,6 +1007,13 @@
       "main_category": "예술·디자인"
     },
     {
+      "id": "detail:d8044d51c659c522",
+      "type": "detail",
+      "label": "텔로미어와 노화 관련 질환",
+      "level": 3,
+      "main_category": "생명·건강"
+    },
+    {
       "id": "detail:dc0300e1abd565e5",
       "type": "detail",
       "label": "한국 및 해외 사례를 통한 주민참여 활성화",
@@ -1243,6 +1250,13 @@
       "label": "음악",
       "level": 1,
       "main_category": "예술·디자인"
+    },
+    {
+      "id": "middle:5696b57aed16530f",
+      "type": "middle",
+      "label": "의학",
+      "level": 1,
+      "main_category": "생명·건강"
     },
     {
       "id": "middle:5eef111a7fc8d608",
@@ -2993,6 +3007,23 @@
       "pdf_url": "outputs/20261104_smart_grid_energy_effici_Report.pdf"
     },
     {
+      "id": "report:rpt-20261105-aging-biology-telomere-c",
+      "type": "report",
+      "label": "노화 생물학: 텔로미어와 세포 노화가 건강에 미치는 영향",
+      "level": 4,
+      "report_id": "rpt-20261105-aging-biology-telomere-c",
+      "date": "2026-11-05",
+      "main_category": "생명·건강",
+      "category_path": [
+        "생명·건강",
+        "의학",
+        "노화 연구",
+        "텔로미어와 노화 관련 질환"
+      ],
+      "html_url": "outputs/20261105_aging_biology_telomere_c_Report.html",
+      "pdf_url": "outputs/20261105_aging_biology_telomere_c_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -3180,6 +3211,13 @@
       "label": "빛 공해",
       "level": 2,
       "main_category": "자연·환경·지리"
+    },
+    {
+      "id": "sub:4ef3bea9887753e1",
+      "type": "sub",
+      "label": "노화 연구",
+      "level": 2,
+      "main_category": "생명·건강"
     },
     {
       "id": "sub:527073f8922e2c00",
@@ -3938,6 +3976,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:1bddd3ee6bcfe1c4",
+      "source": "middle:5696b57aed16530f",
+      "target": "sub:4ef3bea9887753e1",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:1c68e2ab68b20472",
       "source": "detail:c505075bb528cf21",
       "target": "report:rpt-20261013-labor-wages-productivity",
@@ -3962,6 +4007,13 @@
       "id": "edge:1f4d747bdf7b4aaa",
       "source": "middle:949307e3ea588e52",
       "target": "sub:637dd7b065713827",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:1fd514944ceaec15",
+      "source": "category:d1d9ae9d3e816c13",
+      "target": "middle:5696b57aed16530f",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -4244,6 +4296,13 @@
         }
       ],
       "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:32cb184528f823ef",
+      "source": "sub:4ef3bea9887753e1",
+      "target": "detail:d8044d51c659c522",
+      "kind": "hierarchy",
+      "relation_type": "contains"
     },
     {
       "id": "edge:3479525795ebe41a",
@@ -8171,6 +8230,13 @@
         }
       ],
       "provenance": "exact-normalized-tag"
+    },
+    {
+      "id": "edge:e5edd4c36b14512a",
+      "source": "detail:d8044d51c659c522",
+      "target": "report:rpt-20261105-aging-biology-telomere-c",
+      "kind": "hierarchy",
+      "relation_type": "contains"
     },
     {
       "id": "edge:e61211019b526e75",
