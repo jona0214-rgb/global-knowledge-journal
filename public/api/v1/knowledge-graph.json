@@ -2,12 +2,12 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-11-11T06:06:12.648552+09:00",
+  "generated_at": "2026-11-11T08:22:07.651684+09:00",
   "stats": {
     "categories": 10,
-    "reports": 83,
-    "nodes": 366,
-    "edges": 472,
+    "reports": 84,
+    "nodes": 370,
+    "edges": 476,
     "concepts": 28,
     "concept_edges": 144,
     "semantic_edges": 0
@@ -159,6 +159,7 @@
         "경제·경영",
         "사회·정치·법",
         "언어·미디어·지식",
+        "역사·문화",
         "인문·철학"
       ],
       "provenance": "curated-pattern-rule"
@@ -1041,6 +1042,13 @@
       "main_category": "예술·디자인"
     },
     {
+      "id": "detail:e67fb9ac43388980",
+      "type": "detail",
+      "label": "고대 도시 시장의 역사와 경제 사회적 역할",
+      "level": 3,
+      "main_category": "역사·문화"
+    },
+    {
       "id": "detail:e6bedc0c9d539543",
       "type": "detail",
       "label": "마인드풀니스 기반 치료 효과 연구",
@@ -1221,6 +1229,13 @@
       "label": "사전학",
       "level": 1,
       "main_category": "언어·미디어·지식"
+    },
+    {
+      "id": "middle:35d856c80ad57a53",
+      "type": "middle",
+      "label": "교역과 생활문화",
+      "level": 1,
+      "main_category": "역사·문화"
     },
     {
       "id": "middle:3662778fc59a58eb",
@@ -3054,6 +3069,23 @@
       "pdf_url": "outputs/20261109_wetland_ecosystem_import_Report.pdf"
     },
     {
+      "id": "report:rpt-20261110-ancient-city-markets-and",
+      "type": "report",
+      "label": "고대 도시의 시장과 상업문화",
+      "level": 4,
+      "report_id": "rpt-20261110-ancient-city-markets-and",
+      "date": "2026-11-10",
+      "main_category": "역사·문화",
+      "category_path": [
+        "역사·문화",
+        "교역과 생활문화",
+        "시장문화",
+        "고대 도시 시장의 역사와 경제 사회적 역할"
+      ],
+      "html_url": "outputs/20261110_ancient_city_markets_and_Report.html",
+      "pdf_url": "outputs/20261110_ancient_city_markets_and_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -3411,6 +3443,13 @@
       "main_category": "역사·문화"
     },
     {
+      "id": "sub:8adb38d52f73ad51",
+      "type": "sub",
+      "label": "시장문화",
+      "level": 2,
+      "main_category": "역사·문화"
+    },
+    {
       "id": "sub:9126256f16bb64f1",
       "type": "sub",
       "label": "종교 사회학",
@@ -3751,6 +3790,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:08e07cdde0c65a65",
+      "source": "category:cb829c377357dd71",
+      "target": "middle:35d856c80ad57a53",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:099601decb4d1f7c",
       "source": "report:rpt-20261019-jeontong-eumak-bojongwa",
       "target": "concept:con-79fcdfdd9a5c2871",
@@ -3764,6 +3810,13 @@
         }
       ],
       "provenance": "exact-normalized-tag"
+    },
+    {
+      "id": "edge:0a1399d34bb47f1b",
+      "source": "sub:8adb38d52f73ad51",
+      "target": "detail:e67fb9ac43388980",
+      "kind": "hierarchy",
+      "relation_type": "contains"
     },
     {
       "id": "edge:0a28c8f79080ba3e",
@@ -3790,6 +3843,13 @@
       "id": "edge:0b4c09cfbe00c1da",
       "source": "detail:71bf12bf65767030",
       "target": "report:rpt-20260927-soil-ecosystem-support",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:0cf5d20d311a0c8d",
+      "source": "middle:35d856c80ad57a53",
+      "target": "sub:8adb38d52f73ad51",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -4577,6 +4637,29 @@
       "target": "sub:bb178df4ff69a2ff",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:43de2f572c1adc81",
+      "source": "report:rpt-20261110-ancient-city-markets-and",
+      "target": "concept:con-39820d616e59b701",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.9,
+      "evidence": [
+        {
+          "reference": "term_box.items[3].description",
+          "matched_text": "공정성"
+        },
+        {
+          "reference": "sections[4].body[0]",
+          "matched_text": "공정성"
+        },
+        {
+          "reference": "sections[6].body[0]",
+          "matched_text": "공정성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:444500bdad6a626a",
@@ -6197,6 +6280,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:8b39a6c3e9cc8ed7",
+      "source": "detail:e67fb9ac43388980",
+      "target": "report:rpt-20261110-ancient-city-markets-and",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:8bef91489f114c59",
       "source": "report:rpt-20261101-social-structure-change",
       "target": "concept:con-22940219024d252e",
@@ -6679,25 +6769,6 @@
       "target": "report:rpt-20260924-entropy-world-why-disord",
       "kind": "hierarchy",
       "relation_type": "contains"
-    },
-    {
-      "id": "edge:9e78049c4cb029d1",
-      "source": "report:rpt-20261031-ethical-consumption-indi",
-      "target": "concept:con-39820d616e59b701",
-      "kind": "concept",
-      "relation_type": "has_concept",
-      "score": 0.8,
-      "evidence": [
-        {
-          "reference": "sections[0].body[0]",
-          "matched_text": "공정성"
-        },
-        {
-          "reference": "sections[10].body[2]",
-          "matched_text": "공정성"
-        }
-      ],
-      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:9ec4c61397f9d2b9",

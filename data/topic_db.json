@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-11-09",
+  "updated_at": "2026-11-10",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -1865,6 +1865,29 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261109_wetland_ecosystem_import_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261109_wetland_ecosystem_import_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "report_id": "rpt-20261110-ancient-city-markets-and-commerce",
+      "date": "2026-11-10",
+      "title": "고대 도시의 시장과 상업문화",
+      "main_category": "역사·문화",
+      "mid_category": "교역과 생활문화",
+      "sub_category": "시장문화",
+      "detail_category": "고대 도시 시장의 역사와 경제 사회적 역할",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "고대 도시",
+        "시장문화",
+        "상업 네트워크",
+        "경제사",
+        "사회 구조",
+        "교역",
+        "생활문화",
+        "고대 상업"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261110_ancient_city_markets_and_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261110_ancient_city_markets_and_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -1881,9 +1904,9 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "자연·환경·지리",
-    "next_main_category": "역사·문화",
-    "next_index": 7,
+    "last_main_category": "역사·문화",
+    "next_main_category": "예술·디자인",
+    "next_index": 8,
     "completed_cycles": 8,
     "published_counts": {
       "인문·철학": 9,
@@ -1893,12 +1916,11 @@
       "기술·공학": 9,
       "생명·건강": 8,
       "자연·환경·지리": 8,
-      "역사·문화": 9,
+      "역사·문화": 10,
       "예술·디자인": 8,
       "언어·미디어·지식": 9
     },
     "recent_main_categories": [
-      "역사·문화",
       "예술·디자인",
       "언어·미디어·지식",
       "인문·철학",
@@ -1907,7 +1929,8 @@
       "과학·수학",
       "기술·공학",
       "생명·건강",
-      "자연·환경·지리"
+      "자연·환경·지리",
+      "역사·문화"
     ]
   },
   "candidate_pool": [
@@ -2748,7 +2771,7 @@
       "sub_category": "시장문화",
       "detail_category": "고대 도시 시장의 역사와 경제 사회적 역할",
       "priority": 1.0,
-      "status": "candidate",
+      "status": "used",
       "source": "api_generated"
     },
     {

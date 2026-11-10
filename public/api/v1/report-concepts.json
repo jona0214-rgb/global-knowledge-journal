@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-11-11T06:06:12.648552+09:00",
+  "generated_at": "2026-11-11T08:22:07.651684+09:00",
   "stats": {
-    "reports": 83,
-    "tags": 3093,
+    "reports": 84,
+    "tags": 3132,
     "shared_concepts": 28,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -45453,6 +45453,574 @@
           ]
         }
       ]
+    },
+    {
+      "report_id": "rpt-20261110-ancient-city-markets-and",
+      "date": "2026-11-10",
+      "title": "고대 도시의 시장과 상업문화",
+      "main_category": "역사·문화",
+      "tags": [
+        {
+          "tag_id": "tag-186c5427eef86624",
+          "label": "경제사",
+          "normalized_label": "경제사",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "경제사"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d496426a5afe3cef",
+          "label": "고대 도시",
+          "normalized_label": "고대 도시",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "고대 도시"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e15b408a3ea38a94",
+          "label": "고대 상업",
+          "normalized_label": "고대 상업",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "고대 상업"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1fa211ebf30299b9",
+          "label": "교역",
+          "normalized_label": "교역",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "교역"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-705d1903895d5468",
+          "label": "사회 구조",
+          "normalized_label": "사회 구조",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "사회 구조"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-51189f7ad12c2378",
+          "label": "생활문화",
+          "normalized_label": "생활문화",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "생활문화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-cf47280c8bbfbdc6",
+          "label": "시장문화",
+          "normalized_label": "시장문화",
+          "type": "institution",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "시장문화"
+            },
+            {
+              "reference": "category.sub",
+              "matched_text": "시장문화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fdd5b53c66ee1c50",
+          "label": "상업 네트워크",
+          "normalized_label": "상업 네트워크",
+          "type": "technology",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "상업 네트워크"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0def36e7dbf843b0",
+          "label": "상업문화",
+          "normalized_label": "상업문화",
+          "type": "institution",
+          "weight": 0.98,
+          "aliases": [
+            "Commerce Culture"
+          ],
+          "evidence": [
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "상업문화(Commerce Culture)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-93b4ec4c2631002a",
+          "label": "시장",
+          "normalized_label": "시장",
+          "type": "institution",
+          "weight": 0.98,
+          "aliases": [
+            "Market"
+          ],
+          "evidence": [
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "시장(Market)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-cfe94272327c52c6",
+          "label": "시장 규범",
+          "normalized_label": "시장 규범",
+          "type": "outcome",
+          "weight": 0.98,
+          "aliases": [
+            "Market Norms"
+          ],
+          "evidence": [
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "시장 규범(Market Norms)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-cf691fd9c65e119b",
+          "label": "교역 네트워크",
+          "normalized_label": "교역 네트워크",
+          "type": "technology",
+          "weight": 0.98,
+          "aliases": [
+            "Trade Network"
+          ],
+          "evidence": [
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "교역 네트워크(Trade Network)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-91e3d82991aaff77",
+          "label": "교역과 생활문화",
+          "normalized_label": "교역과 생활문화",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "교역과 생활문화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-85d63276e4c51fce",
+          "label": "고대 도시 시장의 역사와 경제 사회적 역할",
+          "normalized_label": "고대 도시 시장의 역사와 경제 사회적 역할",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "고대 도시 시장의 역사와 경제 사회적 역할"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5bf642dec42a66f9",
+          "label": "마이클 E. 스미스",
+          "normalized_label": "마이클 E. 스미스",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [
+            "고고학자"
+          ],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "마이클 E. 스미스(고고학자)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-11bcde5a396f5069",
+          "label": "규범과 관리 체계",
+          "normalized_label": "규범과 관리 체계",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "규범과 관리 체계"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-80d0c2148fc01d22",
+          "label": "사회문화적 영향",
+          "normalized_label": "사회문화적 영향",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "사회문화적 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-75df37a5654c1070",
+          "label": "시장 구조와 운영",
+          "normalized_label": "시장 구조와 운영",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "시장 구조와 운영"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3c6ac97719a7fb5d",
+          "label": "시장 기원과 발전",
+          "normalized_label": "시장 기원과 발전",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "시장 기원과 발전"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5e48ad0e44ed44f8",
+          "label": "현대적 쟁점과 미래 전망",
+          "normalized_label": "현대적 쟁점과 미래 전망",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "현대적 쟁점과 미래 전망"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fe3173a7eaf25788",
+          "label": "고대 도시 시장과 상업문화의 기본 개념",
+          "normalized_label": "고대 도시 시장과 상업문화의 기본 개념",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "고대 도시 시장과 상업문화의 기본 개념"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1e2b7345e8185add",
+          "label": "고대 도시 시장의 역사적 배경과 현대적 재조명",
+          "normalized_label": "고대 도시 시장의 역사적 배경과 현대적 재조명",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "고대 도시 시장의 역사적 배경과 현대적 재조명"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-71204bb89468bb62",
+          "label": "고대 도시 시장의 역사적 출발점",
+          "normalized_label": "고대 도시 시장의 역사적 출발점",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "고대 도시 시장의 역사적 출발점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3802c6a69b072443",
+          "label": "고대 도시 시장의 핵심 원리와 연구 방향",
+          "normalized_label": "고대 도시 시장의 핵심 원리와 연구 방향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "고대 도시 시장의 핵심 원리와 연구 방향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8d50cb7d0d340b14",
+          "label": "고대 시장 연구가 현대 사회와 문화에 주는 시사점",
+          "normalized_label": "고대 시장 연구가 현대 사회와 문화에 주는 시사점",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "고대 시장 연구가 현대 사회와 문화에 주는 시사점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d9903a12bc880d0f",
+          "label": "메소포타미아의 우르 시장: 초기 도시 상업의 중심지",
+          "normalized_label": "메소포타미아의 우르 시장: 초기 도시 상업의 중심지",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "메소포타미아의 우르 시장: 초기 도시 상업의 중심지"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ac21bb75f8643e24",
+          "label": "시장 구조와 상업 운영의 변화",
+          "normalized_label": "시장 구조와 상업 운영의 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "시장 구조와 상업 운영의 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7f435d84559272bc",
+          "label": "시장과 고대 사회·문화의 상호작용",
+          "normalized_label": "시장과 고대 사회·문화의 상호작용",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "시장과 고대 사회·문화의 상호작용"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4fe56eee8f9062db",
+          "label": "시장의 규범과 관리 방식의 변화",
+          "normalized_label": "시장의 규범과 관리 방식의 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "시장의 규범과 관리 방식의 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0a4f06f1ee84e878",
+          "label": "현대 고고학과 사회학에서 보는 고대 시장 연구 동향",
+          "normalized_label": "현대 고고학과 사회학에서 보는 고대 시장 연구 동향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "현대 고고학과 사회학에서 보는 고대 시장 연구 동향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8433554fb8e6016f",
+          "label": "현대적 쟁점과 고대 시장 연구의 미래",
+          "normalized_label": "현대적 쟁점과 고대 시장 연구의 미래",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[7].title",
+              "matched_text": "현대적 쟁점과 고대 시장 연구의 미래"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a37167743e2b7bb3",
+          "label": "The Archaeology of Ancient Mesopotamia",
+          "normalized_label": "The Archaeology of Ancient Mesopotamia",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "The Archaeology of Ancient Mesopotamia"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2f77f4ac3d864ffd",
+          "label": "고대 도시 시장의 주요 특징 비교",
+          "normalized_label": "고대 도시 시장의 주요 특징 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 고대 도시 시장의 주요 특징 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4d61751f71b811bc",
+          "label": "고대 시장 연구의 현대 쟁점",
+          "normalized_label": "고대 시장 연구의 현대 쟁점",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 고대 시장 연구의 현대 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f4bd420e9d6b1ead",
+          "label": "관련 도서·탐구 키워드·확장 주제",
+          "normalized_label": "관련 도서·탐구 키워드·확장 주제",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 관련 도서·탐구 키워드·확장 주제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-bba193430406d6b9",
+          "label": "우르 시장 사례의 특징",
+          "normalized_label": "우르 시장 사례의 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 우르 시장 사례의 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0868b03de08b549b",
+          "label": "**『고대 도시와 상업문화』**",
+          "normalized_label": "**『고대 도시와 상업문화』**",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "**『고대 도시와 상업문화』**"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c9e7de67b80a9981",
+          "label": "**『고대 메소포타미아 상업 네트워크』**",
+          "normalized_label": "**『고대 메소포타미아 상업 네트워크』**",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "**『고대 메소포타미아 상업 네트워크』**"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d975840d2b51e361",
+          "label": "**『상업과 사회: 고대의 경제사』**",
+          "normalized_label": "**『상업과 사회: 고대의 경제사』**",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "**『상업과 사회: 고대의 경제사』**"
+            }
+          ]
+        }
+      ]
     }
   ],
   "shared_concepts": [
@@ -45467,6 +46035,7 @@
         "경제·경영",
         "사회·정치·법",
         "언어·미디어·지식",
+        "역사·문화",
         "인문·철학"
       ],
       "reports": [
@@ -45657,24 +46226,28 @@
           ]
         },
         {
-          "report_id": "rpt-20261031-ethical-consumption-indi",
-          "evidence": [
-            {
-              "reference": "sections[0].body[0]",
-              "matched_text": "공정성"
-            },
-            {
-              "reference": "sections[10].body[2]",
-              "matched_text": "공정성"
-            }
-          ]
-        },
-        {
           "report_id": "rpt-20261101-social-structure-change",
           "evidence": [
             {
               "reference": "term_box.items[3].description",
               "matched_text": "사회적 위험"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261110-ancient-city-markets-and",
+          "evidence": [
+            {
+              "reference": "term_box.items[3].description",
+              "matched_text": "공정성"
+            },
+            {
+              "reference": "sections[4].body[0]",
+              "matched_text": "공정성"
+            },
+            {
+              "reference": "sections[6].body[0]",
+              "matched_text": "공정성"
             }
           ]
         }

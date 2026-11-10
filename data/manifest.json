@@ -1,6 +1,22 @@
 {
-  "last_updated": "2026-11-11T06:06:12.648552+09:00",
+  "last_updated": "2026-11-11T08:22:07.651684+09:00",
   "reports": [
+    {
+      "date": "2026-11-10",
+      "title": "고대 도시의 시장과 상업문화",
+      "subtitle": "고대 도시 시장의 역사와 경제적·사회적 역할을 중심으로",
+      "main_category": "역사·문화",
+      "mid_category": "교역과 생활문화",
+      "sub_category": "시장문화",
+      "detail_category": "고대 도시 시장의 역사와 경제 사회적 역할",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20261110_ancient_city_markets_and_Report.html",
+      "pdf_path": "outputs/20261110_ancient_city_markets_and_Report.pdf",
+      "status": "published_api",
+      "html_url": "outputs/20261110_ancient_city_markets_and_Report.html",
+      "pdf_url": "outputs/20261110_ancient_city_markets_and_Report.pdf",
+      "report_id": "rpt-20261110-ancient-city-markets-and"
+    },
     {
       "date": "2026-11-09",
       "title": "습지 생태계의 중요성과 보전 전략: 인간과 자연이 공존하는 공간",
