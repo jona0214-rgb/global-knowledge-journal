@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-11-11T08:22:07.651684+09:00",
+  "generated_at": "2026-11-12T06:35:36.789212+09:00",
   "stats": {
-    "reports": 84,
-    "tags": 3132,
+    "reports": 85,
+    "tags": 3171,
     "shared_concepts": 28,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -46017,6 +46017,572 @@
             {
               "reference": "further_reading[1].title",
               "matched_text": "**『상업과 사회: 고대의 경제사』**"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "report_id": "rpt-20261111-digital-art-evolution-ho",
+      "date": "2026-11-11",
+      "title": "디지털 아트의 진화: 기술은 현대 미술을 어떻게 재구성하는가",
+      "main_category": "예술·디자인",
+      "tags": [
+        {
+          "tag_id": "tag-ee4c60cbb98cb263",
+          "label": "가상 현실",
+          "normalized_label": "가상 현실",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "가상 현실"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-70449cbf646dabc4",
+          "label": "디지털 아트",
+          "normalized_label": "디지털 아트",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "디지털 아트"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "디지털 아트"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e4a0b0906d13d79a",
+          "label": "디지털 표현",
+          "normalized_label": "디지털 표현",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "디지털 표현"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2b704a8c2c8f4b35",
+          "label": "미디어 아트",
+          "normalized_label": "미디어 아트",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "미디어 아트"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b69d901cda8860b9",
+          "label": "인공지능 미술",
+          "normalized_label": "인공지능 미술",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "인공지능 미술"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a8ac0db2b049c829",
+          "label": "인터랙티브 아트",
+          "normalized_label": "인터랙티브 아트",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "인터랙티브 아트"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "인터랙티브 아트"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-98ee6a238a85c1ba",
+          "label": "현대 미술",
+          "normalized_label": "현대 미술",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "현대 미술"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-be39be101e12f6a6",
+          "label": "기술 혁신",
+          "normalized_label": "기술 혁신",
+          "type": "technology",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "기술 혁신"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8ee478b069f5f8b6",
+          "label": "NFT",
+          "normalized_label": "NFT",
+          "type": "technology",
+          "weight": 0.98,
+          "aliases": [
+            "대체 불가능 토큰"
+          ],
+          "evidence": [
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "NFT(대체 불가능 토큰)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-305d14c3971729bd",
+          "label": "가상현실",
+          "normalized_label": "가상현실",
+          "type": "technology",
+          "weight": 0.98,
+          "aliases": [
+            "VR"
+          ],
+          "evidence": [
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "가상현실(VR)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-782b288cceed3c79",
+          "label": "미술",
+          "normalized_label": "미술",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "미술"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ed7afd6e4844a3b4",
+          "label": "현대미술",
+          "normalized_label": "현대미술",
+          "type": "domain",
+          "weight": 0.93,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.sub",
+              "matched_text": "현대미술"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6ff8b388cf33be28",
+          "label": "디지털 미디어 아트",
+          "normalized_label": "디지털 미디어 아트",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "디지털 미디어 아트"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7e4f8e781d7bd186",
+          "label": "NICOLAS BOURRIAUD",
+          "normalized_label": "NICOLAS BOURRIAUD",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "NICOLAS BOURRIAUD, 미술평론가"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c6c0f4de05e95e0c",
+          "label": "가상현실과 증강현실 융합",
+          "normalized_label": "가상현실과 증강현실 융합",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "가상현실과 증강현실 융합"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3c62f9bd6ca13350",
+          "label": "네트워크와 인터랙티브 기술 도입",
+          "normalized_label": "네트워크와 인터랙티브 기술 도입",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "네트워크와 인터랙티브 기술 도입"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-045446b1170dd03b",
+          "label": "블록체인과 NFT 활용",
+          "normalized_label": "블록체인과 NFT 활용",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "블록체인과 NFT 활용"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-80f6e3138dce0659",
+          "label": "인공지능 기반 생성예술",
+          "normalized_label": "인공지능 기반 생성예술",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "인공지능 기반 생성예술"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-21be4d37111ffa85",
+          "label": "초기 컴퓨터 그래픽과 실험",
+          "normalized_label": "초기 컴퓨터 그래픽과 실험",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "초기 컴퓨터 그래픽과 실험"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a4b1a56402eb10b7",
+          "label": "디지털 아트 진화의 핵심 원리와 쟁점",
+          "normalized_label": "디지털 아트 진화의 핵심 원리와 쟁점",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "디지털 아트 진화의 핵심 원리와 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-83df5d7eaf6557fd",
+          "label": "디지털 아트: 왜 지금 주목받는가",
+          "normalized_label": "디지털 아트: 왜 지금 주목받는가",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "디지털 아트: 왜 지금 주목받는가"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-39e09628d3b82a4d",
+          "label": "디지털 아트가 개인과 사회에 주는 의미",
+          "normalized_label": "디지털 아트가 개인과 사회에 주는 의미",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "디지털 아트가 개인과 사회에 주는 의미"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7b824a06dd313dd3",
+          "label": "디지털 아트가 사회문화에 미친 영향",
+          "normalized_label": "디지털 아트가 사회문화에 미친 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "디지털 아트가 사회문화에 미친 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0f20d732f43b6f30",
+          "label": "디지털 아트를 이해하는 기본 개념",
+          "normalized_label": "디지털 아트를 이해하는 기본 개념",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "디지털 아트를 이해하는 기본 개념"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6167bebdd2482904",
+          "label": "디지털 아트의 규칙과 평가 기준의 변화",
+          "normalized_label": "디지털 아트의 규칙과 평가 기준의 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "디지털 아트의 규칙과 평가 기준의 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7482ae8aae0dab8b",
+          "label": "디지털 아트의 기술 구조와 작동 원리",
+          "normalized_label": "디지털 아트의 기술 구조와 작동 원리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "디지털 아트의 기술 구조와 작동 원리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2884388ef4ac2ac1",
+          "label": "디지털 아트의 역사적 출발점",
+          "normalized_label": "디지털 아트의 역사적 출발점",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "디지털 아트의 역사적 출발점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-86fdeaf2ce50b221",
+          "label": "디지털 아트의 현재 모습과 발전 방향",
+          "normalized_label": "디지털 아트의 현재 모습과 발전 방향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "디지털 아트의 현재 모습과 발전 방향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-61efcfe8bb35c65a",
+          "label": "팀 허튼(Tim Hawkinson)의 인터랙티브 디지털 아트",
+          "normalized_label": "팀 허튼(Tim Hawkinson)의 인터랙티브 디지털 아트",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "팀 허튼(Tim Hawkinson)의 인터랙티브 디지털 아트"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b98e2c37deb78963",
+          "label": "현재 쟁점과 디지털 아트의 미래 과제",
+          "normalized_label": "현재 쟁점과 디지털 아트의 미래 과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[7].title",
+              "matched_text": "현재 쟁점과 디지털 아트의 미래 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2ea905899bc0f53e",
+          "label": "Post-Digital Art",
+          "normalized_label": "Post-Digital Art",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "Post-Digital Art"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b2f62a647afaf5e1",
+          "label": "디지털 아트 관련 도서, 탐구 키워드, 확장 주제",
+          "normalized_label": "디지털 아트 관련 도서, 탐구 키워드, 확장 주제",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 디지털 아트 관련 도서, 탐구 키워드, 확장 주제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-15f62da418179f9b",
+          "label": "디지털 아트의 현재 쟁점 비교",
+          "normalized_label": "디지털 아트의 현재 쟁점 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 디지털 아트의 현재 쟁점 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4630b0a0cd0744d8",
+          "label": "전통 미술과 디지털 아트의 비교",
+          "normalized_label": "전통 미술과 디지털 아트의 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 전통 미술과 디지털 아트의 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1be73c850028f8be",
+          "label": "팀 허튼의 인터랙티브 작품 특징",
+          "normalized_label": "팀 허튼의 인터랙티브 작품 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 팀 허튼의 인터랙티브 작품 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d34a8b9447cff0c8",
+          "label": "NFT와 디지털 소유권",
+          "normalized_label": "NFT와 디지털 소유권",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[3].title",
+              "matched_text": "NFT와 디지털 소유권"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-73bd38ef15c53cae",
+          "label": "『디지털 미술의 이해』",
+          "normalized_label": "『디지털 미술의 이해』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "『디지털 미술의 이해』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-27781e088661d97f",
+          "label": "『인터랙티브 아트와 커뮤니케이션』",
+          "normalized_label": "『인터랙티브 아트와 커뮤니케이션』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "『인터랙티브 아트와 커뮤니케이션』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-06e2394acb188557",
+          "label": "인공지능 예술 연구",
+          "normalized_label": "인공지능 예술 연구",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "인공지능 예술 연구"
             }
           ]
         }

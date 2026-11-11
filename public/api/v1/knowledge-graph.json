@@ -2,12 +2,12 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-11-11T08:22:07.651684+09:00",
+  "generated_at": "2026-11-12T06:35:36.789212+09:00",
   "stats": {
     "categories": 10,
-    "reports": 84,
-    "nodes": 370,
-    "edges": 476,
+    "reports": 85,
+    "nodes": 374,
+    "edges": 480,
     "concepts": 28,
     "concept_edges": 144,
     "semantic_edges": 0
@@ -951,6 +951,13 @@
       "main_category": "역사·문화"
     },
     {
+      "id": "detail:ad03a9832b18dafb",
+      "type": "detail",
+      "label": "디지털 미디어 아트",
+      "level": 3,
+      "main_category": "예술·디자인"
+    },
+    {
       "id": "detail:bd0dd1da7f7d5123",
       "type": "detail",
       "label": "실크로드를 통한 일상용품과 문화의 교환",
@@ -1642,6 +1649,13 @@
       "label": "생물지리",
       "level": 1,
       "main_category": "자연·환경·지리"
+    },
+    {
+      "id": "middle:f754f9cd4e48419e",
+      "type": "middle",
+      "label": "미술",
+      "level": 1,
+      "main_category": "예술·디자인"
     },
     {
       "id": "middle:f916666c3b9a7ed8",
@@ -3086,6 +3100,23 @@
       "pdf_url": "outputs/20261110_ancient_city_markets_and_Report.pdf"
     },
     {
+      "id": "report:rpt-20261111-digital-art-evolution-ho",
+      "type": "report",
+      "label": "디지털 아트의 진화: 기술은 현대 미술을 어떻게 재구성하는가",
+      "level": 4,
+      "report_id": "rpt-20261111-digital-art-evolution-ho",
+      "date": "2026-11-11",
+      "main_category": "예술·디자인",
+      "category_path": [
+        "예술·디자인",
+        "미술",
+        "현대미술",
+        "디지털 미디어 아트"
+      ],
+      "html_url": "outputs/20261111_digital_art_evolution_ho_Report.html",
+      "pdf_url": "outputs/20261111_digital_art_evolution_ho_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -3168,6 +3199,13 @@
       "label": "수 개념의 발전",
       "level": 2,
       "main_category": "과학·수학"
+    },
+    {
+      "id": "sub:232c98e83a431504",
+      "type": "sub",
+      "label": "현대미술",
+      "level": 2,
+      "main_category": "예술·디자인"
     },
     {
       "id": "sub:243458d67f798959",
@@ -3897,6 +3935,13 @@
       "provenance": "exact-normalized-tag"
     },
     {
+      "id": "edge:0f2012404d828dae",
+      "source": "sub:232c98e83a431504",
+      "target": "detail:ad03a9832b18dafb",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:0fd39b79a007dde9",
       "source": "category:d1d9ae9d3e816c13",
       "target": "middle:e9259388404aa6fc",
@@ -4188,6 +4233,13 @@
       "id": "edge:269877dfd4e72466",
       "source": "detail:2ed24e4ba7fb0be3",
       "target": "report:rpt-20260918-history-of-calendars-how",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:26a9e31dd04372f0",
+      "source": "detail:ad03a9832b18dafb",
+      "target": "report:rpt-20261111-digital-art-evolution-ho",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -4512,6 +4564,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:37c0616d69393daa",
+      "source": "category:758a7b1ee4fe67cf",
+      "target": "middle:f754f9cd4e48419e",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:3827d3d4ff043c3d",
       "source": "middle:0c14059a47957c6e",
       "target": "sub:e277562a60432994",
@@ -4713,6 +4772,13 @@
       "id": "edge:464607457f07b839",
       "source": "sub:d8ece351df04595a",
       "target": "detail:84177918c401892e",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:46a697bd13bf8f9e",
+      "source": "middle:f754f9cd4e48419e",
+      "target": "sub:232c98e83a431504",
       "kind": "hierarchy",
       "relation_type": "contains"
     },

@@ -1,16 +1,16 @@
 {
-  "date": "2026-11-10",
-  "title": "고대 도시의 시장과 상업문화",
-  "subtitle": "고대 도시 시장의 역사와 경제적·사회적 역할을 중심으로",
-  "main_category": "역사·문화",
-  "mid_category": "교역과 생활문화",
-  "sub_category": "시장문화",
-  "detail_category": "고대 도시 시장의 역사와 경제 사회적 역할",
+  "date": "2026-11-11",
+  "title": "디지털 아트의 진화: 기술은 현대 미술을 어떻게 재구성하는가",
+  "subtitle": "첨단 기술이 현대 미술의 형태와 의미를 어떻게 변화시키는가",
+  "main_category": "예술·디자인",
+  "mid_category": "미술",
+  "sub_category": "현대미술",
+  "detail_category": "디지털 미디어 아트",
   "taxonomy_version": "2.0",
-  "html_path": "outputs/20261110_ancient_city_markets_and_Report.html",
-  "pdf_path": "outputs/20261110_ancient_city_markets_and_Report.pdf",
+  "html_path": "outputs/20261111_digital_art_evolution_ho_Report.html",
+  "pdf_path": "outputs/20261111_digital_art_evolution_ho_Report.pdf",
   "status": "published_api",
-  "html_url": "outputs/20261110_ancient_city_markets_and_Report.html",
-  "pdf_url": "outputs/20261110_ancient_city_markets_and_Report.pdf",
-  "report_id": "rpt-20261110-ancient-city-markets-and"
+  "html_url": "outputs/20261111_digital_art_evolution_ho_Report.html",
+  "pdf_url": "outputs/20261111_digital_art_evolution_ho_Report.pdf",
+  "report_id": "rpt-20261111-digital-art-evolution-ho"
 }

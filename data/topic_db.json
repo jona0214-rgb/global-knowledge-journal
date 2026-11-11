@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-11-10",
+  "updated_at": "2026-11-11",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -1888,6 +1888,29 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261110_ancient_city_markets_and_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261110_ancient_city_markets_and_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "report_id": "rpt-20261111-digital-art-evolution-how-technology-restructure",
+      "date": "2026-11-11",
+      "title": "디지털 아트의 진화: 기술은 현대 미술을 어떻게 재구성하는가",
+      "main_category": "예술·디자인",
+      "mid_category": "미술",
+      "sub_category": "현대미술",
+      "detail_category": "디지털 미디어 아트",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "디지털 아트",
+        "현대 미술",
+        "기술 혁신",
+        "미디어 아트",
+        "인터랙티브 아트",
+        "가상 현실",
+        "인공지능 미술",
+        "디지털 표현"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261111_digital_art_evolution_ho_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261111_digital_art_evolution_ho_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -1904,9 +1927,9 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "역사·문화",
-    "next_main_category": "예술·디자인",
-    "next_index": 8,
+    "last_main_category": "예술·디자인",
+    "next_main_category": "언어·미디어·지식",
+    "next_index": 9,
     "completed_cycles": 8,
     "published_counts": {
       "인문·철학": 9,
@@ -1917,11 +1940,10 @@
       "생명·건강": 8,
       "자연·환경·지리": 8,
       "역사·문화": 10,
-      "예술·디자인": 8,
+      "예술·디자인": 9,
       "언어·미디어·지식": 9
     },
     "recent_main_categories": [
-      "예술·디자인",
       "언어·미디어·지식",
       "인문·철학",
       "사회·정치·법",
@@ -1930,7 +1952,8 @@
       "기술·공학",
       "생명·건강",
       "자연·환경·지리",
-      "역사·문화"
+      "역사·문화",
+      "예술·디자인"
     ]
   },
   "candidate_pool": [
@@ -2491,7 +2514,7 @@
       "sub_category": "현대미술",
       "detail_category": "디지털 미디어 아트",
       "priority": 1.0,
-      "status": "candidate",
+      "status": "used",
       "source": "api_generated"
     },
     {
