@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-11-12T09:44:42.205813+09:00",
+  "generated_at": "2026-11-13T06:38:54.015723+09:00",
   "stats": {
-    "reports": 86,
-    "tags": 3209,
+    "reports": 87,
+    "tags": 3246,
     "shared_concepts": 28,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -47131,6 +47131,552 @@
             {
               "reference": "further_reading[3].title",
               "matched_text": "음향 디자인과 공공 정책"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "report_id": "rpt-20261113-oriental-philosophy-noth",
+      "date": "2026-11-13",
+      "title": "동양 철학에서 ‘무(無)’ 개념의 존재론적 의미와 현대적 해석",
+      "main_category": "인문·철학",
+      "tags": [
+        {
+          "tag_id": "tag-bdefa6ec110fefd3",
+          "label": "공(空)",
+          "normalized_label": "공(空)",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "공(空)"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "공(空)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-790d08b9895ddc89",
+          "label": "동양철학",
+          "normalized_label": "동양철학",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "동양철학"
+            },
+            {
+              "reference": "category.sub",
+              "matched_text": "동양철학"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-10e0bf926afe93ed",
+          "label": "무(無)",
+          "normalized_label": "무(無)",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "무(無)"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "무(無)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0f174c0a8a71e531",
+          "label": "불교 철학",
+          "normalized_label": "불교 철학",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "불교 철학"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e30ee4d581d23cb3",
+          "label": "선(禪)",
+          "normalized_label": "선(禪)",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "선(禪)"
+            },
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "선(禪)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-06ce1fa46ed09447",
+          "label": "존재론",
+          "normalized_label": "존재론",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "존재론"
+            },
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "존재론"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-faf21c3a640224ff",
+          "label": "철학적 해석",
+          "normalized_label": "철학적 해석",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "철학적 해석"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9525559353add712",
+          "label": "현대 철학",
+          "normalized_label": "현대 철학",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "현대 철학"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4f160b6e2a4cf5a3",
+          "label": "철학",
+          "normalized_label": "철학",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "철학"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c3bc7995eb965dae",
+          "label": "무(無)의 철학적 탐구",
+          "normalized_label": "무(無)의 철학적 탐구",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "무(無)의 철학적 탐구"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fac2fa4f7d85dd86",
+          "label": "장자",
+          "normalized_label": "장자",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "장자"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-319e0b518768d876",
+          "label": "개념 구조 분석",
+          "normalized_label": "개념 구조 분석",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "개념 구조 분석"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-13cb6d72a06b40c5",
+          "label": "규범과 인식 변화",
+          "normalized_label": "규범과 인식 변화",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "규범과 인식 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-46f47332f01cfe70",
+          "label": "사회문화 영향 고찰",
+          "normalized_label": "사회문화 영향 고찰",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "사회문화 영향 고찰"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-491d6c6fd919d232",
+          "label": "역사적 기원 탐색",
+          "normalized_label": "역사적 기원 탐색",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "역사적 기원 탐색"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ec3231b81aba2a12",
+          "label": "현대 쟁점과 미래 과제",
+          "normalized_label": "현대 쟁점과 미래 과제",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "현대 쟁점과 미래 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-134b419e2fa0d090",
+          "label": "‘무(無)’ 개념의 철학적 배경과 오늘날의 중요성",
+          "normalized_label": "‘무(無)’ 개념의 철학적 배경과 오늘날의 중요성",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "‘무(無)’ 개념의 철학적 배경과 오늘날의 중요성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8a3372fff125e1e7",
+          "label": "‘무’ 개념이 개인과 사회, 문화에 주는 의미와 앞으로의 질문",
+          "normalized_label": "‘무’ 개념이 개인과 사회, 문화에 주는 의미와 앞으로의 질문",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "‘무’ 개념이 개인과 사회, 문화에 주는 의미와 앞으로의 질문"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b40cf7523474f943",
+          "label": "동양 철학 ‘무’ 개념 탐구의 핵심 질문과 구조적 접근",
+          "normalized_label": "동양 철학 ‘무’ 개념 탐구의 핵심 질문과 구조적 접근",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "동양 철학 ‘무’ 개념 탐구의 핵심 질문과 구조적 접근"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7fdeffc545de9b51",
+          "label": "무 개념의 인식론적 변화와 규범적 적용",
+          "normalized_label": "무 개념의 인식론적 변화와 규범적 적용",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "무 개념의 인식론적 변화와 규범적 적용"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4e8e51804c1019f6",
+          "label": "무(無) 개념의 기본 용어와 철학적 기초",
+          "normalized_label": "무(無) 개념의 기본 용어와 철학적 기초",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "무(無) 개념의 기본 용어와 철학적 기초"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7f2b6c0ebd1cbba4",
+          "label": "무의 구조와 작동 원리: 존재와 비존재의 경계",
+          "normalized_label": "무의 구조와 작동 원리: 존재와 비존재의 경계",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "무의 구조와 작동 원리: 존재와 비존재의 경계"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-98774a224bd6a3ab",
+          "label": "사회문화에 미친 영향: 무 개념의 생활철학과 미학",
+          "normalized_label": "사회문화에 미친 영향: 무 개념의 생활철학과 미학",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "사회문화에 미친 영향: 무 개념의 생활철학과 미학"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f56628ee64bc4f44",
+          "label": "역사적 출발점: 무(無) 개념의 기원과 도가 사상",
+          "normalized_label": "역사적 출발점: 무(無) 개념의 기원과 도가 사상",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "역사적 출발점: 무(無) 개념의 기원과 도가 사상"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3ea6f3f9ecbb3560",
+          "label": "장자 사상을 통한 무(無)의 존재론적 해석 사례",
+          "normalized_label": "장자 사상을 통한 무(無)의 존재론적 해석 사례",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "장자 사상을 통한 무(無)의 존재론적 해석 사례"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e91fa91ae724616c",
+          "label": "현대 철학과 사상에서 ‘무’ 개념의 동향과 쟁점",
+          "normalized_label": "현대 철학과 사상에서 ‘무’ 개념의 동향과 쟁점",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "현대 철학과 사상에서 ‘무’ 개념의 동향과 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-43089d0899f9db22",
+          "label": "현재 쟁점과 미래 과제: 동양 ‘무’의 현대적 의미",
+          "normalized_label": "현재 쟁점과 미래 과제: 동양 ‘무’의 현대적 의미",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[7].title",
+              "matched_text": "현재 쟁점과 미래 과제: 동양 ‘무’의 현대적 의미"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0b5f4a5dd0af9a2b",
+          "label": "장자와 무: 존재론적 고찰",
+          "normalized_label": "장자와 무: 존재론적 고찰",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "장자와 무: 존재론적 고찰"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-06885ce218b17aad",
+          "label": "동양 ‘무(無)’ 개념의 철학 탐구 관련 도서 및 주제",
+          "normalized_label": "동양 ‘무(無)’ 개념의 철학 탐구 관련 도서 및 주제",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 동양 ‘무(無)’ 개념의 철학 탐구 관련 도서 및 주제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b7ff19506e5416cb",
+          "label": "장자 사상에서 ‘무’의 존재론적 역할",
+          "normalized_label": "장자 사상에서 ‘무’의 존재론적 역할",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 장자 사상에서 ‘무’의 존재론적 역할"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-380e911bf083de84",
+          "label": "주요 동양 철학 사상가들의 ‘무’ 개념 비교",
+          "normalized_label": "주요 동양 철학 사상가들의 ‘무’ 개념 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 주요 동양 철학 사상가들의 ‘무’ 개념 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e9cc642feb72eca8",
+          "label": "현대 ‘무’ 개념 관련 주요 쟁점 정리",
+          "normalized_label": "현대 ‘무’ 개념 관련 주요 쟁점 정리",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 현대 ‘무’ 개념 관련 주요 쟁점 정리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1294eea7e7b7a031",
+          "label": "『공과 존재』",
+          "normalized_label": "『공과 존재』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[4].title",
+              "matched_text": "『공과 존재』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d95352df086904ce",
+          "label": "『도가사상과 무』",
+          "normalized_label": "『도가사상과 무』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "『도가사상과 무』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-46bdd6f30b8b737d",
+          "label": "『동서 철학의 대화』",
+          "normalized_label": "『동서 철학의 대화』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[3].title",
+              "matched_text": "『동서 철학의 대화』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-97035c1bc3d6cb49",
+          "label": "『선과 무』",
+          "normalized_label": "『선과 무』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "『선과 무』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1a6c8e60af5781ed",
+          "label": "『장자』",
+          "normalized_label": "『장자』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "『장자』"
             }
           ]
         }

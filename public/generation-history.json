@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-11-13",
+    "title": "동양 철학에서 ‘무(無)’ 개념의 존재론적 의미와 현대적 해석",
+    "status": "published_api",
+    "event_name": "schedule",
+    "schedule_cron": "45 14 * * *",
+    "scheduled_for_kst": "2026-11-13T00:00:00+09:00",
+    "workflow_started_at": "2026-11-12T21:36:41Z",
+    "generation_started_at": "2026-11-12T21:37:53.881707Z",
+    "generation_completed_at": "2026-11-12T21:38:52.674408Z",
+    "catalog_updated_at": "2026-11-12T21:38:54.017810Z",
+    "scheduler_delay_seconds": 23801,
+    "setup_duration_seconds": 73,
+    "generation_duration_seconds": 60,
+    "validation_attempts": 1,
+    "run_id": "43311945271",
+    "run_attempt": "1",
+    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/43311945271",
+    "source_sha": "3c38637903239563c8bb4c11e3b28e558ff095f0"
+  },
+  {
     "date": "2026-11-12",
     "title": "청각 문화의 진화: 이어폰과 개인 음향 공간의 사회문화적 영향",
     "status": "published_api",
@@ -708,30 +728,5 @@
     "publication_schedule_cron": "45 21 * * *",
     "publication_run_id": "38189143695",
     "publication_run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/38189143695"
-  },
-  {
-    "date": "2026-10-11",
-    "title": "철학적 인식론에서 직관의 역할과 한계는 무엇인가",
-    "status": "published_api",
-    "event_name": "schedule",
-    "schedule_cron": "45 14 * * *",
-    "scheduled_for_kst": "2026-10-11T00:00:00+09:00",
-    "workflow_started_at": "2026-10-10T18:53:40Z",
-    "generation_started_at": "2026-10-10T18:54:24.156486Z",
-    "generation_completed_at": "2026-10-10T18:57:37.839744Z",
-    "catalog_updated_at": "2026-10-10T18:57:39.158674Z",
-    "scheduler_delay_seconds": 14020,
-    "setup_duration_seconds": 44,
-    "generation_duration_seconds": 195,
-    "validation_attempts": 2,
-    "run_id": "38077614719",
-    "run_attempt": "1",
-    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/38077614719",
-    "source_sha": "f16f929a69614fa79f325bfa12081ad0989c0a6b",
-    "publication_target_kst": "2026-10-11T07:00:00+09:00",
-    "publication_pushed_at": "2026-10-11T00:30:11.357302Z",
-    "publication_schedule_cron": "45 21 * * *",
-    "publication_run_id": "38098626438",
-    "publication_run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/38098626438"
   }
 ]

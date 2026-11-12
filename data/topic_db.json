@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-11-12",
+  "updated_at": "2026-11-13",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -1934,6 +1934,29 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261112_auditory_culture_evoluti_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261112_auditory_culture_evoluti_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "report_id": "rpt-20261113-oriental-philosophy-nothingness-ontological-mean",
+      "date": "2026-11-13",
+      "title": "동양 철학에서 ‘무(無)’ 개념의 존재론적 의미와 현대적 해석",
+      "main_category": "인문·철학",
+      "mid_category": "철학",
+      "sub_category": "동양철학",
+      "detail_category": "무(無)의 철학적 탐구",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "무(無)",
+        "존재론",
+        "동양철학",
+        "철학적 해석",
+        "현대 철학",
+        "선(禪)",
+        "불교 철학",
+        "공(空)"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261113_oriental_philosophy_noth_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261113_oriental_philosophy_noth_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -1950,12 +1973,12 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "언어·미디어·지식",
-    "next_main_category": "인문·철학",
-    "next_index": 0,
+    "last_main_category": "인문·철학",
+    "next_main_category": "사회·정치·법",
+    "next_index": 1,
     "completed_cycles": 9,
     "published_counts": {
-      "인문·철학": 9,
+      "인문·철학": 10,
       "사회·정치·법": 8,
       "경제·경영": 8,
       "과학·수학": 8,
@@ -1967,7 +1990,6 @@
       "언어·미디어·지식": 10
     },
     "recent_main_categories": [
-      "인문·철학",
       "사회·정치·법",
       "경제·경영",
       "과학·수학",
@@ -1976,7 +1998,8 @@
       "자연·환경·지리",
       "역사·문화",
       "예술·디자인",
-      "언어·미디어·지식"
+      "언어·미디어·지식",
+      "인문·철학"
     ]
   },
   "candidate_pool": [
@@ -2627,7 +2650,7 @@
       "sub_category": "동양철학",
       "detail_category": "무(無)의 철학적 탐구",
       "priority": 1.0,
-      "status": "candidate",
+      "status": "used",
       "source": "api_generated"
     },
     {

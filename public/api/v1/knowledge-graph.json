@@ -2,12 +2,12 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-11-12T09:44:42.205813+09:00",
+  "generated_at": "2026-11-13T06:38:54.015723+09:00",
   "stats": {
     "categories": 10,
-    "reports": 86,
-    "nodes": 378,
-    "edges": 484,
+    "reports": 87,
+    "nodes": 381,
+    "edges": 487,
     "concepts": 28,
     "concept_edges": 144,
     "semantic_edges": 0
@@ -963,6 +963,13 @@
       "label": "실크로드를 통한 일상용품과 문화의 교환",
       "level": 3,
       "main_category": "역사·문화"
+    },
+    {
+      "id": "detail:c2bb96b5c51e1a7e",
+      "type": "detail",
+      "label": "무(無)의 철학적 탐구",
+      "level": 3,
+      "main_category": "인문·철학"
     },
     {
       "id": "detail:c505075bb528cf21",
@@ -3148,6 +3155,23 @@
       "pdf_url": "outputs/20261112_auditory_culture_evoluti_Report.pdf"
     },
     {
+      "id": "report:rpt-20261113-oriental-philosophy-noth",
+      "type": "report",
+      "label": "동양 철학에서 ‘무(無)’ 개념의 존재론적 의미와 현대적 해석",
+      "level": 4,
+      "report_id": "rpt-20261113-oriental-philosophy-noth",
+      "date": "2026-11-13",
+      "main_category": "인문·철학",
+      "category_path": [
+        "인문·철학",
+        "철학",
+        "동양철학",
+        "무(無)의 철학적 탐구"
+      ],
+      "html_url": "outputs/20261113_oriental_philosophy_noth_Report.html",
+      "pdf_url": "outputs/20261113_oriental_philosophy_noth_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -3426,6 +3450,13 @@
       "label": "수직 교통 기술",
       "level": 2,
       "main_category": "기술·공학"
+    },
+    {
+      "id": "sub:68415ae861799e70",
+      "type": "sub",
+      "label": "동양철학",
+      "level": 2,
+      "main_category": "인문·철학"
     },
     {
       "id": "sub:6b74ec372ec20bf8",
@@ -3820,6 +3851,13 @@
       "id": "edge:0179e22894aa5d0a",
       "source": "detail:59cb9a05f050d1ff",
       "target": "report:rpt-20260913-invention-of-accounting",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:0281d654fdc83e9b",
+      "source": "detail:c2bb96b5c51e1a7e",
+      "target": "report:rpt-20261113-oriental-philosophy-noth",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -4435,6 +4473,13 @@
       "id": "edge:2f90e1cc5bf37363",
       "source": "middle:efbda3d2166e9316",
       "target": "sub:b74bbc1aefd39888",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:2f9df93341150ca0",
+      "source": "sub:68415ae861799e70",
+      "target": "detail:c2bb96b5c51e1a7e",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -8995,6 +9040,13 @@
         }
       ],
       "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:f8d35c91fd19b0c8",
+      "source": "middle:9cd5243332ac9316",
+      "target": "sub:68415ae861799e70",
+      "kind": "hierarchy",
+      "relation_type": "contains"
     },
     {
       "id": "edge:f8e1b0b015fecae5",
