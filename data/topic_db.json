@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-11-11",
+  "updated_at": "2026-11-12",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -1911,6 +1911,29 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261111_digital_art_evolution_ho_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261111_digital_art_evolution_ho_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "report_id": "rpt-20261112-auditory-culture-evolution-earphones-personal-so",
+      "date": "2026-11-12",
+      "title": "청각 문화의 진화: 이어폰과 개인 음향 공간의 사회문화적 영향",
+      "main_category": "언어·미디어·지식",
+      "mid_category": "미디어와 지식",
+      "sub_category": "오디오 매체",
+      "detail_category": "개인화된 청취 환경의 사회문화적 변화",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "청각 문화",
+        "이어폰",
+        "개인 음향 공간",
+        "사회문화 변화",
+        "디지털 미디어",
+        "프라이버시",
+        "공간 인지",
+        "청취 경험"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261112_auditory_culture_evoluti_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261112_auditory_culture_evoluti_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -1927,10 +1950,10 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "예술·디자인",
-    "next_main_category": "언어·미디어·지식",
-    "next_index": 9,
-    "completed_cycles": 8,
+    "last_main_category": "언어·미디어·지식",
+    "next_main_category": "인문·철학",
+    "next_index": 0,
+    "completed_cycles": 9,
     "published_counts": {
       "인문·철학": 9,
       "사회·정치·법": 8,
@@ -1941,10 +1964,9 @@
       "자연·환경·지리": 8,
       "역사·문화": 10,
       "예술·디자인": 9,
-      "언어·미디어·지식": 9
+      "언어·미디어·지식": 10
     },
     "recent_main_categories": [
-      "언어·미디어·지식",
       "인문·철학",
       "사회·정치·법",
       "경제·경영",
@@ -1953,7 +1975,8 @@
       "생명·건강",
       "자연·환경·지리",
       "역사·문화",
-      "예술·디자인"
+      "예술·디자인",
+      "언어·미디어·지식"
     ]
   },
   "candidate_pool": [
@@ -2953,6 +2976,56 @@
       "mid_category": "기후",
       "sub_category": "도시기후학",
       "detail_category": "도시 열섬 완화 기술과 정책 사례",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "청각 문화의 진화: 이어폰과 개인 음향 공간의 사회문화적 영향",
+      "main_category": "언어·미디어·지식",
+      "mid_category": "미디어와 지식",
+      "sub_category": "오디오 매체",
+      "detail_category": "개인화된 청취 환경의 사회문화적 변화",
+      "priority": 1.0,
+      "status": "used",
+      "source": "api_generated"
+    },
+    {
+      "topic": "글로벌 디지털 출판의 지속 가능성: 친환경 전자책과 종이책의 공존 전략",
+      "main_category": "언어·미디어·지식",
+      "mid_category": "출판",
+      "sub_category": "출판 산업",
+      "detail_category": "환경적 지속 가능성을 위한 출판 혁신",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "세계 문자체계 비교 연구: 비문자적 기호와 현대 커뮤니케이션의 상호작용",
+      "main_category": "언어·미디어·지식",
+      "mid_category": "문자",
+      "sub_category": "문자 체계",
+      "detail_category": "비문자적 기호와 정보 교환의 융합",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "다중언어 사회의 언어 정책과 교육: 언어 다양성 보호와 사회 통합의 균형점",
+      "main_category": "언어·미디어·지식",
+      "mid_category": "언어",
+      "sub_category": "언어정책",
+      "detail_category": "언어 다양성과 교육 정책의 역할",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "디지털 시대의 사실 검증과 언론 신뢰도: 미디어 리터러시의 새로운 도전과 과제",
+      "main_category": "언어·미디어·지식",
+      "mid_category": "미디어와 지식",
+      "sub_category": "미디어 교육",
+      "detail_category": "디지털 정보 환경에서 미디어 신뢰 확보 전략",
       "priority": 1.0,
       "status": "candidate",
       "source": "api_generated"

@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-11-12T06:35:36.789212+09:00",
+  "generated_at": "2026-11-12T09:44:42.205813+09:00",
   "stats": {
-    "reports": 85,
-    "tags": 3171,
+    "reports": 86,
+    "tags": 3209,
     "shared_concepts": 28,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -46583,6 +46583,554 @@
             {
               "reference": "further_reading[2].title",
               "matched_text": "인공지능 예술 연구"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "report_id": "rpt-20261112-auditory-culture-evoluti",
+      "date": "2026-11-12",
+      "title": "청각 문화의 진화: 이어폰과 개인 음향 공간의 사회문화적 영향",
+      "main_category": "언어·미디어·지식",
+      "tags": [
+        {
+          "tag_id": "tag-cf0cd57cf9b1189d",
+          "label": "개인 음향 공간",
+          "normalized_label": "개인 음향 공간",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "개인 음향 공간"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "개인 음향 공간"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a1bfc24790cba28c",
+          "label": "공간 인지",
+          "normalized_label": "공간 인지",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "공간 인지"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-23fd35e5a42fe3ba",
+          "label": "디지털 미디어",
+          "normalized_label": "디지털 미디어",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "디지털 미디어"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-07f570aeaf09a3d9",
+          "label": "사회문화 변화",
+          "normalized_label": "사회문화 변화",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "사회문화 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a063eada8184832c",
+          "label": "이어폰",
+          "normalized_label": "이어폰",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "이어폰"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "이어폰"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7b8aeb3a0eb6ffcd",
+          "label": "청각 문화",
+          "normalized_label": "청각 문화",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "청각 문화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-37bb376409f5aa03",
+          "label": "청취 경험",
+          "normalized_label": "청취 경험",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "청취 경험"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-601b11d59f27a8e2",
+          "label": "프라이버시",
+          "normalized_label": "프라이버시",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "프라이버시"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8e00745be13a862f",
+          "label": "소리 프라이버시",
+          "normalized_label": "소리 프라이버시",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "소리 프라이버시"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b292051dbda05eee",
+          "label": "노이즈 캔슬링",
+          "normalized_label": "노이즈 캔슬링",
+          "type": "technology",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "노이즈 캔슬링"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4563c4ad33cbe3c3",
+          "label": "미디어와 지식",
+          "normalized_label": "미디어와 지식",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "미디어와 지식"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-06ab20a96609e2bf",
+          "label": "오디오 매체",
+          "normalized_label": "오디오 매체",
+          "type": "domain",
+          "weight": 0.93,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.sub",
+              "matched_text": "오디오 매체"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3e896fdfcf2e0c74",
+          "label": "개인화된 청취 환경의 사회문화적 변화",
+          "normalized_label": "개인화된 청취 환경의 사회문화적 변화",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "개인화된 청취 환경의 사회문화적 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6f553e86b2bc69eb",
+          "label": "미디어 문화 연구자 조한별",
+          "normalized_label": "미디어 문화 연구자 조한별",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "미디어 문화 연구자 조한별"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2338575baa168764",
+          "label": "규범과 관리 제도화",
+          "normalized_label": "규범과 관리 제도화",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "규범과 관리 제도화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-01bca47e96b19190",
+          "label": "기원과 초기 기술",
+          "normalized_label": "기원과 초기 기술",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "기원과 초기 기술"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b4fc16a5324946f1",
+          "label": "디지털 혁신과 대중화",
+          "normalized_label": "디지털 혁신과 대중화",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "디지털 혁신과 대중화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c783655d7917e4b1",
+          "label": "사회문화적 영향 확산",
+          "normalized_label": "사회문화적 영향 확산",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "사회문화적 영향 확산"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d4690bcd121092c8",
+          "label": "현대 쟁점과 미래 대응",
+          "normalized_label": "현대 쟁점과 미래 대응",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "현대 쟁점과 미래 대응"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-847902a552226164",
+          "label": "개인 음향 공간의 역사적 기원",
+          "normalized_label": "개인 음향 공간의 역사적 기원",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "개인 음향 공간의 역사적 기원"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d0bd0fdb93315482",
+          "label": "개인 음향 공간의 현재 동향과 쟁점",
+          "normalized_label": "개인 음향 공간의 현재 동향과 쟁점",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "개인 음향 공간의 현재 동향과 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9b6892b3fa682e98",
+          "label": "규범과 관리 방식의 변화",
+          "normalized_label": "규범과 관리 방식의 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "규범과 관리 방식의 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-13454310961c3ce0",
+          "label": "기술 및 구조의 변화와 작동 원리",
+          "normalized_label": "기술 및 구조의 변화와 작동 원리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "기술 및 구조의 변화와 작동 원리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-21b478d1bbe5e2ba",
+          "label": "사회문화적 영향 이해를 위한 핵심 질문과 분석 방향",
+          "normalized_label": "사회문화적 영향 이해를 위한 핵심 질문과 분석 방향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "사회문화적 영향 이해를 위한 핵심 질문과 분석 방향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4edc9e8ef96a3c78",
+          "label": "생활과 사회에 미친 영향",
+          "normalized_label": "생활과 사회에 미친 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "생활과 사회에 미친 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-22c287a9c24dfa0f",
+          "label": "애플 에어팟 출시가 가져온 개인 음향 문화의 변화",
+          "normalized_label": "애플 에어팟 출시가 가져온 개인 음향 문화의 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "애플 에어팟 출시가 가져온 개인 음향 문화의 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-bb301a473723b8fe",
+          "label": "이어폰과 개인 음향 공간의 기본 개념",
+          "normalized_label": "이어폰과 개인 음향 공간의 기본 개념",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "이어폰과 개인 음향 공간의 기본 개념"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-cd2a9661388245cc",
+          "label": "청각 문화 진화가 개인·사회·기술에 미치는 함의",
+          "normalized_label": "청각 문화 진화가 개인·사회·기술에 미치는 함의",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "청각 문화 진화가 개인·사회·기술에 미치는 함의"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9efe03513a070f0e",
+          "label": "청각 문화의 변화와 개인 음향 공간의 등장",
+          "normalized_label": "청각 문화의 변화와 개인 음향 공간의 등장",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "청각 문화의 변화와 개인 음향 공간의 등장"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-119e088d54598418",
+          "label": "개인 음향 공간과 사회적 소통 변화",
+          "normalized_label": "개인 음향 공간과 사회적 소통 변화",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "개인 음향 공간과 사회적 소통 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ca0101dcd0103e1f",
+          "label": "개인 음향 공간 관련 현재 쟁점",
+          "normalized_label": "개인 음향 공간 관련 현재 쟁점",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 개인 음향 공간 관련 현재 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5d8474815b1ea1be",
+          "label": "개인 음향 기기의 기술적 진화 비교",
+          "normalized_label": "개인 음향 기기의 기술적 진화 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 개인 음향 기기의 기술적 진화 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f4bd420e9d6b1ead",
+          "label": "관련 도서·탐구 키워드·확장 주제",
+          "normalized_label": "관련 도서·탐구 키워드·확장 주제",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 관련 도서·탐구 키워드·확장 주제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-168bcda263e0fc59",
+          "label": "에어팟 사례의 특징과 효과",
+          "normalized_label": "에어팟 사례의 특징과 효과",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 에어팟 사례의 특징과 효과"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-53ee66aae9505fe2",
+          "label": "『소리와 공간: 현대의 청각 경험』",
+          "normalized_label": "『소리와 공간: 현대의 청각 경험』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "『소리와 공간: 현대의 청각 경험』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d2d4518ff3bc5a84",
+          "label": "『청각 문화의 사회학』",
+          "normalized_label": "『청각 문화의 사회학』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "『청각 문화의 사회학』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-cad8de0f6120e538",
+          "label": "개인화 미디어와 사회적 관계 연구 보고서",
+          "normalized_label": "개인화 미디어와 사회적 관계 연구 보고서",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "개인화 미디어와 사회적 관계 연구 보고서"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-cd1f29b0083c90f5",
+          "label": "음향 디자인과 공공 정책",
+          "normalized_label": "음향 디자인과 공공 정책",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[3].title",
+              "matched_text": "음향 디자인과 공공 정책"
             }
           ]
         }

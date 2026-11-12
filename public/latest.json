@@ -1,16 +1,16 @@
 {
-  "date": "2026-11-11",
-  "title": "디지털 아트의 진화: 기술은 현대 미술을 어떻게 재구성하는가",
-  "subtitle": "첨단 기술이 현대 미술의 형태와 의미를 어떻게 변화시키는가",
-  "main_category": "예술·디자인",
-  "mid_category": "미술",
-  "sub_category": "현대미술",
-  "detail_category": "디지털 미디어 아트",
+  "date": "2026-11-12",
+  "title": "청각 문화의 진화: 이어폰과 개인 음향 공간의 사회문화적 영향",
+  "subtitle": "이어폰이 만들어낸 개인화된 청취 환경과 그 사회문화적 변화",
+  "main_category": "언어·미디어·지식",
+  "mid_category": "미디어와 지식",
+  "sub_category": "오디오 매체",
+  "detail_category": "개인화된 청취 환경의 사회문화적 변화",
   "taxonomy_version": "2.0",
-  "html_path": "outputs/20261111_digital_art_evolution_ho_Report.html",
-  "pdf_path": "outputs/20261111_digital_art_evolution_ho_Report.pdf",
+  "html_path": "outputs/20261112_auditory_culture_evoluti_Report.html",
+  "pdf_path": "outputs/20261112_auditory_culture_evoluti_Report.pdf",
   "status": "published_api",
-  "html_url": "outputs/20261111_digital_art_evolution_ho_Report.html",
-  "pdf_url": "outputs/20261111_digital_art_evolution_ho_Report.pdf",
-  "report_id": "rpt-20261111-digital-art-evolution-ho"
+  "html_url": "outputs/20261112_auditory_culture_evoluti_Report.html",
+  "pdf_url": "outputs/20261112_auditory_culture_evoluti_Report.pdf",
+  "report_id": "rpt-20261112-auditory-culture-evoluti"
 }

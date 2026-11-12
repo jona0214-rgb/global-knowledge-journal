@@ -2,12 +2,12 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-11-12T06:35:36.789212+09:00",
+  "generated_at": "2026-11-12T09:44:42.205813+09:00",
   "stats": {
     "categories": 10,
-    "reports": 85,
-    "nodes": 374,
-    "edges": 480,
+    "reports": 86,
+    "nodes": 378,
+    "edges": 484,
     "concepts": 28,
     "concept_edges": 144,
     "semantic_edges": 0
@@ -1063,6 +1063,13 @@
       "main_category": "생명·건강"
     },
     {
+      "id": "detail:e78fdde812d94a7d",
+      "type": "detail",
+      "label": "개인화된 청취 환경의 사회문화적 변화",
+      "level": 3,
+      "main_category": "언어·미디어·지식"
+    },
+    {
       "id": "detail:ea8e27260f35e294",
       "type": "detail",
       "label": "확률적 지식의 조건",
@@ -1467,6 +1474,13 @@
       "label": "행정제도",
       "level": 1,
       "main_category": "사회·정치·법"
+    },
+    {
+      "id": "middle:ab41b927ab492ca2",
+      "type": "middle",
+      "label": "미디어와 지식",
+      "level": 1,
+      "main_category": "언어·미디어·지식"
     },
     {
       "id": "middle:ac71074d27b76d86",
@@ -3117,6 +3131,23 @@
       "pdf_url": "outputs/20261111_digital_art_evolution_ho_Report.pdf"
     },
     {
+      "id": "report:rpt-20261112-auditory-culture-evoluti",
+      "type": "report",
+      "label": "청각 문화의 진화: 이어폰과 개인 음향 공간의 사회문화적 영향",
+      "level": 4,
+      "report_id": "rpt-20261112-auditory-culture-evoluti",
+      "date": "2026-11-12",
+      "main_category": "언어·미디어·지식",
+      "category_path": [
+        "언어·미디어·지식",
+        "미디어와 지식",
+        "오디오 매체",
+        "개인화된 청취 환경의 사회문화적 변화"
+      ],
+      "html_url": "outputs/20261112_auditory_culture_evoluti_Report.html",
+      "pdf_url": "outputs/20261112_auditory_culture_evoluti_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -3199,6 +3230,13 @@
       "label": "수 개념의 발전",
       "level": 2,
       "main_category": "과학·수학"
+    },
+    {
+      "id": "sub:23103ebf68fb591e",
+      "type": "sub",
+      "label": "오디오 매체",
+      "level": 2,
+      "main_category": "언어·미디어·지식"
     },
     {
       "id": "sub:232c98e83a431504",
@@ -4917,6 +4955,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:4a959e4af0807254",
+      "source": "category:a495d7d4da85b458",
+      "target": "middle:ab41b927ab492ca2",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:4acc8e12200e7e5f",
       "source": "report:rpt-20260819-library-classification-p",
       "target": "concept:con-3bb660b397c07691",
@@ -4995,6 +5040,13 @@
         }
       ],
       "provenance": "exact-normalized-tag"
+    },
+    {
+      "id": "edge:4e590a35b3df3845",
+      "source": "middle:ab41b927ab492ca2",
+      "target": "sub:23103ebf68fb591e",
+      "kind": "hierarchy",
+      "relation_type": "contains"
     },
     {
       "id": "edge:4e73060fe399a66c",
@@ -5999,6 +6051,13 @@
       "provenance": "curated-pattern-rule"
     },
     {
+      "id": "edge:7b9d9e8ac8a49cbb",
+      "source": "detail:e78fdde812d94a7d",
+      "target": "report:rpt-20261112-auditory-culture-evoluti",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:7bcfbdc55da77949",
       "source": "report:rpt-20261017-volcanic-activity-and-la",
       "target": "concept:con-22940219024d252e",
@@ -6717,6 +6776,13 @@
         }
       ],
       "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:99b5a1d23d7b9365",
+      "source": "sub:23103ebf68fb591e",
+      "target": "detail:e78fdde812d94a7d",
+      "kind": "hierarchy",
+      "relation_type": "contains"
     },
     {
       "id": "edge:9a26079fbf3e1c41",
