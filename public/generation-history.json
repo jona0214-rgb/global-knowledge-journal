@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-11-14",
+    "title": "법정 언어의 다양성과 법률 접근성 문제",
+    "status": "published_api",
+    "event_name": "schedule",
+    "schedule_cron": "45 14 * * *",
+    "scheduled_for_kst": "2026-11-14T00:00:00+09:00",
+    "workflow_started_at": "2026-11-13T20:59:55Z",
+    "generation_started_at": "2026-11-13T21:00:36.894722Z",
+    "generation_completed_at": "2026-11-13T21:01:53.558436Z",
+    "catalog_updated_at": "2026-11-13T21:01:54.922308Z",
+    "scheduler_delay_seconds": 21595,
+    "setup_duration_seconds": 42,
+    "generation_duration_seconds": 78,
+    "validation_attempts": 1,
+    "run_id": "43506635561",
+    "run_attempt": "1",
+    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/43506635561",
+    "source_sha": "ff8afde67f4a8f25ec34b1137a6d8dc9e9218ebd"
+  },
+  {
     "date": "2026-11-13",
     "title": "동양 철학에서 ‘무(無)’ 개념의 존재론적 의미와 현대적 해석",
     "status": "published_api",
@@ -708,30 +728,5 @@
     "publication_schedule_cron": "45 21 * * *",
     "publication_run_id": "38338224678",
     "publication_run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/38338224678"
-  },
-  {
-    "date": "2026-10-12",
-    "title": "지방자치제도의 발전과 주민참여 정책의 효과",
-    "status": "published_api",
-    "event_name": "schedule",
-    "schedule_cron": "45 14 * * *",
-    "scheduled_for_kst": "2026-10-12T00:00:00+09:00",
-    "workflow_started_at": "2026-10-11T19:11:57Z",
-    "generation_started_at": "2026-10-11T19:12:30.430700Z",
-    "generation_completed_at": "2026-10-11T19:15:35.845091Z",
-    "catalog_updated_at": "2026-10-11T19:15:37.136811Z",
-    "scheduler_delay_seconds": 15117,
-    "setup_duration_seconds": 33,
-    "generation_duration_seconds": 187,
-    "validation_attempts": 2,
-    "run_id": "38166988488",
-    "run_attempt": "1",
-    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/38166988488",
-    "source_sha": "e4b70234032b8886347ec1053223493875871168",
-    "publication_target_kst": "2026-10-12T07:00:00+09:00",
-    "publication_pushed_at": "2026-10-12T00:44:16.117008Z",
-    "publication_schedule_cron": "45 21 * * *",
-    "publication_run_id": "38189143695",
-    "publication_run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/38189143695"
   }
 ]

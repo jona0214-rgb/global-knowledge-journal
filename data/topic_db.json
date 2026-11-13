@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-11-13",
+  "updated_at": "2026-11-14",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -1957,6 +1957,29 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261113_oriental_philosophy_noth_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261113_oriental_philosophy_noth_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "report_id": "rpt-20261114-legal-language-diversity-and-accessibility",
+      "date": "2026-11-14",
+      "title": "법정 언어의 다양성과 법률 접근성 문제",
+      "main_category": "사회·정치·법",
+      "mid_category": "법률",
+      "sub_category": "법률언어학",
+      "detail_category": "다언어 사회에서 법률 번역과 해석의 도전",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "법정 언어",
+        "법률 접근성",
+        "법률 번역",
+        "다언어 사회",
+        "법률 해석 문제",
+        "사법 정의",
+        "언어 권리",
+        "법률 커뮤니케이션"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261114_legal_language_diversity_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261114_legal_language_diversity_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -1973,13 +1996,13 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "인문·철학",
-    "next_main_category": "사회·정치·법",
-    "next_index": 1,
+    "last_main_category": "사회·정치·법",
+    "next_main_category": "경제·경영",
+    "next_index": 2,
     "completed_cycles": 9,
     "published_counts": {
       "인문·철학": 10,
-      "사회·정치·법": 8,
+      "사회·정치·법": 9,
       "경제·경영": 8,
       "과학·수학": 8,
       "기술·공학": 9,
@@ -1990,7 +2013,6 @@
       "언어·미디어·지식": 10
     },
     "recent_main_categories": [
-      "사회·정치·법",
       "경제·경영",
       "과학·수학",
       "기술·공학",
@@ -1999,7 +2021,8 @@
       "역사·문화",
       "예술·디자인",
       "언어·미디어·지식",
-      "인문·철학"
+      "인문·철학",
+      "사회·정치·법"
     ]
   },
   "candidate_pool": [
@@ -2870,7 +2893,7 @@
       "sub_category": "법률언어학",
       "detail_category": "다언어 사회에서 법률 번역과 해석의 도전",
       "priority": 1.0,
-      "status": "candidate",
+      "status": "used",
       "source": "api_generated"
     },
     {

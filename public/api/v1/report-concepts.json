@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-11-13T06:38:54.015723+09:00",
+  "generated_at": "2026-11-14T06:01:54.920351+09:00",
   "stats": {
-    "reports": 87,
-    "tags": 3246,
+    "reports": 88,
+    "tags": 3283,
     "shared_concepts": 28,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -47677,6 +47677,550 @@
             {
               "reference": "further_reading[0].title",
               "matched_text": "『장자』"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "report_id": "rpt-20261114-legal-language-diversity",
+      "date": "2026-11-14",
+      "title": "법정 언어의 다양성과 법률 접근성 문제",
+      "main_category": "사회·정치·법",
+      "tags": [
+        {
+          "tag_id": "tag-26c786ca2faf9b3d",
+          "label": "다언어 사회",
+          "normalized_label": "다언어 사회",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "다언어 사회"
+            },
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "다언어 사회"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3e34e3716c1c826f",
+          "label": "법률 번역",
+          "normalized_label": "법률 번역",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "법률 번역"
+            },
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "법률 번역"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-490dfc72ba075b1b",
+          "label": "법률 접근성",
+          "normalized_label": "법률 접근성",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "법률 접근성"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "법률 접근성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ca2ec7dcd4c8cfa6",
+          "label": "법률 커뮤니케이션",
+          "normalized_label": "법률 커뮤니케이션",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "법률 커뮤니케이션"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-405f34c3226052ab",
+          "label": "법률 해석 문제",
+          "normalized_label": "법률 해석 문제",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "법률 해석 문제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-10b2f639eca191d1",
+          "label": "법정 언어",
+          "normalized_label": "법정 언어",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "법정 언어"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "법정 언어"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e7de432f8fd1bf7a",
+          "label": "사법 정의",
+          "normalized_label": "사법 정의",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "사법 정의"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5bf06a6105c74588",
+          "label": "언어 권리",
+          "normalized_label": "언어 권리",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "언어 권리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2e27d84d2e191580",
+          "label": "법률",
+          "normalized_label": "법률",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "법률"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5d629554083bd6c9",
+          "label": "법률언어학",
+          "normalized_label": "법률언어학",
+          "type": "domain",
+          "weight": 0.93,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.sub",
+              "matched_text": "법률언어학"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-182a9e2db0334630",
+          "label": "다언어 사회에서 법률 번역과 해석의 도전",
+          "normalized_label": "다언어 사회에서 법률 번역과 해석의 도전",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "다언어 사회에서 법률 번역과 해석의 도전"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c45623f264e6319d",
+          "label": "국제사법협회",
+          "normalized_label": "국제사법협회",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [
+            "International Bar Association"
+          ],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "국제사법협회(International Bar Association)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8e7d63a8d18d144c",
+          "label": "법률 텍스트의 구조 이해",
+          "normalized_label": "법률 텍스트의 구조 이해",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "법률 텍스트의 구조 이해"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ad7c65cf00090afa",
+          "label": "법률 해석과 번역 기준",
+          "normalized_label": "법률 해석과 번역 기준",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "법률 해석과 번역 기준"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1021324d79d58b93",
+          "label": "법정 언어의 기원과 역사",
+          "normalized_label": "법정 언어의 기원과 역사",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "법정 언어의 기원과 역사"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c46b229f424b183d",
+          "label": "사회문화적 영향 분석",
+          "normalized_label": "사회문화적 영향 분석",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "사회문화적 영향 분석"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ec3231b81aba2a12",
+          "label": "현대 쟁점과 미래 과제",
+          "normalized_label": "현대 쟁점과 미래 과제",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "현대 쟁점과 미래 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-28d280332715f33c",
+          "label": "법률 텍스트의 구조와 법정 언어의 작동 원리",
+          "normalized_label": "법률 텍스트의 구조와 법정 언어의 작동 원리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "법률 텍스트의 구조와 법정 언어의 작동 원리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-54f21c4ce3a6fe25",
+          "label": "법률 해석과 번역의 기준과 관리 방식",
+          "normalized_label": "법률 해석과 번역의 기준과 관리 방식",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "법률 해석과 번역의 기준과 관리 방식"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b02b3857a386f84b",
+          "label": "법정 언어 다양성과 법률 접근성 문제의 개인과 사회적 함의",
+          "normalized_label": "법정 언어 다양성과 법률 접근성 문제의 개인과 사회적 함의",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "법정 언어 다양성과 법률 접근성 문제의 개인과 사회적 함의"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ec58767ac4d6a525",
+          "label": "법정 언어 다양성과 법률 접근성 문제의 핵심 쟁점과 하위 탐구 영역",
+          "normalized_label": "법정 언어 다양성과 법률 접근성 문제의 핵심 쟁점과 하위 탐구 영역",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "법정 언어 다양성과 법률 접근성 문제의 핵심 쟁점과 하위 탐구 영역"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-887e70100f54a079",
+          "label": "법정 언어 다양성과 법률 접근성의 사회적 중요성",
+          "normalized_label": "법정 언어 다양성과 법률 접근성의 사회적 중요성",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "법정 언어 다양성과 법률 접근성의 사회적 중요성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ab2cbb769f5ce312",
+          "label": "법정 언어가 사회문화에 미친 영향",
+          "normalized_label": "법정 언어가 사회문화에 미친 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "법정 언어가 사회문화에 미친 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a1905e8432554bb1",
+          "label": "법정 언어와 법률 접근성 이해를 위한 기본 개념",
+          "normalized_label": "법정 언어와 법률 접근성 이해를 위한 기본 개념",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "법정 언어와 법률 접근성 이해를 위한 기본 개념"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ce0fd48cd249d2dc",
+          "label": "법정 언어의 역사와 기원",
+          "normalized_label": "법정 언어의 역사와 기원",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "법정 언어의 역사와 기원"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d640beb7be02e171",
+          "label": "캐나다 다언어 법률 서비스: 법정 언어 다양성 보장의 실제",
+          "normalized_label": "캐나다 다언어 법률 서비스: 법정 언어 다양성 보장의 실제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "캐나다 다언어 법률 서비스: 법정 언어 다양성 보장의 실제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3e7955d8a9251848",
+          "label": "현대 법정 언어 쟁점과 미래 과제",
+          "normalized_label": "현대 법정 언어 쟁점과 미래 과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[7].title",
+              "matched_text": "현대 법정 언어 쟁점과 미래 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0cc91a86a0bfee33",
+          "label": "현재 다언어 사회에서 법정 언어 문제의 현실과 대응 동향",
+          "normalized_label": "현재 다언어 사회에서 법정 언어 문제의 현실과 대응 동향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "현재 다언어 사회에서 법정 언어 문제의 현실과 대응 동향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-61c211974e2062b7",
+          "label": "Official Languages Act",
+          "normalized_label": "Official Languages Act",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "Official Languages Act"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8a2d649d44182c05",
+          "label": "법정 언어 다양성과 법률 접근성 문제 관련 더 읽을거리",
+          "normalized_label": "법정 언어 다양성과 법률 접근성 문제 관련 더 읽을거리",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 법정 언어 다양성과 법률 접근성 문제 관련 더 읽을거리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e3a9015ec610fd40",
+          "label": "법정 언어와 법률 번역 주요 특징 비교",
+          "normalized_label": "법정 언어와 법률 번역 주요 특징 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 법정 언어와 법률 번역 주요 특징 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-09998a454d7de446",
+          "label": "캐나다 다언어 법률 서비스의 특징",
+          "normalized_label": "캐나다 다언어 법률 서비스의 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 캐나다 다언어 법률 서비스의 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b8dfdeab4d103832",
+          "label": "현재 법정 언어 문제 관련 주요 쟁점",
+          "normalized_label": "현재 법정 언어 문제 관련 주요 쟁점",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 현재 법정 언어 문제 관련 주요 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-db69c9502353f14a",
+          "label": "Access to Justice and Language Rights",
+          "normalized_label": "Access to Justice and Language Rights",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[3].title",
+              "matched_text": "Access to Justice and Language Rights"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-48e02bc4d3ad4bc5",
+          "label": "Legal Language and Access to Justice",
+          "normalized_label": "Legal Language and Access to Justice",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "Legal Language and Access to Justice"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-43bdb81947a9c9ac",
+          "label": "Multilingual Jurisdictions and Access to Justice",
+          "normalized_label": "Multilingual Jurisdictions and Access to Justice",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "Multilingual Jurisdictions and Access to Justice"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-57330ed681569cbb",
+          "label": "The Translation of Law",
+          "normalized_label": "The Translation of Law",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "The Translation of Law"
             }
           ]
         }

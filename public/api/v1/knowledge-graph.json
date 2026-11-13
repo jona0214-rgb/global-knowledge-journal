@@ -2,12 +2,12 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-11-13T06:38:54.015723+09:00",
+  "generated_at": "2026-11-14T06:01:54.920351+09:00",
   "stats": {
     "categories": 10,
-    "reports": 87,
-    "nodes": 381,
-    "edges": 487,
+    "reports": 88,
+    "nodes": 385,
+    "edges": 491,
     "concepts": 28,
     "concept_edges": 144,
     "semantic_edges": 0
@@ -839,6 +839,13 @@
       "main_category": "자연·환경·지리"
     },
     {
+      "id": "detail:74200bbba6086c00",
+      "type": "detail",
+      "label": "다언어 사회에서 법률 번역과 해석의 도전",
+      "level": 3,
+      "main_category": "사회·정치·법"
+    },
+    {
       "id": "detail:78cd87ec2fe7d8dc",
       "type": "detail",
       "label": "관료제의 효율과 한계",
@@ -1635,6 +1642,13 @@
       "label": "신경과학",
       "level": 1,
       "main_category": "생명·건강"
+    },
+    {
+      "id": "middle:e9c36fd026305d5e",
+      "type": "middle",
+      "label": "법률",
+      "level": 1,
+      "main_category": "사회·정치·법"
     },
     {
       "id": "middle:ead100e4f8ed5e3d",
@@ -3172,6 +3186,23 @@
       "pdf_url": "outputs/20261113_oriental_philosophy_noth_Report.pdf"
     },
     {
+      "id": "report:rpt-20261114-legal-language-diversity",
+      "type": "report",
+      "label": "법정 언어의 다양성과 법률 접근성 문제",
+      "level": 4,
+      "report_id": "rpt-20261114-legal-language-diversity",
+      "date": "2026-11-14",
+      "main_category": "사회·정치·법",
+      "category_path": [
+        "사회·정치·법",
+        "법률",
+        "법률언어학",
+        "다언어 사회에서 법률 번역과 해석의 도전"
+      ],
+      "html_url": "outputs/20261114_legal_language_diversity_Report.html",
+      "pdf_url": "outputs/20261114_legal_language_diversity_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -3536,6 +3567,13 @@
       "main_category": "자연·환경·지리"
     },
     {
+      "id": "sub:877b901f6298f10e",
+      "type": "sub",
+      "label": "법률언어학",
+      "level": 2,
+      "main_category": "사회·정치·법"
+    },
+    {
       "id": "sub:87e46684e17d53d1",
       "type": "sub",
       "label": "사회정의론",
@@ -3851,6 +3889,13 @@
       "id": "edge:0179e22894aa5d0a",
       "source": "detail:59cb9a05f050d1ff",
       "target": "report:rpt-20260913-invention-of-accounting",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:021f54369f140d12",
+      "source": "detail:74200bbba6086c00",
+      "target": "report:rpt-20261114-legal-language-diversity",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -4361,6 +4406,13 @@
         }
       ],
       "provenance": "exact-normalized-tag"
+    },
+    {
+      "id": "edge:2ab951bbb8ebb91d",
+      "source": "category:b9ccab27f2a0689e",
+      "target": "middle:e9c36fd026305d5e",
+      "kind": "hierarchy",
+      "relation_type": "contains"
     },
     {
       "id": "edge:2ae5b198ff0bfe0b",
@@ -6606,6 +6658,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:90a32fa747b41d09",
+      "source": "middle:e9c36fd026305d5e",
+      "target": "sub:877b901f6298f10e",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:917b6632c7c5739d",
       "source": "sub:92dbbf32055e96c8",
       "target": "detail:0d8f33e9bdde43d8",
@@ -8812,6 +8871,13 @@
       "id": "edge:ece1d5e11b6e846a",
       "source": "sub:1609ad7c27bfa6df",
       "target": "detail:dc0300e1abd565e5",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:ece69ace05195fff",
+      "source": "sub:877b901f6298f10e",
+      "target": "detail:74200bbba6086c00",
       "kind": "hierarchy",
       "relation_type": "contains"
     },

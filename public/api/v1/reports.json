@@ -1,5 +1,21 @@
 [
   {
+    "date": "2026-11-14",
+    "title": "법정 언어의 다양성과 법률 접근성 문제",
+    "subtitle": "다언어 사회에서 법률 번역과 해석의 도전과 법률 서비스의 공평성",
+    "main_category": "사회·정치·법",
+    "mid_category": "법률",
+    "sub_category": "법률언어학",
+    "detail_category": "다언어 사회에서 법률 번역과 해석의 도전",
+    "taxonomy_version": "2.0",
+    "html_path": "outputs/20261114_legal_language_diversity_Report.html",
+    "pdf_path": "outputs/20261114_legal_language_diversity_Report.pdf",
+    "status": "published_api",
+    "html_url": "outputs/20261114_legal_language_diversity_Report.html",
+    "pdf_url": "outputs/20261114_legal_language_diversity_Report.pdf",
+    "report_id": "rpt-20261114-legal-language-diversity"
+  },
+  {
     "date": "2026-11-13",
     "title": "동양 철학에서 ‘무(無)’ 개념의 존재론적 의미와 현대적 해석",
     "subtitle": "동양 철학에서 '무(無)'는 어떻게 이해되고 현대에 재해석되고 있는가?",
