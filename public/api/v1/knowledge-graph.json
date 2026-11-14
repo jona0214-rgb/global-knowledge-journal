@@ -2,12 +2,12 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-11-14T06:01:54.920351+09:00",
+  "generated_at": "2026-11-15T04:30:55.187220+09:00",
   "stats": {
     "categories": 10,
-    "reports": 88,
-    "nodes": 385,
-    "edges": 491,
+    "reports": 89,
+    "nodes": 388,
+    "edges": 494,
     "concepts": 28,
     "concept_edges": 144,
     "semantic_edges": 0
@@ -739,6 +739,13 @@
       "label": "영의 표기와 연산",
       "level": 3,
       "main_category": "과학·수학"
+    },
+    {
+      "id": "detail:427e02f19a249de5",
+      "type": "detail",
+      "label": "부채 영향 평가",
+      "level": 3,
+      "main_category": "경제·경영"
     },
     {
       "id": "detail:44346b93154d0391",
@@ -3203,6 +3210,23 @@
       "pdf_url": "outputs/20261114_legal_language_diversity_Report.pdf"
     },
     {
+      "id": "report:rpt-20261115-household-debt-economic",
+      "type": "report",
+      "label": "가계부채의 경제적 영향과 금융 안정성 분석",
+      "level": 4,
+      "report_id": "rpt-20261115-household-debt-economic",
+      "date": "2026-11-15",
+      "main_category": "경제·경영",
+      "category_path": [
+        "경제·경영",
+        "금융",
+        "가계 금융",
+        "부채 영향 평가"
+      ],
+      "html_url": "outputs/20261115_household_debt_economic__Report.html",
+      "pdf_url": "outputs/20261115_household_debt_economic__Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -3320,6 +3344,13 @@
       "label": "조직과 규칙",
       "level": 2,
       "main_category": "사회·정치·법"
+    },
+    {
+      "id": "sub:28b6888d24c5dc59",
+      "type": "sub",
+      "label": "가계 금융",
+      "level": 2,
+      "main_category": "경제·경영"
     },
     {
       "id": "sub:2b31de72738e1107",
@@ -6155,25 +6186,6 @@
       "relation_type": "contains"
     },
     {
-      "id": "edge:7bcfbdc55da77949",
-      "source": "report:rpt-20261017-volcanic-activity-and-la",
-      "target": "concept:con-22940219024d252e",
-      "kind": "concept",
-      "relation_type": "has_concept",
-      "score": 0.8,
-      "evidence": [
-        {
-          "reference": "sections[7].body[0]",
-          "matched_text": "불확실성"
-        },
-        {
-          "reference": "sections[10].body[2]",
-          "matched_text": "불확실성"
-        }
-      ],
-      "provenance": "curated-pattern-rule"
-    },
-    {
       "id": "edge:7be158e1ce34cf66",
       "source": "category:9de06b299a735751",
       "target": "middle:5eef111a7fc8d608",
@@ -6509,6 +6521,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:8b9b8e75bf3180a0",
+      "source": "middle:3a7c3af3c3ce1592",
+      "target": "sub:28b6888d24c5dc59",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:8bef91489f114c59",
       "source": "report:rpt-20261101-social-structure-change",
       "target": "concept:con-22940219024d252e",
@@ -6596,6 +6615,33 @@
         {
           "reference": "sections[10].body[4]",
           "matched_text": "에너지 효율"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:8da6ab5f24222885",
+      "source": "report:rpt-20261115-household-debt-economic",
+      "target": "concept:con-22940219024d252e",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "sections[0].body[1]",
+          "matched_text": "시장 변동성"
+        },
+        {
+          "reference": "sections[9].body[2]",
+          "matched_text": "불확실성"
+        },
+        {
+          "reference": "sections[9].body[4]",
+          "matched_text": "불확실성"
+        },
+        {
+          "reference": "sections[10].body[1]",
+          "matched_text": "시장 변동성"
         }
       ],
       "provenance": "curated-pattern-rule"
@@ -7167,6 +7213,13 @@
         }
       ],
       "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:a4d2dac100beb317",
+      "source": "sub:28b6888d24c5dc59",
+      "target": "detail:427e02f19a249de5",
+      "kind": "hierarchy",
+      "relation_type": "contains"
     },
     {
       "id": "edge:a4e918c1cb25b9bf",
@@ -8236,6 +8289,13 @@
       "id": "edge:d5daad25f3c763dc",
       "source": "category:3fc5d02608923758",
       "target": "middle:2d6f571e40187e90",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:d6d64530f660c00e",
+      "source": "detail:427e02f19a249de5",
+      "target": "report:rpt-20261115-household-debt-economic",
       "kind": "hierarchy",
       "relation_type": "contains"
     },

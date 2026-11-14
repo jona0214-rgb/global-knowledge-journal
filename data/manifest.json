@@ -1,6 +1,22 @@
 {
-  "last_updated": "2026-11-14T06:01:54.920351+09:00",
+  "last_updated": "2026-11-15T04:30:55.187220+09:00",
   "reports": [
+    {
+      "date": "2026-11-15",
+      "title": "가계부채의 경제적 영향과 금융 안정성 분석",
+      "subtitle": "가계 부채가 경제에 미치는 영향과 금융시장의 안정을 중심으로",
+      "main_category": "경제·경영",
+      "mid_category": "금융",
+      "sub_category": "가계 금융",
+      "detail_category": "부채 영향 평가",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20261115_household_debt_economic__Report.html",
+      "pdf_path": "outputs/20261115_household_debt_economic__Report.pdf",
+      "status": "published_api",
+      "html_url": "outputs/20261115_household_debt_economic__Report.html",
+      "pdf_url": "outputs/20261115_household_debt_economic__Report.pdf",
+      "report_id": "rpt-20261115-household-debt-economic"
+    },
     {
       "date": "2026-11-14",
       "title": "법정 언어의 다양성과 법률 접근성 문제",

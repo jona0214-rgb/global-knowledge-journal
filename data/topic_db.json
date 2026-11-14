@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-11-14",
+  "updated_at": "2026-11-15",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -1980,6 +1980,29 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261114_legal_language_diversity_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261114_legal_language_diversity_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "report_id": "rpt-20261115-household-debt-economic-impact-financial-stabili",
+      "date": "2026-11-15",
+      "title": "가계부채의 경제적 영향과 금융 안정성 분석",
+      "main_category": "경제·경영",
+      "mid_category": "금융",
+      "sub_category": "가계 금융",
+      "detail_category": "부채 영향 평가",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "가계부채",
+        "금융 안정성",
+        "경제성장",
+        "신용 리스크",
+        "가계 소비",
+        "부채 건전성",
+        "금융시장",
+        "채무 상환 부담"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261115_household_debt_economic__Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261115_household_debt_economic__Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -1996,14 +2019,14 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "사회·정치·법",
-    "next_main_category": "경제·경영",
-    "next_index": 2,
+    "last_main_category": "경제·경영",
+    "next_main_category": "과학·수학",
+    "next_index": 3,
     "completed_cycles": 9,
     "published_counts": {
       "인문·철학": 10,
       "사회·정치·법": 9,
-      "경제·경영": 8,
+      "경제·경영": 9,
       "과학·수학": 8,
       "기술·공학": 9,
       "생명·건강": 8,
@@ -2013,7 +2036,6 @@
       "언어·미디어·지식": 10
     },
     "recent_main_categories": [
-      "경제·경영",
       "과학·수학",
       "기술·공학",
       "생명·건강",
@@ -2022,7 +2044,8 @@
       "예술·디자인",
       "언어·미디어·지식",
       "인문·철학",
-      "사회·정치·법"
+      "사회·정치·법",
+      "경제·경영"
     ]
   },
   "candidate_pool": [
@@ -2713,7 +2736,7 @@
       "sub_category": "가계 금융",
       "detail_category": "부채 영향 평가",
       "priority": 1.0,
-      "status": "candidate",
+      "status": "used",
       "source": "api_generated"
     },
     {

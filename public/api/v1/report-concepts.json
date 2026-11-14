@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-11-14T06:01:54.920351+09:00",
+  "generated_at": "2026-11-15T04:30:55.187220+09:00",
   "stats": {
-    "reports": 88,
-    "tags": 3283,
+    "reports": 89,
+    "tags": 3318,
     "shared_concepts": 28,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -48225,6 +48225,524 @@
           ]
         }
       ]
+    },
+    {
+      "report_id": "rpt-20261115-household-debt-economic",
+      "date": "2026-11-15",
+      "title": "가계부채의 경제적 영향과 금융 안정성 분석",
+      "main_category": "경제·경영",
+      "tags": [
+        {
+          "tag_id": "tag-7d72592b0fa3df14",
+          "label": "가계 소비",
+          "normalized_label": "가계 소비",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "가계 소비"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e6221d163a918851",
+          "label": "가계부채",
+          "normalized_label": "가계부채",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "가계부채"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "가계부채"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-21c7c0c820b084f0",
+          "label": "경제성장",
+          "normalized_label": "경제성장",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "경제성장"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-495ed0e5ea837750",
+          "label": "부채 건전성",
+          "normalized_label": "부채 건전성",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "부채 건전성"
+            },
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "부채 건전성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5fc81552606aa8bf",
+          "label": "신용 리스크",
+          "normalized_label": "신용 리스크",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "신용 리스크"
+            },
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "신용 리스크"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9edb2b1d41ccd371",
+          "label": "채무 상환 부담",
+          "normalized_label": "채무 상환 부담",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "채무 상환 부담"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2a8d57eb274a46c8",
+          "label": "금융시장",
+          "normalized_label": "금융시장",
+          "type": "institution",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "금융시장"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f3dca2fa88129023",
+          "label": "금융 안정성",
+          "normalized_label": "금융 안정성",
+          "type": "outcome",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "금융 안정성"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "금융 안정성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-14fe6a3a6197800d",
+          "label": "금융",
+          "normalized_label": "금융",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "금융"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-dcf3ec232ce5c467",
+          "label": "가계 금융",
+          "normalized_label": "가계 금융",
+          "type": "domain",
+          "weight": 0.93,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.sub",
+              "matched_text": "가계 금융"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8ce36c3321f521ef",
+          "label": "부채 영향 평가",
+          "normalized_label": "부채 영향 평가",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "부채 영향 평가"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3bcade9b83d4a93c",
+          "label": "국제통화기금(IMF) 경제 보고서",
+          "normalized_label": "국제통화기금(IMF) 경제 보고서",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "국제통화기금(IMF) 경제 보고서"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c521218a0350e3f1",
+          "label": "가계부채 증가",
+          "normalized_label": "가계부채 증가",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "가계부채 증가"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-27f263b27aefb40f",
+          "label": "금융 안정성 위협 및 정책 대응",
+          "normalized_label": "금융 안정성 위협 및 정책 대응",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "금융 안정성 위협 및 정책 대응"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2d61db75d6e42cd1",
+          "label": "금융기관 부실 위험 상승",
+          "normalized_label": "금융기관 부실 위험 상승",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "금융기관 부실 위험 상승"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-17eb7c110be0d1a0",
+          "label": "소비 진작 및 경제 성장",
+          "normalized_label": "소비 진작 및 경제 성장",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "소비 진작 및 경제 성장"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e346b124c7eafefe",
+          "label": "채무 상환 부담 증가",
+          "normalized_label": "채무 상환 부담 증가",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "채무 상환 부담 증가"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c24223dfc71ae234",
+          "label": "가계부채 관리와 금융 규제의 변화",
+          "normalized_label": "가계부채 관리와 금융 규제의 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "가계부채 관리와 금융 규제의 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-668c0b668dfb0b0f",
+          "label": "가계부채 구조와 금융 시스템 변화",
+          "normalized_label": "가계부채 구조와 금융 시스템 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "가계부채 구조와 금융 시스템 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-bda6cc03a83418ef",
+          "label": "가계부채 문제의 역사적 기원",
+          "normalized_label": "가계부채 문제의 역사적 기원",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "가계부채 문제의 역사적 기원"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b69f9dff832a608e",
+          "label": "가계부채가 사회와 소비에 미친 영향",
+          "normalized_label": "가계부채가 사회와 소비에 미친 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "가계부채가 사회와 소비에 미친 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d30119de6572b8ef",
+          "label": "가계부채와 금융 안정성 핵심 개념 정리",
+          "normalized_label": "가계부채와 금융 안정성 핵심 개념 정리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "가계부채와 금융 안정성 핵심 개념 정리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1a0166eba0a75a12",
+          "label": "가계부채와 금융 안정성이 사회·경제에 주는 시사점",
+          "normalized_label": "가계부채와 금융 안정성이 사회·경제에 주는 시사점",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "가계부채와 금융 안정성이 사회·경제에 주는 시사점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b7c6ca32728e54ec",
+          "label": "가계부채의 경제적 영향과 금융 안정성 핵심 쟁점 분석",
+          "normalized_label": "가계부채의 경제적 영향과 금융 안정성 핵심 쟁점 분석",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "가계부채의 경제적 영향과 금융 안정성 핵심 쟁점 분석"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d9096cf78d5b1e84",
+          "label": "가계부채의 현재와 경제적 중요성",
+          "normalized_label": "가계부채의 현재와 경제적 중요성",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "가계부채의 현재와 경제적 중요성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a03dbd3f561fdfdc",
+          "label": "가계부채의 현황과 관련 경제·금융 동향",
+          "normalized_label": "가계부채의 현황과 관련 경제·금융 동향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "가계부채의 현황과 관련 경제·금융 동향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-dbfd9627624d53b4",
+          "label": "한국 가계부채 증가와 금융 정책 대응 사례",
+          "normalized_label": "한국 가계부채 증가와 금융 정책 대응 사례",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "한국 가계부채 증가와 금융 정책 대응 사례"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-48950575ebad4506",
+          "label": "현대 가계부채 쟁점과 미래 과제",
+          "normalized_label": "현대 가계부채 쟁점과 미래 과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[7].title",
+              "matched_text": "현대 가계부채 쟁점과 미래 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-099d197a4ab386c2",
+          "label": "Household Debt and Financial Stability",
+          "normalized_label": "Household Debt and Financial Stability",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "Household Debt and Financial Stability"
+            },
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "Household Debt and Financial Stability"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5f8d501de3077c5e",
+          "label": "가계부채 관련 현재의 주요 쟁점",
+          "normalized_label": "가계부채 관련 현재의 주요 쟁점",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 가계부채 관련 현재의 주요 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-32ccca7677c11a86",
+          "label": "관련 도서, 탐구 키워드, 확장 주제",
+          "normalized_label": "관련 도서, 탐구 키워드, 확장 주제",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 관련 도서, 탐구 키워드, 확장 주제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-40534c5d5dd4507c",
+          "label": "주요 국가 가계부채 GDP 대비 비율 비교",
+          "normalized_label": "주요 국가 가계부채 GDP 대비 비율 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 주요 국가 가계부채 GDP 대비 비율 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8a59a21a69d0f3f0",
+          "label": "한국 가계부채 정책 주요 내용과 특징",
+          "normalized_label": "한국 가계부채 정책 주요 내용과 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 한국 가계부채 정책 주요 내용과 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ea1d62d533990b45",
+          "label": "Financial Regulation and Stability in Emerging Markets",
+          "normalized_label": "Financial Regulation and Stability in Emerging Markets",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "Financial Regulation and Stability in Emerging Markets"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-92a0a07ff464c3af",
+          "label": "The Economics of Consumer Debt",
+          "normalized_label": "The Economics of Consumer Debt",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "The Economics of Consumer Debt"
+            }
+          ]
+        }
+      ]
     }
   ],
   "shared_concepts": [
@@ -49109,19 +49627,6 @@
           ]
         },
         {
-          "report_id": "rpt-20261017-volcanic-activity-and-la",
-          "evidence": [
-            {
-              "reference": "sections[7].body[0]",
-              "matched_text": "불확실성"
-            },
-            {
-              "reference": "sections[10].body[2]",
-              "matched_text": "불확실성"
-            }
-          ]
-        },
-        {
           "report_id": "rpt-20261101-social-structure-change",
           "evidence": [
             {
@@ -49135,6 +49640,27 @@
             {
               "reference": "sections[10].body[2]",
               "matched_text": "불확실성"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261115-household-debt-economic",
+          "evidence": [
+            {
+              "reference": "sections[0].body[1]",
+              "matched_text": "시장 변동성"
+            },
+            {
+              "reference": "sections[9].body[2]",
+              "matched_text": "불확실성"
+            },
+            {
+              "reference": "sections[9].body[4]",
+              "matched_text": "불확실성"
+            },
+            {
+              "reference": "sections[10].body[1]",
+              "matched_text": "시장 변동성"
             }
           ]
         }
