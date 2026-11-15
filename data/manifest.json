@@ -1,6 +1,22 @@
 {
-  "last_updated": "2026-11-15T04:30:55.187220+09:00",
+  "last_updated": "2026-11-16T04:59:20.086975+09:00",
   "reports": [
+    {
+      "date": "2026-11-16",
+      "title": "별의 진화: 수소 핵융합에서 초신성까지 우주의 거대한 순환",
+      "subtitle": "별의 탄생부터 최후 운명까지, 우주에서 펼쳐지는 별의 생애와 변화 과정의 총체",
+      "main_category": "과학·수학",
+      "mid_category": "천문",
+      "sub_category": "성운과 별",
+      "detail_category": "별의 수명과 진화 단계",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20261116_star_evolution_hydrogen__Report.html",
+      "pdf_path": "outputs/20261116_star_evolution_hydrogen__Report.pdf",
+      "status": "published_api",
+      "html_url": "outputs/20261116_star_evolution_hydrogen__Report.html",
+      "pdf_url": "outputs/20261116_star_evolution_hydrogen__Report.pdf",
+      "report_id": "rpt-20261116-star-evolution-hydrogen"
+    },
     {
       "date": "2026-11-15",
       "title": "가계부채의 경제적 영향과 금융 안정성 분석",

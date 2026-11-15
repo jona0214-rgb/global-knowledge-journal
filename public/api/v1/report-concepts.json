@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-11-15T04:30:55.187220+09:00",
+  "generated_at": "2026-11-16T04:59:20.086975+09:00",
   "stats": {
-    "reports": 89,
-    "tags": 3318,
+    "reports": 90,
+    "tags": 3357,
     "shared_concepts": 28,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -48739,6 +48739,570 @@
             {
               "reference": "further_reading[1].title",
               "matched_text": "The Economics of Consumer Debt"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "report_id": "rpt-20261116-star-evolution-hydrogen",
+      "date": "2026-11-16",
+      "title": "별의 진화: 수소 핵융합에서 초신성까지 우주의 거대한 순환",
+      "main_category": "과학·수학",
+      "tags": [
+        {
+          "tag_id": "tag-a29d9b454fa56ba4",
+          "label": "거대 별",
+          "normalized_label": "거대 별",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "거대 별"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-423b4b7519e66b03",
+          "label": "별 내부 구조",
+          "normalized_label": "별 내부 구조",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "별 내부 구조"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-767141b6994d331e",
+          "label": "별 진화",
+          "normalized_label": "별 진화",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "별 진화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-837bd423c6241747",
+          "label": "별의 수명",
+          "normalized_label": "별의 수명",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "별의 수명"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4af841f1eba74dd9",
+          "label": "성운",
+          "normalized_label": "성운",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "성운"
+            },
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "성운"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3148e260f79e718f",
+          "label": "수소 핵융합",
+          "normalized_label": "수소 핵융합",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "수소 핵융합"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-327cd1709672d5dd",
+          "label": "초신성",
+          "normalized_label": "초신성",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "초신성"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "초신성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-adf09c22d1eefda0",
+          "label": "우주 순환",
+          "normalized_label": "우주 순환",
+          "type": "mechanism",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "우주 순환"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-432ea07aaaebc20f",
+          "label": "핵융합",
+          "normalized_label": "핵융합",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "핵융합"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-02760d121abfac66",
+          "label": "주계열성",
+          "normalized_label": "주계열성",
+          "type": "outcome",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "주계열성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7fc430e1a10db321",
+          "label": "천문",
+          "normalized_label": "천문",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "천문"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7e88be2da644ddb0",
+          "label": "성운과 별",
+          "normalized_label": "성운과 별",
+          "type": "domain",
+          "weight": 0.93,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.sub",
+              "matched_text": "성운과 별"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-65abb327af6f18cc",
+          "label": "별의 수명과 진화 단계",
+          "normalized_label": "별의 수명과 진화 단계",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "별의 수명과 진화 단계"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1f08cf16ef1d3cbd",
+          "label": "칼 세이건",
+          "normalized_label": "칼 세이건",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [
+            "천문학자"
+          ],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "칼 세이건(천문학자)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4694ac48143e7291",
+          "label": "성운 단계",
+          "normalized_label": "성운 단계",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "성운 단계"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4d88e4b28a661192",
+          "label": "잔여 천체 형성",
+          "normalized_label": "잔여 천체 형성",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "잔여 천체 형성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9f89f859a580587f",
+          "label": "적색거성 단계",
+          "normalized_label": "적색거성 단계",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "적색거성 단계"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0ea6d3e7555c95b1",
+          "label": "주계열성 단계",
+          "normalized_label": "주계열성 단계",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "주계열성 단계"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-eaf7e636adfa4d9d",
+          "label": "초신성 폭발",
+          "normalized_label": "초신성 폭발",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "초신성 폭발"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-bece5919d0088926",
+          "label": "별 내부 핵융합과 에너지 생산 원리",
+          "normalized_label": "별 내부 핵융합과 에너지 생산 원리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "별 내부 핵융합과 에너지 생산 원리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b643766af2e6b1b0",
+          "label": "별 진화 연구 현황과 현대 천문학의 도전과제",
+          "normalized_label": "별 진화 연구 현황과 현대 천문학의 도전과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "별 진화 연구 현황과 현대 천문학의 도전과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-098f9ae4ee583363",
+          "label": "별 진화 연구의 현대적 시사점과 미래 질문",
+          "normalized_label": "별 진화 연구의 현대적 시사점과 미래 질문",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "별 진화 연구의 현대적 시사점과 미래 질문"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0600ff35f4320db3",
+          "label": "별 진화가 우주와 문화에 미친 영향",
+          "normalized_label": "별 진화가 우주와 문화에 미친 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "별 진화가 우주와 문화에 미친 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-99d8f7ec64182668",
+          "label": "별 진화의 핵심 개념과 용어 소개",
+          "normalized_label": "별 진화의 핵심 개념과 용어 소개",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "별 진화의 핵심 개념과 용어 소개"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a344267d21d1e63b",
+          "label": "별 진화의 핵심 질문과 다섯 주요 탐구 영역",
+          "normalized_label": "별 진화의 핵심 질문과 다섯 주요 탐구 영역",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "별 진화의 핵심 질문과 다섯 주요 탐구 영역"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b92f3d657d8219d5",
+          "label": "별의 기원과 초기 형성 과정",
+          "normalized_label": "별의 기원과 초기 형성 과정",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "별의 기원과 초기 형성 과정"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b6ce9550b53e349f",
+          "label": "별의 진화 기준과 관측 기술의 변화",
+          "normalized_label": "별의 진화 기준과 관측 기술의 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "별의 진화 기준과 관측 기술의 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ee31729c7d4821ac",
+          "label": "별의 진화와 우주 이해의 중요성",
+          "normalized_label": "별의 진화와 우주 이해의 중요성",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "별의 진화와 우주 이해의 중요성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8bc9c4fb05332677",
+          "label": "태양의 생애: 우리 별의 진화 과정",
+          "normalized_label": "태양의 생애: 우리 별의 진화 과정",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "태양의 생애: 우리 별의 진화 과정"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-765a21b3e70c00d6",
+          "label": "현재 별 진화 연구의 쟁점과 미래 과제",
+          "normalized_label": "현재 별 진화 연구의 쟁점과 미래 과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[7].title",
+              "matched_text": "현재 별 진화 연구의 쟁점과 미래 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e8cedd61ea045de2",
+          "label": "우주의 별 이야기",
+          "normalized_label": "우주의 별 이야기",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "우주의 별 이야기"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-bbe082b7311d91ee",
+          "label": "별 진화 단계별 주요 특징 비교",
+          "normalized_label": "별 진화 단계별 주요 특징 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 별 진화 단계별 주요 특징 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-383992b41248b429",
+          "label": "추가 학습을 위한 도서 및 탐구 키워드",
+          "normalized_label": "추가 학습을 위한 도서 및 탐구 키워드",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 추가 학습을 위한 도서 및 탐구 키워드"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a55a93b74a74e494",
+          "label": "태양과 초거성의 진화 특징 비교",
+          "normalized_label": "태양과 초거성의 진화 특징 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 태양과 초거성의 진화 특징 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a0fe4f32a9891f17",
+          "label": "현대 별 진화 연구의 주요 쟁점",
+          "normalized_label": "현대 별 진화 연구의 주요 쟁점",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 현대 별 진화 연구의 주요 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2271fd931dd25740",
+          "label": "『우주의 별 이야기』",
+          "normalized_label": "『우주의 별 이야기』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "『우주의 별 이야기』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2d444e6805ce679a",
+          "label": "『천체의 생애』",
+          "normalized_label": "『천체의 생애』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "『천체의 생애』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d53792fc2821dea8",
+          "label": "성운 물리학",
+          "normalized_label": "성운 물리학",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "성운 물리학"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e32edabc214c9b5b",
+          "label": "핵융합 물리",
+          "normalized_label": "핵융합 물리",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[3].title",
+              "matched_text": "핵융합 물리"
             }
           ]
         }

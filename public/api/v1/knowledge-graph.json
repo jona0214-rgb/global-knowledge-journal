@@ -2,12 +2,12 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-11-15T04:30:55.187220+09:00",
+  "generated_at": "2026-11-16T04:59:20.086975+09:00",
   "stats": {
     "categories": 10,
-    "reports": 89,
-    "nodes": 388,
-    "edges": 494,
+    "reports": 90,
+    "nodes": 392,
+    "edges": 498,
     "concepts": 28,
     "concept_edges": 144,
     "semantic_edges": 0
@@ -627,6 +627,13 @@
       "label": "교역로와 제국의 경쟁",
       "level": 3,
       "main_category": "역사·문화"
+    },
+    {
+      "id": "detail:2851239fd1c86e32",
+      "type": "detail",
+      "label": "별의 수명과 진화 단계",
+      "level": 3,
+      "main_category": "과학·수학"
     },
     {
       "id": "detail:285a01795f10d567",
@@ -1537,6 +1544,13 @@
       "label": "교역문화",
       "level": 1,
       "main_category": "역사·문화"
+    },
+    {
+      "id": "middle:c4a9f9d53d83d0c5",
+      "type": "middle",
+      "label": "천문",
+      "level": 1,
+      "main_category": "과학·수학"
     },
     {
       "id": "middle:c5e0c260de4c0040",
@@ -3227,6 +3241,23 @@
       "pdf_url": "outputs/20261115_household_debt_economic__Report.pdf"
     },
     {
+      "id": "report:rpt-20261116-star-evolution-hydrogen",
+      "type": "report",
+      "label": "별의 진화: 수소 핵융합에서 초신성까지 우주의 거대한 순환",
+      "level": 4,
+      "report_id": "rpt-20261116-star-evolution-hydrogen",
+      "date": "2026-11-16",
+      "main_category": "과학·수학",
+      "category_path": [
+        "과학·수학",
+        "천문",
+        "성운과 별",
+        "별의 수명과 진화 단계"
+      ],
+      "html_url": "outputs/20261116_star_evolution_hydrogen__Report.html",
+      "pdf_url": "outputs/20261116_star_evolution_hydrogen__Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -3757,6 +3788,13 @@
       "label": "조명과 관람 경험",
       "level": 2,
       "main_category": "예술·디자인"
+    },
+    {
+      "id": "sub:ca7872e96a80d435",
+      "type": "sub",
+      "label": "성운과 별",
+      "level": 2,
+      "main_category": "과학·수학"
     },
     {
       "id": "sub:cb22f45e3fb3478b",
@@ -4846,6 +4884,13 @@
       "id": "edge:4142520962e6a88a",
       "source": "detail:fde540c301a1a76f",
       "target": "report:rpt-20260827-history-of-glass-civiliz",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:417bab32c89357a6",
+      "source": "category:c135b09622b60562",
+      "target": "middle:c4a9f9d53d83d0c5",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -6963,6 +7008,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:9c8e1c8f249c5a78",
+      "source": "sub:ca7872e96a80d435",
+      "target": "detail:2851239fd1c86e32",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:9cf9e61fb2dbb5fd",
       "source": "sub:ba71cba4eff85a4c",
       "target": "detail:582058263345ef47",
@@ -7445,6 +7497,13 @@
       "id": "edge:b1a1f6500015ed40",
       "source": "middle:75dca2fed1fc8722",
       "target": "sub:243458d67f798959",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:b257f64064d6ebc3",
+      "source": "detail:2851239fd1c86e32",
+      "target": "report:rpt-20261116-star-evolution-hydrogen",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -8629,6 +8688,13 @@
         }
       ],
       "provenance": "exact-normalized-tag"
+    },
+    {
+      "id": "edge:e3eff2bdd4a821a0",
+      "source": "middle:c4a9f9d53d83d0c5",
+      "target": "sub:ca7872e96a80d435",
+      "kind": "hierarchy",
+      "relation_type": "contains"
     },
     {
       "id": "edge:e4864c1e30859f77",

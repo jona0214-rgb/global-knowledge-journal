@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-11-16",
+    "title": "별의 진화: 수소 핵융합에서 초신성까지 우주의 거대한 순환",
+    "status": "published_api",
+    "event_name": "schedule",
+    "schedule_cron": "45 14 * * *",
+    "scheduled_for_kst": "2026-11-16T00:00:00+09:00",
+    "workflow_started_at": "2026-11-15T19:58:05Z",
+    "generation_started_at": "2026-11-15T19:58:32.655697Z",
+    "generation_completed_at": "2026-11-15T19:59:18.811294Z",
+    "catalog_updated_at": "2026-11-15T19:59:20.088580Z",
+    "scheduler_delay_seconds": 17885,
+    "setup_duration_seconds": 28,
+    "generation_duration_seconds": 47,
+    "validation_attempts": 1,
+    "run_id": "43755337345",
+    "run_attempt": "1",
+    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/43755337345",
+    "source_sha": "b9b81269bf7aa817e7589f402814c719e18a0f98"
+  },
+  {
     "date": "2026-11-15",
     "title": "가계부채의 경제적 영향과 금융 안정성 분석",
     "status": "published_api",
@@ -708,30 +728,5 @@
     "publication_schedule_cron": "45 21 * * *",
     "publication_run_id": "38658153582",
     "publication_run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/38658153582"
-  },
-  {
-    "date": "2026-10-14",
-    "title": "양자컴퓨팅과 정보 이론: 물리학이 재정의하는 계산의 미래",
-    "status": "published_api",
-    "event_name": "schedule",
-    "schedule_cron": "45 14 * * *",
-    "scheduled_for_kst": "2026-10-14T00:00:00+09:00",
-    "workflow_started_at": "2026-10-13T20:23:07Z",
-    "generation_started_at": "2026-10-13T20:23:44.788635Z",
-    "generation_completed_at": "2026-10-13T20:27:51.709851Z",
-    "catalog_updated_at": "2026-10-13T20:27:53.179109Z",
-    "scheduler_delay_seconds": 19387,
-    "setup_duration_seconds": 38,
-    "generation_duration_seconds": 248,
-    "validation_attempts": 2,
-    "run_id": "38462374476",
-    "run_attempt": "1",
-    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/38462374476",
-    "source_sha": "a6121cda3a487b1c4505a57eff339dc5448dea46",
-    "publication_target_kst": "2026-10-14T07:00:00+09:00",
-    "publication_pushed_at": "2026-10-14T00:37:35.911559Z",
-    "publication_schedule_cron": "45 21 * * *",
-    "publication_run_id": "38491218809",
-    "publication_run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/38491218809"
   }
 ]
