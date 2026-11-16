@@ -78,6 +78,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          EXPECTED_STAGING_SHA="$(git rev-parse origin/report-staging)"
           git switch --force-create report-staging origin/report-staging
 
           if ! git rebase origin/main; then
@@ -90,9 +91,52 @@ jobs:
           REPORT_DATE="$(python -c 'import json; print(json.load(open("public/latest.json", encoding="utf-8"))["date"])')"
           echo "REPORT_EFFECTIVE_DATE=$REPORT_DATE" >> "$GITHUB_ENV"
           git add public/generation-history.json public/generation-status.json
-          git commit -m "chore: record daily report publication"
-          git push origin HEAD:report-staging
-          git push origin HEAD:main
+          if git diff --cached --quiet; then
+            echo "공개 타임라인에 추가 변경이 없어 기존 커밋을 사용합니다."
+          else
+            git commit -m "chore: record daily report publication"
+          fi
+
+          # 두 ref를 별도 push하면 첫 push 직후 GitHub의 객체 전파가 끝나기 전에
+          # 두 번째 ref 갱신이 처리되어 `missing necessary objects`가 발생할 수 있다.
+          # 하나의 atomic push로 객체 전송과 두 ref 갱신을 함께 처리한다.
+          PUSH_SUCCEEDED=0
+          for ATTEMPT in 1 2 3; do
+            if git push --atomic \
+              --force-with-lease=refs/heads/report-staging:"$EXPECTED_STAGING_SHA" \
+              origin HEAD:main HEAD:report-staging; then
+              PUSH_SUCCEEDED=1
+              break
+            fi
+
+            if [ "$ATTEMPT" -lt 3 ]; then
+              DELAY_SECONDS=$((ATTEMPT * 10))
+              echo "원격 공개 push가 실패했습니다. ${DELAY_SECONDS}초 후 재시도합니다 (${ATTEMPT}/3)."
+              sleep "$DELAY_SECONDS"
+              git fetch origin \
+                +refs/heads/main:refs/remotes/origin/main \
+                +refs/heads/report-staging:refs/remotes/origin/report-staging
+
+              CURRENT_STAGING_SHA="$(git rev-parse origin/report-staging)"
+              if [ "$CURRENT_STAGING_SHA" != "$EXPECTED_STAGING_SHA" ]; then
+                echo "재시도 중 report-staging이 다른 실행에 의해 변경되어 공개를 중단합니다." >&2
+                exit 1
+              fi
+
+              if ! git merge-base --is-ancestor origin/main HEAD; then
+                if ! git rebase origin/main; then
+                  git rebase --abort
+                  echo "재시도 전 report-staging을 최신 main 위로 재배치하지 못했습니다." >&2
+                  exit 1
+                fi
+              fi
+            fi
+          done
+
+          if [ "$PUSH_SUCCEEDED" -ne 1 ]; then
+            echo "main과 report-staging의 원자적 공개 push가 3회 모두 실패했습니다." >&2
+            exit 1
+          fi
 
           {
             echo "## Publication"

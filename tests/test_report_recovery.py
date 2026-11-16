@@ -684,7 +684,22 @@ class ReportRecoveryTests(unittest.TestCase):
         self.assertIn("Build and validate public knowledge data", workflow_text)
         self.assertIn('cron: "45 21 * * *"', publish_workflow_text)
         self.assertIn("Wait for the 07:00 KST publication gate", publish_workflow_text)
-        self.assertIn("git push origin HEAD:main", publish_workflow_text)
+        self.assertIn(
+            "git push --atomic",
+            publish_workflow_text,
+        )
+        self.assertIn("origin HEAD:main HEAD:report-staging", publish_workflow_text)
+        self.assertIn(
+            '--force-with-lease=refs/heads/report-staging:"$EXPECTED_STAGING_SHA"',
+            publish_workflow_text,
+        )
+        self.assertIn("for ATTEMPT in 1 2 3", publish_workflow_text)
+        self.assertIn(
+            "+refs/heads/main:refs/remotes/origin/main",
+            publish_workflow_text,
+        )
+        self.assertNotIn("git push origin HEAD:report-staging\n", publish_workflow_text)
+        self.assertNotIn("git push origin HEAD:main\n", publish_workflow_text)
         self.assertIn(
             'echo "REPORT_EFFECTIVE_DATE=$REPORT_DATE" >> "$GITHUB_ENV"',
             publish_workflow_text,
