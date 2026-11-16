@@ -1,16 +1,16 @@
 {
-  "date": "2026-11-16",
-  "title": "별의 진화: 수소 핵융합에서 초신성까지 우주의 거대한 순환",
-  "subtitle": "별의 탄생부터 최후 운명까지, 우주에서 펼쳐지는 별의 생애와 변화 과정의 총체",
-  "main_category": "과학·수학",
-  "mid_category": "천문",
-  "sub_category": "성운과 별",
-  "detail_category": "별의 수명과 진화 단계",
+  "date": "2026-11-17",
+  "title": "도시 빅데이터와 디지털 트윈: 스마트 시티 구현의 핵심",
+  "subtitle": "도시 운영의 혁신과 지속 가능성을 이끄는 디지털 기술의 최전선",
+  "main_category": "기술·공학",
+  "mid_category": "도시 인프라와 디지털 기술",
+  "sub_category": "스마트 시티",
+  "detail_category": "디지털 트윈을 활용한 도시 관리",
   "taxonomy_version": "2.0",
-  "html_path": "outputs/20261116_star_evolution_hydrogen__Report.html",
-  "pdf_path": "outputs/20261116_star_evolution_hydrogen__Report.pdf",
+  "html_path": "outputs/20261117_dosibigdata_digitaltwin__Report.html",
+  "pdf_path": "outputs/20261117_dosibigdata_digitaltwin__Report.pdf",
   "status": "published_api",
-  "html_url": "outputs/20261116_star_evolution_hydrogen__Report.html",
-  "pdf_url": "outputs/20261116_star_evolution_hydrogen__Report.pdf",
-  "report_id": "rpt-20261116-star-evolution-hydrogen"
+  "html_url": "outputs/20261117_dosibigdata_digitaltwin__Report.html",
+  "pdf_url": "outputs/20261117_dosibigdata_digitaltwin__Report.pdf",
+  "report_id": "rpt-20261117-dosibigdata-digitaltwin"
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-11-16",
+  "updated_at": "2026-11-17",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -2026,6 +2026,29 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261116_star_evolution_hydrogen__Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261116_star_evolution_hydrogen__Report.pdf",
       "status": "published_api"
+    },
+    {
+      "report_id": "rpt-20261117-dosibigdata-digitaltwin-smartcity-core",
+      "date": "2026-11-17",
+      "title": "도시 빅데이터와 디지털 트윈: 스마트 시티 구현의 핵심",
+      "main_category": "기술·공학",
+      "mid_category": "도시 인프라와 디지털 기술",
+      "sub_category": "스마트 시티",
+      "detail_category": "디지털 트윈을 활용한 도시 관리",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "도시 빅데이터",
+        "디지털 트윈",
+        "스마트 시티",
+        "도시 관리",
+        "데이터 시각화",
+        "도시 인프라",
+        "실시간 모니터링",
+        "지속 가능성"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261117_dosibigdata_digitaltwin__Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261117_dosibigdata_digitaltwin__Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -2042,16 +2065,16 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "과학·수학",
-    "next_main_category": "기술·공학",
-    "next_index": 4,
+    "last_main_category": "기술·공학",
+    "next_main_category": "생명·건강",
+    "next_index": 5,
     "completed_cycles": 9,
     "published_counts": {
       "인문·철학": 10,
       "사회·정치·법": 9,
       "경제·경영": 9,
       "과학·수학": 9,
-      "기술·공학": 9,
+      "기술·공학": 10,
       "생명·건강": 8,
       "자연·환경·지리": 8,
       "역사·문화": 10,
@@ -2059,7 +2082,6 @@
       "언어·미디어·지식": 10
     },
     "recent_main_categories": [
-      "기술·공학",
       "생명·건강",
       "자연·환경·지리",
       "역사·문화",
@@ -2068,7 +2090,8 @@
       "인문·철학",
       "사회·정치·법",
       "경제·경영",
-      "과학·수학"
+      "과학·수학",
+      "기술·공학"
     ]
   },
   "candidate_pool": [
@@ -2799,7 +2822,7 @@
       "sub_category": "스마트 시티",
       "detail_category": "디지털 트윈을 활용한 도시 관리",
       "priority": 1.0,
-      "status": "candidate",
+      "status": "used",
       "source": "api_generated"
     },
     {

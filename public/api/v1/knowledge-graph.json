@@ -2,14 +2,14 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-11-16T04:59:20.086975+09:00",
+  "generated_at": "2026-11-17T08:33:37.978819+09:00",
   "stats": {
     "categories": 10,
-    "reports": 90,
-    "nodes": 392,
-    "edges": 498,
+    "reports": 91,
+    "nodes": 395,
+    "edges": 502,
     "concepts": 28,
-    "concept_edges": 144,
+    "concept_edges": 145,
     "semantic_edges": 0
   },
   "nodes": [
@@ -261,7 +261,7 @@
       "level": 5,
       "concept_id": "con-7293f7983e59af61",
       "concept_type": "concept",
-      "report_count": 2,
+      "report_count": 3,
       "main_categories": [
         "경제·경영",
         "기술·공학"
@@ -1054,6 +1054,13 @@
       "label": "텔로미어와 노화 관련 질환",
       "level": 3,
       "main_category": "생명·건강"
+    },
+    {
+      "id": "detail:d9f2d6ab99f08dab",
+      "type": "detail",
+      "label": "디지털 트윈을 활용한 도시 관리",
+      "level": 3,
+      "main_category": "기술·공학"
     },
     {
       "id": "detail:dc0300e1abd565e5",
@@ -3258,6 +3265,23 @@
       "pdf_url": "outputs/20261116_star_evolution_hydrogen__Report.pdf"
     },
     {
+      "id": "report:rpt-20261117-dosibigdata-digitaltwin",
+      "type": "report",
+      "label": "도시 빅데이터와 디지털 트윈: 스마트 시티 구현의 핵심",
+      "level": 4,
+      "report_id": "rpt-20261117-dosibigdata-digitaltwin",
+      "date": "2026-11-17",
+      "main_category": "기술·공학",
+      "category_path": [
+        "기술·공학",
+        "도시 인프라와 디지털 기술",
+        "스마트 시티",
+        "디지털 트윈을 활용한 도시 관리"
+      ],
+      "html_url": "outputs/20261117_dosibigdata_digitaltwin__Report.html",
+      "pdf_url": "outputs/20261117_dosibigdata_digitaltwin__Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -3699,6 +3723,13 @@
       "main_category": "과학·수학"
     },
     {
+      "id": "sub:a59dd6b139ee03ea",
+      "type": "sub",
+      "label": "스마트 시티",
+      "level": 2,
+      "main_category": "기술·공학"
+    },
+    {
       "id": "sub:aa99a5bde5efdccf",
       "type": "sub",
       "label": "자본시장",
@@ -4135,6 +4166,13 @@
       "id": "edge:0fd39b79a007dde9",
       "source": "category:d1d9ae9d3e816c13",
       "target": "middle:e9259388404aa6fc",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:0fdcfed297f0cb31",
+      "source": "detail:d9f2d6ab99f08dab",
+      "target": "report:rpt-20261117-dosibigdata-digitaltwin",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -7225,6 +7263,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:a2b6564894da7763",
+      "source": "sub:a59dd6b139ee03ea",
+      "target": "detail:d9f2d6ab99f08dab",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:a2e5fe89d6738ab2",
       "source": "report:rpt-20260823-postal-codes-social-hist",
       "target": "concept:con-9b89960b11d9e6cf",
@@ -7845,6 +7890,21 @@
       "target": "detail:71aa9af8ff46142e",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:be43c54346b49708",
+      "source": "report:rpt-20261117-dosibigdata-digitaltwin",
+      "target": "concept:con-7293f7983e59af61",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[7]",
+          "matched_text": "지속 가능성"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
     },
     {
       "id": "edge:bea8075c0fa0d367",
@@ -9103,6 +9163,13 @@
         }
       ],
       "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:f133f20cefc6f778",
+      "source": "middle:b1bf48b32ef4f9dc",
+      "target": "sub:a59dd6b139ee03ea",
+      "kind": "hierarchy",
+      "relation_type": "contains"
     },
     {
       "id": "edge:f182574fb21479f5",

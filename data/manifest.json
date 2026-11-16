@@ -1,6 +1,22 @@
 {
-  "last_updated": "2026-11-16T04:59:20.086975+09:00",
+  "last_updated": "2026-11-17T08:33:37.978819+09:00",
   "reports": [
+    {
+      "date": "2026-11-17",
+      "title": "도시 빅데이터와 디지털 트윈: 스마트 시티 구현의 핵심",
+      "subtitle": "도시 운영의 혁신과 지속 가능성을 이끄는 디지털 기술의 최전선",
+      "main_category": "기술·공학",
+      "mid_category": "도시 인프라와 디지털 기술",
+      "sub_category": "스마트 시티",
+      "detail_category": "디지털 트윈을 활용한 도시 관리",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20261117_dosibigdata_digitaltwin__Report.html",
+      "pdf_path": "outputs/20261117_dosibigdata_digitaltwin__Report.pdf",
+      "status": "published_api",
+      "html_url": "outputs/20261117_dosibigdata_digitaltwin__Report.html",
+      "pdf_url": "outputs/20261117_dosibigdata_digitaltwin__Report.pdf",
+      "report_id": "rpt-20261117-dosibigdata-digitaltwin"
+    },
     {
       "date": "2026-11-16",
       "title": "별의 진화: 수소 핵융합에서 초신성까지 우주의 거대한 순환",

@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-11-16T04:59:20.086975+09:00",
+  "generated_at": "2026-11-17T08:33:37.978819+09:00",
   "stats": {
-    "reports": 90,
-    "tags": 3357,
+    "reports": 91,
+    "tags": 3392,
     "shared_concepts": 28,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -49307,6 +49307,526 @@
           ]
         }
       ]
+    },
+    {
+      "report_id": "rpt-20261117-dosibigdata-digitaltwin",
+      "date": "2026-11-17",
+      "title": "도시 빅데이터와 디지털 트윈: 스마트 시티 구현의 핵심",
+      "main_category": "기술·공학",
+      "tags": [
+        {
+          "tag_id": "tag-92d09f17869172c3",
+          "label": "데이터 시각화",
+          "normalized_label": "데이터 시각화",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "데이터 시각화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ad18cb2ba71b4986",
+          "label": "도시 관리",
+          "normalized_label": "도시 관리",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "도시 관리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-25f9522f8771b061",
+          "label": "도시 빅데이터",
+          "normalized_label": "도시 빅데이터",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "도시 빅데이터"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "도시 빅데이터"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-033fe7f5564b60fc",
+          "label": "도시 인프라",
+          "normalized_label": "도시 인프라",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "도시 인프라"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6ae5fbf1409c548e",
+          "label": "디지털 트윈",
+          "normalized_label": "디지털 트윈",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "디지털 트윈"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "디지털 트윈"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-07c95dff404552e0",
+          "label": "스마트 시티",
+          "normalized_label": "스마트 시티",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "스마트 시티"
+            },
+            {
+              "reference": "category.sub",
+              "matched_text": "스마트 시티"
+            },
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "스마트 시티"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-550ee03d5f9075ef",
+          "label": "실시간 모니터링",
+          "normalized_label": "실시간 모니터링",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "실시간 모니터링"
+            },
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "실시간 모니터링"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7293f7983e59af61",
+          "label": "지속 가능성",
+          "normalized_label": "지속 가능성",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "지속 가능성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-707692bb2e0ebecc",
+          "label": "도시 인프라와 디지털 기술",
+          "normalized_label": "도시 인프라와 디지털 기술",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "도시 인프라와 디지털 기술"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4f3f88fc4f840f9c",
+          "label": "디지털 트윈을 활용한 도시 관리",
+          "normalized_label": "디지털 트윈을 활용한 도시 관리",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "디지털 트윈을 활용한 도시 관리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-91234da09aee8de5",
+          "label": "세계경제포럼",
+          "normalized_label": "세계경제포럼",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [
+            "World Economic Forum"
+          ],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "세계경제포럼 (World Economic Forum)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-21f924b5b143a2bd",
+          "label": "데이터 수집",
+          "normalized_label": "데이터 수집",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "데이터 수집"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e740e35c29dd2ea2",
+          "label": "데이터 통합 및 저장",
+          "normalized_label": "데이터 통합 및 저장",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "데이터 통합 및 저장"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-191d4e2599a3cc93",
+          "label": "디지털 트윈 모델링",
+          "normalized_label": "디지털 트윈 모델링",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "디지털 트윈 모델링"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-baef573c95c35bcf",
+          "label": "실시간 시뮬레이션",
+          "normalized_label": "실시간 시뮬레이션",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "실시간 시뮬레이션"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b0f131bee8437380",
+          "label": "의사결정 및 최적화",
+          "normalized_label": "의사결정 및 최적화",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "의사결정 및 최적화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f2f897a6c74ffab7",
+          "label": "개인과 사회, 기술이 만나는 스마트 시티의 의미",
+          "normalized_label": "개인과 사회, 기술이 만나는 스마트 시티의 의미",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "개인과 사회, 기술이 만나는 스마트 시티의 의미"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ba4accc0fdb8ace4",
+          "label": "기본 개념과 핵심 용어",
+          "normalized_label": "기본 개념과 핵심 용어",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "기본 개념과 핵심 용어"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e1b0880da49700ee",
+          "label": "기술 구조와 작동 원리",
+          "normalized_label": "기술 구조와 작동 원리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "기술 구조와 작동 원리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f837beac10754c33",
+          "label": "도시 관리 방식과 표준의 변화",
+          "normalized_label": "도시 관리 방식과 표준의 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "도시 관리 방식과 표준의 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f48c4826b1395601",
+          "label": "도시 빅데이터와 디지털 트윈의 부상 배경",
+          "normalized_label": "도시 빅데이터와 디지털 트윈의 부상 배경",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "도시 빅데이터와 디지털 트윈의 부상 배경"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4deacd6f3cca003a",
+          "label": "도시 빅데이터와 디지털 트윈의 현황과 도전",
+          "normalized_label": "도시 빅데이터와 디지털 트윈의 현황과 도전",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "도시 빅데이터와 디지털 트윈의 현황과 도전"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-39cce16ef69bbe99",
+          "label": "디지털 트윈의 역사적 출발점",
+          "normalized_label": "디지털 트윈의 역사적 출발점",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "디지털 트윈의 역사적 출발점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7db3c309b3569382",
+          "label": "사회문화적 영향과 변화",
+          "normalized_label": "사회문화적 영향과 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "사회문화적 영향과 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3aad6c61767b3338",
+          "label": "스마트 시티 핵심 구현 기술의 이해",
+          "normalized_label": "스마트 시티 핵심 구현 기술의 이해",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "스마트 시티 핵심 구현 기술의 이해"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9e392f01b2d98ab4",
+          "label": "싱가포르 디지털 트윈: 스마트 도시의 성공적 모델",
+          "normalized_label": "싱가포르 디지털 트윈: 스마트 도시의 성공적 모델",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "싱가포르 디지털 트윈: 스마트 도시의 성공적 모델"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3b56793a186efdf8",
+          "label": "디지털 트윈 기술 혁신 보고서",
+          "normalized_label": "디지털 트윈 기술 혁신 보고서",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "디지털 트윈 기술 혁신 보고서"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-53ce963f9845770f",
+          "label": "관련 도서 및 탐구 키워드",
+          "normalized_label": "관련 도서 및 탐구 키워드",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 관련 도서 및 탐구 키워드"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e49128d72aa04de1",
+          "label": "도시 빅데이터와 디지털 트윈 기술 비교",
+          "normalized_label": "도시 빅데이터와 디지털 트윈 기술 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 도시 빅데이터와 디지털 트윈 기술 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-841825e37d97bbc2",
+          "label": "도시 빅데이터와 디지털 트윈 분야의 현재 쟁점",
+          "normalized_label": "도시 빅데이터와 디지털 트윈 분야의 현재 쟁점",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 도시 빅데이터와 디지털 트윈 분야의 현재 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e86326a217ab6aff",
+          "label": "싱가포르 디지털 트윈 사례 주요 특징",
+          "normalized_label": "싱가포르 디지털 트윈 사례 주요 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 싱가포르 디지털 트윈 사례 주요 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-13dbcc891c8405c1",
+          "label": "『도시 계획의 미래』",
+          "normalized_label": "『도시 계획의 미래』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[3].title",
+              "matched_text": "『도시 계획의 미래』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-207e39134e037cb9",
+          "label": "『도시 데이터 거버넌스』",
+          "normalized_label": "『도시 데이터 거버넌스』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "『도시 데이터 거버넌스』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e464eeb8f0b4cc75",
+          "label": "『디지털 트윈 응용과 혁신』",
+          "normalized_label": "『디지털 트윈 응용과 혁신』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "『디지털 트윈 응용과 혁신』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e8e48c223dfcc569",
+          "label": "『스마트 시티 기술과 정책』",
+          "normalized_label": "『스마트 시티 기술과 정책』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "『스마트 시티 기술과 정책』"
+            }
+          ]
+        }
+      ]
     }
   ],
   "shared_concepts": [
@@ -51509,6 +52029,47 @@
       ]
     },
     {
+      "concept_id": "con-7293f7983e59af61",
+      "label": "지속 가능성",
+      "normalized_label": "지속 가능성",
+      "type": "concept",
+      "provenance": "exact-normalized-tag",
+      "report_count": 3,
+      "main_categories": [
+        "경제·경영",
+        "기술·공학"
+      ],
+      "reports": [
+        {
+          "report_id": "rpt-20261005-eco-friendly-water-treat",
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "지속 가능성"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261102-fair-trade-movement-and",
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "지속 가능성"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261117-dosibigdata-digitaltwin",
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "지속 가능성"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "concept_id": "con-ecb70d0f334fb463",
       "label": "공정 무역",
       "normalized_label": "공정 무역",
@@ -51863,38 +52424,6 @@
             {
               "reference": "term_box.items[0].term",
               "matched_text": "전통 음악"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "concept_id": "con-7293f7983e59af61",
-      "label": "지속 가능성",
-      "normalized_label": "지속 가능성",
-      "type": "concept",
-      "provenance": "exact-normalized-tag",
-      "report_count": 2,
-      "main_categories": [
-        "경제·경영",
-        "기술·공학"
-      ],
-      "reports": [
-        {
-          "report_id": "rpt-20261005-eco-friendly-water-treat",
-          "evidence": [
-            {
-              "reference": "keywords[3]",
-              "matched_text": "지속 가능성"
-            }
-          ]
-        },
-        {
-          "report_id": "rpt-20261102-fair-trade-movement-and",
-          "evidence": [
-            {
-              "reference": "keywords[3]",
-              "matched_text": "지속 가능성"
             }
           ]
         }
