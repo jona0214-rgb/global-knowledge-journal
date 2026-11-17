@@ -1,5 +1,21 @@
 [
   {
+    "date": "2026-11-18",
+    "title": "유전체 편집 기술 CRISPR의 현재와 윤리적 쟁점",
+    "subtitle": "혁신적 유전체 편집 도구 CRISPR 기술의 작동 원리와 의료 적용, 그리고 제기되는 윤리적 논쟁",
+    "main_category": "생명·건강",
+    "mid_category": "생물학",
+    "sub_category": "유전학",
+    "detail_category": "CRISPR 기술의 의학 적용과 윤리",
+    "taxonomy_version": "2.0",
+    "html_path": "outputs/20261118_crispr_current_ethics_Report.html",
+    "pdf_path": "outputs/20261118_crispr_current_ethics_Report.pdf",
+    "status": "published_api",
+    "html_url": "outputs/20261118_crispr_current_ethics_Report.html",
+    "pdf_url": "outputs/20261118_crispr_current_ethics_Report.pdf",
+    "report_id": "rpt-20261118-crispr-current-ethics"
+  },
+  {
     "date": "2026-11-17",
     "title": "도시 빅데이터와 디지털 트윈: 스마트 시티 구현의 핵심",
     "subtitle": "도시 운영의 혁신과 지속 가능성을 이끄는 디지털 기술의 최전선",

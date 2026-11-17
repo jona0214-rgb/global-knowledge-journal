@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-11-17T08:33:37.978819+09:00",
+  "generated_at": "2026-11-18T07:42:27.201103+09:00",
   "stats": {
-    "reports": 91,
-    "tags": 3392,
+    "reports": 92,
+    "tags": 3428,
     "shared_concepts": 28,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -49823,6 +49823,532 @@
             {
               "reference": "further_reading[0].title",
               "matched_text": "『스마트 시티 기술과 정책』"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "report_id": "rpt-20261118-crispr-current-ethics",
+      "date": "2026-11-18",
+      "title": "유전체 편집 기술 CRISPR의 현재와 윤리적 쟁점",
+      "main_category": "생명·건강",
+      "tags": [
+        {
+          "tag_id": "tag-60f79e6a0ac9652e",
+          "label": "CRISPR",
+          "normalized_label": "CRISPR",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "CRISPR"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8eb0431d3727c7a2",
+          "label": "맞춤 의학",
+          "normalized_label": "맞춤 의학",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "맞춤 의학"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-83bcd83488a1f42b",
+          "label": "바이오윤리",
+          "normalized_label": "바이오윤리",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "바이오윤리"
+            },
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "바이오윤리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e19cf1a722f71923",
+          "label": "생명 윤리",
+          "normalized_label": "생명 윤리",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "생명 윤리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c362c622c766419a",
+          "label": "유전자 변형",
+          "normalized_label": "유전자 변형",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "유전자 변형"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-bf37d1d94c5fd5e6",
+          "label": "유전자 치료",
+          "normalized_label": "유전자 치료",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "유전자 치료"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ff51486b04978d03",
+          "label": "유전체 편집",
+          "normalized_label": "유전체 편집",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [
+            "Genome Editing"
+          ],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "유전체 편집"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "유전체 편집 (Genome Editing)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5d174157c9b9bbd1",
+          "label": "유전학",
+          "normalized_label": "유전학",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "유전학"
+            },
+            {
+              "reference": "category.sub",
+              "matched_text": "유전학"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-047a8830c5da85e9",
+          "label": "오프타겟 효과",
+          "normalized_label": "오프타겟 효과",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "오프타겟 효과"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ac39b1cbcfe7f048",
+          "label": "CRISPR-Cas9",
+          "normalized_label": "CRISPR-Cas9",
+          "type": "technology",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "CRISPR-Cas9"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f837d185cbc18817",
+          "label": "생물학",
+          "normalized_label": "생물학",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "생물학"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0be730d27ffa0700",
+          "label": "CRISPR 기술의 의학 적용과 윤리",
+          "normalized_label": "CRISPR 기술의 의학 적용과 윤리",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "CRISPR 기술의 의학 적용과 윤리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-06e8b44a2bebe144",
+          "label": "Jennifer Doudna",
+          "normalized_label": "Jennifer Doudna",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "Jennifer Doudna, CRISPR 공동발견자"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-09db3095b8a60fbc",
+          "label": "Cas9 단백질 결합",
+          "normalized_label": "Cas9 단백질 결합",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "Cas9 단백질 결합"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1894cbf9b50c324d",
+          "label": "DNA 이중 가닥 절단",
+          "normalized_label": "DNA 이중 가닥 절단",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "DNA 이중 가닥 절단"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3f6da1cad75d0ab1",
+          "label": "가이드 RNA 설계",
+          "normalized_label": "가이드 RNA 설계",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "가이드 RNA 설계"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-35873fca364a2b35",
+          "label": "세포 내 DNA 복구 및 편집",
+          "normalized_label": "세포 내 DNA 복구 및 편집",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "세포 내 DNA 복구 및 편집"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5a57b6c0371a29b7",
+          "label": "표적 DNA 인식",
+          "normalized_label": "표적 DNA 인식",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "표적 DNA 인식"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-bec84532db1cdafc",
+          "label": "CRISPR 기반 유전자 치료의 임상 사례: 낭포성 섬유증 치료",
+          "normalized_label": "CRISPR 기반 유전자 치료의 임상 사례: 낭포성 섬유증 치료",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "CRISPR 기반 유전자 치료의 임상 사례: 낭포성 섬유증 치료"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-54cdc0e48811fe8b",
+          "label": "CRISPR 기술: 유전체 편집의 새 지평",
+          "normalized_label": "CRISPR 기술: 유전체 편집의 새 지평",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "CRISPR 기술: 유전체 편집의 새 지평"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-eaf556a67c836ce0",
+          "label": "CRISPR 기술의 역사적 기원",
+          "normalized_label": "CRISPR 기술의 역사적 기원",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "CRISPR 기술의 역사적 기원"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b9a64ab3897ebc31",
+          "label": "CRISPR 기술의 최신 동향과 도전",
+          "normalized_label": "CRISPR 기술의 최신 동향과 도전",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "CRISPR 기술의 최신 동향과 도전"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-25fa8cb742ab4dcd",
+          "label": "규제·관리 체계의 진화",
+          "normalized_label": "규제·관리 체계의 진화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "규제·관리 체계의 진화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-12c68393bba85b0d",
+          "label": "기본 개념과 주요 용어",
+          "normalized_label": "기본 개념과 주요 용어",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "기본 개념과 주요 용어"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c4931f2eedae7108",
+          "label": "사회 및 문화적 영향",
+          "normalized_label": "사회 및 문화적 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "사회 및 문화적 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-54eda12529abfef8",
+          "label": "유전체 편집 기술이 개인과 사회에 주는 의미",
+          "normalized_label": "유전체 편집 기술이 개인과 사회에 주는 의미",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "유전체 편집 기술이 개인과 사회에 주는 의미"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1b4dc34ba1ba8794",
+          "label": "작동 원리와 기술 발전",
+          "normalized_label": "작동 원리와 기술 발전",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "작동 원리와 기술 발전"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-cc51b34ccfaff230",
+          "label": "핵심 질문과 다섯 탐구 영역 안내",
+          "normalized_label": "핵심 질문과 다섯 탐구 영역 안내",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "핵심 질문과 다섯 탐구 영역 안내"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6df92b05027f2698",
+          "label": "The Nobel Prize in Chemistry 2020: CRISPR-Cas9 Genome Editing",
+          "normalized_label": "The Nobel Prize in Chemistry 2020: CRISPR-Cas9 Genome Editing",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "The Nobel Prize in Chemistry 2020: CRISPR-Cas9 Genome Editing"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6555abc772ff42ea",
+          "label": "CRISPR 관련 주요 연구서와 탐구 키워드",
+          "normalized_label": "CRISPR 관련 주요 연구서와 탐구 키워드",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> CRISPR 관련 주요 연구서와 탐구 키워드"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b1adc9675054695c",
+          "label": "CRISPR 관련 현재 쟁점",
+          "normalized_label": "CRISPR 관련 현재 쟁점",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> CRISPR 관련 현재 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-69f4a16db7d0981d",
+          "label": "CRISPR와 기존 유전체 편집 기술 비교",
+          "normalized_label": "CRISPR와 기존 유전체 편집 기술 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> CRISPR와 기존 유전체 편집 기술 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c1138efe4f4febdf",
+          "label": "낭포성 섬유증 유전자 치료 사례 특징",
+          "normalized_label": "낭포성 섬유증 유전자 치료 사례 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 낭포성 섬유증 유전자 치료 사례 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-035afd12e6ba5102",
+          "label": "Bioethics and the Future of CRISPR",
+          "normalized_label": "Bioethics and the Future of CRISPR",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "Bioethics and the Future of CRISPR"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-09c4684c7f09ca70",
+          "label": "Editing Humanity",
+          "normalized_label": "Editing Humanity",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "Editing Humanity"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2e4e41de2c1f1b66",
+          "label": "Genome Editing: Principles and Applications",
+          "normalized_label": "Genome Editing: Principles and Applications",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "Genome Editing: Principles and Applications"
             }
           ]
         }

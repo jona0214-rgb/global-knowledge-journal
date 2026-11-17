@@ -2,12 +2,12 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-11-17T08:33:37.978819+09:00",
+  "generated_at": "2026-11-18T07:42:27.201103+09:00",
   "stats": {
     "categories": 10,
-    "reports": 91,
-    "nodes": 395,
-    "edges": 502,
+    "reports": 92,
+    "nodes": 398,
+    "edges": 505,
     "concepts": 28,
     "concept_edges": 145,
     "semantic_edges": 0
@@ -879,6 +879,13 @@
       "label": "소비 행위와 윤리적 책임",
       "level": 3,
       "main_category": "인문·철학"
+    },
+    {
+      "id": "detail:827d4e6a06f8e552",
+      "type": "detail",
+      "label": "CRISPR 기술의 의학 적용과 윤리",
+      "level": 3,
+      "main_category": "생명·건강"
     },
     {
       "id": "detail:84177918c401892e",
@@ -3282,6 +3289,23 @@
       "pdf_url": "outputs/20261117_dosibigdata_digitaltwin__Report.pdf"
     },
     {
+      "id": "report:rpt-20261118-crispr-current-ethics",
+      "type": "report",
+      "label": "유전체 편집 기술 CRISPR의 현재와 윤리적 쟁점",
+      "level": 4,
+      "report_id": "rpt-20261118-crispr-current-ethics",
+      "date": "2026-11-18",
+      "main_category": "생명·건강",
+      "category_path": [
+        "생명·건강",
+        "생물학",
+        "유전학",
+        "CRISPR 기술의 의학 적용과 윤리"
+      ],
+      "html_url": "outputs/20261118_crispr_current_ethics_Report.html",
+      "pdf_url": "outputs/20261118_crispr_current_ethics_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -3840,6 +3864,13 @@
       "label": "브랜딩",
       "level": 2,
       "main_category": "경제·경영"
+    },
+    {
+      "id": "sub:d187ff2f3d2e47ff",
+      "type": "sub",
+      "label": "유전학",
+      "level": 2,
+      "main_category": "생명·건강"
     },
     {
       "id": "sub:d1c4b572c935c483",
@@ -5297,6 +5328,13 @@
       "id": "edge:4efadd2bc220df63",
       "source": "sub:4ad5be98bb969b76",
       "target": "detail:fde540c301a1a76f",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:4f362ca1e2bfe066",
+      "source": "middle:388a7f51a0fce5c7",
+      "target": "sub:d187ff2f3d2e47ff",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -7340,6 +7378,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:a5ff62b684c0a65c",
+      "source": "sub:d187ff2f3d2e47ff",
+      "target": "detail:827d4e6a06f8e552",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:a630531c512159c7",
       "source": "middle:25e8d50dabe74f2b",
       "target": "sub:5c7b7b2c66e4882e",
@@ -7749,6 +7794,13 @@
       "id": "edge:ba35dbab3a281411",
       "source": "sub:158bcbe301c0d0bb",
       "target": "detail:857748ab54dcd802",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:bb04658de9c7899f",
+      "source": "detail:827d4e6a06f8e552",
+      "target": "report:rpt-20261118-crispr-current-ethics",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
