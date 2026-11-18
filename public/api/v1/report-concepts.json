@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-11-18T07:42:27.201103+09:00",
+  "generated_at": "2026-11-19T07:26:50.099079+09:00",
   "stats": {
-    "reports": 92,
-    "tags": 3428,
+    "reports": 93,
+    "tags": 3466,
     "shared_concepts": 28,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -50353,6 +50353,560 @@
           ]
         }
       ]
+    },
+    {
+      "report_id": "rpt-20261119-glacial-periods-and-eart",
+      "date": "2026-11-19",
+      "title": "빙하기와 지구환경 변화: 과거의 냉각기는 왜 찾아오고 사라졌나",
+      "main_category": "자연·환경·지리",
+      "tags": [
+        {
+          "tag_id": "tag-1a7ddebf2e1b18ad",
+          "label": "과거 기후",
+          "normalized_label": "과거 기후",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "과거 기후"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6111540d229eb532",
+          "label": "기후 변동",
+          "normalized_label": "기후 변동",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "기후 변동"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-de9232a2f80421f2",
+          "label": "빙상 이동",
+          "normalized_label": "빙상 이동",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "빙상 이동"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a899442e4d25cdac",
+          "label": "빙하기",
+          "normalized_label": "빙하기",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "빙하기"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "빙하기"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-382d220a8e1b65de",
+          "label": "지구 기후 변화",
+          "normalized_label": "지구 기후 변화",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "지구 기후 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-676e397f1b6493a7",
+          "label": "지구환경",
+          "normalized_label": "지구환경",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "지구환경"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6fce1c600cc65016",
+          "label": "해퇴 메커니즘",
+          "normalized_label": "해퇴 메커니즘",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "해퇴 메커니즘"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1bdfc57445a033cc",
+          "label": "밀란코비치 주기",
+          "normalized_label": "밀란코비치 주기",
+          "type": "mechanism",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "밀란코비치 주기"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "밀란코비치 주기"
+            },
+            {
+              "reference": "further_reading[3].title",
+              "matched_text": "밀란코비치 주기"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a758d58e3ca75647",
+          "label": "온실가스",
+          "normalized_label": "온실가스",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "온실가스"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e5986b5ac01ebd41",
+          "label": "해퇴",
+          "normalized_label": "해퇴",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [
+            "빙하기 해제"
+          ],
+          "evidence": [
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "해퇴 (빙하기 해제)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-bc4690380cba93d3",
+          "label": "기후",
+          "normalized_label": "기후",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "기후"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-29c25ab26cd745ab",
+          "label": "지구기후사",
+          "normalized_label": "지구기후사",
+          "type": "domain",
+          "weight": 0.93,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.sub",
+              "matched_text": "지구기후사"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5d2ccd2739e7d1af",
+          "label": "빙하기 원인과 해퇴 메커니즘",
+          "normalized_label": "빙하기 원인과 해퇴 메커니즘",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "빙하기 원인과 해퇴 메커니즘"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-33aa78824d162d82",
+          "label": "William F. Ruddiman",
+          "normalized_label": "William F. Ruddiman",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "William F. Ruddiman, 기후과학자"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2a28635d44633086",
+          "label": "기후 냉각 및 빙상 확장",
+          "normalized_label": "기후 냉각 및 빙상 확장",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "기후 냉각 및 빙상 확장"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f3db413b85e61e5e",
+          "label": "빙하기 유지와 증폭",
+          "normalized_label": "빙하기 유지와 증폭",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "빙하기 유지와 증폭"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-55195552879d5406",
+          "label": "생태계 및 환경 변화",
+          "normalized_label": "생태계 및 환경 변화",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "생태계 및 환경 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6eb0c004757e554b",
+          "label": "태양복사량 변동",
+          "normalized_label": "태양복사량 변동",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "태양복사량 변동"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-eb7c858e5a09cd55",
+          "label": "해퇴 시작 및 온난기 전환",
+          "normalized_label": "해퇴 시작 및 온난기 전환",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "해퇴 시작 및 온난기 전환"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fb2f1638a7bbe618",
+          "label": "마지막 빙하기와 인류 문명 변화: 사례로 보는 빙하기 영향",
+          "normalized_label": "마지막 빙하기와 인류 문명 변화: 사례로 보는 빙하기 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "마지막 빙하기와 인류 문명 변화: 사례로 보는 빙하기 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-22ee219f922e299e",
+          "label": "빙하기 연구가 개인과 사회에 주는 시사점",
+          "normalized_label": "빙하기 연구가 개인과 사회에 주는 시사점",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "빙하기 연구가 개인과 사회에 주는 시사점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-88755f2f2899dc5d",
+          "label": "빙하기 연구를 위한 측정과 관리 기준의 발전",
+          "normalized_label": "빙하기 연구를 위한 측정과 관리 기준의 발전",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "빙하기 연구를 위한 측정과 관리 기준의 발전"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4d466806ac7b4bc0",
+          "label": "빙하기 연구의 역사적 출발점",
+          "normalized_label": "빙하기 연구의 역사적 출발점",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "빙하기 연구의 역사적 출발점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b94dbcc1f1287136",
+          "label": "빙하기 연구의 현재 쟁점과 미래 과제",
+          "normalized_label": "빙하기 연구의 현재 쟁점과 미래 과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[7].title",
+              "matched_text": "빙하기 연구의 현재 쟁점과 미래 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7a13becbaf303b61",
+          "label": "빙하기 원인과 작동 메커니즘",
+          "normalized_label": "빙하기 원인과 작동 메커니즘",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "빙하기 원인과 작동 메커니즘"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1fe29da3b262bb5f",
+          "label": "빙하기 이해를 위한 기본 개념과 용어",
+          "normalized_label": "빙하기 이해를 위한 기본 개념과 용어",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "빙하기 이해를 위한 기본 개념과 용어"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-790cab32ae04ca7c",
+          "label": "빙하기가 생태계와 인류에 미친 영향",
+          "normalized_label": "빙하기가 생태계와 인류에 미친 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "빙하기가 생태계와 인류에 미친 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2ec1cf263cd6d89f",
+          "label": "빙하기와 지구 환경 변화의 역사적 맥락",
+          "normalized_label": "빙하기와 지구 환경 변화의 역사적 맥락",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "빙하기와 지구 환경 변화의 역사적 맥락"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d84842525734af26",
+          "label": "빙하기와 지구환경 변화의 핵심 원리",
+          "normalized_label": "빙하기와 지구환경 변화의 핵심 원리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "빙하기와 지구환경 변화의 핵심 원리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a987672e937f2adb",
+          "label": "현재 빙하기 관련 연구 동향과 현안",
+          "normalized_label": "현재 빙하기 관련 연구 동향과 현안",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "현재 빙하기 관련 연구 동향과 현안"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b060e5225437b88d",
+          "label": "Earth's Climate Past and Future",
+          "normalized_label": "Earth's Climate Past and Future",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "Earth's Climate Past and Future"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ddd91e52a2cd943f",
+          "label": "관련 도서 및 연구 키워드",
+          "normalized_label": "관련 도서 및 연구 키워드",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 관련 도서 및 연구 키워드"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b66b6db39eb5e9d3",
+          "label": "마지막 빙하기와 인류 활동 주요 변화",
+          "normalized_label": "마지막 빙하기와 인류 활동 주요 변화",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 마지막 빙하기와 인류 활동 주요 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a82686715e0a6858",
+          "label": "밀란코비치 주기 구성 요소 비교",
+          "normalized_label": "밀란코비치 주기 구성 요소 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 밀란코비치 주기 구성 요소 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-39f77ca497041724",
+          "label": "현재 빙하기 연구의 주요 쟁점 비교",
+          "normalized_label": "현재 빙하기 연구의 주요 쟁점 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 현재 빙하기 연구의 주요 쟁점 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-95734ffbbb8798f7",
+          "label": "『빙하기의 비밀』",
+          "normalized_label": "『빙하기의 비밀』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "『빙하기의 비밀』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3e6ee65d852a92d0",
+          "label": "『지구 기후의 역사』",
+          "normalized_label": "『지구 기후의 역사』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "『지구 기후의 역사』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c6e99bf95770496a",
+          "label": "빙하기 해퇴 메커니즘",
+          "normalized_label": "빙하기 해퇴 메커니즘",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "빙하기 해퇴 메커니즘"
+            }
+          ]
+        }
+      ]
     }
   ],
   "shared_concepts": [
@@ -51224,19 +51778,6 @@
           ]
         },
         {
-          "report_id": "rpt-20261014-quantum-computing-and-in",
-          "evidence": [
-            {
-              "reference": "sections[7].body[0]",
-              "matched_text": "불확실성"
-            },
-            {
-              "reference": "sections[9].body[4]",
-              "matched_text": "불확실성"
-            }
-          ]
-        },
-        {
           "report_id": "rpt-20261101-social-structure-change",
           "evidence": [
             {
@@ -51271,6 +51812,23 @@
             {
               "reference": "sections[10].body[1]",
               "matched_text": "시장 변동성"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261119-glacial-periods-and-eart",
+          "evidence": [
+            {
+              "reference": "sections[7].body[0]",
+              "matched_text": "불확실성"
+            },
+            {
+              "reference": "sections[9].body[4]",
+              "matched_text": "불확실성"
+            },
+            {
+              "reference": "sections[10].body[3]",
+              "matched_text": "불확실성"
             }
           ]
         }

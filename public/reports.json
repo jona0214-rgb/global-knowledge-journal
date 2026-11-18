@@ -1,5 +1,21 @@
 [
   {
+    "date": "2026-11-19",
+    "title": "빙하기와 지구환경 변화: 과거의 냉각기는 왜 찾아오고 사라졌나",
+    "subtitle": "지구 역사 속 빙하기의 원인과 소멸 과정을 이해하기",
+    "main_category": "자연·환경·지리",
+    "mid_category": "기후",
+    "sub_category": "지구기후사",
+    "detail_category": "빙하기 원인과 해퇴 메커니즘",
+    "taxonomy_version": "2.0",
+    "html_path": "outputs/20261119_glacial_periods_and_eart_Report.html",
+    "pdf_path": "outputs/20261119_glacial_periods_and_eart_Report.pdf",
+    "status": "published_api",
+    "html_url": "outputs/20261119_glacial_periods_and_eart_Report.html",
+    "pdf_url": "outputs/20261119_glacial_periods_and_eart_Report.pdf",
+    "report_id": "rpt-20261119-glacial-periods-and-eart"
+  },
+  {
     "date": "2026-11-18",
     "title": "유전체 편집 기술 CRISPR의 현재와 윤리적 쟁점",
     "subtitle": "혁신적 유전체 편집 도구 CRISPR 기술의 작동 원리와 의료 적용, 그리고 제기되는 윤리적 논쟁",

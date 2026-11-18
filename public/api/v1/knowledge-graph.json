@@ -2,12 +2,12 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-11-18T07:42:27.201103+09:00",
+  "generated_at": "2026-11-19T07:26:50.099079+09:00",
   "stats": {
     "categories": 10,
-    "reports": 92,
-    "nodes": 398,
-    "edges": 505,
+    "reports": 93,
+    "nodes": 402,
+    "edges": 509,
     "concepts": 28,
     "concept_edges": 145,
     "semantic_edges": 0
@@ -902,6 +902,13 @@
       "main_category": "언어·미디어·지식"
     },
     {
+      "id": "detail:8803f1d5ce7a0c8c",
+      "type": "detail",
+      "label": "빙하기 원인과 해퇴 메커니즘",
+      "level": 3,
+      "main_category": "자연·환경·지리"
+    },
+    {
       "id": "detail:881f9aaf3d78c0b8",
       "type": "detail",
       "label": "스마트 그리드 기술과 에너지 관리",
@@ -1740,6 +1747,13 @@
       "label": "디자인",
       "level": 1,
       "main_category": "예술·디자인"
+    },
+    {
+      "id": "middle:fe9cff16be2ddb97",
+      "type": "middle",
+      "label": "기후",
+      "level": 1,
+      "main_category": "자연·환경·지리"
     },
     {
       "id": "report:rpt-20260815-dosiei-hasudo",
@@ -3306,6 +3320,23 @@
       "pdf_url": "outputs/20261118_crispr_current_ethics_Report.pdf"
     },
     {
+      "id": "report:rpt-20261119-glacial-periods-and-eart",
+      "type": "report",
+      "label": "빙하기와 지구환경 변화: 과거의 냉각기는 왜 찾아오고 사라졌나",
+      "level": 4,
+      "report_id": "rpt-20261119-glacial-periods-and-eart",
+      "date": "2026-11-19",
+      "main_category": "자연·환경·지리",
+      "category_path": [
+        "자연·환경·지리",
+        "기후",
+        "지구기후사",
+        "빙하기 원인과 해퇴 메커니즘"
+      ],
+      "html_url": "outputs/20261119_glacial_periods_and_eart_Report.html",
+      "pdf_url": "outputs/20261119_glacial_periods_and_eart_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -3948,6 +3979,13 @@
       "label": "신재생 에너지",
       "level": 2,
       "main_category": "기술·공학"
+    },
+    {
+      "id": "sub:fb7288bd3bd576a8",
+      "type": "sub",
+      "label": "지구기후사",
+      "level": 2,
+      "main_category": "자연·환경·지리"
     }
   ],
   "edges": [
@@ -4405,6 +4443,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:1ee6aebed09fbec2",
+      "source": "category:9de06b299a735751",
+      "target": "middle:fe9cff16be2ddb97",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:1f4d747bdf7b4aaa",
       "source": "middle:949307e3ea588e52",
       "target": "sub:637dd7b065713827",
@@ -4807,6 +4852,13 @@
         }
       ],
       "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:35b0f561dc927f6d",
+      "source": "middle:fe9cff16be2ddb97",
+      "target": "sub:fb7288bd3bd576a8",
+      "kind": "hierarchy",
+      "relation_type": "contains"
     },
     {
       "id": "edge:35b137d30752fb0a",
@@ -6423,25 +6475,6 @@
       "relation_type": "contains"
     },
     {
-      "id": "edge:838466cc407c66e5",
-      "source": "report:rpt-20261014-quantum-computing-and-in",
-      "target": "concept:con-22940219024d252e",
-      "kind": "concept",
-      "relation_type": "has_concept",
-      "score": 0.8,
-      "evidence": [
-        {
-          "reference": "sections[7].body[0]",
-          "matched_text": "불확실성"
-        },
-        {
-          "reference": "sections[9].body[4]",
-          "matched_text": "불확실성"
-        }
-      ],
-      "provenance": "curated-pattern-rule"
-    },
-    {
       "id": "edge:83ab456d08b296cf",
       "source": "report:rpt-20260914-jukiyurpyoui-jillye-woon",
       "target": "concept:con-135ff1d8963c0c0f",
@@ -6468,9 +6501,39 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:846846c66b42dd83",
+      "source": "report:rpt-20261119-glacial-periods-and-eart",
+      "target": "concept:con-22940219024d252e",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.9,
+      "evidence": [
+        {
+          "reference": "sections[7].body[0]",
+          "matched_text": "불확실성"
+        },
+        {
+          "reference": "sections[9].body[4]",
+          "matched_text": "불확실성"
+        },
+        {
+          "reference": "sections[10].body[3]",
+          "matched_text": "불확실성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:8486f4f7bc96885c",
       "source": "detail:9f81f58b346b0012",
       "target": "report:rpt-20260916-gut-microbiome-ecosystem",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:84ad4eae7fe398ff",
+      "source": "detail:8803f1d5ce7a0c8c",
+      "target": "report:rpt-20261119-glacial-periods-and-eart",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -8541,6 +8604,13 @@
       "id": "edge:da4626f777879e23",
       "source": "middle:e540b1045ff90846",
       "target": "sub:1f80dbf7a458e748",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:daec75612a29c51e",
+      "source": "sub:fb7288bd3bd576a8",
+      "target": "detail:8803f1d5ce7a0c8c",
       "kind": "hierarchy",
       "relation_type": "contains"
     },

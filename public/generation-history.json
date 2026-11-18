@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-11-19",
+    "title": "빙하기와 지구환경 변화: 과거의 냉각기는 왜 찾아오고 사라졌나",
+    "status": "published_api",
+    "event_name": "schedule",
+    "schedule_cron": "45 14 * * *",
+    "scheduled_for_kst": "2026-11-19T00:00:00+09:00",
+    "workflow_started_at": "2026-11-18T22:22:02Z",
+    "generation_started_at": "2026-11-18T22:22:37.202839Z",
+    "generation_completed_at": "2026-11-18T22:26:48.813796Z",
+    "catalog_updated_at": "2026-11-18T22:26:50.101285Z",
+    "scheduler_delay_seconds": 26522,
+    "setup_duration_seconds": 35,
+    "generation_duration_seconds": 253,
+    "validation_attempts": 2,
+    "run_id": "44410866756",
+    "run_attempt": "1",
+    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/44410866756",
+    "source_sha": "caa970d82af63244d803fb8f7d5a52bbe4275e44"
+  },
+  {
     "date": "2026-11-18",
     "title": "유전체 편집 기술 CRISPR의 현재와 윤리적 쟁점",
     "status": "published_api",
@@ -708,30 +728,5 @@
     "publication_schedule_cron": "45 21 * * *",
     "publication_run_id": "39079045734",
     "publication_run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/39079045734"
-  },
-  {
-    "date": "2026-10-17",
-    "title": "화산 활동과 지형 형성: 대지의 역동적 변화와 생태계 영향",
-    "status": "published_api",
-    "event_name": "schedule",
-    "schedule_cron": "45 14 * * *",
-    "scheduled_for_kst": "2026-10-17T00:00:00+09:00",
-    "workflow_started_at": "2026-10-16T18:25:12Z",
-    "generation_started_at": "2026-10-16T18:25:45.660292Z",
-    "generation_completed_at": "2026-10-16T18:26:47.198663Z",
-    "catalog_updated_at": "2026-10-16T18:26:48.393731Z",
-    "scheduler_delay_seconds": 12312,
-    "setup_duration_seconds": 34,
-    "generation_duration_seconds": 63,
-    "validation_attempts": 1,
-    "run_id": "38947182845",
-    "run_attempt": "1",
-    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/38947182845",
-    "source_sha": "c48442a418848759e5d55bc45d10df655548c134",
-    "publication_target_kst": "2026-10-17T07:00:00+09:00",
-    "publication_pushed_at": "2026-10-16T23:53:27.157803Z",
-    "publication_schedule_cron": "45 21 * * *",
-    "publication_run_id": "38983742239",
-    "publication_run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/38983742239"
   }
 ]

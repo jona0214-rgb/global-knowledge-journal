@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-11-18",
+  "updated_at": "2026-11-19",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -2072,6 +2072,29 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261118_crispr_current_ethics_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261118_crispr_current_ethics_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "report_id": "rpt-20261119-glacial-periods-and-earth-environment-changes",
+      "date": "2026-11-19",
+      "title": "빙하기와 지구환경 변화: 과거의 냉각기는 왜 찾아오고 사라졌나",
+      "main_category": "자연·환경·지리",
+      "mid_category": "기후",
+      "sub_category": "지구기후사",
+      "detail_category": "빙하기 원인과 해퇴 메커니즘",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "빙하기",
+        "지구 기후 변화",
+        "밀란코비치 주기",
+        "해퇴 메커니즘",
+        "지구환경",
+        "기후 변동",
+        "과거 기후",
+        "빙상 이동"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261119_glacial_periods_and_eart_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261119_glacial_periods_and_eart_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -2088,9 +2111,9 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "생명·건강",
-    "next_main_category": "자연·환경·지리",
-    "next_index": 6,
+    "last_main_category": "자연·환경·지리",
+    "next_main_category": "역사·문화",
+    "next_index": 7,
     "completed_cycles": 9,
     "published_counts": {
       "인문·철학": 10,
@@ -2099,13 +2122,12 @@
       "과학·수학": 9,
       "기술·공학": 10,
       "생명·건강": 9,
-      "자연·환경·지리": 8,
+      "자연·환경·지리": 9,
       "역사·문화": 10,
       "예술·디자인": 9,
       "언어·미디어·지식": 10
     },
     "recent_main_categories": [
-      "자연·환경·지리",
       "역사·문화",
       "예술·디자인",
       "언어·미디어·지식",
@@ -2114,7 +2136,8 @@
       "경제·경영",
       "과학·수학",
       "기술·공학",
-      "생명·건강"
+      "생명·건강",
+      "자연·환경·지리"
     ]
   },
   "candidate_pool": [
@@ -3075,7 +3098,7 @@
       "sub_category": "지구기후사",
       "detail_category": "빙하기 원인과 해퇴 메커니즘",
       "priority": 1.0,
-      "status": "candidate",
+      "status": "used",
       "source": "api_generated"
     },
     {
