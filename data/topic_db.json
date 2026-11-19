@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-11-19",
+  "updated_at": "2026-11-20",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -2095,6 +2095,29 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261119_glacial_periods_and_eart_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261119_glacial_periods_and_eart_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "report_id": "rpt-20261120-royal-rituals-and-power-tradition-politics-influ",
+      "date": "2026-11-20",
+      "title": "왕실 의례와 권력: 전통이 정치에 끼친 영향",
+      "main_category": "역사·문화",
+      "mid_category": "역사",
+      "sub_category": "정치사",
+      "detail_category": "왕실 의례의 정치적 상징성과 변화",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "왕실 의례",
+        "정치 권력",
+        "전통 상징",
+        "사회 질서",
+        "권위 정당화",
+        "의례 변화",
+        "정치사",
+        "권력 구조"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261120_royal_rituals_and_power__Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261120_royal_rituals_and_power__Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -2111,9 +2134,9 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "자연·환경·지리",
-    "next_main_category": "역사·문화",
-    "next_index": 7,
+    "last_main_category": "역사·문화",
+    "next_main_category": "예술·디자인",
+    "next_index": 8,
     "completed_cycles": 9,
     "published_counts": {
       "인문·철학": 10,
@@ -2123,12 +2146,11 @@
       "기술·공학": 10,
       "생명·건강": 9,
       "자연·환경·지리": 9,
-      "역사·문화": 10,
+      "역사·문화": 11,
       "예술·디자인": 9,
       "언어·미디어·지식": 10
     },
     "recent_main_categories": [
-      "역사·문화",
       "예술·디자인",
       "언어·미디어·지식",
       "인문·철학",
@@ -2137,7 +2159,8 @@
       "과학·수학",
       "기술·공학",
       "생명·건강",
-      "자연·환경·지리"
+      "자연·환경·지리",
+      "역사·문화"
     ]
   },
   "candidate_pool": [
@@ -2948,7 +2971,7 @@
       "sub_category": "정치사",
       "detail_category": "왕실 의례의 정치적 상징성과 변화",
       "priority": 1.0,
-      "status": "candidate",
+      "status": "used",
       "source": "api_generated"
     },
     {
