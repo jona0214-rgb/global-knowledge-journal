@@ -2,14 +2,14 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-11-20T07:34:32.175656+09:00",
+  "generated_at": "2026-11-21T07:05:02.695410+09:00",
   "stats": {
     "categories": 10,
-    "reports": 94,
-    "nodes": 406,
-    "edges": 514,
-    "concepts": 29,
-    "concept_edges": 147,
+    "reports": 95,
+    "nodes": 411,
+    "edges": 522,
+    "concepts": 31,
+    "concept_edges": 152,
     "semantic_edges": 0
   },
   "nodes": [
@@ -255,6 +255,20 @@
       "provenance": "curated-pattern-rule"
     },
     {
+      "id": "concept:con-601b11d59f27a8e2",
+      "type": "concept",
+      "label": "프라이버시",
+      "level": 5,
+      "concept_id": "con-601b11d59f27a8e2",
+      "concept_type": "concept",
+      "report_count": 2,
+      "main_categories": [
+        "언어·미디어·지식",
+        "예술·디자인"
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
       "id": "concept:con-7293f7983e59af61",
       "type": "concept",
       "label": "지속 가능성",
@@ -308,6 +322,20 @@
       "report_count": 2,
       "main_categories": [
         "언어·미디어·지식",
+        "인문·철학"
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
+      "id": "concept:con-891f890e162ee5e5",
+      "type": "concept",
+      "label": "사회적 책임",
+      "level": 5,
+      "concept_id": "con-891f890e162ee5e5",
+      "concept_type": "concept",
+      "report_count": 2,
+      "main_categories": [
+        "예술·디자인",
         "인문·철학"
       ],
       "provenance": "exact-normalized-tag"
@@ -380,7 +408,7 @@
       "level": 5,
       "concept_id": "con-9c3ea3b0f43b9c79",
       "concept_type": "mechanism",
-      "report_count": 5,
+      "report_count": 6,
       "main_categories": [
         "경제·경영",
         "언어·미디어·지식",
@@ -743,6 +771,13 @@
       "id": "detail:3bb86fbe9fa9a6b6",
       "type": "detail",
       "label": "세계화와 민속음악의 변화",
+      "level": 3,
+      "main_category": "예술·디자인"
+    },
+    {
+      "id": "detail:40d1829c02063f65",
+      "type": "detail",
+      "label": "디지털 디자인에서 윤리적 쟁점",
       "level": 3,
       "main_category": "예술·디자인"
     },
@@ -3374,6 +3409,23 @@
       "pdf_url": "outputs/20261120_royal_rituals_and_power__Report.pdf"
     },
     {
+      "id": "report:rpt-20261121-digital-age-design-ethic",
+      "type": "report",
+      "label": "디지털 시대의 디자인 윤리: 사용자 경험을 넘어 사회적 책임은 어떻게 고려되나",
+      "level": 4,
+      "report_id": "rpt-20261121-digital-age-design-ethic",
+      "date": "2026-11-21",
+      "main_category": "예술·디자인",
+      "category_path": [
+        "예술·디자인",
+        "디자인",
+        "디자인 철학과 윤리",
+        "디지털 디자인에서 윤리적 쟁점"
+      ],
+      "html_url": "outputs/20261121_digital_age_design_ethic_Report.html",
+      "pdf_url": "outputs/20261121_digital_age_design_ethic_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -3874,6 +3926,13 @@
       "id": "sub:b74bbc1aefd39888",
       "type": "sub",
       "label": "안료와 색채",
+      "level": 2,
+      "main_category": "예술·디자인"
+    },
+    {
+      "id": "sub:b9460337c94584cf",
+      "type": "sub",
+      "label": "디자인 철학과 윤리",
       "level": 2,
       "main_category": "예술·디자인"
     },
@@ -4480,6 +4539,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:1dff226a74aaccef",
+      "source": "detail:40d1829c02063f65",
+      "target": "report:rpt-20261121-digital-age-design-ethic",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:1e006562f92260d0",
       "source": "middle:ac71074d27b76d86",
       "target": "sub:45db618c1de0b024",
@@ -4789,6 +4855,21 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:30dc900213b8a636",
+      "source": "report:rpt-20261112-auditory-culture-evoluti",
+      "target": "concept:con-601b11d59f27a8e2",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[5]",
+          "matched_text": "프라이버시"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
       "id": "edge:310378ae2de04a06",
       "source": "report:rpt-20260905-seawater-to-drinking-wat",
       "target": "concept:con-9b89960b11d9e6cf",
@@ -4939,6 +5020,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:35bff5e4d94d6d52",
+      "source": "middle:fe8b996f66a99759",
+      "target": "sub:b9460337c94584cf",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:36234df30d4252ae",
       "source": "middle:eadcf5e153b9ad3c",
       "target": "sub:7cb73285e3d7560c",
@@ -4949,6 +5037,13 @@
       "id": "edge:366f9c34cdb4cbe4",
       "source": "sub:da92dcfc6fb82aee",
       "target": "detail:06fd587269769526",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:36829f9107db21fa",
+      "source": "sub:b9460337c94584cf",
+      "target": "detail:40d1829c02063f65",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -5481,6 +5576,21 @@
       "target": "report:rpt-20260817-time-table-birth-how-mod",
       "kind": "hierarchy",
       "relation_type": "contains"
+    },
+    {
+      "id": "edge:5014994ab31bdc61",
+      "source": "report:rpt-20261031-ethical-consumption-indi",
+      "target": "concept:con-891f890e162ee5e5",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[1]",
+          "matched_text": "사회적 책임"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
     },
     {
       "id": "edge:501a5e49adb29003",
@@ -7567,6 +7677,21 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:a635e9be6f0d3ac8",
+      "source": "report:rpt-20261121-digital-age-design-ethic",
+      "target": "concept:con-891f890e162ee5e5",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[2]",
+          "matched_text": "사회적 책임"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
+    },
+    {
       "id": "edge:a698593596617b41",
       "source": "category:b9ccab27f2a0689e",
       "target": "middle:c6250703bc32d78c",
@@ -9383,6 +9508,21 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:f0c9ccd9207e233f",
+      "source": "report:rpt-20261121-digital-age-design-ethic",
+      "target": "concept:con-9c3ea3b0f43b9c79",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "sections[4].body[1]",
+          "matched_text": "추천 시스템"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:f0d798adab530994",
       "source": "report:rpt-20261010-language-diversity-conse",
       "target": "concept:con-135ff1d8963c0c0f",
@@ -9396,6 +9536,21 @@
         }
       ],
       "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:f1217f73b9fed57b",
+      "source": "report:rpt-20261121-digital-age-design-ethic",
+      "target": "concept:con-601b11d59f27a8e2",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "keywords[4]",
+          "matched_text": "프라이버시"
+        }
+      ],
+      "provenance": "exact-normalized-tag"
     },
     {
       "id": "edge:f133f20cefc6f778",

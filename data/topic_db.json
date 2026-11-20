@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-11-20",
+  "updated_at": "2026-11-21",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -2118,6 +2118,29 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261120_royal_rituals_and_power__Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261120_royal_rituals_and_power__Report.pdf",
       "status": "published_api"
+    },
+    {
+      "report_id": "rpt-20261121-digital-age-design-ethics-social-responsibility",
+      "date": "2026-11-21",
+      "title": "디지털 시대의 디자인 윤리: 사용자 경험을 넘어 사회적 책임은 어떻게 고려되나",
+      "main_category": "예술·디자인",
+      "mid_category": "디자인",
+      "sub_category": "디자인 철학과 윤리",
+      "detail_category": "디지털 디자인에서 윤리적 쟁점",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "디자인 윤리",
+        "사용자 경험",
+        "사회적 책임",
+        "디지털 디자인",
+        "프라이버시",
+        "접근성",
+        "포용적 디자인",
+        "윤리적 설계"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261121_digital_age_design_ethic_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261121_digital_age_design_ethic_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -2134,9 +2157,9 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "역사·문화",
-    "next_main_category": "예술·디자인",
-    "next_index": 8,
+    "last_main_category": "예술·디자인",
+    "next_main_category": "언어·미디어·지식",
+    "next_index": 9,
     "completed_cycles": 9,
     "published_counts": {
       "인문·철학": 10,
@@ -2147,11 +2170,10 @@
       "생명·건강": 9,
       "자연·환경·지리": 9,
       "역사·문화": 11,
-      "예술·디자인": 9,
+      "예술·디자인": 10,
       "언어·미디어·지식": 10
     },
     "recent_main_categories": [
-      "예술·디자인",
       "언어·미디어·지식",
       "인문·철학",
       "사회·정치·법",
@@ -2160,7 +2182,8 @@
       "기술·공학",
       "생명·건강",
       "자연·환경·지리",
-      "역사·문화"
+      "역사·문화",
+      "예술·디자인"
     ]
   },
   "candidate_pool": [
@@ -3212,6 +3235,56 @@
       "detail_category": "디지털 정보 환경에서 미디어 신뢰 확보 전략",
       "priority": 1.0,
       "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "미술 재료의 변천: 자연에서 합성으로, 표현의 변화는 어떻게 일어났나",
+      "main_category": "예술·디자인",
+      "mid_category": "미술",
+      "sub_category": "재료와 기법",
+      "detail_category": "미술 재료 역사 및 변화",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "음악과 감정: 음계와 리듬이 인간의 정서를 어떻게 형성하는가",
+      "main_category": "예술·디자인",
+      "mid_category": "음악",
+      "sub_category": "음악 이론과 정서",
+      "detail_category": "음악과 감성의 상관관계 연구",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "건축과 환경의 상호작용: 지속가능한 공간은 어떻게 설계되는가",
+      "main_category": "예술·디자인",
+      "mid_category": "건축",
+      "sub_category": "환경 디자인",
+      "detail_category": "친환경 건축 설계 원리",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "공연예술의 공간 구성: 무대 디자인은 관객 경험을 어떻게 바꾸는가",
+      "main_category": "예술·디자인",
+      "mid_category": "공연과 디자인",
+      "sub_category": "무대 및 공간 디자인",
+      "detail_category": "공연 공간이 관객 인지에 미치는 영향",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "디지털 시대의 디자인 윤리: 사용자 경험을 넘어 사회적 책임은 어떻게 고려되나",
+      "main_category": "예술·디자인",
+      "mid_category": "디자인",
+      "sub_category": "디자인 철학과 윤리",
+      "detail_category": "디지털 디자인에서 윤리적 쟁점",
+      "priority": 1.0,
+      "status": "used",
       "source": "api_generated"
     }
   ],

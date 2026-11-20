@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-11-20T07:34:32.175656+09:00",
+  "generated_at": "2026-11-21T07:05:02.695410+09:00",
   "stats": {
-    "reports": 94,
-    "tags": 3501,
-    "shared_concepts": 29,
+    "reports": 95,
+    "tags": 3538,
+    "shared_concepts": 31,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
   },
@@ -51427,6 +51427,542 @@
           ]
         }
       ]
+    },
+    {
+      "report_id": "rpt-20261121-digital-age-design-ethic",
+      "date": "2026-11-21",
+      "title": "디지털 시대의 디자인 윤리: 사용자 경험을 넘어 사회적 책임은 어떻게 고려되나",
+      "main_category": "예술·디자인",
+      "tags": [
+        {
+          "tag_id": "tag-4dfd4be5cf8a87ad",
+          "label": "디자인 윤리",
+          "normalized_label": "디자인 윤리",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "디자인 윤리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3459ff6abb957a76",
+          "label": "디지털 디자인",
+          "normalized_label": "디지털 디자인",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "디지털 디자인"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-41b6e21bb664e60e",
+          "label": "사용자 경험",
+          "normalized_label": "사용자 경험",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [
+            "UX"
+          ],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "사용자 경험"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "사용자 경험 (UX)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-891f890e162ee5e5",
+          "label": "사회적 책임",
+          "normalized_label": "사회적 책임",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "사회적 책임"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9802d8fab7c4d0fe",
+          "label": "윤리적 설계",
+          "normalized_label": "윤리적 설계",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "윤리적 설계"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e9a85a65f727ec0b",
+          "label": "접근성",
+          "normalized_label": "접근성",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "접근성"
+            },
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "접근성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b0e4b578b11db79c",
+          "label": "포용적 디자인",
+          "normalized_label": "포용적 디자인",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "포용적 디자인"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-601b11d59f27a8e2",
+          "label": "프라이버시",
+          "normalized_label": "프라이버시",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "프라이버시"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c077ba3c52ff89c8",
+          "label": "디지털 디자인 윤리",
+          "normalized_label": "디지털 디자인 윤리",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "디지털 디자인 윤리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-31aad2a4d09f0be5",
+          "label": "알고리즘 편향",
+          "normalized_label": "알고리즘 편향",
+          "type": "technology",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "알고리즘 편향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-20dcbd8599454889",
+          "label": "디자인",
+          "normalized_label": "디자인",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "디자인"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e535187be3db0b56",
+          "label": "디자인 철학과 윤리",
+          "normalized_label": "디자인 철학과 윤리",
+          "type": "domain",
+          "weight": 0.93,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.sub",
+              "matched_text": "디자인 철학과 윤리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0ea6fecd5a4ab708",
+          "label": "디지털 디자인에서 윤리적 쟁점",
+          "normalized_label": "디지털 디자인에서 윤리적 쟁점",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "디지털 디자인에서 윤리적 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0a133ea5f41ccde7",
+          "label": "도나 노먼",
+          "normalized_label": "도나 노먼",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "도나 노먼, 『디자인과 인간 행동』 저자"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a3aab1b30ec4623e",
+          "label": "디자인 개발",
+          "normalized_label": "디자인 개발",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "디자인 개발"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ecaafb28decae52c",
+          "label": "문제 인식",
+          "normalized_label": "문제 인식",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "문제 인식"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9b77a7c786556ab7",
+          "label": "사용자 피드백 반영",
+          "normalized_label": "사용자 피드백 반영",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "사용자 피드백 반영"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-171c43d0116a9b71",
+          "label": "윤리 기준 수립",
+          "normalized_label": "윤리 기준 수립",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "윤리 기준 수립"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-37ff192ebf6a43fa",
+          "label": "지속적 개선",
+          "normalized_label": "지속적 개선",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "지속적 개선"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-316ba967b69526ac",
+          "label": "디자인 윤리의 역사적 기원과 발전",
+          "normalized_label": "디자인 윤리의 역사적 기원과 발전",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "디자인 윤리의 역사적 기원과 발전"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-94e0fe386170a172",
+          "label": "디지털 디자인 윤리, 왜 지금 주목받는가",
+          "normalized_label": "디지털 디자인 윤리, 왜 지금 주목받는가",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "디지털 디자인 윤리, 왜 지금 주목받는가"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b2d63e70d469fc5c",
+          "label": "디지털 디자인 윤리가 우리에게 던지는 질문과 의미",
+          "normalized_label": "디지털 디자인 윤리가 우리에게 던지는 질문과 의미",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "디지털 디자인 윤리가 우리에게 던지는 질문과 의미"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7c689840599c535b",
+          "label": "디지털 디자인 윤리의 기본 개념과 용어",
+          "normalized_label": "디지털 디자인 윤리의 기본 개념과 용어",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "디지털 디자인 윤리의 기본 개념과 용어"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f535219a5fce802a",
+          "label": "디지털 디자인 윤리의 핵심 질문과 심층 탐구",
+          "normalized_label": "디지털 디자인 윤리의 핵심 질문과 심층 탐구",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "디지털 디자인 윤리의 핵심 질문과 심층 탐구"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fd7e46df3a1e732b",
+          "label": "디지털 디자인 윤리의 현재 동향과 쟁점",
+          "normalized_label": "디지털 디자인 윤리의 현재 동향과 쟁점",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "디지털 디자인 윤리의 현재 동향과 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6c125fe5e96c0557",
+          "label": "디지털 디자인의 구조와 윤리적 제도 변화",
+          "normalized_label": "디지털 디자인의 구조와 윤리적 제도 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "디지털 디자인의 구조와 윤리적 제도 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d11f240d73956399",
+          "label": "디지털 디자인이 사회·문화에 미치는 영향",
+          "normalized_label": "디지털 디자인이 사회·문화에 미치는 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "디지털 디자인이 사회·문화에 미치는 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2fa1a0a7cd1b717e",
+          "label": "윤리 기준과 관리 방식의 진화",
+          "normalized_label": "윤리 기준과 관리 방식의 진화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "윤리 기준과 관리 방식의 진화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d2ac94f1b0024a0e",
+          "label": "페이스북 개인정보 유출 사건과 디자인 윤리",
+          "normalized_label": "페이스북 개인정보 유출 사건과 디자인 윤리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "페이스북 개인정보 유출 사건과 디자인 윤리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2f8cf2a87b5de78c",
+          "label": "Design of Everyday Things",
+          "normalized_label": "Design of Everyday Things",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "Design of Everyday Things"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-53ce963f9845770f",
+          "label": "관련 도서 및 탐구 키워드",
+          "normalized_label": "관련 도서 및 탐구 키워드",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 관련 도서 및 탐구 키워드"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ba6947d8f1912763",
+          "label": "디지털 디자인 윤리 주요 요소 비교",
+          "normalized_label": "디지털 디자인 윤리 주요 요소 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 디지털 디자인 윤리 주요 요소 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-72515a4fcb272546",
+          "label": "디지털 디자인 윤리의 현대 쟁점과 대응 방안",
+          "normalized_label": "디지털 디자인 윤리의 현대 쟁점과 대응 방안",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 디지털 디자인 윤리의 현대 쟁점과 대응 방안"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1ce8daf717541179",
+          "label": "페이스북 개인정보 유출 사건의 특징",
+          "normalized_label": "페이스북 개인정보 유출 사건의 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 페이스북 개인정보 유출 사건의 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a2bfe50d35d22ce5",
+          "label": "『디자인 윤리 안내서』",
+          "normalized_label": "『디자인 윤리 안내서』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "『디자인 윤리 안내서』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0e296292fd5825a7",
+          "label": "『사용자 경험과 사회적 책임』",
+          "normalized_label": "『사용자 경험과 사회적 책임』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "『사용자 경험과 사회적 책임』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8d635f714611a8d5",
+          "label": "『포용적 디자인』",
+          "normalized_label": "『포용적 디자인』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "『포용적 디자인』"
+            }
+          ]
+        }
+      ]
     }
   ],
   "shared_concepts": [
@@ -53059,6 +53595,107 @@
       ]
     },
     {
+      "concept_id": "con-9c3ea3b0f43b9c79",
+      "label": "선택과 프레이밍",
+      "normalized_label": "선택과 프레이밍",
+      "type": "mechanism",
+      "provenance": "curated-pattern-rule",
+      "report_count": 6,
+      "main_categories": [
+        "경제·경영",
+        "언어·미디어·지식",
+        "예술·디자인"
+      ],
+      "reports": [
+        {
+          "report_id": "rpt-20260819-library-classification-p",
+          "evidence": [
+            {
+              "reference": "sections[9].body[0]",
+              "matched_text": "추천 시스템"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20260919-photoframe-how-camera-se",
+          "evidence": [
+            {
+              "reference": "subtitle",
+              "matched_text": "프레이밍"
+            },
+            {
+              "reference": "abstract",
+              "matched_text": "프레이밍"
+            },
+            {
+              "reference": "keywords[1]",
+              "matched_text": "프레이밍"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "프레이밍"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20260920-youtube-algorithm-struct",
+          "evidence": [
+            {
+              "reference": "title",
+              "matched_text": "정보 편향"
+            },
+            {
+              "reference": "keywords[1]",
+              "matched_text": "추천 시스템"
+            },
+            {
+              "reference": "keywords[2]",
+              "matched_text": "정보 편향"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "정보 편향"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261002-psychology-of-stock-mark",
+          "evidence": [
+            {
+              "reference": "sections[4].body[0]",
+              "matched_text": "확증 편향"
+            },
+            {
+              "reference": "sections[8].body[1]",
+              "matched_text": "확증 편향"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261030-media-literacy-education",
+          "evidence": [
+            {
+              "reference": "sections[8].body[3]",
+              "matched_text": "정보 편향"
+            },
+            {
+              "reference": "sections[9].body[2]",
+              "matched_text": "정보 편향"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261121-digital-age-design-ethic",
+          "evidence": [
+            {
+              "reference": "sections[4].body[1]",
+              "matched_text": "추천 시스템"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "concept_id": "con-58932b140c8d5ebd",
       "label": "미생물 생태계",
       "normalized_label": "미생물 생태계",
@@ -53149,98 +53786,6 @@
             {
               "reference": "keywords[0]",
               "matched_text": "마이크로바이옴"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "concept_id": "con-9c3ea3b0f43b9c79",
-      "label": "선택과 프레이밍",
-      "normalized_label": "선택과 프레이밍",
-      "type": "mechanism",
-      "provenance": "curated-pattern-rule",
-      "report_count": 5,
-      "main_categories": [
-        "경제·경영",
-        "언어·미디어·지식",
-        "예술·디자인"
-      ],
-      "reports": [
-        {
-          "report_id": "rpt-20260819-library-classification-p",
-          "evidence": [
-            {
-              "reference": "sections[9].body[0]",
-              "matched_text": "추천 시스템"
-            }
-          ]
-        },
-        {
-          "report_id": "rpt-20260919-photoframe-how-camera-se",
-          "evidence": [
-            {
-              "reference": "subtitle",
-              "matched_text": "프레이밍"
-            },
-            {
-              "reference": "abstract",
-              "matched_text": "프레이밍"
-            },
-            {
-              "reference": "keywords[1]",
-              "matched_text": "프레이밍"
-            },
-            {
-              "reference": "term_box.items[0].term",
-              "matched_text": "프레이밍"
-            }
-          ]
-        },
-        {
-          "report_id": "rpt-20260920-youtube-algorithm-struct",
-          "evidence": [
-            {
-              "reference": "title",
-              "matched_text": "정보 편향"
-            },
-            {
-              "reference": "keywords[1]",
-              "matched_text": "추천 시스템"
-            },
-            {
-              "reference": "keywords[2]",
-              "matched_text": "정보 편향"
-            },
-            {
-              "reference": "term_box.items[1].term",
-              "matched_text": "정보 편향"
-            }
-          ]
-        },
-        {
-          "report_id": "rpt-20261002-psychology-of-stock-mark",
-          "evidence": [
-            {
-              "reference": "sections[4].body[0]",
-              "matched_text": "확증 편향"
-            },
-            {
-              "reference": "sections[8].body[1]",
-              "matched_text": "확증 편향"
-            }
-          ]
-        },
-        {
-          "report_id": "rpt-20261030-media-literacy-education",
-          "evidence": [
-            {
-              "reference": "sections[8].body[3]",
-              "matched_text": "정보 편향"
-            },
-            {
-              "reference": "sections[9].body[2]",
-              "matched_text": "정보 편향"
             }
           ]
         }
@@ -53973,6 +54518,38 @@
       ]
     },
     {
+      "concept_id": "con-891f890e162ee5e5",
+      "label": "사회적 책임",
+      "normalized_label": "사회적 책임",
+      "type": "concept",
+      "provenance": "exact-normalized-tag",
+      "report_count": 2,
+      "main_categories": [
+        "예술·디자인",
+        "인문·철학"
+      ],
+      "reports": [
+        {
+          "report_id": "rpt-20261031-ethical-consumption-indi",
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "사회적 책임"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261121-digital-age-design-ethic",
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "사회적 책임"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "concept_id": "con-3167dea0669a3e92",
       "label": "산업혁명",
       "normalized_label": "산업혁명",
@@ -54075,6 +54652,38 @@
             {
               "reference": "term_box.items[0].term",
               "matched_text": "전통 음악"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "concept_id": "con-601b11d59f27a8e2",
+      "label": "프라이버시",
+      "normalized_label": "프라이버시",
+      "type": "concept",
+      "provenance": "exact-normalized-tag",
+      "report_count": 2,
+      "main_categories": [
+        "언어·미디어·지식",
+        "예술·디자인"
+      ],
+      "reports": [
+        {
+          "report_id": "rpt-20261112-auditory-culture-evoluti",
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "프라이버시"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261121-digital-age-design-ethic",
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "프라이버시"
             }
           ]
         }
