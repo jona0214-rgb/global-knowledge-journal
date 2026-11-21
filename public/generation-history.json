@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-11-22",
+    "title": "세계 문자체계 비교 연구: 비문자적 기호와 현대 커뮤니케이션의 상호작용",
+    "status": "published_api",
+    "event_name": "schedule",
+    "schedule_cron": "45 14 * * *",
+    "scheduled_for_kst": "2026-11-22T00:00:00+09:00",
+    "workflow_started_at": "2026-11-21T20:40:40Z",
+    "generation_started_at": "2026-11-21T20:41:09.583264Z",
+    "generation_completed_at": "2026-11-21T20:41:58.087305Z",
+    "catalog_updated_at": "2026-11-21T20:41:59.189302Z",
+    "scheduler_delay_seconds": 20440,
+    "setup_duration_seconds": 30,
+    "generation_duration_seconds": 50,
+    "validation_attempts": 1,
+    "run_id": "44947532787",
+    "run_attempt": "1",
+    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/44947532787",
+    "source_sha": "ab9c92ffbbb6ac3cc871b2af8a12a211fa4e4f85"
+  },
+  {
     "date": "2026-11-21",
     "title": "디지털 시대의 디자인 윤리: 사용자 경험을 넘어 사회적 책임은 어떻게 고려되나",
     "status": "published_api",
@@ -708,30 +728,5 @@
     "publication_schedule_cron": "45 21 * * *",
     "publication_run_id": "39519488878",
     "publication_run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/39519488878"
-  },
-  {
-    "date": "2026-10-20",
-    "title": "번역 기술 혁신과 인공지능: 미래의 통역은 어떻게 변할까",
-    "status": "published_api",
-    "event_name": "schedule",
-    "schedule_cron": "45 14 * * *",
-    "scheduled_for_kst": "2026-10-20T00:00:00+09:00",
-    "workflow_started_at": "2026-10-19T20:13:53Z",
-    "generation_started_at": "2026-10-19T20:14:27.285751Z",
-    "generation_completed_at": "2026-10-19T20:15:20.558353Z",
-    "catalog_updated_at": "2026-10-19T20:15:21.871219Z",
-    "scheduler_delay_seconds": 18833,
-    "setup_duration_seconds": 34,
-    "generation_duration_seconds": 55,
-    "validation_attempts": 1,
-    "run_id": "39317561186",
-    "run_attempt": "1",
-    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/39317561186",
-    "source_sha": "492cf80f92116df66be9764d066bff36e9813b8e",
-    "publication_target_kst": "2026-10-20T07:00:00+09:00",
-    "publication_pushed_at": "2026-10-20T00:40:43.886669Z",
-    "publication_schedule_cron": "45 21 * * *",
-    "publication_run_id": "39349044642",
-    "publication_run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/39349044642"
   }
 ]

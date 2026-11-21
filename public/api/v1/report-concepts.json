@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-11-21T07:05:02.695410+09:00",
+  "generated_at": "2026-11-22T05:41:59.187819+09:00",
   "stats": {
-    "reports": 95,
-    "tags": 3538,
-    "shared_concepts": 31,
+    "reports": 96,
+    "tags": 3576,
+    "shared_concepts": 32,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
   },
@@ -51963,6 +51963,560 @@
           ]
         }
       ]
+    },
+    {
+      "report_id": "rpt-20261122-global-study-of-world-wr",
+      "date": "2026-11-22",
+      "title": "세계 문자체계 비교 연구: 비문자적 기호와 현대 커뮤니케이션의 상호작용",
+      "main_category": "언어·미디어·지식",
+      "tags": [
+        {
+          "tag_id": "tag-f76db13b48adbebb",
+          "label": "기호학",
+          "normalized_label": "기호학",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "기호학"
+            },
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "기호학"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d5cd02cbc81989ba",
+          "label": "디지털 의사소통",
+          "normalized_label": "디지털 의사소통",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "디지털 의사소통"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-662cabef624a2666",
+          "label": "문자체계",
+          "normalized_label": "문자체계",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "문자체계"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "문자체계"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8ccf673976ebe6e1",
+          "label": "문화 비교",
+          "normalized_label": "문화 비교",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "문화 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-610be7a9a27b6aa2",
+          "label": "비문자적 기호",
+          "normalized_label": "비문자적 기호",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "비문자적 기호"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "비문자적 기호"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b2ba5c1796428b3f",
+          "label": "정보 교환",
+          "normalized_label": "정보 교환",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "정보 교환"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8d0b1f02dbc55344",
+          "label": "커뮤니케이션",
+          "normalized_label": "커뮤니케이션",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "커뮤니케이션"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f06f552e6cfe56ef",
+          "label": "언어 시스템",
+          "normalized_label": "언어 시스템",
+          "type": "technology",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "언어 시스템"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-824a16dc8d0c2066",
+          "label": "표준화",
+          "normalized_label": "표준화",
+          "type": "mechanism",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "표준화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-777287f96722cf24",
+          "label": "문자",
+          "normalized_label": "문자",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "문자"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-71cd6c51303544bd",
+          "label": "문자 체계",
+          "normalized_label": "문자 체계",
+          "type": "domain",
+          "weight": 0.93,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.sub",
+              "matched_text": "문자 체계"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-32a45d0c67504328",
+          "label": "비문자적 기호와 정보 교환의 융합",
+          "normalized_label": "비문자적 기호와 정보 교환의 융합",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "비문자적 기호와 정보 교환의 융합"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c2faf80eb0834962",
+          "label": "롤랑 바르트",
+          "normalized_label": "롤랑 바르트",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [
+            "프랑스 기호학자"
+          ],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "롤랑 바르트(프랑스 기호학자)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-28e3e887465e6690",
+          "label": "기호의 역사적 기원",
+          "normalized_label": "기호의 역사적 기원",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "기호의 역사적 기원"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f1dd630073d61d89",
+          "label": "디지털 융합과 미래 전망",
+          "normalized_label": "디지털 융합과 미래 전망",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "디지털 융합과 미래 전망"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-416c06f2ffd04a0a",
+          "label": "문자체계 구조와 분류",
+          "normalized_label": "문자체계 구조와 분류",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "문자체계 구조와 분류"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5cd3383609efcc09",
+          "label": "사회문화적 영향과 변화",
+          "normalized_label": "사회문화적 영향과 변화",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "사회문화적 영향과 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5576b132dbc16791",
+          "label": "표준화와 규칙 제정",
+          "normalized_label": "표준화와 규칙 제정",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "표준화와 규칙 제정"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-bdaaed5cb167fd56",
+          "label": "문자 규칙과 비문자적 상징의 표준화 과정",
+          "normalized_label": "문자 규칙과 비문자적 상징의 표준화 과정",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "문자 규칙과 비문자적 상징의 표준화 과정"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-508f0b5e9aace4bf",
+          "label": "문자 체계의 구조적 변화와 비문자 기호 융합",
+          "normalized_label": "문자 체계의 구조적 변화와 비문자 기호 융합",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "문자 체계의 구조적 변화와 비문자 기호 융합"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-74288570839aeebd",
+          "label": "문자와 비문자 기호의 융합이 현대 커뮤니케이션에서 주목받는 이유",
+          "normalized_label": "문자와 비문자 기호의 융합이 현대 커뮤니케이션에서 주목받는 이유",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "문자와 비문자 기호의 융합이 현대 커뮤니케이션에서 주목받는 이유"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7d7888b61a6bf775",
+          "label": "문자체계와 비문자 기호의 융합 연구 핵심 질문과 접근",
+          "normalized_label": "문자체계와 비문자 기호의 융합 연구 핵심 질문과 접근",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "문자체계와 비문자 기호의 융합 연구 핵심 질문과 접근"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-746b23e738e9018d",
+          "label": "문자체계의 역사적 기원과 비문자 기호의 역할",
+          "normalized_label": "문자체계의 역사적 기원과 비문자 기호의 역할",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "문자체계의 역사적 기원과 비문자 기호의 역할"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-040a6019f1232284",
+          "label": "비문자 기호와 문자체계의 융합 현황과 쟁점",
+          "normalized_label": "비문자 기호와 문자체계의 융합 현황과 쟁점",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "비문자 기호와 문자체계의 융합 현황과 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-da4706e9a0c7258c",
+          "label": "비문자적 기호와 문자체계 융합의 사회문화적·기술적 의미",
+          "normalized_label": "비문자적 기호와 문자체계 융합의 사회문화적·기술적 의미",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "비문자적 기호와 문자체계 융합의 사회문화적·기술적 의미"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-22fa64d02dead0a2",
+          "label": "비문자적 기호와 문자체계의 기본 개념 이해",
+          "normalized_label": "비문자적 기호와 문자체계의 기본 개념 이해",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "비문자적 기호와 문자체계의 기본 개념 이해"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ef88a535973a7c15",
+          "label": "사회 문화 속 문자와 비문자적 기호의 상호 영향",
+          "normalized_label": "사회 문화 속 문자와 비문자적 기호의 상호 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "사회 문화 속 문자와 비문자적 기호의 상호 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d201c82e79240ad0",
+          "label": "이모지의 탄생과 글로벌 커뮤니케이션 혁신 사례",
+          "normalized_label": "이모지의 탄생과 글로벌 커뮤니케이션 혁신 사례",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "이모지의 탄생과 글로벌 커뮤니케이션 혁신 사례"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8b9d527cc6bbd29d",
+          "label": "현대 커뮤니케이션의 쟁점과 디지털 시대의 미래",
+          "normalized_label": "현대 커뮤니케이션의 쟁점과 디지털 시대의 미래",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[7].title",
+              "matched_text": "현대 커뮤니케이션의 쟁점과 디지털 시대의 미래"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-88ada70d76bac06e",
+          "label": "기호와 사회",
+          "normalized_label": "기호와 사회",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "기호와 사회"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f4bd420e9d6b1ead",
+          "label": "관련 도서·탐구 키워드·확장 주제",
+          "normalized_label": "관련 도서·탐구 키워드·확장 주제",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 관련 도서·탐구 키워드·확장 주제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-621c285b9db06be6",
+          "label": "이모지 사례가 보여주는 특징",
+          "normalized_label": "이모지 사례가 보여주는 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 이모지 사례가 보여주는 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3560a2c482aea899",
+          "label": "주요 문자체계와 비문자 기호 특징 비교",
+          "normalized_label": "주요 문자체계와 비문자 기호 특징 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 주요 문자체계와 비문자 기호 특징 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-103c431d70468300",
+          "label": "현대 비문자 기호 융합의 주요 쟁점",
+          "normalized_label": "현대 비문자 기호 융합의 주요 쟁점",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 현대 비문자 기호 융합의 주요 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-739c7bd24b0250c6",
+          "label": "『기호와 사회』",
+          "normalized_label": "『기호와 사회』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "『기호와 사회』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-143f437e3d04653f",
+          "label": "『디지털 시대의 커뮤니케이션』",
+          "normalized_label": "『디지털 시대의 커뮤니케이션』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "『디지털 시대의 커뮤니케이션』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-90e905067987ea7a",
+          "label": "『멀티모달 커뮤니케이션』",
+          "normalized_label": "『멀티모달 커뮤니케이션』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[3].title",
+              "matched_text": "『멀티모달 커뮤니케이션』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-389e3598ba090793",
+          "label": "『문화와 소통』",
+          "normalized_label": "『문화와 소통』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "『문화와 소통』"
+            }
+          ]
+        }
+      ]
     }
   ],
   "shared_concepts": [
@@ -53184,23 +53738,6 @@
           ]
         },
         {
-          "report_id": "rpt-20260819-library-classification-p",
-          "evidence": [
-            {
-              "reference": "sections[4].body[2]",
-              "matched_text": "표준화"
-            },
-            {
-              "reference": "sections[6].body[2]",
-              "matched_text": "표준화"
-            },
-            {
-              "reference": "sections[9].body[4]",
-              "matched_text": "표준화"
-            }
-          ]
-        },
-        {
           "report_id": "rpt-20260821-punctuation-birth-comma",
           "evidence": [
             {
@@ -53406,6 +53943,27 @@
             },
             {
               "reference": "sections[7].body[0]",
+              "matched_text": "표준화"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261122-global-study-of-world-wr",
+          "evidence": [
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "표준화"
+            },
+            {
+              "reference": "sections[2].body[1]",
+              "matched_text": "표준화"
+            },
+            {
+              "reference": "sections[6].title",
+              "matched_text": "표준화"
+            },
+            {
+              "reference": "sections[6].body[0]",
               "matched_text": "표준화"
             }
           ]
@@ -54652,6 +55210,42 @@
             {
               "reference": "term_box.items[0].term",
               "matched_text": "전통 음악"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "concept_id": "con-824a16dc8d0c2066",
+      "label": "표준화",
+      "normalized_label": "표준화",
+      "type": "mechanism",
+      "provenance": "exact-normalized-tag",
+      "report_count": 2,
+      "main_categories": [
+        "경제·경영",
+        "언어·미디어·지식"
+      ],
+      "reports": [
+        {
+          "report_id": "rpt-20260923-container-economics-how",
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "표준화"
+            },
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "표준화(standardization)"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261122-global-study-of-world-wr",
+          "evidence": [
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "표준화"
             }
           ]
         }

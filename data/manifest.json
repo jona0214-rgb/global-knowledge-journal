@@ -1,6 +1,22 @@
 {
-  "last_updated": "2026-11-21T07:05:02.695410+09:00",
+  "last_updated": "2026-11-22T05:41:59.187819+09:00",
   "reports": [
+    {
+      "date": "2026-11-22",
+      "title": "세계 문자체계 비교 연구: 비문자적 기호와 현대 커뮤니케이션의 상호작용",
+      "subtitle": "문자와 비문자 기호가 어떻게 현대 사회의 의사소통을 변화시키는가",
+      "main_category": "언어·미디어·지식",
+      "mid_category": "문자",
+      "sub_category": "문자 체계",
+      "detail_category": "비문자적 기호와 정보 교환의 융합",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20261122_global_study_of_world_wr_Report.html",
+      "pdf_path": "outputs/20261122_global_study_of_world_wr_Report.pdf",
+      "status": "published_api",
+      "html_url": "outputs/20261122_global_study_of_world_wr_Report.html",
+      "pdf_url": "outputs/20261122_global_study_of_world_wr_Report.pdf",
+      "report_id": "rpt-20261122-global-study-of-world-wr"
+    },
     {
       "date": "2026-11-21",
       "title": "디지털 시대의 디자인 윤리: 사용자 경험을 넘어 사회적 책임은 어떻게 고려되나",
