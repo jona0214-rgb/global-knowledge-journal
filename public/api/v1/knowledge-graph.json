@@ -2,14 +2,14 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-11-22T05:41:59.187819+09:00",
+  "generated_at": "2026-11-23T05:51:35.389630+09:00",
   "stats": {
     "categories": 10,
-    "reports": 96,
-    "nodes": 416,
-    "edges": 528,
+    "reports": 97,
+    "nodes": 419,
+    "edges": 532,
     "concepts": 32,
-    "concept_edges": 154,
+    "concept_edges": 155,
     "semantic_edges": 0
   },
   "nodes": [
@@ -422,11 +422,12 @@
       "level": 5,
       "concept_id": "con-9c3ea3b0f43b9c79",
       "concept_type": "mechanism",
-      "report_count": 6,
+      "report_count": 7,
       "main_categories": [
         "경제·경영",
         "언어·미디어·지식",
-        "예술·디자인"
+        "예술·디자인",
+        "인문·철학"
       ],
       "provenance": "curated-pattern-rule"
     },
@@ -1193,6 +1194,13 @@
       "label": "개인화된 청취 환경의 사회문화적 변화",
       "level": 3,
       "main_category": "언어·미디어·지식"
+    },
+    {
+      "id": "detail:ea0f93e5e39b2dbd",
+      "type": "detail",
+      "label": "근대 사회변동에 따른 개인과 집단 개념의 변모",
+      "level": 3,
+      "main_category": "인문·철학"
     },
     {
       "id": "detail:ea8e27260f35e294",
@@ -3471,6 +3479,23 @@
       "pdf_url": "outputs/20261122_global_study_of_world_wr_Report.pdf"
     },
     {
+      "id": "report:rpt-20261123-modern-individualism-col",
+      "type": "report",
+      "label": "근대 사상에서 개인주의와 집단주의 사상의 발전과 영향",
+      "level": 4,
+      "report_id": "rpt-20261123-modern-individualism-col",
+      "date": "2026-11-23",
+      "main_category": "인문·철학",
+      "category_path": [
+        "인문·철학",
+        "사상",
+        "정신사",
+        "근대 사회변동에 따른 개인과 집단 개념의 변모"
+      ],
+      "html_url": "outputs/20261123_modern_individualism_col_Report.html",
+      "pdf_url": "outputs/20261123_modern_individualism_col_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -3805,6 +3830,13 @@
       "label": "습지생태학",
       "level": 2,
       "main_category": "자연·환경·지리"
+    },
+    {
+      "id": "sub:7726d6d156b88c27",
+      "type": "sub",
+      "label": "정신사",
+      "level": 2,
+      "main_category": "인문·철학"
     },
     {
       "id": "sub:777f1cda6a6324e2",
@@ -4987,33 +5019,6 @@
       "target": "detail:d8044d51c659c522",
       "kind": "hierarchy",
       "relation_type": "contains"
-    },
-    {
-      "id": "edge:339374300a513bab",
-      "source": "report:rpt-20261120-royal-rituals-and-power",
-      "target": "concept:con-f6b070ac3797aa0b",
-      "kind": "concept",
-      "relation_type": "has_concept",
-      "score": 1.0,
-      "evidence": [
-        {
-          "reference": "term_box.items[2].description",
-          "matched_text": "정체성"
-        },
-        {
-          "reference": "sections[0].body[2]",
-          "matched_text": "정체성"
-        },
-        {
-          "reference": "sections[3].body[1]",
-          "matched_text": "정체성"
-        },
-        {
-          "reference": "sections[5].body[0]",
-          "matched_text": "정체성"
-        }
-      ],
-      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:3479525795ebe41a",
@@ -6365,6 +6370,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:7147d0229fb1b7cd",
+      "source": "sub:7726d6d156b88c27",
+      "target": "detail:ea0f93e5e39b2dbd",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:71e000b2fed043f9",
       "source": "report:rpt-20260824-insurance-birth-how-risk",
       "target": "concept:con-39820d616e59b701",
@@ -7153,6 +7165,13 @@
       "id": "edge:904fe78cd8576d9a",
       "source": "sub:67a5895d7975081c",
       "target": "detail:34192e149b2ef72f",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:9061c479819e1620",
+      "source": "middle:ed185c06c3af8635",
+      "target": "sub:7726d6d156b88c27",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -8002,6 +8021,33 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:afd6e14b83031ad7",
+      "source": "report:rpt-20261123-modern-individualism-col",
+      "target": "concept:con-f6b070ac3797aa0b",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "abstract",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "term_box.items[3].term",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "sections[0].body[0]",
+          "matched_text": "정체성"
+        },
+        {
+          "reference": "sections[0].body[1]",
+          "matched_text": "정체성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:b1a1f6500015ed40",
       "source": "middle:75dca2fed1fc8722",
       "target": "sub:243458d67f798959",
@@ -8438,6 +8484,28 @@
         }
       ],
       "provenance": "exact-normalized-tag"
+    },
+    {
+      "id": "edge:c0acc5cc6970c4ca",
+      "source": "report:rpt-20261123-modern-individualism-col",
+      "target": "concept:con-9c3ea3b0f43b9c79",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 0.7,
+      "evidence": [
+        {
+          "reference": "sections[9].body[1]",
+          "matched_text": "정보 편향"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:c24e0aa50683fb80",
+      "source": "detail:ea0f93e5e39b2dbd",
+      "target": "report:rpt-20261123-modern-individualism-col",
+      "kind": "hierarchy",
+      "relation_type": "contains"
     },
     {
       "id": "edge:c2713c0c5a6bec6c",

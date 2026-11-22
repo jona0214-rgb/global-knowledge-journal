@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-11-23",
+    "title": "근대 사상에서 개인주의와 집단주의 사상의 발전과 영향",
+    "status": "published_api",
+    "event_name": "schedule",
+    "schedule_cron": "45 14 * * *",
+    "scheduled_for_kst": "2026-11-23T00:00:00+09:00",
+    "workflow_started_at": "2026-11-22T20:50:12Z",
+    "generation_started_at": "2026-11-22T20:50:42.530896Z",
+    "generation_completed_at": "2026-11-22T20:51:34.209201Z",
+    "catalog_updated_at": "2026-11-22T20:51:35.392051Z",
+    "scheduler_delay_seconds": 21012,
+    "setup_duration_seconds": 31,
+    "generation_duration_seconds": 53,
+    "validation_attempts": 1,
+    "run_id": "45068662798",
+    "run_attempt": "1",
+    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/45068662798",
+    "source_sha": "e915a4dd27ec5402d7b06f04692ec4c752b0a11e"
+  },
+  {
     "date": "2026-11-22",
     "title": "세계 문자체계 비교 연구: 비문자적 기호와 현대 커뮤니케이션의 상호작용",
     "status": "published_api",
@@ -708,30 +728,5 @@
     "publication_schedule_cron": "45 21 * * *",
     "publication_run_id": "39698513541",
     "publication_run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/39698513541"
-  },
-  {
-    "date": "2026-10-21",
-    "title": "종교적 신념과 정신 건강: 긍정적·부정적 영향 분석",
-    "status": "published_api",
-    "event_name": "schedule",
-    "schedule_cron": "45 14 * * *",
-    "scheduled_for_kst": "2026-10-21T00:00:00+09:00",
-    "workflow_started_at": "2026-10-20T18:45:43Z",
-    "generation_started_at": "2026-10-20T18:46:20.560139Z",
-    "generation_completed_at": "2026-10-20T18:50:14.327830Z",
-    "catalog_updated_at": "2026-10-20T18:50:15.694791Z",
-    "scheduler_delay_seconds": 13543,
-    "setup_duration_seconds": 38,
-    "generation_duration_seconds": 235,
-    "validation_attempts": 2,
-    "run_id": "39477558737",
-    "run_attempt": "1",
-    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/39477558737",
-    "source_sha": "665fbf1ba7647901c81a11629e3ccf67cfcae804",
-    "publication_target_kst": "2026-10-21T07:00:00+09:00",
-    "publication_pushed_at": "2026-10-21T00:08:41.781829Z",
-    "publication_schedule_cron": "45 21 * * *",
-    "publication_run_id": "39519488878",
-    "publication_run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/39519488878"
   }
 ]

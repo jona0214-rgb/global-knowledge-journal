@@ -1,6 +1,22 @@
 {
-  "last_updated": "2026-11-22T05:41:59.187819+09:00",
+  "last_updated": "2026-11-23T05:51:35.389630+09:00",
   "reports": [
+    {
+      "date": "2026-11-23",
+      "title": "근대 사상에서 개인주의와 집단주의 사상의 발전과 영향",
+      "subtitle": "근대 사회 변화 속 개인과 집단 개념의 역사적 발전과 현대적 함의",
+      "main_category": "인문·철학",
+      "mid_category": "사상",
+      "sub_category": "정신사",
+      "detail_category": "근대 사회변동에 따른 개인과 집단 개념의 변모",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20261123_modern_individualism_col_Report.html",
+      "pdf_path": "outputs/20261123_modern_individualism_col_Report.pdf",
+      "status": "published_api",
+      "html_url": "outputs/20261123_modern_individualism_col_Report.html",
+      "pdf_url": "outputs/20261123_modern_individualism_col_Report.pdf",
+      "report_id": "rpt-20261123-modern-individualism-col"
+    },
     {
       "date": "2026-11-22",
       "title": "세계 문자체계 비교 연구: 비문자적 기호와 현대 커뮤니케이션의 상호작용",

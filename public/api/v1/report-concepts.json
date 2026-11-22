@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-11-22T05:41:59.187819+09:00",
+  "generated_at": "2026-11-23T05:51:35.389630+09:00",
   "stats": {
-    "reports": 96,
-    "tags": 3576,
+    "reports": 97,
+    "tags": 3612,
     "shared_concepts": 32,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -52517,6 +52517,532 @@
           ]
         }
       ]
+    },
+    {
+      "report_id": "rpt-20261123-modern-individualism-col",
+      "date": "2026-11-23",
+      "title": "근대 사상에서 개인주의와 집단주의 사상의 발전과 영향",
+      "main_category": "인문·철학",
+      "tags": [
+        {
+          "tag_id": "tag-b4a6471bee2dd260",
+          "label": "개인과집단",
+          "normalized_label": "개인과집단",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "개인과집단"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e719872515bd4359",
+          "label": "개인주의",
+          "normalized_label": "개인주의",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "개인주의"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "개인주의"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7938450b2836b329",
+          "label": "근대 사상",
+          "normalized_label": "근대 사상",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "근대 사상"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-13ba2dc66af87902",
+          "label": "사회변동",
+          "normalized_label": "사회변동",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "사회변동"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e78827795e16b01f",
+          "label": "사회철학",
+          "normalized_label": "사회철학",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "사회철학"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-34da0e6741751935",
+          "label": "정신사",
+          "normalized_label": "정신사",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "정신사"
+            },
+            {
+              "reference": "category.sub",
+              "matched_text": "정신사"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fc0cc7c7a795651f",
+          "label": "집단주의",
+          "normalized_label": "집단주의",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "집단주의"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "집단주의"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b18dc8dce2989f10",
+          "label": "현대철학",
+          "normalized_label": "현대철학",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "현대철학"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a154a03f9fe6cf65",
+          "label": "근대 사회변동",
+          "normalized_label": "근대 사회변동",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "근대 사회변동"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-530fc1c409a08a76",
+          "label": "사회적 정체성",
+          "normalized_label": "사회적 정체성",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "사회적 정체성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8a934149962ba4de",
+          "label": "사상",
+          "normalized_label": "사상",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "사상"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8ad67cd72be17661",
+          "label": "근대 사회변동에 따른 개인과 집단 개념의 변모",
+          "normalized_label": "근대 사회변동에 따른 개인과 집단 개념의 변모",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "근대 사회변동에 따른 개인과 집단 개념의 변모"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e7c6bec896f293d9",
+          "label": "찰스 테일러",
+          "normalized_label": "찰스 테일러",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [
+            "철학자"
+          ],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "찰스 테일러(철학자)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c78c3c802b272cf5",
+          "label": "계몽주의 철학의 등장",
+          "normalized_label": "계몽주의 철학의 등장",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "계몽주의 철학의 등장"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-047d8dd84097da78",
+          "label": "국민주의와 집단 결속 강화",
+          "normalized_label": "국민주의와 집단 결속 강화",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "국민주의와 집단 결속 강화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-523b172414b8c87e",
+          "label": "근대 국가와 법률 체계 확립",
+          "normalized_label": "근대 국가와 법률 체계 확립",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "근대 국가와 법률 체계 확립"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-052775ea813fe5ff",
+          "label": "산업화와 도시화 진전",
+          "normalized_label": "산업화와 도시화 진전",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "산업화와 도시화 진전"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-40e6c5d1e106df71",
+          "label": "현대 다원사회와 개인·집단 조화 모색",
+          "normalized_label": "현대 다원사회와 개인·집단 조화 모색",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "현대 다원사회와 개인·집단 조화 모색"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f7a1832319419d2f",
+          "label": "개인주의와 집단주의 사상의 현대적 동향과 쟁점",
+          "normalized_label": "개인주의와 집단주의 사상의 현대적 동향과 쟁점",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "개인주의와 집단주의 사상의 현대적 동향과 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5f9bb1c573e38ec1",
+          "label": "개인주의와 집단주의: 기본 개념과 차이",
+          "normalized_label": "개인주의와 집단주의: 기본 개념과 차이",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "개인주의와 집단주의: 기본 개념과 차이"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2a1c4c381d6c475e",
+          "label": "근대 개인주의와 집단주의 사상의 핵심 쟁점과 해석",
+          "normalized_label": "근대 개인주의와 집단주의 사상의 핵심 쟁점과 해석",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "근대 개인주의와 집단주의 사상의 핵심 쟁점과 해석"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-88d07d980f90ce77",
+          "label": "근대 사상과 개인주의·집단주의의 시대적 배경",
+          "normalized_label": "근대 사상과 개인주의·집단주의의 시대적 배경",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "근대 사상과 개인주의·집단주의의 시대적 배경"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-584667a4ed013b5a",
+          "label": "기준과 규칙, 사회 관리 방식의 변화",
+          "normalized_label": "기준과 규칙, 사회 관리 방식의 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "기준과 규칙, 사회 관리 방식의 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d7a2b91b87438d88",
+          "label": "사상의 구조와 작동 원리 변화",
+          "normalized_label": "사상의 구조와 작동 원리 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "사상의 구조와 작동 원리 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c8c0b3d595014fd2",
+          "label": "사회·문화·정치에서 개인주의와 집단주의 사상의 의미",
+          "normalized_label": "사회·문화·정치에서 개인주의와 집단주의 사상의 의미",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "사회·문화·정치에서 개인주의와 집단주의 사상의 의미"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-778e586a38d703ca",
+          "label": "생활과 문화에 미친 영향",
+          "normalized_label": "생활과 문화에 미친 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "생활과 문화에 미친 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f78b4735480c6110",
+          "label": "역사적 출발점으로서 근대 개인주의와 집단주의",
+          "normalized_label": "역사적 출발점으로서 근대 개인주의와 집단주의",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "역사적 출발점으로서 근대 개인주의와 집단주의"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-33c1536d225147e2",
+          "label": "프랑스 혁명과 개인주의·집단주의의 이념 대립 사례",
+          "normalized_label": "프랑스 혁명과 개인주의·집단주의의 이념 대립 사례",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "프랑스 혁명과 개인주의·집단주의의 이념 대립 사례"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fdf5cab96b488dc5",
+          "label": "근대성과 정체성",
+          "normalized_label": "근대성과 정체성",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "근대성과 정체성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f4bd420e9d6b1ead",
+          "label": "관련 도서·탐구 키워드·확장 주제",
+          "normalized_label": "관련 도서·탐구 키워드·확장 주제",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 관련 도서·탐구 키워드·확장 주제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2349a74aaef8fdba",
+          "label": "근대 개인주의와 집단주의 주요 특징 비교",
+          "normalized_label": "근대 개인주의와 집단주의 주요 특징 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 근대 개인주의와 집단주의 주요 특징 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d1e53398af36a344",
+          "label": "프랑스 혁명 사례의 개인주의·집단주의 사상 특징",
+          "normalized_label": "프랑스 혁명 사례의 개인주의·집단주의 사상 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 프랑스 혁명 사례의 개인주의·집단주의 사상 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b3a5c375573356c4",
+          "label": "현대 사회의 개인주의·집단주의 쟁점 요약",
+          "normalized_label": "현대 사회의 개인주의·집단주의 쟁점 요약",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 현대 사회의 개인주의·집단주의 쟁점 요약"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fd32254b8d8dbb60",
+          "label": "『개인과 공동체』",
+          "normalized_label": "『개인과 공동체』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "『개인과 공동체』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1ac8b8c157141a7b",
+          "label": "『공동체의 윤리』",
+          "normalized_label": "『공동체의 윤리』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "『공동체의 윤리』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4cce288018948612",
+          "label": "『자유와 연대』",
+          "normalized_label": "『자유와 연대』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "『자유와 연대』"
+            }
+          ]
+        }
+      ]
     }
   ],
   "shared_concepts": [
@@ -52997,22 +53523,22 @@
           ]
         },
         {
-          "report_id": "rpt-20261120-royal-rituals-and-power",
+          "report_id": "rpt-20261123-modern-individualism-col",
           "evidence": [
             {
-              "reference": "term_box.items[2].description",
+              "reference": "abstract",
               "matched_text": "정체성"
             },
             {
-              "reference": "sections[0].body[2]",
+              "reference": "term_box.items[3].term",
               "matched_text": "정체성"
             },
             {
-              "reference": "sections[3].body[1]",
+              "reference": "sections[0].body[0]",
               "matched_text": "정체성"
             },
             {
-              "reference": "sections[5].body[0]",
+              "reference": "sections[0].body[1]",
               "matched_text": "정체성"
             }
           ]
@@ -54158,11 +54684,12 @@
       "normalized_label": "선택과 프레이밍",
       "type": "mechanism",
       "provenance": "curated-pattern-rule",
-      "report_count": 6,
+      "report_count": 7,
       "main_categories": [
         "경제·경영",
         "언어·미디어·지식",
-        "예술·디자인"
+        "예술·디자인",
+        "인문·철학"
       ],
       "reports": [
         {
@@ -54248,6 +54775,15 @@
             {
               "reference": "sections[4].body[1]",
               "matched_text": "추천 시스템"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261123-modern-individualism-col",
+          "evidence": [
+            {
+              "reference": "sections[9].body[1]",
+              "matched_text": "정보 편향"
             }
           ]
         }

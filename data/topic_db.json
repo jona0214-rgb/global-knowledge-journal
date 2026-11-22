@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-11-22",
+  "updated_at": "2026-11-23",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -2164,6 +2164,29 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261122_global_study_of_world_wr_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261122_global_study_of_world_wr_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "report_id": "rpt-20261123-modern-individualism-collectivism-ideologies",
+      "date": "2026-11-23",
+      "title": "근대 사상에서 개인주의와 집단주의 사상의 발전과 영향",
+      "main_category": "인문·철학",
+      "mid_category": "사상",
+      "sub_category": "정신사",
+      "detail_category": "근대 사회변동에 따른 개인과 집단 개념의 변모",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "개인주의",
+        "집단주의",
+        "근대 사상",
+        "사회변동",
+        "정신사",
+        "사회철학",
+        "개인과집단",
+        "현대철학"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261123_modern_individualism_col_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261123_modern_individualism_col_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -2180,12 +2203,12 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "언어·미디어·지식",
-    "next_main_category": "인문·철학",
-    "next_index": 0,
+    "last_main_category": "인문·철학",
+    "next_main_category": "사회·정치·법",
+    "next_index": 1,
     "completed_cycles": 10,
     "published_counts": {
-      "인문·철학": 10,
+      "인문·철학": 11,
       "사회·정치·법": 9,
       "경제·경영": 9,
       "과학·수학": 9,
@@ -2197,7 +2220,6 @@
       "언어·미디어·지식": 11
     },
     "recent_main_categories": [
-      "인문·철학",
       "사회·정치·법",
       "경제·경영",
       "과학·수학",
@@ -2206,7 +2228,8 @@
       "자연·환경·지리",
       "역사·문화",
       "예술·디자인",
-      "언어·미디어·지식"
+      "언어·미디어·지식",
+      "인문·철학"
     ]
   },
   "candidate_pool": [
@@ -3308,6 +3331,56 @@
       "detail_category": "디지털 디자인에서 윤리적 쟁점",
       "priority": 1.0,
       "status": "used",
+      "source": "api_generated"
+    },
+    {
+      "topic": "동서 고대 철학에서 개인과 공동체의 관계에 대한 비교 연구",
+      "main_category": "인문·철학",
+      "mid_category": "철학",
+      "sub_category": "정치철학",
+      "detail_category": "개인과 공동체의 상호작용과 이상적 통치 모델",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "종교 의례에서 신성한 공간의 의미와 사회적 역할",
+      "main_category": "인문·철학",
+      "mid_category": "종교와 인간 이해",
+      "sub_category": "의례 연구",
+      "detail_category": "의례 공간과 공동체 정체성 형성의 상관성",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "현대 윤리학에서 인공지능과 도덕적 책임 문제",
+      "main_category": "인문·철학",
+      "mid_category": "윤리",
+      "sub_category": "기술 윤리",
+      "detail_category": "인공지능 행위자의 윤리적 책임과 인간의 역할",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "근대 사상에서 개인주의와 집단주의 사상의 발전과 영향",
+      "main_category": "인문·철학",
+      "mid_category": "사상",
+      "sub_category": "정신사",
+      "detail_category": "근대 사회변동에 따른 개인과 집단 개념의 변모",
+      "priority": 1.0,
+      "status": "used",
+      "source": "api_generated"
+    },
+    {
+      "topic": "동양철학의 변화와 불교가 신분제 사회에서 권력과 인간 이해에 미친 영향",
+      "main_category": "인문·철학",
+      "mid_category": "철학",
+      "sub_category": "종교철학",
+      "detail_category": "불교 철학이 사회구조와 인간관계에 끼친 역사적 역할",
+      "priority": 1.0,
+      "status": "candidate",
       "source": "api_generated"
     }
   ],
