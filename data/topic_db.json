@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-11-24",
+  "updated_at": "2026-11-25",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -2210,6 +2210,29 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261124_digital_surveillance_pri_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261124_digital_surveillance_pri_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "report_id": "rpt-20261125-monetary-policy-longterm-impact",
+      "date": "2026-11-25",
+      "title": "통화정책이 금융시장과 실물경제에 미치는 장기적 영향 분석",
+      "main_category": "경제·경영",
+      "mid_category": "경제",
+      "sub_category": "금융",
+      "detail_category": "통화정책과 경제 파급효과",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "통화정책",
+        "금융시장",
+        "실물경제",
+        "금리정책",
+        "인플레이션",
+        "경제성장",
+        "유동성",
+        "중앙은행"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261125_monetary_policy_longterm_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261125_monetary_policy_longterm_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -2226,14 +2249,14 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "사회·정치·법",
-    "next_main_category": "경제·경영",
-    "next_index": 2,
+    "last_main_category": "경제·경영",
+    "next_main_category": "과학·수학",
+    "next_index": 3,
     "completed_cycles": 10,
     "published_counts": {
       "인문·철학": 11,
       "사회·정치·법": 10,
-      "경제·경영": 9,
+      "경제·경영": 10,
       "과학·수학": 9,
       "기술·공학": 10,
       "생명·건강": 9,
@@ -2243,7 +2266,6 @@
       "언어·미디어·지식": 11
     },
     "recent_main_categories": [
-      "경제·경영",
       "과학·수학",
       "기술·공학",
       "생명·건강",
@@ -2252,7 +2274,8 @@
       "예술·디자인",
       "언어·미디어·지식",
       "인문·철학",
-      "사회·정치·법"
+      "사회·정치·법",
+      "경제·경영"
     ]
   },
   "candidate_pool": [
@@ -3402,6 +3425,56 @@
       "mid_category": "철학",
       "sub_category": "종교철학",
       "detail_category": "불교 철학이 사회구조와 인간관계에 끼친 역사적 역할",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "주식 시장의 변동성과 투자 심리: 경제 지표와 투자 결정의 상관관계",
+      "main_category": "경제·경영",
+      "mid_category": "경제",
+      "sub_category": "금융",
+      "detail_category": "투자 행동 분석",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "노동시장 유연화가 고용 안정성에 미치는 영향과 정책적 시사점",
+      "main_category": "경제·경영",
+      "mid_category": "경제",
+      "sub_category": "노동",
+      "detail_category": "고용 정책과 효과",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "디지털 전환 시대, 기업 경영 전략의 변화와 소비자 대응 방식",
+      "main_category": "경제·경영",
+      "mid_category": "경제",
+      "sub_category": "기업과 소비",
+      "detail_category": "디지털 경영 혁신",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "통화정책이 금융시장과 실물경제에 미치는 장기적 영향 분석",
+      "main_category": "경제·경영",
+      "mid_category": "경제",
+      "sub_category": "금융",
+      "detail_category": "통화정책과 경제 파급효과",
+      "priority": 1.0,
+      "status": "used",
+      "source": "api_generated"
+    },
+    {
+      "topic": "지속가능한 소비 트렌드와 기업의 사회적 책임 경영 사례 연구",
+      "main_category": "경제·경영",
+      "mid_category": "경제",
+      "sub_category": "기업과 소비",
+      "detail_category": "윤리적 소비와 CSR",
       "priority": 1.0,
       "status": "candidate",
       "source": "api_generated"

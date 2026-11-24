@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-11-24T10:56:20.347027+09:00",
+  "generated_at": "2026-11-25T08:40:20.707649+09:00",
   "stats": {
-    "reports": 98,
-    "tags": 3647,
+    "reports": 99,
+    "tags": 3687,
     "shared_concepts": 32,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -53561,6 +53561,588 @@
           ]
         }
       ]
+    },
+    {
+      "report_id": "rpt-20261125-monetary-policy-longterm",
+      "date": "2026-11-25",
+      "title": "통화정책이 금융시장과 실물경제에 미치는 장기적 영향 분석",
+      "main_category": "경제·경영",
+      "tags": [
+        {
+          "tag_id": "tag-21c7c0c820b084f0",
+          "label": "경제성장",
+          "normalized_label": "경제성장",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "경제성장"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-78c9f56fbefdd952",
+          "label": "금리정책",
+          "normalized_label": "금리정책",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "금리정책"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4888ab292a0cc46c",
+          "label": "실물경제",
+          "normalized_label": "실물경제",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "실물경제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ba5a3ef34fd18b2b",
+          "label": "유동성",
+          "normalized_label": "유동성",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "유동성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-36f7cc008b8c2dc1",
+          "label": "인플레이션",
+          "normalized_label": "인플레이션",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "인플레이션"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-bac9540978b42c34",
+          "label": "중앙은행",
+          "normalized_label": "중앙은행",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "중앙은행"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3e793e31e673d3dd",
+          "label": "통화정책",
+          "normalized_label": "통화정책",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [
+            "monetary policy"
+          ],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "통화정책"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "통화정책(monetary policy)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2a8d57eb274a46c8",
+          "label": "금융시장",
+          "normalized_label": "금융시장",
+          "type": "institution",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "금융시장"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e30979fc7890d456",
+          "label": "금리",
+          "normalized_label": "금리",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [
+            "interest rate"
+          ],
+          "evidence": [
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "금리(interest rate)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fa3736f11b1da242",
+          "label": "양적완화",
+          "normalized_label": "양적완화",
+          "type": "institution",
+          "weight": 0.98,
+          "aliases": [
+            "Quantitative Easing"
+          ],
+          "evidence": [
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "양적완화(Quantitative Easing)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0ed082519623c416",
+          "label": "디지털 중앙은행 화폐",
+          "normalized_label": "디지털 중앙은행 화폐",
+          "type": "technology",
+          "weight": 0.98,
+          "aliases": [
+            "CBDC"
+          ],
+          "evidence": [
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "디지털 중앙은행 화폐(CBDC)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b367eadd35aa44c3",
+          "label": "경제",
+          "normalized_label": "경제",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "경제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-14fe6a3a6197800d",
+          "label": "금융",
+          "normalized_label": "금융",
+          "type": "domain",
+          "weight": 0.93,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.sub",
+              "matched_text": "금융"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-68a70e069fefe2b8",
+          "label": "통화정책과 경제 파급효과",
+          "normalized_label": "통화정책과 경제 파급효과",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "통화정책과 경제 파급효과"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b7fa076869eea4af",
+          "label": "국제통화기금",
+          "normalized_label": "국제통화기금",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [
+            "IMF"
+          ],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "국제통화기금(IMF)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2162717b17c86f2e",
+          "label": "금융시장 반응",
+          "normalized_label": "금융시장 반응",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "금융시장 반응"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c783655d7917e4b1",
+          "label": "사회문화적 영향 확산",
+          "normalized_label": "사회문화적 영향 확산",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "사회문화적 영향 확산"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-72ec16c080bd38ea",
+          "label": "신용과 유동성 변화",
+          "normalized_label": "신용과 유동성 변화",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "신용과 유동성 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e04b38554c01c9f6",
+          "label": "실물경제에 파급",
+          "normalized_label": "실물경제에 파급",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "실물경제에 파급"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7df7f4f7ce0498c5",
+          "label": "통화정책 수단 결정",
+          "normalized_label": "통화정책 수단 결정",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "통화정책 수단 결정"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f49196ff4201fd02",
+          "label": "미국 연방준비제도의 양적완화(QE) 사례 분석",
+          "normalized_label": "미국 연방준비제도의 양적완화(QE) 사례 분석",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "미국 연방준비제도의 양적완화(QE) 사례 분석"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2c6fc1b72d1a6c7f",
+          "label": "통화정책 이해를 위한 기초 개념과 핵심 용어",
+          "normalized_label": "통화정책 이해를 위한 기초 개념과 핵심 용어",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "통화정책 이해를 위한 기초 개념과 핵심 용어"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-cf6d25f1c6efae95",
+          "label": "통화정책과 경제구조의 변화",
+          "normalized_label": "통화정책과 경제구조의 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "통화정책과 경제구조의 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f0e9dd61d3830ea2",
+          "label": "통화정책의 기준과 관리 방식 변화",
+          "normalized_label": "통화정책의 기준과 관리 방식 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "통화정책의 기준과 관리 방식 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1778bb7e388f413a",
+          "label": "통화정책의 사회·문화적 영향",
+          "normalized_label": "통화정책의 사회·문화적 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "통화정책의 사회·문화적 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f136361c01bbd642",
+          "label": "통화정책의 역사적 기원과 발전",
+          "normalized_label": "통화정책의 역사적 기원과 발전",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "통화정책의 역사적 기원과 발전"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b37cb7a3b0424cff",
+          "label": "통화정책의 중요성과 현대 경제에서의 역할",
+          "normalized_label": "통화정책의 중요성과 현대 경제에서의 역할",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "통화정책의 중요성과 현대 경제에서의 역할"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-10453711836f024a",
+          "label": "통화정책의 최신 동향과 현대 경제 내 작동 방식",
+          "normalized_label": "통화정책의 최신 동향과 현대 경제 내 작동 방식",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "통화정책의 최신 동향과 현대 경제 내 작동 방식"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-28f2e0e7e31edfb9",
+          "label": "통화정책의 핵심 질문과 분석 프레임 탐색",
+          "normalized_label": "통화정책의 핵심 질문과 분석 프레임 탐색",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "통화정책의 핵심 질문과 분석 프레임 탐색"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-df03267249562508",
+          "label": "통화정책이 개인, 사회, 기술, 문화에 미치는 의미",
+          "normalized_label": "통화정책이 개인, 사회, 기술, 문화에 미치는 의미",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "통화정책이 개인, 사회, 기술, 문화에 미치는 의미"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c399579aac9337b6",
+          "label": "현대 통화정책의 쟁점과 미래 과제",
+          "normalized_label": "현대 통화정책의 쟁점과 미래 과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[7].title",
+              "matched_text": "현대 통화정책의 쟁점과 미래 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9b5d4d056a0d083d",
+          "label": "통화정책과 경제 안정 보고서",
+          "normalized_label": "통화정책과 경제 안정 보고서",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "통화정책과 경제 안정 보고서"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f4bd420e9d6b1ead",
+          "label": "관련 도서·탐구 키워드·확장 주제",
+          "normalized_label": "관련 도서·탐구 키워드·확장 주제",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 관련 도서·탐구 키워드·확장 주제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2277a49e683288a5",
+          "label": "미국 연방준비제도 양적완화(QE) 특징",
+          "normalized_label": "미국 연방준비제도 양적완화(QE) 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 미국 연방준비제도 양적완화(QE) 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-671645f171372c29",
+          "label": "통화정책 종류별 특징 비교",
+          "normalized_label": "통화정책 종류별 특징 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 통화정책 종류별 특징 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5b2b936264f8439e",
+          "label": "현대 통화정책의 주요 쟁점",
+          "normalized_label": "현대 통화정책의 주요 쟁점",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 현대 통화정책의 주요 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0727f3d4d3e06710",
+          "label": "경제학원론",
+          "normalized_label": "경제학원론",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "경제학원론"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-becfd3bdfb151a7e",
+          "label": "디지털 화폐와 경제의 미래",
+          "normalized_label": "디지털 화폐와 경제의 미래",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[3].title",
+              "matched_text": "디지털 화폐와 경제의 미래"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9e2ef06da03334a2",
+          "label": "중앙은행과 금융안정",
+          "normalized_label": "중앙은행과 금융안정",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "중앙은행과 금융안정"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b0441a8a44680bda",
+          "label": "통화정책과 금융시장",
+          "normalized_label": "통화정책과 금융시장",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "통화정책과 금융시장"
+            }
+          ]
+        }
+      ]
     }
   ],
   "shared_concepts": [
@@ -54350,19 +54932,6 @@
           ]
         },
         {
-          "report_id": "rpt-20260917-river-memory-meandering",
-          "evidence": [
-            {
-              "reference": "sections[7].body[0]",
-              "matched_text": "불확실성"
-            },
-            {
-              "reference": "sections[9].body[2]",
-              "matched_text": "불확실성"
-            }
-          ]
-        },
-        {
           "report_id": "rpt-20260922-welfare-state-design-soc",
           "evidence": [
             {
@@ -54493,6 +55062,27 @@
             },
             {
               "reference": "sections[10].body[3]",
+              "matched_text": "불확실성"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261125-monetary-policy-longterm",
+          "evidence": [
+            {
+              "reference": "sections[0].body[0]",
+              "matched_text": "불확실성"
+            },
+            {
+              "reference": "sections[5].body[1]",
+              "matched_text": "시장 변동성"
+            },
+            {
+              "reference": "sections[7].body[2]",
+              "matched_text": "불확실성"
+            },
+            {
+              "reference": "sections[9].body[3]",
               "matched_text": "불확실성"
             }
           ]

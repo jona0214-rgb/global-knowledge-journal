@@ -1,16 +1,16 @@
 {
-  "date": "2026-11-24",
-  "title": "디지털 감시와 프라이버시 권리의 균형",
-  "subtitle": "국가 안보와 개인 정보 보호가 충돌하는 현대 사회의 법적 쟁점",
-  "main_category": "사회·정치·법",
-  "mid_category": "법률",
-  "sub_category": "정보법",
-  "detail_category": "국가 안보와 개인 정보 보호의 법적 충돌",
+  "date": "2026-11-25",
+  "title": "통화정책이 금융시장과 실물경제에 미치는 장기적 영향 분석",
+  "subtitle": "통화정책이 어떻게 금융시장과 실물경제에 깊고 지속적인 영향을 주는가",
+  "main_category": "경제·경영",
+  "mid_category": "경제",
+  "sub_category": "금융",
+  "detail_category": "통화정책과 경제 파급효과",
   "taxonomy_version": "2.0",
-  "html_path": "outputs/20261124_digital_surveillance_pri_Report.html",
-  "pdf_path": "outputs/20261124_digital_surveillance_pri_Report.pdf",
+  "html_path": "outputs/20261125_monetary_policy_longterm_Report.html",
+  "pdf_path": "outputs/20261125_monetary_policy_longterm_Report.pdf",
   "status": "published_api",
-  "html_url": "outputs/20261124_digital_surveillance_pri_Report.html",
-  "pdf_url": "outputs/20261124_digital_surveillance_pri_Report.pdf",
-  "report_id": "rpt-20261124-digital-surveillance-pri"
+  "html_url": "outputs/20261125_monetary_policy_longterm_Report.html",
+  "pdf_url": "outputs/20261125_monetary_policy_longterm_Report.pdf",
+  "report_id": "rpt-20261125-monetary-policy-longterm"
 }

@@ -2,12 +2,12 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-11-24T10:56:20.347027+09:00",
+  "generated_at": "2026-11-25T08:40:20.707649+09:00",
   "stats": {
     "categories": 10,
-    "reports": 98,
-    "nodes": 422,
-    "edges": 535,
+    "reports": 99,
+    "nodes": 425,
+    "edges": 538,
     "concepts": 32,
     "concept_edges": 155,
     "semantic_edges": 0
@@ -984,6 +984,13 @@
       "label": "AI 번역 기술 동향",
       "level": 3,
       "main_category": "언어·미디어·지식"
+    },
+    {
+      "id": "detail:8784bdaeffa6b5e1",
+      "type": "detail",
+      "label": "통화정책과 경제 파급효과",
+      "level": 3,
+      "main_category": "경제·경영"
     },
     {
       "id": "detail:8803f1d5ce7a0c8c",
@@ -3520,6 +3527,23 @@
       "pdf_url": "outputs/20261124_digital_surveillance_pri_Report.pdf"
     },
     {
+      "id": "report:rpt-20261125-monetary-policy-longterm",
+      "type": "report",
+      "label": "통화정책이 금융시장과 실물경제에 미치는 장기적 영향 분석",
+      "level": 4,
+      "report_id": "rpt-20261125-monetary-policy-longterm",
+      "date": "2026-11-25",
+      "main_category": "경제·경영",
+      "category_path": [
+        "경제·경영",
+        "경제",
+        "금융",
+        "통화정책과 경제 파급효과"
+      ],
+      "html_url": "outputs/20261125_monetary_policy_longterm_Report.html",
+      "pdf_url": "outputs/20261125_monetary_policy_longterm_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -3581,6 +3605,13 @@
       "label": "지방행정",
       "level": 2,
       "main_category": "사회·정치·법"
+    },
+    {
+      "id": "sub:1cae61b7859c4601",
+      "type": "sub",
+      "label": "금융",
+      "level": 2,
+      "main_category": "경제·경영"
     },
     {
       "id": "sub:1d4310a3eb7eac5e",
@@ -4640,6 +4671,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:1b2243c6de51333c",
+      "source": "sub:1cae61b7859c4601",
+      "target": "detail:8784bdaeffa6b5e1",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:1b97846e5cc31634",
       "source": "sub:f19bd4048d307156",
       "target": "detail:0e86e35621503412",
@@ -4942,25 +4980,6 @@
       "target": "sub:38cf4ac117ebd85c",
       "kind": "hierarchy",
       "relation_type": "contains"
-    },
-    {
-      "id": "edge:2f18547a8ccf64b1",
-      "source": "report:rpt-20260917-river-memory-meandering",
-      "target": "concept:con-22940219024d252e",
-      "kind": "concept",
-      "relation_type": "has_concept",
-      "score": 0.8,
-      "evidence": [
-        {
-          "reference": "sections[7].body[0]",
-          "matched_text": "불확실성"
-        },
-        {
-          "reference": "sections[9].body[2]",
-          "matched_text": "불확실성"
-        }
-      ],
-      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:2f90e1cc5bf37363",
@@ -6366,6 +6385,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:6dd4d23871f2f38f",
+      "source": "detail:8784bdaeffa6b5e1",
+      "target": "report:rpt-20261125-monetary-policy-longterm",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:6dd512c7e25007e2",
       "source": "category:d1d9ae9d3e816c13",
       "target": "middle:761c2cc0e0a413e5",
@@ -7356,6 +7382,13 @@
       "id": "edge:968a589d9eaffb45",
       "source": "sub:5d7a566e1097d1a5",
       "target": "detail:a57c3dcf44746388",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:96eb4189f7378327",
+      "source": "middle:54353972a8423855",
+      "target": "sub:1cae61b7859c4601",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -9021,6 +9054,33 @@
         }
       ],
       "provenance": "exact-normalized-tag"
+    },
+    {
+      "id": "edge:d9029a09c2539942",
+      "source": "report:rpt-20261125-monetary-policy-longterm",
+      "target": "concept:con-22940219024d252e",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "sections[0].body[0]",
+          "matched_text": "불확실성"
+        },
+        {
+          "reference": "sections[5].body[1]",
+          "matched_text": "시장 변동성"
+        },
+        {
+          "reference": "sections[7].body[2]",
+          "matched_text": "불확실성"
+        },
+        {
+          "reference": "sections[9].body[3]",
+          "matched_text": "불확실성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:d9965cb51fee8342",
