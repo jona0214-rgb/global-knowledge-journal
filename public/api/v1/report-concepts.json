@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-11-23T05:51:35.389630+09:00",
+  "generated_at": "2026-11-24T10:56:20.347027+09:00",
   "stats": {
-    "reports": 97,
-    "tags": 3612,
+    "reports": 98,
+    "tags": 3647,
     "shared_concepts": 32,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -53039,6 +53039,524 @@
             {
               "reference": "further_reading[2].title",
               "matched_text": "『자유와 연대』"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "report_id": "rpt-20261124-digital-surveillance-pri",
+      "date": "2026-11-24",
+      "title": "디지털 감시와 프라이버시 권리의 균형",
+      "main_category": "사회·정치·법",
+      "tags": [
+        {
+          "tag_id": "tag-94a8bf7ff8e906cd",
+          "label": "개인정보 보호",
+          "normalized_label": "개인정보 보호",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "개인정보 보호"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6caf7c96239954ba",
+          "label": "국가 안보",
+          "normalized_label": "국가 안보",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "국가 안보"
+            },
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "국가 안보"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-79681ee802a0d44f",
+          "label": "디지털 감시",
+          "normalized_label": "디지털 감시",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "디지털 감시"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "디지털 감시"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c4b540da3467f776",
+          "label": "법적 충돌",
+          "normalized_label": "법적 충돌",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "법적 충돌"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f38fc2b6dedacd13",
+          "label": "사회적 균형",
+          "normalized_label": "사회적 균형",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "사회적 균형"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-68f9cc2586fd4268",
+          "label": "정보법",
+          "normalized_label": "정보법",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "정보법"
+            },
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "정보법"
+            },
+            {
+              "reference": "category.sub",
+              "matched_text": "정보법"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-afcd42f84cbd6080",
+          "label": "프라이버시 권리",
+          "normalized_label": "프라이버시 권리",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "프라이버시 권리"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "프라이버시 권리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-730d482248dda063",
+          "label": "기술 발전",
+          "normalized_label": "기술 발전",
+          "type": "technology",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "기술 발전"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2e27d84d2e191580",
+          "label": "법률",
+          "normalized_label": "법률",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "법률"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7066b97da5ec4193",
+          "label": "국가 안보와 개인 정보 보호의 법적 충돌",
+          "normalized_label": "국가 안보와 개인 정보 보호의 법적 충돌",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "국가 안보와 개인 정보 보호의 법적 충돌"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-0e43c83c60c564da",
+          "label": "국제인권기구",
+          "normalized_label": "국제인권기구",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "국제인권기구"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-dab7a90f1448ee43",
+          "label": "감시 투명성과 법률적 책임성 확보",
+          "normalized_label": "감시 투명성과 법률적 책임성 확보",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "감시 투명성과 법률적 책임성 확보"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2dca462157fa1248",
+          "label": "국가 안보 목적의 감시 체계 구축",
+          "normalized_label": "국가 안보 목적의 감시 체계 구축",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "국가 안보 목적의 감시 체계 구축"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-397588813b843afc",
+          "label": "균형점 모색과 사회적 논의 활성화",
+          "normalized_label": "균형점 모색과 사회적 논의 활성화",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "균형점 모색과 사회적 논의 활성화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-58e666370fba587a",
+          "label": "기술 발전과 대량 데이터 생성",
+          "normalized_label": "기술 발전과 대량 데이터 생성",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "기술 발전과 대량 데이터 생성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e88ddbeaaf5dcd98",
+          "label": "프라이버시 권리와 법적 보호 강화",
+          "normalized_label": "프라이버시 권리와 법적 보호 강화",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "프라이버시 권리와 법적 보호 강화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f211b9cdd95fc8a9",
+          "label": "디지털 감시 제도와 기술 구조 변화",
+          "normalized_label": "디지털 감시 제도와 기술 구조 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "디지털 감시 제도와 기술 구조 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9f3daed00eaa1ce4",
+          "label": "디지털 감시와 프라이버시 관리 기준 및 규칙 변화",
+          "normalized_label": "디지털 감시와 프라이버시 관리 기준 및 규칙 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "디지털 감시와 프라이버시 관리 기준 및 규칙 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d8e52e3e6433dac4",
+          "label": "디지털 감시와 프라이버시 권리 균형의 사회적·법적 함의",
+          "normalized_label": "디지털 감시와 프라이버시 권리 균형의 사회적·법적 함의",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "디지털 감시와 프라이버시 권리 균형의 사회적·법적 함의"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-625ce6b380614568",
+          "label": "디지털 감시와 프라이버시 권리 논쟁의 배경과 중요성",
+          "normalized_label": "디지털 감시와 프라이버시 권리 논쟁의 배경과 중요성",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "디지털 감시와 프라이버시 권리 논쟁의 배경과 중요성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5482ae9cb64f1ef2",
+          "label": "디지털 감시와 프라이버시 권리의 역사적 전개",
+          "normalized_label": "디지털 감시와 프라이버시 권리의 역사적 전개",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "디지털 감시와 프라이버시 권리의 역사적 전개"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-074606e1d371a1cd",
+          "label": "디지털 감시와 프라이버시 권리의 현재 동향과 과제",
+          "normalized_label": "디지털 감시와 프라이버시 권리의 현재 동향과 과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "디지털 감시와 프라이버시 권리의 현재 동향과 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-bb0d261c5b5cbba3",
+          "label": "디지털 감시와 프라이버시 균형의 법적 쟁점과 분석",
+          "normalized_label": "디지털 감시와 프라이버시 균형의 법적 쟁점과 분석",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "디지털 감시와 프라이버시 균형의 법적 쟁점과 분석"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d9236a190902bb41",
+          "label": "미국의 프리즘(PRISM) 프로그램: 디지털 감시의 법적·사회적 파장",
+          "normalized_label": "미국의 프리즘(PRISM) 프로그램: 디지털 감시의 법적·사회적 파장",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "미국의 프리즘(PRISM) 프로그램: 디지털 감시의 법적·사회적 파장"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7efd5daf43e00397",
+          "label": "사회와 문화에 미친 디지털 감시 영향",
+          "normalized_label": "사회와 문화에 미친 디지털 감시 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "사회와 문화에 미친 디지털 감시 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4bc5aa11c8b0b3c1",
+          "label": "핵심 용어와 개념 이해하기",
+          "normalized_label": "핵심 용어와 개념 이해하기",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "핵심 용어와 개념 이해하기"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-15d68f2d4629f327",
+          "label": "현대 쟁점과 앞으로의 발전 방향",
+          "normalized_label": "현대 쟁점과 앞으로의 발전 방향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[7].title",
+              "matched_text": "현대 쟁점과 앞으로의 발전 방향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b34747ee4035b250",
+          "label": "디지털 시대 프라이버시 권리 보호와 국가 안보의 조화",
+          "normalized_label": "디지털 시대 프라이버시 권리 보호와 국가 안보의 조화",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "디지털 시대 프라이버시 권리 보호와 국가 안보의 조화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-32ccca7677c11a86",
+          "label": "관련 도서, 탐구 키워드, 확장 주제",
+          "normalized_label": "관련 도서, 탐구 키워드, 확장 주제",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 관련 도서, 탐구 키워드, 확장 주제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4c06363b759a1848",
+          "label": "디지털 감시와 프라이버시 권리 비교",
+          "normalized_label": "디지털 감시와 프라이버시 권리 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 디지털 감시와 프라이버시 권리 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c189c8e9a8c4d843",
+          "label": "프리즘 프로그램 사례 특징",
+          "normalized_label": "프리즘 프로그램 사례 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 프리즘 프로그램 사례 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8c5313f061d80021",
+          "label": "현재 디지털 감시와 프라이버시 쟁점",
+          "normalized_label": "현재 디지털 감시와 프라이버시 쟁점",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 현재 디지털 감시와 프라이버시 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6a52fd2730f3d0f9",
+          "label": "감시 사회",
+          "normalized_label": "감시 사회",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "감시 사회"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-139c0b5d642c6de9",
+          "label": "디지털 자유와 보안",
+          "normalized_label": "디지털 자유와 보안",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "디지털 자유와 보안"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5101fa6a12363df4",
+          "label": "프라이버시의 미래",
+          "normalized_label": "프라이버시의 미래",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "프라이버시의 미래"
             }
           ]
         }

@@ -1,6 +1,22 @@
 {
-  "last_updated": "2026-11-23T05:51:35.389630+09:00",
+  "last_updated": "2026-11-24T10:56:20.347027+09:00",
   "reports": [
+    {
+      "date": "2026-11-24",
+      "title": "디지털 감시와 프라이버시 권리의 균형",
+      "subtitle": "국가 안보와 개인 정보 보호가 충돌하는 현대 사회의 법적 쟁점",
+      "main_category": "사회·정치·법",
+      "mid_category": "법률",
+      "sub_category": "정보법",
+      "detail_category": "국가 안보와 개인 정보 보호의 법적 충돌",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20261124_digital_surveillance_pri_Report.html",
+      "pdf_path": "outputs/20261124_digital_surveillance_pri_Report.pdf",
+      "status": "published_api",
+      "html_url": "outputs/20261124_digital_surveillance_pri_Report.html",
+      "pdf_url": "outputs/20261124_digital_surveillance_pri_Report.pdf",
+      "report_id": "rpt-20261124-digital-surveillance-pri"
+    },
     {
       "date": "2026-11-23",
       "title": "근대 사상에서 개인주의와 집단주의 사상의 발전과 영향",

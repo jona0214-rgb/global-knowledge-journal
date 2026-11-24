@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-11-24",
+    "title": "디지털 감시와 프라이버시 권리의 균형",
+    "status": "published_api",
+    "event_name": "schedule",
+    "schedule_cron": "45 14 * * *",
+    "scheduled_for_kst": "2026-11-24T00:00:00+09:00",
+    "workflow_started_at": "2026-11-24T01:54:50Z",
+    "generation_started_at": "2026-11-24T01:55:19.032232Z",
+    "generation_completed_at": "2026-11-24T01:56:19.073971Z",
+    "catalog_updated_at": "2026-11-24T01:56:20.349087Z",
+    "scheduler_delay_seconds": 39290,
+    "setup_duration_seconds": 29,
+    "generation_duration_seconds": 61,
+    "validation_attempts": 1,
+    "run_id": "45308506156",
+    "run_attempt": "1",
+    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/45308506156",
+    "source_sha": "7574701b3b151d6ecbace17789c4a913b2e94047"
+  },
+  {
     "date": "2026-11-23",
     "title": "근대 사상에서 개인주의와 집단주의 사상의 발전과 영향",
     "status": "published_api",
@@ -708,30 +728,5 @@
     "publication_schedule_cron": "45 21 * * *",
     "publication_run_id": "39876513377",
     "publication_run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/39876513377"
-  },
-  {
-    "date": "2026-10-22",
-    "title": "시민 불복종의 역사와 정치적 효과",
-    "status": "published_api",
-    "event_name": "schedule",
-    "schedule_cron": "45 14 * * *",
-    "scheduled_for_kst": "2026-10-22T00:00:00+09:00",
-    "workflow_started_at": "2026-10-21T18:57:42Z",
-    "generation_started_at": "2026-10-21T18:58:13.801688Z",
-    "generation_completed_at": "2026-10-21T18:58:58.099361Z",
-    "catalog_updated_at": "2026-10-21T18:58:59.277779Z",
-    "scheduler_delay_seconds": 14262,
-    "setup_duration_seconds": 32,
-    "generation_duration_seconds": 45,
-    "validation_attempts": 1,
-    "run_id": "39657384148",
-    "run_attempt": "1",
-    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/39657384148",
-    "source_sha": "1749906e2785928b995f10cd889f10a55462b3e2",
-    "publication_target_kst": "2026-10-22T07:00:00+09:00",
-    "publication_pushed_at": "2026-10-22T00:14:50.708930Z",
-    "publication_schedule_cron": "45 21 * * *",
-    "publication_run_id": "39698513541",
-    "publication_run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/39698513541"
   }
 ]

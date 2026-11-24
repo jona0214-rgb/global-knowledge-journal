@@ -2,12 +2,12 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-11-23T05:51:35.389630+09:00",
+  "generated_at": "2026-11-24T10:56:20.347027+09:00",
   "stats": {
     "categories": 10,
-    "reports": 97,
-    "nodes": 419,
-    "edges": 532,
+    "reports": 98,
+    "nodes": 422,
+    "edges": 535,
     "concepts": 32,
     "concept_edges": 155,
     "semantic_edges": 0
@@ -956,6 +956,13 @@
       "label": "소비 행위와 윤리적 책임",
       "level": 3,
       "main_category": "인문·철학"
+    },
+    {
+      "id": "detail:81f9d4aac84e9be9",
+      "type": "detail",
+      "label": "국가 안보와 개인 정보 보호의 법적 충돌",
+      "level": 3,
+      "main_category": "사회·정치·법"
     },
     {
       "id": "detail:827d4e6a06f8e552",
@@ -3496,6 +3503,23 @@
       "pdf_url": "outputs/20261123_modern_individualism_col_Report.pdf"
     },
     {
+      "id": "report:rpt-20261124-digital-surveillance-pri",
+      "type": "report",
+      "label": "디지털 감시와 프라이버시 권리의 균형",
+      "level": 4,
+      "report_id": "rpt-20261124-digital-surveillance-pri",
+      "date": "2026-11-24",
+      "main_category": "사회·정치·법",
+      "category_path": [
+        "사회·정치·법",
+        "법률",
+        "정보법",
+        "국가 안보와 개인 정보 보호의 법적 충돌"
+      ],
+      "html_url": "outputs/20261124_digital_surveillance_pri_Report.html",
+      "pdf_url": "outputs/20261124_digital_surveillance_pri_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -4152,6 +4176,13 @@
       "label": "의례와 상징",
       "level": 2,
       "main_category": "인문·철학"
+    },
+    {
+      "id": "sub:f08af3b90244e040",
+      "type": "sub",
+      "label": "정보법",
+      "level": 2,
+      "main_category": "사회·정치·법"
     },
     {
       "id": "sub:f19bd4048d307156",
@@ -7000,6 +7031,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:8bd64553fbcc868c",
+      "source": "detail:81f9d4aac84e9be9",
+      "target": "report:rpt-20261124-digital-surveillance-pri",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:8bef91489f114c59",
       "source": "report:rpt-20261101-social-structure-change",
       "target": "concept:con-22940219024d252e",
@@ -8251,6 +8289,13 @@
       "id": "edge:b795d0396c9d809b",
       "source": "sub:3207b77da325030e",
       "target": "detail:1b1dd9b990201286",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:b9ea76a59e934990",
+      "source": "sub:f08af3b90244e040",
+      "target": "detail:81f9d4aac84e9be9",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -10008,6 +10053,13 @@
       "id": "edge:fe3bb56274b0620d",
       "source": "category:c135b09622b60562",
       "target": "middle:6bb393db31e086c2",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:feabd28a3eb08006",
+      "source": "middle:e9c36fd026305d5e",
+      "target": "sub:f08af3b90244e040",
       "kind": "hierarchy",
       "relation_type": "contains"
     },

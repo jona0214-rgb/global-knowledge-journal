@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-11-23",
+  "updated_at": "2026-11-24",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -2187,6 +2187,29 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261123_modern_individualism_col_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261123_modern_individualism_col_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "report_id": "rpt-20261124-digital-surveillance-privacy-balance",
+      "date": "2026-11-24",
+      "title": "디지털 감시와 프라이버시 권리의 균형",
+      "main_category": "사회·정치·법",
+      "mid_category": "법률",
+      "sub_category": "정보법",
+      "detail_category": "국가 안보와 개인 정보 보호의 법적 충돌",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "디지털 감시",
+        "프라이버시 권리",
+        "국가 안보",
+        "정보법",
+        "개인정보 보호",
+        "법적 충돌",
+        "기술 발전",
+        "사회적 균형"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261124_digital_surveillance_pri_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261124_digital_surveillance_pri_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -2203,13 +2226,13 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "인문·철학",
-    "next_main_category": "사회·정치·법",
-    "next_index": 1,
+    "last_main_category": "사회·정치·법",
+    "next_main_category": "경제·경영",
+    "next_index": 2,
     "completed_cycles": 10,
     "published_counts": {
       "인문·철학": 11,
-      "사회·정치·법": 9,
+      "사회·정치·법": 10,
       "경제·경영": 9,
       "과학·수학": 9,
       "기술·공학": 10,
@@ -2220,7 +2243,6 @@
       "언어·미디어·지식": 11
     },
     "recent_main_categories": [
-      "사회·정치·법",
       "경제·경영",
       "과학·수학",
       "기술·공학",
@@ -2229,7 +2251,8 @@
       "역사·문화",
       "예술·디자인",
       "언어·미디어·지식",
-      "인문·철학"
+      "인문·철학",
+      "사회·정치·법"
     ]
   },
   "candidate_pool": [
@@ -3130,7 +3153,7 @@
       "sub_category": "정보법",
       "detail_category": "국가 안보와 개인 정보 보호의 법적 충돌",
       "priority": 1.0,
-      "status": "candidate",
+      "status": "used",
       "source": "api_generated"
     },
     {
