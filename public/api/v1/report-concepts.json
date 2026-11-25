@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-11-25T08:40:20.707649+09:00",
+  "generated_at": "2026-11-26T08:22:19.105848+09:00",
   "stats": {
-    "reports": 99,
-    "tags": 3687,
+    "reports": 100,
+    "tags": 3723,
     "shared_concepts": 32,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -54143,6 +54143,536 @@
           ]
         }
       ]
+    },
+    {
+      "report_id": "rpt-20261126-scientific-modeling-prin",
+      "date": "2026-11-26",
+      "title": "과학적 모델링의 원리와 한계: 복잡계 이해를 위한 도구로서의 수학",
+      "main_category": "과학·수학",
+      "tags": [
+        {
+          "tag_id": "tag-e29e643dc6ed80c6",
+          "label": "과학 방법",
+          "normalized_label": "과학 방법",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "과학 방법"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-aa3d2b60ac0c13cf",
+          "label": "복잡계",
+          "normalized_label": "복잡계",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "복잡계"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "복잡계"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-577a1fb4dd89db27",
+          "label": "수학 도구",
+          "normalized_label": "수학 도구",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "수학 도구"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-16064c14ea5a4d7b",
+          "label": "시뮬레이션",
+          "normalized_label": "시뮬레이션",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "시뮬레이션"
+            },
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "시뮬레이션"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-89c158dc40cc322c",
+          "label": "과학적 모델링",
+          "normalized_label": "과학적 모델링",
+          "type": "method",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "과학적 모델링"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "과학적 모델링"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-950a65a0e03ce9dc",
+          "label": "모델 한계",
+          "normalized_label": "모델 한계",
+          "type": "method",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "모델 한계"
+            },
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "모델 한계"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fa6e363570f69dda",
+          "label": "수학적 모델링",
+          "normalized_label": "수학적 모델링",
+          "type": "method",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "수학적 모델링"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7575e3af2e26fd2e",
+          "label": "비선형 시스템",
+          "normalized_label": "비선형 시스템",
+          "type": "technology",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "비선형 시스템"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-87f09212fb815b0f",
+          "label": "수학과 과학적 사고",
+          "normalized_label": "수학과 과학적 사고",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "수학과 과학적 사고"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f93aa4b3f8400c92",
+          "label": "과학 방법론",
+          "normalized_label": "과학 방법론",
+          "type": "domain",
+          "weight": 0.93,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.sub",
+              "matched_text": "과학 방법론"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b1396055d94c3959",
+          "label": "수학적 모델링과 시뮬레이션",
+          "normalized_label": "수학적 모델링과 시뮬레이션",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "수학적 모델링과 시뮬레이션"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1613ae30e17e81ed",
+          "label": "피터 셀러스",
+          "normalized_label": "피터 셀러스",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [
+            "과학철학자"
+          ],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "피터 셀러스(과학철학자)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-76126fe1a8cf9358",
+          "label": "결과 검증 및 피드백",
+          "normalized_label": "결과 검증 및 피드백",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "결과 검증 및 피드백"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-35ed6054f67901fc",
+          "label": "문제 정의와 현상 이해",
+          "normalized_label": "문제 정의와 현상 이해",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "문제 정의와 현상 이해"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-973ae18a60f6dc87",
+          "label": "변수 선정 및 가정 설정",
+          "normalized_label": "변수 선정 및 가정 설정",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "변수 선정 및 가정 설정"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ddb94e217bb167e7",
+          "label": "수학적 표현 및 모델 구축",
+          "normalized_label": "수학적 표현 및 모델 구축",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "수학적 표현 및 모델 구축"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e99d474278dd7576",
+          "label": "컴퓨터 시뮬레이션 및 실험",
+          "normalized_label": "컴퓨터 시뮬레이션 및 실험",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "컴퓨터 시뮬레이션 및 실험"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5ab1aa46f8b69093",
+          "label": "과학적 모델링 기본 개념과 핵심 용어",
+          "normalized_label": "과학적 모델링 기본 개념과 핵심 용어",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "과학적 모델링 기본 개념과 핵심 용어"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-54ad91fcadbb9dae",
+          "label": "과학적 모델링의 중요성과 현대적 재조명",
+          "normalized_label": "과학적 모델링의 중요성과 현대적 재조명",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "과학적 모델링의 중요성과 현대적 재조명"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-febe9c7971d120b3",
+          "label": "과학적 모델링의 핵심 질문과 분석 틀",
+          "normalized_label": "과학적 모델링의 핵심 질문과 분석 틀",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "과학적 모델링의 핵심 질문과 분석 틀"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4427ea2d568f73ee",
+          "label": "과학적 모델링의 현재 쟁점과 미래 과제",
+          "normalized_label": "과학적 모델링의 현재 쟁점과 미래 과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[7].title",
+              "matched_text": "과학적 모델링의 현재 쟁점과 미래 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-99a5feb4d78dc655",
+          "label": "과학적 모델링이 개인과 사회에 미치는 의미",
+          "normalized_label": "과학적 모델링이 개인과 사회에 미치는 의미",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "과학적 모델링이 개인과 사회에 미치는 의미"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3af290f828f7d75a",
+          "label": "기후 변화 예측 모델: 복잡계 모델링의 실제 적용",
+          "normalized_label": "기후 변화 예측 모델: 복잡계 모델링의 실제 적용",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "기후 변화 예측 모델: 복잡계 모델링의 실제 적용"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9162eca65b5c5844",
+          "label": "모델 평가 기준과 관리 방식의 변화",
+          "normalized_label": "모델 평가 기준과 관리 방식의 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "모델 평가 기준과 관리 방식의 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-63cd3c1ac8b35394",
+          "label": "모델링의 구조와 작동 원리",
+          "normalized_label": "모델링의 구조와 작동 원리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "모델링의 구조와 작동 원리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-85fbbe6a4ad415ab",
+          "label": "모델링의 역사적 기원",
+          "normalized_label": "모델링의 역사적 기원",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "모델링의 역사적 기원"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-54ac9e65e610bdfa",
+          "label": "모델링이 사회와 문화에 미친 영향",
+          "normalized_label": "모델링이 사회와 문화에 미친 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "모델링이 사회와 문화에 미친 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1826309e27125a22",
+          "label": "현대 과학적 모델링의 운영과 도전",
+          "normalized_label": "현대 과학적 모델링의 운영과 도전",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "현대 과학적 모델링의 운영과 도전"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1f4bc9dd7e313611",
+          "label": "Scientific Modeling and Explanation",
+          "normalized_label": "Scientific Modeling and Explanation",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "Scientific Modeling and Explanation"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2d84cefa8b947650",
+          "label": "과학적 모델링 관련 도서 및 탐구 키워드",
+          "normalized_label": "과학적 모델링 관련 도서 및 탐구 키워드",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 과학적 모델링 관련 도서 및 탐구 키워드"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-916f8e5f77a755e0",
+          "label": "과학적 모델링과 관련 개념 비교",
+          "normalized_label": "과학적 모델링과 관련 개념 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 과학적 모델링과 관련 개념 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2b6e35d11958a52b",
+          "label": "기후 변화 모델 사례의 특징",
+          "normalized_label": "기후 변화 모델 사례의 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 기후 변화 모델 사례의 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b33b9a8967b2f4b9",
+          "label": "현대 과학적 모델링의 쟁점 정리",
+          "normalized_label": "현대 과학적 모델링의 쟁점 정리",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 현대 과학적 모델링의 쟁점 정리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-4e38a941f92d5a85",
+          "label": "『Scientific Modeling and Explanation』",
+          "normalized_label": "『Scientific Modeling and Explanation』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "『Scientific Modeling and Explanation』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-413610577d0f5649",
+          "label": "『복잡계 과학』",
+          "normalized_label": "『복잡계 과학』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "『복잡계 과학』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8b60b47f7f1286e4",
+          "label": "모델 검증과 불확실성 평가",
+          "normalized_label": "모델 검증과 불확실성 평가",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "모델 검증과 불확실성 평가"
+            }
+          ]
+        }
+      ]
     }
   ],
   "shared_concepts": [
@@ -55050,23 +55580,6 @@
           ]
         },
         {
-          "report_id": "rpt-20261119-glacial-periods-and-eart",
-          "evidence": [
-            {
-              "reference": "sections[7].body[0]",
-              "matched_text": "불확실성"
-            },
-            {
-              "reference": "sections[9].body[4]",
-              "matched_text": "불확실성"
-            },
-            {
-              "reference": "sections[10].body[3]",
-              "matched_text": "불확실성"
-            }
-          ]
-        },
-        {
           "report_id": "rpt-20261125-monetary-policy-longterm",
           "evidence": [
             {
@@ -55083,6 +55596,27 @@
             },
             {
               "reference": "sections[9].body[3]",
+              "matched_text": "불확실성"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261126-scientific-modeling-prin",
+          "evidence": [
+            {
+              "reference": "sections[0].body[3]",
+              "matched_text": "불확실성"
+            },
+            {
+              "reference": "sections[2].body[0]",
+              "matched_text": "불확실성"
+            },
+            {
+              "reference": "sections[7].body[0]",
+              "matched_text": "불확실성"
+            },
+            {
+              "reference": "sections[8].body[2]",
               "matched_text": "불확실성"
             }
           ]

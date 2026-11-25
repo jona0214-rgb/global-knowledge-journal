@@ -2,12 +2,12 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-11-25T08:40:20.707649+09:00",
+  "generated_at": "2026-11-26T08:22:19.105848+09:00",
   "stats": {
     "categories": 10,
-    "reports": 99,
-    "nodes": 425,
-    "edges": 538,
+    "reports": 100,
+    "nodes": 428,
+    "edges": 541,
     "concepts": 32,
     "concept_edges": 155,
     "semantic_edges": 0
@@ -1257,6 +1257,13 @@
       "label": "화산분출이 지형 및 생태계에 미치는 장기 효과",
       "level": 3,
       "main_category": "자연·환경·지리"
+    },
+    {
+      "id": "detail:fffebc5a9377f305",
+      "type": "detail",
+      "label": "수학적 모델링과 시뮬레이션",
+      "level": 3,
+      "main_category": "과학·수학"
     },
     {
       "id": "middle:041acc745080972d",
@@ -3544,6 +3551,23 @@
       "pdf_url": "outputs/20261125_monetary_policy_longterm_Report.pdf"
     },
     {
+      "id": "report:rpt-20261126-scientific-modeling-prin",
+      "type": "report",
+      "label": "과학적 모델링의 원리와 한계: 복잡계 이해를 위한 도구로서의 수학",
+      "level": 4,
+      "report_id": "rpt-20261126-scientific-modeling-prin",
+      "date": "2026-11-26",
+      "main_category": "과학·수학",
+      "category_path": [
+        "과학·수학",
+        "수학과 과학적 사고",
+        "과학 방법론",
+        "수학적 모델링과 시뮬레이션"
+      ],
+      "html_url": "outputs/20261126_scientific_modeling_prin_Report.html",
+      "pdf_url": "outputs/20261126_scientific_modeling_prin_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -3605,6 +3629,13 @@
       "label": "지방행정",
       "level": 2,
       "main_category": "사회·정치·법"
+    },
+    {
+      "id": "sub:175b6c5d05b29175",
+      "type": "sub",
+      "label": "과학 방법론",
+      "level": 2,
+      "main_category": "과학·수학"
     },
     {
       "id": "sub:1cae61b7859c4601",
@@ -4758,6 +4789,13 @@
       "id": "edge:20f43cb910e53dd7",
       "source": "sub:5eb3045749326168",
       "target": "detail:11d0dc264a2f948b",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:2129a74394f2b157",
+      "source": "middle:75dca2fed1fc8722",
+      "target": "sub:175b6c5d05b29175",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -6427,6 +6465,33 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:71005c8b2c8f216b",
+      "source": "report:rpt-20261126-scientific-modeling-prin",
+      "target": "concept:con-22940219024d252e",
+      "kind": "concept",
+      "relation_type": "has_concept",
+      "score": 1.0,
+      "evidence": [
+        {
+          "reference": "sections[0].body[3]",
+          "matched_text": "불확실성"
+        },
+        {
+          "reference": "sections[2].body[0]",
+          "matched_text": "불확실성"
+        },
+        {
+          "reference": "sections[7].body[0]",
+          "matched_text": "불확실성"
+        },
+        {
+          "reference": "sections[8].body[2]",
+          "matched_text": "불확실성"
+        }
+      ],
+      "provenance": "curated-pattern-rule"
+    },
+    {
       "id": "edge:7147d0229fb1b7cd",
       "source": "sub:7726d6d156b88c27",
       "target": "detail:ea0f93e5e39b2dbd",
@@ -6844,29 +6909,6 @@
       "target": "detail:bd0dd1da7f7d5123",
       "kind": "hierarchy",
       "relation_type": "contains"
-    },
-    {
-      "id": "edge:846846c66b42dd83",
-      "source": "report:rpt-20261119-glacial-periods-and-eart",
-      "target": "concept:con-22940219024d252e",
-      "kind": "concept",
-      "relation_type": "has_concept",
-      "score": 0.9,
-      "evidence": [
-        {
-          "reference": "sections[7].body[0]",
-          "matched_text": "불확실성"
-        },
-        {
-          "reference": "sections[9].body[4]",
-          "matched_text": "불확실성"
-        },
-        {
-          "reference": "sections[10].body[3]",
-          "matched_text": "불확실성"
-        }
-      ],
-      "provenance": "curated-pattern-rule"
     },
     {
       "id": "edge:8486f4f7bc96885c",
@@ -7476,6 +7518,13 @@
         }
       ],
       "provenance": "curated-pattern-rule"
+    },
+    {
+      "id": "edge:99819f4c7639c841",
+      "source": "detail:fffebc5a9377f305",
+      "target": "report:rpt-20261126-scientific-modeling-prin",
+      "kind": "hierarchy",
+      "relation_type": "contains"
     },
     {
       "id": "edge:999ef913fcbc9664",
@@ -9269,6 +9318,13 @@
       "id": "edge:dea19a4edb4912fd",
       "source": "sub:93a394e59d99c71b",
       "target": "detail:3ba3997b8ef44d53",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:df2db967c8211c0d",
+      "source": "sub:175b6c5d05b29175",
+      "target": "detail:fffebc5a9377f305",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
