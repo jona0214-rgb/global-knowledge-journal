@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-11-26T08:22:19.105848+09:00",
+  "generated_at": "2026-11-27T08:21:56.880577+09:00",
   "stats": {
-    "reports": 100,
-    "tags": 3723,
+    "reports": 101,
+    "tags": 3760,
     "shared_concepts": 32,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
@@ -54669,6 +54669,546 @@
             {
               "reference": "further_reading[2].title",
               "matched_text": "모델 검증과 불확실성 평가"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "report_id": "rpt-20261127-advances-3d-printing-ind",
+      "date": "2026-11-27",
+      "title": "첨단 제조 기술의 진화와 산업 혁신: 3D 프린팅은 어떻게 생산 방식을 바꾸었나",
+      "main_category": "기술·공학",
+      "tags": [
+        {
+          "tag_id": "tag-70520c55466c992d",
+          "label": "D 프린팅",
+          "normalized_label": "D 프린팅",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [
+            "적층 제조"
+          ],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "3D 프린팅"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "3D 프린팅(적층 제조)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1330fd9909884d15",
+          "label": "디지털 제조",
+          "normalized_label": "디지털 제조",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "디지털 제조"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1fbdec6026f789f7",
+          "label": "맞춤 생산",
+          "normalized_label": "맞춤 생산",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "맞춤 생산"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b94998be57de273c",
+          "label": "산업 4.0",
+          "normalized_label": "산업 4.0",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "산업 4.0"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-94b6d27ac389c4d6",
+          "label": "산업 혁신",
+          "normalized_label": "산업 혁신",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "산업 혁신"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-227364bd85c0afa1",
+          "label": "스마트 공장",
+          "normalized_label": "스마트 공장",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "스마트 공장"
+            },
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "스마트 공장"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-209fc69bdfdd3f8c",
+          "label": "첨단 제조",
+          "normalized_label": "첨단 제조",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "첨단 제조"
+            },
+            {
+              "reference": "category.sub",
+              "matched_text": "첨단 제조"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-3739677dffe6abc4",
+          "label": "적층 제조 기술",
+          "normalized_label": "적층 제조 기술",
+          "type": "technology",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "적층 제조 기술"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f3b8ad879e711690",
+          "label": "맞춤형 생산",
+          "normalized_label": "맞춤형 생산",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "맞춤형 생산"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f3db413e4af55c5d",
+          "label": "디지털 트윈",
+          "normalized_label": "디지털 트윈",
+          "type": "technology",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "디지털 트윈"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7aad2e4b59bf1acf",
+          "label": "산업기술",
+          "normalized_label": "산업기술",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "산업기술"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d0ce8265a4f9f434",
+          "label": "D 프린팅 응용과 혁신",
+          "normalized_label": "D 프린팅 응용과 혁신",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "3D 프린팅 응용과 혁신"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fb5e7dec20d5dc32",
+          "label": "국제첨단제조연구소 보고서",
+          "normalized_label": "국제첨단제조연구소 보고서",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "국제첨단제조연구소 보고서"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b5012aa67ef2be8f",
+          "label": "디지털 설계 및 모델링",
+          "normalized_label": "디지털 설계 및 모델링",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "디지털 설계 및 모델링"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ef036be802ccd92a",
+          "label": "산업 현장 적용 및 확산",
+          "normalized_label": "산업 현장 적용 및 확산",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "산업 현장 적용 및 확산"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b6d8339b746b2973",
+          "label": "적층 제조 공정 수행",
+          "normalized_label": "적층 제조 공정 수행",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "적층 제조 공정 수행"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1d0e0c8de1313529",
+          "label": "중간 검증 및 품질 관리",
+          "normalized_label": "중간 검증 및 품질 관리",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "중간 검증 및 품질 관리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-7c047d9282968fbb",
+          "label": "후처리 및 최종 품질 확보",
+          "normalized_label": "후처리 및 최종 품질 확보",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "후처리 및 최종 품질 확보"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-06a1c25038962fb3",
+          "label": "D 프린팅 기본 개념과 이해",
+          "normalized_label": "D 프린팅 기본 개념과 이해",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "3D 프린팅 기본 개념과 이해"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a0335c7b2586b4c8",
+          "label": "D 프린팅 기술, 산업 혁신과 미래 과제",
+          "normalized_label": "D 프린팅 기술, 산업 혁신과 미래 과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "3D 프린팅 기술, 산업 혁신과 미래 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-72f410703b03eee8",
+          "label": "D 프린팅 기술이 개인과 사회에 주는 의미",
+          "normalized_label": "D 프린팅 기술이 개인과 사회에 주는 의미",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "3D 프린팅 기술이 개인과 사회에 주는 의미"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b4929f0b5c5f7084",
+          "label": "D 프린팅과 첨단 제조 기술의 중요성",
+          "normalized_label": "D 프린팅과 첨단 제조 기술의 중요성",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "3D 프린팅과 첨단 제조 기술의 중요성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f3171e12763fb5dd",
+          "label": "D 프린팅의 구조와 작동 원리",
+          "normalized_label": "D 프린팅의 구조와 작동 원리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "3D 프린팅의 구조와 작동 원리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-11e086ba22e3d2c0",
+          "label": "D 프린팅의 역사적 기원과 발전",
+          "normalized_label": "D 프린팅의 역사적 기원과 발전",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "3D 프린팅의 역사적 기원과 발전"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a941209b9487c718",
+          "label": "D 프린팅의 현재 동향과 시장 환경",
+          "normalized_label": "D 프린팅의 현재 동향과 시장 환경",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "3D 프린팅의 현재 동향과 시장 환경"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6c5b4cc2b136d9b2",
+          "label": "D 프린팅이 산업과 사회에 미친 영향",
+          "normalized_label": "D 프린팅이 산업과 사회에 미친 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "3D 프린팅이 산업과 사회에 미친 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5733e735e0cbfe04",
+          "label": "GE의 제트엔진 부품 생산 혁신 사례",
+          "normalized_label": "GE의 제트엔진 부품 생산 혁신 사례",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "GE의 제트엔진 부품 생산 혁신 사례"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d59fcb25dec9375c",
+          "label": "산업 표준과 제조 관리 방식의 변화",
+          "normalized_label": "산업 표준과 제조 관리 방식의 변화",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "산업 표준과 제조 관리 방식의 변화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-365637c467cf22f8",
+          "label": "현대 3D 프린팅의 도전과 미래 과제",
+          "normalized_label": "현대 3D 프린팅의 도전과 미래 과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[7].title",
+              "matched_text": "현대 3D 프린팅의 도전과 미래 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6e6a18e07f692c62",
+          "label": "첨단 제조혁신 보고서",
+          "normalized_label": "첨단 제조혁신 보고서",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "첨단 제조혁신 보고서"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-50558716092c7cdd",
+          "label": "3D 프린팅 산업 현재 쟁점",
+          "normalized_label": "3D 프린팅 산업 현재 쟁점",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 3D 프린팅 산업 현재 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d81f6cf312962fb2",
+          "label": "3D 프린팅 주요 적층 방식 비교",
+          "normalized_label": "3D 프린팅 주요 적층 방식 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 3D 프린팅 주요 적층 방식 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-73aebfa43146b70d",
+          "label": "GE 제트엔진 부품 3D 프린팅 혁신 특징",
+          "normalized_label": "GE 제트엔진 부품 3D 프린팅 혁신 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> GE 제트엔진 부품 3D 프린팅 혁신 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-53ce963f9845770f",
+          "label": "관련 도서 및 탐구 키워드",
+          "normalized_label": "관련 도서 및 탐구 키워드",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 관련 도서 및 탐구 키워드"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-901a7e82cea79a4a",
+          "label": "디지털 제조와 스마트 공장",
+          "normalized_label": "디지털 제조와 스마트 공장",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "디지털 제조와 스마트 공장"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2184293f338bec54",
+          "label": "맞춤형 생산과 제조 혁신",
+          "normalized_label": "맞춤형 생산과 제조 혁신",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "맞춤형 생산과 제조 혁신"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-bf6dc798920cf781",
+          "label": "적층 제조 혁신과 산업 변화",
+          "normalized_label": "적층 제조 혁신과 산업 변화",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "적층 제조 혁신과 산업 변화"
             }
           ]
         }

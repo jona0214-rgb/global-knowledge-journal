@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-11-27",
+    "title": "첨단 제조 기술의 진화와 산업 혁신: 3D 프린팅은 어떻게 생산 방식을 바꾸었나",
+    "status": "published_api",
+    "event_name": "schedule",
+    "schedule_cron": "45 14 * * *",
+    "scheduled_for_kst": "2026-11-27T00:00:00+09:00",
+    "workflow_started_at": "2026-11-26T23:20:15Z",
+    "generation_started_at": "2026-11-26T23:20:43.335586Z",
+    "generation_completed_at": "2026-11-26T23:21:55.550779Z",
+    "catalog_updated_at": "2026-11-26T23:21:56.882425Z",
+    "scheduler_delay_seconds": 30015,
+    "setup_duration_seconds": 28,
+    "generation_duration_seconds": 74,
+    "validation_attempts": 1,
+    "run_id": "45910321826",
+    "run_attempt": "1",
+    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/45910321826",
+    "source_sha": "fe3ba2e3000027a8feea1a3ca52dc78bfc3011e0"
+  },
+  {
     "date": "2026-11-26",
     "title": "과학적 모델링의 원리와 한계: 복잡계 이해를 위한 도구로서의 수학",
     "status": "published_api",
@@ -708,30 +728,5 @@
     "publication_schedule_cron": "45 21 * * *",
     "publication_run_id": "40245324069",
     "publication_run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/40245324069"
-  },
-  {
-    "date": "2026-10-25",
-    "title": "광섬유 기술과 정보 통신 혁신: 빛으로 연결하는 현대 사회",
-    "status": "published_api",
-    "event_name": "schedule",
-    "schedule_cron": "45 14 * * *",
-    "scheduled_for_kst": "2026-10-25T00:00:00+09:00",
-    "workflow_started_at": "2026-10-24T17:37:23Z",
-    "generation_started_at": "2026-10-24T17:37:57.166081Z",
-    "generation_completed_at": "2026-10-24T17:38:40.582763Z",
-    "catalog_updated_at": "2026-10-24T17:38:41.925142Z",
-    "scheduler_delay_seconds": 9443,
-    "setup_duration_seconds": 34,
-    "generation_duration_seconds": 45,
-    "validation_attempts": 1,
-    "run_id": "40116948855",
-    "run_attempt": "1",
-    "run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/40116948855",
-    "source_sha": "02c140fd63aef6cf5c94d8d6c9cae401c62db416",
-    "publication_target_kst": "2026-10-25T07:00:00+09:00",
-    "publication_pushed_at": "2026-10-24T23:44:15.054845Z",
-    "publication_schedule_cron": "45 21 * * *",
-    "publication_run_id": "40143930037",
-    "publication_run_url": "https://github.com/jona0214-rgb/global-knowledge-journal/actions/runs/40143930037"
   }
 ]

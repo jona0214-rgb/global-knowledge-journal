@@ -2,12 +2,12 @@
   "schema_version": "1.0",
   "taxonomy_version": "2.0",
   "algorithm_version": "hierarchy-concepts-v1",
-  "generated_at": "2026-11-26T08:22:19.105848+09:00",
+  "generated_at": "2026-11-27T08:21:56.880577+09:00",
   "stats": {
     "categories": 10,
-    "reports": 100,
-    "nodes": 428,
-    "edges": 541,
+    "reports": 101,
+    "nodes": 431,
+    "edges": 544,
     "concepts": 32,
     "concept_edges": 155,
     "semantic_edges": 0
@@ -1026,6 +1026,13 @@
       "label": "시민 불복종 사례와 영향 분석",
       "level": 3,
       "main_category": "사회·정치·법"
+    },
+    {
+      "id": "detail:92da26c70cb078c1",
+      "type": "detail",
+      "label": "3D 프린팅 응용과 혁신",
+      "level": 3,
+      "main_category": "기술·공학"
     },
     {
       "id": "detail:947641bbf4d4a5ae",
@@ -3568,6 +3575,23 @@
       "pdf_url": "outputs/20261126_scientific_modeling_prin_Report.pdf"
     },
     {
+      "id": "report:rpt-20261127-advances-3d-printing-ind",
+      "type": "report",
+      "label": "첨단 제조 기술의 진화와 산업 혁신: 3D 프린팅은 어떻게 생산 방식을 바꾸었나",
+      "level": 4,
+      "report_id": "rpt-20261127-advances-3d-printing-ind",
+      "date": "2026-11-27",
+      "main_category": "기술·공학",
+      "category_path": [
+        "기술·공학",
+        "산업기술",
+        "첨단 제조",
+        "3D 프린팅 응용과 혁신"
+      ],
+      "html_url": "outputs/20261127_advances_3d_printing_ind_Report.html",
+      "pdf_url": "outputs/20261127_advances_3d_printing_ind_Report.pdf"
+    },
+    {
       "id": "sub:00b963069a84e05f",
       "type": "sub",
       "label": "현대 사상",
@@ -3580,6 +3604,13 @@
       "label": "고용·노동구조",
       "level": 2,
       "main_category": "사회·정치·법"
+    },
+    {
+      "id": "sub:0bd4e120bdd1023d",
+      "type": "sub",
+      "label": "첨단 제조",
+      "level": 2,
+      "main_category": "기술·공학"
     },
     {
       "id": "sub:0e442cc2b1d18151",
@@ -4942,6 +4973,13 @@
       "id": "edge:2aef2202c0609c4e",
       "source": "detail:54f59e19866706d7",
       "target": "report:rpt-20261109-wetland-ecosystem-import",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:2b16549b493b892a",
+      "source": "sub:0bd4e120bdd1023d",
+      "target": "detail:92da26c70cb078c1",
       "kind": "hierarchy",
       "relation_type": "contains"
     },
@@ -6959,6 +6997,13 @@
       "relation_type": "contains"
     },
     {
+      "id": "edge:861ec99d9f426b6f",
+      "source": "detail:92da26c70cb078c1",
+      "target": "report:rpt-20261127-advances-3d-printing-ind",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
       "id": "edge:8641d30c884c1e40",
       "source": "category:cb829c377357dd71",
       "target": "middle:eadcf5e153b9ad3c",
@@ -7088,6 +7133,13 @@
       "id": "edge:8b39a6c3e9cc8ed7",
       "source": "detail:e67fb9ac43388980",
       "target": "report:rpt-20261110-ancient-city-markets-and",
+      "kind": "hierarchy",
+      "relation_type": "contains"
+    },
+    {
+      "id": "edge:8b994170e4ea9d60",
+      "source": "middle:3662778fc59a58eb",
+      "target": "sub:0bd4e120bdd1023d",
       "kind": "hierarchy",
       "relation_type": "contains"
     },

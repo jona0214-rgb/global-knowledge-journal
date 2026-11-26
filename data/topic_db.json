@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-11-26",
+  "updated_at": "2026-11-27",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -2256,6 +2256,29 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261126_scientific_modeling_prin_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261126_scientific_modeling_prin_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "report_id": "rpt-20261127-advances-3d-printing-industrial-innovation",
+      "date": "2026-11-27",
+      "title": "첨단 제조 기술의 진화와 산업 혁신: 3D 프린팅은 어떻게 생산 방식을 바꾸었나",
+      "main_category": "기술·공학",
+      "mid_category": "산업기술",
+      "sub_category": "첨단 제조",
+      "detail_category": "3D 프린팅 응용과 혁신",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "3D 프린팅",
+        "첨단 제조",
+        "산업 혁신",
+        "디지털 제조",
+        "맞춤 생산",
+        "적층 제조 기술",
+        "스마트 공장",
+        "산업 4.0"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261127_advances_3d_printing_ind_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261127_advances_3d_printing_ind_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -2272,16 +2295,16 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "과학·수학",
-    "next_main_category": "기술·공학",
-    "next_index": 4,
+    "last_main_category": "기술·공학",
+    "next_main_category": "생명·건강",
+    "next_index": 5,
     "completed_cycles": 10,
     "published_counts": {
       "인문·철학": 11,
       "사회·정치·법": 10,
       "경제·경영": 10,
       "과학·수학": 10,
-      "기술·공학": 10,
+      "기술·공학": 11,
       "생명·건강": 9,
       "자연·환경·지리": 9,
       "역사·문화": 11,
@@ -2289,7 +2312,6 @@
       "언어·미디어·지식": 11
     },
     "recent_main_categories": [
-      "기술·공학",
       "생명·건강",
       "자연·환경·지리",
       "역사·문화",
@@ -2298,7 +2320,8 @@
       "인문·철학",
       "사회·정치·법",
       "경제·경영",
-      "과학·수학"
+      "과학·수학",
+      "기술·공학"
     ]
   },
   "candidate_pool": [
@@ -3498,6 +3521,56 @@
       "mid_category": "경제",
       "sub_category": "기업과 소비",
       "detail_category": "윤리적 소비와 CSR",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "첨단 제조 기술의 진화와 산업 혁신: 3D 프린팅은 어떻게 생산 방식을 바꾸었나",
+      "main_category": "기술·공학",
+      "mid_category": "산업기술",
+      "sub_category": "첨단 제조",
+      "detail_category": "3D 프린팅 응용과 혁신",
+      "priority": 1.0,
+      "status": "used",
+      "source": "api_generated"
+    },
+    {
+      "topic": "미래 도시의 에너지 자립 모델: 도시 내 분산형 에너지 시스템의 역할과 가능성",
+      "main_category": "기술·공학",
+      "mid_category": "에너지",
+      "sub_category": "분산 에너지",
+      "detail_category": "도시 에너지 자립 사례와 전략",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "스마트 시티 인프라와 도시 교통 혁신: 디지털 기술이 교통체증을 어떻게 해결하는가",
+      "main_category": "기술·공학",
+      "mid_category": "도시 인프라와 디지털 기술",
+      "sub_category": "스마트 교통",
+      "detail_category": "디지털 기반 교통 관리 시스템",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "지속가능한 에너지 저장 기술의 현황과 도전: 차세대 배터리가 에너지 산업에 주는 영향",
+      "main_category": "기술·공학",
+      "mid_category": "에너지",
+      "sub_category": "에너지 저장",
+      "detail_category": "배터리 기술 발전 및 응용",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "산업용 로봇의 발전과 생산성 향상: 자동화가 제조업에 미친 장기적 변화",
+      "main_category": "기술·공학",
+      "mid_category": "산업기술",
+      "sub_category": "산업 자동화",
+      "detail_category": "산업용 로봇 도입과 경제적 효과",
       "priority": 1.0,
       "status": "candidate",
       "source": "api_generated"

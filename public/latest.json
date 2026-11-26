@@ -1,16 +1,16 @@
 {
-  "date": "2026-11-26",
-  "title": "과학적 모델링의 원리와 한계: 복잡계 이해를 위한 도구로서의 수학",
-  "subtitle": "복잡한 현상을 수학적으로 해석하는 모델링의 역할과 제약을 탐구하다",
-  "main_category": "과학·수학",
-  "mid_category": "수학과 과학적 사고",
-  "sub_category": "과학 방법론",
-  "detail_category": "수학적 모델링과 시뮬레이션",
+  "date": "2026-11-27",
+  "title": "첨단 제조 기술의 진화와 산업 혁신: 3D 프린팅은 어떻게 생산 방식을 바꾸었나",
+  "subtitle": "3D 프린팅이 산업 생산 혁신에 미친 영향과 미래 전망",
+  "main_category": "기술·공학",
+  "mid_category": "산업기술",
+  "sub_category": "첨단 제조",
+  "detail_category": "3D 프린팅 응용과 혁신",
   "taxonomy_version": "2.0",
-  "html_path": "outputs/20261126_scientific_modeling_prin_Report.html",
-  "pdf_path": "outputs/20261126_scientific_modeling_prin_Report.pdf",
+  "html_path": "outputs/20261127_advances_3d_printing_ind_Report.html",
+  "pdf_path": "outputs/20261127_advances_3d_printing_ind_Report.pdf",
   "status": "published_api",
-  "html_url": "outputs/20261126_scientific_modeling_prin_Report.html",
-  "pdf_url": "outputs/20261126_scientific_modeling_prin_Report.pdf",
-  "report_id": "rpt-20261126-scientific-modeling-prin"
+  "html_url": "outputs/20261127_advances_3d_printing_ind_Report.html",
+  "pdf_url": "outputs/20261127_advances_3d_printing_ind_Report.pdf",
+  "report_id": "rpt-20261127-advances-3d-printing-ind"
 }
