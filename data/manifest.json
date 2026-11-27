@@ -1,6 +1,22 @@
 {
-  "last_updated": "2026-11-27T08:21:56.880577+09:00",
+  "last_updated": "2026-11-28T08:01:30.447409+09:00",
   "reports": [
+    {
+      "date": "2026-11-28",
+      "title": "심리적 회복탄력성: 스트레스 상황에서 정신 건강을 지키는 심리메커니즘은",
+      "subtitle": "스트레스와 역경 속에서 마음의 탄력을 발휘하는 심리적 원리와 치료적 접근",
+      "main_category": "생명·건강",
+      "mid_category": "건강과 심리",
+      "sub_category": "정신건강",
+      "detail_category": "회복탄력성(resilience)의 심리적 요인과 치료법 연구",
+      "taxonomy_version": "2.0",
+      "html_path": "outputs/20261128_psychological_resilience_Report.html",
+      "pdf_path": "outputs/20261128_psychological_resilience_Report.pdf",
+      "status": "published_api",
+      "html_url": "outputs/20261128_psychological_resilience_Report.html",
+      "pdf_url": "outputs/20261128_psychological_resilience_Report.pdf",
+      "report_id": "rpt-20261128-psychological-resilience"
+    },
     {
       "date": "2026-11-27",
       "title": "첨단 제조 기술의 진화와 산업 혁신: 3D 프린팅은 어떻게 생산 방식을 바꾸었나",

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "updated_at": "2026-11-27",
+  "updated_at": "2026-11-28",
   "purpose": "Global Knowledge Journal 일일 리포트의 주제 다양성 확보와 발행 이력 관리를 위한 운영용 주제 DB",
   "recent_reports": [
     {
@@ -2279,6 +2279,29 @@
       "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261127_advances_3d_printing_ind_Report.html",
       "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261127_advances_3d_printing_ind_Report.pdf",
       "status": "published_api"
+    },
+    {
+      "report_id": "rpt-20261128-psychological-resilience-mechanisms-stress-menta",
+      "date": "2026-11-28",
+      "title": "심리적 회복탄력성: 스트레스 상황에서 정신 건강을 지키는 심리메커니즘은",
+      "main_category": "생명·건강",
+      "mid_category": "건강과 심리",
+      "sub_category": "정신건강",
+      "detail_category": "회복탄력성(resilience)의 심리적 요인과 치료법 연구",
+      "taxonomy_version": "2.0",
+      "keywords": [
+        "심리적 회복탄력성",
+        "스트레스 대응",
+        "정신 건강",
+        "심리 메커니즘",
+        "인지 행동 치료",
+        "트라우마 극복",
+        "심리 사회적 지원",
+        "감정 조절"
+      ],
+      "html_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261128_psychological_resilience_Report.html",
+      "pdf_path": "/home/runner/work/global-knowledge-journal/global-knowledge-journal/outputs/20261128_psychological_resilience_Report.pdf",
+      "status": "published_api"
     }
   ],
   "category_rotation": {
@@ -2295,9 +2318,9 @@
       "예술·디자인",
       "언어·미디어·지식"
     ],
-    "last_main_category": "기술·공학",
-    "next_main_category": "생명·건강",
-    "next_index": 5,
+    "last_main_category": "생명·건강",
+    "next_main_category": "자연·환경·지리",
+    "next_index": 6,
     "completed_cycles": 10,
     "published_counts": {
       "인문·철학": 11,
@@ -2305,14 +2328,13 @@
       "경제·경영": 10,
       "과학·수학": 10,
       "기술·공학": 11,
-      "생명·건강": 9,
+      "생명·건강": 10,
       "자연·환경·지리": 9,
       "역사·문화": 11,
       "예술·디자인": 10,
       "언어·미디어·지식": 11
     },
     "recent_main_categories": [
-      "생명·건강",
       "자연·환경·지리",
       "역사·문화",
       "예술·디자인",
@@ -2321,7 +2343,8 @@
       "사회·정치·법",
       "경제·경영",
       "과학·수학",
-      "기술·공학"
+      "기술·공학",
+      "생명·건강"
     ]
   },
   "candidate_pool": [
@@ -3571,6 +3594,56 @@
       "mid_category": "산업기술",
       "sub_category": "산업 자동화",
       "detail_category": "산업용 로봇 도입과 경제적 효과",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "뇌의 가소성: 신경 회로는 어떻게 변화하며 학습과 회복을 이끄는가",
+      "main_category": "생명·건강",
+      "mid_category": "뇌과학",
+      "sub_category": "신경가소성",
+      "detail_category": "경험과 환경에 따른 뇌 구조 및 기능 변형 연구",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "면역 체계의 균형: 자가면역과 면역관용은 어떻게 조화를 이루는가",
+      "main_category": "생명·건강",
+      "mid_category": "의학",
+      "sub_category": "면역학",
+      "detail_category": "면역체계의 자기와 비자기 구별 메커니즘과 질환 연결성",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "심리적 회복탄력성: 스트레스 상황에서 정신 건강을 지키는 심리메커니즘은",
+      "main_category": "생명·건강",
+      "mid_category": "건강과 심리",
+      "sub_category": "정신건강",
+      "detail_category": "회복탄력성(resilience)의 심리적 요인과 치료법 연구",
+      "priority": 1.0,
+      "status": "used",
+      "source": "api_generated"
+    },
+    {
+      "topic": "동물 행동생태학: 야생동물의 사회적 의사소통과 집단 행동의 진화",
+      "main_category": "생명·건강",
+      "mid_category": "생물학",
+      "sub_category": "행동생태학",
+      "detail_category": "동물 사회성과 신호교환, 환경 적응 사례 분석",
+      "priority": 1.0,
+      "status": "candidate",
+      "source": "api_generated"
+    },
+    {
+      "topic": "장내 미생물과 대사질환: 마이크로바이옴은 어떻게 당뇨와 비만에 영향을 줄까",
+      "main_category": "생명·건강",
+      "mid_category": "의학",
+      "sub_category": "미생물학",
+      "detail_category": "장내 미생물군집 변화와 대사 질환 간 상관관계 연구",
       "priority": 1.0,
       "status": "candidate",
       "source": "api_generated"

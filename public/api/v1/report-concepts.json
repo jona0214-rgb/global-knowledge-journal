@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
   "algorithm_version": "structured-evidence-v1",
-  "generated_at": "2026-11-27T08:21:56.880577+09:00",
+  "generated_at": "2026-11-28T08:01:30.447409+09:00",
   "stats": {
-    "reports": 101,
-    "tags": 3760,
-    "shared_concepts": 32,
+    "reports": 102,
+    "tags": 3798,
+    "shared_concepts": 33,
     "min_tags_per_report": 33,
     "max_tags_per_report": 40
   },
@@ -55213,6 +55213,556 @@
           ]
         }
       ]
+    },
+    {
+      "report_id": "rpt-20261128-psychological-resilience",
+      "date": "2026-11-28",
+      "title": "심리적 회복탄력성: 스트레스 상황에서 정신 건강을 지키는 심리메커니즘은",
+      "main_category": "생명·건강",
+      "tags": [
+        {
+          "tag_id": "tag-77239bbcd5f6194e",
+          "label": "감정 조절",
+          "normalized_label": "감정 조절",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "감정 조절"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-b3ca158178879996",
+          "label": "스트레스 대응",
+          "normalized_label": "스트레스 대응",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "스트레스 대응"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d336b73a3a61b07a",
+          "label": "인지 행동 치료",
+          "normalized_label": "인지 행동 치료",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [
+            "CBT"
+          ],
+          "evidence": [
+            {
+              "reference": "keywords[4]",
+              "matched_text": "인지 행동 치료"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "인지 행동 치료(CBT)"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-e60889df94e171df",
+          "label": "정신 건강",
+          "normalized_label": "정신 건강",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "정신 건강"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-9d53caefbb7245e1",
+          "label": "트라우마 극복",
+          "normalized_label": "트라우마 극복",
+          "type": "concept",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[5]",
+              "matched_text": "트라우마 극복"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-68c5c966502f3073",
+          "label": "심리 메커니즘",
+          "normalized_label": "심리 메커니즘",
+          "type": "mechanism",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "심리 메커니즘"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-29f6e9c7b7b3a92a",
+          "label": "심리 사회적 지원",
+          "normalized_label": "심리 사회적 지원",
+          "type": "mechanism",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[6]",
+              "matched_text": "심리 사회적 지원"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-50e803f56474ed4a",
+          "label": "심리적 회복탄력성",
+          "normalized_label": "심리적 회복탄력성",
+          "type": "mechanism",
+          "weight": 1.0,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "keywords[0]",
+              "matched_text": "심리적 회복탄력성"
+            },
+            {
+              "reference": "term_box.items[0].term",
+              "matched_text": "심리적 회복탄력성"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2cfb64c7619871e3",
+          "label": "사회적 지지",
+          "normalized_label": "사회적 지지",
+          "type": "concept",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "사회적 지지"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-c26ae921e6061b13",
+          "label": "정서 조절",
+          "normalized_label": "정서 조절",
+          "type": "mechanism",
+          "weight": 0.98,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "term_box.items[3].term",
+              "matched_text": "정서 조절"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-324f6f2c4a681f64",
+          "label": "건강과 심리",
+          "normalized_label": "건강과 심리",
+          "type": "domain",
+          "weight": 0.94,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.middle",
+              "matched_text": "건강과 심리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2c2c0890bfade81d",
+          "label": "정신건강",
+          "normalized_label": "정신건강",
+          "type": "domain",
+          "weight": 0.93,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.sub",
+              "matched_text": "정신건강"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-00679043d903a6e9",
+          "label": "회복탄력성(resilience)의 심리적 요인과 치료법 연구",
+          "normalized_label": "회복탄력성(resilience)의 심리적 요인과 치료법 연구",
+          "type": "domain",
+          "weight": 0.92,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "category.detail",
+              "matched_text": "회복탄력성(resilience)의 심리적 요인과 치료법 연구"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-8c5c7ce6711f67a3",
+          "label": "Ann S. Masten",
+          "normalized_label": "Ann S. Masten",
+          "type": "entity",
+          "weight": 0.84,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.attribution",
+              "matched_text": "Ann S. Masten, 심리학자"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-5faac7caf499d935",
+          "label": "내적 심리자원 발굴",
+          "normalized_label": "내적 심리자원 발굴",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[1]",
+              "matched_text": "내적 심리자원 발굴"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-fbe2b13118c4f259",
+          "label": "사회적 지지망 강화",
+          "normalized_label": "사회적 지지망 강화",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[2]",
+              "matched_text": "사회적 지지망 강화"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d3c3673e02f28424",
+          "label": "역경과 스트레스 인식",
+          "normalized_label": "역경과 스트레스 인식",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[0]",
+              "matched_text": "역경과 스트레스 인식"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6955ddbcabfc1257",
+          "label": "인지 행동 개입",
+          "normalized_label": "인지 행동 개입",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[3]",
+              "matched_text": "인지 행동 개입"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-53ba67efad503db0",
+          "label": "회복과 성장",
+          "normalized_label": "회복과 성장",
+          "type": "mechanism",
+          "weight": 0.82,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "flow_diagram.steps[4]",
+              "matched_text": "회복과 성장"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-eb95873f892d99fe",
+          "label": "심리적 회복탄력성 이해를 위한 기초 개념",
+          "normalized_label": "심리적 회복탄력성 이해를 위한 기초 개념",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[1].title",
+              "matched_text": "심리적 회복탄력성 이해를 위한 기초 개념"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ecf3de36c969c458",
+          "label": "심리적 회복탄력성과 사회문화적 영향",
+          "normalized_label": "심리적 회복탄력성과 사회문화적 영향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[5].title",
+              "matched_text": "심리적 회복탄력성과 사회문화적 영향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-659199ee0fde8e61",
+          "label": "심리적 회복탄력성의 중요성과 현대적 관심",
+          "normalized_label": "심리적 회복탄력성의 중요성과 현대적 관심",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[0].title",
+              "matched_text": "심리적 회복탄력성의 중요성과 현대적 관심"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-ef15b27e334e4bda",
+          "label": "심리적 회복탄력성의 핵심 질문과 탐구 방향",
+          "normalized_label": "심리적 회복탄력성의 핵심 질문과 탐구 방향",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[2].title",
+              "matched_text": "심리적 회복탄력성의 핵심 질문과 탐구 방향"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-6f942c6f547f7d2c",
+          "label": "심리적 회복탄력성이 개인과 사회에 미치는 함의",
+          "normalized_label": "심리적 회복탄력성이 개인과 사회에 미치는 함의",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[10].title",
+              "matched_text": "심리적 회복탄력성이 개인과 사회에 미치는 함의"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-78cd4f252645c3ae",
+          "label": "재난 후 심리적 회복탄력성 증진 프로그램 사례: 뉴질랜드 캔터베리 지진",
+          "normalized_label": "재난 후 심리적 회복탄력성 증진 프로그램 사례: 뉴질랜드 캔터베리 지진",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[8].title",
+              "matched_text": "재난 후 심리적 회복탄력성 증진 프로그램 사례: 뉴질랜드 캔터베리 지진"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2c3b3fc84db4dd12",
+          "label": "현재 심리적 회복탄력성 연구와 활용 현황",
+          "normalized_label": "현재 심리적 회복탄력성 연구와 활용 현황",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[9].title",
+              "matched_text": "현재 심리적 회복탄력성 연구와 활용 현황"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-90b2c18eedf18969",
+          "label": "현재 쟁점과 미래 연구 과제",
+          "normalized_label": "현재 쟁점과 미래 연구 과제",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[7].title",
+              "matched_text": "현재 쟁점과 미래 연구 과제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-d7bb688341209559",
+          "label": "회복탄력성 개념의 역사적 기원",
+          "normalized_label": "회복탄력성 개념의 역사적 기원",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[3].title",
+              "matched_text": "회복탄력성 개념의 역사적 기원"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-81c6c820b3c6381d",
+          "label": "회복탄력성 평가와 관리 기법",
+          "normalized_label": "회복탄력성 평가와 관리 기법",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[6].title",
+              "matched_text": "회복탄력성 평가와 관리 기법"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-24e41c2e9f0c75bb",
+          "label": "회복탄력성의 구조와 작동 원리",
+          "normalized_label": "회복탄력성의 구조와 작동 원리",
+          "type": "theme",
+          "weight": 0.78,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "sections[4].title",
+              "matched_text": "회복탄력성의 구조와 작동 원리"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-71f7958d60569ea1",
+          "label": "The Road to Resilience",
+          "normalized_label": "The Road to Resilience",
+          "type": "work",
+          "weight": 0.72,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "quotation.source_title",
+              "matched_text": "The Road to Resilience"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f4bd420e9d6b1ead",
+          "label": "관련 도서·탐구 키워드·확장 주제",
+          "normalized_label": "관련 도서·탐구 키워드·확장 주제",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[3].title",
+              "matched_text": "<표4> 관련 도서·탐구 키워드·확장 주제"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a0dd6bab640424f7",
+          "label": "뉴질랜드 캔터베리 지진 심리적 회복탄력성 프로그램 특징",
+          "normalized_label": "뉴질랜드 캔터베리 지진 심리적 회복탄력성 프로그램 특징",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[1].title",
+              "matched_text": "<표2> 뉴질랜드 캔터베리 지진 심리적 회복탄력성 프로그램 특징"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-22552bbc4b165e9f",
+          "label": "심리적 회복탄력성 관련 현재 쟁점",
+          "normalized_label": "심리적 회복탄력성 관련 현재 쟁점",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[2].title",
+              "matched_text": "<표3> 심리적 회복탄력성 관련 현재 쟁점"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-1937079ad3e7b270",
+          "label": "심리적 회복탄력성 주요 개념 비교",
+          "normalized_label": "심리적 회복탄력성 주요 개념 비교",
+          "type": "theme",
+          "weight": 0.68,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "tables[0].title",
+              "matched_text": "<표1> 심리적 회복탄력성 주요 개념 비교"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-f457c5704c113e71",
+          "label": "『Psychological Resilience: Concepts, Research, and Applications』",
+          "normalized_label": "『Psychological Resilience: Concepts, Research, and Applications』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[0].title",
+              "matched_text": "『Psychological Resilience: Concepts, Research, and Applications』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-a270459c3f50d287",
+          "label": "『Resilience: The Science of Mastering Life's Greatest Challenges』",
+          "normalized_label": "『Resilience: The Science of Mastering Life's Greatest Challenges』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[2].title",
+              "matched_text": "『Resilience: The Science of Mastering Life's Greatest Challenges』"
+            }
+          ]
+        },
+        {
+          "tag_id": "tag-2efcb5188a2920f0",
+          "label": "『The Road to Resilience』",
+          "normalized_label": "『The Road to Resilience』",
+          "type": "work",
+          "weight": 0.58,
+          "aliases": [],
+          "evidence": [
+            {
+              "reference": "further_reading[1].title",
+              "matched_text": "『The Road to Resilience』"
+            }
+          ]
+        }
+      ]
     }
   ],
   "shared_concepts": [
@@ -56688,6 +57238,7 @@
       "main_categories": [
         "기술·공학",
         "사회·정치·법",
+        "생명·건강",
         "역사·문화",
         "예술·디자인",
         "인문·철학",
@@ -56773,15 +57324,6 @@
           ]
         },
         {
-          "report_id": "rpt-20260922-welfare-state-design-soc",
-          "evidence": [
-            {
-              "reference": "sections[6].body[2]",
-              "matched_text": "회복력"
-            }
-          ]
-        },
-        {
           "report_id": "rpt-20260929-sustainable-building-mat",
           "evidence": [
             {
@@ -56855,6 +57397,19 @@
             {
               "reference": "sections[8].body[3]",
               "matched_text": "수질 개선"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261128-psychological-resilience",
+          "evidence": [
+            {
+              "reference": "sections[5].body[0]",
+              "matched_text": "회복력"
+            },
+            {
+              "reference": "sections[5].body[1]",
+              "matched_text": "회복력"
             }
           ]
         }
@@ -57277,6 +57832,60 @@
       ]
     },
     {
+      "concept_id": "con-e60889df94e171df",
+      "label": "정신 건강",
+      "normalized_label": "정신 건강",
+      "type": "concept",
+      "provenance": "exact-normalized-tag",
+      "report_count": 4,
+      "main_categories": [
+        "생명·건강",
+        "인문·철학"
+      ],
+      "reports": [
+        {
+          "report_id": "rpt-20261016-mindfulness-role-in-ment",
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "정신 건강"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261021-religious-beliefs-and-me",
+          "evidence": [
+            {
+              "reference": "keywords[1]",
+              "matched_text": "정신 건강"
+            },
+            {
+              "reference": "term_box.items[1].term",
+              "matched_text": "정신 건강"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261026-brain-gut-interaction-mi",
+          "evidence": [
+            {
+              "reference": "keywords[3]",
+              "matched_text": "정신 건강"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261128-psychological-resilience",
+          "evidence": [
+            {
+              "reference": "keywords[2]",
+              "matched_text": "정신 건강"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "concept_id": "con-54edfaeaaf2ae146",
       "label": "공정성",
       "normalized_label": "공정성",
@@ -57365,51 +57974,6 @@
             {
               "reference": "keywords[5]",
               "matched_text": "소비자 행동"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "concept_id": "con-e60889df94e171df",
-      "label": "정신 건강",
-      "normalized_label": "정신 건강",
-      "type": "concept",
-      "provenance": "exact-normalized-tag",
-      "report_count": 3,
-      "main_categories": [
-        "생명·건강",
-        "인문·철학"
-      ],
-      "reports": [
-        {
-          "report_id": "rpt-20261016-mindfulness-role-in-ment",
-          "evidence": [
-            {
-              "reference": "keywords[1]",
-              "matched_text": "정신 건강"
-            }
-          ]
-        },
-        {
-          "report_id": "rpt-20261021-religious-beliefs-and-me",
-          "evidence": [
-            {
-              "reference": "keywords[1]",
-              "matched_text": "정신 건강"
-            },
-            {
-              "reference": "term_box.items[1].term",
-              "matched_text": "정신 건강"
-            }
-          ]
-        },
-        {
-          "report_id": "rpt-20261026-brain-gut-interaction-mi",
-          "evidence": [
-            {
-              "reference": "keywords[3]",
-              "matched_text": "정신 건강"
             }
           ]
         }
@@ -57788,6 +58352,42 @@
             {
               "reference": "keywords[6]",
               "matched_text": "사회 변화"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "concept_id": "con-2cfb64c7619871e3",
+      "label": "사회적 지지",
+      "normalized_label": "사회적 지지",
+      "type": "concept",
+      "provenance": "exact-normalized-tag",
+      "report_count": 2,
+      "main_categories": [
+        "생명·건강",
+        "인문·철학"
+      ],
+      "reports": [
+        {
+          "report_id": "rpt-20261021-religious-beliefs-and-me",
+          "evidence": [
+            {
+              "reference": "keywords[7]",
+              "matched_text": "사회적 지지"
+            },
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "사회적 지지"
+            }
+          ]
+        },
+        {
+          "report_id": "rpt-20261128-psychological-resilience",
+          "evidence": [
+            {
+              "reference": "term_box.items[2].term",
+              "matched_text": "사회적 지지"
             }
           ]
         }
